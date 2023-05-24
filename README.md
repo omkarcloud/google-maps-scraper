@@ -35,4 +35,4 @@ Additionaly, you don't have to configure the Selenium driver as it will automati
 The Google Maps Scraper project uses the Bose Framework, a web scraping framework that is Swiss Army Knife for web scraping. I encourage you to learn about Bose Framework at https://www.omkar.cloud/bose/
 
 
-## If my code helped you in scraping Google Maps, please take a moment to star the repository. Your act of starring will help developers in discovering our Repository and contribute towards helping fellow developers in their scraping needs. Dhanyawad 🙏! Vande Mataran!
+## If my code helped you in scraping Google Maps, please take a moment to star the repository. Your act of starring will help developers in discovering our Repository and contribute towards helping fellow developers in their scraping needs. Dhanyawad 🙏! Vande Mataram!
