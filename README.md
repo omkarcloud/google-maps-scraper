@@ -36,4 +36,7 @@ The Google Maps Scraper is built with Bose Framework, a bot development framewor
 
 ## If my code helped you in scraping Google Maps, please take a moment to star the repository. Your act of starring will help developers in discovering our Repository and contribute towards helping fellow developers in their scraping needs. Dhanyawad 🙏! Vande Mataram!
 
-### I am an IITian with a perfectionist attitude to work, open to projects. See my projects at [https://dev.to/chetanan/chetan-jains-portfolio-cl6](https://dev.to/chetanan/chetan-jains-portfolio-cl6) 
+## I've created a project capable of parallely running hundreds of bots to scrape Google Maps at scale. If you're interested in saving hours of development time by scraping Google Maps at scale, kindly contact via WhatsApp at https://www.omkar.cloud/l/whatsapp or email me at chetan@omkar.cloud and I would be happy to help.
+
+
+<!-- ### I am an IITian with a perfectionist attitude to work, open to projects. See my projects at [https://dev.to/chetanan/chetan-jains-portfolio-cl6](https://dev.to/chetanan/chetan-jains-portfolio-cl6)  -->
