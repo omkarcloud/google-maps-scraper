@@ -30,6 +30,26 @@ Additionaly, you don't have to configure the Selenium driver as it will automati
 
 - To specify whether to scrape the first page of Google Maps results or all pages of results, open the `src/scraper.py` file and set the `Task.GET_FIRST_PAGE` variable to `True` or `False` as appropriate.
 
+- In order to filter the results of Google Maps, you can utilize the Task.filter_data property and specify the following parameters:
+
+1. min_rating
+2. min_reviews
+3. max_reviews
+4. has_phone
+5. has_website
+
+For instance, if you wish to obtain results with a minimum of 5 reviews, a maximum of 100 reviews, and a phone number (which is a desirable target for selling web development services), you can use the following configuration:
+
+```python
+class Task(BaseTask):
+
+    filter_data = {
+        "min_reviews": 5 ,
+        "max_reviews": 100,
+        "has_phone": True,
+    }
+```
+
 ## Learn More
 
 The Google Maps Scraper is built with Bose Framework, a bot development framework that is Swiss Army Knife for bot developers. To learn Bose Bot Development Framework, read the bose docs at [https://www.omkar.cloud/bose/](https://www.omkar.cloud/bose/)

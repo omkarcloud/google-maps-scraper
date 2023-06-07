@@ -14,8 +14,7 @@ def do_filter(ls, filter_data):
 
         min_rating = filter_data.get("min_rating")
         min_reviews = filter_data.get("min_reviews")
-        is_kosher = filter_data.get("is_kosher", False)
-        is_car = filter_data.get("is_car", False)
+        max_reviews = filter_data.get("max_reviews")
         has_phone = filter_data.get("has_phone")
         has_website = filter_data.get("has_website")
 
@@ -34,10 +33,9 @@ def do_filter(ls, filter_data):
             if number_of_reviews == '' or number_of_reviews is None or number_of_reviews < min_reviews:
                 return False
 
-        if is_kosher:
-            if 'kosher' in category.lower() or 'jew' in category.lower() or 'kosher' in title.lower() or 'jew' in title.lower():
-                pass
-            else:
+
+        if max_reviews != None:
+            if number_of_reviews == '' or number_of_reviews is None or number_of_reviews > max_reviews:
                 return False
 
         if has_website is not None:
@@ -50,12 +48,6 @@ def do_filter(ls, filter_data):
                 if phone is None or phone == '':
                     return False
 
-        if is_car:
-            if 'car' in category.lower() or 'car' in title.lower():
-                pass
-            else:
-                return False
-
         return True
 
     return list(filter(fn, ls))
@@ -63,12 +55,20 @@ def do_filter(ls, filter_data):
 
 class Task(BaseTask):
     
+    
+    filter_data = {
+            #  "min_rating" : 3, 
+            #  "min_reviews" : 5, 
+            #  "max_reviews" : 100, 
+            #  "has_phone" : True, 
+            #  "has_website" : False, 
+        }
+
     GET_FIRST_PAGE = True
     queries = [
-        "web developers in cuttack",
+        "restaurants in jhajjar",
     ]
     
-
     def run(self, driver):
         def get_links(query):
             def scroll_till_end(times):
@@ -204,7 +204,6 @@ class Task(BaseTask):
 
         def get_data():
             result = []
-            max_listings = 10
 
             driver.get_google()
 
@@ -213,21 +212,17 @@ class Task(BaseTask):
 
                 print(f'Fetched {len(links)} links.')
 
-                filter_data = {
-                    "min_reviews": 5,
-                    "has_phone": True,
-
-                }
+                # filter_data = {
+                #     "min_reviews": 5,
+                #     "has_website": False,
+                # }
 
                 a = get_maps_data(links)
-                new_results = do_filter(a, filter_data)
+                new_results = do_filter(a, self.filter_data)
 
                 print(f'Filtered {len(new_results)} links from {len(a)}.')
 
                 result = result + new_results
-                # write(result)
-                if len(result) > max_listings:
-                    return result
 
             return result
 
