@@ -38,7 +38,7 @@ Additionaly, you don't have to configure the Selenium driver as it will automati
 4. has_phone
 5. has_website
 
-For instance, if you wish to obtain results with a minimum of 5 reviews, a maximum of 100 reviews, and a phone number (which is a desirable target for selling web development services), you can use the following configuration:
+For instance, if you wish to obtain results with a minimum of 5 reviews, a maximum of 100 reviews, and a phone number, you can use the following configuration:
 
 ```python
 class Task(BaseTask):
