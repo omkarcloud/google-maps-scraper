@@ -58,14 +58,14 @@ class Task(BaseTask):
     browser_config = BrowserConfig(is_eager = True)
     
     filter_data = {
-             "min_rating" : 3.4, 
-             "min_reviews" : 4, 
+            #  "min_rating" : 3, 
+            #  "min_reviews" : 5, 
             #  "max_reviews" : 100, 
             #  "has_phone" : True, 
             #  "has_website" : False, 
         }
 
-    GET_FIRST_PAGE = False
+    GET_FIRST_PAGE = True
 
     queries = [
         "restaurants in jhajjar",
