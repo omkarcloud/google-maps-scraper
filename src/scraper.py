@@ -1,7 +1,7 @@
 from selenium.webdriver.common.by import By
 import urllib.parse
 from selenium.webdriver.common.by import By
-from bose import BaseTask, Wait, Output
+from bose import BaseTask, Wait, Output, BrowserConfig
 
 
 def write(result):
@@ -55,16 +55,18 @@ def do_filter(ls, filter_data):
 
 class Task(BaseTask):
     
+    browser_config = BrowserConfig(is_eager = True)
     
     filter_data = {
-            #  "min_rating" : 3, 
-            #  "min_reviews" : 5, 
+             "min_rating" : 3.4, 
+             "min_reviews" : 4, 
             #  "max_reviews" : 100, 
             #  "has_phone" : True, 
             #  "has_website" : False, 
         }
 
-    GET_FIRST_PAGE = True
+    GET_FIRST_PAGE = False
+
     queries = [
         "restaurants in jhajjar",
     ]
@@ -79,7 +81,10 @@ class Task(BaseTask):
 
                     driver.get_by_current_page_referrer(url)
 
-                    if not driver.is_in_page(endpoint, Wait.LONG * 3):
+                    if not driver.is_in_page(endpoint, Wait.LONG):
+                        if driver.is_in_page("consent.google.com", Wait.SHORT):
+                            el = driver.get_element_or_none_by_selector('form:nth-child(2) > div > div > button', Wait.LONG)   
+                            el.click()
                         print('Revisiting')
                         visit_gmap()
 
@@ -96,8 +101,8 @@ class Task(BaseTask):
                     else:
                         has_scrolled = driver.scroll_element(el)
 
-                        end_el = driver.get_element_or_none_by_text_contains(
-                            "You've reached the end of the list.", Wait.SHORT)
+                        end_el = driver.get_element_or_none_by_selector(
+                            "p.fontBodyMedium > span > span", Wait.SHORT)
                         if end_el is not None:
                             driver.scroll_element(el)
                             return
@@ -197,7 +202,6 @@ class Task(BaseTask):
 
             ls = list(map(get_data, links))
             return ls
-
 
         
         queries =  self.queries 
