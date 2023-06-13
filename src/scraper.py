@@ -65,7 +65,7 @@ class Task(BaseTask):
             #  "has_website" : False, 
         }
 
-    GET_FIRST_PAGE = True
+    GET_FIRST_PAGE = False
 
     queries = [
         "restaurants in jhajjar",
