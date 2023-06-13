@@ -55,7 +55,9 @@ def do_filter(ls, filter_data):
 
 class Task(BaseTask):
     
-    browser_config = BrowserConfig(is_eager = True)
+    browser_config = BrowserConfig(
+        is_eager = True
+        )
     
     filter_data = {
             #  "min_rating" : 3, 
@@ -182,11 +184,23 @@ class Task(BaseTask):
                     return ''
 
                 out_dict['address'] = get_el_text(
-                    driver.get_element_or_none("//button[@data-item-id='address']"))
-                out_dict['website'] = get_el_text(
-                    driver.get_element_or_none("//a[@data-item-id='authority']"))
-                out_dict['phone'] = get_el_text(driver.get_element_or_none(
-                    "//button[starts-with(@data-item-id,'phone:tel:')]"))
+                    driver.get_element_or_none_by_selector("button[data-item-id='address']"))
+                
+                website_el = driver.get_element_or_none_by_selector("a[data-item-id='authority']")
+                
+                if website_el is not None:
+                    out_dict['website'] = website_el.get_attribute("href")
+                else:
+                    out_dict['website'] = ''
+                
+                phone_el = driver.get_element_or_none(
+                    "//button[starts-with(@data-item-id,'phone')]")
+
+
+                if phone_el is not None:
+                    out_dict['phone'] = phone_el.get_attribute("data-item-id").replace("phone:tel:", "")
+                else:
+                    out_dict['phone'] = ''
 
                 tmp_elem = driver.get_element_or_none_by_selector(
                     ".RZ66Rb.FgCUCc img")
