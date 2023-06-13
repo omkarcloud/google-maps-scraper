@@ -2,22 +2,8 @@
 
 ![Google Maps Scraper CSV Result](./img/example_result.png)
 
-## What is this Script?
+This is a Python script that allows you to scrape information from Google Maps, including business names, addresses, phone numbers, websites, ratings, and reviews. The script can be configured to search for specific queries and can scrape either the first page of results or all pages of results.
 
-This is a Python script to scrape data from Google Maps, including business names, addresses, phone numbers, websites, ratings, and reviews and store them as a CSV File. 
-
-Use this script to save hours of your valuable Development Time,  as you won't need to create a Google Maps scraper from scratch.
-
-
-## Documentation
-
-To learn how to use this script for scraping Google Maps and storing the results in a CSV file, please visit [this link](https://www.omkar.cloud/bose/docs/ready-made-bots/google-maps-scraper/).
-
-![Google Maps Scraper CSV Result](./img/example_result.png)
-
-
-
-<!-- 
 ## Installation
 
 1. Clone Starter Template
@@ -71,6 +57,6 @@ The Google Maps Scraper is built with Bose Framework, a bot development framewor
 ## If my code helped you in scraping Google Maps, please take a moment to star the repository. Your act of starring will help developers in discovering our Repository and contribute towards helping fellow developers in their scraping needs. Dhanyawad 🙏! Vande Mataram!
 
 ## I've created a project capable of parallely running hundreds of bots to scrape Google Maps at scale. If you're interested in saving hours of development time by scraping Google Maps at scale, kindly contact via WhatsApp at https://www.omkar.cloud/l/whatsapp or email me at chetan@omkar.cloud and I would be happy to help.
- -->
+
 
 <!-- ### I am an IITian with a perfectionist attitude to work, open to projects. See my projects at [https://dev.to/chetanan/chetan-jains-portfolio-cl6](https://dev.to/chetanan/chetan-jains-portfolio-cl6)  -->
