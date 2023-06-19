@@ -22,7 +22,7 @@ python main.py
 
 The script will start running and output progress updates to the console. When the scraper is complete, it will generate a CSV file named `finished.csv` in the `output` directory. The CSV file will contain the business name, address, phone number, website, rating, and review for each result.
 
-*Additionaly, you don't have to configure the Selenium driver as it will automatically download the appropriate driver based on your Chrome browser version.*
+*Additionaly, you don't have to configure the Selenium driver as this bot is built with bose framework which automatically download the appropriate driver based on your Chrome browser version.*
 
 ## Configuration
 
@@ -50,11 +50,35 @@ class Task(BaseTask):
     }
 ```
 
-## Learn More
+## Why do I not need to specify Chrome Driver Location in Bot? 
 
-The Google Maps Scraper is built with Bose Framework, a bot development framework that is Swiss Army Knife for bot developers. To learn Bose Bot Development Framework, read the bose docs at [https://www.omkar.cloud/bose/](https://www.omkar.cloud/bose/)
+The Google Maps Scraper is built with Bose Framework which handles download of the correct driver, add anti-blocking feautres to fly under the radar of bot detectors by default and helps us in debugging.
 
-## If my code helped you in scraping Google Maps, please take a moment to star the repository. Your act of starring will help developers in discovering our Repository and contribute towards helping fellow developers in their scraping needs. Dhanyawad 🙏! Vande Mataram!
+It's a great bot development framework that I feel should be in the toolkit of every Bot Developer. I encourage you learn more about it [here](https://www.omkar.cloud/bose/)
+
+## Get Custom Bot 🤖
+
+We are professional scrapers who scrape for a living.
+
+In fact, we have successfully scraped over 300 million LinkedIn profiles.
+
+If you're interested in creating a Bot and saving yourself valuable development time, please contact us at chetan@omkar.cloud.
+
+Our pricing starts at $150 for a Custom Bot and includes a 100% refund guarantee.
+
+<!-- 
+
+
+We are professional Scrapers who scrape for living. We have experience scraping over 300 Million LinkedIn Profiles. 
+
+If you are interested to save yourself Development Time. Kindly contact us at chetan@omkar.cloud. 
+
+Our Pricing starts at $150 and is full refunadable.  -->
+
+<!-- ## I've created a project capable of parallely running hundreds of bots to scrape Google Maps at scale. If you're interested in saving hours of development time by scraping Google Maps at scale, kindly contact via WhatsApp at https://www.omkar.cloud/l/whatsapp or email me at chetan@omkar.cloud and I would be happy to help. -->
+
+
+## Love It? Why don't you Star It? ⭐
 
 <!-- ## I've created a project capable of parallely running hundreds of bots to scrape Google Maps at scale. If you're interested in saving hours of development time by scraping Google Maps at scale, kindly contact via WhatsApp at https://www.omkar.cloud/l/whatsapp or email me at chetan@omkar.cloud and I would be happy to help. -->
 
