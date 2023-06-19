@@ -49,12 +49,11 @@ class Task(BaseTask):
         "has_phone": True,
     }
 ```
+## Why is there no need to specify the Chrome Driver Location in the Bot?
 
-## Why do I not need to specify Chrome Driver Location in Bot? 
+The Google Maps Scraper is built using the Bose Framework, which takes care of downloading the correct driver, has anti-blocking features to evade bot detectors and greatly helps us in debugging.
 
-The Google Maps Scraper is built with Bose Framework which handles download of the correct driver, add anti-blocking feautres to fly under the radar of bot detectors by default and helps us in debugging.
-
-It's a great bot development framework that I feel should be in the toolkit of every Bot Developer. I encourage you learn more about it [here](https://www.omkar.cloud/bose/)
+I believe Bose Framework is a great tool that should be a part of every Bot Developer's toolkit. I encourage you to learn about bose by visiting their [docs](https://www.omkar.cloud/bose/).
 
 ## Get Custom Bot 🤖
 
