@@ -77,7 +77,7 @@ Our Pricing starts at $150 and is full refunadable.  -->
 <!-- ## I've created a project capable of parallely running hundreds of bots to scrape Google Maps at scale. If you're interested in saving hours of development time by scraping Google Maps at scale, kindly contact via WhatsApp at https://www.omkar.cloud/l/whatsapp or email me at chetan@omkar.cloud and I would be happy to help. -->
 
 
-## Love It? Why don't you Star It? ⭐
+## Love It? Star It! ⭐
 
 <!-- ## I've created a project capable of parallely running hundreds of bots to scrape Google Maps at scale. If you're interested in saving hours of development time by scraping Google Maps at scale, kindly contact via WhatsApp at https://www.omkar.cloud/l/whatsapp or email me at chetan@omkar.cloud and I would be happy to help. -->
 
