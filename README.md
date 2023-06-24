@@ -55,7 +55,21 @@ The Google Maps Scraper is built using the Bose Framework, which takes care of d
 
 I believe Bose Framework is a great tool that will greatly help you in Bot Development. I encourage you to learn about bose by visiting their [docs](https://www.omkar.cloud/bose/).
 
-## Get Custom Bot 🤖
+## Request a Custom Bot 🤖
+
+As experienced bot developers, we have created various types of bots, such as Google Maps bots, LinkedIn bots, Upwork/Fiverr bots, and even a [bot development framework](https://www.omkar.cloud/bose/).
+
+If you're looking to save precious development time by having a Bot tailored to your specific needs, we invite you to get in touch with us at chetan@omkar.cloud.
+
+Our pricing for Custom Bots starts at $150, and we offer a 100% refund guarantee to ensure your satisfaction.
+
+## Support Our Work
+
+Thanks to Google Maps Scraper, you've been able to save countless hours of your development time. If you value the tools we create and would like to see more of them, kindly consider [sponsoring us](https://github.com/sponsors/omkarcloud).
+
+Your sponsorship helps us continue building awesome tools that make a difference. We greatly appreciate your support and look forward to delivering even more valuable tools in the future.
+
+<!-- ## Get Custom Bot 🤖
 
 We are professional scrapers who scrape for a living.
 
@@ -64,6 +78,8 @@ In fact, we have successfully scraped over 300 million LinkedIn profiles.
 If you're interested in creating a Bot and saving yourself valuable development time, please contact us at chetan@omkar.cloud.
 
 Our pricing starts at $150 for a Custom Bot and includes a 100% refund guarantee.
+-- >
+
 
 <!-- 
 
