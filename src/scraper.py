@@ -4,55 +4,6 @@ from selenium.webdriver.common.by import By
 from bose import BaseTask, Wait, Output, BrowserConfig
 
 
-def write(result):
-    Output.write_finished(result)
-    Output.write_csv(result, "finished.csv")
-
-
-def do_filter(ls, filter_data):
-    def fn(i):
-
-        min_rating = filter_data.get("min_rating")
-        min_reviews = filter_data.get("min_reviews")
-        max_reviews = filter_data.get("max_reviews")
-        has_phone = filter_data.get("has_phone")
-        has_website = filter_data.get("has_website")
-
-        rating = i.get('rating')
-        number_of_reviews = i.get('number_of_reviews')
-        title = i.get("title")
-        category = i.get("category")
-        web_site = i.get("website")
-        phone = i.get("phone")
-
-        if min_rating != None:
-            if rating == '' or rating is None or rating < min_rating:
-                return False
-
-        if min_reviews != None:
-            if number_of_reviews == '' or number_of_reviews is None or number_of_reviews < min_reviews:
-                return False
-
-
-        if max_reviews != None:
-            if number_of_reviews == '' or number_of_reviews is None or number_of_reviews > max_reviews:
-                return False
-
-        if has_website is not None:
-            if has_website == False:
-                if web_site is not None:
-                    return False
-
-        if has_phone is not None:
-            if has_phone == True:
-                if phone is None or phone == '':
-                    return False
-
-        return True
-
-    return list(filter(fn, ls))
-
-
 class Task(BaseTask):
     
     browser_config = BrowserConfig(
@@ -70,10 +21,61 @@ class Task(BaseTask):
     GET_FIRST_PAGE = False
 
     queries = [
-        "restaurants in jhajjar",
+        "restaurants in berlin",
     ]
     
     def run(self, driver):
+
+
+        def write(result):
+            Output.write_finished(result)
+            Output.write_csv(result, "finished.csv")
+
+
+        def do_filter(ls, filter_data):
+            def fn(i):
+
+                min_rating = filter_data.get("min_rating")
+                min_reviews = filter_data.get("min_reviews")
+                max_reviews = filter_data.get("max_reviews")
+                has_phone = filter_data.get("has_phone")
+                has_website = filter_data.get("has_website")
+
+                rating = i.get('rating')
+                number_of_reviews = i.get('number_of_reviews')
+                title = i.get("title")
+                category = i.get("category")
+                web_site = i.get("website")
+                phone = i.get("phone")
+
+                if min_rating != None:
+                    if rating == '' or rating is None or rating < min_rating:
+                        return False
+
+                if min_reviews != None:
+                    if number_of_reviews == '' or number_of_reviews is None or number_of_reviews < min_reviews:
+                        return False
+
+
+                if max_reviews != None:
+                    if number_of_reviews == '' or number_of_reviews is None or number_of_reviews > max_reviews:
+                        return False
+
+                if has_website is not None:
+                    if has_website == False:
+                        if web_site is not None:
+                            return False
+
+                if has_phone is not None:
+                    if has_phone == True:
+                        if phone is None or phone == '':
+                            return False
+
+                return True
+
+            return list(filter(fn, ls))
+
+        
         def get_links(query):
             def scroll_till_end(times):
                 def visit_gmap():
