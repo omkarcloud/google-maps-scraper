@@ -135,9 +135,9 @@ class ScrapeGoogleMapsPlacesTask(BaseTask):
                 out_dict['link'] = link
                 out_dict['main_category'] = '' if category is None else category.text
                 
-                all_categories =  driver.execute_script('''
+                data =  driver.execute_script('''
 function get_categories() {
-    inputString = window.APP_INITIALIZATION_STATE[3][6]
+    let inputString = window.APP_INITIALIZATION_STATE[3][6]
     let substringToRemove = ")]}'";
     
     let modifiedString
@@ -148,12 +148,16 @@ function get_categories() {
     
     let parsed = JSON.parse (modifiedString);
     
-    categories  = parsed [6][13]
-    return categories
+    let categories  = parsed [6][13]
+    let place_id  = parsed [6][78]
+    return [place_id, categories]
 }
 return get_categories()
                 ''')
 
+                place_id = data[0]
+                all_categories = data[1]
+                out_dict['place_id'] =  place_id
                 out_dict['categories'] =  ', '.join(all_categories)
 
                 print(out_dict)
