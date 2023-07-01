@@ -1,6 +1,6 @@
 # Google Maps Data Scraper
 
-[![Google Maps Video Tutorial](./screenshots/video.png)](https://www.youtube.com/watch?v=zOlvYakogSU)
+[![Google Maps Video Tutorial](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/video.png)](https://www.youtube.com/watch?v=zOlvYakogSU)
 
 Are you looking for a convenient way to extract valuable information from Google Maps? Look no further! 
 
@@ -37,7 +37,7 @@ This file contains comprehensive information, including business names, addresse
 
 Please watch the following video to see scraper in action.
 
-[![Google Maps Video Tutorial](./screenshots/video.png)](https://www.youtube.com/watch?v=zOlvYakogSU)
+[![Google Maps Video Tutorial](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/video.png)](https://www.youtube.com/watch?v=zOlvYakogSU)
 
 ## Frequently Asked Questions
 
@@ -92,7 +92,7 @@ To calculate the number of **hours** it takes to scrape "n" searches, you can **
 
 For example, if you want to scrape 10 google map queries or 1200 listings, it will take around 1.6 hours.
 
-![](./screenshots/search-time.png)
+![](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/search-time.png)
 
 ### Q: How can I utilize the data obtained from Google Maps?
 A: Most people scrape Google Maps Listings to sell things!
