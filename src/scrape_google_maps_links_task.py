@@ -47,7 +47,7 @@ class ScrapeGoogleMapsLinksTask(BaseTask):
 
                         return scroll_till_end(times + 1)
                     else:
-                        has_scroll_moved_element = driver.scroll_element(el)
+                        did_element_scroll = driver.scroll_element(el)
 
                         end_el = driver.get_element_or_none_by_selector(
                             "p.fontBodyMedium > span > span", Wait.SHORT)
@@ -56,7 +56,7 @@ class ScrapeGoogleMapsLinksTask(BaseTask):
                             driver.scroll_element(el)
                             return
 
-                        if not has_scroll_moved_element:
+                        if not did_element_scroll:
                             driver.sleep(0.1)
                             number_of_times_not_scrolled += 1
 
