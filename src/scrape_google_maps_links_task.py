@@ -37,6 +37,7 @@ class ScrapeGoogleMapsLinksTask(BaseTask):
 
                 visit_gmap()
 
+                number_of_times_not_scrolled = 0
                 while True:
                     el = driver.get_element_or_none_by_selector(
                         '[role="feed"]', Wait.LONG)
@@ -57,8 +58,15 @@ class ScrapeGoogleMapsLinksTask(BaseTask):
 
                         if not has_scrolled:
                             driver.sleep(0.1)
+                            number_of_times_not_scrolled += 1
+
+                            if number_of_times_not_scrolled > 20:
+                                print('Google Maps was Stuck in Scrolling. So returning.')
+                                return 
+                            
                             print('Scrolling...')
                         else:
+                            number_of_times_not_scrolled = 0
                             print('Scrolling...')
 
                         if max_results is None: 
