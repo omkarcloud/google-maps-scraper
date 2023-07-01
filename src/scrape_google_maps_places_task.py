@@ -1,36 +1,20 @@
-from selenium.webdriver.common.by import By
-import urllib.parse
-from selenium.webdriver.common.by import By
-from bose import BaseTask, Wait, Output, BrowserConfig
+from bose import *
+from pydash import kebab_case
 
+class ScrapeGoogleMapsPlacesTask(BaseTask):
+    task_config = TaskConfig(output_filename = "all")
 
-class Task(BaseTask):
-    
     browser_config = BrowserConfig(
-        is_eager = True
-        )
+        is_eager = True,
+        headless = True,
+    )
     
-    filter_data = {
-            #  "min_rating" : 3, 
-            #  "min_reviews" : 5, 
-            #  "max_reviews" : 100, 
-            #  "has_phone" : True, 
-            #  "has_website" : False, 
-        }
+    def get_data(self):
+        return LocalStorage.get_item('queries', [])
 
-    GET_FIRST_PAGE = False
-
-    queries = [
-        "restaurants in berlin",
-    ]
-    
-    def run(self, driver):
-
-
-        def write(result):
-            Output.write_finished(result)
-            Output.write_csv(result, "finished.csv")
-
+    def run(self, driver, data):
+        links = data['links']
+        query = data['query']
 
         def do_filter(ls, filter_data):
             def fn(i):
@@ -43,8 +27,6 @@ class Task(BaseTask):
 
                 rating = i.get('rating')
                 number_of_reviews = i.get('number_of_reviews')
-                title = i.get("title")
-                category = i.get("category")
                 web_site = i.get("website")
                 phone = i.get("phone")
 
@@ -76,66 +58,6 @@ class Task(BaseTask):
             return list(filter(fn, ls))
 
         
-        def get_links(query):
-            def scroll_till_end(times):
-                def visit_gmap():
-
-                    endpoint = f'maps/search/{urllib.parse.quote_plus(query)}'
-                    url = f'https://www.google.com/{endpoint}'
-
-                    driver.get_by_current_page_referrer(url)
-
-                    if not driver.is_in_page(endpoint, Wait.LONG):
-                        if driver.is_in_page("consent.google.com", Wait.SHORT):
-                            el = driver.get_element_or_none_by_selector('form:nth-child(2) > div > div > button', Wait.LONG)   
-                            el.click()
-                        print('Revisiting')
-                        visit_gmap()
-
-                visit_gmap()
-
-                while True:
-                    el = driver.get_element_or_none_by_selector(
-                        '[role="feed"]', Wait.LONG)
-
-                    if el is None:
-                        visit_gmap()
-
-                        return scroll_till_end(times + 1)
-                    else:
-                        has_scrolled = driver.scroll_element(el)
-
-                        end_el = driver.get_element_or_none_by_selector(
-                            "p.fontBodyMedium > span > span", Wait.SHORT)
-                        if end_el is not None:
-                            driver.scroll_element(el)
-                            return
-
-                        if not has_scrolled:
-                            driver.sleep(0.1)
-                            print('Scrolling...')
-                        else:
-                            print('Scrolling...')
-                        if self.GET_FIRST_PAGE:
-                            return
-            scroll_till_end(1)
-
-            def extract_links(elements):
-                def extract_link(el):
-                    return el.get_attribute("href")
-
-                return list(map(extract_link, elements))
-
-            els = driver.get_elements_or_none_by_selector(
-                '[role="feed"]  [role="article"] > a', Wait.LONG)
-            links = extract_links(els)
-
-            Output.write_pending(links)
-
-            print('Done Filter')
-
-            return links
-
         def get_maps_data(links):
             def get_data(link):
 
@@ -177,7 +99,7 @@ class Task(BaseTask):
 
                 category = driver.get_element_or_none_by_selector(
                     'button[jsaction="pane.rating.category"]')
-                out_dict['category'] = '' if category is None else category.text
+                
                 tmp_elem = driver.get_element_or_none("//div[@class='m6QErb']")
 
                 def get_el_text(el):
@@ -211,40 +133,44 @@ class Task(BaseTask):
                     out_dict['img_link'] = tmp_elem.get_attribute("src")
 
                 out_dict['link'] = link
+                out_dict['main_category'] = '' if category is None else category.text
+                
+                all_categories =  driver.execute_script('''
+function get_categories() {
+    inputString = window.APP_INITIALIZATION_STATE[3][6]
+    let substringToRemove = ")]}'";
+    
+    let modifiedString
+    if (inputString.startsWith(substringToRemove)) {
+        modifiedString = inputString.slice(substringToRemove.length);
+      } else {
+      }
+    
+    let parsed = JSON.parse (modifiedString);
+    
+    categories  = parsed [6][13]
+    return categories
+}
+return get_categories()
+                ''')
+
+                out_dict['categories'] =  ', '.join(all_categories)
 
                 print(out_dict)
-
+                # driver.prompt()
                 return out_dict
 
             ls = list(map(get_data, links))
             return ls
 
+        driver.get_google()
         
-        queries =  self.queries 
+        a = get_maps_data(links)
+        new_results = do_filter(a, query)
 
-        def get_data():
-            result = []
+        print(f'Filtered {len(new_results)} links from {len(a)}.')
+        
+        Output.write_json(new_results, kebab_case(query['keyword']))
+        Output.write_csv(new_results, kebab_case(query['keyword']))
 
-            driver.get_google()
-
-            for q in queries:
-                links = get_links(q)
-
-                print(f'Fetched {len(links)} links.')
-
-                # filter_data = {
-                #     "min_reviews": 5,
-                #     "has_website": False,
-                # }
-
-                a = get_maps_data(links)
-                new_results = do_filter(a, self.filter_data)
-
-                print(f'Filtered {len(new_results)} links from {len(a)}.')
-
-                result = result + new_results
-
-            return result
-
-        result = get_data()
-        write(result)
+        return new_results

@@ -1,101 +1,145 @@
-# Google Maps Scraper
+# Google Maps Data Scraper
 
-![Google Maps Scraper CSV Result](https://www.omkar.cloud/bose/assets/images/gmap_result-1cb8f15de2fdf7c01f246d81f97aef7c.png)
+[![Google Maps Video Tutorial](./screenshots/video.png)](https://www.youtube.com/watch?v=zOlvYakogSU)
 
-This is a Python script that allows you to scrape information from Google Maps, including business names, addresses, phone numbers, websites, ratings, and reviews. The script can be configured to search for specific queries and can scrape either the first page of results or all pages of results.
+Are you looking for a convenient way to extract valuable information from Google Maps? Look no further! 
 
-## Installation
+Introducing the Google Maps Data Scraper, a powerful Python script that enables you to scrape various details from Google Maps, such as business names, addresses, phone numbers, websites, ratings, and reviews. 
 
-1. Clone Starter Template
-```
+Whether you need data for market research, lead generation, or any other purpose, this script has got you covered. 
+
+## Installation Guide Text
+
+1. Clone the Repository:
+```shell
 git clone https://github.com/omkarcloud/google-maps-scraper
 cd google-maps-scraper
 ```
-2. Install dependencies
-```
+2. Install Dependencies:
+```shell
 python -m pip install -r requirements.txt
 ```
-3. Run Project
-```
+3. Run the Project:
+```shell
 python main.py
 ```
 
-The script will start running and output progress updates to the console. When the scraper is complete, it will generate a CSV file named `finished.csv` in the `output` directory. The CSV file will contain the business name, address, phone number, website, rating, and review for each result.
+Sit back and relax as the script starts running and provides progress updates in the console. 
 
-*Additionaly, you don't have to configure the Selenium driver as this bot is built with bose framework which automatically download the appropriate driver based on your Chrome browser version.*
+Once the scraping process is complete, you will find a CSV file named `all.csv` in the `output` directory. 
 
-## Configuration
+This file contains comprehensive information, including business names, addresses, phone numbers, websites, ratings, and reviews for each search result.
 
-- To specify the Google search queries to be used in the scraper, open the `src/scraper.py` file in your preferred text editor and update the `Task.queries` list with your desired queries.
+![Google Maps Data Scraper CSV Result](https://www.omkar.cloud/bose/assets/images/gmap_result-1cb8f15de2fdf7c01f246d81f97aef7c.png)
 
-- To specify whether to scrape the first page of Google Maps results or all pages of results, open the `src/scraper.py` file and set the `Task.GET_FIRST_PAGE` variable to `True` or `False` as appropriate.
 
-- In order to filter the results of Google Maps, you can utilize the Task.filter_data property and specify the following parameters:
+## Video Demo 
 
-1. min_rating
-2. min_reviews
-3. max_reviews
-4. has_phone
-5. has_website
+Please watch the following video to see scraper in action.
 
-For instance, if you wish to obtain results with a minimum of 5 reviews, a maximum of 100 reviews, and a phone number, you can use the following configuration:
+[![Google Maps Video Tutorial](./screenshots/video.png)](https://www.youtube.com/watch?v=zOlvYakogSU)
 
+## Frequently Asked Questions
+
+### Q: The scraper is only retrieving 5 results. How can I scrape all Google Maps search results?
+A: Open the file `src/config.py` and comment out the line that sets the `max_results` parameter. 
+
+By doing so, you can scrape all the search results from Google Maps. For example, to scrape all restaurants in Delhi, modify the code as follows:
 ```python
-class Task(BaseTask):
-
-    filter_data = {
-        "min_reviews": 5 ,
-        "max_reviews": 100,
-        "has_phone": True,
-    }
+queries = [
+    {
+        "keyword": "restaurants in delhi",
+        # "max_results" : 5,
+    },
+]
 ```
-## Why is there no need to specify the Chrome Driver Location in the Bot?
 
-The Google Maps Scraper is built using the Bose Framework, which takes care of downloading the correct driver, has anti-blocking features to evade bot detectors and greatly helps us in debugging.
+### Q: I want to scrape search results for a specific business in a particular location. How can I achieve that?
+A: Open the file `src/config.py` and update the `keyword` with your desired search query. 
 
-I believe Bose Framework is a great tool that will greatly help you in Bot Development. I encourage you to learn about bose by visiting their [docs](https://www.omkar.cloud/bose/).
+For example, if you want to scrape data about stupas in Kathmandu 🇳🇵, modify the code as follows:
+```python
+queries = [
+    {
+        "keyword": "stupas in kathmandu",
+    },
+]
+```
 
-## Request a Custom Bot 🤖
+### Q: Can I scrape more than one query using this script?
+A: Absolutely! Open the file `src/config.py` and add as many queries as you like. 
 
-As experienced bot developers, we have created various types of bots, such as Google Maps bots, LinkedIn bots, Upwork/Fiverr bots, and even a [bot development framework](https://www.omkar.cloud/bose/).
+For example, if you want to scrape restaurants in both Delhi 😎 and Bangalore 👨‍💻, use the following code:
+```python
+queries = [
+    {
+        "keyword": "restaurants in delhi",
+        "max_results": 5,
+    },
+    {
+        "keyword": "restaurants in bangalore",
+        "max_results": 5,
+    }
+]
+```
+### Q: How much time does it take to scrape "n" searches?
 
-If you're looking to save precious development time by having a Bot tailored to your specific needs, we invite you to get in touch with us at chetan@omkar.cloud.
+On average, each Google Maps search gives 120 listings. It takes approximately 10 minutes to scrape these 120 listings.
 
-Our pricing for Custom Bots starts at $150, and we offer a 100% refund guarantee to ensure your satisfaction.
+To calculate the number of **hours** it takes to scrape "n" searches, you can **google search** this formula substituting `n` with number of searches you want to conduct:
 
-## Support Our Work
+`n * 10 minutes in hour`
 
-Thanks to Google Maps Scraper, you've been able to save countless hours of your development time. If you value the tools we create and would like to see more of them, kindly consider [sponsoring us](https://github.com/sponsors/omkarcloud).
+For example, if you want to scrape 10 google map queries or 1200 listings, it will take around 1.6 hours.
 
-Your sponsorship helps us continue building awesome tools that make a difference. We greatly appreciate your support and look forward to delivering even more valuable tools in the future.
+![](./screenshots/search-time.png)
 
-<!-- ## Get Custom Bot 🤖
+### Q: How can I utilize the data obtained from Google Maps?
+A: Most people scrape Google Maps Listings to sell things!
 
-We are professional scrapers who scrape for a living.
+For example, you can search for restaurants in Amritsar and pitch your web development services to them.
 
-In fact, we have successfully scraped over 300 million LinkedIn profiles.
+You can also find real estate listings in Delhi and promote your exceptional real estate software.
 
-If you're interested in creating a Bot and saving yourself valuable development time, please contact us at chetan@omkar.cloud.
+Google Maps is seriously a great platform to find B2B customers to sell things to!
 
-Our pricing starts at $150 for a Custom Bot and includes a 100% refund guarantee.
--- >
 
+## Additional Questions (Not as important)
+
+### Q: The code looks well-structured and organized. Most Selenium codebases are messy. How did you do it?
+
+A: I use the Bose Framework, a Bot Development Framework that greatly simplifies the process of creating bots.
+
+The Google Maps Scraper uses Bose to:
+
+1. Enable running the bot multiple times
+2. Maintain code structure
+3. Save the data as JSON and CSV
+4. Incorporate anti-bot detection features
+5. Utilize the enhanced Selenium Driver to reduce code.
+
+You can see `scrape_google_maps_links_task.py` to understand the simplicity Bose Brings.
+
+Without Bose Framework, it would be 2x more harder to make this Google Maps Scraper.
+
+Explore the Bose Framework [here](https://www.omkar.cloud/bose/).
 
 <!-- 
+### Q: How can I express my gratitude?
+A: If this bot has saved you valuable development time and you are financially able, consider [sponsoring me](https://github.com/sponsors/omkarcloud). Your support is greatly appreciated.
+-->
 
+### Q: How can I thank you??
 
-We are professional Scrapers who scrape for living. We have experience scraping over 300 Million LinkedIn Profiles. 
+Star ⭐ the repository.
 
-If you are interested to save yourself Development Time. Kindly contact us at chetan@omkar.cloud. 
+Your star will send me a Telegram Notification, and it will bring a smile to my face :)
 
-Our Pricing starts at $150 and is full refunadable.  -->
+### Q: I'm interested in creating more bots. Can you assist me?
+A: I am a professional scraper who scrapes for a living. Let's discuss your requirements further! Feel free to reach out to me at chetan@omkar.cloud.
 
-<!-- ## I've created a project capable of parallely running hundreds of bots to scrape Google Maps at scale. If you're interested in saving hours of development time by scraping Google Maps at scale, kindly contact via WhatsApp at https://www.omkar.cloud/l/whatsapp or email me at chetan@omkar.cloud and I would be happy to help. -->
+---
 
+*PS: If you're interested in getting an enhanced version of this scraper capable of extracting 8x more data in the same time, you can reach out to me at chetan@omkar.cloud. The cost is $75, and it will save you 8x more time.*
 
 ## Love It? Star It! ⭐
-
-<!-- ## I've created a project capable of parallely running hundreds of bots to scrape Google Maps at scale. If you're interested in saving hours of development time by scraping Google Maps at scale, kindly contact via WhatsApp at https://www.omkar.cloud/l/whatsapp or email me at chetan@omkar.cloud and I would be happy to help. -->
-
-![Google Maps Scraper CSV Result](https://www.omkar.cloud/bose/assets/images/gmap_result-1cb8f15de2fdf7c01f246d81f97aef7c.png)
-<!-- ### I am an IITian with a perfectionist attitude to work, open to projects. See my projects at [https://dev.to/chetanan/chetan-jains-portfolio-cl6](https://dev.to/chetanan/chetan-jains-portfolio-cl6)  -->
