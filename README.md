@@ -121,11 +121,9 @@ For example, if you want to scrape restaurants in both Delhi 😎 and Bangalore 
 queries = [
     {
         "keyword": "restaurants in delhi",
-        "max_results": 5,
     },
     {
         "keyword": "restaurants in bangalore",
-        "max_results": 5,
     }
 ]
 ```
