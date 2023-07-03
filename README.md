@@ -111,6 +111,7 @@ queries = [
         "has_phone": True,
     },
 ]
+```
 
 ### ❓ Can I scrape more than one query using this script?
 A: Absolutely! Open `src/config.py` and add as many queries as you like. 
