@@ -3,7 +3,8 @@ from bose import *
 from .config import queries
 
 class ScrapeGoogleMapsLinksTask(BaseTask):
-    task_config = TaskConfig(output_filename = "links")
+
+    task_config = TaskConfig(output_filename = "links", close_on_crash=True)
 
     browser_config = BrowserConfig(
         is_eager = True,

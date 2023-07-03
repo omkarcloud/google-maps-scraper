@@ -86,8 +86,34 @@ queries = [
 ]
 ```
 
+
+### ❓ How can I filter google map search results?
+
+A: You have the option to apply filters to your Google Maps search results using the following parameters:
+
+1. min_rating
+2. min_reviews
+3. max_reviews
+4. has_phone
+5. has_website
+
+
+To specify filters, open `src/config.py` and specify your filters. 
+
+The Following example will scrape only those listings with a minimum of 5 reviews, a maximum of 100 reviews, and a phone number.
+
+```python
+queries = [
+    {
+        "keyword": "restaurants in delhi",
+        "min_reviews": 5 ,
+        "max_reviews": 100,
+        "has_phone": True,
+    },
+]
+
 ### ❓ Can I scrape more than one query using this script?
-A: Absolutely! Open the file `src/config.py` and add as many queries as you like. 
+A: Absolutely! Open `src/config.py` and add as many queries as you like. 
 
 For example, if you want to scrape restaurants in both Delhi 😎 and Bangalore 👨‍💻, use the following code:
 ```python
@@ -124,7 +150,19 @@ You can also find real estate listings in Delhi and promote your exceptional rea
 Google Maps is seriously a great platform to find B2B customers to sell things to!
 
 
-## Additional Questions (Not as important)
+### ❓ What services do you provide?
+A: We specialize in developing professional bots. Some of our popular Ready Made Bots, are:
+
+1. **LinkedIn Messaging Bot**: Connect with thousands of LinkedIn users to promote and sell your products.
+2. **Gmail Email Sending Bot**: Reach out to thousands of people through email to market your products.
+3. **Discord Messaging Bot**: Engage with a large audience on Discord and promote your offerings.
+4. **Reddit Messaging Bot**: Communicate with thousands of individuals on Reddit to showcase your products.
+5. **Instagram Messaging Bot**: Connect with a wide user base on Instagram and promote your brand.
+6. **Realtors Scraping**: Extract real-time home listings from realtors websites.
+
+In addition, we offer Custom Bot Solutions tailored to your specific requirements. 
+
+Let's discuss your requirements further! Feel free to reach out to me at chetan@omkar.cloud.
 
 ### ❓ The code looks well-structured and organized. Most Selenium codebases are messy. How did you do it?
 
@@ -155,8 +193,6 @@ Star ⭐ the repository.
 
 Your star will send me a Telegram Notification, and it will bring a smile to my face :)
 
-### ❓ I'm interested in creating more bots. Can you assist me?
-A: I am a professional scraper who scrapes for a living. Let's discuss your requirements further! Feel free to reach out to me at chetan@omkar.cloud.
 
 ---
 

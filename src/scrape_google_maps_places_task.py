@@ -2,7 +2,7 @@ from bose import *
 from pydash import kebab_case
 
 class ScrapeGoogleMapsPlacesTask(BaseTask):
-    task_config = TaskConfig(output_filename = "all")
+    task_config = TaskConfig(output_filename = "all", close_on_crash=True)
 
     browser_config = BrowserConfig(
         is_eager = True,
