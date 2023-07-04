@@ -1,10 +1,12 @@
 import urllib.parse
 from bose import *
+
+from src.scrape_google_maps_places_task import ScrapeGoogleMapsPlacesTask
 from .config import queries
 
 class ScrapeGoogleMapsLinksTask(BaseTask):
 
-    task_config = TaskConfig(output_filename = "links", close_on_crash=True)
+    task_config = TaskConfig(output_filename = "all", close_on_crash=True)
 
     browser_config = BrowserConfig(
         is_eager = True,
@@ -101,8 +103,10 @@ class ScrapeGoogleMapsLinksTask(BaseTask):
         
         queries = LocalStorage.get_item("queries" , [])
 
-        queries.append({"links": links, "query": data})
+        data = {"links": links, "query": data}
+        queries.append(data)
 
         LocalStorage.set_item('queries', queries)
 
-        return [{"link": link} for link in links]
+        return ScrapeGoogleMapsPlacesTask().run(driver, data)
+        # return [{"link": link} for link in links]
