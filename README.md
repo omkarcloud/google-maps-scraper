@@ -127,6 +127,145 @@ queries = [
     }
 ]
 ```
+
+### ❓ How can I scrape Google Map reviews or obtain hundreds of Google Maps search results?
+A: In addition to our free Google Maps Places Scraper, we offer fairly priced SERP APIs to simplify the process of scraping Google Map reviews or retrieving large volumes of Google Maps search results.
+
+Here's an example of how our SERP API works. You can access our Serp API [here](https://www.omkar.cloud/l/google-maps-serp-api/).
+
+```python
+# Search for businesses in specific locations:
+results = client.google_maps_search('restaurants brooklyn usa', limit=20, language='en')
+
+# Get reviews of the specific place by id 
+results = client.google_maps_reviews('ChIJrc9T9fpYwokRdvjYRHT8nI4', reviews_limit=20, language='en')
+```
+*Example Output*
+```json 
+[
+  [
+    {
+      "name": "Colonie",
+      "full_address": "127 Atlantic Ave, Brooklyn, NY 11201",
+      "borough": "Brooklyn Heights",
+      "street": "127 Atlantic Ave",
+      "city": "Brooklyn",
+      "postal_code": "11201",
+      "country_code": "US",
+      "country": "United States of America",
+      "us_state": "New York",
+      "state": "New York",
+      "plus_code": null,
+      "latitude": 40.6908464,
+      "longitude": -73.9958422,
+      "time_zone": "America/New_York",
+      "popular_times": null,
+      "site": "http://www.colonienyc.com/",
+      "phone": "+1 718-855-7500",
+      "type": "American restaurant",
+      "category": "restaurants",
+      "subtypes": "American restaurant, Cocktail bar, Italian restaurant, Organic restaurant, Restaurant, Wine bar",
+      "posts": null,
+      "rating": 4.6,
+      "reviews": 666,
+      "reviews_data": null,
+      "photos_count": 486,
+      "google_id": "0x89c25a4590b8c863:0xc4a4271f166de1e2",
+      "place_id": "ChIJY8i4kEVawokR4uFtFh8npMQ",
+      "reviews_link": "https://search.google.com/local/reviews?placeid=ChIJY8i4kEVawokR4uFtFh8npMQ&q=restaurants+brooklyn+usa&authuser=0&hl=en&gl=US",
+      "reviews_id": "-4277250731621359134",
+      "photo": "https://lh5.googleusercontent.com/p/AF1QipN_Ani32z-7b9XD182oeXKgQ-DIhLcgL09gyMZf=w800-h500-k-no",
+      "street_view": "https://lh5.googleusercontent.com/p/AF1QipN_Ani32z-7b9XD182oeXKgQ-DIhLcgL09gyMZf=w1600-h1000-k-no",
+      "working_hours_old_format": "Monday: 5\\u20139:30PM | Tuesday: Closed | Wednesday: Closed | Thursday: 5\\u20139:30PM | Friday: 5\\u20139:30PM | Saturday: 11AM\\u20133PM,5\\u20139:30PM | Sunday: 11AM\\u20133PM,5\\u20139:30PM",
+      "working_hours": {
+        "Monday": "5\\u20139:30PM",
+        "Tuesday": "Closed",
+        "Wednesday": "Closed",
+        "Thursday": "5\\u20139:30PM",
+        "Friday": "5\\u20139:30PM",
+        "Saturday": "11AM\\u20133PM,5\\u20139:30PM",
+        "Sunday": "11AM\\u20133PM,5\\u20139:30PM"
+      },
+      "business_status": "OPERATIONAL",
+      "about": {
+        "Service options": {
+          "Dine-in": true,
+          "Delivery": false,
+          "Takeout": false
+        },
+        "Health & safety": {
+          "Mask required": true,
+          "Staff required to disinfect surfaces between visits": true
+        },
+        "Highlights": {
+          "Fast service": true,
+          "Great cocktails": true,
+          "Great coffee": true
+        },
+        "Popular for": {
+          "Lunch": true,
+          "Dinner": true,
+          "Solo dining": true
+        },
+        "Accessibility": {
+          "Wheelchair accessible entrance": true,
+          "Wheelchair accessible restroom": true,
+          "Wheelchair accessible seating": true
+        },
+        "Offerings": {
+          "Coffee": true,
+          "Comfort food": true,
+          "Healthy options": true,
+          "Organic dishes": true,
+          "Small plates": true,
+          "Vegetarian options": true,
+          "Wine": true
+        },
+        "Dining options": {
+          "Dessert": true
+        },
+        "Amenities": {
+          "High chairs": true
+        },
+        "Atmosphere": {
+          "Casual": true,
+          "Cozy": true,
+          "Romantic": true,
+          "Upscale": true
+        },
+        "Crowd": {
+          "Groups": true
+        },
+        "Planning": {
+          "Dinner reservations recommended": true,
+          "Accepts reservations": true,
+          "Usually a wait": true
+        },
+        "Payments": {
+          "Credit cards": true
+        }
+      },
+      "range": "$$$",
+      "reviews_per_score": {
+        "1": 9,
+        "2": 10,
+        "3": 47,
+        "4": 129,
+        "5": 471
+      },
+      "reserving_table_link": "https://resy.com/cities/ny/colonie",
+      "booking_appointment_link": "https://resy.com/cities/ny/colonie",
+      "owner_id": "114275131377272904229",
+      "verified": true,
+      "owner_title": "Colonie",
+      "owner_link": "https://www.google.com/maps/contrib/114275131377272904229",
+      "location_link": "https://www.google.com/maps/place/Colonie/@40.6908464,-73.9958422,14z/data=!4m8!1m2!2m1!1sColonie!3m4!1s0x89c25a4590b8c863:0xc4a4271f166de1e2!8m2!3d40.6908464!4d-73.9958422"
+    },
+    ...
+  ]
+]
+```
+
 ### ❓ How much time does it take to scrape "n" searches?
 
 On average, each Google Maps search gives 120 listings. It takes approximately 10 minutes to scrape these 120 listings.
