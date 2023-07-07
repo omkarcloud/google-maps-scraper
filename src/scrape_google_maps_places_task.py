@@ -131,6 +131,8 @@ class ScrapeGoogleMapsPlacesTask(BaseTask):
 
                 if tmp_elem is not None:
                     out_dict['img_link'] = tmp_elem.get_attribute("src")
+                else: 
+                    out_dict['img_link'] = ''
 
                 out_dict['link'] = link
                 out_dict['main_category'] = '' if category is None else category.text
