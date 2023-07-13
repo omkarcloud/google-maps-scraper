@@ -57,6 +57,46 @@ class ScrapeGoogleMapsPlacesTask(BaseTask):
 
             return list(filter(fn, ls))
 
+        def get_place_and_cats():
+                data = ['', '']
+                try:
+
+                    data =  driver.execute_script('''
+    function get_categories() {
+        let inputString = window.APP_INITIALIZATION_STATE[3][6]
+        let substringToRemove = ")]}'";
+        
+        let modifiedString
+        if (inputString.startsWith(substringToRemove)) {
+            modifiedString = inputString.slice(substringToRemove.length);
+        } else {
+        }
+        
+        let parsed = JSON.parse (modifiedString);
+        
+        let categories  = parsed [6][13]
+        let place_id  = parsed [6][78]
+        return [place_id, categories]
+    }
+    return get_categories()
+                    ''')
+                except:
+                  print('Failed to get categories and place id')
+
+                
+                place_id = ''
+                all_categories = ''
+
+                
+                place_id = data[0]
+
+                try:
+                    all_categories = ', '.join(data[1])
+                except:
+                    all_categories = ''
+
+                return place_id, all_categories
+
         
         def get_maps_data(links):
             def get_data(link):
@@ -137,30 +177,9 @@ class ScrapeGoogleMapsPlacesTask(BaseTask):
                 out_dict['link'] = link
                 out_dict['main_category'] = '' if category is None else category.text
                 
-                data =  driver.execute_script('''
-function get_categories() {
-    let inputString = window.APP_INITIALIZATION_STATE[3][6]
-    let substringToRemove = ")]}'";
-    
-    let modifiedString
-    if (inputString.startsWith(substringToRemove)) {
-        modifiedString = inputString.slice(substringToRemove.length);
-      } else {
-      }
-    
-    let parsed = JSON.parse (modifiedString);
-    
-    let categories  = parsed [6][13]
-    let place_id  = parsed [6][78]
-    return [place_id, categories]
-}
-return get_categories()
-                ''')
-
-                place_id = data[0]
-                all_categories = data[1]
+                place_id, all_categories = get_place_and_cats()
                 out_dict['place_id'] =  place_id
-                out_dict['categories'] =  ', '.join(all_categories)
+                out_dict['categories'] =  all_categories
 
                 print(out_dict)
                 # driver.prompt()
