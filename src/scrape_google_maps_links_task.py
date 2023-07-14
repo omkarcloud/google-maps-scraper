@@ -75,7 +75,7 @@ class ScrapeGoogleMapsLinksTask(BaseTask):
                         if max_results is None: 
                             pass
                         else: 
-                            els = driver.get_elements_or_none_by_selector('[role="feed"]  [role="article"] > a', Wait.LONG)
+                            els = driver.get_elements_or_none_by_selector('[role="feed"] >  div > div > a', Wait.LONG)
                             if len(els) >= max_results:
                                 return
             
@@ -88,7 +88,7 @@ class ScrapeGoogleMapsLinksTask(BaseTask):
                 return list(map(extract_link, elements))
 
             els = driver.get_elements_or_none_by_selector(
-                '[role="feed"]  [role="article"] > a', Wait.LONG)
+                '[role="feed"] >  div > div > a', Wait.LONG)
             links = extract_links(els)
 
             if max_results is not None:
