@@ -316,7 +316,7 @@ You can also find real estate listings in Delhi and promote your exceptional rea
 Google Maps is seriously a great platform to find B2B customers to sell things to!
 
 
-### ❓ What services do you provide?
+<!-- ### ❓ What services do you provide?
 A: We specialize in developing professional bots. Some of our popular Ready Made Bots, are:
 
 1. **LinkedIn Messaging Bot**: Connect with thousands of LinkedIn users to promote and sell your products.
@@ -328,7 +328,7 @@ A: We specialize in developing professional bots. Some of our popular Ready Made
 
 In addition, we offer Custom Bot Solutions tailored to your specific requirements. 
 
-Let's discuss your requirements further! Feel free to reach out to me at chetan@omkar.cloud.
+Let's discuss your requirements further! Feel free to reach out to me at chetan@omkar.cloud. -->
 
 ### ❓ The code looks well-structured and organized. Most Selenium codebases are messy. How did you do it?
 
@@ -362,6 +362,6 @@ Your star will send me a Telegram Notification, and it will bring a smile to my 
 
 ---
 
-*PS: If you're interested in getting an enhanced version of this scraper capable of extracting 8x more data in the same time, you can reach out to me at chetan@omkar.cloud. The cost is $75, and it will save you 8x more time.*
+<!-- *PS: If you're interested in getting an enhanced version of this scraper capable of extracting 8x more data in the same time, you can reach out to me at chetan@omkar.cloud. The cost is $75, and it will save you 8x more time.* -->
 
 ## Love It? Star It! ⭐
