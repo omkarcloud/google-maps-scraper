@@ -148,19 +148,10 @@ queries = [
 ]
 ```
 
-### ❓ How can I scrape Google Map reviews or obtain hundreds of Google Maps search results?
-A: In addition to our free Google Maps Places Scraper, we offer fairly priced SERP APIs to simplify the process of scraping Google Map reviews or retrieving large volumes of Google Maps search results.
+### ❓ How to Scrape Additional Information like Working Hours, Booking Appointment Link, Price Range?
 
-Here's an example of how our SERP API works. You can access our Serp API [here](https://www.omkar.cloud/l/google-maps-serp-api/).
+We offer a Pro Version of our Google Maps Scraper that enables you to scrape more data points like working hours, booking appointment links, and price range for the scraped locations. Below is an example of the a scraped entry:
 
-```python
-# Search for businesses in specific locations:
-results = client.google_maps_search('restaurants brooklyn usa', limit=20, language='en')
-
-# Get reviews of the specific place by id 
-results = client.google_maps_reviews('ChIJrc9T9fpYwokRdvjYRHT8nI4', reviews_limit=20, language='en')
-```
-*Example Output*
 ```json 
 [
   [
@@ -265,6 +256,7 @@ results = client.google_maps_reviews('ChIJrc9T9fpYwokRdvjYRHT8nI4', reviews_limi
           "Credit cards": true
         }
       },
+      
       "range": "$$$",
       "reviews_per_score": {
         "1": 9,
@@ -285,6 +277,22 @@ results = client.google_maps_reviews('ChIJrc9T9fpYwokRdvjYRHT8nI4', reviews_limi
   ]
 ]
 ```
+Moreover, the Pro Version  is **6** times faster than the Free Version. 
+
+For example, while the Free Version requires **1 hr** to scrape **600** leads, the Pro Version can accomplish the same task in just **10** minutes saving you significant time.
+
+### ❓ How to get the Pro Version?
+
+To obtain the Pro Version of our bot and enjoy the benefits of enriched data and time savings, you will need to sponsor the project with an amount ranging from \$4 to \$40. Follow these simple steps to gain access to Pro Version:
+
+1. Visit the Sponsership Page [here](https://github.com/sponsors/omkarcloud?frequency=one-time)
+2. Select the $4 option, or you may choose a custom amount of your choice.
+
+![](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/sponser.png)
+
+3. In the project's discussion section, leave a comment stating "Sponsored!"
+4. We will identify your email address from your GitHub Profile and send you an email containing the Pro Version of the bot as a Zip File.
+
 
 ### ❓ How much time does it take to scrape "n" searches?
 

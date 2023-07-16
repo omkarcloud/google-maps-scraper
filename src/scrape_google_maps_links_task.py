@@ -15,7 +15,6 @@ class ScrapeGoogleMapsLinksTask(BaseTask):
 
     def get_data(self):
         # Reset queries
-        LocalStorage.set_item('queries', [])
         return queries
 
     def run(self, driver, data):
@@ -100,13 +99,8 @@ class ScrapeGoogleMapsLinksTask(BaseTask):
 
         print(f'Fetched {len(links)} links.')
 
-        
-        queries = LocalStorage.get_item("queries" , [])
 
         data = {"links": links, "query": data}
-        queries.append(data)
-
-        LocalStorage.set_item('queries', queries)
 
         return ScrapeGoogleMapsPlacesTask().run(driver, data)
         # return [{"link": link} for link in links]
