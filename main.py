@@ -6,7 +6,7 @@ msg = '''
 Get access to the Pro Version, offering you:
     - Lightning-fast performance, 6 times faster than the free version.
     - Enhanced data extraction, including Working Hours, Booking Appointment Link, Price Range, and much more.
-Contribute just $4 to access the Pro Version. Learn more at https://github.com/omkarcloud/google-maps-scraper#-how-can-i-filter-google-map-search-results'''
+Contribute only $4 to access the Pro Version. Learn more at https://github.com/omkarcloud/google-maps-scraper#-how-can-i-filter-google-map-search-results'''
 
 def print_pro_bot():
     global msg
