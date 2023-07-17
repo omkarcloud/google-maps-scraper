@@ -150,8 +150,9 @@ queries = [
 
 ### ❓ How to Scrape Additional Information like Working Hours, Booking Appointment Link, Price Range?
 
-We offer a Pro Version of our Google Maps Scraper that enables you to scrape more data points like working hours, booking appointment links, and price range for the scraped locations. Below is an example of the a scraped entry:
+We offer a Pro Version of our Google Maps Scraper that enables you to scrape more data points like working hours, booking appointment links, and price range for the scraped locations. Getting information like Working Hours, Booking Appointment Link and Prices Range greatly assists in Prospecting.
 
+Below is an example of the sample lead scraped by Pro Version:
 ```json 
 [
   [
