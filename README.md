@@ -285,7 +285,7 @@ For example, while the Free Version requires **1 hr** to scrape **600** leads, t
 
 To obtain the Pro Version of our bot and enjoy the benefits of enriched data and time savings, you will need to sponsor the project with an amount ranging from \$4 to \$40. Follow these simple steps to gain access to Pro Version:
 
-1. Visit the Sponsership Page [here](https://github.com/sponsors/omkarcloud?frequency=one-time)
+1. Visit the Sponsership Page [here](https://www.omkar.cloud/l/sponser/)
 2. Select the $4 option, or you may choose a custom amount of your choice.
 
 ![](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/sponser.png)
@@ -293,6 +293,7 @@ To obtain the Pro Version of our bot and enjoy the benefits of enriched data and
 3. In the project's discussion section, leave a comment stating "Sponsored!"
 4. We will identify your email address from your GitHub Profile and send you an email containing the Pro Version of the bot as a Zip File.
 
+Get access to the Pro Version by sponsoring the project [here](https://www.omkar.cloud/l/sponser/), and enjoy enriched data and 6x time savings.
 
 ### ❓ How much time does it take to scrape "n" searches?
 
