@@ -64,7 +64,9 @@ Watch our Product Demo to see the Scraper in action!
 ## 😊 Our Customers
 Don't just take our word for it, these satisfied customers have experienced the utility of our Google Maps Scraper first-hand.
 
-![Customer 1](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/47897781.png)
+![Customers](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/customers.png)
+
+<!-- 
 
 ![Customer 2](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/80034759.png)
 
@@ -86,7 +88,7 @@ Don't just take our word for it, these satisfied customers have experienced the 
 
 ![Customer 11](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/110007659.png)
 
-![Customer 12](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/140389998.png)
+![Customer 12](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/140389998.png) -->
 
 ## 🚀 Purchase It
 
