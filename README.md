@@ -55,7 +55,8 @@ Here is the corrected version of the text with improved grammar:
 - **Save as CSV or JSON**: Data is saved in JSON as well as CSV format. See output data in the formats outlined in the files below:
   - See a sample of the JSON output [here](https://drive.google.com/file/d/19745V8flLE3-m1xSRAB9msv89AiI82_Q/view?usp=sharing).
   - See a sample of the CSV output [here](https://drive.google.com/file/d/1zfEYV126u6cSTXEa0myKq84mDUVGYf3e/view?usp=drive_link).
-  [![csv output](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/csv-output.png)](https://drive.google.com/file/d/1zfEYV126u6cSTXEa0myKq84mDUVGYf3e/view?usp=drive_link)
+
+[![csv output](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/csv-output.png)](https://drive.google.com/file/d/1zfEYV126u6cSTXEa0myKq84mDUVGYf3e/view?usp=drive_link)
 
 ## 🎥 Video Demo [RECOMMENDED]
 Watch our Product Demo to see the Scraper in action!
