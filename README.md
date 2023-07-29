@@ -61,7 +61,7 @@ Here is the corrected version of the text with improved grammar:
 ## 🎥 Video Demo [RECOMMENDED]
 Watch our Product Demo to see the Scraper in action!
 
-[![Google Maps Video Tutorial](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/video.png)](https://www.youtube.com/watch?v=zOlvYakogSU)
+[![Google Maps Video Tutorial](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/video.png)](https://www.omkar.cloud/l/google-maps-scraper-video/)
 
 ## 😊 Our Customers
 Don't just take our word for it, these satisfied customers have experienced the utility of our Google Maps Scraper first-hand.
@@ -101,15 +101,13 @@ The scraper accepts a list of searches and outputs data in the format outlined i
 
 Also, The Scraper costs only $36! The simple payment process is as follows:
 
-1. Make a payment of $36 using one of the following payment methods:
-   - For Indian Customers: Pay INR 2900 via UPI using the provided QR code
-    ![UPI QR](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/chetan-jain-upi-qr.png)
-   - PayPal: Pay $36 via [paypal.me/ChetanJainOmkar](https://paypal.me/ChetanJainOmkar)
-   - Debit/Credit Card Payment: Pay $36 via [Github Sponsors](https://github.com/sponsors/omkarcloud?frequency=one-time)
+Visit Sponsership Page [here](https://github.com/sponsors/omkarcloud?frequency=one-time) and pay $36 by selecting Google Maps Scraper Option.
 
-2. Send an email to chetan@omkar.cloud specifying your payment method and date.
+![Pay](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/pay.gif)
 
-3. The Google Maps Scraper will be delivered within 24 hours as an attachment, along with setup instructions!
+After Payment, The Scraper will be delivered to your Github Email Instantly.
+
+![Mail](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/mail.png)
 
 ## 👋 Book a Demo
 
@@ -125,8 +123,25 @@ Reach out to us at chetan@omkar.cloud, and you will receive a guaranteed respons
 <!-- Next Steps: 
 0. Make Video
 ## Video Demo 
+
   - Make Demo 
     - Delete Output 
+
+
+    Video Flow:
+      1. What it is, show CV File  
+      2. open config.py and show how it 
+      3. run it
+      3.1 wxplain how to buy it 
+      3.2   Card 
+      3.4   PayPAl 
+      3.4   UPI
+      3.6  Get Email 
+      4. Tell Benefi  ts of the Leads generated and buisness it brings, encourage them to get the gmps scraper 
+
+    Upload with same params
+    Done
+
     Ctrl Bed let them see output folder, 
     - Once you bought it, recieve a zip file after exctracting,
        Go to config.py and enter as keywords you want to scrape.
