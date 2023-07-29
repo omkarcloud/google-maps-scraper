@@ -53,10 +53,10 @@ Here is the corrected version of the text with improved grammar:
 - **No Subscription. One Time Payment**: There is no subscription plan. Pay one time, and the scraper is yours forever. We also provide updates for 6 months, so the scraper runs seamlessly when Google updates their website.
 
 - **Save as CSV or JSON**: Data is saved in JSON as well as CSV format. See output data in the formats outlined in the files below:
-  - To view a sample of the JSON output, visit [here](https://drive.google.com/file/d/19745V8flLE3-m1xSRAB9msv89AiI82_Q/view?usp=sharing).
-  - To view a sample of the CSV output, visit [here](https://drive.google.com/file/d/1zfEYV126u6cSTXEa0myKq84mDUVGYf3e/view?usp=drive_link).
+  - See a sample of the JSON output [here](https://drive.google.com/file/d/19745V8flLE3-m1xSRAB9msv89AiI82_Q/view?usp=sharing).
+  - See a sample of the CSV output [here](https://drive.google.com/file/d/1zfEYV126u6cSTXEa0myKq84mDUVGYf3e/view?usp=drive_link).
 
-## 🎥 Video Demo
+## 🎥 Video Demo [RECOMMENDED]
 Watch our Product Demo to see the Scraper in action!
 
 [![Google Maps Video Tutorial](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/video.png)](https://www.youtube.com/watch?v=zOlvYakogSU)
@@ -94,8 +94,8 @@ Don't just take our word for it, these satisfied customers have experienced the 
 
 The scraper accepts a list of searches and outputs data in the format outlined in the files below:
 
-- To view a sample of the JSON output, visit [here](https://drive.google.com/file/d/19745V8flLE3-m1xSRAB9msv89AiI82_Q/view?usp=sharing).
-- To view a sample of the CSV output, visit [here](https://drive.google.com/file/d/1zfEYV126u6cSTXEa0myKq84mDUVGYf3e/view?usp=drive_link).
+- See a sample of the JSON output [here](https://drive.google.com/file/d/19745V8flLE3-m1xSRAB9msv89AiI82_Q/view?usp=sharing).
+- See a sample of the CSV output [here](https://drive.google.com/file/d/1zfEYV126u6cSTXEa0myKq84mDUVGYf3e/view?usp=drive_link).
 
 Also, The Scraper costs only $36! The simple payment process is as follows:
 
@@ -120,7 +120,7 @@ Book a Demo using this [meeting link](https://www.omkar.cloud/l/meet-chetan/)
 Reach out to us at chetan@omkar.cloud, and you will receive a guaranteed response within 24 hours.
 
 ---
-Next Steps: 
+<!-- Next Steps: 
 0. Make Video
 ## Video Demo 
   - Make Demo 
@@ -143,4 +143,4 @@ Next Steps:
 else: 
   - fix image 
 
-Delete Next Steps
+Delete Next Steps -->
