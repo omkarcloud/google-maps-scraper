@@ -103,7 +103,7 @@ Also, The Scraper costs only $36! The simple payment process is as follows:
    - For Indian Customers: Pay INR 2900 via UPI using the provided QR code
     ![UPI QR](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/chetan-jain-upi-qr.png)
    - PayPal: Pay $36 via [paypal.me/ChetanJainOmkar](https://paypal.me/ChetanJainOmkar)
-   - Debit/Credit Card Payment: Pay $36 via [Github Sponsors](https://github.com/sponsors)
+   - Debit/Credit Card Payment: Pay $36 via [Github Sponsors](https://github.com/sponsors/omkarcloud?frequency=one-time)
 
 2. Send an email to chetan@omkar.cloud specifying your payment method and date.
 
