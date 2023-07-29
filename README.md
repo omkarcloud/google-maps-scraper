@@ -61,7 +61,7 @@ Here is the corrected version of the text with improved grammar:
 ## 🎥 Video Demo [RECOMMENDED]
 Watch our Product Demo to see the Scraper in action!
 
-[![Google Maps Video Tutorial](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/video.png)](https://www.omkar.cloud/l/google-maps-scraper-video/)
+[![Google Maps Video Tutorial](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/video.png)](https://youtu.be/k-E8jDpX6dQ)
 
 ## 😊 Our Customers
 Don't just take our word for it, these satisfied customers have experienced the utility of our Google Maps Scraper first-hand.
@@ -120,38 +120,9 @@ Book a Demo using this [meeting link](https://www.omkar.cloud/l/meet-chetan/)
 Reach out to us at chetan@omkar.cloud, and you will receive a guaranteed response within 24 hours.
 
 ---
-<!-- Next Steps: 
-0. Make Video
-## Video Demo 
 
-  - Make Demo 
-    - Delete Output 
-
-
-    Video Flow:
-      1. What it is, show CV File  
-      2. open config.py and show how it 
-      3. run it
-      3.1 wxplain how to buy it 
-      3.2   Card 
-      3.4   PayPAl 
-      3.4   UPI
-      3.6  Get Email 
-      4. Tell Benefi  ts of the Leads generated and buisness it brings, encourage them to get the gmps scraper 
-
-    Upload with same params
-    Done
-
-    Ctrl Bed let them see output folder, 
-    - Once you bought it, recieve a zip file after exctracting,
-       Go to config.py and enter as keywords you want to scrape.
-       Scrape them
-       Show Json File
-    - Google Maps Scraper Pro
-    - Scrape 20 Results
-    - As you can see the results are scraped
-    - Show Them. 
-  - 
+<!-- 
+  Testimonial 
 1. Github Sponors Change Price to $36
 3. Push ItG
 
