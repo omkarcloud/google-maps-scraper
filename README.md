@@ -61,7 +61,7 @@ Here is the corrected version of the text with improved grammar:
 ## 🎥 Video Demo [RECOMMENDED]
 Watch our Product Demo to see the Scraper in action!
 
-[![Google Maps Video Tutorial](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/video.png)](https://youtu.be/k-E8jDpX6dQ)
+[![Google Maps Video Tutorial](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/video.png)](https://www.youtube.com/watch?v=k-E8jDpX6dQ)
 
 ## 😊 Our Customers
 Don't just take our word for it, these satisfied customers have experienced the utility of our Google Maps Scraper first-hand.
@@ -120,15 +120,3 @@ Book a Demo using this [meeting link](https://www.omkar.cloud/l/meet-chetan/)
 Reach out to us at chetan@omkar.cloud, and you will receive a guaranteed response within 24 hours.
 
 ---
-
-<!-- 
-  Testimonial 
-1. Github Sponors Change Price to $36
-3. Push ItG
-
-3.1 If not working within 1 week 
-  - 4. Code Canyon Upload
-else: 
-  - fix image 
-
-Delete Next Steps -->
