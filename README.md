@@ -30,13 +30,11 @@
 
 🌟 Get 120 Leads in 2.5 Minutes! 🤖
 
-Here is the corrected version of the text with improved grammar:
-
 ## 🌟 Overview
 
 **Google Maps Scraper** is the ultimate tool for scraping Google Maps listings at a speed of 120 listings per 2.5 minutes! The benefits that set **Google Maps Scraper** apart are:
 
-- **Fast Scraper**: In just 2.5 minutes, our Scraper can scrape 120 listings.
+- **Fast Scraper**: In just 2.5 minutes, our scraper can scrape 120 listings.
 
 - **Filter Places**: You can filter out places based on ratings, reviews, and the presence or absence of a website or phone number.
 
@@ -48,7 +46,7 @@ Here is the corrected version of the text with improved grammar:
 
 - **Multiple Searches**: You can scrape multiple searches in a single run.
 
-- **Powered by Python**: Our Python Scraper uses parallel processing with Selenium to save you time.
+- **Powered by Python**: Our Python scraper uses parallel processing with Selenium to save you time.
 
 - **No Subscription. One Time Payment**: There is no subscription plan. Pay one time, and the scraper is yours forever. We also provide updates for 6 months, so the scraper runs seamlessly when Google updates their website.
 
@@ -68,29 +66,6 @@ Don't just take our word for it, these satisfied customers have experienced the 
 
 ![Customers](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/customers.png)
 
-<!-- 
-
-![Customer 2](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/80034759.png)
-
-![Customer 3](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/140355018.png)
-
-![Customer 4](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/11330822.png)
-
-![Customer 5](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/12696875.png)
-
-![Customer 6](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/20030930.png)
-
-![Customer 7](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/23493776.png)
-
-![Customer 8](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/24499228.png)
-
-![Customer 9](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/29509374.png)
-
-![Customer 10](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/31059433.png)
-
-![Customer 11](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/110007659.png)
-
-![Customer 12](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/140389998.png) -->
 
 ## 🚀 Purchase It
 
@@ -99,24 +74,25 @@ The scraper accepts a list of searches and outputs data in the format outlined i
 - See a sample of the JSON output [here](https://drive.google.com/file/d/19745V8flLE3-m1xSRAB9msv89AiI82_Q/view?usp=sharing).
 - See a sample of the CSV output [here](https://drive.google.com/file/d/1zfEYV126u6cSTXEa0myKq84mDUVGYf3e/view?usp=drive_link).
 
-Also, The Scraper costs only $36! The simple payment process is as follows:
+Also, the Scraper costs only $36! The simple payment process is as follows:
 
-Visit Sponsership Page [here](https://github.com/sponsors/omkarcloud?frequency=one-time) and pay $36 by selecting Google Maps Scraper Option.
+Visit the Sponsorship Page [here](https://github.com/sponsors/omkarcloud?frequency=one-time) and pay $36 by selecting the Google Maps Scraper option.
 
 ![Pay](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/pay.gif)
 
-After Payment, The Scraper will be delivered to your Github Email Instantly.
+After payment, the Scraper will be delivered to your Github email instantly.
 
 ![Mail](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/mail.png)
 
-## 👋 Book a Demo
+## 🤔 Book a Demo
 
-Not sure about the Google Maps Scraper? Book a Demo! We'll scrape your chosen places right in front of you, so you can be guaranteed of the quality of our Google Maps Scraper.
+Still unsure about the Google Maps Scraper? Why not book a demo! We'll scrape your selected places right in front of you, guaranteeing the quality of our Google Maps Scraper.
 
-Book a Demo using this [meeting link](https://www.omkar.cloud/l/meet-chetan/)
+This is a RISK-FREE way to see the scraper in action before purchasing. We encourage you to book a free demo with our experts using this [meeting link](https://www.omkar.cloud/l/meet-chetan/).
 
-## 🤔 Have Questions
+## 👋 Have Questions?
 
 Reach out to us at chetan@omkar.cloud, and you will receive a guaranteed response within 24 hours.
 
+## Dhanyawad 🙏
 ---
