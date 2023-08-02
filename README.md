@@ -77,7 +77,7 @@ The simple payment process to get Google Maps Scraper is as follows:
 2. Send Email to chetan@omkar.cloud with following template. Replace YOUR_GITHUB_USERNAME with your github username.
 ```
 Subject: Request Scraper
-Content: I have starred the repository as YOUR_GITHUB_USERNAME. Kindly send the scraper.
+Content: I have starred the repository as YOUR_GITHUB_USERNAME. Kindly send the scraper and you can start scraping google map leads.
 ```
 3. The Scraper will be delivered to you within 24 hours.
 
