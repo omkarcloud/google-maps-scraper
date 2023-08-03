@@ -342,3 +342,7 @@ For example, you can search for restaurants in Amritsar and pitch your web devel
 You can also find real estate listings in Delhi and promote your exceptional real estate software.
 
 Google Maps is seriously a great platform to find B2B customers to sell things to!
+
+## Love It Star It!
+
+[![Stargazers repo roster for @omkarcloud/google-maps-scraper](https://reporoster.com/stars/omkarcloud/google-maps-scraper)](https://github.com/omkarcloud/google-maps-scraper/stargazers)
