@@ -324,6 +324,9 @@ Content: I have starred the repository as YOUR_GITHUB_USERNAME. Kindly send the 
 ```
 3. The Pro Scraper will be delivered to you within 24 hours and you can start scraping google map leads.
 
+![Star the Repository](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/scraper.png)
+
+
 ### ❓ How much time does it take to scrape "n" searches?
 
 On average, each Google Maps search gives 120 listings. It takes approximately 10 minutes to scrape these 120 listings.
