@@ -311,6 +311,6 @@ This is a Temporary Bug due which occurs in Chrome 115 due to `chromedriver-auto
 
 ## Love It Star It!
 
-If you've found our work helpful, please consider starring us for a token of gratitude on our Discussion Page at https://github.com/omkarcloud/google-maps-scraper/discussions/3
+If you've found our work helpful, please consider starring us for a token of gratitude on our Discussion Page [here](https://github.com/omkarcloud/google-maps-scraper/discussions/21)
 
 [![Stargazers repo roster for @omkarcloud/google-maps-scraper](https://reporoster.com/stars/omkarcloud/google-maps-scraper)](https://github.com/omkarcloud/google-maps-scraper/stargazers)
