@@ -28,27 +28,26 @@
 
 ---
 
-🌟 Get 120 Leads in 10 Minutes! 🤖
+🌟 Get 120 Leads in 2.5 Minutes! 🤖
 
 
 ## 🌟 Overview
 
-Welcome to the Google Maps Scraper, a powerful scraper designed to scrape upto 1200 Google Map Leads in just 1.6 Hours .
+Welcome to the Google Maps Scraper, a powerful scraper designed to scrape upto 1200 Google Map Leads in just 25 minutes.
 
 If you're looking to grow your business by connecting with potential leads discovered using Google Maps, but want to avoid the hassle of manually gathering leads from each Google Maps by copying and pasting, you've come at the Right Place.
 
 This Google Maps Scraper is well maintained and and saves data in both CSV and JSON formats for easy use. 
 
-Below is a sample showing the data that will be generated as CSV and JSON:
+Note that the scraper generates 30 Data Points. For simplicity, the table below shows the most important data points that will be generated in both CSV and JSON formats:
 
-|title                |rating|number_of_reviews|address                                                                                                                    |img_link                                                                                       |link                                                                                                                                                                                                                 |main_category      |place_id                   |categories                                                                                                        |
-|---------------------|------|-----------------|---------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------|---------------------------|------------------------------------------------------------------------------------------------------------------|
-|Tamasha              |4.1   |12483            |In Anand House, A 28, KG Marg, Connaught Place, New Delhi, Delhi 110001                                                    |https://lh5.googleusercontent.com/p/AF1QipOFfAmtHyXBBWAAPqL8ifQSgDW98xOGa7_WYpmA=w426-h240-k-no|https://www.google.com/maps/place/Tamasha/data=!4m7!3m6!1s0x390cfd369e6964e7:0x304898e2f2d5e7a1!8m2!3d28.6298016!4d77.2218419!16s%2Fg%2F11cmr16zjb!19sChIJ52Rpnjb9DDkRoefV8uKYSDA?authuser=0&hl=en&rclk=1            |Restaurant         |ChIJ52Rpnjb9DDkRoefV8uKYSDA|Restaurant, Bar, Continental restaurant, Italian restaurant, North Indian Restaurant                              |
-|Indian Accent        |4.7   |8152             |The Lodhi, Lodhi Rd, CGO Complex, Pragati Vihar, New Delhi, Delhi 110003                                                   |https://lh5.googleusercontent.com/p/AF1QipMRaSvBkBK3ipKoWei-gn3IEW-2NBRwVLS-CuR-=w627-h240-k-no|https://www.google.com/maps/place/Indian+Accent/data=!4m7!3m6!1s0x390cfd309eebed77:0xfd133b52e7612c26!8m2!3d28.5918336!4d77.2382224!16s%2Fg%2F11c561vl9w!19sChIJd-3rnjD9DDkRJixh51I7E_0?authuser=0&hl=en&rclk=1      |Restaurant         |ChIJd-3rnjD9DDkRJixh51I7E_0|Restaurant, Asian restaurant, Bar, European restaurant, Fine dining restaurant, Indian restaurant                 |
-|Olive Bar & Kitchen  |4.6   |6528             |Mile 6, One Style, 8, Kalka Das Marg, Seth Sarai, Mehrauli, New Delhi, Delhi 110030                                        |https://lh5.googleusercontent.com/p/AF1QipNv1aHvISiSOPyM0tECLKe5-ND_N5s-p6ZTeKMv=w408-h306-k-no|https://www.google.com/maps/place/Olive+Bar+%26+Kitchen/data=!4m7!3m6!1s0x390ce2f15b20d0fd:0xaaa8607911b1bdf!8m2!3d28.5257701!4d77.1841311!16s%2Fg%2F1q64qjzb6!19sChIJ_dAgW_HiDDkR3xsbkQeGqgo?authuser=0&hl=en&rclk=1|European restaurant|ChIJ_dAgW_HiDDkR3xsbkQeGqgo|European restaurant, Bar, Cafe, Fine dining restaurant, Italian restaurant, Mediterranean restaurant, Restaurant  |
-|Kiyan                |4.7   |639              |NH-8, Samalkha, New Delhi, Delhi 110037                                                                                    |https://lh5.googleusercontent.com/p/AF1QipM_HsL2Xojc7nHdzW14rV2Cv3joGalRODYx2fZF=w408-h278-k-no|https://www.google.com/maps/place/Kiyan/data=!4m7!3m6!1s0x390d1c07eff4422b:0x8abf827be567fe7e!8m2!3d28.531523!4d77.103096!16s%2Fg%2F1pwfbhfv9!19sChIJK0L07wccDTkRfv5n5XuCv4o?authuser=0&hl=en&rclk=1                 |Fine dining restaurant|ChIJK0L07wccDTkRfv5n5XuCv4o|Fine dining restaurant, Breakfast restaurant, Continental restaurant, European restaurant, Mughlai Restaurant, North Indian Restaurant, Thai restaurant|
-|Thyme Restaurant - The Umrao|4.5   |555              |National Highway 8, Rajokri Rd, D Block, Samalkha, Pushpanjali Farms, New Delhi, Delhi 110037                              |https://lh5.googleusercontent.com/p/AF1QipPhEscYrXx_m8po3qEbaeA54iOslEhRA2CXgP_Y=w408-h247-k-no|https://www.google.com/maps/place/Thyme+Restaurant+-+The+Umrao/data=!4m7!3m6!1s0x390d1bfec9e42687:0x14d497d545bba4b!8m2!3d28.525558!4d77.098439!16s%2Fg%2F11b5wq57rd!19sChIJhybkyf4bDTkRS7pbVH1JTQE?authuser=0&hl=en&rclk=1|Fine dining restaurant|ChIJhybkyf4bDTkRS7pbVH1JTQE|Fine dining restaurant, Breakfast restaurant, Chinese restaurant, Continental restaurant                          |
-
+|title                |rating|number_of_reviews|address                                                                                                                    |website                                                                                 |phone      |img_link                                                                                       |link                                                                                                                                                                                                                 |main_category      |place_id                   |categories                                                                                                        |
+|---------------------|------|-----------------|---------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------|-----------|-----------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------|---------------------------|------------------------------------------------------------------------------------------------------------------|
+|Tamasha              |4.1   |12483            |In Anand House, A 28, KG Marg, Connaught Place, New Delhi, Delhi 110001                                                    |https://website-tamasha-restaurant.business.site/?utm_source=gmb&utm_medium=referral    |9999477661 |https://lh5.googleusercontent.com/p/AF1QipOFfAmtHyXBBWAAPqL8ifQSgDW98xOGa7_WYpmA=w426-h240-k-no|https://www.google.com/maps/place/Tamasha/data=!4m7!3m6!1s0x390cfd369e6964e7:0x304898e2f2d5e7a1!8m2!3d28.6298016!4d77.2218419!16s%2Fg%2F11cmr16zjb!19sChIJ52Rpnjb9DDkRoefV8uKYSDA?authuser=0&hl=en&rclk=1            |Restaurant         |ChIJ52Rpnjb9DDkRoefV8uKYSDA|Restaurant, Bar, Continental restaurant, Italian restaurant, North Indian Restaurant                              |
+|Indian Accent        |4.7   |8152             |The Lodhi, Lodhi Rd, CGO Complex, Pragati Vihar, New Delhi, Delhi 110003                                                   |https://indianaccent.com/newdelhi                                                       |1166175151 |https://lh5.googleusercontent.com/p/AF1QipMRaSvBkBK3ipKoWei-gn3IEW-2NBRwVLS-CuR-=w627-h240-k-no|https://www.google.com/maps/place/Indian+Accent/data=!4m7!3m6!1s0x390cfd309eebed77:0xfd133b52e7612c26!8m2!3d28.5918336!4d77.2382224!16s%2Fg%2F11c561vl9w!19sChIJd-3rnjD9DDkRJixh51I7E_0?authuser=0&hl=en&rclk=1      |Restaurant         |ChIJd-3rnjD9DDkRJixh51I7E_0|Restaurant, Asian restaurant, Bar, European restaurant, Fine dining restaurant, Indian restaurant                 |
+|Olive Bar & Kitchen  |4.6   |6528             |Mile 6, One Style, 8, Kalka Das Marg, Seth Sarai, Mehrauli, New Delhi, Delhi 110030                                        |http://www.olivebarandkitchen.com/                                                      |9910457373 |https://lh5.googleusercontent.com/p/AF1QipNv1aHvISiSOPyM0tECLKe5-ND_N5s-p6ZTeKMv=w408-h306-k-no|https://www.google.com/maps/place/Olive+Bar+%26+Kitchen/data=!4m7!3m6!1s0x390ce2f15b20d0fd:0xaaa8607911b1bdf!8m2!3d28.5257701!4d77.1841311!16s%2Fg%2F1q64qjzb6!19sChIJ_dAgW_HiDDkR3xsbkQeGqgo?authuser=0&hl=en&rclk=1|European restaurant|ChIJ_dAgW_HiDDkR3xsbkQeGqgo|European restaurant, Bar, Cafe, Fine dining restaurant, Italian restaurant, Mediterranean restaurant, Restaurant  |
+|Kiyan                |4.7   |639              |NH-8, Samalkha, New Delhi, Delhi 110037                                                                                    |http://www.roseatehotels.com/newdelhi/theroseate/dine/kiyan/                            |1130158676 |https://lh5.googleusercontent.com/p/AF1QipM_HsL2Xojc7nHdzW14rV2Cv3joGalRODYx2fZF=w408-h278-k-no|https://www.google.com/maps/place/Kiyan/data=!4m7!3m6!1s0x390d1c07eff4422b:0x8abf827be567fe7e!8m2!3d28.531523!4d77.103096!16s%2Fg%2F1pwfbhfv9!19sChIJK0L07wccDTkRfv5n5XuCv4o?authuser=0&hl=en&rclk=1                 |Fine dining restaurant|ChIJK0L07wccDTkRfv5n5XuCv4o|Fine dining restaurant, Breakfast restaurant, Continental restaurant, European restaurant, Mughlai Restaurant, North Indian Restaurant, Thai restaurant|
+|Thyme Restaurant - The Umrao|4.5   |555              |National Highway 8, Rajokri Rd, D Block, Samalkha, Pushpanjali Farms, New Delhi, Delhi 110037                              |https://theumrao.com/dining                                                             |1147707050 |https://lh5.googleusercontent.com/p/AF1QipPhEscYrXx_m8po3qEbaeA54iOslEhRA2CXgP_Y=w408-h247-k-no|https://www.google.com/maps/place/Thyme+Restaurant+-+The+Umrao/data=!4m7!3m6!1s0x390d1bfec9e42687:0x14d497d545bba4b!8m2!3d28.525558!4d77.098439!16s%2Fg%2F11b5wq57rd!19sChIJhybkyf4bDTkRS7pbVH1JTQE?authuser=0&hl=en&rclk=1|Fine dining restaurant|ChIJhybkyf4bDTkRS7pbVH1JTQE|Fine dining restaurant, Breakfast restaurant, Chinese restaurant, Continental restaurant                          |
 
 ## 🚀 Getting Started
 
@@ -115,11 +114,13 @@ A: You have the option to apply filters to your Google Maps search results using
 1. min_rating
 2. min_reviews
 3. max_reviews
+4. has_phone
+5. has_website
 
 
 To specify filters, open `src/config.py` and specify your filters. 
 
-The Following example will scrape only those listings with a minimum of 5 reviews, and a maximum of 100 reviews
+The Following example will scrape only those listings with a minimum of 5 reviews, a maximum of 100 reviews, and a phone number.
 
 ```python
 queries = [
@@ -127,9 +128,114 @@ queries = [
         "keyword": "restaurants in delhi",
         "min_reviews": 5 ,
         "max_reviews": 100,
+        "has_phone": True,
     },
 ]
 ```
+
+
+### ❓ How to sort by reviews, rating, or title?
+
+To sort your results by reviews, rating, or title, follow these steps:
+
+Open the file `src/config.py` and set the `sort` key. 
+
+For example, to sort by reviews in descending order, modify the code as follows:
+
+```python
+queries = [
+    {
+        "keyword": "stupas in kathmandu",
+        "sort": {
+            "by": "reviews",
+            "order": "desc",
+        },
+    },
+]
+```
+
+You can sort by any field, such as `reviews`, `main_category`, `title`, `rating`, or any other field. Here are some common sort examples:
+
+1. Sort by `reviews` count in descending order:
+```python
+        "sort": {
+            "by": "reviews",
+            "order": "desc",
+        },
+```
+
+2. Sort by `main_category` in ascending order:
+```python
+        "sort": {
+            "by": "main_category",
+            "order": "asc",
+        },
+```
+
+3. Sort by `title` in ascending order:
+```python
+        "sort": {
+            "by": "title",
+            "order": "asc",
+        },
+```
+
+4. Sort by `rating` in descending order:
+```python
+        "sort": {
+            "by": "rating",
+            "order": "desc",
+        },
+```
+
+### ❓ How to select specific Fields?
+If you want to select specific fields to be output in your CSV and JSON files, you can do so by following these steps:
+
+1.  Open `src/config.py`.
+2.  Modify the `select` key to include the fields you want to select.
+
+For example, if you want to select "title", "link", "main_category", "rating", "reviews", "website", "phone", and "address", you should adjust the code as follows:
+
+```python
+queries = [
+    {
+        "keyword": "stupas in kathmandu",
+        "select": ["title", "link", "main_category", "rating", "reviews",  "website", "phone" , "address"],
+    },
+]
+```
+
+You are free to select any field. Here are a couple of common field selections:
+
+1. Standard field selection:
+```python
+        "select": ["title", "link", "main_category", "rating", "reviews",  "website", "phone" , "address"],
+```
+
+2. Selection of all fields (Default):
+```python
+        "select": "ALL",
+```
+
+
+### ❓ How to increase the speed of the Scraper?
+
+To boost the scraping speed, the scraper launches multiple browsers simultaneously. Here's how you can increase the speed furthur:
+
+- Adjust the `number_of_scrapers` variable in the configuration file. Recommended values are:
+  - Standard laptop: 4 or 8
+  - Powerful laptop: 12 or 16
+
+Note: Avoid setting `number_of_scrapers` above 16, as Google Maps typically returns only 120 results. Using more than 16 scrapers may lead to a longer time spent on launching the scrapers than on scraping the places. Hence, it is best to stick to 4, 8, 12, or 16.
+
+In case you encounter any issues, like the scraper crashing due to low-end PC specifications, follow these recommendations:
+
+- Reduce the `number_of_scrapers` by 4 points.
+- Ensure you have sufficient storage (at least 4 GB) available, as running multiple browser instances consumes storage space.
+- Close other applications on your computer to free up memory.
+
+Additionally, consider improving your internet speed to further enhance the scraping process.
+
 
 ### ❓ Can I scrape more than one query using this script?
 A: Absolutely! Open `src/config.py` and add as many queries as you like. 
@@ -146,184 +252,40 @@ queries = [
 ]
 ```
 
-### ❓ How to Scrape Additional Information like Website, Phone, Working Hours, Booking Appointment Link, Price Range?
 
-We offer a Pro Version of our Google Maps Scraper that enables you to scrape more data points like working hours, booking appointment links, and price range for the scraped locations. Getting information like Working Hours, Booking Appointment Link and Prices Range greatly assists in Prospecting.
+### ❓ How to scrape emails and social links like Twitter and Facebook of Shop Owners?
 
-Below is an example of the sample lead scraped by Pro Version:
-```json 
-{
-    "title": "The GT Road",
-    "link": "https://www.google.com/maps/place/The+GT+Road/data=!4m7!3m6!1s0x390cfd372e5302e9:0x6794ee3f98499539!8m2!3d28.6331276!4d77.2227344!16s%2Fg%2F11c6q8wqnx!19sChIJ6QJTLjf9DDkROZVJmD_ulGc?authuser=0&hl=en&rclk=1",
-    "main_category": "Barbecue restaurant",
-    "rating": 4.3,
-    "reviews": 9984,
-    "website": null,
-    "phone": "097177 20084",
-    "address": "The GT Road, M-39, Shankar Market, Block M, Connaught Place, New Delhi, Delhi 110001",
-    "place_id": "ChIJ6QJTLjf9DDkROZVJmD_ulGc",
-    "status": "Open \u22c5 Closes 3:30\u202fpm \u22c5 Reopens 7\u202fpm",
-    "price_range": "\u20b9\u20b9",
-    "description": null,
-    "reviews_per_rating": {
-        "1": 385,
-        "2": 250,
-        "3": 893,
-        "4": 2906,
-        "5": 5550
-    },
-    "reviews_link": "https://search.google.com/local/reviews?placeid=ChIJ6QJTLjf9DDkROZVJmD_ulGc&q=The+GT+Road&authuser=0&hl=en&gl=IN",
-    "thumbnail": "https://lh5.googleusercontent.com/p/AF1QipMc3kD_A5V7Lcons7yB5pcF7yY4BMGyFXfjqZw5=w408-h271-k-no",
-    "images": [
-        {
-            "thumbnail": "https://lh5.googleusercontent.com/p/AF1QipMc3kD_A5V7Lcons7yB5pcF7yY4BMGyFXfjqZw5=w447-h298-k-no",
-            "title": "All"
+Google Maps does not display the emails and social links of shop owners. However, it does show the owner's Google profile, which we scrape and store in the `owner` field as shown below:
+
+```json
+        "owner": {
+            "id": "102395794819517641473",
+            "link": "https://www.google.com/maps/contrib/102395794819517641473",
+            "name": "38 Barracks Restaurant and Bar (Owner)"
         },
-        ...
-    ],
-    "hours": [
-        {
-            "day": "Monday",
-            "times": [
-                "12\u20133:30\u202fpm",
-                "7\u202fpm\u201312\u202fam"
-            ]
-        },
-        ...
-    ],
-    "menu": {
-        "link": null,
-        "source": null
-    },
-    "order_online_links": [
-        {
-            "link": "https://www.dineout.co.in/delhi/the-gt-road-connaught-place-central-delhi-31393",
-            "source": "dineout.co.in"
-        },
-        {
-            "link": "https://www.eazydiner.com/delhi-ncr/the-gt-road-connaught-place-cp-central-delhi-643774",
-            "source": "eazydiner.com"
-        }
-    ],
-    "reservations": [
-        {
-            "link": "https://www.dineout.co.in/delhi/the-gt-road-connaught-place-central-delhi-31393",
-            "source": "dineout.co.in"
-        },
-        {
-            "link": "https://www.eazydiner.com/delhi-ncr/the-gt-road-connaught-place-cp-central-delhi-643774",
-            "source": "eazydiner.com"
-        }
-    ],
-    "owner": {
-        "id": "102128808953878746577",
-        "link": "https://www.google.com/maps/contrib/102128808953878746577",
-        "name": "The GT Road (Owner)"
-    },
-    "categories": [
-        "Barbecue restaurant",
-        "Afghan restaurant",
-        "Buffet restaurant",
-        "Mughlai Restaurant",
-        "North Indian Restaurant",
-        "Restaurant"
-    ],
-    "coordinates": {
-        "latitude": 28.633127599999998,
-        "longitude": 77.2227344
-    },
-    "plus_code": "J6MF+73 New Delhi, Delhi",
-    "complete_address": {
-        "borough": "Shankar Market, Block M, Connaught Place",
-        "city": "New Delhi",
-        "country_code": "IN",
-        "postal_code": "110001",
-        "state": "Delhi",
-        "street": "M-39"
-    },
-    "time_zone": "Asia/Calcutta",
-    "about": [
-        {
-            "id": "service_options",
-            "name": "Service options",
-            "options": [
-                {
-                    "enabled": true,
-                    "name": "Kerbside pickup"
-                },
-                {
-                    "enabled": true,
-                    "name": "No-contact delivery"
-                },
-                {
-                    "enabled": true,
-                    "name": "Delivery"
-                },
-                {
-                    "enabled": true,
-                    "name": "Takeaway"
-                },
-                {
-                    "enabled": true,
-                    "name": "Dine-in"
-                }
-            ]
-        },
-        ...
-    ],
-    "user_reviews": [
-        {
-            "description": "This is the best place to have buffet with reasonable price. Amazing varieties in both veg and non-veg. Starting with grilled barbeque delicacies with some good main course. The desserts have amazing varieties as well. The staff is very courteous and ambience is good as well. Been there 4-5 times and never got disappointed. Must go place in Delhi for having buffet.",
-            "images": [
-                "https://lh5.googleusercontent.com/p/AF1QipP6VVoRDN4zkUQoO83f2g8_UR3xJBvUpIhsWyH1=w150-h150-k-no-p",
-                "https://lh5.googleusercontent.com/p/AF1QipPCLpnyV69Z7msHAbVR5CfFBoRN1WWsLW56RxHr=w150-h150-k-no-p",
-                "https://lh5.googleusercontent.com/p/AF1QipPb-4l2XVkr9PMPeKIuGQXjSJl_5LLm4qaUBStA=w150-h150-k-no-p",
-                "https://lh5.googleusercontent.com/p/AF1QipPBVNpaLDM9pbG5MxHE33Kw8b_i-JQ13tm4jc7_=w150-h150-k-no-p",
-                "https://lh5.googleusercontent.com/p/AF1QipPwV_xGCzTFQqFj3lCay_lobbUgTpoVDGP29D8a=w150-h150-k-no-p",
-                "https://lh5.googleusercontent.com/p/AF1QipP-L2M9nPtfjBwZEcLQs-bmWt8x2KpSX9sEYLjC=w150-h150-k-no-p",
-                "https://lh5.googleusercontent.com/p/AF1QipPIZWv_JB4VQ6ohArUovoYdmeRrlfFMZRx4x01p=w150-h150-k-no-p"
-            ],
-            "name": "mitul srivastava",
-            "profile_picture": "https://lh3.googleusercontent.com/a-/AD_cMMReBC-mV4eJX3vlAaBsIhonvET4UzDCxReaiuRQL2AGSa8=s120-c-rp-mo-ba3-br100",
-            "rating": 5,
-            "when": "a month ago"
-        },
-        ...
-    ],
-    "cid": "7463852439365063993",
-    "data_id": "0x390cfd372e5302e9:0x6794ee3f98499539"
-}
 ```
-Moreover, the Pro Version  is **3** times faster than the Free Version. 
 
-<!-- For example, while the Free Version requires **1 hr** to scrape **600** leads, the Pro Version can accomplish the same task in just **20** minutes saving you significant time. -->
+To obtain the shop owner's emails and social links, you have two options:
 
-### ❓ How to get the Pro Version?
+1. Visit the website of each shop and manually find the contact details.
+2. Use the Contact Details Scraper by vdrmota, available [here](https://www.omkar.cloud/l/contact-info-scraper/), to automatically scrape the contact details.
 
-Follow these simple steps:
+If you are using the Google Maps Scraper for prospecting and selling your products or services, it is recommended to manually visit the first 100 lead's websites. This will provide you with a better understanding of your prospects. Also, the task of finding contact details from 100 websites, can be done within 2 hours if you work with focus and speed.
 
-1. Star the Repository 
-![Star the Repository](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/star.png)
-
-2. Send Email to chetan@omkar.cloud with following template. Replace YOUR_GITHUB_USERNAME with your github username.
-```
-Subject: Request Scraper
-Content: I have starred the repository as YOUR_GITHUB_USERNAME. Kindly send the scraper.
-```
-3. The Pro Scraper will be delivered to you within 24 hours and you can start scraping google map leads.
-
-![Star the Repository](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/scraper.png)
+Once you have validated the success of your Google Maps scraper strategy, you can scale up your efforts using the [Contact Details Scraper](https://www.omkar.cloud/l/contact-info-scraper/), which is also quite affordable.
 
 
 ### ❓ How much time does it take to scrape "n" searches?
 
-On average, each Google Maps search gives 120 listings. It takes approximately 10 minutes to scrape these 120 listings.
+On average, each Google Maps search gives 120 listings. It takes approximately 2.5 minutes to scrape these 120 listings.
 
 To calculate the number of **hours** it takes to scrape "n" searches, you can **google search** this formula substituting `n` with number of searches you want to conduct:
 
-`n * 10 minutes in hour`
+`n * 2.5 minutes`
 
-For example, if you want to scrape 10 google map queries or 1200 listings, it will take around 1.6 hours.
+For example, if you want to scrape 10 google map queries or 1200 listings, it will take around 25m.
+
+![](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/search-time.png)
 
 ### ❓ How can I utilize the data obtained from Google Maps?
 A: Most people scrape Google Maps Listings to sell things!
@@ -335,7 +297,7 @@ You can also find real estate listings in Delhi and promote your exceptional rea
 Google Maps is seriously a great platform to find B2B customers to sell things to!
 
 
-### ❓ I am seeing error like: “FileNotFoundError: [Errno 2] No such file or directory: 'build/115/chromedriver.exe” when running “python main.py”
+## ❓ I am seeing error like: "FileNotFoundError: [Errno 2] No such file or directory: 'build/115/chromedriver.exe' when running 'python main.py'"
 
 This is a Temporary Bug due which occurs in Chrome 115 due to `chromedriver-autoinstaller`  dependency. The fix is to:
 
@@ -348,5 +310,7 @@ This is a Temporary Bug due which occurs in Chrome 115 due to `chromedriver-auto
 4. Run `python main.py` and program should run successfully.
 
 ## Love It Star It!
+
+If you've found our work helpful, please consider starring us for a token of gratitude on our Discussion Page at https://github.com/omkarcloud/google-maps-scraper/discussions/3
 
 [![Stargazers repo roster for @omkarcloud/google-maps-scraper](https://reporoster.com/stars/omkarcloud/google-maps-scraper)](https://github.com/omkarcloud/google-maps-scraper/stargazers)
