@@ -39,7 +39,7 @@ Welcome to the Google Maps Scraper, a powerful scraper designed to scrape up to 
 2. Scrapes **30** Data Points including website, phone, category, owner, geo-coordinates, and **26** more data points. Even the ones that are not publicly shown in Google Maps, so you have all the data you need.
 3. You can sort, select and filter the leads to get you the leads relevant to your Business.
 4. You can scrape multiple queries in one go.
-5. Scrapes Data in Real Time, so you have the most up to data.
+5. Scrapes Data in Real Time, so you have the latest data.
 6. Saves Data as both JSON and CSV for easy usage.
 
 
