@@ -33,13 +33,14 @@
 
 ## 🌟 Overview
 
-Welcome to the Google Maps Scraper, a powerful scraper designed to scrape upto 1200 Google Map Leads in just 25 minutes.
+Welcome to the Google Maps Scraper, a powerful scraper designed to scrape up to 1200 Google Map Leads in just 25 minutes. Its Top Features are:
 
-If you're looking to grow your business by connecting with potential leads discovered using Google Maps, but want to avoid the hassle of manually gathering leads from each Google Maps by copying and pasting, you've come at the Right Place.
+- Scrapes **1200** Google Map Leads in just **25** minutes giving you lots of prospects to make potential sales.
+- Scrapes **30** Data Points including website, phone, category, owner, geo-coordinates, and **26** more data points. Even the ones that are not publicly shown in Google Maps, so you have all the data you need.
+- Saves Data as both JSON and CSV for easy usage.
+- You can sort, select and filter the leads to get you the leads relevant to your Business.
 
-This Google Maps Scraper is well maintained and and saves data in both CSV and JSON formats for easy use. 
-
-Note that the scraper generates 30 Data Points. For simplicity, the table below shows the most important data points that will be generated in both CSV and JSON formats:
+The Table below shows the most important data points that will be generated in both CSV and JSON formats:
 
 |title                |rating|number_of_reviews|address                                                                                                                    |website                                                                                 |phone      |img_link                                                                                       |link                                                                                                                                                                                                                 |main_category      |place_id                   |categories                                                                                                        |
 |---------------------|------|-----------------|---------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------|-----------|-----------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------|---------------------------|------------------------------------------------------------------------------------------------------------------|
@@ -93,8 +94,9 @@ queries = [
     },
 ]
 ```
+Note: You will be able to scrape up to 120 leads per search due to Google's scrolling limitation. 
 
-### ❓ I want to scrape search results for a specific business in a particular location. How can I achieve that?
+### ❓ I want to scrape search results for a specific search query. How can I achieve that?
 A: Open the file `src/config.py` and update the `keyword` with your desired search query. 
 
 For example, if you want to scrape data about stupas in Kathmandu 🇳🇵, modify the code as follows:
