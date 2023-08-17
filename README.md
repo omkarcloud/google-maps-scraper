@@ -314,8 +314,18 @@ This is a Temporary Bug due which occurs in Chrome 115 due to `chromedriver-auto
     
 4. Run `python main.py` and program should run successfully.
 
-## Love It Star It!
+## Giving Without Expectation
 
-If you've found our work helpful, please consider starring us for a token of gratitude on our Discussion Page [here](https://github.com/omkarcloud/google-maps-scraper/discussions/21)
+*Would you help a complete stranger if it didn’t cost money and you didn’t get any credit?*
 
-[![Stargazers repo roster for @omkarcloud/google-maps-scraper](https://reporoster.com/stars/omkarcloud/google-maps-scraper)](https://github.com/omkarcloud/google-maps-scraper/stargazers)
+If you answered yes, I quickly want to ask you to help somebody who’s either just like you or like you were a couple of years ago… not much experience, wanting to help humanity, looking for information but not sure where to find great material.
+
+This is where you come in. The only way I can succeed in my mission to help entrepreneurs is by reaching them. And most people judge GitHub repositories by their stars ⭐. So, if you’ve found this Google Maps scraper valuable, would you please take a moment right now and star the repository?
+
+It’ll take you less than 1 second, and your review will help one more entrepreneur support their family and change one more life for the better. To make that happen, all you have to do is star the repository.
+
+Thanks for starring ⭐. It means a lot to me. 
+
+You’re about to crush your sales goal.
+
+[![Stargazers for @omkarcloud/google-maps-scraper](https://reporoster.com/stars/omkarcloud/google-maps-scraper)](https://github.com/omkarcloud/google-maps-scraper/stargazers)

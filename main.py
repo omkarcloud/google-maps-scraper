@@ -4,9 +4,11 @@ from src import tasks_to_be_run
 
 msg = '''
 Google Maps Leads have been successfully scraped! 
-If you've found our work helpful, please consider starring us at https://github.com/omkarcloud/google-maps-scraper for a token of gratitude on our Discussion Page at https://github.com/omkarcloud/google-maps-scraper/discussions/21
-Thanks,
-Chetan
+
+Would you help a complete stranger if it didn’t cost money and you didn’t get any credit??
+If yes, please star ⭐ us at https://github.com/omkarcloud/google-maps-scraper as most people judge GitHub repositories by their stars. 
+
+Your act of starring will help one more entrepreneur sustain their family and grow their customer base.
 '''
 
 def print_pro_bot():
