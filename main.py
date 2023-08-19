@@ -6,9 +6,8 @@ msg = '''
 Google Maps Leads have been successfully scraped! 
 
 Would you help a complete stranger if it didn’t cost money and you didn’t get any credit??
-If yes, please star ⭐ us at https://github.com/omkarcloud/google-maps-scraper as most people judge GitHub repositories by their stars. 
+If you answered yes, I want to ask to star our repository ⭐ at https://github.com/omkarcloud/google-maps-scraper/, it will help one more entrepreneur like you change their life for the better :)
 
-Your act of starring will help one more entrepreneur sustain their family and grow their customer base.
 '''
 
 def print_pro_bot():
