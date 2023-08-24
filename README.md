@@ -85,6 +85,20 @@ Watch this video to see the bot in action!
 
 ## 🤔 FAQs
 
+
+### ❓ I am seeing error like: "FileNotFoundError: [Errno 2] No such file or directory: 'build/115/chromedriver.exe' when running 'python main.py'"
+
+This is a Temporary Bug due which occurs in Chrome 115 due to `chromedriver-autoinstaller`  dependency. The fix is to:
+
+1. Go to [https://googlechromelabs.github.io/chrome-for-testing/#stable](https://googlechromelabs.github.io/chrome-for-testing/#stable) and download "chrome driver" based on your chrome version. (Most likely 115)
+2. Extract the zip file
+3. Place the "chromedriver" file (or "chromedriver.exe" if you are using Windows) directly into the build/ folder. Make sure you're not placing the extracted folder but only the chrome driver file itself.
+    
+    ![Screenshot (520).png](https://chetan-jain-omkar.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Ff7ddfb18-ad8e-492c-83a2-1b2e65faeda2%2FScreenshot_(520).png?table=block&id=de77211e-a7da-4149-ad02-33338569af27&spaceId=8fb8cd62-9b0a-4bc4-bdb3-dc442b11cf8a&width=920&userId=&cache=v2)
+    
+4. Run `python main.py` and program should run successfully.
+
+
 ### ❓ The scraper is only retrieving 5 results. How can I scrape all Google Maps search results?
 A: Open the file `src/config.py` and comment out the line that sets the `max_results` parameter. 
 
@@ -300,19 +314,6 @@ For example, you can search for restaurants in Amritsar and pitch your web devel
 You can also find real estate listings in Delhi and promote your exceptional real estate software.
 
 Google Maps is seriously a great platform to find B2B customers to sell things to!
-
-
-## ❓ I am seeing error like: "FileNotFoundError: [Errno 2] No such file or directory: 'build/115/chromedriver.exe' when running 'python main.py'"
-
-This is a Temporary Bug due which occurs in Chrome 115 due to `chromedriver-autoinstaller`  dependency. The fix is to:
-
-1. Go to [https://googlechromelabs.github.io/chrome-for-testing/#stable](https://googlechromelabs.github.io/chrome-for-testing/#stable) and download "chrome driver" based on your chrome version. (Most likely 115)
-2. Extract the zip file
-3. Place the "chromedriver" file (or "chromedriver.exe" if you are using Windows) directly into the build/ folder. Make sure you're not placing the extracted folder but only the chrome driver file itself.
-    
-    ![Screenshot (520).png](https://chetan-jain-omkar.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Ff7ddfb18-ad8e-492c-83a2-1b2e65faeda2%2FScreenshot_(520).png?table=block&id=de77211e-a7da-4149-ad02-33338569af27&spaceId=8fb8cd62-9b0a-4bc4-bdb3-dc442b11cf8a&width=920&userId=&cache=v2)
-    
-4. Run `python main.py` and program should run successfully.
 
 ## Giving Without Expectation
 
