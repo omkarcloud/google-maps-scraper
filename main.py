@@ -19,4 +19,5 @@ if __name__ == "__main__":
     launch_tasks(*tasks_to_be_run)
     count = LocalStorage.get_item('count', 0)
     
-    print_pro_bot()
+    if count % 5 == 0:
+        print_pro_bot()

@@ -194,10 +194,10 @@ class ScrapeGoogleMapsLinksTask(BaseTask):
                     if el is None:
                         # check it it is a place?
                         # if yes then return link as array
-
                         driver.save_screenshot("NO_SEARCH_RESULTS")
-                        return True
-                        # return scroll_till_end(times + 1)
+                        
+                        rst = [driver.current_url]
+                        return True, rst
                     else:
                         did_element_scroll = driver.scroll_element(el)
 
@@ -206,7 +206,7 @@ class ScrapeGoogleMapsLinksTask(BaseTask):
 
                         if end_el is not None:
                             driver.scroll_element(el)
-                            return False
+                            return False, []
 
                         if not did_element_scroll:
                             driver.sleep(0.1)
@@ -215,7 +215,7 @@ class ScrapeGoogleMapsLinksTask(BaseTask):
                             if number_of_times_not_scrolled > 20:
                                 print(
                                     'Google Maps was Stuck in Scrolling. So returning.')
-                                return False
+                                return False, []
 
                             print('Scrolling...')
                         else:
@@ -228,12 +228,14 @@ class ScrapeGoogleMapsLinksTask(BaseTask):
                             els = driver.get_elements_or_none_by_selector(
                                 '[role="feed"] >  div > div > a', Wait.LONG)
                             if len(els) >= max_results:
-                                return False
+                                return False, []
 
-            should_exit = scroll_till_end(1)
+            
+            should_exit, result = scroll_till_end(1)
+            
 
             if should_exit:
-                return []
+                return result
             
             def extract_links(elements):
                 def extract_link(el):
