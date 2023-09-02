@@ -191,11 +191,7 @@ class ScrapeGoogleMapsLinksTask(BaseTask):
                     el = driver.get_element_or_none_by_selector(
                         '[role="feed"]', Wait.LONG)
 
-                    if el is None:
-                        # check it it is a place?
-                        # if yes then return link as array
-                        driver.save_screenshot("NO_SEARCH_RESULTS")
-                        
+                    if el is None:                   
                         rst = [driver.current_url]
                         return True, rst
                     else:
