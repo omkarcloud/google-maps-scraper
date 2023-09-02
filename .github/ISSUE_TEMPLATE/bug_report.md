@@ -4,7 +4,7 @@ about: Report a problem to help us improve
 ---
 
 <!--
-Thanks for taking an interest in Google Maps Scraper Framework!
+Thanks for taking an interest in Google Maps Scraper!
 
 Please note that Regrettably, due to my tight schedule, I am unable to dedicate time to maintaining my projects. I sincerely apologize for any inconvenience this may cause.
 -->
