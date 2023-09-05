@@ -292,6 +292,19 @@ For example, if you want to scrape 10 google map queries or 1200 listings, it wi
 
 ![](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/search-time.png)
 
+### ❓ How to Run it in Docker?
+
+1. Run the following command to build Docker Image:
+   ```
+   docker-compose build
+   ```
+2. Run the following command to start the Conatiner:
+   ```
+   docker-compose up
+   ```
+
+The scraped data will be stored in the `output` folder. If you make changes to `config.py` like changing search query, please repeat steps 1 and 2.
+
 ### ❓ How can I utilize the data obtained from Google Maps?
 A: Most people scrape Google Maps Listings to sell things!
 
