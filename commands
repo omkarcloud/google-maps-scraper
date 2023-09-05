@@ -1,0 +1,5 @@
+docker build -t gmap-scraper .
+
+docker run -v $(pwd)/src/config.py:/app/src/config.py:ro \
+           -v $(pwd)/output:/app/output:rw \
+           -v /dev/shm:/dev/shm gmap-scraper
