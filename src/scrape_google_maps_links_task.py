@@ -125,8 +125,7 @@ def clean(data_list, query):
                 "cid",
                 "data_id"
                 ]
-
-    new_results = do_filter(data_list, query.get("filter", {}))
+    new_results = do_filter(data_list, query)
     new_results = do_sort(new_results, query)
 
     new_results = [sort_dict_by_keys(x, keys) for x in new_results]

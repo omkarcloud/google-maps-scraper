@@ -2,7 +2,7 @@ version: "3"
 services:
     bot-1:
       restart: "no"
-      shm_size: 800m
+      shm_size: 4000m
       build:
         dockerfile: Dockerfile
         context: .
