@@ -1,0 +1,8 @@
+image:
+  file: .gitpod.Dockerfile
+
+tasks:
+  - init: |
+      echo "Initializing environment..."
+      pip install -r requirements.txt
+    command: python main.py
