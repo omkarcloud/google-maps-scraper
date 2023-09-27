@@ -3,7 +3,7 @@
 </p>
   <div align="center" style="margin-top: 0;">
   <h1>✨ Google Maps Scraper 🤖</h1>
-  <p>💦 Enjoy the Rain of Google Maps Leads 💦</p>
+  <p>💦 Find New Customers and Grow Your Buisness 💦</p>
 </div>
 <em>
   <h5 align="center">(Programming Language - Python 3)</h5>
@@ -27,37 +27,47 @@
 </p>
 
 ---
+  
+🌟 Get 120 Potential Customers in 2.5 Minutes! 🤖
+Hola! 🌟
 
-🌟 Get 120 Leads in 2.5 Minutes! 🤖
+I am Google Maps Scraper, created to help you find new customers and grow your sales. 🚀
+
+Why Scrape Google Maps, you may ask? 
+Here's why it's the perfect ground for hunting B2B customers:
+
+- 📞 **Direct Access to Phone Numbers**: Connect with potential clients directly, drastically reducing the time it takes to seal a deal.
+
+- 🌟 **Target the Cream of the Crop**: Target rich business owners based on their reviews, and supercharge your sales.
+
+- 🎯 **Tailored Pitching**: With access to categories and websites, you can customize your pitch to cater to specific businesses and maximize your sales potential.
+
+Countless entrepreneurs have achieved remarkable success by prospecting leads from Google Maps, and now it's your turn!
+
+Let's delve into some of my remarkable features that entrepreneurs love:
+
+1. 💪 **Rapid Lead Generation**: I can scrape a whopping **1200 Google Map Leads** in just **25** minutes, flooding you with potential sales prospects.
+
+2. 🚀 **Effortless Multi-Query Scraping**: Easily scrape multiple queries in one go, saving you valuable time and effort.
+
+3. 🌐 **Unlimited Query Potential**: There's no limit to the number of queries you can scrape, ensuring you never run out of leads.
+
+In the next 5 minutes, you'll witness the magic as I extract **120 Leads** from Google Maps for you, opening up a world of opportunities.
 
 
-## 🌟 Overview
+![Google Maps Data Scraper CSV Result](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/gmap_result.png)
 
-Welcome to the Google Maps Scraper, a powerful scraper designed to scrape up to 1200 Google Map Leads in just 25 minutes. Its Top Features are:
+Ready to supercharge your business growth? Let's get started! 💼🌍
 
-1. Scrapes **1200** Google Map Leads in just **25** minutes giving you lots of prospects to make potential sales.
-2. Scrapes **30** Data Points including website, phone, category, owner, geo-coordinates, and **26** more data points. Even the ones that are not publicly shown in Google Maps, so you have all the data you need.
-3. You can sort, select and filter the leads to get you the leads relevant to your Business.
-4. You can scrape multiple queries in one go.
-5. Scrapes Data in Real Time, so you have the latest data.
-6. Saves Data as both JSON and CSV for easy usage.
+## Video Demo 
 
+If you like to see my Capalities in Action before using me. I encourage you to watch this short Video. 
 
-The Table below shows the most important data points that will be generated in both CSV and JSON formats:
-
-|title                |rating|number_of_reviews|address                                                                                                                    |website                                                                                 |phone      |img_link                                                                                       |link                                                                                                                                                                                                                 |main_category      |place_id                   |categories                                                                                                        |
-|---------------------|------|-----------------|---------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------|-----------|-----------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------|---------------------------|------------------------------------------------------------------------------------------------------------------|
-|Tamasha              |4.1   |12483            |In Anand House, A 28, KG Marg, Connaught Place, New Delhi, Delhi 110001                                                    |https://website-tamasha-restaurant.business.site/?utm_source=gmb&utm_medium=referral    |9999477661 |https://lh5.googleusercontent.com/p/AF1QipOFfAmtHyXBBWAAPqL8ifQSgDW98xOGa7_WYpmA=w426-h240-k-no|https://www.google.com/maps/place/Tamasha/data=!4m7!3m6!1s0x390cfd369e6964e7:0x304898e2f2d5e7a1!8m2!3d28.6298016!4d77.2218419!16s%2Fg%2F11cmr16zjb!19sChIJ52Rpnjb9DDkRoefV8uKYSDA?authuser=0&hl=en&rclk=1            |Restaurant         |ChIJ52Rpnjb9DDkRoefV8uKYSDA|Restaurant, Bar, Continental restaurant, Italian restaurant, North Indian Restaurant                              |
-|Indian Accent        |4.7   |8152             |The Lodhi, Lodhi Rd, CGO Complex, Pragati Vihar, New Delhi, Delhi 110003                                                   |https://indianaccent.com/newdelhi                                                       |1166175151 |https://lh5.googleusercontent.com/p/AF1QipMRaSvBkBK3ipKoWei-gn3IEW-2NBRwVLS-CuR-=w627-h240-k-no|https://www.google.com/maps/place/Indian+Accent/data=!4m7!3m6!1s0x390cfd309eebed77:0xfd133b52e7612c26!8m2!3d28.5918336!4d77.2382224!16s%2Fg%2F11c561vl9w!19sChIJd-3rnjD9DDkRJixh51I7E_0?authuser=0&hl=en&rclk=1      |Restaurant         |ChIJd-3rnjD9DDkRJixh51I7E_0|Restaurant, Asian restaurant, Bar, European restaurant, Fine dining restaurant, Indian restaurant                 |
-|Olive Bar & Kitchen  |4.6   |6528             |Mile 6, One Style, 8, Kalka Das Marg, Seth Sarai, Mehrauli, New Delhi, Delhi 110030                                        |http://www.olivebarandkitchen.com/                                                      |9910457373 |https://lh5.googleusercontent.com/p/AF1QipNv1aHvISiSOPyM0tECLKe5-ND_N5s-p6ZTeKMv=w408-h306-k-no|https://www.google.com/maps/place/Olive+Bar+%26+Kitchen/data=!4m7!3m6!1s0x390ce2f15b20d0fd:0xaaa8607911b1bdf!8m2!3d28.5257701!4d77.1841311!16s%2Fg%2F1q64qjzb6!19sChIJ_dAgW_HiDDkR3xsbkQeGqgo?authuser=0&hl=en&rclk=1|European restaurant|ChIJ_dAgW_HiDDkR3xsbkQeGqgo|European restaurant, Bar, Cafe, Fine dining restaurant, Italian restaurant, Mediterranean restaurant, Restaurant  |
-|Kiyan                |4.7   |639              |NH-8, Samalkha, New Delhi, Delhi 110037                                                                                    |http://www.roseatehotels.com/newdelhi/theroseate/dine/kiyan/                            |1130158676 |https://lh5.googleusercontent.com/p/AF1QipM_HsL2Xojc7nHdzW14rV2Cv3joGalRODYx2fZF=w408-h278-k-no|https://www.google.com/maps/place/Kiyan/data=!4m7!3m6!1s0x390d1c07eff4422b:0x8abf827be567fe7e!8m2!3d28.531523!4d77.103096!16s%2Fg%2F1pwfbhfv9!19sChIJK0L07wccDTkRfv5n5XuCv4o?authuser=0&hl=en&rclk=1                 |Fine dining restaurant|ChIJK0L07wccDTkRfv5n5XuCv4o|Fine dining restaurant, Breakfast restaurant, Continental restaurant, European restaurant, Mughlai Restaurant, North Indian Restaurant, Thai restaurant|
-|Thyme Restaurant - The Umrao|4.5   |555              |National Highway 8, Rajokri Rd, D Block, Samalkha, Pushpanjali Farms, New Delhi, Delhi 110037                              |https://theumrao.com/dining                                                             |1147707050 |https://lh5.googleusercontent.com/p/AF1QipPhEscYrXx_m8po3qEbaeA54iOslEhRA2CXgP_Y=w408-h247-k-no|https://www.google.com/maps/place/Thyme+Restaurant+-+The+Umrao/data=!4m7!3m6!1s0x390d1bfec9e42687:0x14d497d545bba4b!8m2!3d28.525558!4d77.098439!16s%2Fg%2F11b5wq57rd!19sChIJhybkyf4bDTkRS7pbVH1JTQE?authuser=0&hl=en&rclk=1|Fine dining restaurant|ChIJhybkyf4bDTkRS7pbVH1JTQE|Fine dining restaurant, Breakfast restaurant, Chinese restaurant, Continental restaurant                          |
+[![Google Maps Video Tutorial](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/video.png)](https://www.youtube.com/watch?v=6UZhTlkCb9A)
 
 ## 🚀 Getting Started
 
-_If you are not a techy person or don't know how to use git. You can follow [this video](https://www.youtube.com/watch?v=zOlvYakogSU) to make bot run._
-
-Let's get started by generating Google Maps Leads by following these simple steps
+Let's get startedgenerating Google Maps Leads by following these simple steps
 
 1️⃣ Clone the Magic 🧙‍♀️:
 ```shell
@@ -77,12 +87,6 @@ Once the scraping process is complete, you can find your leads in the `output` d
 
 ![Google Maps Data Scraper CSV Result](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/gmap_result.png)
 
-## Video Demo 
-
-Watch this video to see the bot in action!
-
-[![Google Maps Video Tutorial](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/video.png)](https://www.youtube.com/watch?v=zOlvYakogSU)
-
 ## 🤔 FAQs
 
 ### ❓ The scraper is only retrieving 5 results. How can I scrape all Google Maps search results?
@@ -97,131 +101,112 @@ queries = [
     },
 ]
 ```
-Note: You will be able to scrape up to 120 leads per search due to Google's scrolling limitation. 
+Note: You will be able to scrape up to 120 leads per search due to Google's scrolling limitation. Technically, there is no way possible to bypass this limitation.
 
 ### ❓ I want to scrape search results for a specific search query. How can I achieve that?
 A: Open the file `src/config.py` and update the `keyword` with your desired search query. 
 
-For example, if you want to scrape data about stupas in Kathmandu 🇳🇵, modify the code as follows:
+For example, if you want to scrape leads about Digital Marketers in Kathmandu 🇳🇵, modify the code as follows:
 ```python
 queries = [
     {
-        "keyword": "stupas in kathmandu",
+        "keyword": "digital marketers in kathmandu",
     },
 ]
 ```
 
+### ❓ Can I scrape more than one query using this script?
+A: Absolutely! Open `src/config.py` and add as many queries as you like. 
 
-### ❓ How can I filter google map search results?
-
-A: You have the option to apply filters to your Google Maps search results using the following parameters:
-
-1. min_rating
-2. min_reviews
-3. max_reviews
-4. has_phone
-5. has_website
-
-
-To specify filters, open `src/config.py` and specify your filters. 
-
-The Following example will scrape only those listings with a minimum of 5 reviews, a maximum of 100 reviews, and a phone number.
-
+For example, if you want to scrape restaurants in both Delhi 😎 and Bangalore 👨‍💻, use the following code:
 ```python
 queries = [
     {
         "keyword": "restaurants in delhi",
-        "min_reviews": 5 ,
-        "max_reviews": 100,
-        "has_phone": True,
     },
-]
-```
-
-
-### ❓ How to sort by reviews, rating, or title?
-
-To sort your results by reviews, rating, or title, follow these steps:
-
-Open the file `src/config.py` and set the `sort` key. 
-
-For example, to sort by reviews in descending order, modify the code as follows:
-
-```python
-queries = [
     {
-        "keyword": "stupas in kathmandu",
-        "sort": {
-            "by": "reviews",
-            "order": "desc",
-        },
-    },
+        "keyword": "restaurants in bangalore",
+    }
 ]
 ```
 
-You can sort by any field, such as `reviews`, `main_category`, `title`, `rating`, or any other field. Here are some common sort examples:
+### ❓ How to Scrape Additional Information like Website, Phone, Geo Coordinates, Price Range?
 
-1. Sort by `reviews` count in descending order:
-```python
-        "sort": {
-            "by": "reviews",
-            "order": "desc",
-        },
-```
+You may upgrade to Pro Version of the Google Maps Scraper to scrape additional data points, like:
 
-2. Sort by `main_category` in ascending order:
-```python
-        "sort": {
-            "by": "main_category",
-            "order": "asc",
-        },
-```
+- 🌐 **Website**
+- 📞 **Phone Numbers**
+- 🌍 **Geo Coordinates**
+- 💰 **Price Range**
+- And **26 more data points** like Owner details, Photos, About Section, and many more!
 
-3. Sort by `title` in ascending order:
-```python
-        "sort": {
-            "by": "title",
-            "order": "asc",
-        },
-```
+Below is a sample lead scraped by the Pro Version:
 
-4. Sort by `rating` in descending order:
-```python
-        "sort": {
-            "by": "rating",
-            "order": "desc",
-        },
-```
+![Pro Lead](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/pro-lead.png)
 
-### ❓ How to select specific Fields?
-If you want to select specific fields to be output in your CSV and JSON files, you can do so by following these steps:
+But that's not all! The Pro Version comes loaded with advanced features, allowing you to:
 
-1.  Open `src/config.py`.
-2.  Modify the `select` key to include the fields you want to select.
+- 🌟 **Sort by Reviews and Ratings**: Target top businesses by sorting your leads in descending/ascending order of reviews and ratings.
 
-For example, if you want to select "title", "link", "main_category", "rating", "reviews", "website", "phone", and "address", you should adjust the code as follows:
+- 🧐 **Filter Your Leads**: Use filters to narrow down prospects based on minimum/maximum reviews, ratings, website availability, and more.
 
-```python
-queries = [
-    {
-        "keyword": "stupas in kathmandu",
-        "select": ["title", "link", "main_category", "rating", "reviews",  "website", "phone" , "address"],
-    },
-]
-```
+- 📋 **Select Specific Fields**: Customize your data output by selecting only the fields you need, such as title, rating, reviews, and phone numbers.
 
-You are free to select any field. Here are a couple of common field selections:
+To learn more about how to use these Pro Version features, read the Pro Version docs [here](https://github.com/omkarcloud/google-maps-scraper/master/pro-docs.md).
 
-1. Standard field selection:
-```python
-        "select": ["title", "link", "main_category", "rating", "reviews",  "website", "phone" , "address"],
-```
+🔍 **Comparison**:
 
-2. Selection of all fields (Default):
-```python
-        "select": "ALL",
-```
+See how the Pro Version stacks up against the free version in this comparison image:
 
+![Comparison Image](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/comparision-image.png)
+
+And here's the best part - the Pro Version offers great ROI because it helps you land new customers bringing hundreds and thousands of dollars, all with zero risk. That's right because, we offer a **30-Day Refund Policy**!
+
+### ❓ How to Get the Pro Version?
+
+Visit Sponsership Page [here](https://github.com/sponsors/omkarcloud?frequency=one-time) and pay $28 by selecting Google Maps Scraper Pro Option.
+<!-- TODO: uPDAtE
+![Pay](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/pay.gif) -->
+
+After payment, you'll see a success screen with instructions on how to use the Pro Version:
+
+![Success Screen](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/success-screen.png)
+
+### ❓ What if I Don't Get ROI from It?
+
+Your investment is completely risk-free! We stand by our product with a **30-Day Refund Policy**. If you feel that the Pro Version doesn't deliver the value you expected, you can request a refund.
+
+Still unsure about the Google Maps Scraper? No worries! Book a demo meeting, and we'll scrape your chosen places right in front of you
+
+Book a Demo using this [meeting link](https://www.omkar.cloud/l/meet-chetan/).
+
+### ❓ How Do I Get a Refund?
+
+To request a refund, please make sure you have one of the following:
+
+- **A PayPal Account**
+- **or A UPI QR Code Image (India only)**
+ 
+Next, Follow these steps to initiate a refund:
+
+1. Visit the Discussion [here] and leave a comment to initiate a refund, with the following template:
+
+   "Please initiate a refund. My communication email is your-email@gmail.com"
+
+   ![Refund Image](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/refund-discuss.png)
+
+2. You'll receive an email from `chetan@omkar.cloud` requesting you to provide one of the following details to process the refund:
+   - PayPal Email (e.g., your-email@gmail.com)
+   - UPI QR Code Image (India Only)
+
+3. After providing the above details you can expect your refund within 2 days, usually within 24 hours. We'll also keep you updated in the GitHub Discussion.
+
+![Paypal Image](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/paypal.png)
+
+
+### ❓ I Need Setup Support for scraper installation and usage?
+
+All Pro users who need assistance with scraper installation and usage can book a meeting with us [here](https://www.omkar.cloud/l/meet-chetan/).
 
 ### ❓ How to increase the speed of the Scraper?
 
@@ -240,44 +225,6 @@ In case you encounter any issues, like the scraper crashing due to low-end PC sp
 - Close other applications on your computer to free up memory.
 
 Additionally, consider improving your internet speed to further enhance the scraping process.
-
-
-### ❓ Can I scrape more than one query using this script?
-A: Absolutely! Open `src/config.py` and add as many queries as you like. 
-
-For example, if you want to scrape restaurants in both Delhi 😎 and Bangalore 👨‍💻, use the following code:
-```python
-queries = [
-    {
-        "keyword": "restaurants in delhi",
-    },
-    {
-        "keyword": "restaurants in bangalore",
-    }
-]
-```
-
-
-### ❓ How to scrape emails and social links like Twitter and Facebook of Shop Owners?
-
-Google Maps does not display the emails and social links of shop owners. However, it does show the owner's Google profile, which we scrape and store in the `owner` field as shown below:
-
-```json
-        "owner": {
-            "id": "102395794819517641473",
-            "link": "https://www.google.com/maps/contrib/102395794819517641473",
-            "name": "38 Barracks Restaurant and Bar (Owner)"
-        },
-```
-
-To obtain the shop owner's emails and social links, you have two options:
-
-1. Visit the website of each shop and manually find the contact details.
-2. Use the Contact Details Scraper by vdrmota, available [here](https://www.omkar.cloud/l/contact-info-scraper/), to automatically scrape the contact details.
-
-If you are using the Google Maps Scraper for prospecting and selling your products or services, it is recommended to manually visit the first 100 lead's websites. This will provide you with a better understanding of your prospects. Also, the task of finding contact details from 100 websites, can be done within 2 hours if you work with focus and speed.
-
-Once you have validated the success of your Google Maps scraper strategy, you can scale up your efforts using the [Contact Details Scraper](https://www.omkar.cloud/l/contact-info-scraper/), which is also quite affordable.
 
 
 ### ❓ How much time does it take to scrape "n" searches?
@@ -302,22 +249,10 @@ For example, if you want to scrape 10 google map queries or 1200 listings, it wi
    ```
    docker-compose up
    ```
+## 🤔 Have Questions
 
-The scraped data will be stored in the `output` folder. If you make changes to `config.py` like changing search query, please repeat steps 1 and 2.
+Ask them in discussions [here](https://github.com/omkarcloud/google-maps-scraper/discussions/), and you will receive a guaranteed response within 24 hours.
 
-### ❓ How can I utilize the data obtained from Google Maps?
-A: Most people scrape Google Maps Listings to sell things!
-
-For example, you can search for restaurants in Amritsar and pitch your web development services to them.
-
-You can also find real estate listings in Delhi and promote your exceptional real estate software.
-
-Google Maps is seriously a great platform to find B2B customers to sell things to!
-
-## Giving Without Expectation
-
-*Would you help a complete stranger if it didn’t cost money and you didn’t get any credit?*
-
-If you answered yes, I want to ask to star our repository ⭐ at https://github.com/omkarcloud/google-maps-scraper/, it will help one more entrepreneur like you change their life for the better :)
+## Love It? [Star It! ⭐](https://github.com/omkarcloud/google-maps-scraper)
 
 [![Stargazers for @omkarcloud/google-maps-scraper](https://reporoster.com/stars/omkarcloud/google-maps-scraper)](https://github.com/omkarcloud/google-maps-scraper/stargazers)

@@ -31,61 +31,6 @@ def divide_list(input_list, num_of_groups=6, skip_if_less_than=20):
     return divided_list
 
 
-def do_sort(data, config):
-    if config.get('sort') is None:
-        return data
-
-    def sorting_key(item):
-        sorting_by = config["sort"].get("by")
-        result = item.get(sorting_by, 0)
-
-        if result is None:
-            return 0
-
-        return result
-
-    sorting_order = config["sort"].get("order", "desc")
-
-    sorted_data = sorted(data, key=sorting_key,
-                         reverse=(sorting_order == "desc"))
-
-    return sorted_data
-#
-
-
-def do_filter(ls, filter_data):
-    def fn(i):
-        min_rating = filter_data.get("min_rating")
-        min_reviews = filter_data.get("min_reviews")
-        max_reviews = filter_data.get("max_reviews")
-        has_phone = filter_data.get("has_phone")
-        has_website = filter_data.get("has_website")
-
-        rating = i.get('rating')
-        reviews = i.get('reviews')
-        web_site = i.get("website")
-        phone = i.get("phone")
-
-        if min_rating is not None and (rating == '' or rating is None or rating < min_rating):
-            return False
-
-        if min_reviews is not None and (reviews == '' or reviews is None or reviews < min_reviews):
-            return False
-
-        if max_reviews is not None and (reviews == '' or reviews is None or reviews > max_reviews):
-            return False
-
-        if has_website is not None and (has_website is False and web_site is not None):
-            return False
-
-        if has_phone is not None and (has_phone is True and (phone is None or phone == '')):
-            return False
-
-        return True
-
-    return list(filter(fn, ls))
-
-
 def sort_dict_by_keys(dictionary, keys):
     new_dict = {}
     for key in keys:
@@ -94,42 +39,11 @@ def sort_dict_by_keys(dictionary, keys):
 
 
 def clean(data_list, query):
-    keys = query.get("select", 'ALL')
+    keys = 'ALL'
 
     if keys == 'ALL':
-        keys = ["title",
-                "link",
-                "main_category",
-                "rating",
-                "reviews",
-                "website",
-                "phone",
-                "address",
-                "place_id",
-                "status",
-                "price_range",
-                "description",
-                "reviews_per_rating",
-                "reviews_link",
-                "thumbnail",
-                "images",
-                "hours",
-                "menu",
-                "order_online_links",
-                "reservations",
-                "owner",
-                "categories",
-                "coordinates",
-                "plus_code",
-                "complete_address",
-                "time_zone",
-                "about",
-                "user_reviews",
-                "cid",
-                "data_id"
-                ]
-    new_results = do_filter(data_list, query)
-    new_results = do_sort(new_results, query)
+        keys = ["title", "link", "main_category", "rating", "reviews",  "address"]
+    new_results = data_list
 
     new_results = [sort_dict_by_keys(x, keys) for x in new_results]
 
