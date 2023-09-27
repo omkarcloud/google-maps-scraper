@@ -1,7 +1,10 @@
+import hashlib
+import os
 import urllib.parse
 from bose import *
 from src.scrape_google_maps_places_task import ScrapeGoogleMapsPlacesTask
 from .config import number_of_scrapers, queries
+from bose.utils import read_json
 import pydash
 
 
@@ -159,11 +162,41 @@ class ScrapeGoogleMapsLinksTask(BaseTask):
         return ScrapeGoogleMapsPlacesTask().run(driver, data)
 
     def get_data(self):
-        # Reset queries
-        return queries
+        result = []
+        
+        for query in queries:
+            keyword = query["keyword"]
+            keyword_kebab = pydash.kebab_case(keyword)
+            filepath = os.path.join("output", keyword_kebab + ".json")
+            stored = LocalStorage.get_item(keyword_kebab)
+            if stored is None:
+                result.append(query)
+            else:
+                if os.path.exists(filepath):
+                    with open(filepath, 'r') as f:
+                        file_content = f.read()
+                        file_hash = hashlib.md5(file_content.encode()).hexdigest()                      
 
+                    stored_query = stored['query']
+                    stored_hash = stored['hash']
+
+                    if stored_query == query and stored_hash == file_hash:
+                        print(f'Skipping query "{keyword}" as it is already scraped.') 
+                        result.append({"filepath": filepath})
+                    else:
+                        result.append(query)
+                else:
+                    result.append(query)
+                
+        return result
+        
     def run(self, driver, data):
+        if "filepath" in data:
+            new_results =  read_json(data["filepath"])
+            return new_results
+
         keyword = data['keyword']
+        keyword_kebab = pydash.kebab_case(keyword)
         max_results = data.get('max_results')
         ns = number_of_scrapers if number_of_scrapers is not None else 4
 
@@ -245,7 +278,6 @@ class ScrapeGoogleMapsLinksTask(BaseTask):
             if max_results is not None:
                 return links[:max_results]
             return links
-
         driver.get_google()
         links = get_links()
 
@@ -266,5 +298,16 @@ class ScrapeGoogleMapsLinksTask(BaseTask):
 
         Output.write_json(new_results, pydash.kebab_case(keyword))
         Output.write_csv(new_results, pydash.kebab_case(keyword))
+
+        filepath = os.path.join("output", keyword_kebab + ".json")
+        with open(filepath, 'r') as f:
+                file_content = f.read()
+                file_hash = hashlib.md5(file_content.encode()).hexdigest()                      
+
+        data_to_store = {
+            "query": data,
+            "hash": file_hash
+        }
+        LocalStorage.set_item(keyword_kebab, data_to_store)
 
         return new_results
