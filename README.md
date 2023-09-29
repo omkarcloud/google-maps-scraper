@@ -165,8 +165,8 @@ And here's the best part - the Pro Version offers great ROI because it helps you
 ### ❓ How to Get the Pro Version?
 
 Visit Sponsership Page [here](https://github.com/sponsors/omkarcloud?frequency=one-time) and pay $28 by selecting Google Maps Scraper Pro Option.
-<!-- TODO: uPDAtE
-![Pay](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/pay.gif) -->
+
+![Pay](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/pay.gif)
 
 After payment, you'll see a success screen with instructions on how to use the Pro Version:
 
