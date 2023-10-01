@@ -29,6 +29,7 @@
 ---
   
 🌟 Get 120 Potential Customers in 2.5 Minutes! 🤖
+
 Hola! 🌟
 
 I am Google Maps Scraper, created to help you find new customers and grow your sales. 🚀
@@ -54,20 +55,19 @@ Let's delve into some of my remarkable features that entrepreneurs love:
 
 In the next 5 minutes, you'll witness the magic as I extract **120 Leads** from Google Maps for you, opening up a world of opportunities.
 
-
 ![Google Maps Data Scraper CSV Result](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/gmap_result.png)
 
 Ready to supercharge your business growth? Let's get started! 💼🌍
 
-## Video Demo 
+## Video Demo
 
-If you like to see my Capalities in Action before using me. I encourage you to watch this short Video. 
+If you'd like to see my capabilities in action before using me, I encourage you to watch this short video.
 
 [![Google Maps Video Tutorial](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/video.png)](https://www.youtube.com/watch?v=6UZhTlkCb9A)
 
 ## 🚀 Getting Started
 
-Let's get startedgenerating Google Maps Leads by following these simple steps
+Let's get started generating Google Maps Leads by following these simple steps:
 
 1️⃣ Clone the Magic 🧙‍♀️:
 ```shell
@@ -83,14 +83,14 @@ python -m pip install -r requirements.txt
 python main.py
 ```
 
-Once the scraping process is complete, you can find your leads in the `output` directory. 
+Once the scraping process is complete, you can find your leads in the `output` directory.
 
 ![Google Maps Data Scraper CSV Result](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/gmap_result.png)
 
 ## 🤔 FAQs
 
 ### ❓ The scraper is only retrieving 5 results. How can I scrape all Google Maps search results?
-A: Open the file `src/config.py` and comment out the line that sets the `max_results` parameter. 
+A: Open the file `src/config.py` and comment out the line that sets the `max_results` parameter.
 
 By doing so, you can scrape all the search results from Google Maps. For example, to scrape all restaurants in Delhi, modify the code as follows:
 ```python
@@ -104,7 +104,7 @@ queries = [
 Note: You will be able to scrape up to 120 leads per search due to Google's scrolling limitation. Technically, there is no way possible to bypass this limitation.
 
 ### ❓ I want to scrape search results for a specific search query. How can I achieve that?
-A: Open the file `src/config.py` and update the `keyword` with your desired search query. 
+A: Open the file `src/config.py` and update the `keyword` with your desired search query.
 
 For example, if you want to scrape leads about Digital Marketers in Kathmandu 🇳🇵, modify the code as follows:
 ```python
@@ -116,7 +116,7 @@ queries = [
 ```
 
 ### ❓ Can I scrape more than one query using this script?
-A: Absolutely! Open `src/config.py` and add as many queries as you like. 
+A: Absolutely! Open `src/config.py` and add as many queries as you like.
 
 For example, if you want to scrape restaurants in both Delhi 😎 and Bangalore 👨‍💻, use the following code:
 ```python
@@ -132,7 +132,7 @@ queries = [
 
 ### ❓ How to Scrape Additional Information like Website, Phone, Geo Coordinates, Price Range?
 
-You may upgrade to Pro Version of the Google Maps Scraper to scrape additional data points, like:
+You may upgrade to the Pro Version of the Google Maps Scraper to scrape additional data points, like:
 
 - 🌐 **Website**
 - 📞 **Phone Numbers**
@@ -142,7 +142,8 @@ You may upgrade to Pro Version of the Google Maps Scraper to scrape additional d
 
 Below is a sample lead scraped by the Pro Version:
 
-![Pro Lead](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/pro-lead.png)
+![Pro Lead](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/paid-lead.png)
+*View sample leads scraped by the Pro Version [here](https://drive.google.com/file/d/19745V8flLE3-m1xSRAB9msv89AiI82_Q/view)*
 
 But that's not all! The Pro Version comes loaded with advanced features, allowing you to:
 
@@ -164,7 +165,7 @@ And here's the best part - the Pro Version offers great ROI because it helps you
 
 ### ❓ How to Get the Pro Version?
 
-Visit Sponsership Page [here](https://github.com/sponsors/omkarcloud?frequency=one-time) and pay $28 by selecting Google Maps Scraper Pro Option.
+Visit the Sponsorship Page [here](https://github.com/sponsors/omkarcloud?frequency=one-time) and pay $28 by selecting Google Maps Scraper Pro Option.
 
 ![Pay](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/pay.gif)
 
@@ -176,9 +177,10 @@ After payment, you'll see a success screen with instructions on how to use the P
 
 Your investment is completely risk-free! We stand by our product with a **30-Day Refund Policy**. If you feel that the Pro Version doesn't deliver the value you expected, you can request a refund.
 
-Still unsure about the Google Maps Scraper? No worries! Book a demo meeting, and we'll scrape your chosen places right in front of you
+Still unsure about the Google Maps Scraper? No worries! Book a demo meeting, and we'll scrape your chosen places right in front of you.
 
 Book a Demo using this [meeting link](https://www.omkar.cloud/l/meet-chetan/).
+
 ### ❓ How Do I Get a Refund?
 
 Requesting a refund is a simple process that should only take about 5 minutes. To request a refund, ensure you have one of the following:
@@ -221,7 +223,7 @@ Happy to help :), All Pro users who need help with scraper installation and usag
 
 ### ❓ How to increase the speed of the Scraper?
 
-To boost the scraping speed, the scraper launches multiple browsers simultaneously. Here's how you can increase the speed furthur:
+To boost the scraping speed, the scraper launches multiple browsers simultaneously. Here's how you can increase the speed further:
 
 - Adjust the `number_of_scrapers` variable in the configuration file. Recommended values are:
   - Standard laptop: 4 or 8
@@ -237,34 +239,34 @@ In case you encounter any issues, like the scraper crashing due to low-end PC sp
 
 Additionally, consider improving your internet speed to further enhance the scraping process.
 
-
 ### ❓ How much time does it take to scrape "n" searches?
 
 On average, each Google Maps search gives 120 listings. It takes approximately 2.5 minutes to scrape these 120 listings.
 
-To calculate the number of **hours** it takes to scrape "n" searches, you can **google search** this formula substituting `n` with number of searches you want to conduct:
+To calculate the number of **hours** it takes to scrape "n" searches, you can **google search** this formula substituting `n` with the number of searches you want to conduct:
 
 `n * 2.5 minutes`
 
-For example, if you want to scrape 10 google map queries or 1200 listings, it will take around 25m.
+For example, if you want to scrape 10 Google Map queries or 1200 listings, it will take around 25 minutes.
 
 ![](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/search-time.png)
 
 ### ❓ How to Run it in Docker?
 
-1. Run the following command to build Docker Image:
+1. Run the following command to build the Docker Image:
    ```
    docker-compose build
    ```
-2. Run the following command to start the Conatiner:
+2. Run the following command to start the Container:
    ```
    docker-compose up
    ```
+
 ## 🤔 Have Questions
 
 Ask them in discussions [here](https://github.com/omkarcloud/google-maps-scraper/discussions/).
 
-*Want to speak with us?* 📞 Whatsapp Call us [here](https://wa.me/message/3WED4FYQRDPNE1) 
+*Want to speak with us?* 📞 Whatsapp Call us [here](https://wa.me/message/3WED4FYQRDPNE1)
 
 ## Love It? [Star It! ⭐](https://github.com/omkarcloud/google-maps-scraper)
 
