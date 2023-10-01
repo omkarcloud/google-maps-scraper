@@ -179,7 +179,6 @@ Your investment is completely risk-free! We stand by our product with a **30-Day
 Still unsure about the Google Maps Scraper? No worries! Book a demo meeting, and we'll scrape your chosen places right in front of you
 
 Book a Demo using this [meeting link](https://www.omkar.cloud/l/meet-chetan/).
-
 ### ❓ How Do I Get a Refund?
 
 Requesting a refund is a simple process that should only take about 5 minutes. To request a refund, ensure you have one of the following:
@@ -189,18 +188,32 @@ Requesting a refund is a simple process that should only take about 5 minutes. T
 
 Next, follow these steps to initiate a refund:
 
-1. Send an email to `chetan@omkar.cloud` with the following template:
-   - If you want a refund via PayPal:
-     "Please send a refund to my PayPal email: myname@example.com"
-   - If you want a refund via UPI (India Only):
-     "Please send a refund to my UPI ID: myname@bankname"
+1. Send an email to `chetan@omkar.cloud` using the following template:
 
-2. Next, Visit the discussion [here](https://github.com/omkarcloud/google-maps-scraper/discussions/44) and leave a comment to request a refund, using the following template:
-   "I have sent a refund request email via myname@example.com"
+   - To request a refund via PayPal:
+     ```
+     Subject: Request Refund
+     Content: Please send a refund to my PayPal email: myname@example.com
+     ```
 
-3. You can expect to receive your refund within 1 day. We will also keep you updated in the GitHub Discussion.
+   - To request a refund via UPI (India Only):
+     ```
+     Subject: Request Refund
+     Content: Please send a refund to my UPI ID: myname@bankname
+     ```
 
-![PayPal Image](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/paypal.png)
+   ![Email Image](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/email.png)
+
+2. Next, go to the discussion [here](https://github.com/omkarcloud/google-maps-scraper/discussions/44) and comment to request a refund using this template:
+   ```
+   I have sent a refund request from my email: myname@example.com.
+   ```
+
+   ![Discussion Image](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/discussion.png)
+
+3. You can expect to receive your refund within 1 day. We will also update you in the GitHub Discussion.
+
+   ![PayPal Image](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/paypal.png)
 
 ### ❓ I Need Setup Support for scraper installation and usage?
 
