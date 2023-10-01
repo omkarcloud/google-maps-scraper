@@ -249,7 +249,9 @@ For example, if you want to scrape 10 google map queries or 1200 listings, it wi
    ```
 ## 🤔 Have Questions
 
-Ask them in discussions [here](https://github.com/omkarcloud/google-maps-scraper/discussions/), and you will receive a guaranteed response within 24 hours.
+Ask them in discussions [here](https://github.com/omkarcloud/google-maps-scraper/discussions/).
+
+*Want to speak with us?* 📞 Whatsapp Call us [here](https://wa.me/message/3WED4FYQRDPNE1) 
 
 ## Love It? [Star It! ⭐](https://github.com/omkarcloud/google-maps-scraper)
 
