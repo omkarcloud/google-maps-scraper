@@ -211,13 +211,13 @@ Next, follow these steps to initiate a refund:
 
    ![Discussion Image](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/discussion.png)
 
-3. You can expect to receive your refund within 1 day. We will also update you in the GitHub Discussion.
+3. You can expect to receive your refund within 1 day. We will also update you in the GitHub Discussion :)
 
    ![PayPal Image](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/paypal.png)
 
 ### ❓ I Need Setup Support for scraper installation and usage?
 
-All Pro users who need assistance with scraper installation and usage can book a meeting with us [here](https://www.omkar.cloud/l/meet-chetan/).
+Happy to help :), All Pro users who need help with scraper installation and usage can book a meeting with us [here](https://www.omkar.cloud/l/meet-chetan/).
 
 ### ❓ How to increase the speed of the Scraper?
 
