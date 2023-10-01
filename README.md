@@ -182,27 +182,25 @@ Book a Demo using this [meeting link](https://www.omkar.cloud/l/meet-chetan/).
 
 ### ❓ How Do I Get a Refund?
 
-To request a refund, please make sure you have one of the following:
+Requesting a refund is a simple process that should only take about 5 minutes. To request a refund, ensure you have one of the following:
 
-- **A PayPal Account**
-- **or A UPI QR Code Image (India only)**
- 
-Next, Follow these steps to initiate a refund:
+- **A PayPal Account (e.g., "myname@example.com" or "chetan@gmail.com")**
+- **or a UPI ID (India only) (e.g., 'myname@bankname" or "chetan@okhdfc")**
 
-1. Visit the Discussion [here] and leave a comment to initiate a refund, with the following template:
+Next, follow these steps to initiate a refund:
 
-   "Please initiate a refund. My communication email is your-email@gmail.com"
+1. Send an email to `chetan@omkar.cloud` with the following template:
+   - If you want a refund via PayPal:
+     "Please send a refund to my PayPal email: myname@example.com"
+   - If you want a refund via UPI (India Only):
+     "Please send a refund to my UPI ID: myname@bankname"
 
-   ![Refund Image](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/refund-discuss.png)
+2. Next, Visit the discussion [here](https://github.com/omkarcloud/google-maps-scraper/discussions/44) and leave a comment to request a refund, using the following template:
+   "I have sent a refund request email via myname@example.com"
 
-2. You'll receive an email from `chetan@omkar.cloud` requesting you to provide one of the following details to process the refund:
-   - PayPal Email (e.g., your-email@gmail.com)
-   - UPI QR Code Image (India Only)
+3. You can expect to receive your refund within 1 day. We will also keep you updated in the GitHub Discussion.
 
-3. After providing the above details you can expect your refund within 2 days, usually within 24 hours. We'll also keep you updated in the GitHub Discussion.
-
-![Paypal Image](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/paypal.png)
-
+![PayPal Image](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/paypal.png)
 
 ### ❓ I Need Setup Support for scraper installation and usage?
 
