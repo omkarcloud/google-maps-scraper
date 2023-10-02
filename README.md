@@ -89,21 +89,20 @@ Once the scraping process is complete, you can find your leads in the `output` d
 
 ## 🤔 FAQs
 
-### ❓ The scraper is only retrieving 5 results. How can I scrape all Google Maps search results?
-A: Open the file `src/config.py` and comment out the line that sets the `max_results` parameter.
+<!-- ### ❓ The scraper is only retrieving 5 results. How can I scrape all Google Maps search results?
+A: Open the file `src/config.py` and delete the line that sets the `max_results` parameter.
 
-By doing so, you can scrape all the search results from Google Maps. For example, to scrape all restaurants in Delhi, modify the code as follows:
+By doing so, you can scrape all the Google Maps Listing. For example, to scrape all restaurants in Delhi, modify the code as follows:
 ```python
 queries = [
     {
         "keyword": "restaurants in delhi",
-        # "max_results" : 5,
     },
 ]
 ```
-Note: You will be able to scrape up to 120 leads per search due to Google's scrolling limitation. Technically, there is no way possible to bypass this limitation.
+Note: You will be able to scrape up to 120 leads per search due to Google's scrolling limitation. Technically, there is no way possible to bypass this limitation. -->
 
-### ❓ I want to scrape search results for a specific search query. How can I achieve that?
+### ❓ I want to scrape search results for a specific search query. How can I do that?
 A: Open the file `src/config.py` and update the `keyword` with your desired search query.
 
 For example, if you want to scrape leads about Digital Marketers in Kathmandu 🇳🇵, modify the code as follows:
@@ -153,7 +152,7 @@ But that's not all! The Pro Version comes loaded with advanced features, allowin
 
 - 📋 **Select Specific Fields**: Customize your data output by selecting only the fields you need, such as title, rating, reviews, and phone numbers.
 
-To learn more about how to use these Pro Version features, read the Pro Version docs [here](https://github.com/omkarcloud/google-maps-scraper/master/pro-docs.md).
+To learn more about how to use these Pro Version features, read the Pro Version docs [here](https://github.com/omkarcloud/google-maps-scraper/blob/master/pro-docs.md).
 
 🔍 **Comparison**:
 
@@ -253,14 +252,13 @@ For example, if you want to scrape 10 Google Map queries or 1200 listings, it wi
 
 ### ❓ How to Run it in Docker?
 
-1. Run the following command to build the Docker Image:
-   ```
-   docker-compose build
-   ```
-2. Run the following command to start the Container:
-   ```
-   docker-compose up
-   ```
+Run the following command to build and run the Docker Image:
+
+```bash
+docker-compose build && docker-compose up
+```
+
+Please make sure you rebuild the image every time you want to run the scraper by running above command, Failing to do so will result in error.
 
 ## 🤔 Have Questions
 
