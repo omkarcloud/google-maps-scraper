@@ -1,4 +1,4 @@
-FROM ultrafunk/undetected-chromedriver:106
+FROM ultrafunk/undetected-chromedriver:3.20-chrome-lateinstall
 
 ENV PYTHONUNBUFFERED=1
 
