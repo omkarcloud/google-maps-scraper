@@ -152,7 +152,7 @@ But that's not all! The Pro Version comes loaded with advanced features, allowin
 
 - 📋 **Select Specific Fields**: Customize your data output by selecting only the fields you need, such as title, rating, reviews, and phone numbers.
 
-To learn more about how to use these Pro Version features, read the Pro Version docs [here](https://github.com/omkarcloud/google-maps-scraper/blob/master/pro-docs.md).
+To learn more about how to use these Pro Version features, read the Pro Version docs [here](./pro-docs.md).
 
 🔍 **Comparison**:
 
