@@ -60,7 +60,7 @@ class ScrapeGoogleMapsPlacesTask(BaseTask):
                 except selenium.common.exceptions.JavascriptException as E:
                             if driver.is_in_page("consent.google.com", Wait.LONG):
                                 el = driver.get_element_or_none_by_selector('form:nth-child(2) > div > div > button', Wait.LONG)
-                                el.click()
+                                driver.js_click(el)
                                 print('Revisiting')
                                 return get_data(link)
                             else: 
@@ -69,8 +69,12 @@ class ScrapeGoogleMapsPlacesTask(BaseTask):
                                 raise E 
                 
                 out_dict = merge_dicts_in_one_dict(out_dict, additional_data)
+                
+                try:
+                    print('Done: ' + out_dict.get('title', ''))
+                except:
+                    pass
 
-                print('Done: ' + out_dict.get('title', ''))
                 return out_dict
 
             ls = remove_nones(list(map(get_data, links)))
