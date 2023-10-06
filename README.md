@@ -114,8 +114,10 @@ queries = [
 ]
 ```
 
+
+
 ### ❓ Can I scrape more than one query using this script?
-A: Absolutely! Open `src/config.py` and add as many queries as you like.
+A: Easy! Open `src/config.py` and add as many queries as you like.
 
 For example, if you want to scrape restaurants in both Delhi 😎 and Bangalore 👨‍💻, use the following code:
 ```python
@@ -125,6 +127,20 @@ queries = [
     },
     {
         "keyword": "restaurants in bangalore",
+    }
+]
+```
+### ❓ I want to scrape only the first 5 results. How can I do that?
+
+Absolutely! Open `src/config.py` and modify the `max_results` parameter.
+
+For example, if you want to scrape the first 5 restaurants in Bangalore, use the following code:
+
+```python
+queries = [
+    {
+        "keyword": "restaurants in Bangalore",
+        "max_results": 5,
     }
 ]
 ```
