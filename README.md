@@ -114,8 +114,6 @@ queries = [
 ]
 ```
 
-
-
 ### ❓ Can I scrape more than one query using this script?
 A: Easy! Open `src/config.py` and add as many queries as you like.
 
@@ -130,6 +128,7 @@ queries = [
     }
 ]
 ```
+
 ### ❓ I want to scrape only the first 5 results. How can I do that?
 
 Absolutely! Open `src/config.py` and modify the `max_results` parameter.
