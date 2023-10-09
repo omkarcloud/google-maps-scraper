@@ -114,6 +114,8 @@ queries = [
 ]
 ```
 
+Note: You will be able to scrape up to 120 leads per search due to Google's scrolling limitation. Technically, there is no way possible to bypass this limitation.
+
 ### ❓ Can I scrape more than one query using this script?
 A: Easy! Open `src/config.py` and add as many queries as you like.
 
