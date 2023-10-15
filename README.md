@@ -160,7 +160,7 @@ You may upgrade to the Pro Version of the Google Maps Scraper to scrape addition
 - 📞 **Phone Numbers**
 - 🌍 **Geo Coordinates**
 - 💰 **Price Range**
-- And **26 more data points** like Owner details, Photos, About Section, and many more!
+- And **26 more data points** like Owner details, Photos, About Section, and [many more](TODO PusH AND ADD)!
 
 Below is a sample lead scraped by the Pro Version:
 
@@ -239,9 +239,9 @@ Next, follow these steps to initiate a refund:
 
    ![PayPal Image](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/paypal.png)
 
-### ❓ I Need Setup Support for scraper installation and usage?
+<!-- ### ❓ I Need Setup Support for scraper installation and usage?
 
-Happy to help :), All Pro users who need help with scraper installation and usage can book a meeting with us [here](https://www.omkar.cloud/l/meet-chetan/).
+Happy to help :), All Pro users who need help with scraper installation and usage can book a meeting with us [here](https://www.omkar.cloud/l/meet-chetan/). -->
 
 ### ❓ How to increase the speed of the Scraper?
 
@@ -260,7 +260,7 @@ In case you encounter any issues, like the scraper crashing due to low-end PC sp
 - Close other applications on your computer to free up memory.
 
 Additionally, consider improving your internet speed to further enhance the scraping process.
-
+<!-- 
 ### ❓ How much time does it take to scrape "n" searches?
 
 On average, each Google Maps search gives 120 listings. It takes approximately 2.5 minutes to scrape these 120 listings.
@@ -271,9 +271,38 @@ To calculate the number of **hours** it takes to scrape "n" searches, you can **
 
 For example, if you want to scrape 10 Google Map queries or 1200 listings, it will take around 25 minutes.
 
-![](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/search-time.png)
+![](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/search-time.png) -->
 
-### ❓ How to Run it in Docker?
+### ❓ I don't have Python, or I'm facing errors when setting up the scraper on my PC. What to solve it?
+
+You can easily run the scraper in Gitpod, a browser-based environment. Set it up in just 5 minutes by following these steps:
+
+1. Visit [this link](https://gitpod.io/#https://github.com/omkarcloud/google-maps-scraper) and sign up using your GitHub account.
+   
+   ![Screenshot (148)](https://github.com/omkarcloud/google-maps-scraper/assets/53407137/f498dda8-5352-4f7a-9d70-c717859670d4)
+  
+2. In the terminal, run the following command:
+
+   ```bash
+   docker-compose build && docker-compose up
+   ```
+  
+3. Once the scraper has finished running, download the leads from the `output` folder.
+
+   ![Screenshot (219)](https://github.com/omkarcloud/google-maps-scraper/assets/53407137/bade4001-12dc-4191-972e-cba0466f3e3f)
+
+<!-- ### ❓ The Turkish characters aren't rendering properly?
+
+You can find a solution [here](https://github.com/omkarcloud/google-maps-scraper/discussions/48). -->
+
+### ❓ I have more questions or need further assistance?
+
+Reach out to us on WhatsApp! We'll help you resolve your problem within 24 hours.
+
+[![Whatsapp](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/wa.png)](https://wa.me/message/3WED4FYQRDPNE1)
+
+
+<!-- ### ❓ How to Run it in Docker?
 
 Run the following command to build and run the Docker Image:
 
@@ -281,13 +310,8 @@ Run the following command to build and run the Docker Image:
 docker-compose build && docker-compose up
 ```
 
-Please make sure you rebuild the image every time you want to run the scraper by running above command, Failing to do so will result in error.
+Please make sure you rebuild the image every time you want to run the scraper by running above command, Failing to do so will result in error. -->
 
-## 🤔 Have Questions
-
-Ask them in discussions [here](https://github.com/omkarcloud/google-maps-scraper/discussions/).
-
-*Want to speak with us?* 📞 Whatsapp Call us [here](https://wa.me/message/3WED4FYQRDPNE1)
 
 ## Love It? [Star It! ⭐](https://github.com/omkarcloud/google-maps-scraper)
 

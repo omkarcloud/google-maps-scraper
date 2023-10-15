@@ -110,3 +110,45 @@ You are free to select any field. Here are a couple of common field selections:
 ```python
         "select": "ALL",
 ```
+
+### ❓ What Data Points Are Scraped by the Pro Version?
+
+The Pro Version scrapes the following data points:
+
+
+1. **Title**
+2. **Link**
+3. **Main Category**
+4. **Rating**
+5. **Reviews**
+6. **Website**
+7. **Phone**
+8. **Address**
+9. **Place ID**
+10. **Status**
+11. **Price Range**
+12. **Description**
+13. **Reviews per Rating**
+14. **Reviews Link**
+15. **Thumbnail**
+16. **Images**
+17. **Hours**
+18. **Menu**
+19. **Order Online Links**
+20. **Reservations**
+21. **Owner**
+22. **Categories**
+23. **Coordinates**
+24. **Plus Code**
+25. **Complete Address**
+26. **Time Zone**
+27. **About**
+28. **User Reviews**
+29. **CID**
+30. **Data ID**
+
+---
+
+You can view sample leads scraped by the Pro Version [here](https://drive.google.com/file/d/19745V8flLE3-m1xSRAB9msv89AiI82_Q/view)
+
+![Pro Lead Sample](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/paid-lead.png)
