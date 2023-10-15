@@ -160,7 +160,7 @@ You may upgrade to the Pro Version of the Google Maps Scraper to scrape addition
 - 📞 **Phone Numbers**
 - 🌍 **Geo Coordinates**
 - 💰 **Price Range**
-- And **26 more data points** like Owner details, Photos, About Section, and [many more](TODO PusH AND ADD)!
+- And **26 more data points** like Owner details, Photos, About Section, and [many more](https://github.com/omkarcloud/google-maps-scraper/blob/master/pro-docs.md#-what-data-points-are-scraped-by-the-pro-version)!
 
 Below is a sample lead scraped by the Pro Version:
 
