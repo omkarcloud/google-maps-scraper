@@ -297,7 +297,7 @@ You can find a solution [here](https://github.com/omkarcloud/google-maps-scraper
 
 ### ❓ I have more questions or need further assistance?
 
-Reach out to us on WhatsApp! We'll help you resolve your problem within 24 hours.
+Reach out to us on WhatsApp! We'll solve your problem within 24 hours.
 
 [![Whatsapp](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/mwa.png)](https://wa.me/message/3WED4FYQRDPNE1)
 
