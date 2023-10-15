@@ -299,7 +299,7 @@ You can find a solution [here](https://github.com/omkarcloud/google-maps-scraper
 
 Reach out to us on WhatsApp! We'll help you resolve your problem within 24 hours.
 
-[![Whatsapp](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/wa.png)](https://wa.me/message/3WED4FYQRDPNE1)
+[![Whatsapp](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/mwa.png)](https://wa.me/message/3WED4FYQRDPNE1)
 
 
 <!-- ### ❓ How to Run it in Docker?
