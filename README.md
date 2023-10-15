@@ -273,7 +273,7 @@ For example, if you want to scrape 10 Google Map queries or 1200 listings, it wi
 
 ![](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/search-time.png) -->
 
-### ❓ I don't have Python, or I'm facing errors when setting up the scraper on my PC. What to solve it?
+### ❓ I don't have Python, or I'm facing errors when setting up the scraper on my PC. How to solve it?
 
 You can easily run the scraper in Gitpod, a browser-based environment. Set it up in just 5 minutes by following these steps:
 
