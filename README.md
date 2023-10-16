@@ -195,13 +195,16 @@ After payment, you'll see a success screen with instructions on how to use the P
 
 ![Success Screen](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/success-screen.png)
 
-### ❓ What if I Don't Get ROI from It?
+### ❓What if I Don't Get Value from It?
 
-Your investment is completely risk-free! We stand by our product with a **30-Day Refund Policy**. If you feel that the Pro Version doesn't deliver the value you expected, you can request a refund.
+We wholeheartedly believe in the value our product brings, especially since it has successfully worked for hundreds of entrepreneurs like you.
+ 
+But, we also understand the reservations you might have.
 
-Still unsure about the Google Maps Scraper? No worries! Book a demo meeting, and we'll scrape your chosen places right in front of you.
+That's why we've put the ball in your court: If, within the next 30 days, you feel that our product hasn’t met your expectations, don't hesitate. Reach out to us, and We will gladly refund your money, no questions and no hassles.
 
-Book a Demo using this [meeting link](https://www.omkar.cloud/l/meet-chetan/).
+The risk is entirely on us because we're confident in what we've created.
+
 
 ### ❓ How Do I Get a Refund?
 
@@ -235,7 +238,7 @@ Next, follow these steps to initiate a refund:
 
    ![Discussion Image](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/discussion.png)
 
-3. You can expect to receive your refund within 1 day. We will also update you in the GitHub Discussion :)
+3. You can expect to receive your refund within 1 day. We will also update you in the GitHub Discussion [here](https://github.com/omkarcloud/google-maps-scraper/discussions/44) :)
 
    ![PayPal Image](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/paypal.png)
 
