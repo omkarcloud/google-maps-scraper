@@ -1,4 +1,4 @@
+image: chetan1111/gitpod-selenium
+
 tasks:
-  - name: Build and Run Docker Compose
-    command: |
-      docker-compose build && docker-compose up
+  - init: pip install -r requirements.txt

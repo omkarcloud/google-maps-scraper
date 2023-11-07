@@ -34,46 +34,54 @@
   
 ---
   
-🌟 Get 120 Potential Customers in 2.5 Minutes! 🤖
+⚡ Get 120 Leads in next 5 Minutes! ⚡
 
-Hola! 🌟
+Hello, Hola, Namaste And Sat Sri Akal! 🙏
 
 I am Google Maps Scraper, created to help you find new customers and grow your sales. 🚀
 
-Why Scrape Google Maps, you may ask? 
-Here's why it's the perfect ground for hunting B2B customers:
+*Why Scrape Google Maps?* 
+Here's why Google Maps is the perfect *hunting ground* for B2B customers:
 
-- 📞 **Direct Access to Phone Numbers**: Connect with potential clients directly, drastically reducing the time it takes to seal a deal.
+- 📞 Connect with potential clients directly, drastically reducing the time it takes to seal a deal.
 
-- 🌟 **Target the Cream of the Crop**: Target rich business owners based on their reviews, and supercharge your sales.
+- 🌟 Target rich business owners based on their reviews, and supercharge your sales.
 
-- 🎯 **Tailored Pitching**: With access to categories and websites, you can customize your pitch to cater to specific businesses and maximize your sales potential.
+- 🎯 With access to categories and websites, you can customize your pitch to cater to specific businesses and maximize your sales potential.
 
-Countless entrepreneurs have achieved remarkable success by prospecting leads from Google Maps, and now it's your turn!
+Countless entrepreneurs like you have achieved remarkable success by prospecting leads solely from Google Maps, and now it's your turn to make an Impact!
 
-Let's delve into some of my remarkable features that entrepreneurs love:
+## ⚡ Benefits
 
-1. 💪 **Rapid Lead Generation**: I can scrape a whopping **1200 Google Map Leads** in just **25** minutes, flooding you with potential sales prospects.
+Let's delve into some of my remarkable features that you will love:
 
-2. 🚀 **Effortless Multi-Query Scraping**: Easily scrape multiple queries in one go, saving you valuable time and effort.
+1. Scrape emails, Facebook, Twitter, and LinkedIn to deliver your message directly to the customer.
 
-3. 🌐 **Unlimited Query Potential**: There's no limit to the number of queries you can scrape, ensuring you never run out of leads.
+2. Limitless Scraping, Say No to costly subscriptions or pay-per-lead fees.
+
+3. Sort, select, and filter leads to find those most relevant to your business.
+
+4. Book resources and strategize on how to reach out to leads effectively.
+
+5. Supports Scraping Thousands of Customer Reviews.
+
+6. Scrape cities across all countries, to make your product reach every corner of the World.
 
 In the next 5 minutes, you'll witness the magic as I extract **120 Leads** from Google Maps for you, opening up a world of opportunities.
 
 ![Google Maps Data Scraper CSV Result](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/gmap_result.png)
 
-Ready to supercharge your business growth? Let's get started! 💼🌍
+Ready to skyrocket your customer base? Let's get started! 💼🌍
 
-## Video Demo
+## 🎥 Video Demo
 
-If you'd like to see my capabilities in action before using me, I encourage you to watch this short video.
+If you'd like to see my powerful capabilities in action before using me, I encourage you to watch this short video.
 
 [![Google Maps Video Tutorial](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/video.png)](https://www.youtube.com/watch?v=6UZhTlkCb9A)
 
 ## 🚀 Getting Started
 
-Let's get started generating Google Maps Leads by following these simple steps:
+Let's get started generating Google Maps Leads by following these super simple steps:
 
 1️⃣ Clone the Magic 🧙‍♀️:
 ```shell
@@ -93,229 +101,234 @@ Once the scraping process is complete, you can find your leads in the `output` d
 
 ![Google Maps Data Scraper CSV Result](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/gmap_result.png)
 
-## 🤔 FAQs
 
-<!-- ### ❓ The scraper is only retrieving 5 results. How can I scrape all Google Maps search results?
-A: Open the file `src/config.py` and delete the line that sets the `max_results` parameter.
+If you,
 
-By doing so, you can scrape all the Google Maps Listing. For example, to scrape all restaurants in Delhi, modify the code as follows:
+- Don't have Python installed
+- Facing installation errors
+- Having low internet speed
+- Having low RAM
+
+Then you should follow this simple FAQ [here](https://github.com/omkarcloud/google-maps-scraper/blob/master/advanced.md#-i-dont-have-python-or-im-facing-errors-when-setting-up-the-scraper-on-my-pc-how-to-solve-it), and you'll have your Google Maps leads in the next 5 minutes.
+
+## 🤔 Questions
+
+### ❓ How to Scrape a Specific Search Query?
+To scrape a specific query, open `main.py` file and update the `queries` list with your desired query.
+
 ```python
-queries = [
-    {
-        "keyword": "restaurants in delhi",
-    },
-]
-```
-Note: You will be able to scrape up to 120 leads per search due to Google's scrolling limitation. Technically, there is no way possible to bypass this limitation. -->
-
-### ❓ I want to scrape search results for a specific search query. How can I do that?
-A: Open the file `src/config.py` and update the `keyword` with your desired search query.
-
-For example, if you want to scrape leads about Digital Marketers in Kathmandu 🇳🇵, modify the code as follows:
-```python
-queries = [
-    {
-        "keyword": "digital marketers in kathmandu",
-    },
-]
+queries = ["web developers in Delhi"]
+Gmaps.places(queries)
 ```
 
-Note: You will be able to scrape up to 120 leads per search due to Google's scrolling limitation. Technically, there is no way possible to bypass this limitation.
+**Note:** Due to Google's scrolling limitation, you can scrape up to 120 leads per search.
 
-### ❓ Can I scrape more than one query using this script?
-A: Easy! Open `src/config.py` and add as many queries as you like.
-
-For example, if you want to scrape restaurants in both Delhi 😎 and Bangalore 👨‍💻, use the following code:
-```python
-queries = [
-    {
-        "keyword": "restaurants in delhi",
-    },
-    {
-        "keyword": "restaurants in bangalore",
-    }
-]
-```
-
-### ❓ I want to scrape only the first 5 results. How can I do that?
-
-Absolutely! Open `src/config.py` and modify the `max_results` parameter.
-
-For example, if you want to scrape the first 5 restaurants in Bangalore, use the following code:
+### ❓ How to Scrape Multiple Queries?
+Add multiple queries to the `queries` list as follows:
 
 ```python
 queries = [
-    {
-        "keyword": "restaurants in Bangalore",
-        "max_results": 5,
-    }
+   "web developers in Bangalore",
+   "web developers in Delhi",
 ]
+Gmaps.places(queries)
 ```
 
-### ❓ How to Scrape Additional Information like Website, Phone, Geo Coordinates, Price Range?
+### ❓ How Can I Filter Google Map Search Results?
+You can apply filters such as:
 
-You may upgrade to the Pro Version of the Google Maps Scraper to scrape additional data points, like:
+1. `min_rating`/`max_rating` (e.g., 3.5)
+2. `min_reviews`/`max_reviews` (e.g., 10)
+3. `has_phone` (e.g., True/False)
+4. `has_website` (e.g., True/False)
+5. `category_in` (e.g., "Dental Clinic", "Dental Laboratory")
 
-- 🌐 **Website**
-- 📞 **Phone Numbers**
-- 🌍 **Geo Coordinates**
-- 💰 **Price Range**
-- And **26 more data points** like Owner details, Photos, About Section, and [many more](https://github.com/omkarcloud/google-maps-scraper/blob/master/pro-docs.md#-what-data-points-are-scraped-by-the-pro-version)!
+For instance, to scrape listings with at least 5 reviews and no more than 100 reviews, with a phone number but no website:
 
-Below is a sample lead scraped by the Pro Version:
+```python
+Gmaps.places(queries, min_reviews=5, max_reviews=100, has_phone=True, has_website=False)
+```
 
-![Pro Lead](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/paid-lead.png)
-*View sample leads scraped by the Pro Version [here](https://drive.google.com/file/d/19745V8flLE3-m1xSRAB9msv89AiI82_Q/view)*
+To scrape listings that belong to specific categories:
 
-But that's not all! The Pro Version comes loaded with advanced features, allowing you to:
+```python
+Gmaps.places(queries, category_in=[Gmaps.Category.DentalClinic, Gmaps.Category.DentalLaboratory])
+```
 
-- 🌟 **Sort by Reviews and Ratings**: Target top businesses by sorting your leads in descending/ascending order of reviews and ratings.
+All Categories can be found in the `category.py` file.
 
-- 🧐 **Filter Your Leads**: Use filters to narrow down prospects based on minimum/maximum reviews, ratings, website availability, and more.
+### ❓ How to Sort by Reviews, Rating, or Category?
 
-- 📋 **Select Specific Fields**: Customize your data output by selecting only the fields you need, such as title, rating, reviews, and phone numbers.
+- To sort by reviews:
 
-To learn more about how to use these Pro Version features, read the Pro Version docs [here](./pro-docs.md).
+```python
+Gmaps.places(queries, sort=Gmaps.SORT_BY_REVIEWS_DESCENDING)
+```
 
-🔍 **Comparison**:
+- To sort by rating:
 
-See how the Pro Version stacks up against the free version in this comparison image:
+```python
+Gmaps.places(queries, sort=Gmaps.SORT_BY_RATING_DESCENDING)
+```
 
-![Comparison Image](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/comparision-image.png)
+- To sort by title (alphabetically):
 
-And here's the best part - the Pro Version offers great ROI because it helps you land new customers bringing hundreds and thousands of dollars, all with zero risk. That's right because, we offer a **30-Day Refund Policy**!
+```python
+Gmaps.places(queries, sort=Gmaps.SORT_BY_TITLE_ASCENDING)
+```
 
-### ❓ How to Get the Pro Version?
+- To sort by a different field, such as category, in ascending order:
 
-Visit the Sponsorship Page [here](https://github.com/sponsors/omkarcloud?frequency=one-time) and pay $28 by selecting Google Maps Scraper Pro Option.
+```python
+Gmaps.places(queries, sort=["category", "asc"])
+```
 
-![Pay](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/pay.gif)
+- Or, in descending order:
 
-After payment, you'll see a success screen with instructions on how to use the Pro Version:
+```python
+Gmaps.places(queries, sort=["category", "desc"])
+```
 
-![Success Screen](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/success-screen.png)
+### ❓ How to Scrape a Maximum of 5 Results Only?
 
-### ❓What if I Don't Get Value from It?
+Set the `max` parameter:
 
-We wholeheartedly believe in the value our product brings, especially since it has successfully worked for hundreds of entrepreneurs like you.
- 
-But, we also understand the reservations you might have.
+```python
+Gmaps.places(queries, max=5)
+```
 
-That's why we've put the ball in your court: If, within the next 30 days, you feel that our product hasn’t met your expectations, don't hesitate. Reach out to us, and We will gladly refund your money, no questions and no hassles.
+### ❓ I Need to Reach Out to Leads to Sell My Products/Services. How Do I Scrape Email, Facebook, Twitter, LinkedIn, etc.?
 
-The risk is entirely on us because we're confident in what we've created.
+Reaching out to potential customers via email, LinkedIn, etc., is an excellent idea.
 
+You will need a contact-finding API. The Website Contacts Scraper is an excellent API to use.
 
-### ❓ How Do I Get a Refund?
+Follow these simple steps to use it:
 
-Requesting a refund is a simple process that should only take about 5 minutes. To request a refund, ensure you have one of the following:
-
-- **A PayPal Account (e.g., "myname@example.com" or "chetan@gmail.com")**
-- **or a UPI ID (India only) (e.g., 'myname@bankname" or "chetan@okhdfc")**
-
-Next, follow these steps to initiate a refund:
-
-1. Send an email to `chetan@omkar.cloud` using the following template:
-
-   - To request a refund via PayPal:
-     ```
-     Subject: Request Refund
-     Content: Please send a refund to my PayPal email: myname@example.com
-     ```
-
-   - To request a refund via UPI (India Only):
-     ```
-     Subject: Request Refund
-     Content: Please send a refund to my UPI ID: myname@bankname
-     ```
-
-   ![Email Image](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/email.png)
-
-2. Next, go to the discussion [here](https://github.com/omkarcloud/google-maps-scraper/discussions/44) and comment to request a refund using this template:
-   ```
-   I have sent a refund request from my email: myname@example.com.
-   ```
-
-   ![Discussion Image](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/discussion.png)
-
-3. You can expect to receive your refund within 1 day. We will also update you in the GitHub Discussion [here](https://github.com/omkarcloud/google-maps-scraper/discussions/44) :)
-
-   ![PayPal Image](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/paypal.png)
-
-<!-- ### ❓ I Need Setup Support for scraper installation and usage?
-
-Happy to help :), All Pro users who need help with scraper installation and usage can book a meeting with us [here](https://www.omkar.cloud/l/meet-chetan/). -->
-
-### ❓ How to increase the speed of the Scraper?
-
-To boost the scraping speed, the scraper launches multiple browsers simultaneously. Here's how you can increase the speed further:
-
-- Adjust the `number_of_scrapers` variable in the configuration file. Recommended values are:
-  - Standard laptop: 4 or 8
-  - Powerful laptop: 12 or 16
-
-Note: Avoid setting `number_of_scrapers` above 16, as Google Maps typically returns only 120 results. Using more than 16 scrapers may lead to a longer time spent on launching the scrapers than on scraping the places. Hence, it is best to stick to 4, 8, 12, or 16.
-
-In case you encounter any issues, like the scraper crashing due to low-end PC specifications, follow these recommendations:
-
-- Reduce the `number_of_scrapers` by 4 points.
-- Ensure you have sufficient storage (at least 4 GB) available, as running multiple browser instances consumes storage space.
-- Close other applications on your computer to free up memory.
-
-Additionally, consider improving your internet speed to further enhance the scraping process.
-<!-- 
-### ❓ How much time does it take to scrape "n" searches?
-
-On average, each Google Maps search gives 120 listings. It takes approximately 2.5 minutes to scrape these 120 listings.
-
-To calculate the number of **hours** it takes to scrape "n" searches, you can **google search** this formula substituting `n` with the number of searches you want to conduct:
-
-`n * 2.5 minutes`
-
-For example, if you want to scrape 10 Google Map queries or 1200 listings, it will take around 25 minutes.
-
-![](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/search-time.png) -->
-
-### ❓ I don't have Python, or I'm facing errors when setting up the scraper on my PC. How to solve it?
-
-You can easily run the scraper in Gitpod, a browser-based environment. Set it up in just 5 minutes by following these steps:
-
-1. Visit [this link](https://gitpod.io/#https://github.com/omkarcloud/google-maps-scraper) and sign up using your GitHub account.
+1. Sign up on RapidAPI by visiting [this link](https://rapidapi.com/auth/sign-up).
    
-   ![Screenshot (148)](https://github.com/omkarcloud/google-maps-scraper/assets/53407137/f498dda8-5352-4f7a-9d70-c717859670d4)
-  
-2. In the terminal, run the following command:
+![Sign Up on RapidAPI](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/sign-up.png)
 
-   ```bash
-   docker-compose build && docker-compose up
-   ```
-  
-3. Once the scraper has finished running, download the leads from the `output` folder.
+2. Subscribe to the Free Plan by visiting [this link](https://rapidapi.com/letscrape-6bRBa3QguO5/api/website-contacts-scraper/pricing).
 
-   ![Screenshot (219)](https://github.com/omkarcloud/google-maps-scraper/assets/53407137/bade4001-12dc-4191-972e-cba0466f3e3f)
+![Subscribe to Free Plan](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/subscribe.png)
 
-<!-- ### ❓ The Turkish characters aren't rendering properly?
+3. Copy the API key.
+![Copy the API Key](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/key.png)
 
-You can find a solution [here](https://github.com/omkarcloud/google-maps-scraper/discussions/48). -->
+4. Use it in the scraper as follows:
+```python
+queries = ["web developers in Bangalore"]
+Gmaps.places(queries, max=5, key="YOUR_API_KEY") 
+```
+5. Run the script, and you'll find emails, Facebook, Twitter, and LinkedIn details of leads in your output file.
 
-### ❓ I have more questions or need further assistance?
+The first 40 emails are free, after which it costs $25 for 10,000 scrapes, which is affordable considering if you land just one B2B client, you could easily make hundreds of dollars, easily covering the cost.
 
-Reach out to us on WhatsApp! We'll solve your problem within 24 hours.
+### ❓ How to scrape all cities in my country?
 
-[![Whatsapp](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/mwa.png)](https://wa.me/message/3WED4FYQRDPNE1)
+For example, To scrape web developers from 100 cities in India, use the following example:
 
-
-<!-- ### ❓ How to Run it in Docker?
-
-Run the following command to build and run the Docker Image:
-
-```bash
-docker-compose build && docker-compose up
+```python
+queries = Gmaps.Cities.India("web developers in")[0:100]
+Gmaps.places(queries) 
 ```
 
-Please make sure you rebuild the image every time you want to run the scraper by running above command, Failing to do so will result in error. -->
+After running the code, an `india-cities.json` file will be generated in the `output` directory with a list of all the Indian cities.
+
+You can prioritize certain cities by editing the cities JSON file in the output folder and moving them to the top of the list.
+
+We recommend scraping only 100 cities at a time, as countries like India have thousands of cities, and scraping them all could take a considerable amount of time. Once you've exhausted the outreach in 100 cities, you can scrape more.
+
+### ❓ Can I Interrupt the Scrape While It's Running?
+Yes, you can. The scraper will resume from where it left off if you interrupt the process.
 
 
-## Love It? [Star It! ⭐](https://github.com/omkarcloud/google-maps-scraper)
+### ❓ What are popular use cases for entrepreneurs?
 
-[![Stargazers for @omkarcloud/google-maps-scraper](https://reporoster.com/stars/omkarcloud/google-maps-scraper)](https://github.com/omkarcloud/google-maps-scraper/stargazers)
+- For selling to B2C businesses like restaurants and clothing shops:
+  - They should be affluent enough to afford your services.
+  - Avoid very large businesses, as they tend to be bureaucratic and harder to sell to.
+
+```python
+queries = Gmaps.Cities.India("your_target_customer in")[0:5]
+Gmaps.places(queries,
+             min_reviews=60,
+             max_reviews=800,
+             key="YOUR_API_KEY")
+```
+
+- For selling to B2B businesses like web developers, digital marketers, or less frequent B2C businesses such as dentists, doctors, lawyers:
+  - They should be affluent enough to afford your services.
+
+```python
+queries = Gmaps.Cities.India("your_target_customer in")[0:5]
+Gmaps.places(queries, min_reviews=25, key="YOUR_API_KEY") 
+```
+
+- For selling web development services to businesses such as restaurants that do not have a website:
+
+```python
+queries = Gmaps.Cities.India("your_target_customer in")[0:5]
+Gmaps.places(queries, min_reviews=25, has_phone=True, has_website=False, key="YOUR_API_KEY") 
+```
+
+Most importantly, avoid the temptation to sell to leads with low reviews, as they may not have the budget for your services and could be a time-consuming prospect.
+
+### ❓ Do You Know of an Effective Strategy to Increase the Chances of Selling My Product?
+
+Here is a brilliant one:
+
+1. Read [The Cold Email Manifesto](https://www.amazon.com/Cold-Email-Manifesto-pipeline-business-ebook/dp/B0B1DYNNSL) to learn how to write effective cold emails that get responses. 
+  - Cold emailing still works in 2023; I say that because I have personally generated $1,000 from sending a personalized cold email to 3-4 contacts at Bright Data (a proxy company), pitching my blog writing services.
+
+2. Draft a compelling cold email template that clearly states your value proposition.
+
+3. Commit to a 21-day goal of reaching out to potential customers. If you don't succeed by then, you can consider other strategies. [VERY VERY IMPORTANT]
+
+4. Use the scraper with an email-finding extension to gather leads from around 5 cities of your choice, including their emails and social media handles.
+
+5. Send personalized emails to your target businesses and connect with key company personnel on LinkedIn, Facebook, and Twitter.
+
+**Note:** Avoid cold calling, not because it isn't effective, but because handling rejection over the phone can severely impact your confidence.
+
+### ❓ Advanced Questions
+
+Having read this page, you have all the knowledge needed to effectively utilize the scraper and ensure a never ending supply of highly relevant leads.
+
+You may choose to explore the following questions based on your interests:
+
+#### For Knowledge
+
+1. [Why Do You Randomize Cities for Each User?](https://github.com/omkarcloud/google-maps-scraper/blob/master/advanced.md#-why-do-you-randomize-cities-for-each-user)
+2. [Do I Need Proxies?](https://github.com/omkarcloud/google-maps-scraper/blob/master/advanced.md#-do-i-need-proxies)
+3. [The Turkish Characters Aren't Rendering Properly in Excel?](https://github.com/omkarcloud/google-maps-scraper/blob/master/advanced.md#-the-turkish-characters-arent-rendering-properly-in-excel)
+4. [I am a Web Scraper; The Scraper is Really Impressive with Caching and Parallel Scraping Features?](https://github.com/omkarcloud/google-maps-scraper/blob/master/advanced.md#-i-am-a-web-scraper-the-scraper-is-really-impressive-with-caching-and-parallel-scraping-features)
+
+#### For Technical Usage
+
+1. [I don't have Python, or I'm facing errors when setting up the scraper on my PC. How to solve it?](https://github.com/omkarcloud/google-maps-scraper/blob/master/advanced.md#-i-dont-have-python-or-im-facing-errors-when-setting-up-the-scraper-on-my-pc-how-to-solve-it)
+2. [How to Scrape Reviews?](https://github.com/omkarcloud/google-maps-scraper/blob/master/advanced.md#-how-to-scrape-reviews)
+3. [How to select more fields?](https://github.com/omkarcloud/google-maps-scraper/blob/master/advanced.md#-how-to-select-more-fields)
+4. [How many Keywords Can It Scrape per Hour?](https://github.com/omkarcloud/google-maps-scraper/blob/master/advanced.md#-how-many-keywords-can-it-scrape-per-hour)
+5. [What are Popular Snippets for Data Scientists?](https://github.com/omkarcloud/google-maps-scraper/blob/master/advanced.md#-what-are-popular-snippets-for-data-scientists)
+6. [How to Change the Language of Output?](https://github.com/omkarcloud/google-maps-scraper/blob/master/advanced.md#-how-to-change-the-language-of-output)
+7. [I have Google Map Places Links, How to Scrape Links?](https://github.com/omkarcloud/google-maps-scraper/blob/master/advanced.md#-i-have-google-map-places-links-how-to-scrape-links)
+8. [How to Scrape at Particular Coordinates and Zoom Level?](https://github.com/omkarcloud/google-maps-scraper/blob/master/advanced.md#-how-to-scrape-at-particular-coordinates-and-zoom-level)
+
+
+### ❓ Need More Help or Have Additional Questions?
+
+For further assistance, contact us on WhatsApp. We'll reply within 24 hours.
+
+[![Contact Us on WhatsApp](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/mwa.png)](https://wa.me/message/3WED4FYQRDPNE1)
+
+## Love It? [Star It ⭐!](https://github.com/omkarcloud/google-maps-scraper)
+
+Become one of our amazing stargazers by giving us a star ⭐ on GitHub!
+
+It's just one click, but it means the world to me.
+
+[![Stargazers for @omkarcloud/google-maps-scraper](https://bytecrank.com/nastyox/reporoster/php/stargazersSVG.php?user=omkarcloud&repo=google-maps-scraper)](https://github.com/omkarcloud/google-maps-scraper/stargazers)
+
+## Made with *Discipline* for you in Bharat 🇮🇳 - Vande Mataram
