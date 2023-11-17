@@ -66,17 +66,25 @@ def parse_relative_date(relative_date, retrieval_date, hl="en"):
     if (not isinstance(relative_date, str)) or relative_date == "":
         return None
     # Normaliza texto
-    text = unidecode(relative_date).lower().strip()
+    unidecoded_text = unidecode(relative_date).lower().strip()
+    text = unidecoded_text
     # Transforma {"um","uma"} no número 1
+    
     text = re.sub(relative_date_maps[hl]["one_regex"], "1", text)
     # Remove terminação "atrás"
+    
     text = re.sub(relative_date_maps[hl]["ago_regex"], "", text)
 
     number, time_unit = text.split(" ")
-    number = float(number)
+    
+    try:
+        number = float(number)
+    except:
+        if "an" in unidecoded_text:
+            number = 1
+        else:
+            raise
     kwargs = {relative_date_maps[hl]["time_unit"][time_unit]: number}
+
     review_date = datetime.strptime(retrieval_date, '%Y-%m-%d %H:%M:%S.%f')    - relativedelta(**kwargs)
     return str(review_date)
-
-# date_string = "2023-11-14 15:22:45.374751"
-# datetime_object = datetime.strptime(date_string, '%Y-%m-%d %H:%M:%S.%f')
