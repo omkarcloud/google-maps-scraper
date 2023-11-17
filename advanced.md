@@ -8,9 +8,9 @@ You can easily run the scraper in Gitpod, a browser-based development environmen
    
    ![Screenshot (148)](https://github.com/omkarcloud/google-maps-scraper/assets/53407137/f498dda8-5352-4f7a-9d70-c717859670d4.png)
   
-2. To speed up scraping, select the Large 8 Core, 16 GB Ram Machine and click the `Continue` button.   
+2. Once Signed Up, Open it in Gitpod.   
 
-   ![16gb select](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/16gb-select.png)
+   ![gp-continue](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/gp-continue.png)
 
 3. In the terminal, run the following command to start scraping:
    ```bash
@@ -21,12 +21,21 @@ You can easily run the scraper in Gitpod, a browser-based development environmen
 
    ![Screenshot (219)](https://github.com/omkarcloud/google-maps-scraper/assets/53407137/bade4001-12dc-4191-972e-cba0466f3e3f.png)
 
-Please understand:
-   - The internet speed in Gitpod is extremely fast at around 180 Mbps.
+Just like with a local setup, you can configure the scraper in Gitpod by editing the `main.py` file and running the scraper using the `python main.py` command.
 
-      ![speedtest](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/speedtest.png)
+Also, it's important to regularly interact with the Gitpod environment, such as clicking within it every 30 minutes, to keep the machine active and prevent automatic shutdown. 
 
-   - You need to interact with Gitpod, such as clicking within the environment, every 30 minutes to prevent the machine from automatically closing.
+HEY CORRECT EITH GPT
+If you don't want to click every 30 minutes, then we encourage to install Python on PC and run the scraper locally. 
+
+
+### ❓ Does running Scraper on Bigger Machine scrapes Data Faster?
+
+No, the scraper is very light on resources, so there won't be any noticeable difference whether you run it on an Intel Pentium processor with 4GB of RAM or an Intel i7 processor with 16GB of RAM.
+   
+<!-- 
+But if you are scraping reviews (which user's don't need to), you should use a bigger machine because scraping reviews runs parallely. The more the Ram the faster will run.
+HEY CORRECT EITH GPT -->
 
 ### ❓ How to Scrape Reviews?
 Set the `scrape_reviews` argument to true.
@@ -36,13 +45,13 @@ queries = [
    "web developers in bangalore"
 ]
 
-gmaps.places(queries, scrape_reviews=True)
+Gmaps.places(queries, scrape_reviews=True)
 ```
 
 You can also configure the following options:
 - reviews_max (Defaults: 20)
 - reviews_sort (Defaults: Newest)
-   - Options are Newest, Oldest, Relevance, Highest Rated, Lowest Rated
+   - Options are Most Relevant, Newest,  Highest Rating, Lowest Rating
 
 Here is an example that scrapes the Lowest Rated, 100 Reviews.
 ```python
@@ -50,7 +59,7 @@ queries = [
    "web developers in bangalore"
 ]
 
-gmaps.places(queries, scrape_reviews=True, reviews_max=100, reviews_sort=Gmaps.LowestRated)
+Gmaps.places(queries, scrape_reviews=True, reviews_max=100, reviews_sort=Gmaps.LOWEST_RATING)
 ```
 
 To scrape all reviews without any limit, you can set `reviews_max` to `Gmaps.ALL_REVIEWS`. 
@@ -60,7 +69,7 @@ queries = [
    "web developers in bangalore"
 ]
 
-gmaps.places(queries, scrape_reviews=True, reviews_max=Gmaps.ALL_REVIEWS, reviews_sort=Gmaps.LowestRated)
+Gmaps.places(queries, scrape_reviews=True, reviews_max=Gmaps.ALL_REVIEWS)
 ```
 
 Please understand that some places may have thousands of reviews, so scraping all reviews may take a long time. 
@@ -71,7 +80,7 @@ It's best to limit the number of reviews to scrape to a number like 100 or 1000.
 
 Seeing a lot of fields can be intimidating, so we have only kept the most important fields in the output.
 
-However, you can select 28 more fields which are highlighted_reviews.
+However, you can select from upto 45+ fields.
 
 To select all fields, use the following code:
 
@@ -79,23 +88,39 @@ To select all fields, use the following code:
 queries = [
    "web developers in bangalore"
 ]
-gmaps.places(queries, lang=bt.Lang.Spanish, fields=Gmaps.ALL_FIELDS)
+Gmaps.places(queries, fields=Gmaps.ALL_FIELDS)
 ```
 
 To select specific fields only, use the following code:
-
+<!-- todo: use fields -->
 ```python
 queries = [
    "web developers in bangalore"
 ]
-gmaps.places(queries, lang=bt.Lang.Spanish, fields=["title", "link", "main_category", "rating", "reviews", "website", "phone", "address"])
+
+fields = [
+   Gmaps.Fields.PLACE_ID, 
+   Gmaps.Fields.NAME, 
+   Gmaps.Fields.MAIN_CATEGORY, 
+   Gmaps.Fields.RATING, 
+   Gmaps.Fields.REVIEWS, 
+   Gmaps.Fields.WEBSITE, 
+   Gmaps.Fields.PHONE, 
+   Gmaps.Fields.ADDRESS,
+   Gmaps.Fields.LINK, 
+]
+
+Gmaps.places(queries, fields=fields)
 ```
 
 Please note that selecting more or fewer fields will not affect the scraping time; it will remain exactly the same.
 
 So, don't fall into the trap of selecting fewer fields thinking it will decrease the scraping time, because it won't. 
 
-### ❓ How many Keywords Can It Scrape per Hour?
+See the list of all supported fields [here](https://github.com/omkarcloud/google-maps-scraper/blob/master/fields.md)
+
+
+<!-- ### ❓ How many Keywords Can It Scrape per Hour?
 
 - If you have 4 GB of free RAM then, n Keywords per Hour
 - If you have 8 GB of free RAM then, n Keywords per Hour
@@ -104,36 +129,51 @@ Also, you don't need to worry about the scraping speed because even if you run i
 
 Reaching out to thousands of leads can easily keep you busy for 2 weeks.
 
-So, simply run the scraper while you are doing other things on your PC, and you will have thousands of leads in no time.
+So, simply run the scraper while you are doing other things on your PC, and you will have thousands of leads in no time. -->
 
 ### ❓ What are Popular Snippets for Data Scientists?
 
-- Scrape 100 Newest Google Maps Places Reviews of a Country.
+- Scrape 100 Newest Google Maps Places Reviews of a Country and Store the result as JSON.
 
 ```python
+from botasaurus import bt
+
 queries = Gmaps.Cities.India("your_target in")
 
-gmaps.places(queries, scrape_reviews=True, reviews_max=100, reviews_sort=Gmaps.Newest)
+scraped_places = Gmaps.places(queries, scrape_reviews=True, reviews_max=100)
+bt.write_json(result, "scraped_places.json")
+```
+
+
+- Read the Data for Panda Analysis
+
+```python
+from botasaurus import bt
+
+scraped_places = bt.read_json("scraped_places.json")
+# Do whatever you want with scraped_places
 ```
 
 ### ❓ How to Change the Language of Output?
 Pass the `lang` argument.
 
-For example, if you want to scrape results in Hindi, you can do so by passing `lang="bt.Lang.Hindi"`.
+For example, if you want to scrape results in Spanish, you can do so by passing `lang="Gmaps.Lang.Spanish"`.
 
 ```python
 queries = [
    "web developers in bangalore"
 ]
-gmaps.places(queries, lang=bt.Lang.Hindi)
+Gmaps.places(queries, lang=Gmaps.Lang.Spanish)
 ```
 
 All Google Maps languages are supported. Some popular languages you may want to use are:
-- bt.Lang.Hindi
-- bt.Lang.Spanish
-- bt.Lang.English
-- bt.Lang.Japanese
-- bt.Lang.German
+- Gmaps.Lang.Spanish
+- Gmaps.Lang.English
+- Gmaps.Lang.Japanese
+- Gmaps.Lang.German
+- Gmaps.Lang.Spanish
+
+See the list of all supported languages [here](https://github.com/omkarcloud/google-maps-scraper/blob/master/languages.md)
 
 ### ❓ I have Google Map Places Links, How to Scrape Links?
 
@@ -144,7 +184,9 @@ links = [
    "https://www.google.com/maps/place/Zinavo-+Web+Development,+Web+Design+Company+in+Bangalore,+SEO+Services,+Digital+Marketing+Agency,+eCommerce+Web+Development/@13.01443,77.6480612,17z/data=!3m1!4b1!4m6!3m5!1s0x3bae172f3e7069f1:0xbcac5b2d393c2aa2!8m2!3d13.01443!4d77.6480612!16s%2Fg%2F11h0l3y9l?authuser=0&hl=en&entry=ttu",
    "https://www.google.com/maps/place/SeekNEO+-+Web+Development,+Web+Design+Company+in+Bangalore,+eCommerce+Web+Development,+SEO+Services,+Digital+Marketing+Agency/@12.9863763,77.5473899,17z/data=!3m1!4b1!4m6!3m5!1s0x3bae13ac4bcc6641:0x1bf48a7dee3d5a51!8m2!3d12.9863763!4d77.5473899!16s%2Fg%2F11g2338zrl?authuser=0&hl=en&entry=ttu"
 ]
-gmaps.links(links)
+output_folder = "my-awesome-places"
+
+Gmaps.links(links, output_folder)
 ```
 
 ### ❓ How to Scrape at Particular Coordinates and Zoom Level?
@@ -156,7 +198,7 @@ queries = [
    "web developers in bangalore"
 ]
 
-gmaps.places(queries, geo_coordinates="12.900490, 77.571466")
+Gmaps.places(queries, geo_coordinates="12.900490, 77.571466")
 ```
 
 You can also adjust the zoom level, which will zoom in to the location before scraping:
@@ -177,7 +219,7 @@ queries = [
    "web developers in bangalore"
 ]
 
-gmaps.places(queries, geo_coordinates="12.900490, 77.571466", zoom=16)
+Gmaps.places(queries, geo_coordinates="12.900490, 77.571466", zoom=16)
 ```
 
 ### ❓ Why Do You Randomize Cities for Each User?
@@ -192,11 +234,13 @@ Randomizing cities spreads them among our users, giving each user a better chanc
 
 No, you do not need proxies. You can scrape hundreds of thousands of leads without needing them.
 
-### ❓ The Turkish Characters Aren't Rendering Properly in Excel?
+<!-- ### ❓ The Turkish Characters Aren't Rendering Properly in Excel?
 
 This issue occurs only in Excel, which does not render Turkish characters properly. The easiest solution is to upload the CSV to Google Sheets, which should render the characters correctly.
 
 ![turkish-character-fix](https://github.com/omkarcloud/google-maps-scraper/assets/53407137/1362b910-7102-4c74-9231-c18cb4504161)
+
+Alternatively, setting the `lang` attribute to `Gmaps.Lang.English` will give results in English. -->
 
 ### ❓ I am a Web Scraper; The Scraper is Really Impressive with Caching and Parallel Scraping Features?
 
@@ -204,7 +248,7 @@ Yes, it includes advanced features that enhance efficiency and user experience, 
 
 - Parallel scraping to save time.
 - Keeping drivers alive for quick task initiation.
-- Automatic calculation of the number of scrapers to run in parallel based on system resources.
+<!-- - Automatic calculation of the number of scrapers to run in parallel based on system resources. -->
 - Asynchronous scraping, allowing for data scraping in the background.
 - Caching results so you can pick up where you left off in case of interruption.
 
@@ -227,4 +271,4 @@ It's just one click, but it means the world to us.
 
 [![Stargazers for @omkarcloud/google-maps-scraper](https://bytecrank.com/nastyox/reporoster/php/stargazersSVG.php?user=omkarcloud&repo=google-maps-scraper)](https://github.com/omkarcloud/google-maps-scraper/stargazers)
 
-## Made with *Discipline* for you in Bharat 🇮🇳 - Vande Mataram
+## Made with ❤️ in Bharat 🇮🇳 - Vande Mataram

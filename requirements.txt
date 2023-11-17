@@ -1,2 +1,5 @@
 bose
-pydash
+Unidecode
+geonamescache
+dateutils
+casefy
