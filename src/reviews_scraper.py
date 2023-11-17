@@ -144,7 +144,7 @@ class GoogleMapsAPIScraper:
         try:
             response_text = response.text
         except UnicodeDecodeError as e:
-            tb = re.sub("\s", " ", traceback.format_exc())
+            tb = re.sub(r"\s", " ", traceback.format_exc())  # Corrected
             response_text = response.content.decode(
                 encoding="unicode_escape", errors="replace"
             )
@@ -192,7 +192,7 @@ class GoogleMapsAPIScraper:
             #     response_soup.find("div", dict(r.attrib)) for r in reviews_tree
             # ]
         except Exception as e:
-            tb = re.sub("\s", " ", traceback.format_exc())
+            tb = re.sub(r"\s", " ", traceback.format_exc())  # Corrected
             
             if next_token is None:
                 next_token = self._get_response_token(response_text)
@@ -201,7 +201,7 @@ class GoogleMapsAPIScraper:
 
     def _get_response_token(self, response_text: str) -> str:
         """Searches for token in response text using regex, in case other methods fail"""
-        match = re.search('(data-next-page-token\s*=\s*")([\w=]*)', response_text)
+        match = re.search(r'(data-next-page-token\s*=\s*")([\w=]*)', response_text)  # Corrected
         if match:
             return match.groups()[1]
         
@@ -281,7 +281,7 @@ class GoogleMapsAPIScraper:
         try:
             topics = response.find("localreviews-place-topics")
             s = " ".join([s for s in topics.stripped_strings])
-            metadata["topics"] = re.sub("\s+", " ", s)
+            metadata["topics"] = re.sub(r"\s+", " ", s)  # Corrected
         except Exception as e:
             pass
 
@@ -299,14 +299,14 @@ class GoogleMapsAPIScraper:
                 break
             text += s + " "
 
-        text = re.sub("\s", " ", text)
+        text = re.sub(r"\s", " ", text)  # Corrected
         text = re.sub("'|\"", "", text)
         text = text.strip()
         return text
 
     def _handle_review_exception(self, result, review, name) -> dict:
         # Error log
-        tb = re.sub("\s", " ", traceback.format_exc())
+        tb = re.sub(r"\s", " ", traceback.format_exc())  # Corrected
         msg = f"review {name}: {tb}"
         
         # Appending to line
@@ -321,7 +321,7 @@ class GoogleMapsAPIScraper:
 
     def _handle_place_exception(self, response_text, name, n) -> dict:
         # Error log
-        tb = re.sub("\s", " ", traceback.format_exc())
+        tb = re.sub(r"\s", " ", traceback.format_exc())  # Corrected
         msg = f"place {name} request {n}: {tb}"
         
         # Saving file
@@ -379,7 +379,7 @@ class GoogleMapsAPIScraper:
             other_ratings = review.find(True, class_="k8MTF")
             if other_ratings:
                 s = " ".join([s for s in other_ratings.stripped_strings])
-                result["other_ratings"] = re.sub("\s+", " ", s)
+                result["other_ratings"] = re.sub(r"\s+", " ", s)
         except Exception as e:
             self._handle_review_exception(result, review, "other_ratings")
 
@@ -457,7 +457,7 @@ class GoogleMapsAPIScraper:
             trip_type_travel_group = review.find(True, class_="PV7e7")
             if trip_type_travel_group:
                 s = " ".join([s for s in trip_type_travel_group.stripped_strings])
-                result["trip_type_travel_group"] = re.sub("\s+", " ", s)
+                result["trip_type_travel_group"] = re.sub(r"\s+", " ", s)  # Corrected
         except Exception as e:
             self._handle_review_exception(result, review, "trip_type_travel_group")
         
@@ -568,7 +568,7 @@ class GoogleMapsAPIScraper:
                     j += 1
             except Exception as e:
                 traceback.print_exc()
-                tb = re.sub("\s", " ", traceback.format_exc())
+                tb = re.sub(r"\s", " ", traceback.format_exc())
                 
 
             if review_count < 10 or token == "":
