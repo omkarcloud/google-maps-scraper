@@ -25,7 +25,6 @@ Just like with a local setup, you can configure the scraper in Gitpod by editing
 
 Also, it's important to regularly interact with the Gitpod environment, such as clicking within it every 30 minutes, to keep the machine active and prevent automatic shutdown. 
 
-HEY CORRECT EITH GPT
 If you don't want to click every 30 minutes, then we encourage to install Python on PC and run the scraper locally. 
 
 
@@ -35,7 +34,7 @@ No, the scraper is very light on resources, so there won't be any noticeable dif
    
 <!-- 
 But if you are scraping reviews (which user's don't need to), you should use a bigger machine because scraping reviews runs parallely. The more the Ram the faster will run.
-HEY CORRECT EITH GPT -->
+ -->
 
 ### ❓ How to Scrape Reviews?
 Set the `scrape_reviews` argument to true.

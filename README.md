@@ -36,7 +36,7 @@
   
 ⚡ Get 120 Leads in next 5 Minutes! ⚡
 
-Hello, Hola, Namaste And Sat Sri Akal! 🙏
+<!-- Hello, Hola, Namaste And Sat Sri Akal! 🙏 -->
 
 I am Google Maps Scraper, created to help you find new customers and grow your sales. 🚀
 
@@ -107,7 +107,7 @@ Once the scraping process is complete, you can find your leads in the `output` d
 ## 🤔 Questions
 
 ### ❓ The scraper is only retrieving 5 results. How can I scrape all Google Maps search results?
-A: Open the file `src/main.py` and remove the line that sets the `max` parameter.
+A: Open the file `src/main.py` and remove the `max` parameter.
 
 By doing so, you can scrape all the Google Maps Listing. For example, to scrape all restaurants in Bangalore, modify the code as follows:
 ```python
@@ -115,7 +115,7 @@ queries = ["web developers in bangalore"]
 Gmaps.places(queries)
 ```
 
-You can scrape a maximum of 120 leads per search, as Google does not display any more search results beyond that. However, don't worry about running out of leads as there are thousands of cities in our beautiful world :).
+You can scrape a maximum of 120 leads per search, as Google does not display any more search results beyond that. However, don't worry about running out of leads as there are thousands of cities in our world :).
 
 ### ❓ How to Scrape a Specific Search Query?
 To scrape a specific query, update the `queries` list with your desired query.
