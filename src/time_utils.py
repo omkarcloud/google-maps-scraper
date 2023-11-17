@@ -1,13 +1,13 @@
 from unidecode import unidecode
-import re
+import regex as re
 from dateutils import relativedelta
 from datetime import datetime
 
 
 relative_date_maps = {
     "pt-br": {
-        "one_regex": "^uma?",
-        "ago_regex": "\satras",
+        "one_regex": r"^uma?",
+        "ago_regex": r"\s*atrás$",  # Corrected regex for "atrás"
         "time_unit": {
             "ano": "years",
             "anos": "years",
@@ -26,8 +26,8 @@ relative_date_maps = {
         },
     },
     "en": {
-        "one_regex": "^a",
-        "ago_regex": "\sago",
+        "one_regex": r"^a",
+        "ago_regex": r"\s*ago$",  # Corrected regex for "ago"
         "time_unit": {
             "year": "years",
             "years": "years",
@@ -47,16 +47,19 @@ relative_date_maps = {
     },
 }
 
+
+
 translated_text_maps = {
     "pt-br": {
         "flag": "Tradução do Google",
-        "regex": "\(Tradução do Google\)|\(Original\).*?$",
+        "regex": r"\(Tradução do Google\)|\(Original\).*?$",
     },
     "en": {
         "flag": "Translated by Google",
-        "regex": "\(Translated by Google\)|\(Original\).*?$",
+        "regex": r"\(Translated by Google\)|\(Original\).*?$",
     },
 }
+
 
 def parse_relative_date(relative_date, retrieval_date, hl="en"):
     """Transforma data relativa do google maps em datetime"""
@@ -77,4 +80,3 @@ def parse_relative_date(relative_date, retrieval_date, hl="en"):
 
 # date_string = "2023-11-14 15:22:45.374751"
 # datetime_object = datetime.strptime(date_string, '%Y-%m-%d %H:%M:%S.%f')
-

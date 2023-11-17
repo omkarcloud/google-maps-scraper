@@ -8,7 +8,8 @@ import math
 import urllib.parse
 from lxml import html
 from bs4 import BeautifulSoup, Tag
-import re 
+import regex as re
+import re as rex
 from .time_utils import parse_relative_date
 
 default_request_interval = 0.2
@@ -68,7 +69,7 @@ def extract_google_maps_contributor_url(input_url):
     pattern = r'https://www\.google\.com/maps/contrib/\d+'
     
     # Use re.search to find the first match in the input_url
-    match = re.search(pattern, input_url)
+    match = rex.search(pattern, input_url)
     
     if match:
         # Extract the matched URL
@@ -520,6 +521,8 @@ class GoogleMapsAPIScraper:
             while n > 0:
                 next_token = None
                 try:
+                    response_text = ""
+
                     (
                         response_text,
                         response_soup,
