@@ -1,5 +1,5 @@
 from unidecode import unidecode
-import regex as re
+import re
 from dateutils import relativedelta
 from datetime import datetime
 

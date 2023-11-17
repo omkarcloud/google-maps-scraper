@@ -1,4 +1,4 @@
-import re as rex
+import re 
 import json
 from datetime import datetime
 # from botasaurus import *
@@ -121,7 +121,7 @@ def extract_google_maps_contributor_url(input_url):
     pattern = r'https://www\.google\.com/maps/contrib/\d+'
     
     # Use re.search to find the first match in the input_url
-    match = rex.search(pattern, input_url)
+    match = re.search(pattern, input_url)
     
     if match:
         # Extract the matched URL
@@ -296,14 +296,14 @@ def parse(data):
 
 def get_hl_from_link(link):
     # Regular expression to find the 'hl' parameter in the URL
-    match = rex.search(r"[?&]hl=([^&]+)", link)
+    match = re.search(r"[?&]hl=([^&]+)", link)
     
     # If found, return the value, otherwise return 'en'
     return match.group(1) if match else 'en'
 
 def extract_business_name(url):
     # Regular expression to match the pattern in the URL
-    match = rex.search(r"maps/place/([^/]+)", url)
+    match = re.search(r"maps/place/([^/]+)", url)
     if match:
         return match.group(1)
     return None
@@ -344,7 +344,7 @@ def find_close_days(schedule):
     :return: A list of days that are closed.
     """
     closed_days = []
-    number_pattern = rex.compile(r'\d')
+    number_pattern = re.compile(r'\d')
 
     for day_info in schedule:
 
@@ -383,7 +383,7 @@ def extract_work_day_time(schedule):
     :return: A list of days that are closed.
     """
     days = []
-    number_pattern = rex.compile(r'\d')
+    number_pattern = re.compile(r'\d')
 
     for day_info in schedule:
         # Check if 'times' is empty or contains strings like 'closed' or 'not available'
