@@ -251,10 +251,7 @@ Yes, it includes advanced features that enhance efficiency and user experience, 
 - Asynchronous scraping, allowing for data scraping in the background.
 - Caching results so you can pick up where you left off in case of interruption.
 
-The scraper leverages the Botasaurus Web Scraping Framework, which simplifies the implementation of these features. We encourage you to:
-
-1. Read the code in `TODO.py` to appreciate how beautifully these features have been implemented.
-2. Learn about the Botasaurus Framework to save countless hours in your career as a web scraper, [here](https://github.com/omkarcloud/botasaurus).
+The scraper leverages the Botasaurus Web Scraping Framework, which simplifies the implementation of these features. We encourage you to learn about the Botasaurus Framework to save countless hours in your career as a web scraper, [here](https://github.com/omkarcloud/botasaurus).
 
 <p align="center">
   <a href="https://github.com/omkarcloud/botasaurus">

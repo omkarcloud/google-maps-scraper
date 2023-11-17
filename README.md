@@ -195,13 +195,13 @@ However, you also have the freedom to sort them according to your preferences as
 - To sort by a different field, such as category, in ascending order:
 
   ```python
-  Gmaps.places(queries, sort=[[Gmaps.Fields.CATEGORY, Gmaps.SORT_ASCENDING]])
+  Gmaps.places(queries, sort=[[Gmaps.Fields.CATEGORIES, Gmaps.SORT_ASCENDING]])
   ```
 
 - Or, to sort in descending order:
 
   ```python
-  Gmaps.places(queries, sort=[[Gmaps.Fields.CATEGORY, Gmaps.SORT_DESCENDING]])
+  Gmaps.places(queries, sort=[[Gmaps.Fields.CATEGORIES, Gmaps.SORT_DESCENDING]])
   ```
 
 ### ❓ I Need to Reach Out to Leads to Sell My Products/Services. How Do I Scrape Email, Facebook, Twitter, LinkedIn, etc.?Directly calling potential clients often leads to lower sales success rates, and you may unintentionally come across as fraudulent person.
