@@ -113,3 +113,4 @@ output/
 temp/
 NEXT-STEPS
 cache/
+local_storage.json
