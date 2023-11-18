@@ -75,6 +75,8 @@ Please understand that some places may have thousands of reviews, so scraping al
 
 It's best to limit the number of reviews to scrape to a number like 100 or 1000.
 
+**Important**: If you are a Data Scientist focused on scraping reviews for Data Analysis, we encourage you to use our [Google Maps Reviews Scraper](https://github.com/omkarcloud/google-maps-reviews-scraper), as it is specially tailored for Data Scientists.
+
 ### ❓ How to select more fields?
 
 Seeing a lot of fields can be intimidating, so we have only kept the most important fields in the output.

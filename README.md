@@ -45,7 +45,7 @@ Here's why Google Maps is the perfect *hunting ground* for B2B customers:
 
 - 📞 Connect with potential clients directly, drastically reducing the time it takes to seal a deal.
 
-- 🌟 Target rich business owners based on their reviews, and supercharge your sales.
+- 🌟 Target rich business owners based on their ```Reviews```, and supercharge your sales.
 
 - 🎯 With access to categories and websites, you can customize your pitch to cater to specific businesses and maximize your sales potential.
 
@@ -63,7 +63,7 @@ Let's delve into some of my remarkable features that you will love:
 
 4. Book resources and strategize on how to reach out to leads effectively.
 
-5. Supports Scraping Thousands of Customer Reviews.
+5. Supports Scraping Thousands of ```Customer Reviews```.
 
 6. Scrape cities across all countries, to make your product reach every corner of the World.
 
@@ -107,9 +107,9 @@ Once the scraping process is complete, you can find your leads in the `output` d
 ## 🤔 Questions
 
 ### ❓ The scraper is only retrieving 5 results. How can I scrape all Google Maps search results?
-A: Open the file `src/main.py` and remove the `max` parameter.
+A: Open the `main.py` file and remove the `max` parameter.
 
-By doing so, you can scrape all the Google Maps Listing. For example, to scrape all restaurants in Bangalore, modify the code as follows:
+By doing so, you can scrape all the Google Maps Listing. For example, to scrape all web developers in Bangalore, modify the code as follows:
 ```python
 queries = ["web developers in bangalore"]
 Gmaps.places(queries)
@@ -232,7 +232,7 @@ Follow these simple steps to integrate the API:
 
 4. Use it in the scraper as follows:
 ```python
-queries = ["web developers in Bangalore"]
+queries = ["web developers in bangalore"]
 Gmaps.places(queries, max=5, key="YOUR_API_KEY") 
 ```
 5. Run the script, and you'll find emails, Facebook, Twitter, and LinkedIn details of leads in your output file.
