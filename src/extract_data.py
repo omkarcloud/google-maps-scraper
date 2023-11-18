@@ -117,22 +117,23 @@ def get_review_images(data):
     return [x[6][0] for x in data]
 
 def extract_google_maps_contributor_url(input_url):
-    # Define a regular expression pattern to match the desired URL
-    pattern = r'https://www\.google\.com/maps/contrib/\d+'
-    
-    # Use re.search to find the first match in the input_url
-    match = rex.search(pattern, input_url)
-    
-    if match:
-        # Extract the matched URL
-        contributor_url = match.group(0)
+    if input_url is not None:
+        # Define a regular expression pattern to match the desired URL
+        pattern = r'https://www\.google\.com/maps/contrib/\d+'
         
-        # Add "/reviews?entry=ttu" to the end of the URL
-        contributor_url += '/reviews?entry=ttu'
+        # Use re.search to find the first match in the input_url
+        match = rex.search(pattern, input_url)
         
-        return contributor_url
-    else:
-        return None
+        if match:
+            # Extract the matched URL
+            contributor_url = match.group(0)
+            
+            # Add "/reviews?entry=ttu" to the end of the URL
+            contributor_url += '/reviews?entry=ttu'
+            
+            return contributor_url
+        else:
+            return None
 
 def generate_google_reviews_url(placeid, query, authuser, hl, gl):
     base_url = "https://search.google.com/local/reviews"
@@ -160,7 +161,7 @@ def get_user_reviews(data):
 
         review_translated_text = element[47]
         response_from_owner_translated_text = safe_get(element,9, 5) or None
-        reviewer_url = extract_google_maps_contributor_url(element[60][0])
+        reviewer_url = extract_google_maps_contributor_url(safe_get(element,60, 0))
 
         response_from_owner_text = safe_get(element,9, 1) or None
 
