@@ -184,8 +184,7 @@ def process_result(min_reviews, max_reviews, category_in, has_website, has_phone
             "has_website":has_website,
             "category_in":category_in,
         }
-      filtered_places = filter_places(places, filter_data)
-      cleaned_places =  sort_places(filtered_places, sort)
+      cleaned_places = filter_places(places, filter_data)
         
         # 2. Scrape Emails
       if should_scrape_socials:
@@ -196,6 +195,7 @@ def process_result(min_reviews, max_reviews, category_in, has_website, has_phone
           print_social_errors(credits_exhausted, not_subscribed, unknown_error)
           cleaned_places = merge_social(cleaned_places, success)
 
+      cleaned_places =  sort_places(cleaned_places, sort)
         # 3. Scrape Reviews
       if scrape_reviews:
           placed_with_reviews = filter_places(cleaned_places, {"min_reviews": 1})

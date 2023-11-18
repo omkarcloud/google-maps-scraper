@@ -170,7 +170,7 @@ All Google Maps languages are supported. Some popular languages you may want to 
 - Gmaps.Lang.English
 - Gmaps.Lang.Japanese
 - Gmaps.Lang.German
-- Gmaps.Lang.Spanish
+- Gmaps.Lang.Italian
 
 See the list of all supported languages [here](https://github.com/omkarcloud/google-maps-scraper/blob/master/languages.md)
 

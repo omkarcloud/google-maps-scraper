@@ -180,7 +180,7 @@ However, you also have the freedom to sort them according to your preferences as
   Gmaps.places(queries, sort=[Gmaps.SORT_BY_RATING_DESCENDING])
   ```
 
-- To sort first by reviews and then by those without a website (great leads for web development services):
+- To sort first by reviews and then by those without a website:
 
   ```python
   Gmaps.places(queries, sort=[Gmaps.SORT_BY_REVIEWS_DESCENDING, Gmaps.SORT_BY_NOT_HAS_WEBSITE])
@@ -204,7 +204,9 @@ However, you also have the freedom to sort them according to your preferences as
   Gmaps.places(queries, sort=[[Gmaps.Fields.CATEGORIES, Gmaps.SORT_DESCENDING]])
   ```
 
-### ❓ I Need to Reach Out to Leads to Sell My Products/Services. How Do I Scrape Email, Facebook, Twitter, LinkedIn, etc.?Directly calling potential clients often leads to lower sales success rates, and you may unintentionally come across as fraudulent person.
+### ❓ I Need to Reach Out to Leads to Sell My Products/Services. How Do I Scrape Email, Facebook, Twitter, LinkedIn, etc.?
+
+Directly calling potential clients often leads to lower sales success rates, and you may unintentionally come across as fraudulent person.
 
 Instead, use a more effective strategy:
   1. Conduct thorough research on your prospects through their LinkedIn profiles, websites, etc. Then, craft a personalized email. Begin with genuine appreciation for their specific achievements or work, followed by an explanation of how your services can contribute to their business growth.
