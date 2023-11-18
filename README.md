@@ -106,23 +106,12 @@ Once the scraping process is complete, you can find your leads in the `output` d
 
 ## 🤔 Questions
 
-### ❓ The scraper is only retrieving 5 results. How can I scrape all Google Maps search results?
-A: Open the `main.py` file and remove the `max` parameter.
-
-By doing so, you can scrape all the Google Maps Listing. For example, to scrape all web developers in Bangalore, modify the code as follows:
-```python
-queries = ["web developers in bangalore"]
-Gmaps.places(queries)
-```
-
-You can scrape a maximum of 120 leads per search, as Google does not display any more search results beyond that. However, don't worry about running out of leads as there are thousands of cities in our world :).
-
 ### ❓ How to Scrape a Specific Search Query?
 To scrape a specific query, update the `queries` list with your desired query.
 
 ```python
 queries = ["web developers in delhi"]
-Gmaps.places(queries)
+Gmaps.places(queries, max=5)
 ```
 
 ### ❓ How to Scrape Multiple Queries?
@@ -133,8 +122,19 @@ queries = [
    "web developers in bangalore",
    "web developers in delhi",
 ]
+Gmaps.places(queries, max=5)
+```
+
+### ❓ The scraper is only retrieving 5 results. How can I scrape all Google Maps search results?
+A: Open the `main.py` file and remove the `max` parameter.
+
+By doing so, you can scrape all the Google Maps Listing. For example, to scrape all web developers in Bangalore, modify the code as follows:
+```python
+queries = ["web developers in bangalore"]
 Gmaps.places(queries)
 ```
+
+You can scrape a maximum of 120 leads per search, as Google does not display any more search results beyond that. However, don't worry about running out of leads as there are thousands of cities in our world :).
 
 ### ❓ How Can I Filter Google Map Search Results?
 You can apply filters such as:

@@ -209,6 +209,14 @@ def process_result(min_reviews, max_reviews, category_in, has_website, has_phone
         
       result_item = {"query": query, "places": cleaned_places}
       return result_item
+
+
+def merge_places(places):
+    merged_places = []
+    for place_group in places:
+        merged_places.extend(place_group['places'])
+    return merged_places
+
 class Gmaps:
   SORT_DESCENDING = "desc"
   SORT_ASCENDING = "asc"
@@ -307,6 +315,9 @@ class Gmaps:
 
         result.append(result_item)
       
+      all_places = merge_places(result)
+      write_output("all", all_places, fields)
+
       scraper.scrape_places.close()
       return result
 
