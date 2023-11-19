@@ -73,11 +73,11 @@ In the next 5 minutes, you'll witness the magic as I extract **120 Leads** from 
 
 Ready to skyrocket your customer base? Let's get started! 💼🌍
 
-## 🎥 Video Demo
+<!-- ## 🎥 Video Demo
 
 If you'd like to see my powerful capabilities in action before using me, I encourage you to watch this short video.
 
-[![Google Maps Video Tutorial](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/video.png)](https://www.youtube.com/watch?v=6UZhTlkCb9A)
+[![Google Maps Video Tutorial](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/video.png)](https://www.youtube.com/watch?v=6UZhTlkCb9A) -->
 
 ## 🚀 Getting Started
 
