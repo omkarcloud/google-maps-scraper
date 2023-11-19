@@ -57,7 +57,7 @@ Let's delve into some of my remarkable features that you will love:
 
 1. Scrape emails, Facebook, Twitter, and LinkedIn to deliver your message directly to the customer.
 
-2. Limitless Scraping, Say No to costly subscriptions or pay-per-lead fees.
+2. Limitless Scraping, Say No to costly subscriptions or expensive pay-per-lead fees.
 
 3. Sort, select, and filter leads to find those most relevant to your business.
 
@@ -308,6 +308,30 @@ Here is a brilliant one:
 
 <!-- **Note:** Avoid cold calling, not because it isn't effective, but because handling rejection over the phone can severely impact your confidence. -->
 
+
+### Your Scraper is really Robust. I Tried Many Scrapers, Most Don't Even Start. How did you build it?
+
+Thanks! we used Botasaurus, which is the secret sauce behind our Google Maps Scraper.
+
+It's a Web Scraping Framework that makes life easier for Web Scrapers.
+
+Botasaurus handled the hard parts of our Google Maps Scraper, such as:
+   - Caching
+   - Parallel and Asynchronous Scraping
+   - Creation and Reuse of Drivers
+   - Writing output to CSV and JSON files
+   - And Most importantly, defeating Google's Anti-Scraping Measures
+
+If you are a Web Scraper, we highly recommend that you learn about Botasaurus [here](https://github.com/omkarcloud/botasaurus).
+
+Botasaurus will really save you countless hours in your career as a Web Scraper.
+
+<p align="center">
+  <a href="https://github.com/omkarcloud/botasaurus">
+  <img src="https://raw.githubusercontent.com/omkarcloud/botasaurus/master/images/mascot.png" alt="botasaurus" />
+</a>
+</p>
+
 ### ❓ Advanced Questions
 
 Having read this page, you have all the knowledge needed to effectively utilize the scraper and ensure a never ending supply of highly relevant leads.
@@ -319,7 +343,6 @@ You may choose to explore the following questions based on your interests:
 1. [Why Do You Randomize Cities for Each User?](https://github.com/omkarcloud/google-maps-scraper/blob/master/advanced.md#-why-do-you-randomize-cities-for-each-user)
 2. [Do I Need Proxies?](https://github.com/omkarcloud/google-maps-scraper/blob/master/advanced.md#-do-i-need-proxies)
 3. [Does running Scraper on Bigger Machine scrapes Data Faster?](https://github.com/omkarcloud/google-maps-scraper/blob/master/advanced.md#-does-running-scraper-on-bigger-machine-scrapes-data-faster)
-4. [I am a Web Scraper; The Scraper is Really Impressive with Caching and Parallel Scraping Features?](https://github.com/omkarcloud/google-maps-scraper/blob/master/advanced.md#-i-am-a-web-scraper-the-scraper-is-really-impressive-with-caching-and-parallel-scraping-features)
 
 #### For Technical Usage
 

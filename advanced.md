@@ -243,24 +243,6 @@ This issue occurs only in Excel, which does not render Turkish characters proper
 
 Alternatively, setting the `lang` attribute to `Gmaps.Lang.English` will give results in English. -->
 
-### ❓ I am a Web Scraper; The Scraper is Really Impressive with Caching and Parallel Scraping Features?
-
-Yes, it includes advanced features that enhance efficiency and user experience, such as:
-
-- Parallel scraping to save time.
-- Keeping drivers alive for quick task initiation.
-<!-- - Automatic calculation of the number of scrapers to run in parallel based on system resources. -->
-- Asynchronous scraping, allowing for data scraping in the background.
-- Caching results so you can pick up where you left off in case of interruption.
-
-The scraper leverages the Botasaurus Web Scraping Framework, which simplifies the implementation of these features. We encourage you to learn about the Botasaurus Framework to save countless hours in your career as a web scraper, [here](https://github.com/omkarcloud/botasaurus).
-
-<p align="center">
-  <a href="https://github.com/omkarcloud/botasaurus">
-  <img src="https://raw.githubusercontent.com/omkarcloud/botasaurus/master/images/mascot.png" alt="botasaurus" />
-</a>
-</p>
-
 ## Love It? [Star It ⭐!](https://github.com/omkarcloud/google-maps-scraper)
 
 Become one of our amazing stargazers by giving us a star ⭐ on GitHub!
