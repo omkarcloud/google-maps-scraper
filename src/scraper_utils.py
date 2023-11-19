@@ -3,12 +3,13 @@ from botasaurus import *
 
 def perform_visit(driver: AntiDetectDriver, link:str):
     def visit_gmap_with_consent():
-                    driver.organic_get(link)
+                    driver.organic_get(link, accept_cookies=True)
                     
-                    if driver.is_in_page("https://consent.google.com/"):
-                        agree_button_selector = 'form:nth-child(2) > div > div > button'
-                        driver.click(agree_button_selector)
+                    # if driver.is_in_page("https://consent.google.com/"):
+                    #     agree_button_selector = 'form:nth-child(2) > div > div > button'
+                    #     driver.click(agree_button_selector)
                         # driver.organic_get(link)
+
 
                     # if not driver.is_in_page('maps/search/', bt.Wait.LONG):
                     #     if driver.is_in_page("consent.google.com", bt.Wait.SHORT):

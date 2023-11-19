@@ -5,8 +5,6 @@ from botasaurus import bt
 from src.fields import Fields
 from src.utils import kebab_case, sort_dict_by_keys, unicode_to_ascii
 
-def select_fields():
-  pass
 
 def make_folders(query_kebab):
   create_directory_if_not_exists(f"output/{query_kebab}/")
