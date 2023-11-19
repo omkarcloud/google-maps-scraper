@@ -335,7 +335,7 @@ You may choose to explore the following questions based on your interests:
 
 ### ❓ Need More Help or Have Additional Questions?
 
-For further assistance, contact us on WhatsApp. We'll reply within 24 hours.
+For further help, contact us on WhatsApp. We'll be happy to help you out.
 
 [![Contact Us on WhatsApp](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/mwa.png)](https://wa.me/message/3WED4FYQRDPNE1)
 
@@ -347,4 +347,4 @@ It's just one click, but it means the world to me.
 
 [![Stargazers for @omkarcloud/google-maps-scraper](https://bytecrank.com/nastyox/reporoster/php/stargazersSVG.php?user=omkarcloud&repo=google-maps-scraper)](https://github.com/omkarcloud/google-maps-scraper/stargazers)
 
-## Made with ❤️ in Bharat 🇮🇳 - Vande Mataram
+## Made with ❤️ using [Botasaurus Web Scraping Framework](https://github.com/omkarcloud/botasaurus)
