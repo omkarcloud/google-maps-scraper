@@ -1,3 +1,6 @@
+![google maps scraper feautred image](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/google-maps-scraper-feautred-image.png)
+
+
 <p align="center">
   <img src="https://www.omkar.cloud/images/favicon/prod/favicon-256x256.png" alt="omkar" />
 </p>
@@ -322,9 +325,8 @@ Botasaurus handled the hard parts of our Google Maps Scraper, such as:
    - Writing output to CSV and JSON files
    - And Most importantly, defeating Google's Anti-Scraping Measures
 
-If you are a Web Scraper, we highly recommend that you learn about Botasaurus [here](https://github.com/omkarcloud/botasaurus).
 
-Botasaurus will really save you countless hours in your career as a Web Scraper.
+If you are a Web Scraper, we highly recommend that you learn about Botasaurus [here](https://github.com/omkarcloud/botasaurus), because Botasaurus will really save you countless hours in your career as a Web Scraper.
 
 <p align="center">
   <a href="https://github.com/omkarcloud/botasaurus">
