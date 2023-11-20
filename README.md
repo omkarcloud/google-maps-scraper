@@ -1,10 +1,7 @@
 ![Google Maps Scraper Feautred Image](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/google-maps-scraper-feautred-image.png)
 
 
-<p align="center">
-  <img src="https://www.omkar.cloud/images/favicon/prod/favicon-256x256.png" alt="omkar" />
-</p>
-  <div align="center" style="margin-top: 0;">
+<div align="center" style="margin-top: 0;">
   <h1>✨ Google Maps Scraper 🤖</h1>
   <p>💦 Find New Customers and Grow Your Buisness 💦</p>
 </div>
