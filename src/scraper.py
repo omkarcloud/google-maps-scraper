@@ -3,7 +3,10 @@ from src.extract_data import extract_data
 from src.scraper_utils import create_search_link, perform_visit
 from src.utils import convert_unicode_dict_to_ascii_dict, unique_strings
 from .reviews_scraper import GoogleMapsAPIScraper
-from time import sleep
+from time import sleep, time
+from botasaurus.utils import retry_if_is_error
+from selenium.common.exceptions import  StaleElementReferenceException
+
 def process_reviews(reviews):
     processed_reviews = []
 
@@ -146,6 +149,10 @@ def scrape_places_by_links(driver: AntiDetectDriver, data):
 
     return places 
 
+class StuckInGmapsException(Exception):
+    pass
+
+
 def get_lang(data):
      return data['lang']
 
@@ -177,8 +184,10 @@ def scrape_places(driver: AntiDetectDriver, data):
 
 
     def put_links():
-                number_of_times_not_scrolled = 0
-                set_cookies(driver.get_cookies_dict())
+                start_time = time()
+                
+                WAIT_TIME = 40 # WAIT 40 SECONDS
+
                 while True:
                     el = driver.get_element_or_none_by_selector(
                         '[role="feed"]', bt.Wait.LONG)
@@ -214,34 +223,34 @@ def scrape_places(driver: AntiDetectDriver, data):
                             return
 
                         end_el = driver.get_element_or_none_by_selector(
-                            "p.fontBodyMedium > span > span", bt.Wait.SHORT)
+                            "p.fontBodyMedium > span > span", None)
 
                         if end_el is not None:
                             driver.scroll_element(el)
                             return
+                        elapsed_time = time() - start_time
 
-                        if not did_element_scroll:
-                            sleep(0.1)
-                            number_of_times_not_scrolled += 1
-
-                            MAX_SCROLL_ATTEMPS = 20
-                            if number_of_times_not_scrolled > MAX_SCROLL_ATTEMPS:
-                                print(
-                                    'Google Maps was Stuck in Scrolling. So returning.')
-                                return
-
-                            # print('Scrolling...')
+                        if elapsed_time > WAIT_TIME :
+                            print('Google Maps was stuck in scrolling. Retrying.')
+                            raise StuckInGmapsException()                           
+                            # we increased speed so occurence if higher than 
+                            #   - add random waits
+                            #   - 3 retries  
+                             
+                        if did_element_scroll:
+                            start_time = time()
                         else:
-                            number_of_times_not_scrolled = 0
-                            # print('Scrolling...')
+                            sleep_time = 0.1
+                            sleep(sleep_time)
     
     search_link = create_search_link(data['query'], data['lang'], data['geo_coordinates'], data['zoom'])
     
     perform_visit(driver, search_link)
     
-    # bt.prompt()
+    set_cookies(driver.get_cookies_dict())
     
-    put_links()
+    RETRIES = 5
+    retry_if_is_error(put_links, [StaleElementReferenceException, StuckInGmapsException], RETRIES, raise_exception=False)
 
     places = scrape_place_obj.get()
 

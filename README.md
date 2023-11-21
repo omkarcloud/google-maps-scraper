@@ -160,7 +160,7 @@ Gmaps.places(queries, category_in=[Gmaps.Category.DentalClinic, Gmaps.Category.D
 See the list of all supported categories [here](https://github.com/omkarcloud/google-maps-scraper/blob/master/categories.md)
 
 ### ❓ How to Sort by Reviews, Rating, or Category?
-To give you the best chance of making a sale, we sort the listings using a really good sorting order, which is as follows:
+We want you to have the best chance of making a sale by default, so we sort the listings using a really good sorting order, which is as follows:
   - Reviews [Businesses with richer profiles come first]
   - Website [Businesses more open to technology come first]
   - LinkedIn [Businesses that are easier to contact come first]
