@@ -1,4 +1,5 @@
 from botasaurus import *
+from botasaurus.cache import DontCache
 from src.extract_data import extract_data
 from src.scraper_utils import create_search_link, perform_visit
 from src.utils import convert_unicode_dict_to_ascii_dict, unique_strings
@@ -250,14 +251,24 @@ def scrape_places(driver: AntiDetectDriver, data):
     set_cookies(driver.get_cookies_dict())
     
     RETRIES = 5
-    retry_if_is_error(put_links, [StaleElementReferenceException, StuckInGmapsException], RETRIES, raise_exception=False)
+    failed_to_scroll = False
+    def on_failed_after_retry_exhausted(e):
+        nonlocal failed_to_scroll
+        failed_to_scroll = True
+        print('Failed to scroll after 5 retries. Skipping.')
+
+    retry_if_is_error(put_links, [StaleElementReferenceException, StuckInGmapsException], RETRIES, raise_exception=False, on_failed_after_retry_exhausted=on_failed_after_retry_exhausted)
 
     places = scrape_place_obj.get()
 
     sponsored_links = get_sponsored_links() 
     places = merge_sponsored_links(places, sponsored_links)
     
-    return {"query": data['query'], "places":places} 
+    result = {"query": data['query'], "places": places}
+    
+    if failed_to_scroll:
+        DontCache(result)
+    return result 
 
 if __name__ == "__main__":
     print(scrape_places(["restaurants in delhi"]))

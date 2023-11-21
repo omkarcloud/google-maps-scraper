@@ -7,6 +7,10 @@ FAILED_DUE_TO_CREDITS_EXHAUSTED = "FAILED_DUE_TO_CREDITS_EXHAUSTED"
 FAILED_DUE_TO_NOT_SUBSCRIBED = "FAILED_DUE_TO_NOT_SUBSCRIBED"
 FAILED_DUE_TO_UNKNOWN_ERROR = "FAILED_DUE_TO_UNKNOWN_ERROR"
 
+def update_credits():
+    credits_used  = bt.LocalStorage.get_item("credits_used", 0)
+    bt.LocalStorage.set_item("credits_used", credits_used + 1)
+
 def do_request(data, retry_count=3):
     
     place_id = data["place_id"]
@@ -27,11 +31,8 @@ def do_request(data, retry_count=3):
     
     response = requests.get(url, headers=headers, params=querystring)
     response_data = response.json()
-
     if response.status_code == 200:
-
-        credits_used  = bt.LocalStorage.get_item("credits_used", 0)
-        bt.LocalStorage.set_item("credits_used", credits_used + 1)
+        update_credits()
 
         final = response_data.get('data', [None])[0]
         
