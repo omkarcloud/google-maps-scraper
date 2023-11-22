@@ -300,9 +300,9 @@ Here is a brilliant one:
 
 2. Draft a compelling cold email template that clearly states your value proposition.
 
-3. Commit to a 21-day goal of reaching out to potential customers. If you don't succeed by then, you can consider other strategies. [VERY VERY IMPORTANT]
+3. Commit to a 21-day goal of reaching out to potential customers. [VERY VERY IMPORTANT]
 
-4. Use the scraper with an email-finding extension to gather leads from around 5 cities of your choice, including their emails and social media handles.
+4. Use the scraper with the contact finding api to gather leads from around 5 cities of your choice, including their emails and social media handles.
 
 5. Send personalized emails to your target businesses and connect with key company personnel on LinkedIn, Facebook, and Twitter.
 

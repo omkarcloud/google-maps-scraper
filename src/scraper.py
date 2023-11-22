@@ -102,21 +102,25 @@ def set_cookies(ck):
 )
 def scrape_place(requests: AntiDetectRequests, link):
         cookies = get_cookies()
-        html =  requests.get(link,cookies=cookies,).text
-        # Splitting HTML to get the part after 'window.APP_INITIALIZATION_STATE='
-        initialization_state_part = html.split(';window.APP_INITIALIZATION_STATE=')[1]
+        
+        try:
+            html =  requests.get(link,cookies=cookies,).text
+            # Splitting HTML to get the part after 'window.APP_INITIALIZATION_STATE='
+            initialization_state_part = html.split(';window.APP_INITIALIZATION_STATE=')[1]
 
-        # Further splitting to isolate the APP_INITIALIZATION_STATE content
-        app_initialization_state = initialization_state_part.split(';window.APP_FLAGS')[0]
+            # Further splitting to isolate the APP_INITIALIZATION_STATE content
+            app_initialization_state = initialization_state_part.split(';window.APP_FLAGS')[0]
 
-        # Extracting data from the APP_INITIALIZATION_STATE
-        data = extract_data(app_initialization_state, link)
-        # data['link'] = link
+            # Extracting data from the APP_INITIALIZATION_STATE
+            data = extract_data(app_initialization_state, link)
+            # data['link'] = link
 
-        data['is_spending_on_ads'] = False
-        cleaned = convert_unicode_dict_to_ascii_dict(data)
-        return cleaned  
-
+            data['is_spending_on_ads'] = False
+            cleaned = convert_unicode_dict_to_ascii_dict(data)
+            return cleaned  
+        except:
+            sleep(63)
+            raise
 
 def merge_sponsored_links(places, sponsored_links):
     for place in places:
@@ -224,7 +228,7 @@ def scrape_places(driver: AntiDetectDriver, data):
                             return
 
                         end_el = driver.get_element_or_none_by_selector(
-                            "p.fontBodyMedium > span > span", None)
+                            "p.fontBodyMedium > span > span", bt.Wait.SHORT)
 
                         if end_el is not None:
                             driver.scroll_element(el)
@@ -233,6 +237,7 @@ def scrape_places(driver: AntiDetectDriver, data):
 
                         if elapsed_time > WAIT_TIME :
                             print('Google Maps was stuck in scrolling. Retrying.')
+                            sleep(63)
                             raise StuckInGmapsException()                           
                             # we increased speed so occurence if higher than 
                             #   - add random waits
