@@ -107,7 +107,7 @@ Once the scraping process is complete, you can find your leads in the `output` d
 ## 🤔 Questions
 
 ### ❓ How to Scrape a Specific Search Query?
-To scrape a specific query, update the `queries` list with your desired query.
+Open the `main.py` file, and update the `queries` list with your desired query.
 
 ```python
 queries = ["web developers in delhi"]
@@ -126,7 +126,7 @@ Gmaps.places(queries, max=5)
 ```
 
 ### ❓ The scraper is only retrieving 5 results. How can I scrape all Google Maps search results?
-A: Open the `main.py` file and remove the `max` parameter.
+A: Remove the `max` parameter.
 
 By doing so, you can scrape all the Google Maps Listing. For example, to scrape all web developers in Bangalore, modify the code as follows:
 ```python
@@ -309,7 +309,7 @@ Here is a brilliant one:
 <!-- **Note:** Avoid cold calling, not because it isn't effective, but because handling rejection over the phone can severely impact your confidence. -->
 
 
-### Your Scraper is really Robust. I Tried Many Scrapers, Most Don't Even Start. How did you build it?
+### Your Scraper is really Robust. I Tried Many Scrapers, Most Don't Work. How did you build it?
 
 Thanks! we used Botasaurus, which is the secret sauce behind our Google Maps Scraper.
 
