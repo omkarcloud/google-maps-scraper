@@ -357,9 +357,9 @@ You may choose to explore the following questions based on your interests:
 
 ### ❓ Need More Help or Have Additional Questions?
 
-For further help, contact us on WhatsApp. We'll be happy to help you out.
+For further help, ask your question in GitHub Discussions. We'll be happy to help you out.
 
-[![Contact Us on WhatsApp](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/mwa.png)](https://wa.me/message/3WED4FYQRDPNE1)
+[![ask github](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/ask-github.png)](https://github.com/omkarcloud/google-maps-scraper/discussions)
 
 ## Love It? [Star It ⭐!](https://github.com/omkarcloud/google-maps-scraper)
 
