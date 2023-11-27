@@ -257,7 +257,7 @@ We recommend scraping only 100 cities at a time, as countries like India have th
 See the list of all supported countries [here](https://github.com/omkarcloud/google-maps-scraper/blob/master/countries.md)
 
 ### ❓ Can I Interrupt the Scrape While It's Running?
-Yes, you can. The scraper will resume from where it left off if you interrupt the process.
+Yes, you can. The scraper is smart like you and will resume from where it left off if you interrupt the process.
 
 
 ### ❓ What are popular use cases for entrepreneurs?
@@ -291,9 +291,52 @@ Gmaps.places(queries, min_reviews=25, has_phone=True, has_website=False, key="YO
 
 Most importantly, avoid the temptation to sell to leads with low reviews, as they may not have the budget for your services and could be a time-consuming prospect.
 
+### ❓ How to select more fields?
+
+Seeing a lot of fields can be intimidating, so we have only kept the most important fields in the output.
+
+However, you can select from upto **45+** fields.
+
+Also, To select all the **45+** fields, use the following code:
+
+```python
+queries = [
+   "web developers in bangalore"
+]
+Gmaps.places(queries, fields=Gmaps.ALL_FIELDS)
+```
+
+To select specific fields only, use the following code:
+<!-- todo: use fields -->
+```python
+queries = [
+   "web developers in bangalore"
+]
+
+fields = [
+   Gmaps.Fields.PLACE_ID, 
+   Gmaps.Fields.NAME, 
+   Gmaps.Fields.MAIN_CATEGORY, 
+   Gmaps.Fields.RATING, 
+   Gmaps.Fields.REVIEWS, 
+   Gmaps.Fields.WEBSITE, 
+   Gmaps.Fields.PHONE, 
+   Gmaps.Fields.ADDRESS,
+   Gmaps.Fields.LINK, 
+]
+
+Gmaps.places(queries, fields=fields)
+```
+
+Please note that selecting more or fewer fields will not affect the scraping time; it will remain exactly the same. So, don't fall into the trap of selecting fewer fields thinking it will decrease the scraping time, because it won't. 
+
+For examples of CSV/JSON formats containing all fields, you can download [this file](https://drive.google.com/file/d/10qSpi0Jrh7546M1fakjfBbaAS2ImBr8k/view?usp=sharing).
+
+Also, See the list of all supported fields [here](https://github.com/omkarcloud/google-maps-scraper/blob/master/fields.md)
+
 ### ❓ Do You Know of an Effective Strategy to Increase the Chances of Selling My Product?
 
-Here is a brilliant one:
+I've personally employed the following strategy to sell my services, which has proven to be highly effective in generating business. By following this approach diligently, I'm confident you can achieve the same successful results that I have experienced.
 
 1. Read [The Cold Email Manifesto](https://www.amazon.com/Cold-Email-Manifesto-pipeline-business-ebook/dp/B0B1DYNNSL) to learn how to write effective cold emails that get responses. 
   - Cold emailing still works in 2023; I say that because I have personally generated $1,000 from sending a personalized cold email to 3-4 contacts at Bright Data (a proxy company), pitching my blog writing services.
@@ -308,6 +351,10 @@ Here is a brilliant one:
 
 <!-- **Note:** Avoid cold calling, not because it isn't effective, but because handling rejection over the phone can severely impact your confidence. -->
 
+
+### ❓ How Does It Work?
+
+For web scrapers interested in understanding how it works, you can read [this tutorial](https://www.omkar.cloud/botasaurus/docs/google-maps-scraping-tutorial/), where we walk you through the creation of a simplified version of a Google Maps Scraper.
 
 ### Your Scraper is really Robust. I Tried Many Scrapers, Most Don't Work. How did you build it?
 
@@ -347,11 +394,11 @@ You may choose to explore the following questions based on your interests:
 
 1. [I don't have Python, or I'm facing errors when setting up the scraper on my PC. How to solve it?](https://github.com/omkarcloud/google-maps-scraper/blob/master/advanced.md#-i-dont-have-python-or-im-facing-errors-when-setting-up-the-scraper-on-my-pc-how-to-solve-it)
 2. [How to Scrape Reviews?](https://github.com/omkarcloud/google-maps-scraper/blob/master/advanced.md#-how-to-scrape-reviews)
-3. [How to select more fields?](https://github.com/omkarcloud/google-maps-scraper/blob/master/advanced.md#-how-to-select-more-fields)
-4. [What are Popular Snippets for Data Scientists?](https://github.com/omkarcloud/google-maps-scraper/blob/master/advanced.md#-what-are-popular-snippets-for-data-scientists)
-5. [How to Change the Language of Output?](https://github.com/omkarcloud/google-maps-scraper/blob/master/advanced.md#-how-to-change-the-language-of-output)
-6. [I have Google Map Places Links, How to Scrape Links?](https://github.com/omkarcloud/google-maps-scraper/blob/master/advanced.md#-i-have-google-map-places-links-how-to-scrape-links)
-7. [How to Scrape at Particular Coordinates and Zoom Level?](https://github.com/omkarcloud/google-maps-scraper/blob/master/advanced.md#-how-to-scrape-at-particular-coordinates-and-zoom-level)
+<!-- 3. [How to select more fields?](https://github.com/omkarcloud/google-maps-scraper/blob/master/advanced.md#-how-to-select-more-fields) -->
+3. [What are Popular Snippets for Data Scientists?](https://github.com/omkarcloud/google-maps-scraper/blob/master/advanced.md#-what-are-popular-snippets-for-data-scientists)
+4. [How to Change the Language of Output?](https://github.com/omkarcloud/google-maps-scraper/blob/master/advanced.md#-how-to-change-the-language-of-output)
+5. [I have Google Map Places Links, How to Scrape Links?](https://github.com/omkarcloud/google-maps-scraper/blob/master/advanced.md#-i-have-google-map-places-links-how-to-scrape-links)
+6. [How to Scrape at Particular Coordinates and Zoom Level?](https://github.com/omkarcloud/google-maps-scraper/blob/master/advanced.md#-how-to-scrape-at-particular-coordinates-and-zoom-level)
 
 <!-- 4. [How many Keywords Can It Scrape per Hour?](https://github.com/omkarcloud/google-maps-scraper/blob/master/advanced.md#-how-many-keywords-can-it-scrape-per-hour) -->
 

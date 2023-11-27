@@ -77,49 +77,6 @@ It's best to limit the number of reviews to scrape to a number like 100 or 1000.
 
 **Important**: If you are a Data Scientist focused on scraping reviews for Data Analysis, we encourage you to use our [Google Maps Reviews Scraper](https://github.com/omkarcloud/google-maps-reviews-scraper), as it is specially tailored for Data Scientists.
 
-### ❓ How to select more fields?
-
-Seeing a lot of fields can be intimidating, so we have only kept the most important fields in the output.
-
-However, you can select from upto 45+ fields.
-
-To select all fields, use the following code:
-
-```python
-queries = [
-   "web developers in bangalore"
-]
-Gmaps.places(queries, fields=Gmaps.ALL_FIELDS)
-```
-
-To select specific fields only, use the following code:
-<!-- todo: use fields -->
-```python
-queries = [
-   "web developers in bangalore"
-]
-
-fields = [
-   Gmaps.Fields.PLACE_ID, 
-   Gmaps.Fields.NAME, 
-   Gmaps.Fields.MAIN_CATEGORY, 
-   Gmaps.Fields.RATING, 
-   Gmaps.Fields.REVIEWS, 
-   Gmaps.Fields.WEBSITE, 
-   Gmaps.Fields.PHONE, 
-   Gmaps.Fields.ADDRESS,
-   Gmaps.Fields.LINK, 
-]
-
-Gmaps.places(queries, fields=fields)
-```
-
-Please note that selecting more or fewer fields will not affect the scraping time; it will remain exactly the same.
-
-So, don't fall into the trap of selecting fewer fields thinking it will decrease the scraping time, because it won't. 
-
-See the list of all supported fields [here](https://github.com/omkarcloud/google-maps-scraper/blob/master/fields.md)
-
 
 <!-- ### ❓ How many Keywords Can It Scrape per Hour?
 
@@ -233,7 +190,7 @@ Randomizing cities spreads them among our users, giving each user a better chanc
 
 ### ❓ Do I Need Proxies?
 
-No, you do not need proxies. You can scrape hundreds of thousands of leads without needing them.
+Through experimentation, we have found a scraping speed that doesn't trigger Google Maps' detection systems, so you do not need to use proxies for scraping Google Maps.
 
 <!-- ### ❓ The Turkish Characters Aren't Rendering Properly in Excel?
 

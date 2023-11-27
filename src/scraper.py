@@ -56,18 +56,14 @@ def process_reviews(reviews):
 def scrape_reviews(requests: AntiDetectRequests, data):
     place_id = data["place_id"]
     link = data["link"]
-    n_reviews = data["reviews"]
 
-    reviews_max = data["reviews_max"]
+    max_r = data["max"]
+
     reviews_sort = data["reviews_sort"]
     lang = data["lang"]
     
     processed = []
     with GoogleMapsAPIScraper() as scraper:
-        if reviews_max is None:
-            max_r = n_reviews
-        else:
-            max_r = min(reviews_max, n_reviews)
 
         result = scraper.scrape_reviews(
             link,  max_r, lang, sort_by=reviews_sort

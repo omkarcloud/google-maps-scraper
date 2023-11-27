@@ -1,3 +1,5 @@
+from src.utils import kebab_case, unicode_to_ascii
+
 def sort_place(places:list, sort):
      
     def sorting_key(item):
@@ -50,9 +52,9 @@ def sort_places(places:list, sorts):
 
 
 def list_contains_string(string_list, target_string):
-    target_string_lower = target_string.lower()  # Convert target string to lowercase
+    target_string_lower = kebab_case(unicode_to_ascii(target_string)).lower()  # Convert target string to lowercase
     for item in string_list:
-        if target_string_lower == item:  # Compare in a case-insensitive manner
+        if target_string_lower == kebab_case(unicode_to_ascii(item)).lower():  # Compare in a case-insensitive manner
             return True
     return False
 

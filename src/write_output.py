@@ -289,36 +289,43 @@ def create_places_json(path, places, fields):
     bt.write_json(data, path, False )
 
 
-def create(places, selected_fields, csv_path, json_path):
-    
+def format(query_kebab, type, name):
+    return f"{name}-of-{query_kebab}.{type}"
+
+def create(places, selected_fields, csv_path, json_path, query_kebab):
+        
     # try:
         written = []
-        places_json = json_path + "places.json"
+        places_json = json_path + format(query_kebab, "json", "places") 
         create_places_json(places_json, places, selected_fields)
 
         if can_create_places_csv(selected_fields):
-            places_path_csv = csv_path + "places.csv"
+            places_path_csv = csv_path + format(query_kebab, "csv", "places") 
             written.append(places_path_csv)
             create_places_csv(places_path_csv, places, selected_fields)
 
         
         if can_create_email_phone_details_csv(selected_fields):
-            email_phone_details_path = csv_path  + "email_phone_details.csv"
+            email_phone_details_path = csv_path  + format(query_kebab, "csv", "email-phone-details") 
+            # ".csv"
             written.append(email_phone_details_path)
             create_email_phone_details_csv(email_phone_details_path, places, selected_fields)
 
         if can_create_detailed_reviews_csv(selected_fields):
-            detailed_reviews_path = csv_path + "detailed_reviews.csv"
+            detailed_reviews_path = csv_path + format(query_kebab, "csv", "detailed-reviews") 
+            # "detailed-reviews.csv"
             written.append(detailed_reviews_path)
             create_detailed_reviews_csv(detailed_reviews_path, places, selected_fields)
         
         if can_create_featured_reviews_csv(selected_fields):
-            new_var1 = csv_path  + "featured_reviews.csv"
+            new_var1 = csv_path  + format(query_kebab, "csv", "featured-reviews") 
+            # + "featured-reviews.csv"
             written.append(new_var1)
             create_featured_reviews_csv(new_var1, places, selected_fields)
         
         if can_create_images_csv(selected_fields):
-            new_var = csv_path + "images.csv"
+            new_var = csv_path + format(query_kebab, "csv", "images") 
+            # + "images.csv"
             written.append(new_var)
             create_images_csv(new_var, places, selected_fields)
 
@@ -336,8 +343,9 @@ def write_output(query, places, selected_fields):
     query_kebab = kebab_case(query)
     make_folders(query_kebab)
 
-    csv_path = f"output/{query_kebab}/csv/"
+    csv_path = f"output/{query_kebab}/csv/" 
     json_path = f"output/{query_kebab}/json/"
+    # + query_kebab + "-"
 
 
-    create(places, selected_fields, csv_path, json_path)
+    create(places, selected_fields, csv_path, json_path, query_kebab)

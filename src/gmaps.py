@@ -111,11 +111,15 @@ def create_reviews_data(places, reviews_max, reviews_sort, lang):
     print_rvs_message(chosen_lang)
     
     for place in places:
+        n_reviews=place["reviews"]
+        if reviews_max is None: 
+                max_r = n_reviews
+        else:
+                max_r = min(reviews_max, n_reviews)        
         review_data = {
             "place_id": place["place_id"],
             "link": place["link"],
-            "reviews": place["reviews"],
-            "reviews_max": reviews_max,
+            "max": max_r,
             "reviews_sort": reviews_sort,
             "lang": chosen_lang, 
         }
@@ -168,7 +172,7 @@ def determine_fields(fields, should_scrape_socials, scrape_reviews):
       else:
         # Remove any occurrences of ALL_SOCIAL_FIELDS from fields
         fields = [field for field in fields if field not in ALL_SOCIAL_FIELDS]
-
+    #   print(fields)
       return fields
 
 def process_result(min_reviews, max_reviews, category_in, has_website, has_phone, min_rating, max_rating, sort, key, scrape_reviews, reviews_max, reviews_sort, fields, lang, should_scrape_socials, places_obj):

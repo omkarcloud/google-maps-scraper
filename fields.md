@@ -38,7 +38,7 @@
 - SNAPCHAT
 - TIKTOK
 
-# Sometimes Useful
+## Sometimes Useful
 
 - STATUS
 - PRICE_RANGE
