@@ -1,3 +1,4 @@
+from typing import List
 from botasaurus import bt
 import geonamescache
 import random
@@ -73,7 +74,7 @@ def create_city_handler(country_code: str):
     """
     Factory to create functions to manage city data based on country code.
     """
-    def handle_city_data(_, prepend: str) -> list[str]: 
+    def handle_city_data(_, prepend: str) -> List[str]: 
         country_name = get_country_name_from_code(country_code)
         filename = generate_cities_file_name(country_name)
         # Check if file exists and read data
