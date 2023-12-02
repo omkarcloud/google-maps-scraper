@@ -49,7 +49,7 @@ def kebab_case(s):
 
 def unique_strings(lst):
     # Use a set to remove duplicates, then convert back to a list
-    return list(set(lst))
+    return list(dict.fromkeys(lst))
 
 
 def sort_dict_by_keys(dictionary, keys):

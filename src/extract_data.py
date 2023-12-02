@@ -3,14 +3,18 @@ import json
 from datetime import datetime
 # from botasaurus import *
 
+def toiso(date):
+    return date.isoformat() 
+# + "Z"
+
+
 def convert_timestamp_to_iso_date(timestamp):
     # Convert from microseconds to milliseconds
     milliseconds = int(timestamp) / 1000
     # Create a new Date object
     date = datetime.utcfromtimestamp(milliseconds)
     # Return the date in the specified format
-    return date.isoformat() + "Z"
-
+    return toiso(date)
 
 
 def clean_link(link):

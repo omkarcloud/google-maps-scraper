@@ -33,10 +33,17 @@
 </p>
   
 ---
-  
+
+## 👉 Explore Our Other Popular Scrapers
+
+- ✅ [Outlook Account Generator](https://github.com/omkarcloud/outlook-account-generator): Expand your customer base by emailing tens of thousands of people using Outlook accounts.
+<!-- TODO: UNCOMMENT WHEN DONE -->
+<!-- - ✅ [G2 Reviews Scraper](https://github.com/omkarcloud/g2-scraper/): Grow your software's customer base by targeting and converting your competitors' customers. -->
+
+---
+
 ⚡ Get 120 Leads in next 5 Minutes! ⚡
 
-<!-- Hello, Hola, Namaste And Sat Sri Akal! 🙏 -->
 
 I am Google Maps Scraper, created to help you find new customers and grow your sales. 🚀
 
