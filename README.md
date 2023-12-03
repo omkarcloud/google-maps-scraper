@@ -406,6 +406,7 @@ You may choose to explore the following questions based on your interests:
 4. [How to Change the Language of Output?](https://github.com/omkarcloud/google-maps-scraper/blob/master/advanced.md#-how-to-change-the-language-of-output)
 5. [I have Google Map Places Links, How to Scrape Links?](https://github.com/omkarcloud/google-maps-scraper/blob/master/advanced.md#-i-have-google-map-places-links-how-to-scrape-links)
 6. [How to Scrape at Particular Coordinates and Zoom Level?](https://github.com/omkarcloud/google-maps-scraper/blob/master/advanced.md#-how-to-scrape-at-particular-coordinates-and-zoom-level)
+7. [When setting the Lang Attribute to Hindi/Japanese/Chinese, the characters are in English instead of the specified language. How to transform characters to the specified language?](https://github.com/omkarcloud/google-maps-scraper/blob/master/advanced.md#-when-setting-the-lang-attribute-to-hindijapanesechinese-the-characters-are-in-english-instead-of-the-specified-language-how-to-transform-characters-to-the-specified-language)
 
 <!-- 4. [How many Keywords Can It Scrape per Hour?](https://github.com/omkarcloud/google-maps-scraper/blob/master/advanced.md#-how-many-keywords-can-it-scrape-per-hour) -->
 
