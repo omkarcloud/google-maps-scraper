@@ -9,14 +9,15 @@ from .category import Category
 from .fields import ALL_FIELDS, ALL_SOCIAL_FIELDS, DEFAULT_SOCIAL_FIELDS, Fields, DEFAULT_FIELDS, DEFAULT_FIELDS_WITHOUT_SOCIAL_DATA, ALL_FIELDS_WITHOUT_SOCIAL_DATA
 from .social_scraper import FAILED_DUE_TO_CREDITS_EXHAUSTED, FAILED_DUE_TO_NOT_SUBSCRIBED, FAILED_DUE_TO_UNKNOWN_ERROR, scrape_social
 
-def create_place_data(query, is_spending_on_ads, max, lang, geo_coordinates, zoom):
+def create_place_data(query, is_spending_on_ads, max, lang, geo_coordinates, zoom, convert_to_english):
     place_data = {
             "query": query,
             "is_spending_on_ads": is_spending_on_ads,
             "max": max,
             "lang": lang,
             "geo_coordinates": geo_coordinates,
-            "zoom": zoom
+            "zoom": zoom, 
+            "convert_to_english": convert_to_english
         }
     return place_data
 
@@ -103,7 +104,7 @@ def print_rvs_message(hl):
         #     print("You have choes to scrape detailed reviews by using scrape_reviews, the published_at_date, response_from_owner_date is only provided in English Language. So published_at_date, response_from_owner_date will be null." ) 
         printed = True
 
-def create_reviews_data(places, reviews_max, reviews_sort, lang):
+def create_reviews_data(places, reviews_max, reviews_sort, convert_to_english, lang):
     reviews_data = []
     
     chosen_lang = lang if lang else "en"
@@ -117,6 +118,7 @@ def create_reviews_data(places, reviews_max, reviews_sort, lang):
         else:
                 max_r = min(reviews_max, n_reviews)        
         review_data = {
+            "convert_to_english": convert_to_english, 
             "place_id": place["place_id"],
             "link": place["link"],
             "max": max_r,
@@ -175,7 +177,7 @@ def determine_fields(fields, should_scrape_socials, scrape_reviews):
     #   print(fields)
       return fields
 
-def process_result(min_reviews, max_reviews, category_in, has_website, has_phone, min_rating, max_rating, sort, key, scrape_reviews, reviews_max, reviews_sort, fields, lang, should_scrape_socials, places_obj):
+def process_result(min_reviews, max_reviews, category_in, has_website, has_phone, min_rating, max_rating, sort, key, scrape_reviews, reviews_max, reviews_sort, fields, lang, should_scrape_socials,convert_to_english, places_obj):
       places = places_obj["places"]
       query = places_obj["query"]
         # Sort and Filter TODO: do later
@@ -203,7 +205,7 @@ def process_result(min_reviews, max_reviews, category_in, has_website, has_phone
         # 3. Scrape Reviews
       if scrape_reviews:
           placed_with_reviews = filter_places(cleaned_places, {"min_reviews": 1})
-          reviews_data = create_reviews_data(placed_with_reviews, reviews_max, reviews_sort, lang)
+          reviews_data = create_reviews_data(placed_with_reviews, reviews_max, reviews_sort, convert_to_english, lang)
           reviews_details =  scraper.scrape_reviews(reviews_data)
             # print_social_errors
           cleaned_places = merge_reviews(cleaned_places, reviews_details)
@@ -274,6 +276,8 @@ class Gmaps:
              
              key: Optional[str] = None,
              
+             convert_to_english: bool = True,
+
              scrape_reviews: bool = False,
              reviews_max: int = 20,
              reviews_sort: int = NEWEST,
@@ -312,10 +316,10 @@ class Gmaps:
           
       for query in queries:
         # 1. Scrape Places
-        place_data = create_place_data(query, is_spending_on_ads, max, lang, geo_coordinates, zoom)
+        place_data = create_place_data(query, is_spending_on_ads, max, lang, geo_coordinates, zoom, convert_to_english)
         places_obj = scraper.scrape_places(place_data)
 
-        result_item = process_result(min_reviews, max_reviews, category_in, has_website, has_phone, min_rating, max_rating, sort, key, scrape_reviews, reviews_max, reviews_sort, fields, lang, should_scrape_socials, places_obj)
+        result_item = process_result(min_reviews, max_reviews, category_in, has_website, has_phone, min_rating, max_rating, sort, key, scrape_reviews, reviews_max, reviews_sort, fields, lang, should_scrape_socials, convert_to_english,places_obj)
 
         result.append(result_item)
       
@@ -341,6 +345,7 @@ class Gmaps:
               sort: Optional[List[str]] = DEFAULT_SORT,
               max: Optional[int] = None,
               key: Optional[str] = None,
+              convert_to_english: bool = True,
               scrape_reviews: bool = False,
               reviews_max: int = 20,
               reviews_sort: int = NEWEST,
@@ -378,6 +383,6 @@ class Gmaps:
         places = scraper.scrape_places_by_links({"links": links })
         scraper.scrape_places_by_links.close()
         places_obj  = {"query":output_folder, "places": places }
-        result_item = process_result(min_reviews, max_reviews, category_in, has_website, has_phone, min_rating, max_rating, sort, key, scrape_reviews, reviews_max, reviews_sort, fields, lang, should_scrape_socials, places_obj)
+        result_item = process_result(min_reviews, max_reviews, category_in, has_website, has_phone, min_rating, max_rating, sort, key, scrape_reviews, reviews_max, reviews_sort, fields, lang, should_scrape_socials,convert_to_english, places_obj)
         
         return result_item

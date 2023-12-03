@@ -37,12 +37,6 @@ def convert_unicode_dict_to_ascii_dict(data):
     """
     return applyTransformer(data, unicode_to_ascii)
 
-def convert_unicode_dict_to_ascii_dict(data):
-    """
-    Convert unicode data to ASCII, replacing special characters.
-    """
-    return applyTransformer(data, unicode_to_ascii)
-
 
 def kebab_case(s):
     return kebabcase(s)

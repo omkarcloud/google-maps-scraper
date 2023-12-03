@@ -44,7 +44,7 @@ queries = [
    "web developers in bangalore"
 ]
 
-Gmaps.places(queries, scrape_reviews=True)
+Gmaps.places(queries, scrape_reviews=True, max=5)
 ```
 
 You can also configure the following options:
@@ -58,7 +58,7 @@ queries = [
    "web developers in bangalore"
 ]
 
-Gmaps.places(queries, scrape_reviews=True, reviews_max=100, reviews_sort=Gmaps.LOWEST_RATING)
+Gmaps.places(queries, scrape_reviews=True, reviews_max=100, reviews_sort=Gmaps.LOWEST_RATING, max=5)
 ```
 
 To scrape all reviews without any limit, you can set `reviews_max` to `Gmaps.ALL_REVIEWS`. 
@@ -68,7 +68,7 @@ queries = [
    "web developers in bangalore"
 ]
 
-Gmaps.places(queries, scrape_reviews=True, reviews_max=Gmaps.ALL_REVIEWS)
+Gmaps.places(queries, scrape_reviews=True, reviews_max=Gmaps.ALL_REVIEWS, max=5)
 ```
 
 Please understand that some places may have thousands of reviews, so scraping all reviews may take a long time. 
@@ -98,7 +98,7 @@ from botasaurus import bt
 
 queries = Gmaps.Cities.India("your_target in")
 
-scraped_places = Gmaps.places(queries, scrape_reviews=True, reviews_max=100)
+scraped_places = Gmaps.places(queries, scrape_reviews=True, reviews_max=100, max=5)
 bt.write_json(result, "scraped_places.json")
 ```
 
@@ -127,9 +127,9 @@ Gmaps.places(queries, lang=Gmaps.Lang.Spanish)
 All Google Maps languages are supported. Some popular languages you may want to use are:
 - Gmaps.Lang.Spanish
 - Gmaps.Lang.English
+- Gmaps.Lang.Chinese
 - Gmaps.Lang.Japanese
-- Gmaps.Lang.German
-- Gmaps.Lang.Italian
+- And of course Gmaps.Lang.Hindi 😊
 
 See the list of all supported languages [here](https://github.com/omkarcloud/google-maps-scraper/blob/master/languages.md)
 
@@ -156,7 +156,7 @@ queries = [
    "web developers in bangalore"
 ]
 
-Gmaps.places(queries, geo_coordinates="12.900490, 77.571466")
+Gmaps.places(queries, geo_coordinates="12.900490, 77.571466", max=5)
 ```
 
 You can also adjust the zoom level, which will zoom in to the location before scraping:
@@ -177,7 +177,7 @@ queries = [
    "web developers in bangalore"
 ]
 
-Gmaps.places(queries, geo_coordinates="12.900490, 77.571466", zoom=16)
+Gmaps.places(queries, geo_coordinates="12.900490, 77.571466", zoom=16, max=5)
 ```
 
 ### ❓ Why Do You Randomize Cities for Each User?
@@ -187,6 +187,25 @@ We randomize cities for each user to increase the chances of sales.
 If multiple users are targeting the same leads in the same cities, it reduces the opportunity for each. 
 
 Randomizing cities spreads them among our users, giving each user a better chance to make a sale.
+
+### ❓ When setting the Lang Attribute to Hindi/Japanese/Chinese, the characters are in English instead of the specified language. How to transform characters to the specified language?
+
+By default, we convert any non-English characters to their English equivalents. For example, "भारत" gets converted to "Bharat".
+
+We do this because Excel can't render non-English characters properly.
+
+If you want to retain the original characters and not convert them to English, then set the `convert_to_english` parameter to `False` as follows:
+
+```python
+queries = [
+   "web developers in Bangalore"
+]
+Gmaps.places(queries, lang=Gmaps.Lang.Hindi, convert_to_english=False, max=5)
+```
+
+Also, in case you are unable to view characters properly in Excel, then the easiest solution is to upload the CSV to Google Sheets, which should render the characters properly.
+
+![character-fix](https://github.com/omkarcloud/google-maps-scraper/assets/53407137/1362b910-7102-4c74-9231-c18cb4504161)
 
 ### ❓ Do I Need Proxies?
 

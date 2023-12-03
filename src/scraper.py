@@ -8,7 +8,7 @@ from time import sleep, time
 from botasaurus.utils import retry_if_is_error
 from selenium.common.exceptions import  StaleElementReferenceException
 
-def process_reviews(reviews):
+def process_reviews(reviews, convert_to_english):
     processed_reviews = []
 
     for review in reviews:
@@ -43,7 +43,10 @@ def process_reviews(reviews):
         }
         processed_reviews.append(processed_review)
 
-    return convert_unicode_dict_to_ascii_dict(processed_reviews)
+    if convert_to_english:
+        return convert_unicode_dict_to_ascii_dict(processed_reviews)
+    else:
+        return processed_reviews
 
 
 @request(
@@ -61,6 +64,7 @@ def scrape_reviews(requests: AntiDetectRequests, data):
 
     reviews_sort = data["reviews_sort"]
     lang = data["lang"]
+    convert_to_english = data["convert_to_english"]
     
     processed = []
     with GoogleMapsAPIScraper() as scraper:
@@ -68,7 +72,7 @@ def scrape_reviews(requests: AntiDetectRequests, data):
         result = scraper.scrape_reviews(
             link,  max_r, lang, sort_by=reviews_sort
         )
-        processed = process_reviews(result)
+        processed = process_reviews(result, convert_to_english)
     
     return {"place_id":place_id, "reviews": processed}
 
@@ -112,7 +116,8 @@ def scrape_place(requests: AntiDetectRequests, link):
             # data['link'] = link
 
             data['is_spending_on_ads'] = False
-            cleaned = convert_unicode_dict_to_ascii_dict(data)
+            cleaned = data
+            
             return cleaned  
         except:
             sleep(63)
@@ -142,11 +147,16 @@ def scrape_places_by_links(driver: AntiDetectDriver, data):
     
     scrape_place_obj: AsyncQueueResult = scrape_place()
     links = data["links"]
+    convert_to_english = data['convert_to_english']
+
     scrape_place_obj.put(links)
     places = scrape_place_obj.get()
 
     sponsored_links = []
     places = merge_sponsored_links(places, sponsored_links)
+
+    if convert_to_english:
+        places = convert_unicode_dict_to_ascii_dict(places)
 
     return places 
 
@@ -172,6 +182,7 @@ def scrape_places(driver: AntiDetectDriver, data):
     # This fixes consent Issues in Countries like Spain 
     max_results = data['max']
     is_spending_on_ads = data['is_spending_on_ads']
+    convert_to_english = data['convert_to_english']
 
     scrape_place_obj: AsyncQueueResult = scrape_place()
 
@@ -265,6 +276,9 @@ def scrape_places(driver: AntiDetectDriver, data):
     sponsored_links = get_sponsored_links() 
     places = merge_sponsored_links(places, sponsored_links)
     
+    if convert_to_english:
+        places = convert_unicode_dict_to_ascii_dict(places)
+
     result = {"query": data['query'], "places": places}
     
     if failed_to_scroll:
