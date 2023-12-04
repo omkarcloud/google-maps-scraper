@@ -1,6 +1,7 @@
 from src.gmaps import Gmaps
 
-love_it_star_it = '''Love It? Star It! ⭐ https://github.com/omkarcloud/google-maps-scraper/'''
+star_it = '''Help us reach 850 stars, and we'll break the GMaps 120 limit, giving you 150+ to 250+ potential customers per search.
+             Star us to make it happen ⭐! https://github.com/omkarcloud/google-maps-scraper/'''
 
 queries = [
    "web developers in bangalore"

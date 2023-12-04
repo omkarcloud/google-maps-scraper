@@ -219,12 +219,9 @@ This issue occurs only in Excel, which does not render Turkish characters proper
 
 Alternatively, setting the `lang` attribute to `Gmaps.Lang.English` will give results in English. -->
 
-## Love It? [Star It ⭐!](https://github.com/omkarcloud/google-maps-scraper)
+## ⚡ Help us reach 850 stars, and we'll break the GMaps 120 limit, giving you 150+ to 250+ potential customers per search. Star us to make it happen ⭐!
 
-Become one of our amazing stargazers by giving us a star ⭐ on GitHub!
 
-It's just one click, but it means the world to us.
-
-[![Stargazers for @omkarcloud/google-maps-scraper](https://bytecrank.com/nastyox/reporoster/php/stargazersSVG.php?user=omkarcloud&repo=google-maps-scraper)](https://github.com/omkarcloud/google-maps-scraper/stargazers)
+<!-- [![Stargazers for @omkarcloud/google-maps-scraper](https://bytecrank.com/nastyox/reporoster/php/stargazersSVG.php?user=omkarcloud&repo=google-maps-scraper)](https://github.com/omkarcloud/google-maps-scraper/stargazers) -->
 
 ## Made with ❤️ using [Botasaurus Web Scraping Framework](https://github.com/omkarcloud/botasaurus)
