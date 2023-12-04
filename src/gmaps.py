@@ -380,7 +380,7 @@ class Gmaps:
         if max is not None:
             links = links[:max]
 
-        places = scraper.scrape_places_by_links({"links": links })
+        places = scraper.scrape_places_by_links({"links": links, "convert_to_english": convert_to_english,  })
         scraper.scrape_places_by_links.close()
         places_obj  = {"query":output_folder, "places": places }
         result_item = process_result(min_reviews, max_reviews, category_in, has_website, has_phone, min_rating, max_rating, sort, key, scrape_reviews, reviews_max, reviews_sort, fields, lang, should_scrape_socials,convert_to_english, places_obj)
