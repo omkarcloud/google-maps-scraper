@@ -416,7 +416,7 @@ For further help, ask your question in GitHub Discussions. We'll be happy to hel
 
 [![ask github](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/ask-on-github.png)](https://github.com/omkarcloud/google-maps-scraper/discussions)
 
-## Love It? [Star It ⭐!](https://github.com/omkarcloud/google-maps-scraper)
+## Help us reach 850 stars, and we'll break the GMaps 120 limit, giving you 150+ to 250+ potential customers per search. Star us to make it happen ⭐!
 
 Become one of our amazing stargazers by giving us a star ⭐ on GitHub!
 
