@@ -34,9 +34,14 @@
   
 ---
 
-## 👉 Explore Our Other Popular Scrapers
+## 👉 Explore Our Other Awesome Products
 
-- ✅ [Outlook Account Generator](https://github.com/omkarcloud/outlook-account-generator): Expand your customer base by emailing tens of thousands of people using Outlook accounts.
+
+- ✅ [Botasaurus](https://github.com/omkarcloud/botasaurus): The All-in-One Web Scraping Framework with Anti-Detection, Parallelization, Asynchronous, and Caching Superpowers.
+
+- ✅ [Outlook Account Generator](https://github.com/omkarcloud/outlook-account-generator): Send emails at Google's Scale with Outlook Accounts.
+
+
 <!-- TODO: UNCOMMENT WHEN DONE -->
 <!-- - ✅ [G2 Reviews Scraper](https://github.com/omkarcloud/g2-scraper/): Grow your software's customer base by targeting and converting your competitors' customers. -->
 
