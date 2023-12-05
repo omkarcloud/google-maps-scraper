@@ -5,6 +5,7 @@ class Fields:
     DESCRIPTION = "description"
     IS_SPENDING_ON_ADS = "is_spending_on_ads"
     REVIEWS = "reviews"
+    COMPETITORS = "competitors"
     WEBSITE = "website"
 
     EMAILS = "emails"
@@ -35,6 +36,7 @@ class Fields:
     STATUS = "status"
     PRICE_RANGE = "price_range"
     REVIEWS_PER_RATING = "reviews_per_rating"
+    FEATURED_QUESTION = "featured_question"
     REVIEWS_LINK = "reviews_link"
     COORDINATES = "coordinates"
     PLUS_CODE = "plus_code"
@@ -50,6 +52,8 @@ class Fields:
     ABOUT = "about"
     IMAGES = "images"
     HOURS = "hours"
+    MOST_POPULAR_TIMES = "most_popular_times"
+    POPULAR_TIMES = "popular_times"
 
     FEATURED_REVIEWS = "featured_reviews"
     DETAILED_REVIEWS = "detailed_reviews"
@@ -60,6 +64,7 @@ DEFAULT_FIELDS_WITHOUT_SOCIAL_DATA = [
     Fields.DESCRIPTION, 
     Fields.IS_SPENDING_ON_ADS, 
     Fields.REVIEWS, 
+    Fields.COMPETITORS, 
     Fields.WEBSITE, 
     Fields.OWNER, 
     Fields.FEATURED_IMAGE, 
@@ -104,6 +109,7 @@ DEFAULT_FIELDS = [
     Fields.NAME, 
     Fields.DESCRIPTION, 
     Fields.IS_SPENDING_ON_ADS, 
+    Fields.COMPETITORS,
     Fields.WEBSITE, 
     Fields.REVIEWS] + DEFAULT_SOCIAL_FIELDS + [
     Fields.OWNER, 
@@ -126,6 +132,7 @@ Fields.PLACE_ID,
 Fields.NAME,
 Fields.DESCRIPTION,
 Fields.IS_SPENDING_ON_ADS,
+Fields.COMPETITORS, 
 Fields.REVIEWS,
 
 Fields.WEBSITE,
@@ -144,6 +151,7 @@ Fields.LINK,
 Fields.STATUS,
 Fields.PRICE_RANGE,
 Fields.REVIEWS_PER_RATING,
+Fields.FEATURED_QUESTION,
 Fields.REVIEWS_LINK,
 Fields.COORDINATES,
 Fields.PLUS_CODE,
@@ -160,6 +168,8 @@ Fields.ORDER_ONLINE_LINKS,
 Fields.ABOUT,
 Fields.IMAGES,
 Fields.HOURS,
+Fields.MOST_POPULAR_TIMES,
+Fields.POPULAR_TIMES,
 
 Fields.FEATURED_REVIEWS,
 Fields.DETAILED_REVIEWS,
@@ -173,6 +183,7 @@ Fields.PLACE_ID,
 Fields.NAME,
 Fields.DESCRIPTION,
 Fields.IS_SPENDING_ON_ADS,
+Fields.COMPETITORS, 
 Fields.REVIEWS,
 Fields.WEBSITE,
 
@@ -204,6 +215,7 @@ Fields.LINK,
 Fields.STATUS,
 Fields.PRICE_RANGE,
 Fields.REVIEWS_PER_RATING,
+Fields.FEATURED_QUESTION,
 Fields.REVIEWS_LINK,
 Fields.COORDINATES,
 Fields.PLUS_CODE,
@@ -215,6 +227,8 @@ Fields.DATA_ID,
 Fields.ABOUT,
 Fields.IMAGES,
 Fields.HOURS,
+Fields.MOST_POPULAR_TIMES,
+Fields.POPULAR_TIMES,
 
 Fields.MENU,
 Fields.RESERVATIONS,

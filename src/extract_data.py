@@ -1,7 +1,9 @@
 import re as rex
 import json
 from datetime import datetime
-# from botasaurus import *
+from botasaurus import *
+
+from src.scraper_utils import create_search_link
 
 def toiso(date):
     return date.isoformat() 
@@ -67,6 +69,153 @@ def get_images(data):
         if thumbnail:
             ls.append({'about': title, 'link': thumbnail})
     return ls
+
+def extract_questions(data):
+    images = safe_get(data, 6, 126) or []
+    ls = []
+    for element in images:
+        question_data = safe_get(element, 0, 0)
+        answer_data = safe_get(element, 0, 1)
+
+        if question_data is None or answer_data is None :
+            continue
+
+        question = safe_get(question_data, 2)
+        answer = safe_get(answer_data, 0, 2)
+        # bt.write_temp_json( question)
+
+        new_var = safe_get(question_data, -1) / 1000
+        
+        question_date = convert_timestamp_to_iso_date(new_var) if safe_get(question_data, -1) else None
+        question_ago = safe_get(question_data, 7)
+        asked_by = {
+            "name": safe_get(question_data, 1, 0, 4),
+            "link": safe_get(question_data, 1, 0, 5),
+        }
+
+        new_var1 = safe_get(answer_data, 0, -1) / 1000
+        answer_date = convert_timestamp_to_iso_date(new_var1) if safe_get(answer_data, 0, -1) else None
+        answer_ago = safe_get(answer_data, 0, 7)
+        
+        answered_by_name = safe_get(answer_data, 0, 1, 0, 4)
+        answered_by_link = safe_get(answer_data, 0, 1, 0, 5)
+
+        if answered_by_name and answered_by_link:
+            answered_by = {
+                "name": answered_by_name,
+                "link": answered_by_link,
+            }
+        else:
+            ownerd = get_owner(data)
+            answered_by = {
+                "name": ownerd.get('name', None),
+                "link": ownerd.get('link', None),
+            }
+        
+        ls.append({
+                "question": question, 
+                "answer": answer, 
+
+                "question_date": question_date, 
+                "question_ago": question_ago, 
+                "asked_by": asked_by, 
+
+                "answer_date": answer_date,
+                "answer_ago": answer_ago,
+                "answered_by": answered_by,
+        })
+    if len(ls) <= 1:
+        return safe_get(ls, 0)
+    else:
+        raise Exception("More than one question found")
+
+
+def get_hl_from_link_competitors(link):
+        # Regular expression to find the 'hl' parameter in the URL
+        match = rex.search(r"[?&]hl=([^&]+)", link)
+        
+        # If found, return the value, otherwise return 'en'
+        return match.group(1) if match else None
+
+def extract_competitors(data, link):
+
+    images = safe_get(data, 6, 99,0,0,1) or []
+    ls = []
+    hl = get_hl_from_link_competitors(link)
+    for element in images:
+        dt = safe_get(element, 1)
+
+        if not dt:
+            continue
+
+        name = safe_get(dt, 11)
+        
+        lat = safe_get(dt, 9, -2)
+        long =  safe_get(dt, 9, -1)
+        
+        link = create_search_link(name, hl, f"{lat},{long}", None)
+        
+        reviews = safe_get(dt, 4, -1)
+        rating = safe_get(dt, 4, -2)
+        main_category = safe_get(dt, -1)
+        
+        ls.append({
+                        
+            "name":name, 
+            "link":link, 
+            "reviews":reviews, 
+            "rating":rating, 
+            "main_category":main_category, 
+        })
+    return ls
+
+
+def reorder_popular_times_from_monday_to_sunday(data):
+    def sorting_bool_false(item):
+            return item[0]
+
+    sorted_data = sorted(data, key=sorting_bool_false)
+    return sorted_data
+
+def extract_time_data(data):
+    ls = []
+
+    for el in data:
+        hour_of_day = el[0]
+        time_label = el[4]
+        popularity_percentage = el[1]
+        popularity_description = el[2] if el[2] else 'Idle'
+
+        ls.append({
+            "hour_of_day":hour_of_day, 
+            "time_label":time_label, 
+            "popularity_percentage":popularity_percentage, 
+            "popularity_description":popularity_description, 
+        })        
+
+    return ls
+
+
+def extract_popular_times(data):
+    images = safe_get(data, 6, 84,0) or []
+    
+    if not images:
+        return 'Not Present'
+    
+    ls = reorder_popular_times_from_monday_to_sunday(images)
+    rs = {}
+    tms = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
+
+    for index, dtt in enumerate(ls):
+        cureentdata = dtt[1]
+        date_id = dtt[0]
+        if not cureentdata:
+            continue
+
+        day = tms[date_id - 1]
+        rs[day] = extract_time_data(cureentdata)
+
+    return rs
 
 def get_reservations(data):
     images = safe_get(data, 6, 46) or []
@@ -174,14 +323,11 @@ def get_user_reviews(data):
         if response_from_owner_date:
             response_from_owner_date = convert_timestamp_to_iso_date(response_from_owner_date)
 
-        # 1688528496522
 
         published_at_date = safe_get(element,27) or safe_get(element,57) or None
         if published_at_date:
             published_at_date = convert_timestamp_to_iso_date(published_at_date)
         
-        # if "ChZDSUhNMG9nS0VJQ0FnSUR4Z0xERGJBEAE" == review_id:
-        # bt.write_json(element, name)
 
         images = get_review_images(element[14] or [])
         
@@ -195,9 +341,6 @@ def get_user_reviews(data):
             is_local_guide = is_local_guide > 0
         else:
              is_local_guide = False
-            
-        # > 0
-        
         ls.append({
              'review_id':review_id,
              'reviewer_name':name,
@@ -359,7 +502,7 @@ def find_close_days(schedule):
         if not number_pattern.search(times_str):
             closed_days.append(day_info["day"])
 
-    return closed_days
+    return closed_days if closed_days else 'Open All Days'
 
 def find_most_common_element(ls):
     if not ls:
@@ -398,12 +541,42 @@ def extract_work_day_time(schedule):
             days.append(times_str)
 
     return find_most_common_element(days)
+def extract_most_popular_times(data):
+    if isinstance(data, dict):
+
+        # Initialize a dictionary to store total popularity, count, and time labels for each hour
+        hour_popularity = {hour: {'total_popularity': 0, 'count': 0, 'time_label': ''} for hour in range(24)}
+
+        # Iterate over each day and hour to sum up popularity, count occurrences, and store time labels
+        for day, hours in data.items():
+            for hour_data in hours:
+                hour = hour_data["hour_of_day"]
+                hour_popularity[hour]['total_popularity'] += hour_data["popularity_percentage"]
+                hour_popularity[hour]['count'] += 1
+                hour_popularity[hour]['time_label'] = hour_data["time_label"]  # Storing the time label
+
+        # Calculate the average popularity for each hour
+        average_popularity = []
+        for hour, values in hour_popularity.items():
+            if values['count'] > 0:
+                avg_pop = values['total_popularity'] / values['count']
+                average_popularity.append({'hour_of_day': hour, 'average_popularity': avg_pop, 'time_label': values['time_label']})
+
+        # Sort by average popularity in descending order
+        sorted_avg_popularity = sorted(average_popularity, key=lambda x: x['average_popularity'], reverse=True)
+
+        # Get the top 3 most popular times
+        top_3 = sorted_avg_popularity[:3]
+
+        return top_3
+
+    else:
+        # Return data as it is if it's not a dictionary
+        return data
 
 
 def extract_data(input_str, link):
     data = parse(input_str)
-    
-
 
     categories = get_categories(data)
     place_id = get_place_id(data)
@@ -425,7 +598,6 @@ def extract_data(input_str, link):
         hl = get_hl_from_link(link)
         query = extract_business_name(link)
         reviews_link = generate_google_reviews_url(place_id,query , 0, hl, gl)
-        pass
 
     price_range = get_price_range(data)
     reviews_per_rating = get_reviews_per_rating(data)
@@ -449,19 +621,19 @@ def extract_data(input_str, link):
     user_reviews = get_user_reviews(data)
     
     review_keywords = get_review_keywords(data)
-    # bt.write_json(data, title)
 
-    # Add more as needed
-    # skipped questions_and_answers
-    # popular_times
-    # people also search for
-
+    first_question = extract_questions(data)
+    
+    
+    competitors = extract_competitors(data, link)
+    popular_times = extract_popular_times(data)
+    most_popular_times = extract_most_popular_times(popular_times)
     return {
         'place_id': place_id,
         'name': title,
         'description': description,
         'reviews': reviews,
-
+        'competitors': competitors,
         'website': website,
         'owner': owner,
         'featured_image': thumbnail,
@@ -478,6 +650,7 @@ def extract_data(input_str, link):
         'status': status,
         'price_range': price_range,
         'reviews_per_rating': reviews_per_rating,
+        'featured_question': first_question,
         'reviews_link': reviews_link,
         'coordinates': coordinates,
         'plus_code': plus_code,
@@ -493,6 +666,9 @@ def extract_data(input_str, link):
         'about': about,
         'images': images,
         'hours': hours,
+        'most_popular_times': most_popular_times, 
+        'popular_times':popular_times ,
 
         'featured_reviews': user_reviews,
+
     }

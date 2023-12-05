@@ -1,5 +1,5 @@
 import urllib.parse
-from botasaurus import *
+from botasaurus import AntiDetectDriver
 
 def perform_visit(driver: AntiDetectDriver, link:str):
     def visit_gmap_with_consent():

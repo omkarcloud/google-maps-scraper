@@ -1,3 +1,4 @@
+import traceback
 from botasaurus import *
 from botasaurus.cache import DontCache
 from src.extract_data import extract_data
@@ -51,7 +52,6 @@ def process_reviews(reviews, convert_to_english):
 
 @request(
 
-    cache=True,
     close_on_crash=True,
     output=None,
 
@@ -90,7 +90,6 @@ def set_cookies(ck):
     parallel=5,
     async_queue=True,
 
-    cache=True,
     close_on_crash=True,
     output=None,
 
@@ -102,7 +101,6 @@ def set_cookies(ck):
 )
 def scrape_place(requests: AntiDetectRequests, link):
         cookies = get_cookies()
-        
         try:
             html =  requests.get(link,cookies=cookies,).text
             # Splitting HTML to get the part after 'window.APP_INITIALIZATION_STATE='
@@ -133,7 +131,6 @@ def merge_sponsored_links(places, sponsored_links):
     block_images=True,
     reuse_driver=True,
     keep_drivers_alive=True, 
-    cache=True,
     close_on_crash=True,
     headless=True,
     output=None,
@@ -144,9 +141,11 @@ def scrape_places_by_links(driver: AntiDetectDriver, data):
     perform_visit(driver, search_link)
 
     set_cookies(driver.get_cookies_dict())
-    
-    scrape_place_obj: AsyncQueueResult = scrape_place()
+
     links = data["links"]
+    cache = data["cache"]
+    
+    scrape_place_obj: AsyncQueueResult = scrape_place(cache=cache)
     convert_to_english = data['convert_to_english']
 
     scrape_place_obj.put(links)
@@ -171,7 +170,6 @@ def get_lang(data):
     block_images=True,
     reuse_driver=True,
     keep_drivers_alive=True, 
-    cache=True,
     lang=get_lang,
     close_on_crash=True,
     headless=True,

@@ -38,6 +38,89 @@ def transform_about(about_list):
 
     return transformed_about
 
+def featured_question_to_string(data):
+    # Check if the data is a dictionary
+    if isinstance(data, dict):
+        # Extracting required fields
+        question = data.get("question", "No Question")
+        answer = data.get("answer", "No Answer")
+        question_ago = data.get("question_ago", "")
+        answer_ago = data.get("answer_ago", "")
+
+        # Formatting the output string
+        formatted_string = f"Question: {question} ({question_ago})\n\nAnswer: {answer} ({answer_ago})"
+        return formatted_string
+    else:
+        # Return data as it is if it's not a dictionary
+        return data
+
+def competitors_to_string(data):
+    # Check if the data is a list
+    if isinstance(data, list):
+        # Initialize an empty list to hold formatted strings
+        formatted_strings = []
+
+        # Iterating through each competitor in the list
+        for competitor in data:
+            name = competitor.get("name", "No Name")
+            link = competitor.get("link", "No Link")
+            reviews = competitor.get("reviews", "No Reviews")
+
+            # Formatting each competitor's information and adding it to the list
+            formatted_strings.append(f"Name: {name}\nlink: {link}\nReviews: {reviews} reviews\n")
+
+        # Joining all formatted strings with a newline character
+        return '\n'.join(formatted_strings).strip()
+    else:
+        # Return data as it is if it's not a list
+        return data
+
+def popular_times_to_string(data):
+    # Check if the data is a dictionary
+    if isinstance(data, dict):
+        # Initialize an empty string to hold the formatted output
+        formatted_output = ""
+
+        # Iterating through each day
+        for day, times in data.items():
+            formatted_output += f"{day}:\n"
+            for time_slot in times:
+                time_label = time_slot.get("time_label", "No Time Label")
+                popularity_percentage = time_slot.get("popularity_percentage", 0)
+                popularity_description = time_slot.get("popularity_description", "No description")
+
+                # Formatting each time slot's information
+                formatted_output += f"    {time_label}: {popularity_percentage}% | {popularity_description}\n"
+
+            # Add a newline for separation between days
+            formatted_output += "\n"
+
+        return formatted_output.strip()
+    else:
+        # Return data as it is if it's not a dictionary
+        return data
+
+def most_popular_times_to_string(data):
+    # Check if the data is a dictionary
+    if isinstance(data, list):
+        # Initialize an empty list to hold formatted strings
+        formatted_strings = []
+
+        # Iterating through each competitor in the list
+        xs = []
+        for el in data:
+            average_popularity = el.get("average_popularity", "No Average Popularity")
+            time_label = el.get("time_label", "No Time Label")
+            xs.append(time_label)
+            # Formatting each competitor's information and adding it to the list
+            formatted_strings.append(f"Time Label: {time_label}\nAverage Popularity: {average_popularity}\n")
+
+        # Joining all formatted strings with a newline character
+        return ', '.join(xs) + '\n---\n' + '\n'.join(formatted_strings).strip()
+    else:
+        # Return data as it is if it's not a list
+        return data
+
 
 def transform_places(places, fields):
     transformed_places = []
@@ -54,6 +137,18 @@ def transform_places(places, fields):
             elif field == Fields.MENU:
                 # Adding menu link
                 transformed_place['menu_link'] = place['menu']['link'] if 'menu' in place and 'link' in place['menu'] else None
+
+            elif field == Fields.FEATURED_QUESTION:
+                transformed_place[Fields.FEATURED_QUESTION] = featured_question_to_string(place[Fields.FEATURED_QUESTION])
+
+            elif field == Fields.COMPETITORS:
+                transformed_place[Fields.COMPETITORS] = competitors_to_string(place[Fields.COMPETITORS])
+
+            elif field == Fields.POPULAR_TIMES:
+                transformed_place[Fields.POPULAR_TIMES] = popular_times_to_string(place[Fields.POPULAR_TIMES])
+
+            elif field == Fields.MOST_POPULAR_TIMES:
+                transformed_place[Fields.MOST_POPULAR_TIMES] = most_popular_times_to_string(place[Fields.MOST_POPULAR_TIMES])
 
             elif field == Fields.ORDER_ONLINE_LINKS:
                 # Concatenating online links
@@ -97,7 +192,10 @@ def transform_places(places, fields):
                 transformed_place[Fields.COORDINATES] = coords
 
             elif field == Fields.CLOSED_ON:
-                transformed_place[Fields.CLOSED_ON] = ', '.join(place[Fields.CLOSED_ON])
+                if isinstance(place[Fields.CLOSED_ON], list):
+                    transformed_place[Fields.CLOSED_ON] = ', '.join(place[Fields.CLOSED_ON])
+                else:
+                    transformed_place[Fields.CLOSED_ON] = place[Fields.CLOSED_ON]
 
             elif field == Fields.HOURS:
                 # Formatting hours

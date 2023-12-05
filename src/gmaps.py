@@ -177,7 +177,7 @@ def determine_fields(fields, should_scrape_socials, scrape_reviews):
     #   print(fields)
       return fields
 
-def process_result(min_reviews, max_reviews, category_in, has_website, has_phone, min_rating, max_rating, sort, key, scrape_reviews, reviews_max, reviews_sort, fields, lang, should_scrape_socials,convert_to_english, places_obj):
+def process_result(min_reviews, max_reviews, category_in, has_website, has_phone, min_rating, max_rating, sort, key, scrape_reviews, reviews_max, reviews_sort, fields, lang, should_scrape_socials,convert_to_english, cache, places_obj):
       places = places_obj["places"]
       query = places_obj["query"]
         # Sort and Filter TODO: do later
@@ -196,7 +196,7 @@ def process_result(min_reviews, max_reviews, category_in, has_website, has_phone
       if should_scrape_socials:
           places_with_websites = filter_places(cleaned_places, {"has_website": True})
           social_data = create_social_scrape_data(places_with_websites, key)
-          social_details =  bt.remove_nones(scrape_social(social_data))
+          social_details =  bt.remove_nones(scrape_social(social_data, cache=cache))
           success, credits_exhausted, not_subscribed, unknown_error = clean_social(social_details)
           print_social_errors(credits_exhausted, not_subscribed, unknown_error)
           cleaned_places = merge_social(cleaned_places, success)
@@ -206,7 +206,7 @@ def process_result(min_reviews, max_reviews, category_in, has_website, has_phone
       if scrape_reviews:
           placed_with_reviews = filter_places(cleaned_places, {"min_reviews": 1})
           reviews_data = create_reviews_data(placed_with_reviews, reviews_max, reviews_sort, convert_to_english, lang)
-          reviews_details =  scraper.scrape_reviews(reviews_data)
+          reviews_details =  scraper.scrape_reviews(reviews_data, cache=cache)
             # print_social_errors
           cleaned_places = merge_reviews(cleaned_places, reviews_details)
 
@@ -277,6 +277,7 @@ class Gmaps:
              key: Optional[str] = None,
              
              convert_to_english: bool = True,
+             use_cache: bool = True,
 
              scrape_reviews: bool = False,
              reviews_max: int = 20,
@@ -299,6 +300,8 @@ class Gmaps:
       :param sort: Sort criteria for the results.
       :param max: Maximum number of results to return.
       :param key: API key for Emails, Social Links Scraping.
+      :param convert_to_english: Boolean indicating whether to convert non-English characters to English characters.
+      :param use_cache: Boolean indicating whether to use cached data.
       :param scrape_reviews: Boolean indicating if the reviews should be scraped.
       :param reviews_max: Maximum number of reviews to scrape per place.
       :param reviews_sort: Sort order for reviews.
@@ -317,9 +320,9 @@ class Gmaps:
       for query in queries:
         # 1. Scrape Places
         place_data = create_place_data(query, is_spending_on_ads, max, lang, geo_coordinates, zoom, convert_to_english)
-        places_obj = scraper.scrape_places(place_data)
+        places_obj = scraper.scrape_places(place_data, cache = use_cache)
 
-        result_item = process_result(min_reviews, max_reviews, category_in, has_website, has_phone, min_rating, max_rating, sort, key, scrape_reviews, reviews_max, reviews_sort, fields, lang, should_scrape_socials, convert_to_english,places_obj)
+        result_item = process_result(min_reviews, max_reviews, category_in, has_website, has_phone, min_rating, max_rating, sort, key, scrape_reviews, reviews_max, reviews_sort, fields, lang, should_scrape_socials, convert_to_english,use_cache,places_obj)
 
         result.append(result_item)
       
@@ -346,6 +349,7 @@ class Gmaps:
               max: Optional[int] = None,
               key: Optional[str] = None,
               convert_to_english: bool = True,
+              use_cache: bool = True,
               scrape_reviews: bool = False,
               reviews_max: int = 20,
               reviews_sort: int = NEWEST,
@@ -365,6 +369,8 @@ class Gmaps:
         :param sort: Sort criteria for the results (not typically used with direct links).
         :param max: Maximum number of results to return.
         :param key: API key for Emails, Social Links Scraping.
+        :param convert_to_english: Boolean indicating whether to convert non-English characters to English characters.
+        :param use_cache: Boolean indicating whether to use cached data.
         :param scrape_reviews: Boolean indicating if the reviews should be scraped.
         :param reviews_max: Maximum number of reviews to scrape per place.
         :param reviews_sort: Sort order for reviews.
@@ -380,9 +386,9 @@ class Gmaps:
         if max is not None:
             links = links[:max]
 
-        places = scraper.scrape_places_by_links({"links": links, "convert_to_english": convert_to_english,  })
+        places = scraper.scrape_places_by_links({"links": links, "convert_to_english": convert_to_english, "cache": use_cache}, cache=use_cache)
         scraper.scrape_places_by_links.close()
         places_obj  = {"query":output_folder, "places": places }
-        result_item = process_result(min_reviews, max_reviews, category_in, has_website, has_phone, min_rating, max_rating, sort, key, scrape_reviews, reviews_max, reviews_sort, fields, lang, should_scrape_socials,convert_to_english, places_obj)
+        result_item = process_result(min_reviews, max_reviews, category_in, has_website, has_phone, min_rating, max_rating, sort, key, scrape_reviews, reviews_max, reviews_sort, fields, lang, should_scrape_socials,convert_to_english, use_cache,places_obj)
         
         return result_item

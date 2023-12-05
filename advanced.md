@@ -190,7 +190,7 @@ Randomizing cities spreads them among our users, giving each user a better chanc
 
 ### ❓ When setting the Lang Attribute to Hindi/Japanese/Chinese, the characters are in English instead of the specified language. How to transform characters to the specified language?
 
-By default, we convert any non-English characters to their English equivalents. For example, "भारत" gets converted to "Bharat".
+By default, we convert any non-English characters to English characters. For example, "भारत" gets converted to "Bharat".
 
 We do this because Excel can't render non-English characters properly.
 

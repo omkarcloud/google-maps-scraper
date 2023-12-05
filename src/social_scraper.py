@@ -82,7 +82,6 @@ def do_request(data, retry_count=3):
 
 
 @rq(
-    cache=True,
     close_on_crash=True,
     output=None,
     )
@@ -90,7 +89,6 @@ def perform_scrape_social(reqs, data):
     return do_request(data)
 
 @rq(
-    cache=True,
     close_on_crash=True,
     output=None,
     )
@@ -103,9 +101,9 @@ def is_free():
     credits_used = bt.LocalStorage.get_item("credits_used", 0)
     return credits_used < FREE_CREDITS_PLUS_10
 
-def scrape_social(social_data):
+def scrape_social(social_data, cache):
     free = is_free()
     if free:
-        return perform_scrape_social(social_data)
+        return perform_scrape_social(social_data, cache=cache)
     else:
-        return perform_scrape_social_pro(social_data)
+        return perform_scrape_social_pro(social_data, cache=cache)
