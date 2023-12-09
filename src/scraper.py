@@ -136,10 +136,8 @@ def merge_sponsored_links(places, sponsored_links):
     output=None,
 )
 def scrape_places_by_links(driver: AntiDetectDriver, data):
-    
-    search_link = create_search_link("web developers in bangalore", "en", None, None)
-    perform_visit(driver, search_link)
-
+    # get's the cookies accepted which scraper needs.
+    driver.get_google(True)
     set_cookies(driver.get_cookies_dict())
 
     links = data["links"]

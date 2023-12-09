@@ -113,7 +113,7 @@ Once the scraping process is complete, you can find your leads in the `output` d
 
 ![Google Maps Data Scraper CSV Result](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/gmap_result.png)
 
-*Note: If you don't have Python installed or you are facing errors. Follow this Simple FAQ [here](https://github.com/omkarcloud/google-maps-scraper/blob/master/advanced.md#-i-dont-have-python-or-im-facing-errors-when-setting-up-the-scraper-on-my-pc-how-to-solve-it) and you have your google maps leads in next 5 Minutes*
+*Note: If you don't have Python installed or you are facing errors. Follow this Simple FAQ [here](https://github.com/omkarcloud/google-maps-scraper/blob/master/advanced.md#-i-dont-have-python-or-im-facing-errors-when-setting-up-the-scraper-on-my-pc-how-to-solve-it) and you will have your google maps leads in next 5 Minutes*
 
 
 ## 🤔 Questions

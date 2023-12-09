@@ -1,7 +1,6 @@
 import re as rex
 import json
 from datetime import datetime
-from botasaurus import *
 
 from src.scraper_utils import create_search_link
 
@@ -137,6 +136,19 @@ def get_hl_from_link_competitors(link):
         # If found, return the value, otherwise return 'en'
         return match.group(1) if match else None
 
+
+def competitor_sorting_key(item):
+        key = 'reviews'
+        value = item.get(key)
+
+        # Handle None separately
+        if value is None:
+            return (0,)  # A tuple with a single element to ensure type consistency
+
+        # Return a tuple with type indicator and value
+        return (1, value) if isinstance(value, int) else (2, value)
+
+
 def extract_competitors(data, link):
 
     images = safe_get(data, 6, 99,0,0,1) or []
@@ -160,14 +172,18 @@ def extract_competitors(data, link):
         main_category = safe_get(dt, -1)
         
         ls.append({
-                        
             "name":name, 
             "link":link, 
             "reviews":reviews, 
             "rating":rating, 
             "main_category":main_category, 
         })
-    return ls
+
+
+    sorted_data = sorted(ls, key=competitor_sorting_key,
+                         reverse=True)
+
+    return sorted_data
 
 
 def reorder_popular_times_from_monday_to_sunday(data):
