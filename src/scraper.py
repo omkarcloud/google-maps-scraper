@@ -1,4 +1,3 @@
-import traceback
 from botasaurus import *
 from botasaurus.cache import DontCache
 from src.extract_data import extract_data
