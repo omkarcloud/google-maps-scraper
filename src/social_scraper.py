@@ -52,11 +52,9 @@ def do_request(data, retry_count=3):
             "data": final,
             "error": None
         }
-    # elif response.status_code == 429:
     else: 
         message = response_data.get("message", "")
         if "exceeded the MONTHLY quota" in message:
-            # print("Cddd")
             return  DontCache({
                         "place_id": place_id,
                         "data":  None,
