@@ -166,16 +166,16 @@ def transform_places(places, fields):
                 transformed_place['owner_profile_link'] = place['owner']['link']
 
             elif field == Fields.EMAILS:
-                emails = [email["value"] for email in place.get("emails", [])]
-                emails_with_sources = [f"{email['value']}: {len(email['sources'])}" for email in place.get("emails", [])]
+                emails = place.get("emails", [])
+                # emails_with_sources = [f"{email['value']}: {len(email['sources'])}" for email in place.get("emails", [])]
                 transformed_place[Fields.EMAILS] = ", ".join(emails)
-                transformed_place["emails_with_number_of_sources"] = "\n".join(emails_with_sources)
+                # transformed_place["emails_with_number_of_sources"] = "\n".join(emails_with_sources)
 
             elif field == Fields.PHONES:
-                phones = [phone["value"] for phone in place.get("phones", [])]
-                phones_with_sources = [f"{phone['value']}: {len(phone['sources'])}" for phone in place.get("phones", [])]
+                phones = place.get("phones", [])
+                # phones_with_sources = [f"{phone['value']}: {len(phone['sources'])}" for phone in place.get("phones", [])]
                 transformed_place[Fields.PHONES] = ", ".join(phones)
-                transformed_place["phones_with_number_of_sources"] = "\n".join(phones_with_sources)
+                # transformed_place["phones_with_number_of_sources"] = "\n".join(phones_with_sources)
 
             elif field == Fields.CATEGORIES:
                 # Concatenating categories
@@ -403,11 +403,11 @@ def create(places, selected_fields, csv_path, json_path, query_kebab):
             create_places_csv(places_path_csv, places, selected_fields)
 
         
-        if can_create_email_phone_details_csv(selected_fields):
-            email_phone_details_path = csv_path  + format(query_kebab, "csv", "email-phone-details") 
-            # ".csv"
-            written.append(email_phone_details_path)
-            create_email_phone_details_csv(email_phone_details_path, places, selected_fields)
+        # if can_create_email_phone_details_csv(selected_fields):
+        #     email_phone_details_path = csv_path  + format(query_kebab, "csv", "email-phone-details") 
+        #     # ".csv"
+        #     written.append(email_phone_details_path)
+        #     create_email_phone_details_csv(email_phone_details_path, places, selected_fields)
 
         if can_create_detailed_reviews_csv(selected_fields):
             detailed_reviews_path = csv_path + format(query_kebab, "csv", "detailed-reviews") 

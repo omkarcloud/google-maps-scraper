@@ -227,15 +227,13 @@ Instead, use a more effective strategy:
 
 This strategy allows prospects to learn about you before engaging, significantly increasing the likelihood of making a sale.
 
-To gather contact details of leads, please consider using the 'Website Contacts Scraper API' by OpenWeb Ninja. 
-
-Follow these simple steps to integrate the API:
+To scrape contact details of leads, follow these steps to use our Website Social Scraper API with the Free Plan, allowing you to scrape contact details of 50 leads at no cost:
 
 1. Sign up on RapidAPI by visiting [this link](https://rapidapi.com/auth/sign-up).
    
 ![Sign Up on RapidAPI](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/sign-up.png)
 
-2. Subscribe to the Free Plan by visiting [this link](https://rapidapi.com/letscrape-6bRBa3QguO5/api/website-contacts-scraper/pricing).
+2. Subscribe to the Free Plan by visiting [this link](https://rapidapi.com/Chetan11dev/api/website-social-scraper-api/pricing).
 
 ![Subscribe to Free Plan](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/subscribe.png)
 
@@ -248,8 +246,11 @@ queries = ["web developers in bangalore"]
 Gmaps.places(queries, max=5, key="YOUR_API_KEY") 
 ```
 5. Run the script, and you'll find emails, Facebook, Twitter, and LinkedIn details of leads in your output file.
+```bash
+python main.py
+```   
 
-The first 40 emails are free, after which it costs $25 for 10,000 scrapes, which is affordable considering if you land just one B2B client, you could easily make hundreds of dollars, easily covering the investment.
+The first 50 contact details are free. After that, you can upgrade to the Pro Plan to scrape 1,000 contacts for $9, which is affordable considering if you land just one B2B client, you could easily make hundreds of dollars, easily covering the investment.
 
 ### ❓ How to scrape all cities in my country?
 

@@ -21,11 +21,11 @@ def do_request(data, retry_count=3):
         print(f"Failed to get Social details for {website}, after 3 retries")
         return DontCache(None)
 
-    url = "https://website-contacts-scraper.p.rapidapi.com/scrape-contacts"
-    querystring = {"query": website, "match_email_domain": "false"}
+    url = "https://website-social-scraper-api.p.rapidapi.com/contacts/"
+    querystring = {"website": website}
     headers = {
         "X-RapidAPI-Key": key,
-        "X-RapidAPI-Host": "website-contacts-scraper.p.rapidapi.com"
+        "X-RapidAPI-Host": "website-social-scraper-api.p.rapidapi.com"
     }
 
     
@@ -34,18 +34,13 @@ def do_request(data, retry_count=3):
     if response.status_code == 200:
         update_credits()
 
-        final = response_data.get('data', [None])[0]
+        final = response_data
+        # .get('data', [None])[0]
         
         if "pinterest" not in final:
             final["pinterest"] = None
 
-        final["phones"] = final["phone_numbers"]
-        
-
-        del final["phone_numbers"]
-        del final["domain"]
-        del final["query"]
-
+     
         
         return {
             "place_id": place_id,
