@@ -368,7 +368,7 @@ I've personally employed the following strategy to sell my services, which has p
 
 For web scrapers interested in understanding how it works, you can read [this tutorial](https://www.omkar.cloud/botasaurus/docs/google-maps-scraping-tutorial/), where we walk you through the creation of a simplified version of a Google Maps Scraper.
 
-### Your Scraper is really Robust. I Tried Many Scrapers, Most Don't Work. How did you build it?
+### ❓ Your Scraper is really Robust. I Tried Many Scrapers, Most Don't Work. How did you build it?
 
 Thanks! we used Botasaurus, which is the secret sauce behind our Google Maps Scraper.
 

@@ -6,7 +6,7 @@ You can easily run the scraper in Gitpod, a browser-based development environmen
 
 1. Visit [this link](https://gitpod.io/#https://github.com/omkarcloud/google-maps-scraper) and sign up using your GitHub account.
    
-   ![Screenshot (148)](https://github.com/omkarcloud/google-maps-scraper/assets/53407137/f498dda8-5352-4f7a-9d70-c717859670d4.png)
+   ![Screenshot (148)](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/open-in-gitpod.png)
   
 2. Once Signed Up, Open it in Gitpod.   
 
@@ -19,7 +19,7 @@ You can easily run the scraper in Gitpod, a browser-based development environmen
   
 4. Once the scraper has finished running, download the leads from the `output` folder.
 
-   ![Screenshot (219)](https://github.com/omkarcloud/google-maps-scraper/assets/53407137/bade4001-12dc-4191-972e-cba0466f3e3f.png)
+   ![Screenshot (219)](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/download-leads.png)
 
 Just like with a local setup, you can configure the scraper in Gitpod by editing the `main.py` file and running the scraper using the `python main.py` command.
 
