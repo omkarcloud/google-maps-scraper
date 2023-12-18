@@ -219,9 +219,20 @@ This issue occurs only in Excel, which does not render Turkish characters proper
 
 Alternatively, setting the `lang` attribute to `Gmaps.Lang.English` will give results in English. -->
 
-## ⚡ Help us reach 850 stars, and we'll break the GMaps 120 limit, giving you 150+ to 250+ potential customers per search. Star us to make it happen ⭐!
+
+### ❓ Need More Help or Have Additional Questions?
+
+For further help, ask your question in GitHub Discussions. We'll be happy to help you out.
+
+[![ask github](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/ask-on-github.png)](https://github.com/omkarcloud/google-maps-scraper/discussions)
 
 
-<!-- [![Stargazers for @omkarcloud/google-maps-scraper](https://bytecrank.com/nastyox/reporoster/php/stargazersSVG.php?user=omkarcloud&repo=google-maps-scraper)](https://github.com/omkarcloud/google-maps-scraper/stargazers) -->
+## Love It? [Star It ⭐!](https://github.com/omkarcloud/google-maps-scraper)
 
-<!-- ## Made with ❤️ using [Botasaurus Web Scraping Framework](https://github.com/omkarcloud/botasaurus) -->
+Become one of our amazing stargazers by giving us a star ⭐ on GitHub!
+
+It's just one click, but it means the world to me.
+
+[![Stargazers for @omkarcloud/google-maps-scraper](https://bytecrank.com/nastyox/reporoster/php/stargazersSVG.php?user=omkarcloud&repo=google-maps-scraper)](https://github.com/omkarcloud/google-maps-scraper/stargazers)
+
+## Made with ❤️ using [Botasaurus Web Scraping Framework](https://github.com/omkarcloud/botasaurus)
