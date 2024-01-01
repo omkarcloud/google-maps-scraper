@@ -177,8 +177,9 @@ def determine_fields(fields, should_scrape_socials, scrape_reviews):
     #   print(fields)
 
       ls = []
+      fs = DEFAULT_FIELDS + [Fields.DETAILED_REVIEWS]
       for f in fields:
-          if f not in DEFAULT_FIELDS:
+          if f not in fs:
               print(f'It is not possible to scrape {f} in Free Version. Kindly subscribe to Pro Version to scrape {f}. Link: https://github.com/omkarcloud/google-maps-scraper/')
           else:
               ls.append(f)
