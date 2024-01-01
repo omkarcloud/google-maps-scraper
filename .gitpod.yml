@@ -1,0 +1,4 @@
+image: chetan1111/gitpod-botasaurus:3
+
+tasks:
+  - init: pip install -r requirements.txt

@@ -1,0 +1,7 @@
+Unidecode
+geonamescache
+dateutils
+casefy
+lxml
+regex
+botasaurus
