@@ -92,6 +92,7 @@ def set_cookies(ck):
 
     close_on_crash=True,
     output=None,
+    use_stealth=True, 
 
     # TODO: IMPLEMENT AND UNCOMMENT
     max_retry=5,
@@ -102,7 +103,7 @@ def set_cookies(ck):
 def scrape_place(requests: AntiDetectRequests, link):
         cookies = get_cookies()
         try:
-            html =  requests.get(link,cookies=cookies,).text
+            html =  requests.get(link,cookies=cookies).text
             # Splitting HTML to get the part after 'window.APP_INITIALIZATION_STATE='
             initialization_state_part = html.split(';window.APP_INITIALIZATION_STATE=')[1]
 
@@ -117,7 +118,7 @@ def scrape_place(requests: AntiDetectRequests, link):
             cleaned = data
             
             return cleaned  
-        except:
+        except Exception as e:
             print(f'Failed to scrape place: {link}. Retrying after a minute.')
             sleep(63)
             raise
@@ -192,11 +193,12 @@ def get_lang(data):
      return data['lang']
 
 @browser(
-    block_images=True,
+    block_resources=[   '.css', '.jpg', '.jpeg', '.png', '.svg', '.gif'],
     reuse_driver=True,
     keep_drivers_alive=True, 
     lang=get_lang,
     close_on_crash=True,
+    max_retry = 3,
     headless=True,
     output=None,
 )
@@ -269,7 +271,7 @@ def scrape_places(driver: AntiDetectDriver, data):
                         elapsed_time = time() - start_time
 
                         if elapsed_time > WAIT_TIME :
-                            print('Google Maps was stuck in scrolling. Retrying.')
+                            print('Google Maps was stuck in scrolling. Retrying after a minute.')
                             sleep(63)
                             raise StuckInGmapsException()                           
                             # we increased speed so occurence if higher than 
@@ -288,14 +290,34 @@ def scrape_places(driver: AntiDetectDriver, data):
     
     set_cookies(driver.get_cookies_dict())
     
-    RETRIES = 5
+    STALE_RETRIES = 5
+    # TODO
+    # I need to ask to restart browser 
+    # use proxy addition
     failed_to_scroll = False
     def on_failed_after_retry_exhausted(e):
         nonlocal failed_to_scroll
         failed_to_scroll = True
         print('Failed to scroll after 5 retries. Skipping.')
 
-    retry_if_is_error(put_links, [StaleElementReferenceException, StuckInGmapsException], RETRIES, raise_exception=False, on_failed_after_retry_exhausted=on_failed_after_retry_exhausted)
+#         print('''Google has silently blocked IP. Kindly follow these Steps to change IP.
+# # If using Wifi:
+# #     - Turn Router off and on 
+# # If using Mobile Data
+# #     - Connect your PC to the Internet via a Mobile Hotspot.
+# #     - Toggle airplane mode off and on on your mobile device. This will assign you a new IP address.
+# #     - Turn the hotspot back on.                      
+# # ''')
+    try:
+      retry_if_is_error(put_links, [StaleElementReferenceException], STALE_RETRIES, raise_exception=False
+                    #   , on_failed_after_retry_exhausted=on_failed_after_retry_exhausted
+                      )
+    except StuckInGmapsException as e:
+      if driver.about.is_last_retry:
+          on_failed_after_retry_exhausted(e)
+      else:
+          raise e
+
 
     places = scrape_place_obj.get()
 
@@ -328,8 +350,14 @@ def scrape_places(driver: AntiDetectDriver, data):
 if __name__ == "__main__":
     # 6 27 
     # print(scrape_places(["restaurants in delhi"]))
-    print(scrape_place(["https://www.google.com/maps/search/hisn+yakka+en+Yecla%2C+murcia?authuser=0&entry=ttu"]))
-    print(scrape_place(["https://www.google.com/maps/place/Hisn+Yakka/data=!4m2!3m1!1s0xd63fd22e0c22e1f:0xc2d606310f68bc26!10m1!1e1"]))
+    # print(scrape_place(["https://www.google.com/maps/search/hisn+yakka+en+Yecla%2C+murcia?authuser=0&entry=ttu"]))
+    # print(scrape_place(["https://www.google.com/maps/place/Hisn+Yakka/data=!4m2!3m1!1s0xd63fd22e0c22e1f:0xc2d606310f68bc26!10m1!1e1"]))
+    # print(scrape_place(["https://www.google.com/maps/place/Dr.+Vinita+S.+Sharma,+MD/@42.4234486,-83.3752564,17z/data=!3m1!4b1!4m6!3m5!1s0x8824b3e8738a88bf:0xf4b9cfe8160ecd33!8m2!3d42.4234486!4d-83.3752564!16s%2Fg%2F1ttq2qtc?entry=ttu"]))
+    # print(scrape_place(["https://www.google.com/maps/place/Dr.+Vinita+S.+Sharma,+MD/@42.4234486,-83.3752564,17z/data=!3m1!4b1!4m6!3m5!1s0x8824b3e8738a88bf:0xf4b9cfe8160ecd33!8m2!3d42.4234486!4d-83.3752564!16s%2Fg%2F1ttq2qtc?entry=ttu"]))
+  
+
+    # print(scrape_place(["https://www.google.com/maps/place/Dr.+Vinita+S.+Sharma,+MD/@42.4234486,-83.3752564,17z/data=!3m1!4b1!4m6!3m5!1s0x8824b3e8738a88bf:0xf4b9cfe8160ecd33!8m2!3d42.4234486!4d-83.3752564!16s%2Fg%2F1ttq2qtc?entry=ttu"]))
+    print(scrape_place(["https://www.google.com/maps/place/Hisn+Yakka/@38.6089019,-1.1214893,17z/data=!3m1!4b1!4m6!3m5!1s0xd63fd22e0c22e1f:0xc2d606310f68bc26!8m2!3d38.6089019!4d-1.1214893!16s%2Fg%2F11p06xtf82?authuser=0&entry=ttu"]))
     # 
     # print(scrape_place(["https://www.google.com/maps/place/Zinavo+-+Web+Design+Company+in+Bangalore,+Web+Development,+SEO+Services,+Digital+Marketing+Agency,+eCommerce+Web+Development/data=!4m7!3m6!1s0x3bae172f3e7069f1:0xbcac5b2d393c2aa2!8m2!3d13.01443!4d77.6480612!16s%2Fg%2F11h0l3y9l!19sChIJ8WlwPi8XrjsRoio8OS1brLw?authuser=0&hl=en&rclk=1"]))
 

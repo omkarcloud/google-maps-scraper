@@ -8,6 +8,7 @@
 - REVIEWS
 - COMPETITORS
 - WEBSITE
+- CAN_CLAIM
 
 ---
 
@@ -23,7 +24,7 @@
 - REVIEW_KEYWORDS
 - LINK
 
-## SOCIAL [Needs API Key]
+## SOCIAL
 - EMAILS
 - PHONES
 
