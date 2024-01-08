@@ -1,0 +1,9 @@
+gzip.org
+alumni.caltech.edu
+domain.com
+example.com
+beispiel.de
+sentry.wixpress.com
+sentry.io
+wixpress.com
+sentry-next.wixpress.com
