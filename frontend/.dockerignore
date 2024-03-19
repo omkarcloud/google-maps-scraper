@@ -1,0 +1,6 @@
+node_modules
+npm-debug.log
+README.md
+.next
+.git
+package-lock.json
