@@ -29,7 +29,7 @@ import ClientOnly from '../ClientOnly'
 
 function mapControlsToElements(
   controls: Control<any, WithChooseOptions>[],
-  callback: (control: Control<any, WithChooseOptions>) => any
+  callback: (control: Control<any, WithChooseOptions>) => any, accords, onToggle
 ): any[] {
   const mappedControls: any[] = []
   controls.forEach(control => {
@@ -39,9 +39,13 @@ function mapControlsToElements(
       control.controls.forEach(nestedControl => {
         nestedElements.push(callback(nestedControl))
       })
+
       if (!nestedElements.every(x => x === null)) {
-        mappedControls.push(
-          <CollapsibleSection key={control.id} title={control.label}>
+          mappedControls.push(
+          <CollapsibleSection onToggle={(isOpen) => {
+            const newState = isOpen ? 'open' : 'closed';
+            onToggle( control.id, newState);
+          }} forceState={accords[control.id]} key={control.id} title={control.label}>
             {nestedElements}
           </CollapsibleSection>
         )
@@ -76,7 +80,9 @@ const InputFields = ({
   onDataChange,
   onSubmit,
   onReset,
-  submitAttempted,
+  submitAttempted, 
+  accords, 
+  onToggle
 }) => {
   const handleInputChange = (id, value) => {
     onDataChange(id, value)
@@ -229,7 +235,7 @@ const InputFields = ({
             {inputElement}
           </EuiFormRow>
         )
-      })}
+      }, accords, onToggle)}
       <div className="mt-6 flex gap-x-8">
         <EuiButton disabled={isSubmitting} type="submit" fill onClick={onSubmit}>
           Run
@@ -253,6 +259,16 @@ function getDefaultData(controls: any) {
   return { ...controls.getDefaultData() }
 }
 
+
+function shouldBeOpenResult(control: any, validationResult: any) {
+  for (let i = 0; i < control.controls.length; i++) {
+    const nestedControl = control.controls[i]
+    if (validationResult.hasOwnProperty(nestedControl.id)) {
+      return 'open'
+    }
+  }
+  return 'closed'
+}
 function getInitialData(scraper_name, input_js_hash, controls) {
   const defaultData = getDefaultData(controls)
   if (typeof window === 'undefined') {
@@ -295,11 +311,25 @@ const ScraperFormContainer = ({ selectedScraper }) => {
   // @ts-ignore
   const validationResult = controls.validate(data)
 
+  const [accords, setaccords] = useState(() => {
+    const rs = {}
+    // @ts-ignore
+    controls.controls.forEach(control => {
+      if (control.type === 'section') {        //@ts-ignore 
+        rs[control.id]  = shouldBeOpenResult(control, validationResult)
+      } 
+    })
+  
+    return rs
+  });
+  const onToggle = (id, state) => {
+    setaccords((x)=>({...x , [id]: state }))
+  }
+  
   const handleSubmit = async e => {
     e.preventDefault()
     setSubmitAttempted(true)
     if (isEmptyObject(validationResult)) {
-
       // @ts-ignore
       const cleanedData = controls.getBackendValidationResult(data)['data']
       setIsSubmitting(true)
@@ -311,9 +341,21 @@ const ScraperFormContainer = ({ selectedScraper }) => {
       const result = response.data
       const outputId = Array.isArray(result) ? result[0].id : result.id
       pushToRoute(router, `/output/${outputId}`)
+    } else {
+    const rs = {...accords}
+
+    // @ts-ignore
+    controls.controls.forEach(control => {
+      if (control.type === 'section') {        //@ts-ignore 
+        if (rs[control.id] === 'closed') {
+          rs[control.id]  = shouldBeOpenResult(control, validationResult)  
+        }
+      } 
+    })
+    
+    setaccords(rs)
     }
   }
-
   // @ts-ignore
   if (!controls.controls.length) {
     return <EmptyInputs />
@@ -333,6 +375,8 @@ const ScraperFormContainer = ({ selectedScraper }) => {
           )
           setData(dd)
         }}
+        accords={accords}
+        onToggle={onToggle}
         validationResult={validationResult}
         controls={controls}
         data={data}

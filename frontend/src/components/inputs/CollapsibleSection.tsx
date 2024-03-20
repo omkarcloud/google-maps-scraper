@@ -1,14 +1,9 @@
 import { EuiAccordion, EuiFlexGroup, EuiFlexItem, EuiTitle } from '@elastic/eui'
-import React from 'react'
 
-type CollapsibleSectionProps = {
-  title: string // The title to be shown on the accordion button
-  children: React.ReactNode // The content to be shown/hidden within the accordion
-}
-
-const CollapsibleSection: React.FC<CollapsibleSectionProps> = ({
+const CollapsibleSection= ({
   title,
   children,
+  forceState ,onToggle
 }) => {
   const buttonContent = (
     <div>
@@ -22,9 +17,12 @@ const CollapsibleSection: React.FC<CollapsibleSectionProps> = ({
     </div>
   )
 
+
   return (
     <EuiAccordion
       id={title}
+      forceState={forceState}
+      onToggle={onToggle}
       className="mt-4"
       element="fieldset"
       buttonContent={buttonContent}>

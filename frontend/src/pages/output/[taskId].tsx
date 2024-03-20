@@ -5,6 +5,7 @@ import AuthedDashboard from '../../layouts/AuthedDashboard'
 import Api from '../../utils/api'
 import { create_title } from '../../utils/common'
 import Links from '../../utils/data/links'
+import AxiosErrorHoc, { wrapAxiosErrors } from '../../components/AxiosErrorHoc'
 
 const Page = ({ taskId, scrapers, ...props }: any) => {
   const response = props.response
@@ -27,7 +28,8 @@ const Page = ({ taskId, scrapers, ...props }: any) => {
   )
 }
 
-export const getServerSideProps: GetServerSideProps = async ({
+
+export const getServerSideProps: GetServerSideProps = wrapAxiosErrors(async ({
   params,
   res,
   req,
@@ -36,7 +38,7 @@ export const getServerSideProps: GetServerSideProps = async ({
     const id = (params as any).taskId
 
     const { data } = await Api.getTaskResults(id, {
-      "limit": 25, 
+      "limit": 25,
       "offset": 0,
     })
 
@@ -48,10 +50,10 @@ export const getServerSideProps: GetServerSideProps = async ({
       return {
         redirect: { destination: Links.notFound, permanent: false },
       }
-    } else {
-      // Handle other errors
+    } 
+    else {
       throw error
     }
   }
-}
-export default Page
+})
+export default AxiosErrorHoc(Page)

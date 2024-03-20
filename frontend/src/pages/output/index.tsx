@@ -10,6 +10,7 @@ import {
 } from '../../components/Wrappers'
 import AuthedDashboard from '../../layouts/AuthedDashboard'
 import Api from '../../utils/api'
+import AxiosErrorHoc, { wrapAxiosErrors } from '../../components/AxiosErrorHoc'
 
 const Page = ({ tasks, ...props }: any) => {
   return (
@@ -31,10 +32,10 @@ const Page = ({ tasks, ...props }: any) => {
   )
 }
 
-export const getServerSideProps: GetServerSideProps = async ({}) => {
+export const getServerSideProps: GetServerSideProps = wrapAxiosErrors(async ({}) => {
   const { data } = await Api.getTasks()
   return {
     props: { tasks: data },
   }
-}
-export default Page
+})
+export default AxiosErrorHoc(Page)

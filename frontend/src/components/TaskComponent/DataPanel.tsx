@@ -63,8 +63,8 @@ const DataPanel = ({ response, fields }) => {
         return value ?? null
       }}
       toolbarVisibility={{
-        showColumnSelector: true,
-        showSortSelector: true,
+        showColumnSelector: false,
+        showSortSelector: false,
         showFullScreenSelector: true,
         showDisplaySelector: true,
       }}
