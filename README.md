@@ -135,6 +135,9 @@ You can input your queries here and search by:
 - List of queries
 ![Queries](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/queries.png)
 
+- List of Links
+![links-queries](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/links-queries.png)
+
 - Scrape data for a specific type of business across all cities in a country.
 ![country-section](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/country-section.png)
 
