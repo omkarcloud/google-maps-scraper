@@ -7,13 +7,14 @@ from src.sort_filter import filter_places, sort_dict_by_keys
 
 from .social_scraper import FAILED_DUE_TO_CREDITS_EXHAUSTED, FAILED_DUE_TO_NOT_SUBSCRIBED, FAILED_DUE_TO_UNKNOWN_ERROR, scrape_social
 
-def create_place_data(query, max, lang, geo_coordinates, zoom):
+def create_place_data(query, max, lang, geo_coordinates, zoom, links):
     place_data = {
             "query": query,
             "max": max,
             "lang": lang,
             "geo_coordinates": geo_coordinates,
             "zoom": zoom, 
+            "links":links
         }
     return place_data
 
@@ -287,8 +288,9 @@ def get_places(_, data):
     geo_coordinates = data['coordinates']
     zoom = data['zoom_level']
     query = data['query']
+    links = data.get('links')
 
-    place_data = create_place_data(query,  max_results, lang, geo_coordinates, zoom)
+    place_data = create_place_data(query,  max_results, lang, geo_coordinates, zoom, links)
     places_obj = scraper.scrape_places(place_data,)
     should_scrape_socials = key  
     result_item = process_result(key, scrape_reviews, reviews_max, reviews_sort, lang, should_scrape_socials, places_obj)

@@ -5,6 +5,13 @@ from botasaurus_server.ui import *
 from .country import get_cities
 from .category import category_options
 
+def create_tasks_for_links(data, links):
+    """Creates tasks specifically designed for handling links."""
+    task = data.copy()
+    task['links'] = links  # Set the links property
+    task['query'] = "Links"  # Set a generic query indicating link processing
+    return task
+
 def randomize_strings(string_list):
     """
     Randomizes the order of strings in the given list and returns a new list.
@@ -31,11 +38,21 @@ def prepend_to_strings(strings_list, prepend_str, ):
     prepend_str = prepend_str + " in "
     return [prepend_str + s for s in strings_list]
 
+
+def create_tasks_for_queries(data, queries):
+    tasks = []
+    # Create individual tasks
+    for query in queries:
+        task = data.copy()  # Shallow copy to preserve other settings
+        task["query"] = query  # Assign the single query
+            # Delete the old "queries" property
+        tasks.append(task)
+    return tasks
+
 def split_task_by_query(data):
     """Splits a task dictionary into a list of tasks based on queries,
     optionally prepending city names if a country is specified.
     """
-    tasks = []
     if data["country"]:
         cities = get_cities(data["country"])
 
@@ -46,22 +63,27 @@ def split_task_by_query(data):
             cities = cities[:data["max_cities"]]
 
         queries = prepend_to_strings(cities, data["business_type"], )
-
+        del data["queries"] # Avoid passing potentially big queries object
+        return create_tasks_for_queries(data, queries)
     else:
         queries = data["queries"]  # Use queries directly
+        del data["queries"] # Avoid passing potentially big queries object
+        # Split queries into links and non-links
 
-    del data["queries"]
+        links = [query for query in queries if query.startswith("http://") or query.startswith("https://")]
+        links_set = set(links)
+        non_link_queries = [query for query in queries if query not in links_set]
+
+        # Create tasks for non-link queries
+        tasks = create_tasks_for_queries(data, non_link_queries)
+
+        # Create tasks for links 
+        if links:
+            links_task = create_tasks_for_links(data, links)
+            tasks.insert(0, links_task) 
+
+        return tasks 
     
-    # Create individual tasks
-    for query in queries:
-        task = data.copy()  # Shallow copy to preserve other settings
-        task["query"] = query  # Assign the single query
-            # Delete the old "queries" property
-        tasks.append(task)
-
-    # from botasaurus import bt
-    # bt.write_json(tasks, "tasls")
-    return tasks
 
 def get_task_name(data):
     return data["query"]

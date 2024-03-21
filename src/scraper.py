@@ -148,7 +148,6 @@ class StuckInGmapsException(Exception):
     output=None,
 )
 def scrape_places(driver: AntiDetectDriver, data):
-    
     # This fixes consent Issues in Countries like Spain 
     max_results = data['max']
 
@@ -187,6 +186,9 @@ return get_sponsored_links()''')
                 WAIT_TIME = 40 # WAIT 40 SECONDS
 
                 metad = {"cookies":driver.get_cookies_dict()}
+                if data['links']:
+                  scrape_place_obj.put(data['links'], metadata = metad)
+                  return
                 while True:
                     el = driver.get_element_or_none_by_selector(
                         '[role="feed"]', bt.Wait.LONG)
@@ -297,8 +299,8 @@ return get_sponsored_links()''')
     
     places = bt.remove_nones(places)
 
-
-    sponsored_links = get_sponsored_links() 
+    
+    sponsored_links = [] if data['links'] else get_sponsored_links() 
     places = merge_sponsored_links(places, sponsored_links)
     
 
