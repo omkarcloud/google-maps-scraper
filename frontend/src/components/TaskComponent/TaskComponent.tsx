@@ -1,4 +1,4 @@
-import { EuiLink, EuiPagination } from '@elastic/eui'
+import { EuiButton, EuiLink, EuiPagination, EuiText } from '@elastic/eui'
 import { useEffect, useRef, useState } from 'react'
 import Api from '../../utils/api'
 import { isEmpty, isEmptyObject } from '../../utils/missc'
@@ -57,6 +57,24 @@ function titleCase(string) {
 function isDoing(task) {
   return (
     task.status === TaskStatus.IN_PROGRESS || task.status === TaskStatus.PENDING
+  )
+}
+
+
+const PromotionWrapper = () => {
+  return (
+    <div className='pb-5'>
+      <EuiText>
+        Unlock the full potential of Google Maps! <EuiLink href="https://github.com/sponsors/omkarcloud?frequency=one-time">Get the Pro Version</EuiLink> to see hidden fields, and enjoy a no questions asked <EuiLink href="https://github.com/omkarcloud/google-maps-scraper#-what-if-i-dont-get-value-from-it">90-day money-back guarantee</EuiLink>, with lifetime updates.
+      </EuiText>
+      <EuiButton
+      className='mt-3'
+        fill
+        href="https://github.com/sponsors/omkarcloud?frequency=one-time"
+      >
+        Get Pro Risk Free
+      </EuiButton>
+    </div>
   )
 }
 
@@ -266,6 +284,7 @@ const TaskComponent = ({
     <>
       <OutputTabsContainer>
         <div className='space-y-6 '>
+        <PromotionWrapper />
         <Link href={`/output`} passHref>
               <EuiLink>View All Tasks</EuiLink>
             </Link>
