@@ -67,6 +67,22 @@ DEFAULT_FIELDS_WITHOUT_SOCIAL_DATA = [
     Fields.RATING, 
     Fields.REVIEWS, 
     Fields.ADDRESS, 
+    Fields.DESCRIPTION, 
+    Fields.IS_SPENDING_ON_ADS, 
+    Fields.REVIEWS, 
+    Fields.COMPETITORS, 
+    Fields.WEBSITE, 
+    Fields.OWNER, 
+    Fields.FEATURED_IMAGE, 
+    Fields.MAIN_CATEGORY, 
+    Fields.CATEGORIES , 
+    Fields.RATING, 
+    Fields.WORKDAY_TIMING, 
+    Fields.CLOSED_ON, 
+    Fields.PHONE, 
+    Fields.ADDRESS, 
+    Fields.REVIEW_KEYWORDS,
+    Fields.LINK, 
 ]
 
 DEFAULT_SOCIAL_FIELDS = [

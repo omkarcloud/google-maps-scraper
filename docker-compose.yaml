@@ -16,3 +16,17 @@ services:
       ports:
         - "3000:3000" 
         - "8000:8000" 
+version: "3"
+services:
+    bot-1:
+      restart: "no"
+      shm_size: 4000m
+      build:
+        dockerfile: Dockerfile
+        context: .
+      volumes:
+        - ./output:/app/output
+        - ./tasks:/app/tasks
+        - ./profiles:/app/profiles
+        - ./profiles.json:/app/profiles.json
+        - ./
