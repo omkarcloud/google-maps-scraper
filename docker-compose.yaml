@@ -2,7 +2,7 @@ version: "3"
 services:
     bot-1:
       restart: "no"
-      shm_size: 4000m
+      shm_size: 800m
       build:
         dockerfile: Dockerfile
         context: .
@@ -12,3 +12,7 @@ services:
         - ./profiles:/app/profiles
         - ./profiles.json:/app/profiles.json
         - ./local_storage.json:/app/local_storage.json
+        - ./db.sqlite3:/app/db.sqlite3
+      ports:
+        - "3000:3000" 
+        - "8000:8000" 

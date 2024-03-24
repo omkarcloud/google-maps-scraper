@@ -83,6 +83,7 @@ celerybeat-schedule
 *.sage.py
 
 # Environments
+
 .env
 .venv
 env/
@@ -117,3 +118,20 @@ local_storage.json
 error_logs/
 
 test.py
+
+
+db.sqlite3
+
+build/
+
+/tasks/
+
+/profiles/
+
+/output/
+
+/cache/
+
+/error_logs/
+
+index.http    

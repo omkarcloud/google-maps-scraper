@@ -1,3 +1,23 @@
+from unidecode import unidecode
+from casefy import kebabcase
+
+def unicode_to_ascii(text):
+    """
+    Convert unicode text to ASCII, replacing special characters.
+    """
+    
+    if text is None:
+        return None
+
+    # Replacing 'ë' with 'e' and return the ASCII text
+    return unidecode(text).replace("ë", "e")
+
+def kebab_case(s):
+    return kebabcase(s)
+
+def unique_strings(lst):
+    # Use a set to remove duplicates, then convert back to a list
+    return list(dict.fromkeys(lst))
 from botasaurus import bt
 from unidecode import unidecode
 from casefy import kebabcase
@@ -59,4 +79,4 @@ def sort_dict_by_keys(dictionary, keys):
 if __name__ == "__main__":
     xs = ['वेबसाइट डिज़ाइनर', 'ई कॉमर्स एजेंसी', 'ग्राफ़िक डिज़ाइनर', 'इंटरनेट विपणन सेवा', 'विपणन एजेंसी', 'सॉफ़्टवेयर कंपनी', 'वेब होस्टिंग कंपनी']
     print(', '.join(xs[0]))
-    print(convert_unicode_dict_to_ascii_dict(xs))
+    print(convert_unicode

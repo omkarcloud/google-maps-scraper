@@ -1,0 +1,55 @@
+{
+  "name": "frontend",
+  "private": true,
+  "description": "Botasaurus Frontend",
+  "version": "1.0.0",
+  "author": {
+    "name": "Omkar",
+    "email": "chetan@omkar.cloud",
+    "url": "https://www.omkar.cloud"
+  },
+  "keywords": [
+    "botasaurus",
+    "web-scraping",
+    "anti-detection"
+  ],
+  "engines": {
+    "node": ">=16"
+  },
+  "license": "Apache-2.0",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build --no-lint",
+    "start": "next start"
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/omkarcloud/botasaurus"
+  },
+  "bugs": {
+    "url": "https://github.com/omkarcloud/botasaurus/issues"
+  },
+  "dependencies": {
+    "@elastic/eui": "^63.0.0",
+    "@emotion/cache": "^11.10.3",
+    "@emotion/react": "^11.10.4",
+    "@omkar111111/utils": "^0.2.77",
+    "axios": "^0.26.1",
+    "botasaurus-controls": "latest",
+    "cogo-toast-react-17-fix": "latest",
+    "regenerator-runtime": "^0.13.9"
+  },
+  "devDependencies": {
+    "copy-webpack-plugin": "^10.0.0",
+    "glob": "^7.2.0",
+    "moment": "^2.29.4",
+    "next": "^12.3.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "typescript": "^4.5.2"
+  },
+  "browserslist": [
+    "last 2 chrome versions"
+  ]
+}

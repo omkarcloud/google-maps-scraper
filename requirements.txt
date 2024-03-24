@@ -1,7 +1,11 @@
+botasaurus
+botasaurus_server
+dateutils
+lxml
+regex
 Unidecode
 geonamescache
 dateutils
 casefy
 lxml
 regex
-botasaurus
