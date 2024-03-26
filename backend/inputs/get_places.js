@@ -51,7 +51,7 @@ function getInput(controls) {
                 .greaterThanOrEqualToZero('max_reviews', {
                     label: 'Max Reviews per Place (Leave empty to extract all reviews)',
                     placeholder: 20,
-                    isRequired: true, isShown: (data) => data['enable_reviews_extraction'], defaultValue: 20,
+                     isShown: (data) => data['enable_reviews_extraction'], defaultValue: 20,
                 })
                 .choose('reviews_sort', {
                     label: "Sort Reviews By",
