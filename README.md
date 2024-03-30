@@ -218,7 +218,7 @@ Download results in various formats (CSV, JSON, Excel) using the export button.
 
 ### ❓ How can I access additional information like websites, phone numbers, geo-coordinates, and price ranges?
 
-Free versions shows only a limited set of data points. To see additional datapoints, consider upgrading to the Pro Version:
+Free versions shows only a limited set of data points, the fields are hidden with "*". To access additional datapoints, consider upgrading to the Pro Version:
 
 * 🌐 **Website**
 * 📞 **Phone Numbers**
