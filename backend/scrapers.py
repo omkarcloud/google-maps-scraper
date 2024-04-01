@@ -4,6 +4,11 @@ import random
 from botasaurus_server.ui import *
 from .country import get_cities
 from .category import category_options
+from botasaurus import cl
+import urllib.parse
+
+def convert_to_string(input_str):
+    return urllib.parse.unquote_plus(input_str).strip()
 
 def create_tasks_for_links(data, links):
     """Creates tasks specifically designed for handling links."""
@@ -49,6 +54,48 @@ def create_tasks_for_queries(data, queries):
         tasks.append(task)
     return tasks
 
+def split_by_gmaps_search_links(links):
+    # Lists to hold the divided links
+    search_queries = []
+    in_place_links = []
+
+    # Iterate over each link in the input list
+    for link in links:
+        # Parse the link to get its components
+        parsed_link = cl.extract_path_from_link(link)
+
+        # Check if the path starts with '/maps/search'
+        if parsed_link.startswith('/maps/search'):
+            # Add to search queries list if true
+            x = convert_to_string(parsed_link.lstrip('/maps/search/').split('/')[0])
+            if x:
+                search_queries.append((x))
+        else:
+            # Otherwise, add to in place links list
+            in_place_links.append(link)
+
+    return in_place_links, search_queries 
+
+def filter_links(queries):
+    return [query for query in queries if query.startswith("http://") or query.startswith("https://")]
+
+def split_and_create_tasks(data, queries):
+    alllnks = filter_links(queries)
+    places_links, search_queries = split_by_gmaps_search_links(alllnks)
+    places_links_set = set(alllnks)
+    for query in queries:
+        if query not in places_links_set:
+            search_queries.append(query)
+        # Create tasks for non-link queries
+    tasks = create_tasks_for_queries(data, search_queries)
+
+        # Create tasks for links 
+    if places_links:
+        links_task = create_tasks_for_links(data, places_links)
+        tasks.insert(0, links_task)
+    return tasks
+
+    
 def split_task_by_query(data):
     """Splits a task dictionary into a list of tasks based on queries,
     optionally prepending city names if a country is specified.
@@ -70,17 +117,7 @@ def split_task_by_query(data):
         del data["queries"] # Avoid passing potentially big queries object
         # Split queries into links and non-links
 
-        links = [query for query in queries if query.startswith("http://") or query.startswith("https://")]
-        links_set = set(links)
-        non_link_queries = [query for query in queries if query not in links_set]
-
-        # Create tasks for non-link queries
-        tasks = create_tasks_for_queries(data, non_link_queries)
-
-        # Create tasks for links 
-        if links:
-            links_task = create_tasks_for_links(data, links)
-            tasks.insert(0, links_task) 
+        tasks = split_and_create_tasks(data, queries) 
 
         return tasks 
     
@@ -158,7 +195,7 @@ def competitors_to_string(data):
 
             # Formatting each competitor's information and adding it to the list
             formatted_strings.append(
-                f"Name: {name}\nlink: {link}\nReviews: {reviews} reviews\n"
+                f"Name: {name}\nLink: {link}\nReviews: {reviews} reviews\n"
             )
 
         # Joining all formatted strings with a newline character
@@ -289,3 +326,6 @@ Server.configure(
         "link": "https://github.com/omkarcloud/botasaurus",
     },
 )
+# python -m backend.scrapers
+if __name__ == "__main__":
+    print(split_by_gmaps_search_links(["https://www.google.com/maps/search/food+restaurant+in+++washingtk/@40.7338104,-74.0287773,13z/data=!3m1!4b1?entry=ttu", "https://www.google.com/maps/place/Top+App+%26+Web+Development+company+in+ahmedabad.Summer+internship+in+Php,Flutter,Python,AngularJS,React+JS,Node+JS+,UI%2FUx/data=!4m7!3m6!1s0x395e9b4922484c6f:0xe077cfffcd90ee87!8m2!3d23.0372919!4d72.5118722!16s%2Fg%2F11fzb0hl8n!19sChIJb0xIIkmbXjkRh-6Qzf_Pd-A?authuser=0&hl=en&rclk=1"]))
