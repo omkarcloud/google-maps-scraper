@@ -1,3 +1,3 @@
 #!/bin/bash
-python -m pip install bota
-python -m bota create-ip --name gmaps
+python3 -m pip install bota
+python3 -m bota create-ip --name gmaps
