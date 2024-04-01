@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/bash
 sudo apt install -y python3-pip
 alias python=python3
 python -m pip install bota
