@@ -1,30 +1,52 @@
 import AxiosInstance from './axios'
 
-async function getConfig() {
+function getConfig() {
   return AxiosInstance.get('/config', { silent: true })
 }
 
-async function createTask(data: any) {
+function createTask(data: any) {
   return AxiosInstance.post('/tasks/submit-async', data, {
     message: 'Starting Task',
   })
 }
 
-async function createTaskAndGetResult(data: any) {
+function createTaskAndGetResult(data: any) {
   return AxiosInstance.post('/tasks/submit-sync', data, { silent: true })
 }
 
-async function getTasks(page=1, per_page=100) {
+
+function isApiRunning() {
+  return AxiosInstance.get(`/`, { silent: true, silenceError:true  })
+}
+
+function getTasks(page=1, per_page=100) {
   return AxiosInstance.get(`/tasks?with_results=false&sort_by_date=true&page=${page}&per_page=${per_page}`, {
     silent: true,
+    silenceError:true,
   })
 }
 
-async function getTask(task_id: number) {
-  return AxiosInstance.get(`/tasks/${task_id}`, { silent: true })
+function isAnyTaskFinished(task_ids) {
+  return AxiosInstance.post(`/tasks/is-any-task-finished`, {
+    task_ids: task_ids, 
+  },  {
+    silent: true,
+    silenceError:true,
+  })
+}
+function isTaskUpdated(taskId, lastUpdated, status) {
+  return AxiosInstance.get(`/tasks/is-task-updated?task_id=${taskId}&last_updated=${encodeURIComponent(lastUpdated)}&status=${status}`, {
+    silent: true,
+    silenceError: true,
+  });
 }
 
-async function abortTask(task_id: number, page) {
+
+function getTask(task_id: number) {
+  return AxiosInstance.get(`/tasks/${task_id}`, { silent: true,  })
+}
+
+function abortTask(task_id: number, page) {
   return AxiosInstance.patch(`/tasks?return_tasks=true&page=${page}` , {
     action: 'abort',
     task_ids: [task_id]
@@ -32,7 +54,7 @@ async function abortTask(task_id: number, page) {
     message: 'Aborting...',
   })
 }
-async function deleteTask(task_id: number, page) {
+function deleteTask(task_id: number, page) {
   return AxiosInstance.patch(`/tasks?return_tasks=true&page=` + page, {
     action: 'delete',
     task_ids: [task_id]
@@ -58,23 +80,25 @@ function downloadViaLink(response) {
   link.click()
   link.remove()
 }
-async function downloadTaskResults(taskId, data = {}) {
+function downloadTaskResults(taskId, data = {}) {
   return AxiosInstance.post(`/tasks/${taskId}/download`, data, {
     responseType: 'blob',
     message: 'Downloading...',
   }).then(downloadViaLink)
 }
 
-async function getTaskResults(taskId, data = {}) {
-  return AxiosInstance.post(`/tasks/${taskId}/results`, data, { silent: true })
+function getTaskResults(taskId, data = {}) {
+  return AxiosInstance.post(`/tasks/${taskId}/results`, data, { silent: true , silenceError:true,})
 }
 
 const Api = {
+  isApiRunning,
+  isAnyTaskFinished,
+  isTaskUpdated,
   getConfig,
   createTask,
   createTaskAndGetResult,
   getTasks,
-  getTask,
   deleteTask,
   abortTask,
   downloadTaskResults,

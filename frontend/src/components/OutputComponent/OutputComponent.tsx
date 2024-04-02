@@ -17,7 +17,7 @@ import {
 import Link from 'next/link'
 import { useEffect, useState } from 'react'
 import Api from '../../utils/api'
-import { TaskStatus } from '../../utils/models'
+import { TaskStatus, filterIsDoingTasks, isDoing } from '../../utils/models'
 import { EmptyOutputs, EmptyScraper } from '../Empty/Empty'
 import Toast from '../../utils/cogo-toast'
 import ClickOutside from '../ClickOutside/ClickOutside'
@@ -120,6 +120,41 @@ function timeToHumanReadable(seconds) {
 }
 
 
+function calculateDuration(obj) {
+  if (obj.started_at) {
+    // Convert datetime strings to Date objects
+    const startedAt = new Date(obj.started_at)
+    const endTime = obj.finished_at ? new Date(obj.finished_at) : convertLocalDateToUTCDate(new Date(), true)
+    // @ts-ignore
+    const duration = (endTime - startedAt) / 1000
+
+    if (duration === 0) {
+      return 0
+    }
+
+    return duration
+  } else {
+    return null
+  }
+}
+
+const DurationComponent = ({ task }) => {
+  const [duration, setDuration] = useState(calculateDuration(task))
+
+  useEffect(() => {
+    const isExecuting = task.status === TaskStatus.IN_PROGRESS
+    if (isExecuting) {
+      const interval = setInterval(() => {
+        setDuration(calculateDuration(task))
+      }, 1000) // Update duration every 1 second
+
+      return () => clearInterval(interval) // Clear interval on component unmount
+    }
+
+  }, [task]) // Dependency array includes task to recalculate if task changes
+
+  return <>{timeToHumanReadable(duration)}</>
+}
 
 const TaskTable = ({ activePage, onPageClick, isLoading, total_pages, tasks, updateTasks }) => {
   const [taskToBeDeleted, setDeleteTask] = useState(null)
@@ -185,7 +220,9 @@ const TaskTable = ({ activePage, onPageClick, isLoading, total_pages, tasks, upd
     {
       field: 'duration',
       name: 'Duration',
-      render: (s) => timeToHumanReadable(s),
+      render: (s, record) => {
+        return <DurationComponent task={record} />
+      },
 
       // timeToHumanReadable
       // dataType: 'number',
@@ -294,23 +331,22 @@ const OutputComponent = ({ scrapers, tasks: taskResponse }) => {
   const total_pages = state.total_pages
   const results = state.results
   const active_page = state.active_page
+  
   useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const { data } = await Api.getTasks(active_page)
-        setState((x) => ({ ...data, active_page: x.active_page > data.total_pages ? 1 : x.active_page }))
-      } catch (error) {
-        console.error('Failed to fetch tasks:', error)
-        // Handle the error appropriately
-      }
+    const pendingTaskIds = filterIsDoingTasks(results).map(task => task.id)
+    if (pendingTaskIds.length > 0) {
+      const intervalId = setInterval(async () => {
+        const response = await Api.isAnyTaskFinished(pendingTaskIds)
+
+        if (response.data.result) {
+          const { data } = await Api.getTasks(active_page)
+          setState((x) => ({ ...data, active_page: x.active_page > data.total_pages ? 1 : x.active_page }))
+        }
+      }, 1000)
+      return () => clearInterval(intervalId)
     }
+  }, [results, active_page]);
 
-    const intervalId = setInterval(fetchData, 1000)
-
-    return () => clearInterval(intervalId)
-  }, [
-    active_page
-  ])
 
   function updateState(data, current_page) {
     setState((curr) => {

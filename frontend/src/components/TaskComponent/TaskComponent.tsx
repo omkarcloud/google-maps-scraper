@@ -2,7 +2,7 @@ import { EuiButton, EuiLink, EuiPagination, EuiText } from '@elastic/eui'
 import { useEffect, useRef, useState } from 'react'
 import Api from '../../utils/api'
 import { isEmpty, isEmptyObject } from '../../utils/missc'
-import { TaskStatus } from '../../utils/models'
+import { TaskStatus, isDoing } from '../../utils/models'
 import CenteredSpinner from '../CenteredSpinner'
 import DownloadStickyBar from '../DownloadStickyBar/DownloadStickyBar'
 import {
@@ -54,13 +54,6 @@ function titleCase(string) {
     .join(' ')
 }
 
-function isDoing(task) {
-  return (
-    task.status === TaskStatus.IN_PROGRESS || task.status === TaskStatus.PENDING
-  )
-}
-
-
 const PromotionWrapper = () => {
   return (
     <div className='pb-5'>
@@ -77,6 +70,7 @@ const PromotionWrapper = () => {
     </div>
   )
 }
+
 
 function clean_filter_data(filter_data, filters) {
   const cleanedFilterData = { ...filter_data } // Create a copy to modify
@@ -162,6 +156,7 @@ const TaskComponent = ({
     Api.downloadTaskResults(taskId, params)
   }
 
+  // For Filters
   const mountedRef = useRef(false)
 
   useEffect(() => {
@@ -191,34 +186,39 @@ const TaskComponent = ({
     fetchData()
   }, [taskId, sort, filter_data, pageAndView.view, pageAndView.currentPage])
 
+  // For Updates
   useEffect(() => {
     const isExecuting = isDoing(response.task) // Assuming isDoing is a function to check task status
-
     if (isExecuting) {
       const fetchData = async () => {
         try {
-          const per_page_records = 25
-          const params = {
-            sort,
-            filters: clean_filter_data(filter_data, filters),
-            view: pageAndView.view,
-            offset: pageAndView.currentPage * per_page_records,
-            limit: per_page_records,
-          }
-          const { data } = await Api.getTaskResults(taskId, params)
-          if ((pageAndView.currentPage + 1) > data.page_count) {
-            setPageAndView((x) => ({ ...x, currentPage: 0 }))
-          }
-          setResponse(data)
-        } catch (error) {
-          console.error('Failed to fetch task:', error)
+            // First check if the task has been updated
+            const isUpdatedResponse = await Api.isTaskUpdated(taskId, response.task.updated_at, response.task.status);
+            if (isUpdatedResponse.data.result) {
+                // If the task has been updated, fetch the task results
+                const per_page_records = 25;
+                const params = {
+                    sort,
+                    filters: clean_filter_data(filter_data, filters),
+                    view: pageAndView.view,
+                    offset: pageAndView.currentPage * per_page_records,
+                    limit: per_page_records,
+                };
+                const { data } = await Api.getTaskResults(taskId, params);
+                if ((pageAndView.currentPage + 1) > data.page_count) {
+                    setPageAndView((x) => ({ ...x, currentPage: 0 }));
+                }
+                setResponse(data);
+            }
+          } catch (error) {
+            console.error('Failed to fetch task:', error);
         }
-      }
-
+    };
+    
       const intervalId = setInterval(fetchData, 1000) // Polling every 1000 milliseconds
       return () => clearInterval(intervalId)
     }
-  }, [taskId, response.task.status, sort, filter_data, pageAndView.view, pageAndView.currentPage])
+  }, [response.task.updated_at, taskId, response.task.status, sort, filter_data, pageAndView.view, pageAndView.currentPage])
 
   let selectedFields =
     pageAndView.view === '__all_fields__'

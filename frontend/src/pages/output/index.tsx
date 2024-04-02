@@ -11,6 +11,7 @@ import {
 import AuthedDashboard from '../../layouts/AuthedDashboard'
 import Api from '../../utils/api'
 import AxiosErrorHoc, { wrapAxiosErrors } from '../../components/AxiosErrorHoc'
+import ServerStatusComponent from '../../components/ServerStatusComponent'
 
 const Page = ({ tasks, ...props }: any) => {
   return (
@@ -19,10 +20,12 @@ const Page = ({ tasks, ...props }: any) => {
 
       <AuthedDashboard {...props}>
         <OutputTabsContainer>
+          <ServerStatusComponent/>
           <Description {...props} />
           <Tabs initialSelectedTab={TabsId.OUTPUT} />
         </OutputTabsContainer>
         <OutputContainer>
+          
           <TabWrapper>
             <OutputComponent {...props} tasks={tasks} />
           </TabWrapper>

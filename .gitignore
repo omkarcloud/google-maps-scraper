@@ -15,8 +15,6 @@ venv.bak/
 
 
 
-db.sqlite3
-
 build/
 
 /tasks/

@@ -213,7 +213,7 @@ export const EmptyFailed = ({ error }) => {
       <OutputLink/>
       <EuiEmptyPrompt
         body={
-          <div>
+          error ? <div>
             <div className="mb-2">
               The Task has failed due to following Exception.
             </div>
@@ -225,6 +225,8 @@ export const EmptyFailed = ({ error }) => {
               isCopyable>
               {error}
             </EuiCodeBlock>
+          </div> :  <div>
+            <p>The task has failed.</p>
           </div>
         }
         color="subdued"
