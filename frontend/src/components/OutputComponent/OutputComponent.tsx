@@ -17,7 +17,7 @@ import {
 import Link from 'next/link'
 import { useEffect, useState } from 'react'
 import Api from '../../utils/api'
-import { TaskStatus, filterIsDoingTasks, isDoing } from '../../utils/models'
+import { TaskStatus, filterAndMapAllTasks, filterIsDoingTasks, isDoing } from '../../utils/models'
 import { EmptyOutputs, EmptyScraper } from '../Empty/Empty'
 import Toast from '../../utils/cogo-toast'
 import ClickOutside from '../ClickOutside/ClickOutside'
@@ -338,7 +338,8 @@ const OutputComponent = ({ scrapers, tasks: taskResponse }) => {
       const isCleared = { isCleared: false }; // Initialize as an object with isCleared property
       const intervalId = setInterval(async () => {
         if (!isCleared.isCleared) { // Access the isCleared property
-          const response = await Api.isAnyTaskFinished(pendingTaskIds)
+          const all_tasks = filterAndMapAllTasks(results)
+          const response = await Api.isAnyTaskFinished(pendingTaskIds, all_tasks)
           if (response.data.result && !isCleared.isCleared) { 
             const { data } = await Api.getTasks(active_page)
             if (!isCleared.isCleared) { // Access the isCleared property

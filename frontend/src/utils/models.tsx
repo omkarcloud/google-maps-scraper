@@ -18,3 +18,8 @@ export function isDoing(task) {
 export function filterIsDoingTasks(tasks: any[]) {
   return tasks.filter(isDoing)
 }
+
+
+export function filterAndMapAllTasks(tasks: any[]) {
+  return tasks.filter(x=> x.is_all_task === true && isDoing(x) ).map(x=> ({id: x.id, result_count: x.result_count}))
+}

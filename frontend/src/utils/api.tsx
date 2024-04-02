@@ -26,9 +26,10 @@ function getTasks(page=1, per_page=100) {
   })
 }
 
-function isAnyTaskFinished(task_ids) {
+function isAnyTaskFinished(task_ids, all_tasks) {
   return AxiosInstance.post(`/tasks/is-any-task-finished`, {
     task_ids: task_ids, 
+    all_tasks: all_tasks
   },  {
     silent: true,
     silenceError:true,
