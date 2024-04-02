@@ -1,3 +1,6 @@
+import sys
+from javascript_fixes.errors import JavaScriptError
+import requests
 from botasaurus import *
 from hashlib import md5
 from botasaurus import cl
@@ -136,11 +139,31 @@ def get_lang(data):
 class StuckInGmapsException(Exception):
     pass
 
+def is_running_on_gcp():
+    try:
+        response = requests.get(
+            "http://metadata.google.internal/computeMetadata/v1/instance",
+            headers={"Metadata-Flavor": "Google"},
+        )
+        return response.status_code == 200  # Success
+    except requests.exceptions.RequestException:
+        return False  # Assume not on GCP if request fails 
 
-@browser(
-    create_driver=create_stealth_driver(
+t = create_stealth_driver(
         start_url=None,
-    ),      
+    )
+def wrapperfn(data, options, desired_capabilities):
+    t
+    try:
+        return t(data, options, desired_capabilities)
+    except JavaScriptError as e:
+        if ("timeout" in e.js or "timeout" in e.py) and is_running_on_gcp():
+            print("Connection to node js failed. Exiting.")
+            sys.exit(1)
+        raise
+    
+@browser(
+    create_driver= wrapperfn,      
     lang=get_lang,
     close_on_crash=True,
     max_retry = 3,

@@ -2,10 +2,10 @@ from botasaurus_server.server import Server
 from src.gmaps import get_places
 import random
 from botasaurus_server.ui import *
-from .country import get_cities
-from .category import category_options
 from botasaurus import cl
 import urllib.parse
+from .country import get_cities
+from .category import category_options
 
 def convert_to_string(input_str):
     return urllib.parse.unquote_plus(input_str).strip()
