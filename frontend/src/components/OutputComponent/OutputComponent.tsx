@@ -335,15 +335,22 @@ const OutputComponent = ({ scrapers, tasks: taskResponse }) => {
   useEffect(() => {
     const pendingTaskIds = filterIsDoingTasks(results).map(task => task.id)
     if (pendingTaskIds.length > 0) {
+      const isCleared = { isCleared: false }; // Initialize as an object with isCleared property
       const intervalId = setInterval(async () => {
-        const response = await Api.isAnyTaskFinished(pendingTaskIds)
-
-        if (response.data.result) {
-          const { data } = await Api.getTasks(active_page)
-          setState((x) => ({ ...data, active_page: x.active_page > data.total_pages ? 1 : x.active_page }))
+        if (!isCleared.isCleared) { // Access the isCleared property
+          const response = await Api.isAnyTaskFinished(pendingTaskIds)
+          if (response.data.result && !isCleared.isCleared) { 
+            const { data } = await Api.getTasks(active_page)
+            if (!isCleared.isCleared) { // Access the isCleared property
+              setState((x) => ({ ...data, active_page: x.active_page > data.total_pages ? 1 : x.active_page }))
+            }
+          }          
         }
       }, 1000)
-      return () => clearInterval(intervalId)
+      return () => {
+        isCleared.isCleared = true; // Set the isCleared property to true
+        return clearInterval(intervalId)
+      }
     }
   }, [results, active_page]);
 

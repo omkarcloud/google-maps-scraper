@@ -16,7 +16,7 @@ function createTaskAndGetResult(data: any) {
 
 
 function isApiRunning() {
-  return AxiosInstance.get(`/`, { silent: true, silenceError:true  })
+  return AxiosInstance.get(null, { silent: true, silenceError:true  })
 }
 
 function getTasks(page=1, per_page=100) {

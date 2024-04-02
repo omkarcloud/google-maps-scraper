@@ -2,32 +2,38 @@ import { useState, useEffect } from 'react'
 import { EuiEmptyPrompt } from '@elastic/eui'
 import Api from '../utils/api'
 
+
+const minute = 60 * 1000
+const tensecond = 10 *  1000
+
 const ServerStatusComponent = () => {
-    const [showAlert, setShowAlert] = useState(false)
+    const [isDown, setIsDown] = useState(false)
 
     useEffect(() => {
         const checkApiStatus = async () => {
             try {
                 const response = await Api.isApiRunning() // Assuming Api.isApiRunning() returns a promise
                 if (response.status !== 200) {
-                    setShowAlert(true)
+                    setIsDown(true)
                 } else {
-                    setShowAlert(false)
+                    setIsDown(false)
                 }
             } catch (error) {
-                setShowAlert(true)
+                setIsDown(true)
             }
         }
 
-
+        const INTERVAL = isDown ? tensecond : minute
         // Then set an interval to check every minute
-        const interval = setInterval(checkApiStatus, 1 * 60 * 1000)
+        // const interval = setInterval(checkApiStatus,  1000 )
+
+        const interval = setInterval(checkApiStatus,  INTERVAL )
 
         // Clear interval on component unmount
         return () => clearInterval(interval)
     }, [])
 
-    if (showAlert) {
+    if (isDown) {
         return (
             <EuiEmptyPrompt
             className='mb-4'
