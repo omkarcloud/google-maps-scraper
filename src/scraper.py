@@ -157,7 +157,7 @@ def wrapperfn(data, options, desired_capabilities):
     try:
         return t(data, options, desired_capabilities)
     except JavaScriptError as e:
-        if ("timeout" in e.js or "timeout" in e.py) and is_running_on_gcp():
+        if ("Timed out accessing" in str(e) or "Timed out accessing" in e.js or "Timed out accessing" in e.py) and is_running_on_gcp():
             print("Connection to node js failed. Exiting.")
             sys.exit(1)
         raise
