@@ -502,7 +502,7 @@ def get_title(data):
 
 
 def get_address(data):
-    return safe_get(data, 6, 18)
+    return safe_get(data, 6, 39) or safe_get(data, 6, 37,0,0,17,0)
 
 
 def get_website(data):
