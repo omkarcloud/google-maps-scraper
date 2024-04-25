@@ -17,8 +17,6 @@ venv.bak/
 
 build/
 
-/tasks/
-
 /profiles/
 
 /output/
@@ -27,4 +25,6 @@ build/
 
 /error_logs/
 
-index.http    
+local_storage.json
+
+db.sqlite3
