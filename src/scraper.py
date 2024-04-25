@@ -1,18 +1,59 @@
-import sys
-from javascript_fixes.errors import JavaScriptError
-import requests
-from botasaurus import *
+import traceback
+from botasaurus import cl, bt
 from hashlib import md5
-from botasaurus import cl
 from botasaurus.cache import DontCache
 from src.extract_data import extract_data, perform_extract_possible_map_link
 from src.scraper_utils import create_search_link, perform_visit
 from src.utils import unique_strings
 from .reviews_scraper import GoogleMapsAPIScraper
 from time import sleep, time
-from botasaurus.utils import retry_if_is_error
-from selenium.common.exceptions import  StaleElementReferenceException
-from botasaurus.create_stealth_driver import create_stealth_driver
+from botasaurus.browser import Driver, browser, AsyncQueueResult, Wait, DetachedElementException
+from botasaurus.request import request
+
+
+def is_errors_instance(instances, error):
+    for i in range(len(instances)):
+        ins = instances[i]
+        if isinstance(error, ins):
+            return True, i
+    return False, -1
+
+
+def istuple(el):
+    return type(el) is tuple
+
+def retry_if_is_error(func, instances=None, retries=3, wait_time=None, raise_exception=True, on_failed_after_retry_exhausted=None):
+    tries = 0
+    errors_only_instances = list(
+        map(lambda el: el[0] if istuple(el) else el, instances))
+
+    while tries < retries:
+        tries += 1
+        try:
+            created_result = func()
+            return created_result
+        except Exception as e:
+            is_valid_error, index = is_errors_instance(
+                errors_only_instances, e)
+
+            if not is_valid_error:
+                raise e
+            if raise_exception:
+                traceback.print_exc()
+
+            if istuple(instances[index]):
+                instances[index][1]()
+
+            if tries == retries:
+                if on_failed_after_retry_exhausted is not None:
+                    on_failed_after_retry_exhausted(e)
+                if raise_exception:
+                    raise e
+
+            print('Retrying')
+
+            if wait_time is not None:
+                sleep(wait_time)
 
 def process_reviews(reviews):
     processed_reviews = []
@@ -56,7 +97,7 @@ def process_reviews(reviews):
     output=None,
 
 )
-def scrape_reviews(requests: AntiDetectRequests, data):
+def scrape_reviews(requests, data):
     place_id = data["place_id"]
     link = data["link"]
 
@@ -90,7 +131,7 @@ def scrape_reviews(requests: AntiDetectRequests, data):
     retry_wait=5,
     # request_interval=0.2, {ADD}
 )
-def scrape_place(requests: AntiDetectRequests, link, metadata):
+def scrape_place(requests, link, metadata):
         cookies = metadata["cookies"]
         
         try:
@@ -139,38 +180,18 @@ def get_lang(data):
 class StuckInGmapsException(Exception):
     pass
 
-def is_running_on_gcp():
-    try:
-        response = requests.get(
-            "http://metadata.google.internal/computeMetadata/v1/instance",
-            headers={"Metadata-Flavor": "Google"},
-        )
-        return response.status_code == 200  # Success
-    except requests.exceptions.RequestException:
-        return False  # Assume not on GCP if request fails 
 
-t = create_stealth_driver(
-        start_url=None,
-    )
-def wrapperfn(data, options, desired_capabilities):
-    try:
-        return t(data, options, desired_capabilities)
-    except Exception as e:
-        isTimeoutError = ("Timed out accessing" in str(e) or "Timed out accessing" in e.js or "Timed out accessing" in e.py)
-        if isTimeoutError and is_running_on_gcp():
-            print("Connection to node js failed. Exiting.")
-            sys.exit(1)
-        raise
-    
+
 @browser(
-    create_driver= wrapperfn,      
+    keep_drivers_alive=True, 
+    reuse_driver=True, 
     lang=get_lang,
     close_on_crash=True,
     max_retry = 3,
     headless=True,
     output=None,
 )
-def scrape_places(driver: AntiDetectDriver, data):
+def scrape_places(driver:Driver, data):
     # This fixes consent Issues in Countries like Spain 
     max_results = data['max']
 
@@ -180,7 +201,7 @@ def scrape_places(driver: AntiDetectDriver, data):
     def get_sponsored_links():
          nonlocal sponsored_links
          if sponsored_links is None:
-              sponsored_links = driver.execute_script('''function get_sponsored_links() {
+              sponsored_links = driver.run_js('''function get_sponsored_links() {
   try {
 
     // Get all elements with the "Sponsored" text in the h1 tag.
@@ -213,8 +234,8 @@ return get_sponsored_links()''')
                   scrape_place_obj.put(data['links'], metadata = metad)
                   return
                 while True:
-                    el = driver.get_element_or_none_by_selector(
-                        '[role="feed"]', bt.Wait.LONG)
+                    el = driver.select(
+                        '[role="feed"]', Wait.LONG)
                     if el is None:
                         if driver.is_in_page("/maps/search/"):
                             link = extract_possible_map_link(driver.page_source)
@@ -227,16 +248,16 @@ return get_sponsored_links()''')
                             scrape_place_obj.put(rst, metadata = metad)
                         return
                     else:
-                        did_element_scroll = driver.scroll_element(el)
+                        el.scroll_to_bottom()
 
                         links = None
                         
                         if max_results is None:
-                            links = driver.links(
-                                '[role="feed"] >  div > div > a', bt.Wait.LONG)
+                            links = driver.get_all_links(
+                                '[role="feed"] >  div > div > a', wait=Wait.LONG)
                         else:
-                            links = unique_strings(driver.links(
-                                '[role="feed"] >  div > div > a', bt.Wait.LONG))[:max_results]
+                            links = unique_strings(driver.get_all_links(
+                                '[role="feed"] >  div > div > a', wait=Wait.LONG))[:max_results]
                                                     
                         
                             
@@ -247,14 +268,13 @@ return get_sponsored_links()''')
                             return
 
                         # TODO: If Proxy is Given Wait for None, and only use wait to Make it Faster, Example Code 
-                        # end_el_wait = bt.Wait.SHORT if driver.about.is_retry else None
+                        # end_el_wait = bt.Wait.SHORT if driver.config.is_retry else None
 
-                        end_el_wait = bt.Wait.SHORT
-                        end_el = driver.get_element_or_none_by_selector(
+                        end_el_wait = Wait.SHORT
+                        end_el = driver.select(
                             "p.fontBodyMedium > span > span", end_el_wait)
 
                         if end_el is not None:
-                            driver.scroll_element(el)
                             return
                         elapsed_time = time() - start_time
 
@@ -266,7 +286,7 @@ return get_sponsored_links()''')
                             #   - add random waits
                             #   - 3 retries  
                              
-                        if did_element_scroll:
+                        if driver.can_scroll_further('[role="feed"]'):
                             start_time = time()
                         else:
                             sleep_time = 0.1
@@ -296,15 +316,15 @@ return get_sponsored_links()''')
 # #     - Turn the hotspot back on.                      
 # # ''')
     try:
-      retry_if_is_error(put_links, [StaleElementReferenceException], STALE_RETRIES, raise_exception=False
+      retry_if_is_error(put_links, [DetachedElementException], STALE_RETRIES, raise_exception=False
                     #   , on_failed_after_retry_exhausted=on_failed_after_retry_exhausted
                       )
     # todo remove check later      
-      if driver.about.is_retry:
+      if driver.config.is_retry:
           print("This time, Google Maps did not get stuck while scrolling and successfully scrolled to the end.")
     
     except StuckInGmapsException as e:
-      if driver.about.is_last_retry:
+      if driver.config.is_last_retry:
           on_failed_after_retry_exhausted(e)
       else:
           raise e
@@ -340,4 +360,4 @@ return get_sponsored_links()''')
 # python -m src.scraper
 if __name__ == "__main__":
     print(scrape_places({'query': 'Web Developers   in Bangalore', 'max': 1, 'lang': None, 'geo_coordinates': '', 'zoom': 14, 'links':[]}))
-    # print(scrape_place(["https://www.google.com/maps/place/Hisn+Yakka/@38.6089019,-1.1214893,17z/data=!3m1!4b1!4m6!3m5!1s0xd63fd22e0c22e1f:0xc2d606310f68bc26!8m2!3d38.6089019!4d-1.1214893!16s%2Fg%2F11p06xtf82?authuser=0&entry=ttu"] , metadata={}))
+    # print(scrape_place(["https://www.google.com/maps/place/Hisn+Yakka/@38.6089019,-1.1214893,17z/data=!3m1!4b1!4m6!3m5!1s0xd63fd22e0c22e1f:0xc2d606310f68bc26!8m2!3d38.6089019!4d-1.1214893!16s%2Fg%2F11p06xtf82?authuser=0&entry=ttu"] , metadata={}))b

@@ -1,4 +1,5 @@
-from botasaurus import request as rq, bt
+from botasaurus.request import request as rq
+from botasaurus.local_storage import LocalStorage
 from botasaurus.cache import DontCache
 import requests
 from time import sleep
@@ -8,8 +9,8 @@ FAILED_DUE_TO_NOT_SUBSCRIBED = "FAILED_DUE_TO_NOT_SUBSCRIBED"
 FAILED_DUE_TO_UNKNOWN_ERROR = "FAILED_DUE_TO_UNKNOWN_ERROR"
 
 def update_credits():
-    credits_used  = bt.LocalStorage.get_item("credits_used", 0)
-    bt.LocalStorage.set_item("credits_used", credits_used + 1)
+    credits_used  = LocalStorage.get_item("credits_used", 0)
+    LocalStorage.set_item("credits_used", credits_used + 1)
 
 def do_request(data, retry_count=3):
     
@@ -76,6 +77,8 @@ def do_request(data, retry_count=3):
 
 @rq(
     close_on_crash=True,
+    create_error_logs= False, 
+    cache=True, 
     output=None,
     )
 def perform_scrape_social(reqs, data):
@@ -83,6 +86,8 @@ def perform_scrape_social(reqs, data):
 
 @rq(
     close_on_crash=True,
+    create_error_logs= False, 
+    cache=True, 
     output=None,
     )
 def perform_scrape_social_pro(reqs, data):
@@ -90,8 +95,7 @@ def perform_scrape_social_pro(reqs, data):
 
 def is_free():
     FREE_CREDITS_PLUS_10 = 60
-    # Assuming bt.LocalStorage is used to get the credits_used value
-    credits_used = bt.LocalStorage.get_item("credits_used", 0)
+    credits_used = LocalStorage.get_item("credits_used", 0)
     return credits_used < FREE_CREDITS_PLUS_10
 
 def scrape_social(social_data):

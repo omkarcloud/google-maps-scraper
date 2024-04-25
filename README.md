@@ -226,8 +226,9 @@ Free versions shows only a limited set of data points, the fields are hidden wit
 * 💰 **Price Range**
 * **And many more!** Explore a full list of data points here: [https://github.com/omkarcloud/google-maps-scraper/blob/master/fields.md](https://github.com/omkarcloud/google-maps-scraper/blob/master/fields.md)
 
-The Pro Version is a one-time investment with lifetime updates and absolutely zero risk because we offer a generous **90-Day Refund Policy!**
+With all these additional data points, you will be able to truly harness the power of Google Maps.
 
+The Pro Version is a one-time investment with lifetime updates and absolutely zero risk because we offer a generous **90-Day Refund Policy!**
 
 ### ❓ How to Get the Pro Version?
 
@@ -305,7 +306,7 @@ It handled the hardest parts of our scraper, such as:
 - Caching, parallel and asynchronous scraping, and anti-detection measures
 - Built-in integration with Kubernetes, Docker, Server, Gitpod, and a REST API
 
-If you're a web scraper, I really recommend learning about Botasaurus [here 🚀](https://github.com/omkarcloud/botasaurus).
+If you're a web scraper, I really recommend learning about Botasaurus [here](https://github.com/omkarcloud/botasaurus)  🚀.
 
 Trust me, learning Botasaurus will only take 20 minutes, but I guarantee it will definitely save you thousands of hours in your life as a web scraper.
 

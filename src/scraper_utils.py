@@ -1,28 +1,15 @@
 import urllib.parse
-from botasaurus import AntiDetectDriver
 
-def perform_visit(driver: AntiDetectDriver, link:str):
+def perform_visit(driver, link:str):
     def visit_gmap_with_consent():
-                    driver.organic_get(link, accept_cookies=True)
-                    
-                    # if driver.is_in_page("https://consent.google.com/"):
-                    #     agree_button_selector = 'form:nth-child(2) > div > div > button'
-                    #     driver.click(agree_button_selector)
-                        # driver.organic_get(link)
+                    driver.google_get(link, accept_google_cookies=True)
 
-
-                    # if not driver.is_in_page('maps/search/', bt.Wait.LONG):
-                    #     if driver.is_in_page("consent.google.com", bt.Wait.SHORT):
-                    #         el = driver.get_element_or_none_by_selector(
-                    #             'form:nth-child(2) > div > div > button', bt.Wait.LONG)
-                    #         el.click()
-                    #     visit_gmap_with_consent()
 
     def visit_gmap_simple():
-                    driver.get_by_current_page_referrer(link)
+                    driver.get_via_this_page(link)
      
 
-    if driver.about.is_new:
+    if driver.config.is_new:
         visit_gmap_with_consent()
     else: 
         visit_gmap_simple()

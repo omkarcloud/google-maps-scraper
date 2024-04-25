@@ -1,7 +1,7 @@
-from botasaurus.str_utils import ht
-from botasaurus import bt
 from src import scraper
-from botasaurus import request
+from botasaurus import bt
+from botasaurus.string_utils import ht
+from botasaurus.request import request
 
 from src.sort_filter import filter_places, sort_dict_by_keys
 
@@ -132,8 +132,7 @@ def get_null_data():
       'pinterest': msg,
   }
   return EMPTY_SOCIAL_DATA
-def get_empty_data():
-  msg = "Provide API Key"
+def get_empty_data(msg = "Provide API Key"):
   
   EMPTY_SOCIAL_DATA = {
       'emails': [msg],
@@ -176,14 +175,17 @@ def merge_unknown(places, social_details):
 
     return places
 
-def merge_social(places, social_details):
+def merge_social(places, social_details, should_scrape_socials):
     for place in places:
         found_social_detail = next((detail for detail in social_details if detail['place_id'] == place['place_id']), None)
         if found_social_detail:
             place.update(found_social_detail['data'])
         else:
             if place.get("website") is not None:
-                place.update(get_empty_data())
+                if should_scrape_socials:
+                    place.update(get_empty_data("Failed to get social details. Please check the logs for more information."))
+                else:
+                    place.update(get_empty_data())
             else: 
                 place.update(get_null_data())
 
@@ -248,12 +250,12 @@ def process_result(key, scrape_reviews, reviews_max, reviews_sort,  lang, should
           social_details =  bt.remove_nones(scrape_social(social_data, ))
           success, credits_exhausted, not_subscribed, unknown_error = clean_social(social_details)
           print_social_errors(credits_exhausted, not_subscribed, unknown_error)
-          cleaned_places = merge_social(cleaned_places, success)
+          cleaned_places = merge_social(cleaned_places, success, should_scrape_socials)
           cleaned_places = merge_credits_exhausted(cleaned_places, credits_exhausted)
           cleaned_places = merge_not_subscribed(cleaned_places, not_subscribed)
           cleaned_places = merge_unknown(cleaned_places, unknown_error)
       else:
-          cleaned_places = merge_social(cleaned_places, [])
+          cleaned_places = merge_social(cleaned_places, [], should_scrape_socials)
           
         # 3. Scrape Reviews
       if scrape_reviews:

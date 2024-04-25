@@ -1,5 +1,5 @@
-from botasaurus_server import run_server
 import backend.scrapers
+from botasaurus_server.run import run
 
 if __name__ == "__main__":
-    run_server()
+    run()

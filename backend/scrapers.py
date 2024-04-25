@@ -1,7 +1,7 @@
 from botasaurus_server.server import Server
 from src.gmaps import get_places
 import random
-from botasaurus_server.ui import *
+from botasaurus_server.ui import View, Field, ExpandDictField, ExpandListField, filters, sorts
 from botasaurus import cl
 import urllib.parse
 from .country import get_cities
@@ -268,17 +268,17 @@ overview_view = View(
     ],
 )
 
-best_customers = Sort(
+best_customers = sorts.Sort(
     label="Best Potential Customers",
     is_default=True,
     sorts=[
-        NumericAscendingSort("name"),
-        NumericDescendingSort("reviews"),
-        TrueFirstSort("website"),
-        TruthyFirstSort(
+        sorts.NumericAscendingSort("name"),
+        sorts.NumericDescendingSort("reviews"),
+        sorts.TrueFirstSort("website"),
+        sorts.TruthyFirstSort(
             "linkedin",
             ),
-            TrueFirstSort(
+            sorts.TrueFirstSort(
             "is_spending_on_ads",
         ),
     ],
@@ -290,23 +290,23 @@ Server.add_scraper(
     split_task=split_task_by_query,
     get_task_name=get_task_name,
     filters=[
-        MinNumberInput("reviews", label="Min Reviews"),
-        MaxNumberInput("reviews", label="Max Reviews"),
-        IsTruthyCheckbox("website"),
-        IsTruthyCheckbox("phone"),
-        IsTrueCheckbox("is_spending_on_ads"),
-        IsTrueCheckbox("can_claim"),
-        MultiSelectDropdown(
+        filters.MinNumberInput("reviews", label="Min Reviews"),
+        filters.MaxNumberInput("reviews", label="Max Reviews"),
+        filters.IsTruthyCheckbox("website"),
+        filters.IsTruthyCheckbox("phone"),
+        filters.IsTrueCheckbox("is_spending_on_ads"),
+        filters.IsTrueCheckbox("can_claim"),
+        filters.MultiSelectDropdown(
             "category_in",
             options=category_options,
         ),
-        MinNumberInput("rating", label="Min Rating"),
+        filters.MinNumberInput("rating", label="Min Rating"),
     ],
     sorts=[
         best_customers,
-        NumericDescendingSort("reviews"),
-        NumericAscendingSort("reviews"),
-        NumericAscendingSort("name"),
+        sorts.NumericDescendingSort("reviews"),
+        sorts.NumericAscendingSort("reviews"),
+        sorts.NumericAscendingSort("name"),
     ],
     views=[
         overview_view,
