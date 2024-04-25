@@ -17,7 +17,7 @@ import {
 import Link from 'next/link'
 import { useEffect, useState } from 'react'
 import Api from '../../utils/api'
-import { TaskStatus, filterAndMapAllTasks, filterIsDoingTasks, isDoing } from '../../utils/models'
+import { TaskStatus, filterAndMapAllTasks,  filterIsPendingTasks, filterIsProgressTasks, } from '../../utils/models'
 import { EmptyOutputs, EmptyScraper } from '../Empty/Empty'
 import Toast from '../../utils/cogo-toast'
 import ClickOutside from '../ClickOutside/ClickOutside'
@@ -87,13 +87,6 @@ function timeToHumanReadable(seconds) {
   }
   if (seconds === 0) {
     return '0s'
-  }
-  else if (seconds <= 5) {
-    const rst = `${seconds.toFixed(2)}s`
-    if (rst.endsWith(".00s")) {
-      return rst.replace(".00", "")
-    }
-    return rst
   }
 
   // remove decimals using bitwise
@@ -333,13 +326,15 @@ const OutputComponent = ({ scrapers, tasks: taskResponse }) => {
   const active_page = state.active_page
   
   useEffect(() => {
-    const pendingTaskIds = filterIsDoingTasks(results).map(task => task.id)
-    if (pendingTaskIds.length > 0) {
+    const pendingTsks = filterIsPendingTasks(results)
+    const progressTsks = filterIsProgressTasks(results)
+    const hasTasks = pendingTsks.length > 0 || progressTsks.length > 0
+    if (!isLoading && hasTasks) {
       const isCleared = { isCleared: false }; // Initialize as an object with isCleared property
       const intervalId = setInterval(async () => {
         if (!isCleared.isCleared) { // Access the isCleared property
-          const all_tasks = filterAndMapAllTasks(results)
-          const response = await Api.isAnyTaskFinished(pendingTaskIds, all_tasks)
+          const all_tasks = filterAndMapAllTasks(pendingTsks.concat(progressTsks))
+          const response = await Api.isAnyTaskFinished(pendingTsks.map(task => task.id), progressTsks.map(task => task.id),  all_tasks)
           if (response.data.result && !isCleared.isCleared) { 
             const { data } = await Api.getTasks(active_page)
             if (!isCleared.isCleared) { // Access the isCleared property
@@ -353,7 +348,7 @@ const OutputComponent = ({ scrapers, tasks: taskResponse }) => {
         return clearInterval(intervalId)
       }
     }
-  }, [results, active_page]);
+  }, [isLoading, results, active_page]);
 
 
   function updateState(data, current_page) {

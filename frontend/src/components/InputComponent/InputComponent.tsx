@@ -9,8 +9,8 @@ import {
 import { EuiForm } from '@elastic/eui'
 
 import { Control, WithChooseOptions, createControls } from 'botasaurus-controls'
-import { useRouter } from 'next/router'
 import { useMemo, useState } from 'react'
+import { useRouter } from 'next/router'
 import Api from '../../utils/api'
 import { isEmptyObject } from '../../utils/missc'
 import { pushToRoute } from '../../utils/next'

@@ -34,11 +34,12 @@ const Page = ({ tasks, ...props }: any) => {
     </>
   )
 }
-
 export const getServerSideProps: GetServerSideProps = wrapAxiosErrors(async ({}) => {
-  const { data } = await Api.getTasks()
+  const [tasks, config] = await Promise.all([Api.getTasks(), Api.getConfig()]);
+
   return {
-    props: { tasks: data },
+    props: { ...config, tasks: tasks.data },
   }
+
 })
 export default AxiosErrorHoc(Page)

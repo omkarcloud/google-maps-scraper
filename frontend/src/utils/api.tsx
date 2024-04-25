@@ -1,17 +1,26 @@
-import AxiosInstance from './axios'
+import AxiosInstance, {baseUrl} from './axios'
 
-function getConfig() {
-  return AxiosInstance.get('/config', { silent: true })
+
+async function getConfig() {
+  const res = await fetch(`${baseUrl}/ui/config`)
+
+  if (!res.ok) {
+    throw new Error(`HTTP error! status: ${res.status}`)
+  }
+
+  const data = await res.json()
+  return data
 }
 
+
 function createTask(data: any) {
-  return AxiosInstance.post('/tasks/submit-async', data, {
+  return AxiosInstance.post('/tasks/create-task-async', data, {
     message: 'Starting Task',
   })
 }
 
 function createTaskAndGetResult(data: any) {
-  return AxiosInstance.post('/tasks/submit-sync', data, { silent: true })
+  return AxiosInstance.post('/tasks/create-task-sync', data, { silent: true })
 }
 
 
@@ -19,36 +28,38 @@ function isApiRunning() {
   return AxiosInstance.get(null, { silent: true, silenceError:true  })
 }
 
-function getTasks(page=1, per_page=100) {
-  return AxiosInstance.get(`/tasks?with_results=false&sort_by_date=true&page=${page}&per_page=${per_page}`, {
+function getTasks(page=1) {
+  return AxiosInstance.get(`/ui/tasks?page=${page}`, {
     silent: true,
     silenceError:true,
   })
 }
 
-function isAnyTaskFinished(task_ids, all_tasks) {
-  return AxiosInstance.post(`/tasks/is-any-task-finished`, {
-    task_ids: task_ids, 
-    all_tasks: all_tasks
+function isAnyTaskFinished(pending_task_ids, progress_task_ids,  all_tasks) {
+  return AxiosInstance.post(`/ui/tasks/is-any-task-updated`, {
+    pending_task_ids,
+    progress_task_ids,
+    all_tasks,
   },  {
     silent: true,
     silenceError:true,
   })
 }
 function isTaskUpdated(taskId, lastUpdated, status) {
-  return AxiosInstance.get(`/tasks/is-task-updated?task_id=${taskId}&last_updated=${encodeURIComponent(lastUpdated)}&status=${status}`, {
+  return AxiosInstance.post(`/ui/tasks/is-task-updated`, {
+    task_id: taskId,
+    last_updated: lastUpdated,
+    status: status,
+  }, {
     silent: true,
     silenceError: true,
   });
 }
 
 
-function getTask(task_id: number) {
-  return AxiosInstance.get(`/tasks/${task_id}`, { silent: true,  })
-}
 
 function abortTask(task_id: number, page) {
-  return AxiosInstance.patch(`/tasks?return_tasks=true&page=${page}` , {
+  return AxiosInstance.patch(`/ui/tasks?page=${page}` , {
     action: 'abort',
     task_ids: [task_id]
   }, {
@@ -56,7 +67,7 @@ function abortTask(task_id: number, page) {
   })
 }
 function deleteTask(task_id: number, page) {
-  return AxiosInstance.patch(`/tasks?return_tasks=true&page=` + page, {
+  return AxiosInstance.patch(`/ui/tasks?page=` + page, {
     action: 'delete',
     task_ids: [task_id]
   }, {
@@ -85,18 +96,18 @@ function downloadTaskResults(taskId, data = {}) {
   return AxiosInstance.post(`/tasks/${taskId}/download`, data, {
     responseType: 'blob',
     message: 'Downloading...',
-  }).then(downloadViaLink)
+  }).then(downloadViaLink)  
 }
 
-function getTaskResults(taskId, data = {}) {
-  return AxiosInstance.post(`/tasks/${taskId}/results`, data, { silent: true , silenceError:true,})
+function getTaskResults(taskId, data = {}, force_apply_first_view = false) {
+  return AxiosInstance.post( force_apply_first_view ?`/ui/tasks/${taskId}/results?force_apply_first_view=${force_apply_first_view}` :`/ui/tasks/${taskId}/results` , data, { silent: true , silenceError:true,})
 }
 
 const Api = {
+  getConfig, 
   isApiRunning,
   isAnyTaskFinished,
   isTaskUpdated,
-  getConfig,
   createTask,
   createTaskAndGetResult,
   getTasks,

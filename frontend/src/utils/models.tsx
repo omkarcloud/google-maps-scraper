@@ -7,16 +7,42 @@ export const TaskStatus = {
   ABORTED: 'aborted',
 }
 
+export function hasViews(views: any) {
+  return views.length
+}
 
+export function hasFilters(filters: any) {
+  return filters.length
+}
+
+export function hasSorts(sorts: any) {
+  return sorts.length > 1
+}
+
+function isPending(task: any): boolean {
+  return task.status === TaskStatus.PENDING
+}
+
+function isInProgress(task: any) {
+  return task.status === TaskStatus.IN_PROGRESS
+}
 export function isDoing(task) {
   return (
-    task.status === TaskStatus.IN_PROGRESS || task.status === TaskStatus.PENDING
+    isInProgress(task) || isPending(task)
   )
 }
 
-
 export function filterIsDoingTasks(tasks: any[]) {
   return tasks.filter(isDoing)
+}
+
+
+export function filterIsPendingTasks(tasks: any[]) {
+  return tasks.filter(isPending)
+}
+
+export function filterIsProgressTasks(tasks: any[]) {
+  return tasks.filter(isInProgress)
 }
 
 

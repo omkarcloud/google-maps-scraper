@@ -2,7 +2,7 @@ import { EuiButton, EuiLink, EuiPagination, EuiText } from '@elastic/eui'
 import { useEffect, useRef, useState } from 'react'
 import Api from '../../utils/api'
 import { isEmpty, isEmptyObject } from '../../utils/missc'
-import { TaskStatus, isDoing } from '../../utils/models'
+import { TaskStatus, hasFilters, isDoing, hasSorts, hasViews } from '../../utils/models'
 import CenteredSpinner from '../CenteredSpinner'
 import DownloadStickyBar from '../DownloadStickyBar/DownloadStickyBar'
 import {
@@ -70,7 +70,6 @@ const PromotionWrapper = () => {
     </div>
   )
 }
-
 
 function clean_filter_data(filter_data, filters) {
   const cleanedFilterData = { ...filter_data } // Create a copy to modify
@@ -172,8 +171,8 @@ const TaskComponent = ({
           sort,
           filters: clean_filter_data(filter_data, filters),
           view: pageAndView.view,
-          offset: pageAndView.currentPage * per_page_records,
-          limit: per_page_records,
+          page: pageAndView.currentPage + 1,
+          per_page: per_page_records,
         }
         const { data } = await Api.getTaskResults(taskId, params)
         setResponse(data)
@@ -201,11 +200,11 @@ const TaskComponent = ({
                     sort,
                     filters: clean_filter_data(filter_data, filters),
                     view: pageAndView.view,
-                    offset: pageAndView.currentPage * per_page_records,
-                    limit: per_page_records,
+                    page: pageAndView.currentPage + 1 ,
+                    per_page: per_page_records,
                 };
                 const { data } = await Api.getTaskResults(taskId, params);
-                if ((pageAndView.currentPage + 1) > data.page_count) {
+                if ((pageAndView.currentPage + 1) > data.total_pages) {
                     setPageAndView((x) => ({ ...x, currentPage: 0 }));
                 }
                 setResponse(data);
@@ -221,10 +220,11 @@ const TaskComponent = ({
   }, [response.task.updated_at, taskId, response.task.status, sort, filter_data, pageAndView.view, pageAndView.currentPage])
 
   let selectedFields =
-    pageAndView.view === '__all_fields__'
+    !pageAndView.view
       ? determineFields(response.results)
       : views.find(v => v.id === pageAndView.view)?.fields ?? null
-  if (selectedFields) {
+  
+      if (selectedFields) {
     selectedFields = caseFields(selectedFields)
   }
 
@@ -237,7 +237,7 @@ const TaskComponent = ({
   }
 
   const hasResults = !!response.count
-  const showPagination = hasResults && response.page_count > 1
+  const showPagination = hasResults && response.total_pages > 1
 
   const isResultsNotArray = !Array.isArray(response.results)
   if (isResultsNotArray) {
@@ -288,7 +288,7 @@ const TaskComponent = ({
         <Link href={`/output`} passHref>
               <EuiLink>View All Tasks</EuiLink>
             </Link>
-          {filters.length ? (
+          {hasFilters(filters) ? (
             <FilterComponent
               filter_data={filter_data}
               setFilter={setFilter}
@@ -296,18 +296,18 @@ const TaskComponent = ({
             />
           ):null}
 
-          {sorts.length ? (
-            <SortComponent sort={sort} setSort={setSort} sorts={sorts} />
+          {hasSorts(sorts) ? (
+            <div><SortComponent sort={sort} setSort={setSort} sorts={sorts} /></div>
           ) : null}
         </div>
 
-        <div className="pb-6 pt-2">
+        {hasViews(views) ? <div className="pb-6 pt-2">
           <ViewComponent
             view={pageAndView.view}
             setView={handleViewSet}
             views={views}
           />
-        </div>
+        </div> :  <div className=' pt-4'/>}
       </OutputTabsContainer>
       <OutputContainerWithBottomPadding>
         {loading ? (
@@ -322,7 +322,7 @@ const TaskComponent = ({
                   display: 'flex',
                   justifyContent: 'end',
                 }}
-                pageCount={response.page_count}
+                pageCount={response.total_pages}
                 activePage={pageAndView.currentPage}
                 onPageClick={handlePageClick}
               />
