@@ -1,4 +1,4 @@
-version: "3"
+version: "3.9"
 services:
     bot-1:
       restart: "no"
@@ -7,12 +7,62 @@ services:
         dockerfile: Dockerfile
         context: .
       volumes:
-        - ./output:/app/output
-        - ./tasks:/app/tasks
+        - ./output/1:/app/output
+        - ./tasks/1:/app/tasks
         - ./profiles:/app/profiles
         - ./profiles.json:/app/profiles.json
         - ./local_storage.json:/app/local_storage.json
         - ./db.sqlite3:/app/db.sqlite3
       ports:
-        - "3000:3000" 
-        - "8000:8000" 
+        - "3000:3000"
+        - "8000:8000"
+    bot-2:
+      restart: "no"
+      shm_size: 800m
+      build:
+        dockerfile: Dockerfile
+        context: .
+      volumes:
+        - ./output/2:/app/output
+        - ./tasks/2:/app/tasks
+        - ./profiles:/app/profiles
+        - ./profiles.json:/app/profiles.json
+        - ./local_storage.json:/app/local_storage.json
+        - ./db2.sqlite3:/app/db.sqlite3
+      ports:
+        - "3001:3000"
+        - "8001:8000"
+
+    bot-3:
+      restart: "no"
+      shm_size: 800m
+      build:
+        dockerfile: Dockerfile
+        context: .
+      volumes:
+        - ./output/3:/app/output
+        - ./tasks/3:/app/tasks
+        - ./profiles:/app/profiles
+        - ./profiles.json:/app/profiles.json
+        - ./local_storage.json:/app/local_storage.json
+        - ./db3.sqlite3:/app/db.sqlite3
+      ports:
+        - "3002:3000"
+        - "8002:8000"
+
+    bot-4:
+      restart: "no"
+      shm_size: 800m
+      build:
+        dockerfile: Dockerfile
+        context: .
+      volumes:
+        - ./output/4:/app/output
+        - ./tasks/4:/app/tasks
+        - ./profiles:/app/profiles
+        - ./profiles.json:/app/profiles.json
+        - ./local_storage.json:/app/local_storage.json
+        - ./db4.sqlite3:/app/db.sqlite3
+      ports:
+        - "3003:3000"
+        - "8003:8000"
