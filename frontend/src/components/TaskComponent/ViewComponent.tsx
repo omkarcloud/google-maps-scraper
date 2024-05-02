@@ -16,6 +16,6 @@ export const ViewComponent = ({ view, setView, views }) => {
     const view = selectedTab.id
     setView(view ===  "__all_fields__" ? null: view)
   }
-
-  return <Tabs tabs={viewTabs} selectedTab={ view ===  "__all_fields__" ? null: view} onTabChange={onViewChange} />
+  // return null
+  return <Tabs tabs={viewTabs} selectedTab={ view ===  null ? "__all_fields__": view} onTabChange={onViewChange} />
 }

@@ -1,10 +1,12 @@
 import re as rex
 import json
 from datetime import datetime
-from hashlib import md5
 from src.scraper_utils import create_search_link
 from urllib.parse import urlparse, urlunparse
-# from botasaurus import bt
+
+def write_temp_json(data):
+    from botasaurus import bt
+    bt.write_temp_json(data)
 
 def toiso(date):
     return date.isoformat()
@@ -39,7 +41,7 @@ def get_can_claim(data):
 
 def convert_timestamp_to_iso_date(timestamp):
     # Convert from microseconds to milliseconds
-    milliseconds = int(timestamp) / 1000
+    milliseconds = int(timestamp/1000) 
     # Create a new Date object
     date = datetime.utcfromtimestamp(milliseconds)
     # Return the date in the specified format
@@ -338,11 +340,16 @@ def get_about(data):
 def get_menu(data):
     link = safe_get(data, 6, 38, 0)
     source = safe_get(data, 6, 38, 1)
-    return {"link": clean_link(link), "source": source}
+
+    if link or source:
+        return {"link": clean_link(link), "source": source}
 
 
 def get_review_images(data):
-    return [x[6][0] for x in data]
+    ls = []
+    for x in data:
+            ls.append(safe_get(x, 1,6,0))
+    return ls
 
 
 def extract_google_maps_contributor_url(input_url):
@@ -374,55 +381,59 @@ def generate_google_reviews_url(placeid, query, authuser, hl, gl):
 
 
 def get_user_reviews(data):
-    rvs = safe_get(data, 6, 52, 0) or []
+    rvs = safe_get(data, 6, 175, 9, 0, 0) or []
     ls = []
+
+    
     for element in rvs:
-        name, profile_picture, when, rating, description = (
-            element[0][1],
-            element[0][2],
-            element[1],
-            element[4],
-            element[3],
+        element = element[0]
+        # todo when
+        when, rating, description = (
+            safe_get(element,1, 6),
+            safe_get(element,2, 0, 0),
+            safe_get(element, 2, 15, 0, 0),
         )
         # ChdDSUhNMG9nS0VJQ0FnSUNKeHJUYzJnRRAB
+        images = get_review_images(safe_get(element, 2, 2) or [])
+        review_id = element[0]
 
-        review_id = element[10]
+        # 2, 15, 1, 0
+        review_translated_text = safe_get(element, 2, 15, 1, 0)
+        #v 3 14 0 1
+        response_from_owner_translated_text = safe_get(element, 3 ,14, 1, 0) or None
+        #v 3 14 0 0
+        response_from_owner_text = safe_get(element, 3 ,14, 0, 0) or None
 
-        review_translated_text = element[47]
-        response_from_owner_translated_text = safe_get(element, 9, 5) or None
-        reviewer_url = extract_google_maps_contributor_url(safe_get(element, 60, 0))
+        published_at_date = safe_get(element, 1,2) or safe_get(element, 1,3) or None
+        if published_at_date:
+            published_at_date = convert_timestamp_to_iso_date(published_at_date/1000)
 
-        response_from_owner_text = safe_get(element, 9, 1) or None
-
-        response_from_owner_ago = safe_get(element, 9, 0) or None
+        
+        response_from_owner_ago = safe_get(element, 3, 3) or safe_get(element, 3, 4) or None
         response_from_owner_date = (
-            safe_get(element, 9, 3) or safe_get(element, 9, 4) or None
+            safe_get(element, 3,1) or safe_get(element, 3,2) or None
         )
+        
         if response_from_owner_date:
             response_from_owner_date = convert_timestamp_to_iso_date(
-                response_from_owner_date
+                response_from_owner_date/1000
             )
+        
+        
 
-        published_at_date = safe_get(element, 27) or safe_get(element, 57) or None
-        if published_at_date:
-            published_at_date = convert_timestamp_to_iso_date(published_at_date)
+        total_number_of_reviews_by_reviewer = safe_get(element, 1,4, 0, 1)
+        total_number_of_photos_by_reviewer = safe_get(element, 1,4, 0, 2)
+        review_likes_count = safe_get(element, 4,1)
 
-        images = get_review_images(element[14] or [])
-
-        total_number_of_reviews_by_reviewer = element[12][1][1]
-        total_number_of_photos_by_reviewer = element[12][1][2]
-
-        review_likes_count = element[16]
-
-        is_local_guide = safe_get(element, 12, 1, 0, 2)
+        is_local_guide = safe_get(element, 1, 4, 0, 12,0)
+        # Flaky in nature works only for english language
         if is_local_guide is not None:
-            is_local_guide = is_local_guide > 0
+            is_local_guide = "local " in is_local_guide.lower()
         else:
             is_local_guide = False
-
-        ls.append(
-            {
-                "review_id_hash": md5(review_id.encode("utf-8")).hexdigest(),
+        
+        item = {
+                "review_id": review_id,
                 "rating": rating,
                 "review_text": description,
                 "published_at": when,
@@ -438,8 +449,9 @@ def get_user_reviews(data):
                 "response_from_owner_translated_text": response_from_owner_translated_text,
                 "review_photos": images,
             }
+        ls.append(
+            item, 
         )
-
     return ls
 
 
@@ -749,7 +761,6 @@ def extract_data(input_str, link):
     address = get_address(data)
     website = get_website(data)
     main_category = get_main_category(data)
-    user_reviews = get_user_reviews(data)
 
     review_keywords = get_review_keywords(data)
 
@@ -759,6 +770,7 @@ def extract_data(input_str, link):
     popular_times = extract_popular_times(data)
     most_popular_times = extract_most_popular_times(popular_times)
     is_claimed = get_can_claim(data)
+    user_reviews = get_user_reviews(data)
     
     # from botasaurus import bt
     # bt.write_temp_json(data)

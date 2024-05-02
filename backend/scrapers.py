@@ -133,7 +133,7 @@ featured_reviews_view = View(
         ExpandListField(
             "featured_reviews",
             fields=[
-                Field("review_id_hash"),
+                Field("review_id"),
                 Field("rating"),
                 Field("review_text"),
                 Field("published_at"),
@@ -161,7 +161,7 @@ detailed_reviews_view = View(
         ExpandListField(
             "detailed_reviews",
             fields=[
-                Field("review_id_hash"),
+                Field("review_id"),
                 Field("rating"),
                 Field("review_text"),
                 Field("published_at"),

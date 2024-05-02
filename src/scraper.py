@@ -1,6 +1,5 @@
 import traceback
 from botasaurus import cl, bt
-from hashlib import md5
 from botasaurus.cache import DontCache
 from src.extract_data import extract_data, perform_extract_possible_map_link
 from src.scraper_utils import create_search_link, perform_visit
@@ -70,7 +69,7 @@ def process_reviews(reviews):
 
         lk = review.get("likes")
         processed_review = {
-            "review_id_hash": md5(review.get("review_id").encode('utf-8')).hexdigest(),
+            "review_id": review.get("review_id"),
             "rating": int(review.get("rating")),
             "review_text": review.get("text"),
             "published_at": review.get("relative_date"),
@@ -359,5 +358,7 @@ return get_sponsored_links()''')
 
 # python -m src.scraper
 if __name__ == "__main__":
-    print(scrape_places({'query': 'Web Developers   in Bangalore', 'max': 1, 'lang': None, 'geo_coordinates': '', 'zoom': 14, 'links':[]}))
+    # scrape_places({'query': 'Restaurant in delhi', 'max': 1, 'lang': None, 'geo_coordinates': '', 'zoom': 14, 'links':[]})
+    # scrape_places({'query': 'Restaurant in delhi', 'max': 1, 'lang': None, 'geo_coordinates': '', 'zoom': 14, 'links':[]})
+    scrape_places({'query': 'Web Developers   in Bangalore', 'max': 1, 'lang': 'hi', 'geo_coordinates': '', 'zoom': 14, 'links':[]})
     # print(scrape_place(["https://www.google.com/maps/place/Hisn+Yakka/@38.6089019,-1.1214893,17z/data=!3m1!4b1!4m6!3m5!1s0xd63fd22e0c22e1f:0xc2d606310f68bc26!8m2!3d38.6089019!4d-1.1214893!16s%2Fg%2F11p06xtf82?authuser=0&entry=ttu"] , metadata={}))b
