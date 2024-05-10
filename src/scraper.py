@@ -182,12 +182,11 @@ class StuckInGmapsException(Exception):
 
 
 @browser(
-    keep_drivers_alive=True, 
-    reuse_driver=True, 
     lang=get_lang,
     close_on_crash=True,
     max_retry = 3,
-    headless=True,
+    # headless=True,
+    headless=False,
     output=None,
 )
 def scrape_places(driver:Driver, data):
