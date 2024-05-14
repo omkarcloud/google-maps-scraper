@@ -16,7 +16,7 @@ You can easily run the scraper in Gitpod, a browser-based development environmen
    ```bash
    python run.py
    ```
-4. You will see a popup notification with the heading "A service is available on port 3000". In the popup notification, press the **"Open Browser"** button to open the UI Dashboard in your browser
+4. You will see a popup notification with the heading "A service is available on port 3000". In the popup notification, click the **"Open Browser"** button to open the UI Dashboard in your browser
 
    ![open-browser.png](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/open-browser.png)
 

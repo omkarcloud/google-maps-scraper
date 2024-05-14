@@ -216,6 +216,11 @@ To find the exact results you're looking for, click the "Show Filters" button an
 
 Download results in various formats (CSV, JSON, Excel) using the export button.
 
+### ❓ How many search results can I get in a single query?
+
+Google Maps give at most 120 results per search query. Don't worry about running out of data, as you can always use country-level scraping to scrape thousands of cities.
+
+
 ### ❓ How can I access additional information like websites, phone numbers, geo-coordinates, and price ranges?
 
 Free versions shows only a limited set of data points, the fields are hidden with "*". To access additional datapoints, consider upgrading to the Pro Version:
