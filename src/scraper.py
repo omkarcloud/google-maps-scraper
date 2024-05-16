@@ -123,7 +123,6 @@ def scrape_reviews(requests, data):
 
     close_on_crash=True,
     output=None,
-    use_stealth=True, 
 
     # TODO: IMPLEMENT AND UNCOMMENT
     max_retry=5,
@@ -185,8 +184,7 @@ class StuckInGmapsException(Exception):
     lang=get_lang,
     close_on_crash=True,
     max_retry = 3,
-    # headless=True,
-    headless=False,
+    headless=True,
     output=None,
 )
 def scrape_places(driver:Driver, data):
@@ -359,5 +357,5 @@ return get_sponsored_links()''')
 if __name__ == "__main__":
     # scrape_places({'query': 'Restaurant in delhi', 'max': 1, 'lang': None, 'geo_coordinates': '', 'zoom': 14, 'links':[]})
     # scrape_places({'query': 'Restaurant in delhi', 'max': 1, 'lang': None, 'geo_coordinates': '', 'zoom': 14, 'links':[]})
-    scrape_places({'query': 'Web Developers   in Bangalore', 'max': 1, 'lang': 'hi', 'geo_coordinates': '', 'zoom': 14, 'links':[]})
+    print(scrape_places({'query': 'Web Developers   in Bangalore', 'max': 1, 'lang': 'hi', 'geo_coordinates': '', 'zoom': 14, 'links':[]}))
     # print(scrape_place(["https://www.google.com/maps/place/Hisn+Yakka/@38.6089019,-1.1214893,17z/data=!3m1!4b1!4m6!3m5!1s0xd63fd22e0c22e1f:0xc2d606310f68bc26!8m2!3d38.6089019!4d-1.1214893!16s%2Fg%2F11p06xtf82?authuser=0&entry=ttu"] , metadata={}))b
