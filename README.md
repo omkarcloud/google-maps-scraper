@@ -216,6 +216,13 @@ To find the exact results you're looking for, click the "Show Filters" button an
 
 Download results in various formats (CSV, JSON, Excel) using the export button.
 
+
+#### Api Page ('/api-integration')
+
+![api-integration-page.png](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/api-integration-page.png)
+
+The API Page provides documentation on integration of the Google Maps Scraper into your application via a REST API, for running tasks, getting results, and managing tasks.
+
 ### ❓ How many search results can I get in a single query?
 
 Google Maps give at most 120 results per search query. Don't worry about running out of data, as you can always use country-level scraping to scrape thousands of cities.
