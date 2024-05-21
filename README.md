@@ -315,7 +315,7 @@ It handled the hardest parts of our scraper, such as:
 
 - Creating a gorgeous UI dashboard with task management features
 - Sorting, filtering, and exporting data as CSV, JSON, Excel, etc.
-- Caching, parallel and asynchronous scraping, and anti-detection measures
+- Caching, parallel and asynchronous scraping
 - Built-in integration with Kubernetes, Docker, Server, Gitpod, and a REST API
 
 If you're a web scraper, I really recommend learning about Botasaurus [here](https://github.com/omkarcloud/botasaurus)  🚀.
