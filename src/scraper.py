@@ -131,9 +131,12 @@ def scrape_reviews(requests, data):
 )
 def scrape_place(requests, link, metadata):
         cookies = metadata["cookies"]
-        
+        os = metadata["os"]
+        user_agent = metadata["user_agent"]
         try:
-            html =  requests.get(link,cookies=cookies, timeout=12,).text
+            html =  requests.get(link,cookies=cookies, 
+                                 browser='chrome',
+                                 os=os, user_agent=user_agent, timeout=12,).text
             # Splitting HTML to get the part after 'window.APP_INITIALIZATION_STATE='
             initialization_state_part = html.split(';window.APP_INITIALIZATION_STATE=')[1]
 
@@ -225,7 +228,7 @@ return get_sponsored_links()''')
                 
                 WAIT_TIME = 40 # WAIT 40 SECONDS
 
-                metad = {"cookies":driver.get_cookies_dict()}
+                metad = {"cookies":driver.get_cookies_dict(), "os": bt.get_os(), "user_agent" : driver.user_agent}
                 if data['links']:
                   scrape_place_obj.put(data['links'], metadata = metad)
                   return
@@ -258,7 +261,6 @@ return get_sponsored_links()''')
                         
                             
                         scrape_place_obj.put(links, metadata = metad)
-
 
                         if max_results is not None and len(links) >= max_results:
                             return
