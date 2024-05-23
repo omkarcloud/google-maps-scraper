@@ -138,6 +138,19 @@ tasks = api.create_sync_tasks(${x}data_items)
 \`\`\``
 }
 
+
+function create_scraper_task_data_text(scraper_name, hasSingleScraper) {
+  let x = hasSingleScraper ? '' : `, scraper_name='${scraper_name}'`
+  
+
+  return `(data${x})`
+}
+
+function create_scraper_task_data_text2(scraper_name, hasSingleScraper) {
+  let x = hasSingleScraper ? '' : `, scraper_name='${scraper_name}'`
+  return `(data_items${x})`
+}
+
 function create_filter_string(filters) {
   return `\n    filters=${filters_to_python_dict_string(filters, 8, 4)}`  
 }
@@ -359,7 +372,7 @@ api = Api()
 
 # Create an asynchronous task
 data = ${js_object_to_python_dict_string(default_data)}
-task = api.create_sync_task(data, scraper_name='scrape_heading_task')
+task = api.create_sync_task${create_scraper_task_data_text(scraper_name, hasSingleScraper)}
 
 # Fetch the task
 task = api.get_task(task['id'])
@@ -383,7 +396,7 @@ data_items = [
 ${js_object_to_python_dict_string(default_data, 8, 4)},
 ${js_object_to_python_dict_string(default_data, 8, 4)},
 ]
-tasks = api.create_sync_tasks(data_items, scraper_name='scrape_heading_task')
+tasks = api.create_sync_tasks${create_scraper_task_data_text2(scraper_name, hasSingleScraper)}
 
 # Fetch all tasks
 all_tasks = api.get_tasks()
