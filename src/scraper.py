@@ -237,7 +237,7 @@ return get_sponsored_links()''')
                         '[role="feed"]', Wait.LONG)
                     if el is None:
                         if driver.is_in_page("/maps/search/"):
-                            link = extract_possible_map_link(driver.page_source)
+                            link = extract_possible_map_link(driver.page_html)
                             if link:
                                 rst = [link]
                                 scrape_place_obj.put(rst, metadata = metad)

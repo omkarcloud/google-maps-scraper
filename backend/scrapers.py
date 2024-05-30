@@ -272,7 +272,7 @@ best_customers = sorts.Sort(
     label="Best Potential Customers",
     is_default=True,
     sorts=[
-        sorts.NumericAscendingSort("name"),
+        sorts.AlphabeticAscendingSort("name"),
         sorts.NumericDescendingSort("reviews"),
         sorts.TrueFirstSort("website"),
         sorts.TruthyFirstSort(
