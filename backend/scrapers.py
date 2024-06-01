@@ -1,12 +1,11 @@
 from botasaurus_server.server import Server
 from src.gmaps import get_places
 import random
-from botasaurus_server.ui import View, Field, ExpandDictField, ExpandListField, filters, sorts
+from botasaurus_server.ui import View, Field, ExpandDictField, ExpandListField, filters, sorts, CustomField
 from botasaurus import cl
 import urllib.parse
 from .country import get_cities
 from .category import category_options
-
 def convert_to_string(input_str):
     return urllib.parse.unquote_plus(input_str).strip()
 
@@ -206,7 +205,10 @@ def competitors_to_string(data):
 
 
 def join_review_keywords(data, record):
-    return ", ".join([kw["keyword"] for kw in data])
+    if isinstance(data, list):
+        return ", ".join([kw["keyword"] for kw in data])
+    else:
+        return data
 
 
 def join_closed_on(data, record):
@@ -216,7 +218,7 @@ def join_closed_on(data, record):
         return data
 
 
-join_with_commas = lambda value, record: ", ".join(value or [])
+join_with_commas = lambda value, record:  ", ".join(value or []) if isinstance(value, list) else value
 
 social_fields = [
     Field("emails", map=join_with_commas),
@@ -242,19 +244,8 @@ overview_view = View(
     ]
     + social_fields
     + [
-        ExpandDictField(
-            "owner",
-            fields=[
-                Field(
-                    "name",
-                    output_key="owner_name",
-                ),
-                Field(
-                    "link",
-                    output_key="owner_profile_link",
-                ),
-            ],
-        ),
+        CustomField("owner_name" ,map=lambda value: "*****"),
+        CustomField("owner_profile_link", map=lambda value: "*****"),
         Field("featured_image"),
         Field("main_category"),
         Field("categories", map=join_with_commas),
@@ -278,9 +269,9 @@ best_customers = sorts.Sort(
         sorts.TruthyFirstSort(
             "linkedin",
             ),
-            sorts.TrueFirstSort(
-            "is_spending_on_ads",
-        ),
+        #     sorts.TrueFirstSort(
+        #     "is_spending_on_ads",
+        # ),
     ],
 )
 
