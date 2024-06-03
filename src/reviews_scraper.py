@@ -326,10 +326,7 @@ class GoogleMapsAPIScraper:
         # Saving file
         new_var = f"output/place_{name}_request_{n}_{self._ts()}.html"
         print(new_var)
-        with open(
-            new_var, "w", encoding="utf-8"
-        ) as f:
-            f.writelines(str(response_text) + "\n\n" + msg)
+        bt.write_html(str(response_text) + "\n\n" + msg, new_var)
 
 
     def _parse_review(self, review: Tag, hl) -> dict:
