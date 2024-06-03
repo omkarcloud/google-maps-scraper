@@ -1,5 +1,5 @@
 botasaurus
-botasaurus_server
+botasaurus-server
 dateutils
 lxml
 regex

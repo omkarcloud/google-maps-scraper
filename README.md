@@ -240,7 +240,7 @@ Free versions shows only a limited set of data points, the fields are hidden wit
 
 With all these additional data points, you will be able to truly harness the power of Google Maps.
 
-The Pro Version is a one-time investment with lifetime updates and absolutely zero risk because we offer a generous **90-Day Refund Policy!**
+The Pro Version is a one-time investment with lifetime updates and absolutely **0** risk because we offer a generous **90-Day Refund Policy!**
 
 ### ❓ How to Get the Pro Version?
 
