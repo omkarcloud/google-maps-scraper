@@ -201,9 +201,23 @@ const InputFields = ({
             )
             break
           case 'listOfTexts':
+            inputElement = (
+              <ListOfTextFields
+              id={id}
+              islinks={false}
+                title={disabledMsg}
+                disabled={disabled}
+                placeholder={(control as any).placeholder}
+                value={data[id]}
+                onChange={value => handleInputChange(id, value)}
+              />
+            )
+            break
           case 'listOfLinks':
             inputElement = (
               <ListOfTextFields
+              id={id}
+              islinks={true}
                 title={disabledMsg}
                 disabled={disabled}
                 placeholder={(control as any).placeholder}

@@ -353,7 +353,12 @@ export const globalStyles = css`
   ::-webkit-scrollbar {
     width: 4px;
   }
-
+  
+  .scrollable-lt {
+    max-height: 512px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
   nav.euiCollapsibleNav,
   .euiOverlayMask {
     top: 48px;

@@ -21,8 +21,7 @@ const tabs = [
     content: <></>,
   },
 ]
-
-const PagesTabs = ({ initialSelectedTab }) => {
+const PagesTabs = ({ initialSelectedTab, onTabChange = null }) => {
   const [selectedTabId, setSelectedTabId] = useState(initialSelectedTab)
   const router = useRouter()
 
@@ -30,9 +29,12 @@ const PagesTabs = ({ initialSelectedTab }) => {
     setSelectedTabId(initialSelectedTab)
   }, [initialSelectedTab])
 
-  const onTabChange = tab => {
+  const handleTabChangeFn = tab => {
     setSelectedTabId(tab.id)
     pushToRoute(router, tab.route)
+    if (onTabChange) {
+      onTabChange(tab.id)
+    }
   }
 
   return (
@@ -40,7 +42,7 @@ const PagesTabs = ({ initialSelectedTab }) => {
       className="mt-2"
       tabs={tabs}
       selectedTab={selectedTabId}
-      onTabChange={onTabChange}
+      onTabChange={handleTabChangeFn}
     />
   )
 }

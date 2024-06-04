@@ -8,7 +8,6 @@ import { Container, TabWrapper } from '../components/Wrappers'
 import AuthedDashboard from '../layouts/AuthedDashboard'
 import Api from '../utils/api'
 import { create_title } from '../utils/common'
-import Links from '../utils/data/links'
 
 // Create a Container Component adds padding
 
