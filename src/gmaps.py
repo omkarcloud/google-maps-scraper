@@ -330,8 +330,8 @@ def get_places(_, data):
     result_item = process_result(key, scrape_reviews, reviews_max, reviews_sort, lang, should_scrape_socials, places_obj)
     
     pc = result_item["places"]
-    all_fs = ['place_id', 'name', 'description', 'is_spending_on_ads', 'reviews', 'competitors', 'website', 'can_claim', 'emails', 'phones', 'linkedin', 'twitter', 'facebook', 'youtube', 'instagram', 'pinterest', 'github', 'snapchat', 'tiktok', 'owner', 'featured_image', 'main_category', 'categories', 'rating', 'workday_timing', 'closed_on', 'phone', 'address', 'review_keywords', 'link', 'status', 'price_range', 'reviews_per_rating', 'featured_question', 'reviews_link', 'coordinates', 'plus_code', 'detailed_address', 'time_zone', 'cid', 'data_id', 'about', 'images', 'hours', 'most_popular_times', 'popular_times', 'menu', 'reservations', 'order_online_links', 'featured_reviews', 'detailed_reviews']
-    pc = [sort_dict_by_keys({**x, **default_addition}, all_fs) for x in pc]
+    # all_fs = ['place_id', 'name', 'description', 'is_spending_on_ads', 'reviews', 'competitors', 'website', 'can_claim', 'emails', 'phones', 'linkedin', 'twitter', 'facebook', 'youtube', 'instagram', 'pinterest', 'github', 'snapchat', 'tiktok', 'owner', 'featured_image', 'main_category', 'categories', 'rating', 'workday_timing', 'closed_on', 'phone', 'address', 'review_keywords', 'link', 'status', 'price_range', 'reviews_per_rating', 'featured_question', 'reviews_link', 'coordinates', 'plus_code', 'detailed_address', 'time_zone', 'cid', 'data_id', 'about', 'images', 'hours', 'most_popular_times', 'popular_times', 'menu', 'reservations', 'order_online_links', 'featured_reviews', 'detailed_reviews']
+    # pc = [sort_dict_by_keys({**x, **default_addition}, all_fs) for x in pc]
     final_result = pc
     
     # fiels sorting is necessary as well

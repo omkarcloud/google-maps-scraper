@@ -39,7 +39,7 @@ def prepend_to_strings(strings_list, prepend_str, ):
     Prepend a given string to each item in a list of strings.
     """
     # Ensure the prepend_str ends with a space
-    prepend_str = prepend_str + " in "
+    prepend_str = prepend_str + "  "
     return [prepend_str + s for s in strings_list]
 
 
