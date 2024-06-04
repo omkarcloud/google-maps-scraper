@@ -23,6 +23,14 @@ import Toast from '../../utils/cogo-toast'
 import ClickOutside from '../ClickOutside/ClickOutside'
 import { isEmpty } from '../../utils/missc'
 import CenteredSpinner from '../CenteredSpinner'
+import Description from '../../components/Description/Description'
+import Tabs, { TabsId } from '../../components/PagesTabs/PagesTabs'
+import {
+  OutputContainer,
+  OutputTabsContainer,
+  TabWrapper,
+} from '../../components/Wrappers'
+import ServerStatusComponent from '../../components/ServerStatusComponent'
 
 function convertLocalDateToUTCDate(date, toUTC) {
   date = new Date(date)
@@ -317,7 +325,9 @@ const TaskTable = ({ activePage, onPageClick, isLoading, total_pages, tasks, upd
   )
 }
 
-const OutputComponent = ({ scrapers, tasks: taskResponse }) => {
+
+const OutputComponent = (props) => {
+  const { scrapers, tasks: taskResponse }  = props
 
   const [state, setState] = useState({ ...taskResponse, active_page: 1 })
   const [isLoading, setLoading] = useState(false)
@@ -370,17 +380,32 @@ const OutputComponent = ({ scrapers, tasks: taskResponse }) => {
     }
     fetchData()
   }
-
+  let cp
   if (!scrapers || scrapers.length === 0) {
-    return <EmptyScraper />
+    cp =  <EmptyScraper />
   }
 
-  if (results && results.length === 0) {
-    return <EmptyOutputs />
+  else if (results && results.length === 0) {
+    cp =  <EmptyOutputs />
+  }else {
+
+    cp =  <TaskTable activePage={active_page} onPageClick={x => onPageChange(x + 1)} isLoading={isLoading} total_pages={total_pages} tasks={results} updateTasks={updateState} />
   }
-  return (
-    <TaskTable activePage={active_page} onPageClick={x => onPageChange(x + 1)} isLoading={isLoading} total_pages={total_pages} tasks={results} updateTasks={updateState} />
-  )
+  return <> <OutputTabsContainer>
+          <ServerStatusComponent/>
+          <Description {...props} />
+          <Tabs onTabChange={(id) =>{
+            if (id === TabsId.OUTPUT){
+              onPageChange(1)
+            }
+          }} initialSelectedTab={TabsId.OUTPUT} />
+        </OutputTabsContainer>
+        <OutputContainer>
+          <TabWrapper>
+            {cp}
+          </TabWrapper>
+        </OutputContainer>
+  </>
 }
 
 export default OutputComponent

@@ -19,17 +19,8 @@ const Page = ({ tasks, ...props }: any) => {
       <Seo {...props} title={'Output'} />
 
       <AuthedDashboard {...props}>
-        <OutputTabsContainer>
-          <ServerStatusComponent/>
-          <Description {...props} />
-          <Tabs initialSelectedTab={TabsId.OUTPUT} />
-        </OutputTabsContainer>
-        <OutputContainer>
-          
-          <TabWrapper>
-            <OutputComponent {...props} tasks={tasks} />
-          </TabWrapper>
-        </OutputContainer>
+      <OutputComponent {...props} tasks={tasks} />
+        
       </AuthedDashboard>
     </>
   )

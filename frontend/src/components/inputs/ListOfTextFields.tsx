@@ -1,12 +1,72 @@
 import {
   EuiButton,
+  EuiButtonEmpty,
   EuiButtonIcon,
   EuiFieldText,
   EuiFlexGroup,
   EuiFlexItem,
+  EuiModal,
+  EuiModalBody,
+  EuiModalFooter,
+  EuiModalHeader,
+  EuiModalHeaderTitle,
 } from '@elastic/eui'
+import { useState } from 'react'
+import ClickOutside from '../ClickOutside/ClickOutside'
+import TextAreaField from './TextAreaField'
 
-const ListOfTextFields = ({ value, onChange, placeholder , disabled, title}) => {
+function isEmpty(x: any) {
+  return (
+    x === null || x === undefined || (typeof x == "string" && x.trim() === "")
+  )
+}
+function isValidHttpUrl(string: any) {
+  let url: any
+
+  try {
+    url = new URL(string)
+  } catch (_) {
+    return false
+  }
+
+  return url.protocol === "http:" || url.protocol === "https:"
+}
+
+
+function isNotEmpty(x: any) {
+  return !isEmpty(x)
+}
+
+function isBulkEdit(value, islinks) {
+  if (islinks) {
+    for (let index = 0; index < value.length; index++) {
+      const element = value[index];
+      if (isValidHttpUrl(element)){
+        return true
+      }
+    }
+  }else {
+    for (let index = 0; index < value.length; index++) {
+      const element = value[index];
+      if (isNotEmpty(element)){
+        return true
+      }
+    }
+  }
+  return false
+
+}
+
+const ListOfTextFields = ({ id,islinks, value, onChange, placeholder , disabled, title}) => {
+  const [showModal, setShowModal] = useState(false)
+
+  const closeModal = () => {
+    setShowModal(false)
+  }
+  
+  const openModal = () => {
+    setShowModal(true)
+  }
   const handleFieldChange = (index, newValue) => {
     const updatedValue = value.map((item, i) => (i === index ? newValue : item))
     onChange(updatedValue)
@@ -22,8 +82,10 @@ const ListOfTextFields = ({ value, onChange, placeholder , disabled, title}) => 
   }
 
   return (
-    <div  >
-      <div  className={value.length ? 'mb-3' : undefined}>
+    <div >
+{showModal && (
+  <Modal id={id} value={value} onChangeValue={onChange} islinks={islinks} closeModal={closeModal} /> )}      
+      <div  className={value.length ? value.length >= 8 ?'mb-3 scrollable-lt pr-4' :'mb-3 pr-4' : 'pr-4'}>
         {value.map((item, index) => (
           <EuiFlexGroup key={index} alignItems="center">
             <EuiFlexItem>
@@ -49,11 +111,93 @@ const ListOfTextFields = ({ value, onChange, placeholder , disabled, title}) => 
           </EuiFlexGroup>
         ))}
       </div>
-      <EuiButton title={title}  disabled={disabled} onClick={handleAddField} iconType="plusInCircle">
+      <EuiButton className='mr-2' title={title}  disabled={disabled} onClick={handleAddField} iconType="plusInCircle">
         Add Field
       </EuiButton>
+       <EuiButtonEmpty 
+      color='text'
+      onClick={openModal}>{isBulkEdit(value, islinks) ? 'Bulk Edit': 'Bulk Add' }</EuiButtonEmpty>
+
     </div>
   )
 }
 
 export default ListOfTextFields
+
+function stripChars(input) {
+  // Remove " or ' from the start of the string
+  let result = input.replace(/^[\'\"]+/, '');
+  // Remove , from the end of the string
+  result = result.replace(/,$/, '');
+  // Remove " or ' from the end of the string
+  result = result.replace(/[\'\"]+$/, '');
+  return result;
+}
+
+function parseStringToList(input) {
+  input = input.trim();
+
+  // Handle empty string
+  if (input === '') {
+    return [];
+  }
+
+  try {
+      // Try to parse as JSON
+      const jsonList =  JSON.parse(input);
+      if (Array.isArray(jsonList)) {
+        return jsonList.map(x=>`${x}`.trim())
+      }
+  } catch (e) {
+      return input.split(/[\n,]+/).map(s => stripChars(s).trim());
+  }
+}
+
+function computeItemsLen(value:any[], islinks) {
+  const a = value.filter(islinks ?isValidHttpUrl :isNotEmpty).length
+  return (a > 0 ? ` ${a} `: ' ') + ( islinks ? (a === 1 ? "Link":"Links" ): (a === 1 ?"Item" :"Items"))
+}
+
+function Modal({ closeModal, id, value, onChangeValue, islinks }) {
+  const [modaltext, onChangeModalText] = useState(() => value.filter(islinks ?isValidHttpUrl :isNotEmpty).map(x=>x.trim()).join('\n'))
+  
+  return <EuiModal onClose={closeModal}>
+    <ClickOutside handleClickOutside={() => { closeModal() } }>
+      <div style={{ minWidth: 720 }}>
+        <EuiModalHeader>
+          <EuiModalHeaderTitle>Paste Items</EuiModalHeaderTitle>
+        </EuiModalHeader>
+        <EuiModalBody>
+        <TextAreaField
+    rows={12}
+    placeholder={
+     islinks ?  `Paste a list of links in one of the following formats:
+     - JSON array (e.g., [\"https://stackoverflow.com/\", \"https://apache.org/\"])
+     - Comma separated (e.g., https://stackoverflow.com/, https://apache.org/)
+     - Newline separated, e.g. 
+          https://stackoverflow.com/
+          https://apache.org/`: `Paste a list of items in one of the following formats:
+      - JSON array (e.g., [\"apple\", \"guava\"])
+      - Comma separated (e.g., apple, guava)
+      - Newline-separated, e.g. 
+          apple
+          guava`}
+    name={id}
+    value={modaltext}
+    onChange={onChangeModalText} />
+            </EuiModalBody>
+        <EuiModalFooter>
+          <EuiButtonEmpty onClick={closeModal}>Cancel</EuiButtonEmpty>
+          <EuiButton onClick={() => {
+            const x = parseStringToList(modaltext).filter(islinks ? isValidHttpUrl : isNotEmpty).map(x=>x.trim())
+            onChangeValue(x)
+            closeModal()
+          } }>
+            {'Add' + computeItemsLen(parseStringToList(modaltext), islinks) }
+          </EuiButton>
+        </EuiModalFooter>
+
+      </div>
+    </ClickOutside>
+  </EuiModal>
+}

@@ -187,6 +187,7 @@ class StuckInGmapsException(Exception):
     lang=get_lang,
     close_on_crash=True,
     max_retry = 3,
+    reuse_driver=True,
     headless=True,
     output=None,
 )
@@ -293,7 +294,9 @@ return get_sponsored_links()''')
     search_link = create_search_link(data['query'], data['lang'], data['geo_coordinates'], data['zoom'])
     
     perform_visit(driver, search_link)
-    
+
+    if driver.is_in_page('/sorry/'):
+        raise Exception("Detected by Google, Retrying ")
     
     STALE_RETRIES = 5
     # TODO
@@ -319,7 +322,7 @@ return get_sponsored_links()''')
                       )
     # todo remove check later      
       if driver.config.is_retry:
-          print("This time, Google Maps did not get stuck while scrolling and successfully scrolled to the end.")
+          print("Successfully scrolled to the end.")
     
     except StuckInGmapsException as e:
       if driver.config.is_last_retry:
