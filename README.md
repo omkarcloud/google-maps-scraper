@@ -54,17 +54,20 @@ Google Maps Scraper helps you find Business Profiles from Google Maps.
 
 ## ⚡ Benefits
 
-1. Easy-to-use, friendly dashboard.
 
-2. Limitless scraping: Say sayonara to costly subscriptions or expensive pay-per-result fees.
+1. Absolutely, 0 risk as we offer a generous 90-Day No Question Asked Refund Policy!
 
-3. Highly scalable, capable of running on Kubernetes, Docker, and servers.
+2. Easy-to-use, friendly dashboard.
 
-4. Scrape data for a specific type of business across all cities in a country.
+3. Limitless scraping: Say sayonara to costly subscriptions or expensive pay-per-result fees.
 
-5. Get the exact results you need by easily sorting, filtering, and exporting data as CSV, Excel, or JSON files.
+4. Highly scalable, capable of running on Kubernetes, Docker, and servers.
 
-6. Scrape reviews while ensuring the privacy of reviewers is maintained.
+5. Scrape data for a specific type of business across all cities in a country.
+
+6. Get the exact results you need by easily sorting, filtering, and exporting data as CSV, Excel, or JSON files.
+
+7. Scrape reviews while ensuring the privacy of reviewers is maintained.
 
 In the next 5 minutes, you'll extract **120 Search Results** from Google Maps.
 
@@ -79,8 +82,7 @@ To use this tool, you'll need:
 
 **Don't have Node.js or Python? No problem!**  
 
-You can easily run this tool within Gitpod, a cloud-based development environment. We'll cover how to set that up later. 
-
+You can easily run this tool within Gitpod, a cloud-based development environment, by following [these steps](https://github.com/omkarcloud/google-maps-scraper/blob/master/advanced.md#-i-dont-have-python-or-im-facing-errors-when-setting-up-the-scraper-on-my-pc-how-to-solve-it).
 ## 🚀 Getting Started
 
 Let's get started by following these super simple steps:
@@ -168,7 +170,7 @@ The first 200 contact details are free to scrape with the API. After that, you c
 - Scrape Reviews
 ![reviews-section](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/reviews-section.png)
 
-Kindly note that due to privacy concerns, we do not scrape personally identifiable information of reviewers, such as names, profile photos, and review links. We only scrape the review text, rating, owner response, and similar non-personally identifiable information.
+Kindly note that due to privacy concerns, we do not scrape personally identifiable information of reviewers, such as names, and profile photos. We only scrape the review text, rating, owner response, and similar non-personally identifiable information.
 
 #### Output Page ('/output')
 ![output-page.png](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/output-page.png)
