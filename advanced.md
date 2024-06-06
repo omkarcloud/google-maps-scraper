@@ -53,6 +53,9 @@ python -m javascript_fixes --update
 
 And then, please refollow the instructions which were sent to your GitHub email address when you purchased it.
 
+![instructions.png](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/instructions.png)
+
+
 ### ❓ Need More Help or Have Additional Questions?
 
 For further help, feel free to reach out to us through:

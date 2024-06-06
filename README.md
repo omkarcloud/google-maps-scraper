@@ -307,6 +307,7 @@ Also, the Complete $28 will be refunded to you within 24 hours, without any ques
 I recommend reading [The Cold Email Manifesto](https://www.amazon.com/Cold-Email-Manifesto-pipeline-business-ebook/dp/B0B1DYNNSL) by Alex Berman to learn how to emails that get replies. 
 
 Rest assured, I have your interest at my heart, and the above link is not an affiliate link. It's just a really awesome book, that's why I'm recommending it to you.
+
 ### ❓ This Scraper is Truly One-of-a-Kind, Something I've Never Seen Before. How Did You Build It?
 
 Thank you! We used Botasaurus, which is the secret behind our awesome Google Maps Scraper.
@@ -330,6 +331,7 @@ Trust me, learning Botasaurus will only take 20 minutes, but I guarantee it will
   </a>
 </p>
 
+
 ### ❓ Advanced Questions
 
 Having read this page, you have all the knowledge needed to effectively use the tool.
@@ -338,6 +340,7 @@ You may choose to read the following questions based on your interests:
 
 1. [I Don't Have Python, or I'm Facing Errors When Setting Up the Scraper on My PC. How to Solve It?](https://github.com/omkarcloud/google-maps-scraper/blob/master/advanced.md#-i-dont-have-python-or-im-facing-errors-when-setting-up-the-scraper-on-my-pc-how-to-solve-it)
 2. [Do I Need Proxies?](https://github.com/omkarcloud/google-maps-scraper/blob/master/advanced.md#-do-i-need-proxies)
+3. [How to Update the Scraper to the Latest Version?](https://github.com/omkarcloud/google-maps-scraper/blob/master/advanced.md#-how-to-update-the-scraper-to-the-latest-version)
 
 ### ❓ Need More Help or Have Additional Questions?
 
