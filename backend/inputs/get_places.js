@@ -48,7 +48,7 @@ function getInput(controls) {
                 .switch('enable_reviews_extraction', {
                     label: "Enable Reviews Extraction"
                 })
-                .greaterThanOrEqualToZero('max_reviews', {
+                .numberGreaterThanOrEqualToZero('max_reviews', {
                     label: 'Max Reviews per Place (Leave empty to extract all reviews)',
                     placeholder: 20,
                      isShown: (data) => data['enable_reviews_extraction'], defaultValue: 20,
