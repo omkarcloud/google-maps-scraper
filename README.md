@@ -355,7 +355,6 @@ For further help, feel free to reach out to us through:
   [![Contact Us on Email about Google Maps Scraper](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/ask-on-email.png)](mailto:chetan@omkar.cloud)
 
 We look forward to helping you and will respond to emails and whatsapp messages within 24 hours.
-Also, If buying pro version is financially challenging for you, kindly let us know :)
 
 Good Luck!
 
