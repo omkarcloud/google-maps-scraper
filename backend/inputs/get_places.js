@@ -27,7 +27,7 @@ function getInput(controls) {
                     isRequired: hasCountry
                 }
                 )
-                .greaterThanOrEqualToOne('max_cities', {
+                .numberGreaterThanOrEqualToOne('max_cities', {
                     placeholder: 100,
                     label: 'Maximum Cities to Extract (Leave empty to extract all cities in a country)'
                 }).switch('randomize_cities'  , {
@@ -61,7 +61,7 @@ function getInput(controls) {
         .section("Language and Max Results", (section) => {
             section
                 .addLangSelect()
-                .greaterThanOrEqualToOne('max_results', {
+                .numberGreaterThanOrEqualToOne('max_results', {
                     placeholder: 100,
                     label: 'Max Results per Search Query (Leave empty to extract all places)'
                 })
@@ -71,7 +71,7 @@ function getInput(controls) {
                 .text('coordinates', {
                     placeholder: '12.900490, 77.571466'
                 })
-                .greaterThanOrEqualToOne('zoom_level', {
+                .numberGreaterThanOrEqualToOne('zoom_level', {
                     label: 'Zoom Level (1-21)',
                     defaultValue: 14,
                     placeholder: 14
