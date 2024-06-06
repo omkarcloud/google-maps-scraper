@@ -40,6 +40,9 @@ def get_reviews_link(data):
 def get_title(data):
     return safe_get(data, 6, 11)
 
+def get_phone(data):
+    return safe_get(data, 6, 178, 0, 1, 1, 0)
+
 def get_rating(data):
     return safe_get(data, 6, 4, 7) or 0
 
@@ -211,7 +214,7 @@ def extract_data(input_str, link):
         reviews_link = generate_google_reviews_url(place_id, query, 0, hl, gl)
 
     title = get_title(data)
-
+    phone = get_phone(data)
     rating = get_rating(data)
     reviews = get_reviews(data)
     address = get_address(data)
@@ -223,6 +226,7 @@ def extract_data(input_str, link):
     return {
         "place_id": place_id,
         "name": title,
+        "phone": phone,
         "reviews": reviews,
         "website": website,
         "main_category": main_category,

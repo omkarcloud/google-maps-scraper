@@ -222,7 +222,6 @@ join_with_commas = lambda value, record:  ", ".join(value or []) if isinstance(v
 
 social_fields = [
     Field("emails", map=join_with_commas),
-    Field("phones", map=join_with_commas),
     Field("linkedin"),
     Field("twitter"),
     Field("facebook"),
@@ -233,29 +232,29 @@ social_fields = [
 overview_view = View(
     "Overview",
     fields=[
-        Field("place_id"),
+        # Field("place_id"),
         Field("name"),
-        Field("description"),
-        Field("is_spending_on_ads"),
-        Field("reviews"),
-        Field("competitors", map=lambda value, record: competitors_to_string(value)),
+        Field("main_category"),
+        # Field("description"),
+        Field("phone"),
+        # Field("is_spending_on_ads"),
+        # Field("reviews"),
+        # Field("competitors", map=lambda value, record: competitors_to_string(value)),
         Field("website"),
-        Field("can_claim"),
+        # Field("can_claim"),
+        Field("address"),
     ]
     + social_fields
     + [
-        CustomField("owner_name" ,map=lambda value: "*****"),
-        CustomField("owner_profile_link", map=lambda value: "*****"),
-        Field("featured_image"),
-        Field("main_category"),
-        Field("categories", map=join_with_commas),
-        Field("rating"),
-        Field("workday_timing"),
-        Field("closed_on", map=join_closed_on),
-        Field("phone"),
-        Field("address"),
-        Field("review_keywords", map=join_review_keywords),
-        Field("link"),
+        # CustomField("owner_name" ,map=lambda value: "*****"),
+        # CustomField("owner_profile_link", map=lambda value: "*****"),
+        # Field("featured_image"),
+        # Field("categories", map=join_with_commas),
+        # Field("rating"),
+        # Field("workday_timing"),
+        # Field("closed_on", map=join_closed_on),
+        # Field("review_keywords", map=join_review_keywords),
+        # Field("link"),
     ],
 )
 
@@ -285,6 +284,8 @@ Server.add_scraper(
         filters.MaxNumberInput("reviews", label="Max Reviews"),
         filters.IsTruthyCheckbox("website"),
         filters.IsTruthyCheckbox("phone"),
+        filters.IsTruthyCheckbox("emails"),
+        filters.IsTruthyCheckbox("address"),
         filters.IsTrueCheckbox("is_spending_on_ads"),
         filters.IsTrueCheckbox("can_claim"),
         filters.MultiSelectDropdown(
