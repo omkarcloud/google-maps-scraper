@@ -32,6 +32,27 @@ If you don't want to click every 30 minutes, then we encourage you to install Py
 
 No, you do not need to use proxies, you're free to run as many queries as you like.
 
+### ❓ How to Update the Scraper to the Latest Version?
+
+To update the **Free Version**, run these commands in the root directory:
+
+```bash
+git pull
+python -m pip install --upgrade bota botasaurus botasaurus-api botasaurus-requests botasaurus-driver botasaurus-proxy-authentication botasaurus-server
+python -m javascript_fixes --update
+```
+
+---
+
+To update the **Pro Version**, run these commands:
+
+```bash 
+python -m pip install --upgrade bota botasaurus botasaurus-api botasaurus-requests botasaurus-driver botasaurus-proxy-authentication botasaurus-server
+python -m javascript_fixes --update
+```
+
+And then, please refollow the instructions which were sent to your GitHub email address when you purchased it.
+
 ### ❓ Need More Help or Have Additional Questions?
 
 For further help, feel free to reach out to us through:
