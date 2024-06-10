@@ -152,7 +152,7 @@ Kindly follow these steps to use the API and get the social details of the profi
 
 1. Sign up on RapidAPI by visiting [this link](https://rapidapi.com/auth/sign-up).
 
-![Sign Up on RapidAPI](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/sign-up.png)
+![Sign Up on RapidAPI](https://raw.githubusercontent.com/omkarcloud/assets/master/images/sign-up.png)
 
 2. Subscribe to the Free Plan by visiting [this link](https://rapidapi.com/Chetan11dev/api/website-social-scraper-api/pricing).
 
@@ -301,12 +301,12 @@ Next, follow these steps to initiate a refund:
    ![PayPal Image](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/paypal.png)
 
 Also, the Complete $28 will be refunded to you within 24 hours, without any questions and without any hidden charges.
-
+<!-- 
 ### ❓ Could you share resources that would be helpful to me, as I am sending personalized emails providing people with useful services?
 
 I recommend reading [The Cold Email Manifesto](https://www.amazon.com/Cold-Email-Manifesto-pipeline-business-ebook/dp/B0B1DYNNSL) by Alex Berman to learn how to emails that get replies. 
 
-Rest assured, I have your interest at my heart, and the above link is not an affiliate link. It's just a really awesome book, that's why I'm recommending it to you.
+Rest assured, I have your interest at my heart, and the above link is not an affiliate link. It's just a really awesome book, that's why I'm recommending it to you. -->
 
 ### ❓ This Scraper is Truly One-of-a-Kind, Something I've Never Seen Before. How Did You Build It?
 
@@ -346,7 +346,7 @@ You may choose to read the following questions based on your interests:
 
 For further help, feel free to reach out to us through:
 
-- **WhatsApp:** If you prefer WhatsApp, simply send a message [here](https://api.whatsapp.com/send?phone=918295042963&text=Hi,%20I%20would%20like%20to%20learn%20more%20about%20your%20products). Also, to help me provide the best possible answer, please include as much detail as possible.
+- **WhatsApp:** If you prefer WhatsApp, simply send a message [here](https://api.whatsapp.com/send?phone=918295042963&text=Hi,%20I%20would%20like%20to%20learn%20more%20about%20your%20google%20maps%20scraper). Also, to help me provide the best possible answer, please include as much detail as possible.
 
   [![Contact Us on WhatsApp about Google Maps Scraper](https://raw.githubusercontent.com/omkarcloud/assets/master/images/whatsapp-us.png)](https://api.whatsapp.com/send?phone=918295042963&text=Hi,%20I%20would%20like%20to%20learn%20more%20about%20your%20products)
 
@@ -357,7 +357,7 @@ For further help, feel free to reach out to us through:
 
 - **Email:** If you prefer email, kindly send your queries to [chetan@omkar.cloud](mailto:chetan@omkar.cloud). Also, to help me provide the best possible answer, please include as much detail as possible.
 
-  [![Contact Us on Email about Google Maps Scraper](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/ask-on-email.png)](mailto:chetan@omkar.cloud)
+  [![Contact Us on Email about Google Maps Scraper](https://raw.githubusercontent.com/omkarcloud/assets/master/images/ask-on-email.png)](mailto:chetan@omkar.cloud)
 
 We look forward to helping you and will respond to emails and whatsapp messages within 24 hours.
 
