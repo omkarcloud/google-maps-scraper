@@ -39,7 +39,6 @@ To update the **Free Version**, run these commands in the root directory:
 ```bash
 git pull
 python -m pip install --upgrade bota botasaurus botasaurus-api botasaurus-requests botasaurus-driver botasaurus-proxy-authentication botasaurus-server
-python -m javascript_fixes --update
 ```
 
 ---
@@ -48,7 +47,6 @@ To update the **Pro Version**, run these commands:
 
 ```bash 
 python -m pip install --upgrade bota botasaurus botasaurus-api botasaurus-requests botasaurus-driver botasaurus-proxy-authentication botasaurus-server
-python -m javascript_fixes --update
 ```
 
 And then, please refollow the instructions which were sent to your GitHub email address when you purchased it.
