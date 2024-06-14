@@ -233,7 +233,7 @@ Free versions shows only a limited set of data points. To access additional data
   * [**And many more!**](https://github.com/omkarcloud/google-maps-scraper/blob/master/fields.md)
 - Get Un-Limited Search Results, Say a Big-Big NO to Websites Selling Expensive Plans
 - 100% Accurate, 45+ Data Points Extracted in Real Time
-- Only a One-Time Investment with Lifetime Updates, and Top-Notch WhatsApp Support
+- Only a One-Time Investment with Lifetime Updates, and Top-Notch WhatsApp Support for $28 Only.
 - Best of All? Absolutely. 0 Risk as We Offer a Generous 90-Day No Questions Asked Refund Guarantee
 
 [300+ Happy People](https://github.com/sponsors/omkarcloud?frequency=one-time) have already invested in the Pro Version and are reaping its benefits to grow their business.
