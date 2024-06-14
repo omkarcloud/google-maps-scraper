@@ -55,19 +55,9 @@ Google Maps Scraper helps you find Business Profiles from Google Maps.
 ## ⚡ Benefits
 
 
-1. Absolutely, 0 risk as we offer a generous 90-Day No Question Asked Refund Policy!
-
-2. Easy-to-use, friendly dashboard.
-
-3. Limitless scraping: Say sayonara to costly subscriptions or expensive pay-per-result fees.
-
-4. Highly scalable, capable of running on Kubernetes, Docker, and servers.
-
-5. Scrape data for a specific type of business across all cities in a country.
-
-6. Get the exact results you need by easily sorting, filtering, and exporting data as CSV, Excel, or JSON files.
-
-7. Scrape reviews while ensuring the privacy of reviewers is maintained.
+- Get Un-Limited Search Results, Say a Big-Big NO to Websites Selling Expensive Plans
+- 100% Accurate, 45+ Data Points Extracted in Real Time
+- Best of All? Absolutely. 0 Risk as We Offer a Generous 90-Day No Questions Asked Refund Guarantee
 
 In the next 5 minutes, you'll extract **120 Search Results** from Google Maps.
 
@@ -105,7 +95,7 @@ python run.py
 
 4️⃣ Open your browser and go to [http://localhost:3000](http://localhost:3000), then press the Run button to have 120 search results within 2 minutes. 😎
 
-![GIF of Google Maps Scraper Visit, Highlish Keyword, Run, See Results](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/demo.gif)
+![GIF of Google Maps Scraper Visit, Highlight Keyword, Run, See Results](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/demo.gif)
 
 *Note: If you don't have Node.js 16+ and Python installed or you are facing errors, follow this Simple FAQ [here](https://github.com/omkarcloud/google-maps-scraper/blob/master/advanced.md#-i-dont-have-python-or-im-facing-errors-when-setting-up-the-scraper-on-my-pc-how-to-solve-it), and you will have your search results in the next 5 Minutes*
 
@@ -232,17 +222,23 @@ Google Maps give at most 120 results per search query. Don't worry about running
 
 ### ❓ How can I access additional information like websites, phone numbers, geo-coordinates, and price ranges?
 
-Free versions shows only a limited set of data points, the fields are hidden with "*". To access additional datapoints, consider upgrading to the Pro Version:
 
-* 🌐 **Website**
-* 📞 **Phone Numbers**
-* 🌍 **Geo-Coordinates**
-* 💰 **Price Range**
-* **And many more!** Explore a full list of data points here: [https://github.com/omkarcloud/google-maps-scraper/blob/master/fields.md](https://github.com/omkarcloud/google-maps-scraper/blob/master/fields.md)
+Free versions shows only a limited set of data points. To access additional data points, consider upgrading to the Pro Version:
 
-With all these additional data points, you will be able to truly harness the power of Google Maps.
+- The Pro Version gives you access to 45+ data points, including:
+  * 🌐 **Website**
+  * 📞 **Phone Numbers**
+  * 🌍 **Geo-Coordinates**
+  * 💰 **Price Range**
+  * [**And many more!**](https://github.com/omkarcloud/google-maps-scraper/blob/master/fields.md)
+- Get Un-Limited Search Results, Say a Big-Big NO to Websites Selling Expensive Plans
+- 100% Accurate, 45+ Data Points Extracted in Real Time
+- Only a One-Time Investment with Lifetime Updates, and Top-Notch WhatsApp Support
+- Best of All? Absolutely. 0 Risk as We Offer a Generous 90-Day No Questions Asked Refund Guarantee
 
-The Pro Version is a one-time investment with lifetime updates and absolutely **0** risk because we offer a generous **90-Day Refund Policy!**
+[300+ Happy People](https://github.com/sponsors/omkarcloud?frequency=one-time) have already invested in the Pro Version and are reaping its benefits to grow their business.
+
+![customers](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/customers.png)
 
 ### ❓ How to Get the Pro Version?
 
@@ -260,7 +256,7 @@ We wholeheartedly ❤️ believe in the value our product brings for you, especi
  
 But, we also understand the reservations you might have.
 
-That's why we've put the ball in your court: **If, within the next 90 days, you feel that our product hasn’t met your expectations, don't hesitate. Reach out to us, and within 24 hours, we will gladly refund your money, no questions and no hassles.**
+That's why we've put the ball in your court: **If, within the next 90 days, you feel that our product hasn't met your expectations, don't hesitate. Reach out to us, and within 24 hours, we will gladly refund your money, no questions and no hassles.**
 
 The risk is entirely on us! because we're that confident in what we've created!
 
@@ -316,12 +312,12 @@ Botasaurus is a web scraping framework that makes life a lot easier for web scra
 
 It handled the hardest parts of our scraper, such as:
 
-- Creating a gorgeous UI dashboard with task management features
+- Creating a mastastic UI dashboard with task management features
 - Sorting, filtering, and exporting data as CSV, JSON, Excel, etc.
 - Caching, parallel and asynchronous scraping
 - Built-in integration with Kubernetes, Docker, Server, Gitpod, and a REST API
 
-If you're a web scraper, I really recommend learning about Botasaurus [here](https://github.com/omkarcloud/botasaurus)  🚀.
+If you're a web scraper, I really recommend learning about Botasaurus [here](https://github.com/omkarcloud/botasaurus) 🚀.
 
 Trust me, learning Botasaurus will only take 20 minutes, but I guarantee it will definitely save you thousands of hours in your life as a web scraper.
 
@@ -348,7 +344,7 @@ For further help, feel free to reach out to us through:
 
 - **WhatsApp:** If you prefer WhatsApp, simply send a message [here](https://api.whatsapp.com/send?phone=918295042963&text=Hi,%20I%20would%20like%20to%20learn%20more%20about%20your%20google%20maps%20scraper). Also, to help me provide the best possible answer, please include as much detail as possible.
 
-  [![Contact Us on WhatsApp about Google Maps Scraper](https://raw.githubusercontent.com/omkarcloud/assets/master/images/whatsapp-us.png)](https://api.whatsapp.com/send?phone=918295042963&text=Hi,%20I%20would%20like%20to%20learn%20more%20about%20your%20products)
+  [![Contact Us on WhatsApp about Google Maps Scraper](https://raw.githubusercontent.com/omkarcloud/assets/master/images/whatsapp-us.png)](https://api.whatsapp.com/send?phone=918295042963&text=Hi,%20I%20would%20like%20to%20learn%20more%20about%20your%20google%20maps%20scraper)
 
 
 - **GitHub Discussions:** If you believe your question could benefit the community, feel free to post it in our GitHub discussions [here](https://github.com/omkarcloud/google-maps-scraper/discussions).
@@ -359,7 +355,7 @@ For further help, feel free to reach out to us through:
 
   [![Contact Us on Email about Google Maps Scraper](https://raw.githubusercontent.com/omkarcloud/assets/master/images/ask-on-email.png)](mailto:chetan@omkar.cloud)
 
-We look forward to helping you and will respond to emails and whatsapp messages within 24 hours.
+We look forward to helping you and will respond to emails and WhatsApp messages within 24 hours.
 
 Good Luck!
 
