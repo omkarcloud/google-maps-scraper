@@ -40,7 +40,7 @@ We take the concerns of the Google Maps Scraper Project very seriously. For any 
 
 ##  Explore Our Other Awesome Products
 
-- ✅ [BOTASAURUS](https://github.com/omkarcloud/botasaurus): The All-in-One Web Scraping Framework with Anti-Detection, Parallelization, Asynchronous, and Caching Superpowers.
+- ✅ [BOTASAURUS](https://www.omkar.cloud/l/google-maps-to-botasaurus/): The All-in-One Web Scraping Framework with Anti-Detection, Parallelization, Asynchronous, and Caching Superpowers.
 
 <!-- - ✅ [GOOGLE SCRAPER](https://github.com/omkarcloud/google-scraper): Discover Search Results from Google. -->
 
@@ -317,12 +317,12 @@ It handled the hardest parts of our scraper, such as:
 - Caching, parallel and asynchronous scraping
 - Built-in integration with Kubernetes, Docker, Server, Gitpod, and a REST API
 
-If you're a web scraper, I really recommend learning about Botasaurus [here](https://github.com/omkarcloud/botasaurus) 🚀.
+If you're a web scraper, I really recommend learning about Botasaurus [here](https://www.omkar.cloud/l/google-maps-to-botasaurus/) 🚀.
 
 Trust me, learning Botasaurus will only take 20 minutes, but I guarantee it will definitely save you thousands of hours in your life as a web scraper.
 
 <p align="center">
-  <a href="https://github.com/omkarcloud/botasaurus">
+  <a href="https://www.omkar.cloud/l/google-maps-to-botasaurus/">
     <img src="https://raw.githubusercontent.com/omkarcloud/botasaurus/master/images/mascot.png" alt="botasaurus" />
   </a>
 </p>
@@ -367,4 +367,4 @@ It's just one click, but it means the world to me.
 
 [![Stargazers for @omkarcloud/google-maps-scraper](https://bytecrank.com/nastyox/reporoster/php/stargazersSVG.php?user=omkarcloud&repo=google-maps-scraper)](https://github.com/omkarcloud/google-maps-scraper/stargazers)
 
-## Made with ❤️ using [Botasaurus Web Scraping Framework](https://github.com/omkarcloud/botasaurus)
+## Made with ❤️ using [Botasaurus Web Scraping Framework](https://www.omkar.cloud/l/google-maps-to-botasaurus/)
