@@ -7,8 +7,11 @@ const CountryOptions = [{ "value": "AF", "label": "Afghanistan (49 Cities)" }, {
 function fixupdatebugs(controls) {
     if (typeof controls.numberGreaterThanOrEqualToOne === 'function') {
         controls.greaterThanOrEqualToOne = controls.numberGreaterThanOrEqualToOne
+        controls.greaterThanOrEqualToZero = controls.numberGreaterThanOrEqualToZero
+        
     } else {
         controls.numberGreaterThanOrEqualToOne = controls.greaterThanOrEqualToOne
+        controls.numberGreaterThanOrEqualToZero = controls.greaterThanOrEqualToZero 
     }
 }
 /**
