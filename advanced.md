@@ -32,6 +32,28 @@ If you don't want to click every 30 minutes, then we encourage you to install Py
 
 No, you do not need to use proxies, you're free to run as many queries as you like.
 
+### ❓ How to Update the Scraper to the Latest Version?
+
+To update the **Free Version**, run these commands in the root directory:
+
+```bash
+git pull
+python -m pip install --upgrade bota botasaurus botasaurus-api botasaurus-requests botasaurus-driver botasaurus-proxy-authentication botasaurus-server
+```
+
+---
+
+To update the **Pro Version**, run these commands:
+
+```bash 
+python -m pip install --upgrade bota botasaurus botasaurus-api botasaurus-requests botasaurus-driver botasaurus-proxy-authentication botasaurus-server
+```
+
+And then, please refollow the instructions which were sent to your GitHub email address when you purchased it.
+
+![instructions.png](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/instructions.png)
+
+
 ### ❓ Need More Help or Have Additional Questions?
 
 For further help, feel free to reach out to us through:
@@ -49,7 +71,7 @@ For further help, feel free to reach out to us through:
 
   [![Contact Us on Email about Google Maps Scraper](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/ask-on-email.png)](mailto:chetan@omkar.cloud)
 
-We look forward to helping you and will respond to emails and whatsapp messages within 24 hours.
+We look forward to helping you and will respond to emails and WhatsApp messages within 24 hours.
 
 Good Luck!
 
