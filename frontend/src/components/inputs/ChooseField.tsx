@@ -9,11 +9,12 @@ type ChooseOption = {
 type ChooseProps = {
   color?: string
   options: ChooseOption[]
-  title?:any
-  disabled?:boolean
+  title?: any
+  disabled?: boolean
   value: string // Currently selected value
   onChange: (value: string) => void // Function to call when the selection changes
   name?: string
+  isRequired: boolean
 }
 
 const ChooseField: React.FC<ChooseProps> = ({
@@ -24,6 +25,7 @@ const ChooseField: React.FC<ChooseProps> = ({
   disabled,
   name,
   color,
+  isRequired
 }) => {
   // Prepare options for EuiButtonGroupn
   const buttonOptions = options.map(option => ({
@@ -32,13 +34,20 @@ const ChooseField: React.FC<ChooseProps> = ({
   }))
 
   const handleChange = (optionId: string) => {
-    const newValue = value === optionId ? null : optionId // Toggle selection
-    onChange(newValue) // Call the provided onChange function with the new value or null
+    if (isRequired) {
+      const newValue = value === optionId ? optionId : optionId // Toggle selection
+      onChange(newValue) // Call the provided onChange function with the new value or null
+    } else {
+      const newValue = value === optionId ? null : optionId // Toggle selection
+      onChange(newValue) // Call the provided onChange function with the new value or null
+    }
   }
+
+
 
   return (
     <EuiButtonGroup
-    title={title}
+      title={title}
       isDisabled={disabled}
       legend="Select an option" // Provide a descriptive legend
       color={color === undefined ? 'primary' : undefined}

@@ -41,10 +41,10 @@ function mapControlsToElements(
       })
 
       if (!nestedElements.every(x => x === null)) {
-          mappedControls.push(
+        mappedControls.push(
           <CollapsibleSection onToggle={(isOpen) => {
-            const newState = isOpen ? 'open' : 'closed';
-            onToggle( control.id, newState);
+            const newState = isOpen ? 'open' : 'closed'
+            onToggle(control.id, newState)
           }} forceState={accords[control.id]} key={control.id} title={control.label}>
             {nestedElements}
           </CollapsibleSection>
@@ -80,8 +80,8 @@ const InputFields = ({
   onDataChange,
   onSubmit,
   onReset,
-  submitAttempted, 
-  accords, 
+  submitAttempted,
+  accords,
   onToggle
 }) => {
   const handleInputChange = (id, value) => {
@@ -91,14 +91,15 @@ const InputFields = ({
   return (
     <div>
       {mapControlsToElements(controls.controls, control => {
-        const { id, type, label, helpText, options, isShown, isDisabled, disabledMessage } = control
+        const { id, type, label, helpText, options, isShown, isDisabled, disabledMessage, isRequired } = control
         if (isShown && !isShown(data)) {
           return null
         }
 
         const disabled = convertToBool(isDisabled, data)
+        const isRequiredResult = convertToBool(isRequired, data)
         const disabledMsg = disabled ? disabledMessage : undefined
-        
+
         let inputElement
 
         switch (type) {
@@ -178,6 +179,7 @@ const InputFields = ({
           case 'choose':
             inputElement = (
               <ChooseField
+                isRequired={isRequiredResult}
                 title={disabledMsg}
                 disabled={disabled}
                 name={id}
@@ -203,8 +205,8 @@ const InputFields = ({
           case 'listOfTexts':
             inputElement = (
               <ListOfTextFields
-              id={id}
-              islinks={false}
+                id={id}
+                islinks={false}
                 title={disabledMsg}
                 disabled={disabled}
                 placeholder={(control as any).placeholder}
@@ -216,8 +218,8 @@ const InputFields = ({
           case 'listOfLinks':
             inputElement = (
               <ListOfTextFields
-              id={id}
-              islinks={true}
+                id={id}
+                islinks={true}
                 title={disabledMsg}
                 disabled={disabled}
                 placeholder={(control as any).placeholder}
@@ -297,7 +299,7 @@ function getInitialData(scraper_name, input_js_hash, controls) {
 
 const ScraperFormContainer = ({ selectedScraper }) => {
   const [submitAttempted, setSubmitAttempted] = useState(false)
-  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false)
 
   const controls = useMemo(
     () => createControls(selectedScraper.input_js),
@@ -330,16 +332,16 @@ const ScraperFormContainer = ({ selectedScraper }) => {
     // @ts-ignore
     controls.controls.forEach(control => {
       if (control.type === 'section') {        //@ts-ignore 
-        rs[control.id]  = shouldBeOpenResult(control, validationResult)
-      } 
+        rs[control.id] = shouldBeOpenResult(control, validationResult)
+      }
     })
-  
+
     return rs
-  });
+  })
   const onToggle = (id, state) => {
-    setaccords((x)=>({...x , [id]: state }))
+    setaccords((x) => ({ ...x, [id]: state }))
   }
-  
+
   const handleSubmit = async e => {
     e.preventDefault()
     setSubmitAttempted(true)
@@ -350,24 +352,24 @@ const ScraperFormContainer = ({ selectedScraper }) => {
       const response = await Api.createTask({
         scraper_name: selectedScraper.scraper_name,
         data: cleanedData,
-      }).finally(()=>setIsSubmitting(false))
+      }).finally(() => setIsSubmitting(false))
 
       const result = response.data
       const outputId = Array.isArray(result) ? result[0].id : result.id
       pushToRoute(router, `/output/${outputId}`)
     } else {
-    const rs = {...accords}
+      const rs = { ...accords }
 
-    // @ts-ignore
-    controls.controls.forEach(control => {
-      if (control.type === 'section') {        //@ts-ignore 
-        if (rs[control.id] === 'closed') {
-          rs[control.id]  = shouldBeOpenResult(control, validationResult)  
+      // @ts-ignore
+      controls.controls.forEach(control => {
+        if (control.type === 'section') {        //@ts-ignore 
+          if (rs[control.id] === 'closed') {
+            rs[control.id] = shouldBeOpenResult(control, validationResult)
+          }
         }
-      } 
-    })
-    
-    setaccords(rs)
+      })
+
+      setaccords(rs)
     }
   }
   // @ts-ignore
