@@ -83,5 +83,4 @@ def do_request(data, retry_count=3):
     parallel=5,
     )
 def scrape_social( data):
-    print(data)
     return do_request(data)
