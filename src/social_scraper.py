@@ -1,4 +1,4 @@
-from botasaurus.request import request as rq
+from botasaurus.task import task
 from botasaurus.local_storage import LocalStorage
 from botasaurus.cache import DontCache
 import requests
@@ -22,7 +22,7 @@ def do_request(data, retry_count=3):
         print(f"Failed to get Social details for {website}, after 3 retries")
         return DontCache(None)
 
-    url = "https://website-social-scraper-api.p.rapidapi.com/contacts/"
+    url = "https://website-social-scraper-api.p.rapidapi.com/contacts"
     querystring = {"website": website}
     headers = {
         "X-RapidAPI-Key": key,
@@ -75,32 +75,13 @@ def do_request(data, retry_count=3):
                     })
 
 
-@rq(
+@task(
     close_on_crash=True,
     create_error_logs= False, 
     cache=True, 
     output=None,
+    parallel=5,
     )
-def perform_scrape_social(reqs, data):
+def scrape_social( data):
+    print(data)
     return do_request(data)
-
-@rq(
-    close_on_crash=True,
-    create_error_logs= False, 
-    cache=True, 
-    output=None,
-    )
-def perform_scrape_social_pro(reqs, data):
-    return do_request(data)
-
-def is_free():
-    FREE_CREDITS_PLUS_10 = 60
-    credits_used = LocalStorage.get_item("credits_used", 0)
-    return credits_used < FREE_CREDITS_PLUS_10
-
-def scrape_social(social_data):
-    free = is_free()
-    if free:
-        return perform_scrape_social(social_data )
-    else:
-        return perform_scrape_social_pro(social_data )
