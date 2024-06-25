@@ -70,9 +70,9 @@ To use this tool, you'll need:
 - Node.js version 16 or later to run the UI Dashboard (please check your Node.js version by running `node -v`)
 - Python for running the scraper
 
-**Don't have Node.js or Python? No problem!**  
+**Don't know anything about git, Python, or Node.js but still want unlimited Google Maps results? No problem!**  
 
-You can easily run this tool within Gitpod, a cloud-based development environment, by following [these steps](https://github.com/omkarcloud/google-maps-scraper/blob/master/advanced.md#-i-dont-have-python-or-im-facing-errors-when-setting-up-the-scraper-on-my-pc-how-to-solve-it).
+You can easily run this tool within Gitpod, a cloud-based development environment, by following [these installation steps](https://github.com/omkarcloud/google-maps-scraper/blob/master/advanced.md#-i-dont-have-python-or-im-facing-errors-when-setting-up-the-scraper-on-my-pc-how-to-solve-it).
 ## 🚀 Getting Started
 
 Let's get started by following these super simple steps:
@@ -338,6 +338,7 @@ You may choose to read the following questions based on your interests:
 1. [I Don't Have Python, or I'm Facing Errors When Setting Up the Scraper on My PC. How to Solve It?](https://github.com/omkarcloud/google-maps-scraper/blob/master/advanced.md#-i-dont-have-python-or-im-facing-errors-when-setting-up-the-scraper-on-my-pc-how-to-solve-it)
 2. [Do I Need Proxies?](https://github.com/omkarcloud/google-maps-scraper/blob/master/advanced.md#-do-i-need-proxies)
 3. [How to Update the Scraper to the Latest Version?](https://github.com/omkarcloud/google-maps-scraper/blob/master/advanced.md#-how-to-update-the-scraper-to-the-latest-version)
+4. [How to run Pro Version in Gitpod?](https://github.com/omkarcloud/google-maps-scraper/blob/master/advanced.md#-how-to-run-pro-version-in-gitpod)
 
 ### ❓ Need More Help or Have Additional Questions?
 

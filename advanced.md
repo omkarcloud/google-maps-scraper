@@ -53,6 +53,42 @@ And then, please refollow the instructions which were sent to your GitHub email 
 
 ![instructions.png](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/instructions.png)
 
+### ❓ How to run Pro Version in Gitpod?
+
+You can easily run the pro version in Gitpod, by following these steps:
+
+1. Visit [this link](https://gitpod.io/#https://github.com/omkarcloud/google-maps-scraper) and sign up using your GitHub account.
+   
+   ![Screenshot (148)](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/open-in-gitpod.png)
+  
+2. Once signed up, open the repository in Gitpod.   
+
+   ![gp-continue](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/gp-continue.png)
+
+3. Replace YOUR_GOOGLE_MAPS_SCRAPER_PRO_DOWNLOAD_LINK with the download link for the pro version in the second line of the command's below. Then, paste the command into the terminal to set up the scraper:
+   ```bash
+   # Download the ZIP file and name it 'google-maps-scraper.zip'
+   wget YOUR_GOOGLE_MAPS_SCRAPER_PRO_DOWNLOAD_LINK -O google-maps-scraper.zip
+
+   # Unzip the downloaded file
+   unzip google-maps-scraper.zip
+
+   # Rename the unzipped folder to 'google-maps-scraper-pro'
+   mv omkarcloud-google-maps-scraper-pro-* google-maps-scraper-pro
+
+   # Remove the original ZIP and any other remnants
+   rm -rf omkarcloud-google-maps-scraper-pro-* google-maps-scraper.zip
+
+   # Change directory to the renamed folder
+   cd google-maps-scraper-pro
+
+   # Remove any other remnants
+   rm -rf omkarcloud-google-maps-scraper-pro-*
+   ```
+  
+4. Install Dependencies by running: `python run.py install`
+5. Launch the UI Dashboard by running: `python run.py`
+6. Now, Run Queries as you like.
 
 ### ❓ Need More Help or Have Additional Questions?
 
