@@ -112,6 +112,7 @@ export const FilterComponent = ({
                   onChange={v => handleFilterChange(id, v)}
                 />
               )
+            case 'BoolSelectDropdown':
             case 'SingleSelectDropdown':
               return (
                 <SingleSelectWithLabel

@@ -85,7 +85,8 @@ cd google-maps-scraper
 
 2️⃣ Install Dependencies 📦:
 ```shell
-python -m pip install -r requirements.txt && python run.py install
+python -m pip install -r requirements.txt
+python run.py install
 ```
 
 3️⃣ Launch the UI Dashboard 🚀:

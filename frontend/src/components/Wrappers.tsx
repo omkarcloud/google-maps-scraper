@@ -76,10 +76,10 @@ export const OutputContainerWithoutBottomPadding = ({ children }) => {
   )
 }
 
-export const OutputContainerWithBottomPadding = ({ children }) => {
+export const OutputContainerWithBottomPadding = ({ children , className=""}) => {
   return (
     <div
-      className=""
+      className={className}
       style={{
         paddingLeft: '16px',
         paddingRight: '16px',
@@ -95,3 +95,4 @@ export const OutputContainerWithBottomPadding = ({ children }) => {
 export const TabWrapper = ({ children }) => {
   return <div className="mt-4">{children}</div>
 }
+

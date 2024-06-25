@@ -527,4 +527,9 @@ export const globalStyles = css`
   .row-label-auto .euiFormRow__labelWrapper  {
     width: auto;
   }
+
+  .OutputContainerWithBottomPadding   .euiDataGrid.euiDataGrid--bordersAll  {
+      min-height: 50vh;
+  }
   `
+

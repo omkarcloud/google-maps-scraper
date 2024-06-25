@@ -92,6 +92,7 @@ function filters_to_python_dict_string(filters, indent = default_intentation, br
       case 'IsTruthyCheckbox':
       case 'IsFalsyCheckbox':
         return `${x}'${id}': True, # Must be True Only`;
+      case 'BoolSelectDropdown':
       case 'SingleSelectDropdown':
         return `${x}'${id}': 'your-option', ${create_canbeone_options_string(options)}`;
       case 'MultiSelectDropdown':

@@ -274,37 +274,69 @@ best_customers = sorts.Sort(
         # ),
     ],
 )
-
-Server.add_scraper(
-    get_places,
-    create_all_task=True, 
-    split_task=split_task_by_query,
-    get_task_name=get_task_name,
-    filters=[
-        filters.MinNumberInput("reviews", label="Min Reviews"),
-        filters.MaxNumberInput("reviews", label="Max Reviews"),
-        filters.IsTruthyCheckbox("website"),
-        filters.IsTruthyCheckbox("phone"),
-        filters.IsTrueCheckbox("is_spending_on_ads"),
-        filters.IsTrueCheckbox("can_claim"),
-        filters.MultiSelectDropdown(
-            "category_in",
-            options=category_options,
-        ),
-        filters.MinNumberInput("rating", label="Min Rating"),
-    ],
-    sorts=[
-        best_customers,
-        sorts.NumericDescendingSort("reviews"),
-        sorts.NumericAscendingSort("reviews"),
-        sorts.NumericAscendingSort("name"),
-    ],
-    views=[
-        overview_view,
-        featured_reviews_view,
-        detailed_reviews_view,
-    ],
-)
+try:
+    Server.add_scraper(   
+        get_places,
+        create_all_task=True, 
+        split_task=split_task_by_query,
+        get_task_name=get_task_name,
+        filters=[
+            filters.MinNumberInput("reviews", label="Min Reviews"),
+            filters.MaxNumberInput("reviews", label="Max Reviews"),
+            filters.BoolSelectDropdown("website", prioritize_no=True),
+            filters.IsTruthyCheckbox("phone"),
+            filters.IsTrueCheckbox("is_spending_on_ads"),
+            filters.BoolSelectDropdown("can_claim"),
+            filters.MultiSelectDropdown(
+                "category_in",
+                options=category_options,
+            ),
+            filters.MinNumberInput("rating", label="Min Rating"),
+        ],
+        sorts=[
+            best_customers,
+            sorts.NumericDescendingSort("reviews"),
+            sorts.NumericAscendingSort("reviews"),
+            sorts.NumericAscendingSort("name"),
+        ],
+        views=[
+            overview_view,
+            featured_reviews_view,
+            detailed_reviews_view,
+        ],
+        remove_duplicates_by="place_id"
+    )
+except:
+    Server.add_scraper(   
+        get_places,
+        create_all_task=True, 
+        split_task=split_task_by_query,
+        get_task_name=get_task_name,
+        filters=[
+            filters.MinNumberInput("reviews", label="Min Reviews"),
+            filters.MaxNumberInput("reviews", label="Max Reviews"),
+            filters.BoolSelectDropdown("website", prioritize_no=True),
+            filters.IsTruthyCheckbox("phone"),
+            filters.IsTrueCheckbox("is_spending_on_ads"),
+            filters.BoolSelectDropdown("can_claim"),
+            filters.MultiSelectDropdown(
+                "category_in",
+                options=category_options,
+            ),
+            filters.MinNumberInput("rating", label="Min Rating"),
+        ],
+        sorts=[
+            best_customers,
+            sorts.NumericDescendingSort("reviews"),
+            sorts.NumericAscendingSort("reviews"),
+            sorts.NumericAscendingSort("name"),
+        ],
+        views=[
+            overview_view,
+            featured_reviews_view,
+            detailed_reviews_view,
+        ],
+    )
 
 Server.set_rate_limit(request=1)
 Server.enable_cache()
