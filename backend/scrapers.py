@@ -1,3 +1,4 @@
+import re
 from botasaurus_server.server import Server
 from src.gmaps import get_places
 import random
@@ -42,13 +43,17 @@ def prepend_to_strings(strings_list, prepend_str, ):
     prepend_str = prepend_str + " in "
     return [prepend_str + s for s in strings_list]
 
+def clean_search_string(s):
+    if isinstance(s, str):
+        return re.sub(r"\s+", " ", s.strip().lower())
+
 
 def create_tasks_for_queries(data, queries):
     tasks = []
     # Create individual tasks
     for query in queries:
         task = data.copy()  # Shallow copy to preserve other settings
-        task["query"] = query  # Assign the single query
+        task["query"] = clean_search_string(query)  # Assign the single query
             # Delete the old "queries" property
         tasks.append(task)
     return tasks
@@ -256,6 +261,8 @@ overview_view = View(
         Field("address"),
         Field("review_keywords", map=join_review_keywords),
         Field("link"),
+        Field("query"),
+
     ],
 )
 

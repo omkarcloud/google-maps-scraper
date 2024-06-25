@@ -343,6 +343,8 @@ return get_sponsored_links()''')
     
     places = bt.remove_nones(places)
 
+    for p in places:
+        p['query'] = data['query']
     
     sponsored_links = [] if data['links'] else get_sponsored_links() 
     places = merge_sponsored_links(places, sponsored_links)
