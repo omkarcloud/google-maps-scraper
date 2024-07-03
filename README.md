@@ -239,7 +239,7 @@ Free versions shows only a limited set of data points. To access additional data
 
 [300+ Happy People](https://github.com/sponsors/omkarcloud?frequency=one-time) have already invested in the Pro Version and are reaping its benefits to grow their business.
 
-![people](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/people-2.png)
+![people](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/people-new.png)
 
 ### ❓ How to Get the Pro Version?
 
