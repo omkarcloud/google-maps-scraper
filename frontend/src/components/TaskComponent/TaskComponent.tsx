@@ -23,6 +23,7 @@ import { FilterComponent } from './FilterComponent'
 import { SortComponent } from './SortComponent'
 import { ViewComponent } from './ViewComponent'
 import Link from 'next/link'
+import { Pagination } from '../Pagination'
 
 function sentenceCase(string) {
   // Convert a string into Sentence case.
@@ -124,7 +125,13 @@ function determineFields(results) {
     key: fieldName,
   }))
 }
+function removeHiddenFields(selectedFields, hiddenFields) {
+  // Convert hiddenFields array to a Set for efficient lookup
+  const hiddenFieldsSet = new Set(hiddenFields)
 
+  // Filter out objects from selectedFields whose key is in hiddenFieldsSet
+  return selectedFields.filter(field => !hiddenFieldsSet.has(field.key))
+}
 const TaskComponent = ({
   sorts,
   filters,
@@ -191,29 +198,29 @@ const TaskComponent = ({
     if (isExecuting) {
       const fetchData = async () => {
         try {
-            // First check if the task has been updated
-            const isUpdatedResponse = await Api.isTaskUpdated(taskId, response.task.updated_at, response.task.status);
-            if (isUpdatedResponse.data.result) {
-                // If the task has been updated, fetch the task results
-                const per_page_records = 25;
-                const params = {
-                    sort,
-                    filters: clean_filter_data(filter_data, filters),
-                    view: pageAndView.view,
-                    page: pageAndView.currentPage + 1 ,
-                    per_page: per_page_records,
-                };
-                const { data } = await Api.getTaskResults(taskId, params);
-                if ((pageAndView.currentPage + 1) > data.total_pages) {
-                    setPageAndView((x) => ({ ...x, currentPage: 0 }));
-                }
-                setResponse(data);
+          // First check if the task has been updated
+          const isUpdatedResponse = await Api.isTaskUpdated(taskId, response.task.updated_at, response.task.status)
+          if (isUpdatedResponse.data.result) {
+            // If the task has been updated, fetch the task results
+            const per_page_records = 25
+            const params = {
+              sort,
+              filters: clean_filter_data(filter_data, filters),
+              view: pageAndView.view,
+              page: pageAndView.currentPage + 1,
+              per_page: per_page_records,
             }
-          } catch (error) {
-            console.error('Failed to fetch task:', error);
+            const { data } = await Api.getTaskResults(taskId, params)
+            if ((pageAndView.currentPage + 1) > data.total_pages) {
+              setPageAndView((x) => ({ ...x, currentPage: 0 }))
+            }
+            setResponse(data)
+          }
+        } catch (error) {
+          console.error('Failed to fetch task:', error)
         }
-    };
-    
+      }
+
       const intervalId = setInterval(fetchData, 1000) // Polling every 1000 milliseconds
       return () => clearInterval(intervalId)
     }
@@ -223,8 +230,8 @@ const TaskComponent = ({
     !pageAndView.view
       ? determineFields(response.results)
       : views.find(v => v.id === pageAndView.view)?.fields ?? null
-  
-      if (selectedFields) {
+
+  if (selectedFields) {
     selectedFields = caseFields(selectedFields)
   }
 
@@ -288,13 +295,17 @@ const TaskComponent = ({
         <Link href={`/output`} passHref>
               <EuiLink>View All Tasks</EuiLink>
             </Link>
+
+          <Link href={`/output`} passHref>
+            <EuiLink>View All Tasks</EuiLink>
+          </Link>
           {hasFilters(filters) ? (
             <FilterComponent
               filter_data={filter_data}
               setFilter={setFilter}
               filters={filters}
             />
-          ):null}
+          ) : null}
 
           {hasSorts(sorts) ? (
             <div><SortComponent sort={sort} setSort={setSort} sorts={sorts} /></div>
@@ -307,25 +318,16 @@ const TaskComponent = ({
             setView={handleViewSet}
             views={views}
           />
-        </div> :  <div className=' pt-4'/>}
+        </div> : <div className=' pt-4' />}
       </OutputTabsContainer>
-      <OutputContainerWithBottomPadding>
+      <OutputContainerWithBottomPadding className={hasResults && response.results.length <= 5 ? "OutputContainerWithBottomPadding" : null}>
         {loading ? (
           <CenteredSpinner></CenteredSpinner>
         ) : hasResults ? (
           <>
-            <DataPanel response={response} fields={selectedFields} />
+            <DataPanel response={response} fields={response.hidden_fields && response.hidden_fields.length ? removeHiddenFields(selectedFields, response.hidden_fields) : selectedFields} />
             {showPagination ? (
-              <EuiPagination
-                aria-label="Pagination"
-                style={{
-                  display: 'flex',
-                  justifyContent: 'end',
-                }}
-                pageCount={response.total_pages}
-                activePage={pageAndView.currentPage}
-                onPageClick={handlePageClick}
-              />
+              <Pagination {...{ total_pages: response.total_pages, activePage: pageAndView.currentPage, onPageClick: handlePageClick }} />
             ) : (
               <div />
             )}

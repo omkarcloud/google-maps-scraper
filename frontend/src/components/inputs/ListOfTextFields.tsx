@@ -149,7 +149,7 @@ function parseStringToList(input) {
         return jsonList.map(x=>`${x}`.trim())
       }
   } catch (e) {
-      return input.split(/[\n,]+/).map(s => stripChars(s).trim());
+    return input.split(/[\n,]+/).map(s => stripChars(s.trim()).trim());
   }
 }
 

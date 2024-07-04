@@ -238,6 +238,36 @@ export const EmptyFailed = ({ error }) => {
   )
 }
 
+export const EmptyFailedInputJs = ({ error , }) => {
+  return (
+    <div className='space-y-8' style={{ padding: "20px 0", textAlign: 'center' }}>
+      <EuiEmptyPrompt
+        body={
+          error ? <div>
+            <div className="mb-2">
+            The task has failed due to incorrect syntax in the input_js file.
+            </div>
+            <EuiCodeBlock
+              style={{ textAlign:"left", backgroundColor: '#F1F4FA' }}
+              transparentBackground
+              paddingSize="none"
+              language="python"
+              isCopyable>
+              {error}
+            </EuiCodeBlock>
+          </div> :  <div>
+          <p>The task has failed due to incorrect syntax in the input_js file.</p>
+          </div>
+        }
+        color="subdued"
+        layout="vertical"
+        title={<h2>Incorrect input_js file</h2>}
+        titleSize="m"
+      />
+    </div>
+  )
+}
+
 export const EmptyAborted = () => {
   return (
     <div className='space-y-8' style={{ padding: '80px 0', textAlign: 'center' }}>

@@ -225,14 +225,16 @@ def join_closed_on(data, record):
 
 join_with_commas = lambda value, record:  ", ".join(value or []) if isinstance(value, list) else value
 
+def show_if(input_data):
+    return bool(input_data["api_key"])
 social_fields = [
-    Field("emails", map=join_with_commas),
-    Field("phones", map=join_with_commas),
-    Field("linkedin"),
-    Field("twitter"),
-    Field("facebook"),
-    Field("youtube"),
-    Field("instagram"),
+    Field("emails", map=join_with_commas, show_if=show_if),
+    Field("phones", map=join_with_commas, show_if=show_if),
+    Field("linkedin", show_if=show_if),
+    Field("twitter", show_if=show_if),
+    Field("facebook", show_if=show_if),
+    Field("youtube", show_if=show_if),
+    Field("instagram", show_if=show_if),
 ]
 
 overview_view = View(
@@ -240,9 +242,16 @@ overview_view = View(
     fields=[
         Field("place_id"),
         Field("name"),
+        Field("reviews"),
+        Field("main_category"),
+        Field("categories", map=join_with_commas),
+        Field("rating"),
+        Field("address"),
+        Field("link"),
+        Field("query"),
+
         Field("description"),
         Field("is_spending_on_ads"),
-        Field("reviews"),
         Field("competitors", map=lambda value, record: competitors_to_string(value)),
         Field("website"),
         Field("can_claim"),
@@ -252,16 +261,10 @@ overview_view = View(
         CustomField("owner_name" ,map=lambda value: "*****"),
         CustomField("owner_profile_link", map=lambda value: "*****"),
         Field("featured_image"),
-        Field("main_category"),
-        Field("categories", map=join_with_commas),
-        Field("rating"),
         Field("workday_timing"),
         Field("closed_on", map=join_closed_on),
         Field("phone"),
-        Field("address"),
         Field("review_keywords", map=join_review_keywords),
-        Field("link"),
-        Field("query"),
 
     ],
 )
@@ -353,7 +356,7 @@ Server.configure(
     description="Find thousands of new customers personal phone, email and grow your business exponentially.",
     right_header={
         "text": "Love It? Star It! ★",
-        "link": "https://github.com/omkarcloud/botasaurus",
+        "link": "https://github.com/omkarcloud/google-maps-scraper",
     },
 )
 # python -m backend.scrapers

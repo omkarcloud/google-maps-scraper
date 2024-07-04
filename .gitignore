@@ -24,6 +24,7 @@ build/
 /cache/
 
 /error_logs/
+/task_results/
 
 local_storage.json
 
