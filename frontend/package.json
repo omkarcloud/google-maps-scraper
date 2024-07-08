@@ -21,7 +21,6 @@
     "dev": "next dev",
     "build": "next build --no-lint",
     "start": "next start"
-
   },
   "repository": {
     "type": "git",
@@ -38,6 +37,7 @@
     "axios": "^0.26.1",
     "botasaurus-controls": "latest",
     "cogo-toast-react-17-fix": "latest",
+    "lodash.debounce": "^4.0.8",
     "regenerator-runtime": "^0.13.9"
   },
   "devDependencies": {

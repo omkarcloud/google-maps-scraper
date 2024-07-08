@@ -74,14 +74,18 @@ function applyInterceptors(AxiosInstance: AxiosInstance) {
     error => {
       hideLoading(error.config)
       let isRedirected = redirectIfShouldRedirect(error.response)
-      if (error.config.redirectToSignInOn404 && is404(error.response)) {
+      if (error.config?.redirectToSignInOn404 && is404(error.response)) {
         Router.push('/auth/sign-in')
         isRedirected = true
       }
-      if (error.config.silenceError) {
+      if (error.config?.silenceError) {
         return Promise.reject(error)
       } else {
         if (!isRedirected) {
+          // fetch request abortion
+          if (error.message === 'canceled'){
+            return Promise.reject(error)
+          }
           handleAxiosError(error)
         }
         return Promise.reject(error)

@@ -55,6 +55,10 @@ const nextConfig = {
     loader: 'custom',
   },
 
+  experimental: {
+    // 10m
+    proxyTimeout: 1000 * 600,
+  },
   /**
    * Set custom `process.env.SOMETHING` values to use in the application.
    * You can do this with Webpack's `DefinePlugin`, but this is more concise.

@@ -90,6 +90,14 @@ function clean_filter_data(filter_data, filters) {
           cleanedFilterData[filter.id] = dt
         }
       }
+      // fix filter issues
+    } else if (filter.type === 'MinNumberInput' || filter.type === 'MaxNumberInput') {
+      if (cleanedFilterData[filter.id] === null) {
+        delete cleanedFilterData[filter.id]
+      }
+    } else if (filter.type === 'SearchTextInput') {
+      if (cleanedFilterData[filter.id] === null||cleanedFilterData[filter.id] === undefined || cleanedFilterData[filter.id].trim() === '')
+        delete cleanedFilterData[filter.id]
     }
   }
 
@@ -165,32 +173,48 @@ const TaskComponent = ({
   // For Filters
   const mountedRef = useRef(false)
 
+
   useEffect(() => {
+    const controller = new AbortController();
+    const signal = controller.signal;
+
     if (!mountedRef.current) {
-      mountedRef.current = true
-      return
+      mountedRef.current = true;
+      return;
     }
+    if (!taskId){
+      return 
+    }
+
     const fetchData = async () => {
-      setLoading(true)
+      setLoading(true);
       try {
-        const per_page_records = 25
+        const per_page_records = 25;
         const params = {
           sort,
           filters: clean_filter_data(filter_data, filters),
           view: pageAndView.view,
           page: pageAndView.currentPage + 1,
           per_page: per_page_records,
-        }
-        const { data } = await Api.getTaskResults(taskId, params)
-        setResponse(data)
+        };
+        const { data } = await Api.getTaskResults(taskId, params, false, signal);
+        setResponse(data);
       } catch (error) {
-        console.error('Failed to fetch task:', error)
+        if (error.message === 'canceled'){
+          return 
+        }
+        
+        console.error('Failed to fetch task:', error);
       }
-      setLoading(false)
-    }
+      setLoading(false);
+    };
 
-    fetchData()
-  }, [taskId, sort, filter_data, pageAndView.view, pageAndView.currentPage])
+    fetchData();
+
+    return () => {
+      controller.abort(); // Cancel any ongoing fetch requests
+    };
+  }, [taskId, sort, filter_data, pageAndView.view, pageAndView.currentPage]);
 
   // For Updates
   useEffect(() => {

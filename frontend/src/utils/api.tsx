@@ -99,8 +99,8 @@ function downloadTaskResults(taskId, data = {}) {
   }).then(downloadViaLink)  
 }
 
-function getTaskResults(taskId, data = {}, force_apply_first_view = false) {
-  return AxiosInstance.post( force_apply_first_view ?`/ui/tasks/${taskId}/results?force_apply_first_view=${force_apply_first_view}` :`/ui/tasks/${taskId}/results` , data, { silent: true , silenceError:true,})
+function getTaskResults(taskId, data = {}, force_apply_first_view = false, signal=undefined) {
+  return AxiosInstance.post( force_apply_first_view ?`/ui/tasks/${taskId}/results?force_apply_first_view=${force_apply_first_view}` :`/ui/tasks/${taskId}/results` , data, { silent: true , silenceError:true, signal:signal})
 }
 
 const Api = {

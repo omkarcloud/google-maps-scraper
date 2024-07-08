@@ -1,18 +1,66 @@
 import { EuiButton, EuiFormRow } from '@elastic/eui'
-import { useState } from 'react'
+import { useCallback, useState } from 'react'
 import CheckboxField from '../inputs/CheckBoxField'
 import MultiSelect from '../inputs/MultiSelect'
 import NumberField from '../inputs/NumberField'
 import SearchField from '../inputs/SearchField'
 import SingleSelect from '../inputs/SingleSelect'
+import debounce from 'lodash.debounce';
 
-const NumericInputWithLabel = ({ label, value, onChange }) => {
+const NumericInputWithLabel = ({ label, initialValue, onChange }) => {
+  const [value, setValue] = useState(initialValue);
+
+  const debouncedOnChange = useCallback(
+    debounce((newValue) => {
+      onChange(newValue);
+    }, 300),
+    [onChange]
+  );
+
+  const handleChange = (newValue) => {
+    if (value !== newValue){
+      setValue(newValue);
+      debouncedOnChange(newValue);
+  
+    }
+  };
+
   return (
     <EuiFormRow fullWidth label={label}>
-      <NumberField value={value} onChange={onChange} fullWidth />
+      <NumberField value={value} onChange={handleChange} fullWidth />
     </EuiFormRow>
-  )
-}
+  );
+};
+
+const TextFieldWithLabel = ({ label, initialValue, onChange }) => {
+  const [value, setValue] = useState(initialValue);
+
+  const debouncedOnChange = useCallback(
+    debounce((newValue) => {
+      onChange(newValue);
+    }, 300),
+    [onChange]
+  );
+
+  const handleChange = (newValue) => {
+    if (value !== newValue){
+      setValue(newValue);
+      debouncedOnChange(newValue);
+  
+    }
+  };
+
+  return (
+    <EuiFormRow fullWidth label={label}>
+      <SearchField
+        fullWidth
+        onApply={handleChange}
+        value={value}
+        onChange={handleChange}
+      />
+    </EuiFormRow>
+  );
+};
 
 const CheckboxWithLabel = ({ label, value, onChange }) => {
   return (
@@ -48,18 +96,6 @@ const MultiSelectWithLabel = ({ label, value, onChange, options }) => {
   )
 }
 
-const TextFieldWithLabel = ({ label, value, onChange }) => {
-  return (
-    <EuiFormRow fullWidth label={label}>
-      <SearchField
-        fullWidth
-        onApply={onChange}
-        value={value}
-        onChange={onChange}
-      />
-    </EuiFormRow>
-  )
-}
 
 export const FilterComponent = ({
   filter_data,
