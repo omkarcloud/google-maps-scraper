@@ -2,10 +2,11 @@ from src import scraper
 from botasaurus import bt
 from botasaurus.string_utils import ht
 from botasaurus.request import request
-
+from botasaurus.task import task
+from botasaurus.cache import DontCache
 from src.sort_filter import filter_places, sort_dict_by_keys
 
-from .social_scraper import FAILED_DUE_TO_CREDITS_EXHAUSTED, FAILED_DUE_TO_NOT_SUBSCRIBED, FAILED_DUE_TO_UNKNOWN_ERROR, scrape_social
+from .social_scraper import FAILED_DUE_TO_CREDITS_EXHAUSTED, FAILED_DUE_TO_NOT_SUBSCRIBED, FAILED_DUE_TO_UNKNOWN_ERROR, get_website_contacts, scrape_social
 
 def create_place_data(query, max, lang, geo_coordinates, zoom, links):
     place_data = {
@@ -311,7 +312,7 @@ def merge_places(places):
 
 
 @request()
-def get_places(_, data):
+def google_maps_scraper(_, data):
     
     key = data['api_key']
     lang = data['lang']
@@ -336,3 +337,38 @@ def get_places(_, data):
     
     # fiels sorting is necessary as well
     return final_result
+
+@task()
+def website_contacts_scraper(data):
+    websites = data["websites"]
+    # Assuming get_website_contacts is a function that returns a list of tuples (item, index)
+    items = get_website_contacts(websites, metadata=data["api_key"])
+    output = []
+    has_seen_error = False
+    # Enumerate items to get both item and its index
+    for index, item in enumerate(items):
+        if item.get('error'):
+            # Append error information for each field
+            output.append({
+                "website": websites[index],
+                "emails": item['error'],
+                "phones": item['error'],
+                "linkedin": item['error'],
+                "twitter": item['error'],
+                "facebook": item['error'],
+                "youtube": item['error'],
+                "instagram": item['error'],
+                "github": item['error'],
+                "snapchat": item['error'],
+                "tiktok": item['error']
+            })
+            has_seen_error = True
+        else:
+            # Spread the 'data' dictionary into the output dictionary
+            x = item['data']
+            output.append({"website": websites[index], **x})
+
+    # Return a special object to prevent caching in case of error
+    if has_seen_error:
+        return DontCache(output)
+    return output

@@ -1,4 +1,5 @@
 from botasaurus.task import task
+import traceback
 from botasaurus.local_storage import LocalStorage
 from botasaurus.cache import DontCache
 import requests
@@ -14,7 +15,6 @@ def update_credits():
 
 def do_request(data, retry_count=3):
     
-    place_id = data["place_id"]
     website = data["website"]
     key = data["key"]
 
@@ -28,10 +28,12 @@ def do_request(data, retry_count=3):
         "X-RapidAPI-Key": key,
         "X-RapidAPI-Host": "website-social-scraper-api.p.rapidapi.com"
     }
-
-    
-    response = requests.get(url, headers=headers, params=querystring)
-    response_data = response.json()
+    try:
+        response = requests.get(url, headers=headers, params=querystring)
+        response_data = response.json()
+    except Exception as e:
+        traceback.print_exc()
+        return DontCache({"data": None, "error": FAILED_DUE_TO_UNKNOWN_ERROR})
     if response.status_code == 200:
         update_credits()
 
@@ -41,10 +43,7 @@ def do_request(data, retry_count=3):
         if "pinterest" not in final:
             final["pinterest"] = None
 
-     
-        
         return {
-            "place_id": place_id,
             "data": final,
             "error": None
         }
@@ -52,35 +51,47 @@ def do_request(data, retry_count=3):
         message = response_data.get("message", "")
         if "exceeded the MONTHLY quota" in message:
             return  DontCache({
-                        "place_id": place_id,
                         "data":  None,
                         "error":FAILED_DUE_TO_CREDITS_EXHAUSTED
                     })
         elif "exceeded the rate limit per second for your plan" in message or "many requests" in message:
             sleep(2)
-            return do_request(data, retry_count - 1)
+            return get_website_contacts(data, retry_count - 1)
         elif "You are not subscribed to this API." in message:
             
             return DontCache({
-                        "place_id": place_id,
                         "data": None,
                         "error": FAILED_DUE_TO_NOT_SUBSCRIBED
                     })
 
         print(f"Error: {response.status_code}", response_data)
         return  DontCache({
-                        "place_id": place_id,
                         "data":  None,
                         "error":FAILED_DUE_TO_UNKNOWN_ERROR
-                    })
+                    })    
+
+@task(
+    close_on_crash=True,
+    create_error_logs= False, 
+    output=None,
+    parallel=5,
+    cache=True
+    )
+def get_website_contacts(data, metadata):
+    return do_request({"website":data, "key":metadata})
 
 
 @task(
     close_on_crash=True,
     create_error_logs= False, 
-    cache=True, 
     output=None,
     parallel=5,
     )
-def scrape_social( data):
-    return do_request(data)
+def scrape_social(data):
+    result = get_website_contacts(data["website"], metadata=data["key"])
+    result["place_id"] = data["place_id"]
+    return result
+
+# `python -m src.social_scraper`
+if __name__ == "__main__":
+    print(get_website_contacts("https://www.seekneo.com/", "d"))

@@ -20,17 +20,26 @@ function isEmpty(x: any) {
     x === null || x === undefined || (typeof x == "string" && x.trim() === "")
   )
 }
-function isValidHttpUrl(string: any) {
-  let url: any
+
+function findLink(inputString) {
+  const regex = /http[s]?:\/\/(?:[a-zA-Z]|[0-9]|[$-_@.&+]|[!*\\(\\),]|(?:%[0-9a-fA-F][0-9a-fA-F]))+/;
+  const match = inputString.match(regex);
+  return match ? match[0] : null;
+}
+function getLink(string) {
+  let url
 
   try {
     url = new URL(string)
+    if (url.protocol === "http:" || url.protocol === "https:"){
+      return string
+    }
+    return findLink(string)
   } catch (_) {
-    return false
-  }
-
-  return url.protocol === "http:" || url.protocol === "https:"
+    return findLink(string)
+  }  
 }
+
 
 
 function isNotEmpty(x: any) {
@@ -41,7 +50,7 @@ function isBulkEdit(value, islinks) {
   if (islinks) {
     for (let index = 0; index < value.length; index++) {
       const element = value[index];
-      if (isValidHttpUrl(element)){
+      if (getLink(element)){
         return true
       }
     }
@@ -154,12 +163,30 @@ function parseStringToList(input) {
 }
 
 function computeItemsLen(value:any[], islinks) {
-  const a = value.filter(islinks ?isValidHttpUrl :isNotEmpty).length
-  return (a > 0 ? ` ${a} `: ' ') + ( islinks ? (a === 1 ? "Link":"Links" ): (a === 1 ?"Item" :"Items"))
+  
+  if (islinks) {
+    const a = value.map(getLink).filter(x=>x!== null).length
+    return (a > 0 ? ` ${a} `: ' ') + ( islinks ? (a === 1 ? "Link":"Links" ): (a === 1 ?"Item" :"Items"))
+      
+  }else{
+    const a = value.filter(isNotEmpty).length
+    return (a > 0 ? ` ${a} `: ' ') + ( islinks ? (a === 1 ? "Link":"Links" ): (a === 1 ?"Item" :"Items"))
+  
+  }
+  
 }
 
 function Modal({ closeModal, id, value, onChangeValue, islinks }) {
-  const [modaltext, onChangeModalText] = useState(() => value.filter(islinks ?isValidHttpUrl :isNotEmpty).map(x=>x.trim()).join('\n'))
+  const [modaltext, onChangeModalText] = useState(() => {
+
+    if (islinks) {
+      return value.filter(isNotEmpty).map(getLink).filter(x=>x!== null).map(x => x.trim()).join('\n')
+    }else{
+      return value.filter(isNotEmpty).map(x => x.trim()).join('\n')
+    }
+
+    
+  })
   
   return <EuiModal onClose={closeModal}>
     <ClickOutside handleClickOutside={() => { closeModal() } }>
@@ -189,7 +216,14 @@ function Modal({ closeModal, id, value, onChangeValue, islinks }) {
         <EuiModalFooter>
           <EuiButtonEmpty onClick={closeModal}>Cancel</EuiButtonEmpty>
           <EuiButton onClick={() => {
-            const x = parseStringToList(modaltext).filter(islinks ? isValidHttpUrl : isNotEmpty).map(x=>x.trim())
+            let x = parseStringToList(modaltext)
+            
+            if (islinks){
+              x = x.filter(isNotEmpty).map(getLink).filter(x=>x!== null).map(x=>x.trim())
+            } else {
+              x = x.filter(isNotEmpty).map(x=>x.trim())
+            }
+            
             onChangeValue(x)
             closeModal()
           } }>

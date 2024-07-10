@@ -1,6 +1,7 @@
+from urllib.parse import urlparse
 import re
 from botasaurus_server.server import Server
-from src.gmaps import get_places
+from src.gmaps import google_maps_scraper, website_contacts_scraper
 import random
 from botasaurus_server.ui import View, Field, ExpandDictField, ExpandListField, filters, sorts, CustomField
 from botasaurus import cl
@@ -286,7 +287,7 @@ best_customers = sorts.Sort(
 )
 try:
     Server.add_scraper(   
-        get_places,
+        google_maps_scraper,
         create_all_task=True, 
         split_task=split_task_by_query,
         get_task_name=get_task_name,
@@ -318,7 +319,7 @@ try:
     )
 except:
     Server.add_scraper(   
-        get_places,
+        google_maps_scraper,
         create_all_task=True, 
         split_task=split_task_by_query,
         get_task_name=get_task_name,
@@ -348,7 +349,51 @@ except:
         ],
     )
 
-Server.set_rate_limit(request=1)
+def process_domain(url):
+    stripped_url = url[4:] if url.startswith("www.") else url
+
+    # Split the url by "."
+    parts = stripped_url.split(".")
+    
+    # If there is only one "." in the url
+    if len(parts) == 1:
+        return stripped_url
+    elif len(parts) == 2:
+        return parts[0]
+    else:
+        # Remove the last TLD and join the remaining parts
+        return ".".join(parts[:-1])
+def get_website_contacts_scraper_task_name(data):
+    websites = data["websites"]
+    
+    # Extract main domain info
+    domains = [process_domain(urlparse(url).netloc) for url in websites]
+    
+    if len(domains) == 1:
+        return domains[0]
+    elif len(domains) <= 2:
+        return f"{domains[0]} and {domains[1]}"
+    else:
+        return f"{domains[0]}, {domains[1]} and {len(domains) - 2} more"
+
+social_media_filters = [
+    "emails", "phones", "linkedin", "twitter", "facebook",
+    "youtube", "instagram", "github", "snapchat", "tiktok"
+]
+
+Server.add_scraper(
+    website_contacts_scraper,
+    get_task_name=get_website_contacts_scraper_task_name,
+    filters=[
+        filters.SearchTextInput("website"),
+        *[filters.BoolSelectDropdown(social_media) for social_media in social_media_filters]
+    ],
+    sorts=[
+        sorts.AlphabeticAscendingSort("website"),
+        sorts.AlphabeticDescendingSort("website"),
+    ],
+)
+Server.set_rate_limit(request=1,task=1)
 Server.enable_cache()
 Server.configure(
      title="Google Maps Scraper",
@@ -361,4 +406,5 @@ Server.configure(
 )
 # python -m backend.scrapers
 if __name__ == "__main__":
-    print(split_by_gmaps_search_links(["https://www.google.com/maps/search/food+restaurant+in+++washingtk/@40.7338104,-74.0287773,13z/data=!3m1!4b1?entry=ttu", "https://www.google.com/maps/place/Top+App+%26+Web+Development+company+in+ahmedabad.Summer+internship+in+Php,Flutter,Python,AngularJS,React+JS,Node+JS+,UI%2FUx/data=!4m7!3m6!1s0x395e9b4922484c6f:0xe077cfffcd90ee87!8m2!3d23.0372919!4d72.5118722!16s%2Fg%2F11fzb0hl8n!19sChIJb0xIIkmbXjkRh-6Qzf_Pd-A?authuser=0&hl=en&rclk=1"]))
+    # print(split_by_gmaps_search_links(["https://www.google.com/maps/search/food+restaurant+in+++washingtk/@40.7338104,-74.0287773,13z/data=!3m1!4b1?entry=ttu", "https://www.google.com/maps/place/Top+App+%26+Web+Development+company+in+ahmedabad.Summer+internship+in+Php,Flutter,Python,AngularJS,React+JS,Node+JS+,UI%2FUx/data=!4m7!3m6!1s0x395e9b4922484c6f:0xe077cfffcd90ee87!8m2!3d23.0372919!4d72.5118722!16s%2Fg%2F11fzb0hl8n!19sChIJb0xIIkmbXjkRh-6Qzf_Pd-A?authuser=0&hl=en&rclk=1"]))
+    print(process_domain("www.webshark.in"))

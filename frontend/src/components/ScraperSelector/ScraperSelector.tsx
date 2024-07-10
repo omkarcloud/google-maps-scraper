@@ -8,10 +8,13 @@ function ScraperSelector({ scrapers, selectedScraper, onSelectScraper }) {
   }))
 
   const handleChange = selectedValue => {
-    const selectedScraper = scrapers.find(
-      scraper => scraper.scraper_name === selectedValue
-    )
-    onSelectScraper(selectedScraper)
+    if(selectedValue !== null){
+      const selectedScraper = scrapers.find(
+        scraper => scraper.scraper_name === selectedValue
+      )
+      onSelectScraper(selectedScraper)
+    }
+
   }
 
   return (

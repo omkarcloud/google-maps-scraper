@@ -71,7 +71,6 @@ const PromotionWrapper = () => {
     </div>
   )
 }
-
 function clean_filter_data(filter_data, filters) {
   const cleanedFilterData = { ...filter_data } // Create a copy to modify
 
@@ -317,10 +316,6 @@ const TaskComponent = ({
         <div className='space-y-6 '>
         <PromotionWrapper />
         <Link href={`/output`} passHref>
-              <EuiLink>View All Tasks</EuiLink>
-            </Link>
-
-          <Link href={`/output`} passHref>
             <EuiLink>View All Tasks</EuiLink>
           </Link>
           {hasFilters(filters) ? (
