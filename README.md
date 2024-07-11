@@ -278,7 +278,7 @@ Also, the Complete $28 will be refunded to you within 24 hours, without any ques
 
 While our Google Maps Scraper provides unlimited places with 40+ data points, you may optionally want to use our Website Contact Scraper Addon to get LinkedIn, Facebook, Twitter, and other contact information for the results. 
 
-This can help you reach out to business owners more effectively.
+These details help you reach out to business owners more effectively.
 
 The data quality is excellent. Kindly follow these steps to use the Website Contact Scraper Addon:
 
@@ -321,6 +321,7 @@ There are 3 plans available:
 - $33/10000 Contacts Plan: 10000 places for just $3.33 per 1000
 
 For most users, the Free Plan is sufficient. You can selectively choose the websites you're interested in and use the Website Contacts Scraper to get details for only those chosen websites.
+
 ![website-contacts-scraper](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/website-contacts-scraper.png)
 
 Although, If you need thousands of contacts, consider the $6/1000 Contacts Plan or $33/10000 Contacts Plan.
