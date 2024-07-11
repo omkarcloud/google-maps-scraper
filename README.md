@@ -54,9 +54,8 @@ Google Maps Scraper helps you find Business Profiles from Google Maps.
 
 ## ⚡ Benefits
 
-
 - Get Un-Limited Search Results, Say a Big-Big NO to Websites Selling Expensive Plans
-- 100% Accurate, 45+ Data Points Extracted in Real Time
+- 100% Accurate, 40+ Data Points Extracted in Real Time
 <!-- - Best of All? Absolutely. 0 Risk as We Offer a Generous 90-Day No Questions Asked Refund Guarantee -->
 
 In the next 5 minutes, you'll extract **120 Search Results** from Google Maps.
@@ -134,30 +133,6 @@ You can input your queries here and search by:
 - Scrape data for a specific type of business across all cities in a country.
 ![country-section](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/country-section.png)
 
-- Get Social Details of Profiles like Email, LinkedIn, Facebook, Twitter, etc.
-![social-section.png](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/social-section.png)
-
-Extracting social details is a compute-intensive process that involves searching various directories and websites parallelly using proxies. To help with this process, we've created an API.
-
-Kindly follow these steps to use the API and get the social details of the profiles:
-
-1. Sign up on RapidAPI by visiting [this link](https://rapidapi.com/auth/sign-up).
-
-![Sign Up on RapidAPI](https://raw.githubusercontent.com/omkarcloud/assets/master/images/sign-up.png)
-
-2. Subscribe to the Free Plan by visiting [this link](https://rapidapi.com/Chetan11dev/api/website-social-scraper-api/pricing).
-
-![Subscribe to Free Plan](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/subscribe.png)
-
-3. Copy the API key.
-![Copy the API Key](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/key.png)
-
-4. Put the Key in the "Email and Social Links Extraction" section and run it:
-
-![social-section.png](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/social-section.png)
-
-The first 200 contact details are free to scrape with the API. After that, you can upgrade to the Pro Plan to scrape 1,000 contacts for $9, which is affordable considering if you land just one customer, you could easily make hundreds of dollars, easily covering the investment.
-
 - Scrape Reviews
 ![reviews-section](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/reviews-section.png)
 
@@ -226,14 +201,14 @@ Google Maps give at most 120 results per search query. Don't worry about running
 
 Free versions shows only a limited set of data points. To access additional data points, consider upgrading to the Pro Version:
 
-- The Pro Version gives you access to 45+ data points, including:
+- The Pro Version gives you access to 40+ data points, including:
   * 🌐 **Website**
   * 📞 **Phone Numbers**
   * 🌍 **Geo-Coordinates**
   * 💰 **Price Range**
   * [**And many more!**](https://github.com/omkarcloud/google-maps-scraper/blob/master/fields.md)
 - Get Un-Limited Search Results, Say a Big-Big NO to Websites Selling Expensive Plans
-- 100% Accurate, 45+ Data Points Extracted in Real Time
+- 100% Accurate, 40+ Data Points Extracted in Real Time
 - Only a One-Time Investment with Lifetime Updates, and Top-Notch WhatsApp Support, all for $28 Only.
 - Best of All? Absolutely. 0 Risk as We Offer a Generous 90-Day No Questions Asked Refund Guarantee
 
@@ -298,12 +273,59 @@ Next, follow these steps to initiate a refund:
    ![PayPal Image](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/paypal.png)
 
 Also, the Complete $28 will be refunded to you within 24 hours, without any questions and without any hidden charges.
-<!-- 
-### ❓ Could you share resources that would be helpful to me, as I am sending personalized emails providing people with useful services?
 
-I recommend reading [The Cold Email Manifesto](https://www.amazon.com/Cold-Email-Manifesto-pipeline-business-ebook/dp/B0B1DYNNSL) by Alex Berman to learn how to emails that get replies. 
+### ❓ How can I get Email, LinkedIn, Facebook, Twitter, etc. of the places?
 
-Rest assured, I have your interest at my heart, and the above link is not an affiliate link. It's just a really awesome book, that's why I'm recommending it to you. -->
+While our Google Maps Scraper provides unlimited places with 40+ data points, you may optionally want to use our Website Contact Scraper Addon to get LinkedIn, Facebook, Twitter, and other contact information for the results. 
+
+This can help you reach out to business owners more effectively.
+
+The data quality is excellent. Kindly follow these steps to use the Website Contact Scraper Addon:
+
+1. Sign up on RapidAPI by visiting [this link](https://rapidapi.com/auth/sign-up).
+
+![Sign Up on RapidAPI](https://raw.githubusercontent.com/omkarcloud/assets/master/images/sign-up.png)
+
+2. Subscribe to the Free Plan by visiting [this link](https://rapidapi.com/Chetan11dev/api/website-social-scraper-api/pricing).
+
+![Subscribe to Free Plan](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/subscribe.png)
+
+3. Copy the API key.
+![Copy the API Key](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/key.png)
+
+Now you have two options for using the Website Contact Scraper Addon:
+
+#### Option 1: Get contacts for all places in a search query
+
+Enter the copied API key in the "Email and Social Links Extraction" section and run it:
+
+![social-section.png](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/social-section.png)
+
+#### Option 2: Get contacts for specific chosen websites (saves money)
+
+1. Click the Website Contact Scraper button:
+![website-contacts-scraper-button](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/website-contacts-scraper-button.png)
+
+2. Enter the specific websites you're interested in, the copied API key and run it:
+![interested-websites](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/interested-websites.png)
+
+3. After this, you'll have the contact details for the chosen websites.
+
+![contacts-websites](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/contacts-websites.png)
+
+### ❓ How much does the Website Contact Scraper Addon cost?
+
+There are 3 plans available:
+- Free Plan: 200 places free every month
+- $6/1000 Contacts Plan: 1000 places for $6
+- $33/10000 Contacts Plan: 10000 places for just $3.33 per 1000
+
+For most users, the Free Plan is sufficient. You can selectively choose the websites you're interested in and use the Website Contacts Scraper to get details for only those chosen websites.
+![website-contacts-scraper](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/website-contacts-scraper.png)
+
+Although, If you need thousands of contacts, consider the $6/1000 Contacts Plan or $33/10000 Contacts Plan.
+
+The data quality is excellent, and the cost is very reasonable. Considering that landing just one customer from 1000 contacts can easily cover your investment and generate a nice profit.
 
 ### ❓ This Scraper is Truly One-of-a-Kind, Something I've Never Seen Before. How Did You Build It?
 
