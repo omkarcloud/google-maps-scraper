@@ -88,6 +88,8 @@ python -m pip install -r requirements.txt
 python run.py install
 ```
 
+This will typically takes about 5 minutes to complete. So be patient, you only need to do this once.
+
 3️⃣ Launch the UI Dashboard 🚀:
 ```shell
 python run.py
@@ -97,7 +99,9 @@ python run.py
 
 ![GIF of Google Maps Scraper Visit, Highlight Keyword, Run, See Results](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/demo.gif)
 
-*Note: If you don't have Node.js 16+ and Python installed or you are facing errors, follow this Simple FAQ [here](https://github.com/omkarcloud/google-maps-scraper/blob/master/advanced.md#-i-dont-have-python-or-im-facing-errors-when-setting-up-the-scraper-on-my-pc-how-to-solve-it), and you will have your search results in the next 5 Minutes*
+*Note:*
+1. If you don't have Node.js 16+ and Python installed or you are facing errors, follow this Simple FAQ [here](https://github.com/omkarcloud/google-maps-scraper/blob/master/advanced.md#-i-dont-have-python-or-im-facing-errors-when-setting-up-the-scraper-on-my-pc-how-to-solve-it), and you will have your search results in the next 5 Minutes.
+2. If you face any problems, please contact us via [WhatsApp](hhttps://api.whatsapp.com/send?phone=918295042963&text=I%20need%20installation%20help) or [Email](mailto:chetan@omkar.cloud). We will respond within 24 hours.
 
 ## ⚡ Enlightening Questions
 
@@ -380,7 +384,7 @@ For further help, feel free to reach out to us through:
 
   [![Contact Us on Email about Google Maps Scraper](https://raw.githubusercontent.com/omkarcloud/assets/master/images/ask-on-email.png)](mailto:chetan@omkar.cloud)
 
-We look forward to helping you and will respond to emails and WhatsApp messages within 24 hours.
+We look forward to helping you and will reply to your emails and WhatsApp messages within 24 hours.
 
 Good Luck!
 
