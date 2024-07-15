@@ -17,6 +17,9 @@ def do_request(data, retry_count=3):
     place_id = data["place_id"]
     website = data["website"]
     key = data["key"]
+    
+    if "face" in website or "insta" in website:
+        return DontCache(None)
 
     if retry_count == 0:
         print(f"Failed to get Social details for {website}, after 3 retries")
@@ -36,12 +39,29 @@ def do_request(data, retry_count=3):
         update_credits()
 
         final = response_data
-        # .get('data', [None])[0]
+        emails = final["emails"]
+        preferred_keywords = ["kontakt", "contact", "biuro"]
         
+        print(emails)
+        
+        if emails and isinstance(emails, list) and len(emails) > 0:
+            kontakt_email = emails[0]  # Default to the first email in the list
+
+            for email in emails:
+                for keyword in preferred_keywords:
+                    if keyword in email:
+                        kontakt_email = email
+                        break
+                else:
+                    continue
+                break
+            
+            final['emails'] = [kontakt_email]   
+
+
+            
         if "pinterest" not in final:
             final["pinterest"] = None
-
-     
         
         return {
             "place_id": place_id,
