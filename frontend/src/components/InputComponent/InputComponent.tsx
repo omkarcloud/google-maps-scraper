@@ -297,6 +297,25 @@ function getInitialData(scraper_name, input_js_hash, controls) {
   return savedData ? JSON.parse(savedData) : defaultData
 }
 
+
+function getLastScraper(scrapers) {
+  if (typeof window === 'undefined') {
+    return scrapers[0];
+  }
+
+  const input_scraper = localStorage.getItem('input_scraper');
+  
+  if (input_scraper) {
+    const selectedScraper = scrapers.find(
+      (scraper) => scraper.scraper_name === input_scraper
+    );  
+    if (selectedScraper) {
+      return selectedScraper;
+    }
+  }
+  return scrapers[0];
+}
+
 function createInitialData(selectedScraper: any) {
   const initial_data = getInitialData(
     selectedScraper.scraper_name,
@@ -315,7 +334,7 @@ const ScraperFormContainer = ({ scrapers }) => {
 
   
   const [{data, selectedScraper }, setData] = useState(() =>{
-    const selectedScraper = scrapers[0]
+    const selectedScraper =  getLastScraper(scrapers)
     return createInitialData(selectedScraper)
   }
     
@@ -389,11 +408,15 @@ const ScraperFormContainer = ({ scrapers }) => {
   }
   return (
     <>
-      {scrapers.length <= 1 ? null : (
+      {scrapers.length <= 1 || typeof window === 'undefined' ? null : (
         <ScraperSelector
           scrapers={scrapers}
           selectedScraper={selectedScraper}
           onSelectScraper={(x)=>{
+            localStorage.setItem(
+              `input_scraper`,
+              x.scraper_name
+            )
               setData(createInitialData(x))
           }}
         />)}
