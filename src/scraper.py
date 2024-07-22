@@ -94,7 +94,7 @@ def process_reviews(reviews):
 
     close_on_crash=True,
     output=None,
-
+    parallel=40,
 )
 def scrape_reviews(requests, data):
     place_id = data["place_id"]
