@@ -374,9 +374,14 @@ def get_website_contacts_scraper_task_name(data):
     if len(domains) == 1:
         return domains[0]
     elif len(domains) <= 2:
-        return f"{domains[0]} and {domains[1]}"
+        d1 = domains[0]
+        d2 = domains[1]
+        return d1 + " and " + d2
     else:
-        return f"{domains[0]}, {domains[1]} and {len(domains) - 2} more"
+        d1 = domains[0]
+        d2 = domains[1]
+        n = len(domains) - 2
+        return d1 + ", " + d2 + " and " + str(n) + " more"
 
 social_media_filters = [
     "emails", "phones", "linkedin", "twitter", "facebook",
