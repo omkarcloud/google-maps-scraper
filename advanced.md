@@ -52,10 +52,15 @@ python3 -m pip install --upgrade bota botasaurus botasaurus-api botasaurus-reque
 And then, please follow these instructions:
 
 1.⁠ ⁠Download the scraper from the link which was sent to your GitHub email address when you purchased Pro Version.
+
 2.⁠ ⁠Extract the downloaded ZIP file.
+
 3.⁠ ⁠Open a terminal in the extracted folder.
+
 4.⁠ ⁠Install Dependencies by running: python3 run.py install
+
 5.⁠ ⁠Launch the UI Dashboard by running: python3 run.py
+
 6.⁠ ⁠Now, Run Queries as you like.
 
 ### ❓ How to run Pro Version in Gitpod?
