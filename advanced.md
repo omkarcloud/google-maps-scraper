@@ -14,7 +14,7 @@ You can easily run the scraper in Gitpod, a browser-based development environmen
 
 3. In the terminal, run the following command:
    ```bash
-   python run.py
+   python3 run.py
    ```
 4. You will see a popup notification with the heading "A service is available on port 3000". In the popup notification, click the **"Open Browser"** button to open the UI Dashboard in your browser
 
@@ -38,7 +38,7 @@ To update the **Free Version**, run these commands in the root directory:
 
 ```bash
 git pull
-python -m pip install --upgrade bota botasaurus botasaurus-api botasaurus-requests botasaurus-driver botasaurus-proxy-authentication botasaurus-server
+python3 -m pip install --upgrade bota botasaurus botasaurus-api botasaurus-requests botasaurus-driver botasaurus-proxy-authentication botasaurus-server
 ```
 
 ---
@@ -46,12 +46,17 @@ python -m pip install --upgrade bota botasaurus botasaurus-api botasaurus-reques
 To update the **Pro Version**, run these commands:
 
 ```bash 
-python -m pip install --upgrade bota botasaurus botasaurus-api botasaurus-requests botasaurus-driver botasaurus-proxy-authentication botasaurus-server
+python3 -m pip install --upgrade bota botasaurus botasaurus-api botasaurus-requests botasaurus-driver botasaurus-proxy-authentication botasaurus-server
 ```
 
-And then, please refollow the instructions which were sent to your GitHub email address when you purchased it.
+And then, please follow these instructions:
 
-![instructions.png](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/instructions.png)
+1.⁠ ⁠Download the scraper from the link which was sent to your GitHub email address when you purchased Pro Version.
+2.⁠ ⁠Extract the downloaded ZIP file.
+3.⁠ ⁠Open a terminal in the extracted folder.
+4.⁠ ⁠Install Dependencies by running: python3 run.py install
+5.⁠ ⁠Launch the UI Dashboard by running: python3 run.py
+6.⁠ ⁠Now, Run Queries as you like.
 
 ### ❓ How to run Pro Version in Gitpod?
 
@@ -86,8 +91,8 @@ You can easily run the pro version in Gitpod, by following these steps:
    rm -rf omkarcloud-google-maps-scraper-pro-*
    ```
   
-4. Install Dependencies by running: `python run.py install`
-5. Launch the UI Dashboard by running: `python run.py`
+4. Install Dependencies by running: `python3 run.py install`
+5. Launch the UI Dashboard by running: `python3 run.py`
 6. Now, Run Queries as you like.
 
 ### ❓ Need More Help or Have Additional Questions?

@@ -84,15 +84,15 @@ cd google-maps-scraper
 
 2️⃣ Install Dependencies 📦:
 ```shell
-python -m pip install -r requirements.txt
-python run.py install
+python3 -m pip install -r requirements.txt
+python3 run.py install
 ```
 
 This will typically takes about 5 minutes to complete. So be patient, you only need to do this once.
 
 3️⃣ Launch the UI Dashboard 🚀:
 ```shell
-python run.py
+python3 run.py
 ```
 
 4️⃣ Open your browser and go to [http://localhost:3000](http://localhost:3000), then press the Run button to have 120 search results within 2 minutes. 😎
