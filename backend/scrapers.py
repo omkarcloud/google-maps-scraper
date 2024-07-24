@@ -200,7 +200,9 @@ def competitors_to_string(data):
 
             # Formatting each competitor's information and adding it to the list
             formatted_strings.append(
-                f"Name: {name}\nLink: {link}\nReviews: {reviews} reviews\n"
+                "Name: " + name + "\n" +
+                "Link: " + link + "\n" +
+                "Reviews: " + str(reviews) + " reviews" + "\n"
             )
 
         # Joining all formatted strings with a newline character
