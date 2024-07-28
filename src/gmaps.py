@@ -327,6 +327,8 @@ def google_maps_scraper(_, data):
 
     place_data = create_place_data(query,  max_results, lang, geo_coordinates, zoom, links)
     places_obj = scraper.scrape_places(place_data,)
+    if places_obj is None:
+        return DontCache([])
     should_scrape_socials = key  
     result_item = process_result(key, scrape_reviews, reviews_max, reviews_sort, lang, should_scrape_socials, places_obj)
     
