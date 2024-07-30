@@ -116,7 +116,8 @@ def scrape_reviews(requests, data):
     return {"place_id":place_id, "reviews": processed}
 
 
-
+class RetryException(Exception):
+    pass
 @request(
     parallel=5,
     async_queue=True,
@@ -137,11 +138,15 @@ def scrape_place(requests, link, metadata):
             html =  requests.get(link,cookies=cookies, 
                                  browser='chrome',
                                  os=os, user_agent=user_agent, timeout=12,).text
-            # Splitting HTML to get the part after 'window.APP_INITIALIZATION_STATE='
-            initialization_state_part = html.split(';window.APP_INITIALIZATION_STATE=')[1]
+            try:
+                # Splitting HTML to get the part after 'window.APP_INITIALIZATION_STATE='
+                initialization_state_part = html.split(';window.APP_INITIALIZATION_STATE=')[1]
 
-            # Further splitting to isolate the APP_INITIALIZATION_STATE content
-            app_initialization_state = initialization_state_part.split(';window.APP_FLAGS')[0]
+                # Further splitting to isolate the APP_INITIALIZATION_STATE content
+                app_initialization_state = initialization_state_part.split(';window.APP_FLAGS')[0]
+            except:
+                raise RetryException("Retrying...")
+            
 
             # Extracting data from the APP_INITIALIZATION_STATE
             data = extract_data(app_initialization_state, link)

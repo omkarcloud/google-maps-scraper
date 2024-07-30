@@ -366,11 +366,23 @@ You may choose to read the following questions based on your interests:
 3. [How to Update the Scraper to the Latest Version?](https://github.com/omkarcloud/google-maps-scraper/blob/master/advanced.md#-how-to-update-the-scraper-to-the-latest-version)
 4. [How to run Pro Version in Gitpod?](https://github.com/omkarcloud/google-maps-scraper/blob/master/advanced.md#-how-to-run-pro-version-in-gitpod)
 
-### ❓ Need More Help or Have Additional Questions?
+### Not in your Budget?
 
-For further help, feel free to reach out to us through:
+If you are a student or a person just starting your business, and the Pro Version is not in your budget, you can let us know via [email](mailto:chetan@omkar.cloud). We will provide you with the Pro Version within 24 hours, with absolute 0 bureaucracy.
 
-- **WhatsApp:** If you prefer WhatsApp, simply send a message [here](https://api.whatsapp.com/send?phone=918295042963&text=Hi,%20I%20would%20like%20to%20learn%20more%20about%20your%20google%20maps%20scraper). Also, to help me provide the best possible answer, please include as much detail as possible.
+### Need More Help or Have Additional Questions?
+
+If you need further help, please send your queries to [chetan@omkar.cloud](mailto:chetan@omkar.cloud). To help us provide the best possible answer, please include as many details as possible.
+
+[![Contact Us on Email about Google Maps Scraper](https://raw.githubusercontent.com/omkarcloud/assets/master/images/ask-on-email.png)](mailto:chetan@omkar.cloud)
+
+We offer excellent email support and will respond within 24 hours.
+
+Here's an improved version with corrected spelling, grammar, and formatting:
+
+
+
+<!-- - **WhatsApp:** If you prefer WhatsApp, simply send a message [here](https://api.whatsapp.com/send?phone=918295042963&text=Hi,%20I%20would%20like%20to%20learn%20more%20about%20your%20google%20maps%20scraper). Also, to help me provide the best possible answer, please include as much detail as possible.
 
   [![Contact Us on WhatsApp about Google Maps Scraper](https://raw.githubusercontent.com/omkarcloud/assets/master/images/whatsapp-us.png)](https://api.whatsapp.com/send?phone=918295042963&text=Hi,%20I%20would%20like%20to%20learn%20more%20about%20your%20google%20maps%20scraper)
 
@@ -385,7 +397,7 @@ For further help, feel free to reach out to us through:
 
 We look forward to helping you and will reply to your emails and WhatsApp messages within 24 hours.
 
-Good Luck!
+Good Luck! -->
 
 ## Love It? [Star It ⭐!](https://github.com/omkarcloud/google-maps-scraper)
 
