@@ -75,6 +75,8 @@ def split_by_gmaps_search_links(links):
             x = convert_to_string(parsed_link.lstrip('/maps/search/').split('/')[0])
             if x:
                 search_queries.append((x))
+            elif "query_place_id" in link:
+                in_place_links.append(link)
         else:
             # Otherwise, add to in place links list
             in_place_links.append(link)
@@ -265,6 +267,7 @@ overview_view = View(
         CustomField("owner_profile_link", map=lambda value: "*****"),
         Field("featured_image"),
         Field("workday_timing"),
+        Field("is_temporarily_closed"),
         Field("closed_on", map=join_closed_on),
         Field("phone"),
         Field("review_keywords", map=join_review_keywords),
@@ -287,25 +290,29 @@ best_customers = sorts.Sort(
         # ),
     ],
 )
-try:
-    Server.add_scraper(   
-        google_maps_scraper,
-        create_all_task=True, 
-        split_task=split_task_by_query,
-        get_task_name=get_task_name,
-        filters=[
+fls = [
             filters.MinNumberInput("reviews", label="Min Reviews"),
             filters.MaxNumberInput("reviews", label="Max Reviews"),
             filters.BoolSelectDropdown("website", prioritize_no=True),
             filters.IsTruthyCheckbox("phone"),
             filters.IsTrueCheckbox("is_spending_on_ads"),
             filters.BoolSelectDropdown("can_claim"),
+            filters.BoolSelectDropdown("is_temporarily_closed", label="Is Open", invert_filter=True),
             filters.MultiSelectDropdown(
                 "category_in",
                 options=category_options,
             ),
             filters.MinNumberInput("rating", label="Min Rating"),
-        ],
+
+        ]
+try:
+    Server.add_scraper(   
+        google_maps_scraper,
+        create_all_task=True, 
+        split_task=split_task_by_query,
+        get_task_name=get_task_name,
+        filters=fls,
+
         sorts=[
             best_customers,
             sorts.NumericDescendingSort("reviews"),
@@ -325,19 +332,8 @@ except:
         create_all_task=True, 
         split_task=split_task_by_query,
         get_task_name=get_task_name,
-        filters=[
-            filters.MinNumberInput("reviews", label="Min Reviews"),
-            filters.MaxNumberInput("reviews", label="Max Reviews"),
-            filters.BoolSelectDropdown("website", prioritize_no=True),
-            filters.IsTruthyCheckbox("phone"),
-            filters.IsTrueCheckbox("is_spending_on_ads"),
-            filters.BoolSelectDropdown("can_claim"),
-            filters.MultiSelectDropdown(
-                "category_in",
-                options=category_options,
-            ),
-            filters.MinNumberInput("rating", label="Min Rating"),
-        ],
+        filters=fls,
+
         sorts=[
             best_customers,
             sorts.NumericDescendingSort("reviews"),
