@@ -1,5 +1,5 @@
 import { EuiFieldText } from '@elastic/eui'
-import Browser from '@omkar111111/utils/browser'
+import Browser from '../../utils/browser'
 
 export default function TextField({ value, onChange, ...props }: any) {
   const handleChange = event => {

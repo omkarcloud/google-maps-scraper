@@ -3,12 +3,11 @@ import { AxiosInstance } from 'axios'
 import cogoToast from 'cogo-toast-react-17-fix'
 import Toast from '../cogo-toast'
 
-import { JSObject } from '@omkar111111/utils/types'
 import Router from 'next/router'
 
 function applyInterceptors(AxiosInstance: AxiosInstance) {
   const map = new Map()
-  function showLoading(config: JSObject, message: string) {
+  function showLoading(config: any, message: string) {
     const hideFn = cogoToast.loading(message, {
       hideAfter: 0,
       position: 'bottom-right',
@@ -16,7 +15,7 @@ function applyInterceptors(AxiosInstance: AxiosInstance) {
     map.set(config, hideFn)
   }
 
-  function hideLoading(config: JSObject) {
+  function hideLoading(config: any) {
     const hidefn = map.get(config)
     if (hidefn) {
       hidefn()

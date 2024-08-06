@@ -1,6 +1,7 @@
-import Language from '@omkar111111/utils/language'
 import { AxiosResponse } from 'axios'
 
+function isListEmpty(r){return 0===r.length}
+export function readNumber(r) { if ("" === r || "number" != typeof r && "string" != typeof r) return null; var t = Number(r); return Number.isNaN(t) ? null : t }
 export async function getDataFromAxiosResponse(res: Promise<AxiosResponse>) {
   try {
     return (await res).data
@@ -36,6 +37,6 @@ export function generateListWithIdAndValue(n) {
 }
 
 export const isStringOrListNotEmpty = (x: any) =>
-  typeof x === 'string' ? isNotEmpty(x) : !Language.isListEmpty(x)
+  typeof x === 'string' ? isNotEmpty(x) : !isListEmpty(x)
 
 export const isStringOrListEmpty = (x: any) => !isStringOrListNotEmpty(x)

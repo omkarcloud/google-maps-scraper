@@ -386,7 +386,11 @@ const ScraperFormContainer = ({ scrapers }) => {
 
       const result = response.data
       const outputId = Array.isArray(result) ? result[0].id : result.id
-      pushToRoute(router, `/output/${outputId}`)
+      if (outputId) {
+        pushToRoute(router, `/output/${outputId}`)
+      } else {
+        console.error("failed", result)
+      }
     } else {
       const rs = { ...accords }
 

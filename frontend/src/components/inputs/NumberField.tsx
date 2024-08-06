@@ -1,11 +1,12 @@
-import Browser from '@omkar111111/utils/browser'
-import Language from '@omkar111111/utils/language'
+import Browser from '../../utils/browser'
 import { EuiFieldNumber } from '@elastic/eui'
+import { readNumber } from '../../utils/missc'
+
 
 export default function NumberField({ value, onChange, ...props }: any) {
   const handleNumberChange = event => {
     const value = Browser.inputValue(event)
-    onChange(Language.readNumber(value))
+    onChange(readNumber(value))
   }
 
   return (

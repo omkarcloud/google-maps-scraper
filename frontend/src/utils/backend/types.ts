@@ -1,5 +1,7 @@
-import { JSObject, WithId } from '@omkar111111/utils/types'
 
+type WithId<T = string> = {
+  id: T;
+};
 type Timespamps = {
   created_at: string
   updated_at: string
@@ -28,7 +30,7 @@ export type ProjectSvg = WithId<number> & {
 
 export type Page = WithId<number> & {
   title: string
-  nodes: JSObject[]
+  nodes: any[]
   link: string
 }
 

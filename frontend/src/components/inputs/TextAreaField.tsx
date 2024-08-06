@@ -1,5 +1,5 @@
 import { EuiTextArea } from '@elastic/eui'
-import Browser from '@omkar111111/utils/browser'
+import Browser from '../../utils/browser'
 
 export default function TextAreaField({ value, onChange, rows=6,...props }: any) {
   const handleChange = event => {

@@ -1,5 +1,5 @@
 import { EuiSelect } from '@elastic/eui'
-import Browser from '@omkar111111/utils/browser'
+import Browser from '../../utils/browser'
 
 export default function Select({ options, value, onChange, ...props }: any) {
   const cleanedOptions = options.map(o => ({
