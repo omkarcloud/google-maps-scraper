@@ -241,10 +241,9 @@ The risk is entirely on us! because we're that confident in what we've created!
 
 ### ❓ How Do I Get a Refund?
 
-We are ethical and honest people, and we will not keep your money if you are not happy with our product. Requesting a refund is a simple process that should only take about 5 minutes. To request a refund, ensure you have one of the following:
+We are ethical and honest people, and we will not keep your money if you are not happy with our product. Requesting a refund is a simple process that should only take about 5 minutes. 
 
-- **A PayPal Account (e.g., "myname@example.com" or "chetan@gmail.com")**
-- **or a UPI ID (For India Only) (e.g., 'myname@bankname' or 'chetan@okhdfc')**
+To request a refund, ensure you have a PayPal Account (e.g., "myname@example.com" or "chetan@gmail.com").
 
 Next, follow these steps to initiate a refund:
 
@@ -254,12 +253,6 @@ Next, follow these steps to initiate a refund:
      ```
      Subject: Request Refund
      Content: Please send a refund to my PayPal email: myname@example.com
-     ```
-
-   - To request a refund via UPI (For India Only):
-     ```
-     Subject: Request Refund
-     Content: Please send a refund to my UPI ID: myname@bankname
      ```
 
    ![Email Image](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/email.png)
@@ -275,7 +268,7 @@ Next, follow these steps to initiate a refund:
 
    ![PayPal Image](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/paypal.png)
 
-Also, the Complete $28 will be refunded to you within 24 hours, without any questions and without any hidden charges.
+Also, the complete $28 will be refunded to you within 24 hours, without any questions and without any hidden charges.
 
 ### ❓ How can I get Email, LinkedIn, Facebook, Twitter, etc. of the places?
 
