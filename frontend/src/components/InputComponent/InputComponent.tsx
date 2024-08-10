@@ -7,7 +7,7 @@ import {
 } from '@elastic/eui'
 
 import { EuiForm } from '@elastic/eui'
-
+import Toast from '../../utils/cogo-toast'
 import { Control, WithChooseOptions, createControls } from 'botasaurus-controls'
 import { useMemo, useState } from 'react'
 import { useRouter } from 'next/router'
@@ -385,11 +385,16 @@ const ScraperFormContainer = ({ scrapers }) => {
       }).finally(() => setIsSubmitting(false))
 
       const result = response.data
-      const outputId = Array.isArray(result) ? result[0].id : result.id
-      if (outputId) {
-        pushToRoute(router, `/output/${outputId}`)
-      } else {
-        console.error("failed", result)
+      const isarr = Array.isArray(result)
+      if (isarr && result.length === 0) {
+        Toast.error('No Tasks were created.')
+      }else {
+        const outputId = isarr ? result[0].id : result.id
+        if (outputId) {
+          pushToRoute(router, `/output/${outputId}`)
+        } else {
+          console.error("failed", result)
+        }
       }
     } else {
       const rs = { ...accords }
