@@ -12,4 +12,4 @@ COPY . /app
 
 RUN python run.py install
 
-CMD ["python", "run.py"]
+CMD ["sh", "-c", "python run.py & python main.py"]
