@@ -359,10 +359,6 @@ You may choose to read the following questions based on your interests:
 3. [How to Update the Scraper to the Latest Version?](https://github.com/omkarcloud/google-maps-scraper/blob/master/advanced.md#-how-to-update-the-scraper-to-the-latest-version)
 4. [How to run Pro Version in Gitpod?](https://github.com/omkarcloud/google-maps-scraper/blob/master/advanced.md#-how-to-run-pro-version-in-gitpod)
 
-### Not in your Budget?
-
-If you are a student or a person just starting your business, and the Pro Version is not in your budget, you can let us know via [email](mailto:chetan@omkar.cloud). We will provide you with the Pro Version within 24 hours, with absolute 0 bureaucracy.
-
 ### Need More Help or Have Additional Questions?
 
 If you need further help, please send your queries to [chetan@omkar.cloud](mailto:chetan@omkar.cloud). To help us provide the best possible answer, please include as many details as possible.
@@ -401,3 +397,7 @@ It's just one click, but it means the world to me.
 [![Stargazers for @omkarcloud/google-maps-scraper](https://bytecrank.com/nastyox/reporoster/php/stargazersSVG.php?user=omkarcloud&repo=google-maps-scraper)](https://github.com/omkarcloud/google-maps-scraper/stargazers)
 
 ## Made with ❤️ using [Botasaurus Web Scraping Framework](https://www.omkar.cloud/l/google-maps-to-botasaurus/)
+
+### Not in your Budget?
+
+If you are a student or a person just starting your business, and the Pro Version is not in your budget, you can let us know via [email](mailto:chetan@omkar.cloud) and we will provide you with the Pro Version.
