@@ -299,7 +299,8 @@ fls = [
             filters.BoolSelectDropdown("can_claim"),
             filters.BoolSelectDropdown("is_temporarily_closed", label="Is Open", invert_filter=True),
             filters.MultiSelectDropdown(
-                "category_in",
+                "categories",
+                label="Category In",
                 options=category_options,
             ),
             filters.MinNumberInput("rating", label="Min Rating"),

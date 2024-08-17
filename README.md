@@ -400,4 +400,4 @@ It's just one click, but it means the world to me.
 
 ### Not in your Budget?
 
-If you are a student or a person just starting your business, and the Pro Version is not in your budget, you can let us know via [email](mailto:chetan@omkar.cloud) and we will provide you with the Pro Version.
+If you are a student or a person just starting your business, and the Pro Version is not in your budget, you can let us know via [email](mailto:chetan@omkar.cloud) and we will provide you with the Pro Version. Don't hesitate, it will take 5 minutes to email, and it will make us mastastically happy 😊 to help you.

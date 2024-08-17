@@ -33,7 +33,8 @@ import ServerStatusComponent from '../../components/ServerStatusComponent'
 import { Pagination } from '../Pagination'
 
 function convertLocalDateToUTCDate(date, toUTC) {
-  date = new Date(date)
+  // auto converts so no need
+  return new Date(date+"Z")
   const localOffset = date.getTimezoneOffset() * 60000
   const localTime = date.getTime()
   if (toUTC) {
@@ -125,7 +126,7 @@ function calculateDuration(obj) {
   if (obj.started_at) {
     // Convert datetime strings to Date objects
     const startedAt = new Date(obj.started_at)
-    const endTime = obj.finished_at ? new Date(obj.finished_at) : convertLocalDateToUTCDate(new Date(), true)
+    const endTime = obj.finished_at ? new Date(obj.finished_at) : new Date()
     // @ts-ignore
     const duration = (endTime - startedAt) / 1000
 
