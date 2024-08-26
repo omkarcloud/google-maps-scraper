@@ -346,10 +346,8 @@ const ScraperFormContainer = ({ scrapers }) => {
   const handleDataChange = (id, value) => {
     setData(prevData => {
       const newData = { ...prevData.data, [id]: value }
-      localStorage.setItem(
-        `input_${selectedScraper.scraper_name}_${selectedScraper.input_js_hash}`,
-        JSON.stringify(newData)
-      )
+      
+      saveDataToLocalStorage(selectedScraper, newData)
       return {...prevData, data:newData} 
     })
   }
@@ -427,7 +425,8 @@ const ScraperFormContainer = ({ scrapers }) => {
               x.scraper_name
             )
               setData(createInitialData(x))
-          }}
+          }
+        }
         />)}
       <EuiForm
         isInvalid={submitAttempted && !isEmptyObject(validationResult)}
@@ -468,3 +467,14 @@ const InputComponent = ({ scrapers }) => {
 }
 
 export default InputComponent
+function saveDataToLocalStorage(selectedScraper: any, newData: any) {
+  try {
+    localStorage.setItem(
+      `input_${selectedScraper.scraper_name}_${selectedScraper.input_js_hash}`,
+      JSON.stringify(newData)
+    );
+  } catch (error) {
+    console.error('Error saving to localStorage:', error);
+  }
+}
+

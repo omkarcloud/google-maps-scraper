@@ -1,7 +1,18 @@
 import re as rex
 import json
 from datetime import datetime
+from botasaurus import bt
 
+def get_image_id(img):
+    return bt.extract_path_from_link(img).split("/")[-1].split("=")[0]
+
+def change_image_to_high_res(img):
+    if img:
+        domain = bt.extract_domain_from_link(img)
+        if "googleusercontent." in domain:
+            id = get_image_id(img)
+            return f"https://lh3.ggpht.com/p/{id}=s1024"
+        return img
 def safe_get(data, *keys):
     for key in keys:
         try:
@@ -165,7 +176,8 @@ def get_user_reviews(data):
 def get_review_images(data):
     ls = []
     for x in data:
-            ls.append(safe_get(x, 1,6,0))
+            img = safe_get(x, 1,6,0)
+            ls.append(change_image_to_high_res(img))
     return ls
 
 def convert_timestamp_to_iso_date(timestamp):
