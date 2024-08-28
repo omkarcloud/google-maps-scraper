@@ -1,5 +1,5 @@
-botasaurus
-botasaurus-server
+botasaurus>=4.0.58
+botasaurus-server>=4.0.55
 dateutils
 lxml
 regex
