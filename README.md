@@ -85,6 +85,7 @@ cd google-maps-scraper
 2️⃣ Install Dependencies 📦:
 ```shell
 python3 -m pip install -r requirements.txt
+python3 -m pip install bota botasaurus botasaurus-api botasaurus-requests botasaurus-driver bota botasaurus-proxy-authentication botasaurus-server --upgrade
 python3 run.py install
 ```
 
