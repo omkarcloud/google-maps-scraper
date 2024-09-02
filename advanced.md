@@ -83,17 +83,11 @@ You can easily run the pro version in Gitpod, by following these steps:
    # Unzip the downloaded file
    unzip google-maps-scraper.zip
 
-   # Rename the unzipped folder to 'google-maps-scraper-pro'
-   mv omkarcloud-google-maps-scraper-pro-* google-maps-scraper-pro
-
-   # Remove the original ZIP and any other remnants
-   rm -rf omkarcloud-google-maps-scraper-pro-* google-maps-scraper.zip
+   # Remove the original ZIP file
+   rm -rf google-maps-scraper.zip
 
    # Change directory to the renamed folder
    cd google-maps-scraper-pro
-
-   # Remove any other remnants
-   rm -rf omkarcloud-google-maps-scraper-pro-*
    ```
   
 4. Install Dependencies by running: `python3 run.py install`
