@@ -88,6 +88,9 @@ You can easily run the pro version in Gitpod, by following these steps:
 
    # Change directory to the renamed folder
    cd google-maps-scraper-pro
+
+   # Install Dependencies
+   python3 -m pip install -r requirements.txt
    ```
   
 4. Install Dependencies by running: `python3 run.py install`

@@ -1,5 +1,6 @@
 services:
   bot-1:
+    init: true
     restart: "no"
     shm_size: 800m
     build:
