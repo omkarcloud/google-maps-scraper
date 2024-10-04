@@ -1,5 +1,0 @@
-botasaurus>=4.0.58
-botasaurus-server>=4.0.56
-dateutils
-lxml
-regex
