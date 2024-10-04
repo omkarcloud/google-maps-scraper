@@ -42,12 +42,6 @@ We take the concerns of the Google Maps Scraper Project very seriously. For any 
 
 - ✅ [BOTASAURUS](https://www.omkar.cloud/l/google-maps-to-botasaurus/): The All-in-One Web Scraping Framework with Anti-Detection, Parallelization, Asynchronous, and Caching Superpowers.
 
-<!-- - ✅ [GOOGLE SCRAPER](https://github.com/omkarcloud/google-scraper): Discover Search Results from Google. -->
-
-<!-- - ✅ [AMAZON SCRAPER](https://github.com/omkarcloud/amazon-scraper): Discover Search Results and Product Data from Amazon. -->
-
-<!-- - ✅ [TRIP ADVISOR SCRAPER](https://github.com/omkarcloud/tripadvisor-scraper): Discover search results of hotels and restaurants from TripAdvisor. -->
-
 ---
 
 Google Maps Scraper helps you find Business Profiles from Google Maps.
@@ -56,7 +50,6 @@ Google Maps Scraper helps you find Business Profiles from Google Maps.
 
 - Get Un-Limited Search Results, Say a Big-Big NO to Websites Selling Expensive Plans
 - 100% Accurate, 40+ Data Points Extracted in Real Time
-<!-- - Best of All? Absolutely. 0 Risk as We Offer a Generous 90-Day No Questions Asked Refund Guarantee -->
 
 In the next 5 minutes, you'll extract **120 Search Results** from Google Maps.
 
@@ -66,48 +59,38 @@ In the next 5 minutes, you'll extract **120 Search Results** from Google Maps.
 
 To use this tool, you'll need:
 
-- Node.js version 16 or later to run the UI Dashboard (please check your Node.js version by running `node -v`)
-- Python for running the scraper
-
-**Don't know anything about git, Python, or Node.js but still want unlimited Google Maps results? No problem!**  
-
-You can easily run this tool within Gitpod, a cloud-based development environment, by following [these installation steps](https://github.com/omkarcloud/google-maps-scraper/blob/master/advanced.md#-i-dont-have-python-or-im-facing-errors-when-setting-up-the-scraper-on-my-pc-how-to-solve-it).
-## 🚀 Getting Started
+- Google Chrome Browser
 
 Let's get started by following these super simple steps:
 
-1️⃣ Clone the Magic 🧙‍♀️:
-```shell
-git clone https://github.com/omkarcloud/google-maps-scraper
-cd google-maps-scraper
-```
+1️⃣ Download and Install the Magic 🧙‍♀️:
 
-2️⃣ Install Dependencies 📦:
-```shell
-python3 -m pip install -r requirements.txt
-python3 -m pip install botasaurus botasaurus-server --upgrade
-python3 run.py install
-```
+**1. For Windows:**
+- [Download the Windows Version](https://omkar-cloud.s3.amazonaws.com/GoogleMapsExtractor.exe)
 
-This will typically takes about 5 minutes to complete. So be patient, you only need to do this once.
+**2. For Mac**
+- [Download the Mac Version](https://omkar-cloud.s3.amazonaws.com/GoogleMapsExtractor.dmg)
 
-3️⃣ Launch the UI Dashboard 🚀:
-```shell
-python3 run.py
-```
+**3. For Ubuntu/Debian:**
+- For Most Desktop Users: [Download .deb](https://omkar-cloud.s3.amazonaws.com/GoogleMapsExtractor-amd64.deb)
+- For Raspberry Pi and Some Cloud Servers: [Download .deb for arm64](https://omkar-cloud.s3.amazonaws.com/GoogleMapsExtractor-arm64.deb)
 
-4️⃣ Open your browser and go to [http://localhost:3000](http://localhost:3000), then press the Run button to have 120 search results within 2 minutes. 😎
+**4. For Fedora/CentOS/Red Hat:**
+- For Most Desktop Users: [Download .rpm](https://omkar-cloud.s3.amazonaws.com/GoogleMapsExtractor-x86_64.rpm)
+- For Raspberry Pi and Some Cloud Servers: [Download .rpm for arm64](https://omkar-cloud.s3.amazonaws.com/GoogleMapsExtractor-aarch64.rpm)
+
+2️⃣ Press the Run button to have 120 search results within 2 minutes. 😎
 
 ![GIF of Google Maps Scraper Visit, Highlight Keyword, Run, See Results](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/demo.gif)
 
 *Note:*
-1. If you don't have Node.js 16+ and Python installed or you are facing errors, follow this Simple FAQ [here](https://github.com/omkarcloud/google-maps-scraper/blob/master/advanced.md#-i-dont-have-python-or-im-facing-errors-when-setting-up-the-scraper-on-my-pc-how-to-solve-it), and you will have your search results in the next 5 Minutes.
-2. If you face any problems, please contact us via [WhatsApp](https://api.whatsapp.com/send?phone=918295042963&text=I%20need%20installation%20help) or [Email](mailto:chetan@omkar.cloud). We will reply within 24 hours.
+1. If you face any issues, have questions, please contact us via [WhatsApp](https://api.whatsapp.com/send?phone=918295042963&text=I%20need%20installation%20help) or [Email](mailto:chetan@omkar.cloud). We will reply within 24 hours.
+
 ## ⚡ Enlightening Questions
 
 ### ❓ How to Get Results for My Queries?
 
-1. Visit [http://localhost:3000](http://localhost:3000) and enter your search queries.
+1. Enter your search queries.
 
 ![Queries](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/queries.png)
 
@@ -189,46 +172,31 @@ To find the exact results you're looking for, click the "Show Filters" button an
 Download results in various formats (CSV, JSON, Excel) using the export button.
 
 
-#### Api Page ('/api-integration')
-
-![api-integration-page.png](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/api-integration-page.png)
-
-The API Page provides documentation on integration of the Google Maps Scraper into your application via a REST API, for running tasks, getting results, and managing tasks.
-
 ### ❓ How many search results can I get in a single query?
 
 Google Maps give at most 120 results per search query. Don't worry about running out of data, as you can always use country-level scraping to scrape thousands of cities.
 
 
-### ❓ How can I access additional information like websites, phone numbers, geo-coordinates, and price ranges?
+### ❓ Are there any usage limits?
 
+The free version only allows 20 searches per month. To get unlimited searches for a lifetime, consider upgrading to the Pro Version:
+- The Pro Version gives you access to Unlimited searches for lifetime. Say a big big NO to websites selling expensive plans.
+- 100% accurate, [40+ data points](https://github.com/omkarcloud/google-maps-scraper/blob/master/fields.md) extracted in real-time.
+- Only a one-time investment with lifetime updates and top-notch WhatsApp support, all for just $28.
+- Best of all? Absolutely zero risk, as we offer a generous 90-day, no-questions-asked refund guarantee.
 
-Free versions shows only a limited set of data points. To access additional data points, consider upgrading to the Pro Version:
-
-- The Pro Version gives you access to 40+ data points, including:
-  * 🌐 **Website**
-  * 📞 **Phone Numbers**
-  * 🌍 **Geo-Coordinates**
-  * 💰 **Price Range**
-  * [**And many more!**](https://github.com/omkarcloud/google-maps-scraper/blob/master/fields.md)
-- Get Un-Limited Search Results, Say a Big-Big NO to Websites Selling Expensive Plans
-- 100% Accurate, 40+ Data Points Extracted in Real Time
-- Only a One-Time Investment with Lifetime Updates, and Top-Notch WhatsApp Support, all for $28 Only.
-- Best of All? Absolutely. 0 Risk as We Offer a Generous 90-Day No Questions Asked Refund Guarantee
-
-[300+ Happy People](https://github.com/sponsors/omkarcloud?frequency=one-time) have already invested in the Pro Version and are reaping its benefits to grow their business.
+[300+ Happy People](https://github.com/sponsors/omkarcloud?frequency=one-time) have already invested in the Pro Version and are reaping its benefits to grow their businesses.
 
 ![people](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/people-new.png)
 
+
 ### ❓ How to Get the Pro Version?
 
-Visit the GitHub Sponsorship Page [here](https://github.com/sponsors/omkarcloud?frequency=one-time) and make a one time payment of $28 by selecting Google Maps Scraper Pro Option.
+Visit the GitHub Sponsorship Page [here](https://github.com/sponsors/omkarcloud?frequency=one-time) and make a one-time payment of $28 by selecting the Google Maps Scraper Pro Option.
 
 ![Pay](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/pay.gif)
 
-After payment, you'll see a success screen with instructions on how to use the Pro Version:
-
-![Success Screen](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/success-screen.png)
+After payment, you'll see a link. Visiting the link will activate the Pro Version for lifetime.
 
 ### ❓ What if I Don't Get Value from It?
 
@@ -349,17 +317,6 @@ Trust me, learning Botasaurus will only take 20 minutes, but I guarantee it will
 </p>
 
 
-### ❓ Advanced Questions
-
-Having read this page, you have all the knowledge needed to effectively use the tool.
-
-You may choose to read the following questions based on your interests:
-
-1. [I Don't Have Python, or I'm Facing Errors When Setting Up the Scraper on My PC. How to Solve It?](https://github.com/omkarcloud/google-maps-scraper/blob/master/advanced.md#-i-dont-have-python-or-im-facing-errors-when-setting-up-the-scraper-on-my-pc-how-to-solve-it)
-2. [Do I Need Proxies?](https://github.com/omkarcloud/google-maps-scraper/blob/master/advanced.md#-do-i-need-proxies)
-3. [How to Update the Scraper to the Latest Version?](https://github.com/omkarcloud/google-maps-scraper/blob/master/advanced.md#-how-to-update-the-scraper-to-the-latest-version)
-4. [How to run Pro Version in Gitpod?](https://github.com/omkarcloud/google-maps-scraper/blob/master/advanced.md#-how-to-run-pro-version-in-gitpod)
-
 ### Need More Help or Have Additional Questions?
 
 If you need further help, please send your queries to [chetan@omkar.cloud](mailto:chetan@omkar.cloud). To help us provide the best possible answer, please include as many details as possible.
@@ -368,26 +325,6 @@ If you need further help, please send your queries to [chetan@omkar.cloud](mailt
 
 We offer excellent email support and will respond within 24 hours.
 
-Here's an improved version with corrected spelling, grammar, and formatting:
-
-
-
-<!-- - **WhatsApp:** If you prefer WhatsApp, simply send a message [here](https://api.whatsapp.com/send?phone=918295042963&text=Hi,%20I%20would%20like%20to%20learn%20more%20about%20your%20google%20maps%20scraper). Also, to help me provide the best possible answer, please include as much detail as possible.
-
-  [![Contact Us on WhatsApp about Google Maps Scraper](https://raw.githubusercontent.com/omkarcloud/assets/master/images/whatsapp-us.png)](https://api.whatsapp.com/send?phone=918295042963&text=Hi,%20I%20would%20like%20to%20learn%20more%20about%20your%20google%20maps%20scraper)
-
-
-- **GitHub Discussions:** If you believe your question could benefit the community, feel free to post it in our GitHub discussions [here](https://github.com/omkarcloud/google-maps-scraper/discussions).
-
-  [![Contact Us on GitHub Discussion](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/ask-on-github.png)](https://github.com/omkarcloud/google-maps-scraper/discussions)
-
-- **Email:** If you prefer email, kindly send your queries to [chetan@omkar.cloud](mailto:chetan@omkar.cloud). Also, to help me provide the best possible answer, please include as much detail as possible.
-
-  [![Contact Us on Email about Google Maps Scraper](https://raw.githubusercontent.com/omkarcloud/assets/master/images/ask-on-email.png)](mailto:chetan@omkar.cloud)
-
-We look forward to helping you and will reply to your emails and WhatsApp messages within 24 hours.
-
-Good Luck! -->
 
 ## Love It? [Star It ⭐!](https://github.com/omkarcloud/google-maps-scraper)
 
