@@ -1,4 +1,4 @@
-![Google Maps Scraper Feautred Image](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/google-maps-scraper-feautred-image.png)
+![Google Maps Extractor Feautred Image](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/google-maps-scraper-feautred-image.png)
 
 <div align="center" style="margin-top: 0;">
   <h1>✨ Google Maps Scraper 🤖</h1>
@@ -34,9 +34,9 @@
 
 ## Disclaimer for Google Maps Scraper Project
 
-> This Google Maps Scraper is provided for educational and research purposes only. By using this Google Maps Scraper, you agree to comply with local and international laws regarding data scraping and privacy. The authors and contributors are not responsible for any misuse of this software. This tool should not be used to violate the rights of others, for unethical purposes, or to use data in an unauthorized or illegal manner.
+> This Google Maps Scraper is provided for educational and research purposes only. By using this Google Maps Extractor, you agree to comply with local and international laws regarding data scraping and privacy. The authors and contributors are not responsible for any misuse of this software. This tool should not be used to violate the rights of others, for unethical purposes, or to use data in an unauthorized or illegal manner.
 
-We take the concerns of the Google Maps Scraper Project very seriously. For any concerns, please contact Chetan Jain at [chetan@omkar.cloud](mailto:chetan@omkar.cloud). We will promptly reply to your emails.
+We take the concerns of the Google Maps Extractor Project very seriously. For any concerns, please contact Chetan Jain at [chetan@omkar.cloud](mailto:chetan@omkar.cloud). We will promptly reply to your emails.
 
 ##  Explore Our Other Awesome Products
 
@@ -44,7 +44,7 @@ We take the concerns of the Google Maps Scraper Project very seriously. For any 
 
 ---
 
-Google Maps Scraper helps you find Business Profiles from Google Maps.
+Google Maps Extractor helps you find Business Profiles from Google Maps.
 
 ## ⚡ Benefits
 
@@ -53,7 +53,7 @@ Google Maps Scraper helps you find Business Profiles from Google Maps.
 
 In the next 5 minutes, you'll extract **120 Search Results** from Google Maps.
 
-![Google Maps Data Scraper CSV Result](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/gmap_result.png)
+![Google Maps Data Extractor CSV Result](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/gmap_result.png)
 
 ## 📦 Requirements
 
@@ -81,7 +81,7 @@ Let's get started by following these super simple steps:
 
 2️⃣ Press the Run button to have 120 search results within 2 minutes. 😎
 
-![GIF of Google Maps Scraper Visit, Highlight Keyword, Run, See Results](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/demo.gif)
+![GIF of Google Maps Extractor Visit, Highlight Keyword, Run, See Results](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/demo.gif)
 
 *Note:*
 1. If you face any issues or have questions, please contact us via [WhatsApp](https://api.whatsapp.com/send?phone=918295042963&text=I%20need%20installation%20help) or [Email](mailto:chetan@omkar.cloud). We will reply within 24 hours.
@@ -192,7 +192,7 @@ The free version only allows 20 searches per month. To get unlimited searches fo
 
 ### ❓ How to Get the Pro Version?
 
-Visit the GitHub Sponsorship Page [here](https://github.com/sponsors/omkarcloud?frequency=one-time) and make a one-time payment of $28 by selecting the Google Maps Scraper Pro Option.
+Visit the GitHub Sponsorship Page [here](https://github.com/sponsors/omkarcloud?frequency=one-time) and make a one-time payment of $28 by selecting the Google Maps Extractor Pro Option.
 
 ![Pay](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/pay.gif)
 
@@ -241,11 +241,11 @@ Also, the complete $28 will be refunded to you within 24 hours, without any ques
 
 ### ❓ How can I get Email, LinkedIn, Facebook, Twitter, etc. of the places?
 
-While our Google Maps Scraper provides unlimited places with 40+ data points, you may optionally want to use our Website Contact Scraper Addon to get LinkedIn, Facebook, Twitter, and other contact information for the results. 
+While our Google Maps Extractor provides unlimited places with 40+ data points, you may optionally want to use our Website Contact Extractor Addon to get LinkedIn, Facebook, Twitter, and other contact information for the results. 
 
 These details help you reach out to business owners more effectively.
 
-The data quality is excellent. Kindly follow these steps to use the Website Contact Scraper Addon:
+The data quality is excellent. Kindly follow these steps to use the Website Contact Extractor Addon:
 
 1. Sign up on RapidAPI by visiting [this link](https://rapidapi.com/auth/sign-up).
 
@@ -258,7 +258,7 @@ The data quality is excellent. Kindly follow these steps to use the Website Cont
 3. Copy the API key.
 ![Copy the API Key](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/key.png)
 
-Now you have two options for using the Website Contact Scraper Addon:
+Now you have two options for using the Website Contact Extractor Addon:
 
 #### Option 1: Get contacts for all places in a search query
 
@@ -268,7 +268,7 @@ Enter the copied API key in the "Email and Social Links Extraction" section and 
 
 #### Option 2: Get contacts for specific chosen websites (saves money)
 
-1. Click the Website Contact Scraper button:
+1. Click the Website Contact Extractor button:
 ![website-contacts-scraper-button](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/website-contacts-scraper-button.png)
 
 2. Enter the specific websites you're interested in, the copied API key, and run it:
@@ -278,14 +278,14 @@ Enter the copied API key in the "Email and Social Links Extraction" section and 
 
 ![contacts-websites](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/contacts-websites.png)
 
-### ❓ How much does the Website Contact Scraper Addon cost?
+### ❓ How much does the Website Contact Extractor Addon cost?
 
 There are 3 plans available:
 - Free Plan: 200 places free every month
 - $6/1000 Contacts Plan: 1000 places for $6
 - $33/10000 Contacts Plan: 10000 places for just $3.33 per 1000
 
-For most users, the Free Plan is sufficient. You can selectively choose the websites you're interested in and use the Website Contacts Scraper to get details for only those chosen websites.
+For most users, the Free Plan is sufficient. You can selectively choose the websites you're interested in and use the Website Contacts Extractor to get details for only those chosen websites.
 
 ![website-contacts-scraper](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/website-contacts-scraper.png)
 
@@ -293,18 +293,17 @@ Although, if you need thousands of contacts, consider the $6/1000 Contacts Plan 
 
 The data quality is excellent, and the cost is very reasonable. Considering that landing just one customer from 1000 contacts can easily cover your investment and generate a nice profit.
 
-### ❓ This Scraper is Truly One-of-a-Kind, Something I've Never Seen Before. How Did You Build It?
+### ❓ This Extractor is Truly One-of-a-Kind, Something I've Never Seen Before. How Did You Build It?
 
-Thank you! We used Botasaurus, which is the secret behind our awesome Google Maps Scraper.
+Thank you! We used Botasaurus, which is the secret behind our awesome Google Maps Extractor.
 
 Botasaurus is a web scraping framework that makes life a lot easier for web scrapers.
 
-It handled the hardest parts of our scraper, such as:
+It handled the hardest parts of our extractor, such as:
 
 - Creating a fantastic UI dashboard with task management features
 - Sorting, filtering, and exporting data as CSV, JSON, Excel, etc.
 - Caching, parallel, and asynchronous scraping
-- Built-in integration with Kubernetes, Docker, Server, Gitpod, and a REST API
 
 If you're a web scraper, I really recommend learning about Botasaurus [here](https://www.omkar.cloud/l/google-maps-to-botasaurus/) 🚀.
 
@@ -332,7 +331,7 @@ The process is straightforward and should only take a few minutes. If you encoun
 
 If you need further help, please send your queries to [chetan@omkar.cloud](mailto:chetan@omkar.cloud). To help us provide the best possible answer, please include as many details as possible.
 
-[![Contact Us on Email about Google Maps Scraper](https://raw.githubusercontent.com/omkarcloud/assets/master/images/ask-on-email.png)](mailto:chetan@omkar.cloud)
+[![Contact Us on Email about Google Maps Extractor](https://raw.githubusercontent.com/omkarcloud/assets/master/images/ask-on-email.png)](mailto:chetan@omkar.cloud)
 
 We offer excellent email support and will respond within 24 hours.
 
