@@ -49,7 +49,7 @@ Google Maps Scraper helps you find Business Profiles from Google Maps.
 ## ⚡ Benefits
 
 - Get Un-Limited Search Results, Say a Big-Big NO to Websites Selling Expensive Plans
-- 100% Accurate, 40+ Data Points Extracted in Real Time
+- 100% Accurate, 40+ Data Points Extracted in Real-Time
 
 In the next 5 minutes, you'll extract **120 Search Results** from Google Maps.
 
@@ -68,7 +68,7 @@ Let's get started by following these super simple steps:
 **1. For Windows:**
 - [Download the Windows Version](https://omkar-cloud.s3.amazonaws.com/GoogleMapsExtractor.exe)
 
-**2. For Mac**
+**2. For Mac:**
 - [Download the Mac Version](https://omkar-cloud.s3.amazonaws.com/GoogleMapsExtractor.dmg)
 
 **3. For Ubuntu/Debian:**
@@ -84,7 +84,7 @@ Let's get started by following these super simple steps:
 ![GIF of Google Maps Scraper Visit, Highlight Keyword, Run, See Results](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/demo.gif)
 
 *Note:*
-1. If you face any issues, have questions, please contact us via [WhatsApp](https://api.whatsapp.com/send?phone=918295042963&text=I%20need%20installation%20help) or [Email](mailto:chetan@omkar.cloud). We will reply within 24 hours.
+1. If you face any issues or have questions, please contact us via [WhatsApp](https://api.whatsapp.com/send?phone=918295042963&text=I%20need%20installation%20help) or [Email](mailto:chetan@omkar.cloud). We will reply within 24 hours.
 
 ## ⚡ Enlightening Questions
 
@@ -123,7 +123,7 @@ You can input your queries here and search by:
 - Scrape Reviews
 ![reviews-section](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/reviews-section.png)
 
-Kindly note that due to privacy concerns, we do not scrape personally identifiable information of reviewers, such as names, and profile photos. We only scrape the review text, rating, owner response, and similar non-personally identifiable information.
+Kindly note that due to privacy concerns, we do not scrape personally identifiable information of reviewers, such as names and profile photos. We only scrape the review text, rating, owner response, and similar non-personally identifiable information.
 
 #### Output Page ('/output')
 ![output-page.png](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/output-page.png)
@@ -134,7 +134,7 @@ The Output page helps you manage your tasks. You can use it to:
 - Abort or delete any task.
 ![abort-delete.png](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/abort-delete.png)
 
-- Additionally, Whenever you run a query, a task named "All Task" will be created for it, which combines results from multiple queries.
+- Additionally, whenever you run a query, a task named "All Task" will be created for it, which combines results from multiple queries.
 
 For example, if you search for "Web Developers in Bangalore" and "Web Developers in Mumbai", the "All Task" will show you the combined results for both queries.
 
@@ -174,13 +174,13 @@ Download results in various formats (CSV, JSON, Excel) using the export button.
 
 ### ❓ How many search results can I get in a single query?
 
-Google Maps give at most 120 results per search query. Don't worry about running out of data, as you can always use country-level scraping to scrape thousands of cities.
+Google Maps gives at most 120 results per search query. Don't worry about running out of data, as you can always use country-level scraping to scrape thousands of cities.
 
 
 ### ❓ Are there any usage limits?
 
 The free version only allows 20 searches per month. To get unlimited searches for a lifetime, consider upgrading to the Pro Version:
-- The Pro Version gives you access to Unlimited searches for lifetime. Say a big big NO to websites selling expensive plans.
+- The Pro Version gives you access to Unlimited searches for lifetime. Say a Big-Big NO to websites selling expensive plans.
 - 100% accurate, [40+ data points](https://github.com/omkarcloud/google-maps-scraper/blob/master/fields.md) extracted in real-time.
 - Only a one-time investment with lifetime updates and top-notch WhatsApp support, all for just $28.
 - Best of all? Absolutely zero risk, as we offer a generous 90-day, no-questions-asked refund guarantee.
@@ -204,9 +204,9 @@ We wholeheartedly ❤️ believe in the value our product brings for you, especi
  
 But, we also understand the reservations you might have.
 
-That's why we've put the ball in your court: **If, within the next 90 days, you feel that our product hasn't met your expectations, don't hesitate. Reach out to us, and within 24 hours, we will gladly refund your money, no questions and no hassles.**
+That's why we've put the ball in your court: **If, within the next 90 days, you feel that our product hasn't met your expectations, don't hesitate. Reach out to us, and within 24 hours, we will gladly refund your money, no questions asked and no hassles.**
 
-The risk is entirely on us! because we're that confident in what we've created!
+The risk is entirely on us because we're that confident in what we've created!
 
 ### ❓ How Do I Get a Refund?
 
@@ -271,7 +271,7 @@ Enter the copied API key in the "Email and Social Links Extraction" section and 
 1. Click the Website Contact Scraper button:
 ![website-contacts-scraper-button](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/website-contacts-scraper-button.png)
 
-2. Enter the specific websites you're interested in, the copied API key and run it:
+2. Enter the specific websites you're interested in, the copied API key, and run it:
 ![interested-websites](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/interested-websites.png)
 
 3. After this, you'll have the contact details for the chosen websites.
@@ -289,7 +289,7 @@ For most users, the Free Plan is sufficient. You can selectively choose the webs
 
 ![website-contacts-scraper](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/website-contacts-scraper.png)
 
-Although, If you need thousands of contacts, consider the $6/1000 Contacts Plan or $33/10000 Contacts Plan.
+Although, if you need thousands of contacts, consider the $6/1000 Contacts Plan or $33/10000 Contacts Plan.
 
 The data quality is excellent, and the cost is very reasonable. Considering that landing just one customer from 1000 contacts can easily cover your investment and generate a nice profit.
 
@@ -301,9 +301,9 @@ Botasaurus is a web scraping framework that makes life a lot easier for web scra
 
 It handled the hardest parts of our scraper, such as:
 
-- Creating a mastastic UI dashboard with task management features
+- Creating a fantastic UI dashboard with task management features
 - Sorting, filtering, and exporting data as CSV, JSON, Excel, etc.
-- Caching, parallel and asynchronous scraping
+- Caching, parallel, and asynchronous scraping
 - Built-in integration with Kubernetes, Docker, Server, Gitpod, and a REST API
 
 If you're a web scraper, I really recommend learning about Botasaurus [here](https://www.omkar.cloud/l/google-maps-to-botasaurus/) 🚀.
@@ -316,6 +316,17 @@ Trust me, learning Botasaurus will only take 20 minutes, but I guarantee it will
   </a>
 </p>
 
+### ❓ I previously bought the Python-NodeJS version of the tool. How can I upgrade to the desktop app?
+
+To upgrade from the Python-NodeJS version to the desktop app, follow these simple steps:
+
+1. Download the desktop app from the link provided at the top of this page.
+
+2. Visit the same link that was sent to you in the email after you bought the Pro version.
+
+3. Your Pro version will be activated. Enjoy!
+
+The process is straightforward and should only take a few minutes. If you encounter any issues or have further questions, don't hesitate to reach out to us.
 
 ### Need More Help or Have Additional Questions?
 
