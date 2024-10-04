@@ -1,6 +1,5 @@
 from botasaurus.task import task
 import traceback
-from botasaurus.local_storage import LocalStorage
 from botasaurus.cache import DontCache
 import requests
 from time import sleep
@@ -8,10 +7,6 @@ from time import sleep
 FAILED_DUE_TO_CREDITS_EXHAUSTED = "FAILED_DUE_TO_CREDITS_EXHAUSTED"
 FAILED_DUE_TO_NOT_SUBSCRIBED = "FAILED_DUE_TO_NOT_SUBSCRIBED"
 FAILED_DUE_TO_UNKNOWN_ERROR = "FAILED_DUE_TO_UNKNOWN_ERROR"
-
-def update_credits():
-    credits_used  = LocalStorage.get_item("credits_used", 0)
-    LocalStorage.set_item("credits_used", credits_used + 1)
 
 def do_request(data, retry_count=3):
     
@@ -35,7 +30,6 @@ def do_request(data, retry_count=3):
         traceback.print_exc()
         return DontCache({"data": None, "error": FAILED_DUE_TO_UNKNOWN_ERROR})
     if response.status_code == 200:
-        update_credits()
 
         final = response_data
         # .get('data', [None])[0]
@@ -56,7 +50,7 @@ def do_request(data, retry_count=3):
                     })
         elif "exceeded the rate limit per second for your plan" in message or "many requests" in message:
             sleep(2)
-            return get_website_contacts(data, retry_count - 1)
+            return do_request(data, retry_count - 1)
         elif "You are not subscribed to this API." in message:
             
             return DontCache({

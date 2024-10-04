@@ -22,8 +22,6 @@ sort_by_enum = {
     "lowest_rating": "ratingLow",  # the lowest rating reviews
 }
 
-
-
 review_default_result = {
             "response_text_date":None,
         "text_date":None,
@@ -112,20 +110,16 @@ class GoogleMapsAPIScraper:
         self.request_interval = request_interval
         self.n_retries = n_retries
         self.retry_time = retry_time
-        self._reset_logger_filter()
 
     def __enter__(self):
         return self
 
     def __exit__(self, exc_type, exc_value, tb):
-        self._reset_logger_filter()
         if exc_type is not None:
             traceback.print_exception(exc_type, exc_value, tb)
 
         return True
 
-    def _reset_logger_filter(self, url_name=""):
-        pass
 
     def _ts(self) -> str:
         """Returns timestamp formatted as string safe for file naming"""
@@ -216,16 +210,7 @@ class GoogleMapsAPIScraper:
     ):
         """Makes and formats get request in google's api"""
         query = f"https://www.google.com/async/reviewSort?authuser=0&hl={hl}&yv=3&cs=1&async=feature_id:{feature_id},review_source:All%20reviews,sort_by:{sort_by_id},is_owner:false,filter_text:,associated_topic:,next_page_token:{token},_pms:s,_fmt:pc"
-        # query = (
-        #     "https://www.google.com/async/reviewDialog?"
-        #     f"hl={hl}&"
-        #     f"async={async_}"
-        #     f"feature_id:{feature_id},"
-        #     f"sort_by:{sort_by_id},"
-        #     f"next_page_token:{token},"
-        #     f"associated_topic:{associated_topic},"
-        #     f"_fmt:pc"
-        # )
+
         # Make request
         response = requests.get(query)
         response.raise_for_status()
@@ -238,63 +223,13 @@ class GoogleMapsAPIScraper:
         # Format response into list of reviews
         return self._format_response_text(response_text)
 
-    def _parse_place(
-        self,
-        response: BeautifulSoup,
-    ) -> dict:
-        """Parse place html"""
-        metadata = metadata_default.copy()
-        return metadata
-        # Parse place_name
-        try:
-            metadata["place_name"] = response.find(True, class_="P5Bobd").text
-        except Exception as e:
-            pass
-            
-
-        # Parse address
-        try:
-            metadata["address"] = response.find(True, class_="T6pBCe").text
-        except Exception as e:
-            pass    
-            
-
-        # Parse overall_rating
-        try:
-            rating_text = response.find(True, class_="Aq14fc").text.replace(",", ".")
-            metadata["overall_rating"] = float(rating_text)
-        except Exception as e:
-            pass
-            
-
-        # Parse n_reviews
-        try:
-            n_reviews_text = response.find(True, class_="z5jxId").text
-            n_reviews_text = re.sub("[.]|,| reviews| comentários", "", n_reviews_text)
-            metadata["n_reviews"] = int(n_reviews_text)
-        except Exception as e:
-            pass
-            
-
-        # Parse topics
-        try:
-            topics = response.find("localreviews-place-topics")
-            s = " ".join([s for s in topics.stripped_strings])
-            metadata["topics"] = re.sub(r"\s+", " ", s)  # Corrected
-        except Exception as e:
-            pass
-
-        metadata["retrieval_date"] = str(datetime.now())
-
-        return metadata
-
     def _parse_review_text(self, text_block) -> str:
         """Parse review text html, removing unwanted characters"""
         text = ""
         for e, s in zip(text_block.contents, text_block.stripped_strings):
             if isinstance(e, Tag) and e.has_attr(
                 "class"
-            ):  #  and e.attrs["class"] in ["review-snippet","k8MTF",]:
+            ):
                 break
             text += s + " "
 
@@ -501,7 +436,6 @@ class GoogleMapsAPIScraper:
         """Scrape specified amount of reviews of a place, appending results in csv"""
         url_name = re.findall("(?<=place/).*?(?=/)", url)[0]
         url_name = urllib.parse.unquote_plus(url_name)
-        self._reset_logger_filter(url_name)
         
 
         feature_id = self._parse_url_to_feature_id(url)
@@ -579,47 +513,12 @@ class GoogleMapsAPIScraper:
             return results[:n_reviews]
         return results
 
-    def scrape_place(
-        self,
-        url: str,
-        writer,
-        file,
-        name,
-        hl: str = "",
-    ):
-        """Scrape place metadata, writing to csv"""
-        url_name = re.findall("(?<=place/).*?(?=/)", url)[0]
-        url_name = urllib.parse.unquote_plus(url_name)
-        self._reset_logger_filter(url_name)
-        
-
-        feature_id = self._parse_url_to_feature_id(url)
-
-        
-        _, response_soup, _, _, _ = self._get_request(
-            feature_id,
-            hl=hl,
-        )
-        metadata = self._parse_place(response=response_soup)
-        metadata["feature_id"] = feature_id
-        metadata["url"] = url
-        metadata["name"] = name
-
-        writer.writerow(metadata.values())
-        file.flush()
-
-        return metadata
-
+# python -m src.reviews_scraper
 if __name__ == "__main__":
     try:
         with GoogleMapsAPIScraper() as scraper:
-            response_text, response_soup, reviews_soup, review_count, next_token = scraper._format_response_text(bt.read_html("fff"))
-            rs = []
-            # for review in reviews_soup[:1]:
-            for review in reviews_soup:
-                result = scraper._parse_review(review, "es")
-                rs.append(result)
-
+            ua = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36'
+            rs  = scraper.scrape_reviews('https://www.google.com/maps/place/Manoj+Chahar-+Website+Designer+in+Delhi+India./data=!4m7!3m6!1s0x390d0365941f0d9d:0x599a2969704aebff!8m2!3d28.631593!4d77.0831106!16s%2Fg%2F1pp2tx9tv!19sChIJnQ0flGUDDTkR_-tKcGkpmlk?authuser=0&hl=en&rclk=1',  10,'es', 'newest' )
             bt.write_json(rs, "temp")
     except Exception as e:
         print(f"An error occurred: {e}")

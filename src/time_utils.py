@@ -49,18 +49,6 @@ relative_date_maps = {
 
 
 
-translated_text_maps = {
-    "pt-br": {
-        "flag": "Tradução do Google",
-        "regex": r"\(Tradução do Google\)|\(Original\).*?$",
-    },
-    "en": {
-        "flag": "Translated by Google",
-        "regex": r"\(Translated by Google\)|\(Original\).*?$",
-    },
-}
-
-
 def parse_relative_date(relative_date, retrieval_date, hl="en"):
     """Transforma data relativa do google maps em datetime"""
     if (not isinstance(relative_date, str)) or relative_date == "":
