@@ -198,6 +198,8 @@ Visit the GitHub Sponsorship Page [here](https://github.com/sponsors/omkarcloud?
 
 After payment, you'll see a link. Visiting the link will activate the Pro Version for lifetime.
 
+![purchase-success](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/purchase-success.png)
+
 ### ❓ What if I Don't Get Value from It?
 
 We wholeheartedly ❤️ believe in the value our product brings for you, especially since it has successfully worked for hundreds of people like you.
