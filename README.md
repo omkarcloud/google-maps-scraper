@@ -67,9 +67,12 @@ Let's get started by following these super simple steps:
 
 **1. For Windows:**
 - [Download the Windows Version](https://omkar-cloud.s3.amazonaws.com/GoogleMapsExtractor.exe)
+- Temporarily, You will encounter a blue popup stating that Windows Defender has prevented an app from an **unknown publisher** from starting. We aim to become a verified publisher by October 28, 2024 to resolve this. (Rest assured, the app is 100% safe and secure, with over 1,000 stars on GitHub and more than 500+ happy customers.)
+- You may also see a popup indicating that Windows Firewall has blocked some features of the app. Please click 'Allow Access' to continue.
 
 **2. For Mac:**
 - [Download the Mac Version](https://omkar-cloud.s3.amazonaws.com/GoogleMapsExtractor.dmg)
+- Our Mac version is signed and notarized by Apple, so you can install it without facing any issues.
 
 **3. For Ubuntu/Debian:**
 - For Most Desktop Users: [Download .deb](https://omkar-cloud.s3.amazonaws.com/GoogleMapsExtractor-amd64.deb)
@@ -185,7 +188,7 @@ The free version only allows 20 searches per month. To get unlimited searches fo
 - Only a one-time investment with lifetime updates and top-notch WhatsApp support, all for just $28.
 - Best of all? Absolutely zero risk, as we offer a generous 90-day, no-questions-asked refund guarantee.
 
-[300+ Happy People](https://github.com/sponsors/omkarcloud?frequency=one-time) have already invested in the Pro Version and are reaping its benefits to grow their businesses.
+[500+ Happy People](https://github.com/sponsors/omkarcloud?frequency=one-time) have already invested in the Pro Version and are reaping its benefits to grow their businesses.
 
 ![people](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/people-new.png)
 
