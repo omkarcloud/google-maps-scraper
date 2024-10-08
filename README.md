@@ -126,7 +126,6 @@ You can input your queries here and search by:
 - Scrape Reviews
 ![reviews-section](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/reviews-section.png)
 
-Kindly note that due to privacy concerns, we do not scrape personally identifiable information of reviewers, such as names and profile photos. We only scrape the review text, rating, owner response, and similar non-personally identifiable information.
 
 #### Output Page ('/output')
 ![output-page.png](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/output-page.png)
