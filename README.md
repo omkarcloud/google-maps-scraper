@@ -320,6 +320,24 @@ Although, if you need thousands of contacts, consider the $6/1000 Contacts Plan 
 
 The data quality is excellent, and the cost is very reasonable. Considering that landing just one customer from 1000 contacts can easily cover your investment and generate a nice profit.
 
+### ❓ Do I Need to Do Anything Else to Use the Tool Effectively?
+
+1. Disable Auto Sleep Mode
+  Auto sleep mode will prevent the tool from running and cause tasks to fail. Here's how to turn it off:
+
+  - **On Windows**:  
+     Go to **Start** > **Settings** > **System** > **Power & battery**. Set the **Screen, sleep, and hibernate** timeouts to "Never."
+     ![windows-sleep](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/windows-sleep.png)
+
+  - **On Mac**:  
+     Open **Settings** > **Lock Screen**, then set sleep to "Never."  
+     ![mac-sleep](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/mac-sleep.png)
+
+  - **Linux?**:  
+     You're awesome at computers, so go ahead and figure it out! ;)
+
+2. Ensure you maintain a stable Internet connection, as switching connections will cause currently running tasks to fail.
+
 ### ❓ This Extractor is Truly One-of-a-Kind, Something I've Never Seen Before. How Did You Build It?
 
 Thank you! We used Botasaurus, which is the secret behind our awesome Google Maps Extractor.
