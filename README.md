@@ -91,7 +91,7 @@ Let's get started by following these super simple steps:
    - [WhatsApp](https://api.whatsapp.com/send?phone=918178804274&text=I%20need%20help%20with%20the%20installation%20of%20the%20Google%20Maps%20Extractor%20Tool.) 
    - [or Email](mailto:happy.to.help@omkar.cloud?subject=Help%20with%20Google%20Maps%20Extractor%20Tool%20Installation&body=I%20need%20help%20with%20the%20installation%20of%20the%20Google%20Maps%20Extractor%20Tool.)
 
-Rest assured that we will respond to your message within 1 Working Day.
+Rest assured, we will respond to your message within 1 Working Day.
 
 ## ⚡ Enlightening Questions
 
