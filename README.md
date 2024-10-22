@@ -67,7 +67,7 @@ Let's get started by following these super simple steps:
 
 **1. For Windows:**
 - [Download the Windows Version](https://omkar-cloud.s3.amazonaws.com/GoogleMapsExtractor.exe)
-- Temporarily, You will encounter a blue popup stating that Windows Defender has prevented an app from an **unknown publisher** from starting. We aim to become a verified publisher by October 28, 2024 to resolve this. (Rest assured, the app is 100% safe and secure, with over 1,000 stars on GitHub and more than 500+ happy customers.)
+- Temporarily, You will face a blue popup stating that Windows Defender has prevented an app from an **unknown publisher** from starting. We aim to become a verified publisher by November 28, 2024 to resolve this. (Rest assured, the app is 100% safe and secure, with over 1,000 stars on GitHub and more than 500+ happy customers.)
 - You may also see a popup indicating that Windows Firewall has blocked some features of the app. Please click 'Allow Access' to continue.
 
 **2. For Mac:**
@@ -87,7 +87,7 @@ Let's get started by following these super simple steps:
 ![GIF of Google Maps Extractor Visit, Highlight Keyword, Run, See Results](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/demo.gif)
 
 *Note:*
-1. If you encounter any problems or have any inquiries, please reach out to us via:
+1. If you face any problems or have questions, please reach out to us via:
    - [WhatsApp](https://api.whatsapp.com/send?phone=918178804274&text=I%20need%20help%20with%20the%20installation%20of%20the%20Google%20Maps%20Extractor%20Tool.) 
    - [or Email](mailto:happy.to.help@omkar.cloud?subject=Help%20with%20Google%20Maps%20Extractor%20Tool%20Installation&body=I%20need%20help%20with%20the%20installation%20of%20the%20Google%20Maps%20Extractor%20Tool.)
 
@@ -372,7 +372,7 @@ To upgrade from the Python-NodeJS version to the desktop app, follow these simpl
 
 3. Your Pro version will be activated. Enjoy!
 
-The process is straightforward and should only take a few minutes. If you encounter any issues or have further questions, don't hesitate to reach out to us.
+The process is straightforward and should only take a few minutes. If you face any issues or have further questions, don't hesitate to reach out to us.
 
 ### ❓ Need More Help or Have Additional Questions?
 
