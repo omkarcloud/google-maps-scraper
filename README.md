@@ -89,7 +89,7 @@ Let's get started by following these super simple steps:
 *Note:*
 1. If you encounter any problems or have any inquiries, please reach out to us via:
    - [WhatsApp](https://api.whatsapp.com/send?phone=918178804274&text=I%20need%20help%20with%20the%20installation%20of%20the%20Google%20Maps%20Extractor%20Tool.) 
-   - or [Email](mailto:happy.to.help@omkar.cloud?subject=Help%20with%20Google%20Maps%20Extractor%20Tool%20Installation&body=I%20need%20help%20with%20the%20installation%20of%20the%20Google%20Maps%20Extractor%20Tool.)
+   - [or Email](mailto:happy.to.help@omkar.cloud?subject=Help%20with%20Google%20Maps%20Extractor%20Tool%20Installation&body=I%20need%20help%20with%20the%20installation%20of%20the%20Google%20Maps%20Extractor%20Tool.)
 
 Rest assured that we will respond to your message within 1 Working Day.
 
