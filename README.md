@@ -64,6 +64,7 @@ To use this tool, you'll need:
 Let's get started by following these super simple steps:
 
 **1️⃣ Download and Install the Magic 🧙‍♀️:**
+
 **1. For Windows:**
 - [Download the Windows Version](https://omkar-cloud.s3.amazonaws.com/GoogleMapsExtractor.exe)
 - Temporarily, You will encounter a blue popup stating that Windows Defender has prevented an app from an **unknown publisher** from starting. We aim to become a verified publisher by October 28, 2024 to resolve this. (Rest assured, the app is 100% safe and secure, with over 1,000 stars on GitHub and more than 500+ happy customers.)
@@ -86,7 +87,11 @@ Let's get started by following these super simple steps:
 ![GIF of Google Maps Extractor Visit, Highlight Keyword, Run, See Results](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/demo.gif)
 
 *Note:*
-1. If you face any issues or have questions, please contact us via [WhatsApp](https://api.whatsapp.com/send?phone=918295042963&text=I%20need%20installation%20help) or [Email](mailto:chetan@omkar.cloud). We will reply within 24 hours.
+1. If you encounter any problems or have any inquiries, please reach out to us via:
+   - [WhatsApp](https://api.whatsapp.com/send?phone=918178804274&text=I%20need%20help%20with%20the%20installation%20of%20the%20Google%20Maps%20Extractor%20Tool.) 
+   - or [Email](mailto:happy.to.help@omkar.cloud?subject=Help%20with%20Google%20Maps%20Extractor%20Tool%20Installation&body=I%20need%20help%20with%20the%20installation%20of%20the%20Google%20Maps%20Extractor%20Tool.)
+
+Rest assured that we will respond to your message within 1 Working Day.
 
 ## ⚡ Enlightening Questions
 
@@ -213,8 +218,6 @@ Our tool offers several advantages over other website-based scrapers:
 
 In summary, our tool offers unlimited searches, faster performance, easy, and a one-time payment model, setting it apart from other website-based scrapers.
 
-
-
 ### ❓ How to Get the Pro Version?
 
 Visit the GitHub Sponsorship Page [here](https://github.com/sponsors/omkarcloud?frequency=one-time) and make a one-time payment of $28 by selecting the Google Maps Extractor Pro Option.
@@ -243,7 +246,7 @@ To request a refund, ensure you have a PayPal Account (e.g., "myname@example.com
 
 Next, follow these steps to initiate a refund:
 
-1. Send an email to `chetan@omkar.cloud` using the following template:
+1. Send an email to `happy.to.help@omkar.cloud` using the following template:
 
    - To request a refund via PayPal:
      ```
@@ -371,14 +374,22 @@ To upgrade from the Python-NodeJS version to the desktop app, follow these simpl
 
 The process is straightforward and should only take a few minutes. If you encounter any issues or have further questions, don't hesitate to reach out to us.
 
-### Need More Help or Have Additional Questions?
+### ❓ Need More Help or Have Additional Questions?
 
-If you need further help, please send your queries to [chetan@omkar.cloud](mailto:chetan@omkar.cloud). To help us provide the best possible answer, please include as many details as possible.
+For further help, feel free to reach out to us through:
 
-[![Contact Us on Email about Google Maps Extractor](https://raw.githubusercontent.com/omkarcloud/assets/master/images/ask-on-email.png)](mailto:chetan@omkar.cloud)
+- **WhatsApp:** If you prefer WhatsApp, simply send a message [here](https://api.whatsapp.com/send?phone=918178804274&text=I%20need%20help%20with%20using%20the%20Google%20Maps%20Extractor%20Tool.). Also, to help us provide the best possible answer, please include as much detail as possible.
 
-We offer excellent email support and will respond within 24 hours.
+  [![Contact Us on WhatsApp about Google Maps Scraper](https://raw.githubusercontent.com/omkarcloud/assets/master/images/whatsapp-us.png)](https://api.whatsapp.com/send?phone=918178804274&text=I%20need%20help%20with%20using%20the%20Google%20Maps%20Extractor%20Tool.)
 
+
+- **Email:** If you prefer email, kindly send your queries to [happy.to.help@omkar.cloud](mailto:happy.to.help@omkar.cloud?subject=Help%20with%20Google%20Maps%20Extractor%20Tool&body=I%20need%20help%20with%20using%20the%20Google%20Maps%20Extractor%20Tool.). Also, to help us provide the best possible answer, please include as much detail as possible.
+
+  [![Contact Us on Email about Google Maps Scraper](https://raw.githubusercontent.com/omkarcloud/assets/master/images/ask-on-email.png)](mailto:happy.to.help@omkar.cloud?subject=Help%20with%20Google%20Maps%20Extractor%20Tool&body=I%20need%20help%20with%20using%20the%20Google%20Maps%20Extractor%20Tool.)
+
+We look forward to helping you and will reply to your emails and WhatsApp messages within 1 Working Day.
+
+Good Luck!
 
 ## Love It? [Star It ⭐!](https://github.com/omkarcloud/google-maps-scraper)
 
@@ -392,4 +403,4 @@ It's just one click, but it means the world to me.
 
 ### Not in your Budget?
 
-If you are a student or a person just starting your business, and the Pro Version is not in your budget, you can let us know via [email](mailto:chetan@omkar.cloud) and we will provide you with the Pro Version. Don't hesitate, it will take 5 minutes to email, and it will make us mastastically happy 😊 to help you.
+If you are a student or a person just starting your business, and the Pro Version is not in your budget, you can let us know via [WhatsApp](https://api.whatsapp.com/send?phone=918178804274&text=Kindly%20provide%20me%20the%20Pro%20Version%20of%20the%20Google%20Maps%20Extractor,%20as%20it%20is%20not%20in%20my%20budget.) or [Email](mailto:happy.to.help@omkar.cloud?subject=Request%20for%20Pro%20Version%20of%20Google%20Maps%20Extractor&body=Kindly%20provide%20me%20the%20Pro%20Version%20of%20the%20Google%20Maps%20Extractor%2C%20as%20it%20is%20not%20in%20my%20budget.) and we will provide you with the Pro Version. Don't hesitate, it will take 5 minutes to WhatsApp/Email, and it will make us mastastically happy 😊 to help you.
