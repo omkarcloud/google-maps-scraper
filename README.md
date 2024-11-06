@@ -374,6 +374,20 @@ To upgrade from the Python-NodeJS version to the desktop app, follow these simpl
 
 The process is straightforward and should only take a few minutes. If you face any issues or have further questions, don't hesitate to reach out to us.
 
+### ❓ In the exported file, the characters are in English instead of Hindi/Japanese/Chinese. How can I preserve the original language when exporting?
+
+When exporting, any non-English characters are converted to English. For example, "बैंगलोर" is converted to "Bangalore."
+
+We do this because Excel can't render non-English characters properly.
+
+If you want to retain the original characters and avoid converting them to English, simply **uncheck** the English conversion checkbox:
+
+![Uncheck English](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/uncheck-english.png)
+
+Also, in case you are unable to view the non-English characters properly in Excel, then the easiest solution is to upload the file to Google Sheets, which should render the characters properly.
+
+![character fix](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/character-fix.gif)
+
 ### ❓ Need More Help or Have Additional Questions?
 
 For further help, feel free to reach out to us through:
