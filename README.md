@@ -1,3 +1,9 @@
+## IMPORTANT UPDATE FOR EXISTING USERS!
+
+We have resolved a bug that was causing The Tool to crash when running large queries. The issue was fixed on November 6th, and the tool is now working fine. If you downloaded the tool before November 6th, please [download and reinstall it](https://github.com/omkarcloud/google-maps-scraper#-requirements)
+
+**Please note that updating the tool will result in data loss, so make sure to download any necessary data before proceeding with the update.**
+
 ![Google Maps Extractor Feautred Image](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/google-maps-scraper-feautred-image.png)
 
 <div align="center" style="margin-top: 0;">
