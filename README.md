@@ -380,9 +380,9 @@ To upgrade from the Python-NodeJS version to the desktop app, follow these simpl
 
 The process is straightforward and should only take a few minutes. If you face any issues or have further questions, don't hesitate to reach out to us.
 
-### ❓ In the exported file, the characters are in English instead of Hindi/Japanese/Chinese. How can I preserve the original language when exporting?
+### ❓ In the exported file, the characters are in English instead of Japanese/Korean. How can I preserve the original language when exporting?
 
-When exporting, any non-English characters are converted to English. For example, "बैंगलोर" is converted to "Bangalore."
+When exporting, any non-English characters are converted to English. For example, "しんちゃん" is converted to "Shinchan"
 
 We do this because Excel can't render non-English characters properly.
 
