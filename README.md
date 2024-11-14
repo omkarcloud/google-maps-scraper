@@ -346,6 +346,16 @@ The data quality is excellent, and the cost is very reasonable. Considering that
 
 2. Ensure you maintain a stable Internet connection, as switching connections will cause currently running tasks to fail.
 
+### ❓ Love It? Star It ⭐!
+
+I really hope that Google Maps Extractor will prove to be a valuable tool in helping you find more customers.
+
+If you're finding it helpful, could you please give us a **star ⭐** on GitHub?
+
+It only takes a click, but it means the world to me!
+
+![Star us on GitHub](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/star-us.png)
+
 ### ❓ This Extractor is Truly One-of-a-Kind, Something I've Never Seen Before. How Did You Build It?
 
 Thank you! We used Botasaurus, which is the secret behind our awesome Google Maps Extractor.
