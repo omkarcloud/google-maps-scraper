@@ -72,21 +72,21 @@ Let's get started by following these super simple steps:
 **1️⃣ Download and Install the Magic 🧙‍♀️:**
 
 **1. For Windows:**
-- [Download the Windows Version](https://omkar-cloud.s3.amazonaws.com/GoogleMapsExtractor.exe)
+- [Download the Windows Version](https://omkar-cloud.s3.amazonaws.com/Google+Maps+Extractor.exe)
 - Temporarily, You will face a blue popup stating that Windows Defender has prevented an app from an **unknown publisher** from starting. We aim to become a verified publisher by November 28, 2024 to resolve this. (Rest assured, the app is 100% safe and secure, with over 1,000 stars on GitHub and more than 500+ happy customers.)
 - You may also see a popup indicating that Windows Firewall has blocked some features of the app. Please click 'Allow Access' to continue.
 
 **2. For Mac:**
-- [Download the Mac Version](https://omkar-cloud.s3.amazonaws.com/GoogleMapsExtractor.dmg)
+- [Download the Mac Version](https://omkar-cloud.s3.amazonaws.com/Google+Maps+Extractor.dmg)
 - Our Mac version is signed and notarized by Apple, so you can install it without facing any issues.
 
 **3. For Ubuntu/Debian:**
-- For Most Desktop Users: [Download .deb](https://omkar-cloud.s3.amazonaws.com/GoogleMapsExtractor-amd64.deb)
-- For Raspberry Pi and Some Cloud Servers: [Download .deb for arm64](https://omkar-cloud.s3.amazonaws.com/GoogleMapsExtractor-arm64.deb)
+- For Most Desktop Users: [Download .deb](https://omkar-cloud.s3.amazonaws.com/Google+Maps+Extractor-amd64.deb)
+- For Raspberry Pi and Some Cloud Servers: [Download .deb for arm64](https://omkar-cloud.s3.amazonaws.com/Google+Maps+Extractor-arm64.deb)
 
 **4. For Fedora/CentOS/Red Hat:**
-- For Most Desktop Users: [Download .rpm](https://omkar-cloud.s3.amazonaws.com/GoogleMapsExtractor-x86_64.rpm)
-- For Raspberry Pi and Some Cloud Servers: [Download .rpm for arm64](https://omkar-cloud.s3.amazonaws.com/GoogleMapsExtractor-aarch64.rpm)
+- For Most Desktop Users: [Download .rpm](https://omkar-cloud.s3.amazonaws.com/Google+Maps+Extractor-x86_64.rpm)
+- For Raspberry Pi and Some Cloud Servers: [Download .rpm for arm64](https://omkar-cloud.s3.amazonaws.com/Google+Maps+Extractor-aarch64.rpm)
 
 **2️⃣ Now, Press the Run button to have 120 search results within 2 minutes. 😎**
 
