@@ -73,7 +73,7 @@ Let's get started by following these super simple steps:
 
 **1. For Windows:**
 - [Download the Windows Version](https://omkar-cloud.s3.amazonaws.com/Google+Maps+Extractor.exe)
-- Temporarily, You will face a blue popup stating that Windows Defender has prevented an app from an **unknown publisher** from starting. We aim to become a verified publisher by November 28, 2024 to resolve this. (Rest assured, the app is 100% safe and secure, with over 1,000 stars on GitHub and more than 500+ happy customers.)
+- Temporarily, You will face a blue popup stating that Windows Defender has prevented an app from an **unknown publisher** from starting. We aim to become a verified publisher soon to resolve this. (Rest assured, the app is 100% safe and secure, with over 1,000 stars on GitHub and more than 500+ happy customers.)
 - You may also see a popup indicating that Windows Firewall has blocked some features of the app. Please click 'Allow Access' to continue.
 
 **2. For Mac:**
