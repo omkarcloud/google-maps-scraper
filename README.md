@@ -372,19 +372,20 @@ It only takes a click, but it means the world to me!
 
 ### ❓ This Extractor is Truly One-of-a-Kind, Something I've Never Seen Before. How Did You Build It?
 
-Thank you! We used Botasaurus, which is the secret behind our awesome Google Maps Extractor.
+Thank you! We used Botasaurus Desktop, which is the secret behind our awesome Google Maps Extractor.
 
 Botasaurus is a web scraping framework that makes life a lot easier for web scrapers.
 
 It handled the hardest parts of our extractor, such as:
 
-- Creating a fantastic UI dashboard with task management features
+- Building a desktop app for Windows, Mac, and Linux.
+- Creating a fantastic UI dashboard with task management features.
 - Sorting, filtering, and exporting data as CSV, JSON, Excel, etc.
-- Caching, parallel, and asynchronous scraping
+- Caching, parallel, and asynchronous scraping.
 
-If you're a web scraper, I really recommend learning about Botasaurus [here](https://www.omkar.cloud/l/google-maps-to-botasaurus/) 🚀.
+If you're a web scraper, I really recommend learning about Botasaurus Desktop [here](https://github.com/omkarcloud/botasaurus/blob/master/botasaurus-desktop-tutorial.md) 🚀.
 
-Trust me, learning Botasaurus will only take 20 minutes, but I guarantee it will definitely save you thousands of hours in your life as a web scraper.
+Trust me, learning Botasaurus Desktop will only take 5 minutes, but I guarantee it will definitely save you thousands of hours in your life as a web scraper.
 
 <p align="center">
   <a href="https://www.omkar.cloud/l/google-maps-to-botasaurus/">
