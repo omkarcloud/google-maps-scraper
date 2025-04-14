@@ -1,4 +1,4 @@
-# IMPORTANT: The recent review extraction issues have been fixed. Please download the latest version and reinstall it. Note: you can get a maximum of 200 to 360 reviews per place. Thank you for your patience and support! 🙏
+# IMPORTANT: The recent review extraction issues causing tasks to fail have been resolved. Please download the latest version and reinstall it. Note: you can get a maximum of 200 to 360 reviews per place. Thank you for your patience and support! 🙏
 
 ![Google Maps Extractor Feautred Image](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/google-maps-scraper-feautred-image.png)
 
