@@ -1,3 +1,5 @@
+# IMPORTANT: The recent review extraction issues have been fixed. Please download the latest version and reinstall it. Note: you can get a maximum of 200 to 360 reviews per place. Thank you for your patience and support! 🙏
+
 ![Google Maps Extractor Feautred Image](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/google-maps-scraper-feautred-image.png)
 
 <div align="center" style="margin-top: 0;">
@@ -132,9 +134,10 @@ You can input your queries here and search by:
 - Scrape data for a specific type of business across all cities in a country.
 ![country-section](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/country-section.png)
 
-- Scrape Reviews
+- Scrape Reviews 
 ![reviews-section](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/reviews-section.png)
 
+Please note that you can get a maximum of **200 to 360 reviews** per place
 
 #### Output Page ('/output')
 ![output-page.png](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/output-page.png)
