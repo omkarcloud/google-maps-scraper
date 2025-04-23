@@ -1,4 +1,4 @@
-# IMPORTANT: The recent review extraction issues causing tasks to fail have been resolved. Please download the latest version and reinstall it. Note: you can get atleast 240 reviews but may or may not get the complete reviews. Thank you for your patience and support! 🙏
+# IMPORTANT: The recent review extraction issues causing tasks to fail have been resolved. Please note that you are guaranteed to receive at least 240 reviews per place. However, in some cases, due to technical limitations, the complete set of reviews may not be available. Thank you for your patience and support! 🙏
 
 ![Google Maps Extractor Feautred Image](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/google-maps-scraper-feautred-image.png)
 
