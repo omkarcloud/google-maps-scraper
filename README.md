@@ -1,5 +1,3 @@
-# IMPORTANT: The recent review extraction issues causing tasks to fail have been resolved. Please note that you are guaranteed to receive at least 240 reviews per place. However, in some cases, due to technical limitations, the complete set of reviews may not be available. Thank you for your patience and support! 🙏
-
 ![Google Maps Extractor Feautred Image](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/google-maps-scraper-feautred-image.png)
 
 <div align="center" style="margin-top: 0;">
@@ -243,13 +241,19 @@ Investing in this tool can save you time and money in various aspects of your pe
 
 ### ❓ How to Get the Pro Version?
 
-Visit the GitHub Sponsorship Page [here](https://github.com/sponsors/omkarcloud?frequency=one-time) and make a one-time payment of $28 by selecting the Google Maps Extractor Pro Option.
+1. Create an account on Omkar Cloud by visiting [this link](https://www.omkar.cloud/auth/sign-up).
+![Sign Up](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/signup.png)
 
-![Pay](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/pay.gif)
+2. Go to the [Google Maps Extractor Pricing Page](https://www.omkar.cloud/tools/google-maps-extractor?initial_tab=pricing) and make a one-time payment of $28 using PayPal or a credit/debit card.
+![Pricing Page](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/pricing.png)
+
+💳 Note: Your card details are handled securely by PayPal and never shared with us. PayPal’s industry-leading security protects your transaction.
+
+![PayPal Secure](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/paypal-secure.png)
 
 After payment, you'll see a link. Visiting the link will activate the Pro Version for lifetime.
 
-![purchase-success](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/purchase-success.png)
+![Purchase Success](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/purchase-success.png)
 
 ### ❓ What if I Don't Get Value from It?
 
