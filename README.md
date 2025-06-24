@@ -261,40 +261,26 @@ We wholeheartedly ❤️ believe in the value our product brings for you, especi
  
 But, we also understand the reservations you might have.
 
-That's why we've put the ball in your court: **If, within the next 90 days, you feel that our product hasn't met your expectations, don't hesitate. Reach out to us, and within 24 hours, we will gladly refund your money, no questions asked and no hassles.**
+That's why we've put the ball in your court: **If, within the next 90 days, you feel that our product hasn't met your expectations, simply get a refund in 2 clicks.**
 
 The risk is entirely on us because we're that confident in what we've created!
 
 ### ❓ How Do I Get a Refund?
 
-We are ethical and honest people, and we will not keep your money if you are not happy with our product. Requesting a refund is a simple process that should only take about 5 minutes. 
+Your satisfaction is most importance. We will gladly issue a refund if you are not happy with our product.
 
-To request a refund, ensure you have a PayPal Account (e.g., "myname@example.com" or "chetan@gmail.com").
+Requesting a refund is a **simple two-click process**:
 
-Next, follow these steps to initiate a refund:
+1. Go to the [Transactions Page](https://www.omkar.cloud/billing/transaction-history).
+![Transactions Page](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/transactions-page.png)
 
-1. Send an email to `happy.to.help@omkar.cloud` using the following template:
+2. Click the "Request Refund" button.
+![Request Refund Button](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/request-refund-button.png)
 
-   - To request a refund via PayPal:
-     ```
-     Subject: Request Refund
-     Content: Please send a refund to my PayPal email: myname@example.com
-     ```
+3. Confirm by clicking "Request Refund" again.
+![Confirm Refund Request](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/confirm-refund-request.png)
 
-   ![Email Image](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/email.png)
-
-2. Next, go to the discussion [here](https://github.com/omkarcloud/google-maps-scraper/discussions/44) and comment to request a refund using this template:
-   ```
-   I have sent a refund request from my email: myname@example.com.
-   ```
-
-   ![Discussion Image](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/discussion.png)
-
-3. You can expect to receive your refund within 1 day. We will also update you in the GitHub Discussion [here](https://github.com/omkarcloud/google-maps-scraper/discussions/44) :)
-
-   ![PayPal Image](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/paypal.png)
-
-Also, the complete $28 will be refunded to you within 24 hours, without any questions and without any hidden charges.
+✅ That's it! You'll receive a confirmation email from PayPal, and your money will be returned to your original payment method within **1–2 business days**.
 
 ### ❓ How can I get Email, LinkedIn, Facebook, Twitter, etc. of the places?
 
