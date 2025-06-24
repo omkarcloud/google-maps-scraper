@@ -267,17 +267,17 @@ The risk is entirely on us because we're that confident in what we've created!
 
 ### ❓ How Do I Get a Refund?
 
-Your satisfaction is most importance. We will gladly issue a refund if you are not happy with our product.
+Your satisfaction is **most important**. We will gladly issue a refund if you are not happy with our product.
 
 Requesting a refund is a **simple two-click process**:
 
 1. Go to the [Transactions Page](https://www.omkar.cloud/billing/transaction-history).
 ![Transactions Page](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/transactions-page.png)
 
-2. Click the "Request Refund" button.
+2. Click the **Request Refund** button.
 ![Request Refund Button](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/request-refund-button.png)
 
-3. Confirm by clicking "Request Refund" again.
+3. Confirm by clicking **Request Refund** again.
 ![Confirm Refund Request](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/confirm-refund-request.png)
 
 ✅ That's it! You'll receive a confirmation email from PayPal, and your money will be returned to your original payment method within **1–2 business days**.
