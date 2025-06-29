@@ -78,6 +78,13 @@ Let's get started by following these super simple steps:
 - For Most Desktop Users: [Download .deb](https://google-maps-extractor-omkar-cloud.s3.amazonaws.com/Google+Maps+Extractor-amd64.deb)
 - For Raspberry Pi and Some Cloud Servers: [Download .deb for arm64](https://google-maps-extractor-omkar-cloud.s3.amazonaws.com/Google+Maps+Extractor-arm64.deb)
 
+
+On Ubuntu 24.04 and later, you can run the app **only** from the terminal using the following command:
+
+```bash
+googlemapsextractor --no-sandbox  
+```
+
 **4. For Fedora/CentOS/Red Hat:**
 - For Most Desktop Users: [Download .rpm](https://google-maps-extractor-omkar-cloud.s3.amazonaws.com/Google+Maps+Extractor-x86_64.rpm)
 - For Raspberry Pi and Some Cloud Servers: [Download .rpm for arm64](https://google-maps-extractor-omkar-cloud.s3.amazonaws.com/Google+Maps+Extractor-aarch64.rpm)
@@ -282,6 +289,7 @@ Requesting a refund is a **simple two-click process**:
 
 ✅ That's it! You'll receive a confirmation email from PayPal, and your money will be returned to your original payment method within **1–2 business days**.
 
+<!-- 
 ### ❓ How can I get Email, LinkedIn, Facebook, Twitter, etc. of the places?
 
 While our Google Maps Extractor provides unlimited places with 40+ data points, you may optionally want to use our Website Contact Extractor Addon to get LinkedIn, Facebook, Twitter, and other contact information for the results. 
@@ -334,7 +342,7 @@ For most users, the Free Plan is sufficient. You can selectively choose the webs
 
 Although, if you need thousands of contacts, consider the $6/1000 Contacts Plan or $33/10000 Contacts Plan.
 
-The data quality is excellent, and the cost is very reasonable. Considering that landing just one customer from 1000 contacts can easily cover your investment and generate a nice profit.
+The data quality is excellent, and the cost is very reasonable. Considering that landing just one customer from 1000 contacts can easily cover your investment and generate a nice profit. -->
 
 ### ❓ Do I Need to Do Anything Else to Use the Tool Effectively?
 
