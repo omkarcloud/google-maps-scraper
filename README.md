@@ -254,7 +254,7 @@ Investing in this tool can save you time and money in various aspects of your pe
 2. Go to the [Google Maps Extractor Pricing Page](https://www.omkar.cloud/tools/google-maps-extractor?initial_tab=pricing) and make a one-time payment of $28 using PayPal or a credit/debit card.
 ![Pricing Page](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/pricing.png)
 
-💳 Note: Your card details are handled securely by PayPal and never shared with us. PayPal’s industry-leading security protects your transaction.
+💳 Note: Your card details are handled securely by PayPal and never shared with us.
 
 ![PayPal Secure](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/paypal-secure.png)
 
