@@ -289,61 +289,6 @@ Requesting a refund is a **simple two-click process**:
 
 ✅ That's it! You'll receive a confirmation email from PayPal, and your money will be returned to your original payment method within **1–2 business days**.
 
-<!-- 
-### ❓ How can I get Email, LinkedIn, Facebook, Twitter, etc. of the places?
-
-While our Google Maps Extractor provides unlimited places with 40+ data points, you may optionally want to use our Website Contact Extractor Addon to get LinkedIn, Facebook, Twitter, and other contact information for the results. 
-
-These details help you reach out to business owners more effectively.
-
-The data quality is excellent. Kindly follow these steps to use the Website Contact Extractor Addon:
-
-1. Sign up on RapidAPI by visiting [this link](https://rapidapi.com/auth/sign-up).
-
-![Sign Up on RapidAPI](https://raw.githubusercontent.com/omkarcloud/assets/master/images/sign-up.png)
-
-2. Subscribe to the Free Plan by visiting [this link](https://rapidapi.com/Chetan11dev/api/website-social-scraper-api/pricing).
-
-![Subscribe to Free Plan](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/subscribe.png)
-
-3. Copy the API key.
-![Copy the API Key](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/key.png)
-
-Now you have two options for using the Website Contact Extractor Addon:
-
-#### Option 1: Get contacts for all places in a search query
-
-Enter the copied API key in the "Email and Social Links Extraction" section and run it:
-
-![social-section.png](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/social-section.png)
-
-#### Option 2: Get contacts for specific chosen websites (saves money)
-
-1. Click the Website Contact Extractor button:
-![website-contacts-scraper-button](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/website-contacts-scraper-button.png)
-
-2. Enter the specific websites you're interested in, the copied API key, and run it:
-![interested-websites](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/interested-websites.png)
-
-3. After this, you'll have the contact details for the chosen websites.
-
-![contacts-websites](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/contacts-websites.png)
-
-### ❓ How much does the Website Contact Extractor Addon cost?
-
-There are 3 plans available:
-- Free Plan: 200 places free every month
-- $6/1000 Contacts Plan: 1000 places for $6
-- $33/10000 Contacts Plan: 10000 places for just $3.33 per 1000
-
-For most users, the Free Plan is sufficient. You can selectively choose the websites you're interested in and use the Website Contacts Extractor to get details for only those chosen websites.
-
-![website-contacts-scraper](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/website-contacts-scraper.png)
-
-Although, if you need thousands of contacts, consider the $6/1000 Contacts Plan or $33/10000 Contacts Plan.
-
-The data quality is excellent, and the cost is very reasonable. Considering that landing just one customer from 1000 contacts can easily cover your investment and generate a nice profit. -->
-
 ### ❓ Do I Need to Do Anything Else to Use the Tool Effectively?
 
 1. Disable Auto Sleep Mode
@@ -394,17 +339,16 @@ Trust me, learning Botasaurus Desktop will only take 5 minutes, but I guarantee 
   </a>
 </p>
 
-### ❓ I previously bought the Python-NodeJS version of the tool. How can I upgrade to the desktop app?
 
-To upgrade from the Python-NodeJS version to the desktop app, follow these simple steps:
+### ❓ How can I get results via API?
 
-1. Download the desktop app from the link provided at the top of this page.
+If you are a developer and need to get results programmatically, we offer a dedicated **[Google Maps Extractor API](https://www.omkar.cloud/tools/google-maps-extractor-api)**. It's perfect for integrating Google Maps data directly into your applications or running automated jobs on virtual machines.
 
-2. Visit the same link that was sent to you in the email after you bought the Pro version.
+The API includes all the features of our pro desktop app, including Unlimited searches and Unlimited devices, plus additional benefits:
+- REST API interface 
+- Detailed documentation for Google Cloud VM installation
 
-3. Your Pro version will be activated. Enjoy!
-
-The process is straightforward and should only take a few minutes. If you face any issues or have further questions, don't hesitate to reach out to us.
+The API is available for $16/month, and you can try it free at [Google Maps Extractor API](https://www.omkar.cloud/tools/google-maps-extractor-api).
 
 ### ❓ In the exported file, the characters are in English instead of Japanese/Korean/Hindi. How can I preserve the original language when exporting?
 
