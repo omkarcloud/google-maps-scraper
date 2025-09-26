@@ -259,7 +259,7 @@ But, we also understand the reservations you might have.
 
 That's why we've put the ball in your court: **If, within the next 90 days, you feel that our product hasn't met your expectations, simply get a refund in 2 clicks.**
 
-The risk is entirely on us because we're that confident in what we've created!
+The risk is entirely on us because we're confident in what we've created!
 
 ### ❓ How Do I Get a Refund?
 
