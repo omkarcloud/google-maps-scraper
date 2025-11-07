@@ -1,3 +1,5 @@
+> ⚠️ **Important Notice:** Over the last day, the scraper has been experiencing issues with data extraction due to a recent update. We are working to resolve this issue and restore full functionality. We apologize for any inconvenience and appreciate your patience. Kindly check back in 2-3 days.
+
 ![Google Maps Extractor Feautred Image](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/google-maps-scraper-feautred-image.png)
 
 <div align="center" style="margin-top: 0;">
@@ -23,7 +25,7 @@
 
 ## Disclaimer for Google Maps Scraper Project
 
-> This Google Maps Scraper is provided for educational and research purposes only. By using this Google Maps Extractor, you agree to comply with local and international laws regarding data scraping and privacy. The authors and contributors are not responsible for any misuse of this software. This tool should not be used to violate the rights of others, for unethical purposes, or to use data in an unauthorized or illegal manner.
+> This Google Maps Scraper is provided for educational and research purposes only. By using this Google Maps Extractor, you agree to comply with local and international laws regarding data scraping and privacy. The authors and contributors are not responsible for any misuse of this software. This tool should not be used to violate the rights of others, or for unethical purposes.
 
 We take the concerns of the Google Maps Extractor Project very seriously. For any concerns, please contact Chetan Jain at [chetan@omkar.cloud](mailto:chetan@omkar.cloud). We will promptly reply to your emails.
 
@@ -88,12 +90,15 @@ googlemapsextractor --no-sandbox
    - [or Email](mailto:happy.to.help@omkar.cloud?subject=Help%20with%20Google%20Maps%20Extractor%20Tool%20Installation&body=I%20need%20help%20with%20the%20installation%20of%20the%20Google%20Maps%20Extractor%20Tool.)
 
 Rest assured, we will respond to your message within 1 Working Day.
+2. We also provide **done for you services** (e.g. all Restaurants in the US, etc) at reasonable prices, contact us for more details. 
+
+<!-- We can get you 2x-3x more results than you can get on your system, as we can use higher CPU and RAM, proxies.  -->
 
 ## ⚡ Enlightening Questions
 
 ### ❓ How to Get Results for My Queries?
 
-1. Enter your search queries.
+1. Enter your search queries or Google Maps place/search link.
 
 ![Queries](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/queries.png)
 
