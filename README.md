@@ -1,5 +1,3 @@
-> ⚠️ **Important Notice:** Over the last day, the scraper has been experiencing issues with data extraction due to a recent update. We are working to resolve this issue and restore full functionality. We apologize for any inconvenience and appreciate your patience. Kindly check back in 2-3 days.
-
 ![Google Maps Extractor Feautred Image](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/google-maps-scraper-feautred-image.png)
 
 <div align="center" style="margin-top: 0;">
