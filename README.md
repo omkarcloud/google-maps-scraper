@@ -1,5 +1,3 @@
-# There is a significant reduction in the number of results that the users are able to get. We are aware of this issue and expect to resolve it by December 15. Along with providing you with a lot of great features that you will love. Kindly wait till December 15th and then reinstall the version.
-
 ![Google Maps Extractor Feautred Image](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/google-maps-scraper-feautred-image.png)
 
 <div align="center" style="margin-top: 0;">
