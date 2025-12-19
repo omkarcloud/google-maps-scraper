@@ -97,7 +97,7 @@ googlemapsextractor --no-sandbox
 
 Rest assured, we will respond to your message within 1 Working Day.
 2. We also provide **done for you services** (e.g., all Restaurants in the US, etc.) at lowest prices; contact us [here](mailto:happy.to.help@omkar.cloud?subject=Custom%20Data%20Request&body=Hi%2C%20I%20would%20like%20to%20inquire%20about%20your%20done%20for%20you%20data%20services.) for more details. Additional discounts for high volume needs.
-
+3. Don't need UI? Just need to access data via Python/Node.js scripts? Check out our [Google Maps Extractor API](https://www.omkar.cloud/tools/google-maps-extractor-api) (200 searches/month free). It offers a REST API interface and detailed documentation for AWS VM installation.
 
 ## ⚡ Enlightening Questions
 
@@ -201,7 +201,7 @@ There are 4 kinds of search strategies:
 Let's see when to use which strategy:
 
 **Fast:**
-- Get results in 1 minute, usually 120+ results/city.
+- Get results quickly in 1 minute and 3 seconds, usually with 120+ results per city.
 - **When to use:**
   - You need to get full country results in 1-2 days.
 
