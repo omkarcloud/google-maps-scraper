@@ -21,11 +21,11 @@
   
 ---
 
-Our goal with Google Maps Extractor is simple:
+We created Google Maps Scraper with two visions:
 - Every founder should have access to data to find their first customers.
-- Every student should have access to data to complete their research project.
+- Every student should have access to data to complete their research projects.
 
-With this vision, we present to you our Google Maps Extractor.
+Let's begin.
 
 ---
 
@@ -45,10 +45,10 @@ Google Maps Extractor helps you find Business Profiles from Google Maps.
 
 ## ⚡ Benefits
 
-- Get Unlimited Search Results, Say a Big-Big NO to Websites Selling Expensive Plans
-- 100% Accurate, 50+ Data Points Extracted in Real-Time
+- Get Unlimited Search Results, Say a Big-Big NO to Websites Selling Expensive Plans.
+- 100% Accurate, 50+ Data Points Extracted in Real-Time.
 
-In the next 5 minutes, you'll extract **150+ Search Results** from Google Maps.
+In the next few minutes, you'll extract **1000+ Search Results** from Google Maps.
 
 ![Google Maps Data Extractor CSV Result](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/gmap_result.png)
 
@@ -86,7 +86,7 @@ googlemapsextractor --no-sandbox
 - For Most Desktop Users: [Download .rpm](https://google-maps-extractor-omkar-cloud.s3.amazonaws.com/Google+Maps+Extractor-x86_64.rpm)
 - For Raspberry Pi and Some Cloud Servers: [Download .rpm for arm64](https://google-maps-extractor-omkar-cloud.s3.amazonaws.com/Google+Maps+Extractor-aarch64.rpm)
 
-**2️⃣ Now, Press the Run button to have 150+ search results within 2 minutes. 😎**
+**2️⃣ Now, Press the Run button to have 1000+ search results. 😎**
 
 ![GIF of Google Maps Extractor Visit, Highlight Keyword, Run, See Results](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/demo.gif)
 
@@ -96,7 +96,7 @@ googlemapsextractor --no-sandbox
    - [or Email](mailto:happy.to.help@omkar.cloud?subject=Help%20with%20Google%20Maps%20Extractor%20Tool%20Installation&body=I%20need%20help%20with%20the%20installation%20of%20the%20Google%20Maps%20Extractor%20Tool.)
 
 Rest assured, we will respond to your message within 1 Working Day.
-2. We also provide **done for you services** (e.g., all Restaurants in the US, etc.) at reasonable prices; contact us for more details. 
+2. We also provide **done for you services** (e.g., all Restaurants in the US, etc.) at lowest prices; contact us [here](mailto:happy.to.help@omkar.cloud?subject=Custom%20Data%20Request&body=Hi%2C%20I%20would%20like%20to%20inquire%20about%20your%20done%20for%20you%20data%20services.) for more details. Additional discounts for high volume needs.
 
 
 ## ⚡ Enlightening Questions
@@ -268,8 +268,8 @@ Click on the Abort Icon to abort the task.
 ![abort-task.png](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/abort-task.png)
 
 **Note:**
-- Aborting an All Task will abort its subtasks.
-- If you close the application while a **sub task** is **in progress**.
+- Aborting an All Task will abort its child tasks.
+- If you close the application while a **child task** is **in progress**:
 
 ![sub-task-in-progress.png](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/sub-task-in-progress.png)
 
@@ -308,7 +308,7 @@ It can take 2-3 days to complete for countries with tens of thousands of cities,
 
 This is exactly the kind of use case our tool was built for—helping students access data for their research without breaking the bank.
 
-Use Search Strategy with **Zoom 18** for San Francisco. Let it run overnight. You'll have tens of thousands of results, which is perfect for your research project. Cost will be 0, as you get 200 searches free each month.
+Use Search Strategy with **Zoom 18** for San Francisco. Let it run overnight. You'll have tens of thousands of results, which is perfect for your research project. Cost will be 0, as you get **200** searches free each month.
 
 ### ❓ While in progress, "All Task" shows around 80K results, but after completion it drops to 40K. Why?
 
@@ -318,7 +318,7 @@ Google lists the same places across multiple cities, so expect results to drop b
 
 ### ❓ Are there any usage limits?
 
-The free version only allows 200 searches per month. To get unlimited searches for a lifetime, consider upgrading to the Pro Version:
+The free version only allows **200** searches per month. To get unlimited searches for a lifetime, consider upgrading to the Pro Version:
 - The Pro Version gives you access to unlimited searches for a lifetime. Say a Big-Big NO to websites selling expensive plans.
 - 100% accurate, [50+ data points](https://github.com/omkarcloud/google-maps-scraper/blob/master/fields.md) extracted in real-time.
 - Only a one-time investment with lifetime updates and top-notch WhatsApp support, all for just $28.
@@ -330,7 +330,7 @@ The free version only allows 200 searches per month. To get unlimited searches f
 
 ### ❓ How to Get the Pro Version?
 
-Get the pro version, only when you exceed the free plan limit of 200 searches per month, by following these steps:
+Get the pro version, only when you exceed the free plan limit of **200** searches per month, by following these steps:
 
 1. Create an account on Omkar Cloud by visiting [this link](https://www.omkar.cloud/auth/sign-up).
 ![Sign Up](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/signup.png)
@@ -416,7 +416,7 @@ Requesting a refund is a **simple two-click process**:
 **Why we do this:**
 
 - It's Good Karma. Good Karma comes back to you here or hereafter, many times over.
-- Plus, giving easy refunds takes the risk equation out of purchase, so more people buy. It's a win-win situation for both of us. 
+- Plus, giving easy refunds makes the purchase fully risk free. So you are more likely to buy. It's a win-win situation for you and us.
 - Many great creators like John Sonmez also do this, and we like to follow their example.
 
 
@@ -456,9 +456,9 @@ In this documentation and inside the tool, we specifically use US terms
 - US Cities not my own country cities
 - Postal Codes/Neighborhoods not terms like (pincode/sector)
 
-But why? Because Americans are our biggest customers. To sell, it's wise to **appeal** to your major buyers. 
+But why? Because Americans are our biggest customers. To sell, it's wise to **appeal** to your biggest customers. 
 
-That's why we suggest the US (given your product creates value, customers **are paying**, and it has global appeal):
+That's why we suggest the US (given your product creates value, customers are **PAYING**, and it has global appeal). Plus:
 
 - Americans communicate in a straightforward manner — easy to do business with.
 - They buy easily, even from overseas sellers, if you show how your product/service makes their work easier or grows their business. At least 3x easier than selling to Asians, who tend to take their time before buying.
