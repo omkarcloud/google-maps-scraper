@@ -276,6 +276,21 @@ Click on the Abort Icon to abort the task.
 
 That in-progress task will lose all progress and start from 0 when you reopen the app.
 
+### ❓ I want all restaurants (or any category) in the US. What's the best approach?
+
+Use the Country Level Data feature, with Search Strategy "Fast". 
+
+It can take 2-3 days to complete for countries with tens of thousands of cities, like the US. 
+
+⚠️ **Important:** Don't use Zoom 18 for country-level data—it would take 20-30 days. 
+
+### ❓ I'm an AI Research Student. I need all coffee shops in San Francisco for my Recommendation AI. How can I get this data?
+
+This is exactly the kind of use case our tool was built for—helping students access data for their research without breaking the bank.
+
+Use Search Strategy with **Zoom 18** for San Francisco. Let it run overnight. You'll have tens of thousands of results, which is perfect for your research project. Cost will be 0, as you get **200** searches free each month.
+
+
 ### ❓ What else can I use this tool for?
 
 1. Finding customers for your startup. Very common use case.
@@ -298,57 +313,6 @@ That in-progress task will lose all progress and start from 0 when you reopen th
 This tool can save you time and money in various aspects of your personal and professional life :)
 
 
-### ❓ I want all restaurants (or any category) in the US. What's the best approach?
-
-Use the Country Level Data feature, with Search Strategy "Fast". 
-
-It can take 2-3 days to complete for countries with tens of thousands of cities, like the US. 
-
-
-### ❓ I'm an AI Research Student. I need all coffee shops in San Francisco for my Recommendation AI. How can I get this data?
-
-This is exactly the kind of use case our tool was built for—helping students access data for their research without breaking the bank.
-
-Use Search Strategy with **Zoom 18** for San Francisco. Let it run overnight. You'll have tens of thousands of results, which is perfect for your research project. Cost will be 0, as you get **200** searches free each month.
-
-### ❓ While in progress, "All Task" shows around 80K results, but after completion it drops to 60K. Why?
-
-We remove duplicates at the end of all tasks, so expect the final count to be lower than what you see during progress. 
-
-Google lists the same places across multiple cities, so expect results to drop by 20% to 40% for country-level extraction.
-
-### ❓ Are there any usage limits?
-
-The free version only allows **200** searches per month. To get unlimited searches for a lifetime, consider upgrading to the Pro Version:
-- The Pro Version gives you access to unlimited searches for a lifetime. Say a Big-Big NO to websites selling expensive plans.
-- 100% accurate, [50+ data points](https://github.com/omkarcloud/google-maps-scraper/blob/master/fields.md) extracted in real-time.
-- Only a one-time investment with lifetime updates and top-notch WhatsApp support, all for just $28.
-- Best of all? Absolutely zero risk, as we offer a generous 90-day, no-questions-asked refund guarantee.
-
-[1000+ Happy People](https://github.com/sponsors/omkarcloud?frequency=one-time) have already invested in the Pro Version and are reaping its benefits to grow their businesses.
-
-![people](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/people-new.png)
-
-### ❓ How to Get the Pro Version?
-
-Get the pro version, only when you exceed the free plan limit of **200** searches per month, by following these steps:
-
-1. Create an account on Omkar Cloud by visiting [this link](https://www.omkar.cloud/auth/sign-up).
-![Sign Up](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/signup.png)
-
-2. Go to the [Google Maps Extractor Pricing Page](https://www.omkar.cloud/tools/google-maps-extractor?initial_tab=pricing) and make a one-time payment of $28 using PayPal or a credit/debit card.
-![Pricing Page](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/pricing.png)
-
-💳 Note: Your card details are handled securely by PayPal and never shared with us.
-
-![PayPal Secure](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/paypal-secure.png)
-
-After payment, you'll see a link. Visiting the link will activate the Pro Version for a lifetime.
-
-![Purchase Success](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/purchase-success.png)
-
-
-
 ### ❓ This is my first time hearing about you and your product. How can I be sure you're genuine?
 
 Great question! Here's our track record to date:
@@ -358,7 +322,7 @@ Great question! Here's our track record to date:
 2. **We built [Botasaurus](https://github.com/omkarcloud/botasaurus)**, a web scraping framework starred by 3K+ developers on GitHub.
 
 3. **This tool itself has:**
-   - 2K+ stars on GitHub
+   - 2.3K+ stars on GitHub
    - 100+ discussion threads
    - 150+ solved issues
 
@@ -380,46 +344,6 @@ For big brands, this is just one of many tools. For us, **it is our core product
 A Solid Product doesn't need elaborate explanations, it speaks for itself.
 
 Just run 1 search in the tool, it will take only 5 minutes for downloading and installing, and your search for the best Google Maps extractor will end right here. 
-
-
-### ❓ What if I Don't Get Value from It?
-
-We wholeheartedly ❤️ believe in the value our product brings for you, especially since it has successfully worked for hundreds of people like you.
- 
-But, we also understand the reservations you might have.
-
-That's why we've put the ball in your court: **If, within the next 90 days, you feel that our product hasn't met your expectations, simply get a refund in 2 clicks only.**
-
-The risk is fully on us, as it should be, because we're confident in what we've created!
-
-### ❓ How Do I Get a Refund?
-
-Your satisfaction is **most important**. We will gladly issue a refund if you are not happy with our product.
-
-Requesting a refund is a **simple two-click process**:
-
-1. Go to the [Transactions Page](https://www.omkar.cloud/billing/transaction-history).
-![Transactions Page](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/transactions-page.png)
-
-2. Click the **Request Refund** button.
-![Request Refund Button](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/request-refund-button.png)
-
-3. Confirm by clicking **Request Refund** again.
-![Confirm Refund Request](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/confirm-refund-request.png)
-
-✅ That's it! You'll receive a confirmation email from PayPal, and your money will be returned to your original payment method within **1–2 business days**.
-
-
-### ❓ Why do you offer a 2-click, 90-day refund policy? Is there any catch?
-
-**No catch.** Last year we refunded 100+ customers. It will be the same for you. No questions asked, fully automated 2 click refund process. As it should be.
-
-**Why we do this:**
-
-- It's Good Karma—what you give comes back to you, here or hereafter, many times over.
-- Easy refunds make your purchase risk-free, so you're more likely to buy. Win-win for both of us.
-- Many great creators like John Sonmez also do this, and we like to follow their example.
-- To date, we have refunded every single customer who asked. With **0 exceptions**. And that's how it always will be.
 
 
 ### ❓ I'm starting my business. Which cities should I choose to find customers?
@@ -480,6 +404,78 @@ That's why we suggest the US (given your product creates value, customers are **
 2. **Prepare** → Study their listing, master your pitch, have a no-brainer offer (6 months free, first month free)
 3. **Reach out** → Call/visit/email. Introvert? Involve your brother/cousin/friend for 25% commission.
 4. **Persist** → Expect 20 visits/calls to close 1 deal. Don't give up after 3-4 rejections. Most people do quit, but you should not.
+
+### ❓ Are there any usage limits?
+
+The free version only allows **200** searches per month. To get unlimited searches for a lifetime, consider upgrading to the Pro Version:
+- The Pro Version gives you access to unlimited searches for a lifetime. Say a Big-Big NO to websites selling expensive plans.
+- 100% accurate, [50+ data points](https://github.com/omkarcloud/google-maps-scraper/blob/master/fields.md) extracted in real-time.
+- Only a one-time investment with lifetime updates and top-notch WhatsApp support, all for just $28.
+- Best of all? Absolutely zero risk, as we offer a generous 90-day, no-questions-asked refund guarantee.
+
+[1000+ Happy People](https://github.com/sponsors/omkarcloud?frequency=one-time) have already invested in the Pro Version and are reaping its benefits to grow their businesses.
+
+![people](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/people-new.png)
+
+### ❓ How to Get the Pro Version?
+
+Get the pro version, only when you exceed the free plan limit of **200** searches per month, by following these steps:
+
+1. Create an account on Omkar Cloud by visiting [this link](https://www.omkar.cloud/auth/sign-up).
+![Sign Up](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/signup.png)
+
+2. Go to the [Google Maps Extractor Pricing Page](https://www.omkar.cloud/tools/google-maps-extractor?initial_tab=pricing) and make a one-time payment of $28 using PayPal or a credit/debit card.
+![Pricing Page](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/pricing.png)
+
+💳 Note: Your card details are handled securely by PayPal and never shared with us.
+
+![PayPal Secure](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/paypal-secure.png)
+
+After payment, you'll see a link. Visiting the link will activate the Pro Version for a lifetime.
+
+![Purchase Success](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/purchase-success.png)
+
+
+### ❓ What if I Don't Get Value from It?
+
+We wholeheartedly ❤️ believe in the value our product brings for you, especially since it has successfully worked for hundreds of people like you.
+ 
+But, we also understand the reservations you might have.
+
+That's why we've put the ball in your court: **If, within the next 90 days, you feel that our product hasn't met your expectations, simply get a refund in 2 clicks only.**
+
+The risk is fully on us, as it should be, because we're confident in what we've created!
+
+### ❓ How Do I Get a Refund?
+
+Your satisfaction is **most important**. We will gladly issue a refund if you are not happy with our product.
+
+Requesting a refund is a **simple two-click process**:
+
+1. Go to the [Transactions Page](https://www.omkar.cloud/billing/transaction-history).
+![Transactions Page](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/transactions-page.png)
+
+2. Click the **Request Refund** button.
+![Request Refund Button](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/request-refund-button.png)
+
+3. Confirm by clicking **Request Refund** again.
+![Confirm Refund Request](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/confirm-refund-request.png)
+
+✅ That's it! You'll receive a confirmation email from PayPal, and your money will be returned to your original payment method within **1–2 business days**.
+
+
+### ❓ Why do you offer a 2-click, 90-day refund policy? Is there any catch?
+
+**No catch.** Last year we refunded 100+ customers. It will be the same for you. No questions asked, fully automated 2 click refund process. As it should be.
+
+**Why we do this:**
+
+- It's Good Karma—what you give comes back to you, here or hereafter, many times over.
+- Easy refunds make your purchase risk-free, so you're more likely to buy. Win-win for both of us.
+- Many great creators like John Sonmez also do this, and we like to follow their example.
+- To date, we have refunded every single customer who asked. With **0 exceptions**. And that's how it always will be.
+
+
 
 ### ❓ Can you tell me about the Done For You service?
 
@@ -552,6 +548,13 @@ Trust me, learning Botasaurus Desktop will only take 5 minutes, but I guarantee 
   </a>
 </p>
 
+### ❓ While in progress, "All Task" shows around 80K results, but after completion it drops to 60K. Why?
+
+We remove duplicates at the end of all tasks, so expect the final count to be lower than what you see during progress. 
+
+Google lists the same places across multiple cities, so expect results to drop by 20% to 40% for country-level extraction.
+
+
 
 ### ❓ In the exported file, the characters are in English instead of Japanese/Korean/Hindi. How can I preserve the original language when exporting?
 
@@ -563,7 +566,7 @@ If you want to retain the original characters and avoid converting them to Engli
 
 ![Uncheck English](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/uncheck-english.png)
 
-Also, in case you are unable to view the non-English characters properly in Excel, then the easiest solution is to upload the file to Google Sheets, which should render the characters properly.
+Also, in case you are unable to view the non-English characters properly in Excel, then the easiest solution is to upload the file to Google Sheets, which renders the characters properly.
 
 ![character fix](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/character-fix.gif)
 
