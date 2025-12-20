@@ -202,6 +202,7 @@ Let's see when to use which strategy:
 
 **Fast:**
 - Get results quickly in 1 minute and 3 seconds, usually with 120+ results per city.
+- Expect 100K+ results in 12 hours using **fast** mode.
 - **When to use:**
   - You need to get full country results in 1-2 days.
 
@@ -310,11 +311,11 @@ This is exactly the kind of use case our tool was built for—helping students a
 
 Use Search Strategy with **Zoom 18** for San Francisco. Let it run overnight. You'll have tens of thousands of results, which is perfect for your research project. Cost will be 0, as you get **200** searches free each month.
 
-### ❓ While in progress, "All Task" shows around 80K results, but after completion it drops to 40K. Why?
+### ❓ While in progress, "All Task" shows around 80K results, but after completion it drops to 60K. Why?
 
 We remove duplicates at the end of all tasks, so expect the final count to be lower than what you see during progress. 
 
-Google lists the same places across multiple cities, so expect results to drop by 50% to 80% for country-level extraction.
+Google lists the same places across multiple cities, so expect results to drop by 20% to 40% for country-level extraction.
 
 ### ❓ Are there any usage limits?
 
@@ -411,13 +412,14 @@ Requesting a refund is a **simple two-click process**:
 
 ### ❓ Why do you offer a 2-click, 90-day refund policy? Is there any catch?
 
-**No catch.** To date, we have refunded every single customer who asked for a refund. It will be the same for you. Last year we refunded 100+ customers. No questions asked.
+**No catch.** Last year we refunded 100+ customers. It will be the same for you. No questions asked, fully automated 2 click refund process. As it should be.
 
 **Why we do this:**
 
-- It's Good Karma. Good Karma comes back to you here or hereafter, many times over.
-- Plus, giving easy refunds makes the purchase fully risk free. So you are more likely to buy. It's a win-win situation for you and us.
+- It's Good Karma—what you give comes back to you, here or hereafter, many times over.
+- Easy refunds make your purchase risk-free, so you're more likely to buy. Win-win for both of us.
 - Many great creators like John Sonmez also do this, and we like to follow their example.
+- To date, we have refunded every single customer who asked. With **0 exceptions**. And that's how it always will be.
 
 
 ### ❓ I'm starting my business. Which cities should I choose to find customers?
@@ -463,26 +465,40 @@ That's why we suggest the US (given your product creates value, customers are **
 - Americans communicate in a straightforward manner — easy to do business with.
 - They buy easily, even from overseas sellers, if you show how your product/service makes their work easier or grows their business. At least 3x easier than selling to Asians, who tend to take their time before buying.
 
-Lastly, just start with action. Don't sit around doing analysis-paralysis.
 
-Brace yourself for lots of **rejection**. Keep putting in hours for at least 30-60 days. You should see paying customers if your product/service creates real value. 
+### ❓ Enough of theories. Give me real-world examples where I can use this tool to find customers?
 
+- **Web Developer** → Search "real estate agency" in "San Francisco", filter **50+ reviews, no website**. Offer "done in 7 days" website for **$1000 + $40/mo hosting**. 
+
+- **Google Ads Agency** → Target Gyms/Yoga Studios with high reviews but no website (successful but technically novice). Offer to run Google Maps Ads to bring 20 new members/month. Gym owners love anything that brings foot traffic.
+
+- **Dental Software** → Find Dentists with 50+ reviews, no website. Visit during non-peak hours, demo your product, and offer 6 months free trial. They'll pay $40-60/month when it saves their receptionist 10+ hrs/week.
+
+**Now apply this to YOUR product/service:**
+
+1. **Define your target** → Business type + Minimum reviews (50+/100+) + Website or no website
+2. **Prepare** → Study their listing, master your pitch, have a no-brainer offer (6 months free, first month free)
+3. **Reach out** → Call/visit/email. Introvert? Involve your brother/cousin/friend for 25% commission.
+4. **Persist** → Expect 20 visits/calls to close 1 deal. Don't give up after 3-4 rejections. Most people do quit, but you should not.
 
 ### ❓ Can you tell me about the Done For You service?
 
 If you need full country data—say all "Restaurants in US"—running using "Detailed" Search Strategy (Default) can take 1-2 weeks on your system.
 
-With our **Done For You service**, we run it on our servers and deliver the data in 1 day. Huge time savings!
+With our **Done For You service**, we refine your search queries for higher-converting customers and deliver in 1 day.
 
-**Pricing:**
-- Around $60 for a single category in the USA (typically 300K+ unique results)
-- **$250 off** on your first purchase of $250+. So if your project costs $300, you only pay $50!
 
-**Why choose us and not other providers?**
-- Low prices as we want long-term relationships.
-- Same 90-day unconditional refund guarantee—you take zero risk. As it should be.
+**Pricing:** ~$60 for a single category in USA (300K+ results). **$200 off** on your first purchase of $250+. So if your project costs $250, you only pay $50!
 
-Mail us at [happy.to.help@omkar.cloud](mailto:happy.to.help@omkar.cloud) about the data you need, and we will get it done for you. 
+**Why us?** 
+
+- Weeks of extraction time saved.
+- Higher ROI, as we help you target businesses most likely to buy.
+- 90-day unconditional refund—risk is 100% on us.
+
+[Email us](mailto:happy.to.help@omkar.cloud?subject=Done%20For%20You%20Data%20Service&body=Hi%2C%20I%20sell%20%5Byour%20product%2Fservice%5D%20and%20I%E2%80%99m%20looking%20for%20%5Btype%20of%20customers%5D.%20Please%20help%20me%20get%20the%20right%20data.) what you sell and who you're looking for. We want you to sell more—that way you buy from us again.
+
+
 
 
 ### ❓ Do you do custom big data projects?
