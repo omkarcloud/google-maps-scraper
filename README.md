@@ -428,7 +428,7 @@ The key thing is to start with customers who
   - have money 
   - and are willing to spend it on solutions that make their lives easier. 
   
-These are the richest urban cities, tech-hubs in your target country, because they earn more, so they spend more.
+These are the richest cities, tech-hubs in your target country. Choose them because they earn more, so they have higher chances of buying your product/service.
 
 We recommend following these steps:
 
@@ -439,7 +439,7 @@ We recommend following these steps:
 
 **Examples:**
 - If your chosen country is 
-US -> Start with San Francisco, New York City, Los Angeles.
+US -> Start with San Francisco, Los Angeles,  New York City.
 Australia -> Start with Sydney
 Switzerland -> Start with Zurich
 
@@ -476,7 +476,7 @@ That's why we suggest the US (given your product creates value, customers are **
 
 **Now apply this to YOUR product/service:**
 
-1. **Define your target** → Business type + Minimum reviews (50+/100+) + Website or no website
+1. **Define your target** → Business type + Minimum reviews (50+/100+) + Website or no website (Search Strategy: "Zoom 18" on  Rich Cities)
 2. **Prepare** → Study their listing, master your pitch, have a no-brainer offer (6 months free, first month free)
 3. **Reach out** → Call/visit/email. Introvert? Involve your brother/cousin/friend for 25% commission.
 4. **Persist** → Expect 20 visits/calls to close 1 deal. Don't give up after 3-4 rejections. Most people do quit, but you should not.
