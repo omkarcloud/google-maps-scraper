@@ -496,8 +496,7 @@ With our **Done For You service**, we refine your search queries for higher-conv
 - Higher ROI, as we help you target businesses most likely to buy.
 - 90-day unconditional refund—risk is 100% on us.
 
-[Email us](mailto:happy.to.help@omkar.cloud?subject=Done%20For%20You%20Data%20Service&body=Hi%2C%20I%20sell%20%5Byour%20product%2Fservice%5D%20and%20I%E2%80%99m%20looking%20for%20%5Btype%20of%20customers%5D.%20Please%20help%20me%20get%20the%20right%20data.) what you sell and who you're looking for. We want you to sell more—that way you buy from us again.
-
+[Email us](mailto:happy.to.help@omkar.cloud?subject=Done%20For%20You%20Data%20Service&body=Hi%2C%20I%20sell%20%5Byour%20product%2Fservice%5D%20and%20I%E2%80%99m%20looking%20for%20%5Btype%20of%20customers%5D.%20Please%20help%20me%20get%20the%20right%20data.) and let us know what you sell and who you're looking for. We want you to sell more, because when you succeed, you'll come back to us again.
 
 
 
@@ -624,7 +623,6 @@ It only takes a click, but it means the world to me!
 ![Star us on GitHub](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/star-us.png)
 
 Good Luck!
-
 
 ## Love It? [Star It ⭐!](https://github.com/omkarcloud/google-maps-scraper)
 
