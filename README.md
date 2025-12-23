@@ -1,3 +1,7 @@
+
+> [!IMPORTANT]
+> A new version was released on **December 15, 2024**. If your Google Maps Extractor stopped working, please download and install the latest version.
+
 ![Google Maps Extractor Feautred Image](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/google-maps-scraper-feautred-image.png)
 
 <div align="center" style="margin-top: 0;">
@@ -18,12 +22,11 @@
   <img src="https://views.whatilearened.today/views/github/omkarcloud/google-maps-scraper.svg" width="80px" height="28px" alt="View" />
 </p>
 
-  
 ---
 
 We created Google Maps Scraper with two visions:
 - Every founder should have access to data to find their first customers.
-- Every student should have access to data to complete their research projects.
+- Every student should have access to data to complete their college research projects.
 
 Let's begin.
 
@@ -34,21 +37,16 @@ Let's begin.
 > This Google Maps Scraper is provided for educational and research purposes only. By using this Google Maps Extractor, you agree to comply with local and international laws regarding data scraping and privacy. The authors and contributors are not responsible for any misuse of this software. This tool should not be used to violate the rights of others, or for unethical purposes.
 
 We take the concerns of the Google Maps Extractor Project very seriously. For any concerns, please contact Chetan Jain at [chetan@omkar.cloud](mailto:chetan@omkar.cloud). We will promptly reply to your emails.
-
-##  Explore Our Other Awesome Products
-
-- ✅ [BOTASAURUS](https://www.omkar.cloud/l/google-maps-to-botasaurus/): The All-in-One Web Scraping Framework with Anti-Detection, Parallelization, Asynchronous, and Caching Superpowers.
-
 ---
 
-Google Maps Extractor helps you find Business Profiles from Google Maps.
+Google Maps Extractor helps you find Business Profiles from Google Maps. It's a well-loved tool with [2300+ stars on GitHub](https://github.com/omkarcloud/google-maps-scraper/stargazers), trusted by thousands in the community to find customers or complete their college research projects.
 
 ## ⚡ Benefits
 
 - Get Unlimited Search Results, Say a Big-Big NO to Websites Selling Expensive Plans.
 - 100% Accurate, 50+ Data Points Extracted in Real-Time.
 
-In the next few minutes, you'll extract **1000+ Search Results** from Google Maps.
+In the next few minutes, you'll extract **200+ Search Results** from Google Maps.
 
 ![Google Maps Data Extractor CSV Result](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/gmap_result.png)
 
@@ -64,7 +62,7 @@ Let's get started by following these super simple steps:
 
 **1. For Windows:**
 - [Download the Windows Version](https://google-maps-extractor-omkar-cloud.s3.amazonaws.com/Google+Maps+Extractor.exe)
-- Temporarily, you will face a blue popup stating that Windows Defender has prevented an app from an **unknown publisher** from starting. We aim to become a verified publisher soon to resolve this. (Rest assured, the app is 100% safe and secure, with over 2,000 stars on GitHub and more than 1,000 happy customers.)
+- Temporarily, you will face a blue popup stating that Windows Defender has prevented an app from an **unknown publisher** from starting. We aim to become a verified publisher soon to resolve this. (Rest assured, the app is 100% safe and secure, with [over 2,300+ stars on GitHub](https://github.com/omkarcloud/google-maps-scraper/stargazers) and more than [1,000 happy customers](https://github.com/sponsors/omkarcloud).)
 - You may also see a popup indicating that Windows Firewall has blocked some features of the app. Please click 'Allow Access' to continue.
 
 **2. For Mac:**
@@ -86,7 +84,7 @@ googlemapsextractor --no-sandbox
 - For Most Desktop Users: [Download .rpm](https://google-maps-extractor-omkar-cloud.s3.amazonaws.com/Google+Maps+Extractor-x86_64.rpm)
 - For Raspberry Pi and Some Cloud Servers: [Download .rpm for arm64](https://google-maps-extractor-omkar-cloud.s3.amazonaws.com/Google+Maps+Extractor-aarch64.rpm)
 
-**2️⃣ Now, Press the Run button to have 1000+ search results. 😎**
+**2️⃣ Now, Press the Run button to have 200+ search results. 😎**
 
 ![GIF of Google Maps Extractor Visit, Highlight Keyword, Run, See Results](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/demo.gif)
 
@@ -96,8 +94,7 @@ googlemapsextractor --no-sandbox
    - [or Email](mailto:happy.to.help@omkar.cloud?subject=Help%20with%20Google%20Maps%20Extractor%20Tool%20Installation&body=I%20need%20help%20with%20the%20installation%20of%20the%20Google%20Maps%20Extractor%20Tool.)
 
 Rest assured, we will respond to your message within 1 Working Day.
-2. We also provide **done for you services** (e.g., all Restaurants in the US, etc.) at lowest prices; contact us [here](mailto:happy.to.help@omkar.cloud?subject=Custom%20Data%20Request&body=Hi%2C%20I%20would%20like%20to%20inquire%20about%20your%20done%20for%20you%20data%20services.) for more details. Additional discounts for high volume needs.
-3. Don't need UI? Just need to access data via Python/Node.js scripts? Check out our [Google Maps Extractor API](https://www.omkar.cloud/tools/google-maps-extractor-api) (200 searches/month free). It offers a REST API interface and detailed documentation for AWS VM installation.
+2. Don't need UI? Just need to access data via Python/Node.js scripts? Check out our [Google Maps Extractor API](https://www.omkar.cloud/tools/google-maps-extractor-api) (200 searches/month free). It offers a REST API interface and detailed documentation for AWS VM installation.
 
 ## ⚡ Enlightening Questions
 
@@ -202,12 +199,12 @@ Let's see when to use which strategy:
 
 **Fast:**
 - Get results quickly in 1 minute and 3 seconds, usually with 120+ results per city.
-- Expect 100K+ results in 12 hours using **fast** mode.
+<!-- - Expect 100K+ results in 12 hours using **fast** mode. -->
 - **When to use:**
   - You need to get full country results in 1-2 days.
 
 **Detailed (Default):**
-- Get results in 7-8 days, usually 250+ results/city. But can also go into tens of thousands of results/city.
+- Get results in 7-8 days, usually 250+ results/city. But can also go into thousands of results/city.
 - Nice combination of speed and high results.
 - **When to use:**
   - You need to get full country results, and have 1-2 weeks of time.
@@ -220,7 +217,7 @@ Let's see when to use which strategy:
   - Zoom 17: Block Level (Time consuming)
   - Zoom 18: Street Level (Very time consuming)
 - **When to use:**
-  - When you want the absolute highest results. Use Zoom 18. It can take 3-4 hours, but you will have tens of thousands of results for big cities like New York City.
+  - When you want the absolute highest results. Use Zoom 18. It can take 3-4 hours, but you will have thousands of results for big cities like New York City.
 - **⚠️ When not to use:**
   - Not recommended for country level extraction. It can take 3-4 hours for a single city.
 
