@@ -1,6 +1,6 @@
 
 > [!IMPORTANT]
-> A new version was released on **December 15, 2024**. If your Google Maps Extractor stopped working, please download and install the latest version.
+> A new version was released on **December 15, 2024**. If your Google Maps Extractor stopped working, please download and install [the latest version](https://github.com/omkarcloud/google-maps-scraper#-requirements).
 
 ![Google Maps Extractor Feautred Image](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/google-maps-scraper-feautred-image.png)
 
