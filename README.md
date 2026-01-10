@@ -370,7 +370,7 @@ We recommend following these steps:
 1. First choose your target country.
 2. Then choose the richest cities in that country. 
 3. Use Zoom 18 Search Strategy for maximum results, for the chosen cities.
-4. Use cold calling or send personalized emails to the businesses, showing them how your product/service can make their life easier. 
+4. Reach out via cold calls or personalized emails—show how your product/service solves their problems. Use the [Enrichment feature](#-what-is-the-enrichment-section-in-app) for higher conversion rates.
 
 **Examples:**
 - If your chosen country is 
