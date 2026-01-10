@@ -28,6 +28,7 @@ Below is the complete list of fields (schema) present in every data record.
 ### Contact & Business Info
 - WEBSITE
 - PHONE
+- PHONE_INTERNATIONAL
 - ADDRESS
 - DETAILED_ADDRESS
 - COORDINATES
@@ -111,6 +112,7 @@ Below is the complete list of fields (schema) present in every data record.
 ### Contact & Business Info
 - WEBSITE
 - PHONE
+- PHONE_INTERNATIONAL
 - ADDRESS
 - DETAILED_ADDRESS
 - COORDINATES

@@ -1,6 +1,20 @@
 
 > [!IMPORTANT]
-> A new version was released on **December 15, 2024**. If your Google Maps Extractor stopped working, please download and install [the latest version](https://github.com/omkarcloud/google-maps-scraper#-requirements).
+> We've replaced the Website Contacts Scraper with the new **Business Enrichment API**—same features, plus more:
+
+- Social Links & Emails (same as before)
+- AI-Recommended Emails for Sales Outreach
+- Email Verification
+- Phone Carrier Info
+- Place Sales Summary
+
+**If you're on the old Website Contacts Scraper:**
+
+1. Cancel your subscription at [Subscriptions Page](https://www.omkar.cloud/billing/subscriptions)
+2. Request a refund for this month at [Payments Page](https://www.omkar.cloud/billing/transaction-history)
+3. Switch to the new API at [Business Enrichment API](https://www.omkar.cloud/tools/business-enrichment)
+
+Questions? [WhatsApp us](https://api.whatsapp.com/send?phone=918178804274&text=I%20have%20questions%20about%20the%20Business%20Enrichment%20API.)—we're happy to help.
 
 ![Google Maps Extractor Feautred Image](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/google-maps-scraper-feautred-image.png)
 
@@ -449,10 +463,10 @@ Your satisfaction is **most important**. We will gladly issue a refund if you ar
 
 Requesting a refund is a **simple two-click process**:
 
-1. Go to the [Transactions Page](https://www.omkar.cloud/billing/transaction-history).
+1. Go to [Transactions Page](https://www.omkar.cloud/billing/transaction-history)
 ![Transactions Page](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/transactions-page.png)
 
-2. Click the **Request Refund** button.
+2. Click "Request Refund"
 ![Request Refund Button](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/request-refund-button.png)
 
 3. Confirm by clicking **Request Refund** again.
@@ -460,6 +474,7 @@ Requesting a refund is a **simple two-click process**:
 
 ✅ That's it! You'll receive a confirmation email from PayPal, and your money will be returned to your original payment method within **1–2 business days**.
 
+No emails. No explanations. Simple Refund in 2 clicks. As it should be.
 
 ### ❓ Why do you offer a 2-click, 90-day refund policy? Is there any catch?
 
@@ -584,6 +599,9 @@ Also, in case you are unable to view the non-English characters properly in Exce
 
 2. Ensure you maintain a stable Internet connection, as switching connections will cause currently running tasks to fail.
 
+### ❓ On macOS, Google Chrome is not opening when I run the app. What should I do?
+
+This is a known macOS-specific issue. We expect to resolve it by December 2026. As a workaround, **close this app** and Chrome will open normally.
 
 ### ❓ There is a feature in another app that I need, and this product doesn't have it.
 
@@ -609,8 +627,7 @@ You can reach out to us via these channels:
 
   [![Contact Us on Email about Google Maps Scraper](https://raw.githubusercontent.com/omkarcloud/assets/master/images/ask-on-email.png)](mailto:happy.to.help@omkar.cloud?subject=Help%20with%20Google%20Maps%20Extractor%20Tool&body=I%20need%20help%20with%20using%20the%20Google%20Maps%20Extractor%20Tool.)
 
-
-We look forward to helping you and will reply to your emails and WhatsApp messages within 1 Working Day.
+Don't hesitate to message us—we enjoy helping. We will reply within 1 working day.
 
 ### ❓ Love It? Star It ⭐!
 
@@ -624,13 +641,6 @@ It only takes a click, but it means the world to me!
 
 Good Luck!
 
-## Love It? [Star It ⭐!](https://github.com/omkarcloud/google-maps-scraper)
-
-Become one of our amazing stargazers by giving us a star ⭐ on GitHub!
-
-It's just one click, but it means the world to me.
-
-[![Stargazers for @omkarcloud/google-maps-scraper](https://bytecrank.com/nastyox/reporoster/php/stargazersSVG.php?user=omkarcloud&repo=google-maps-scraper)](https://github.com/omkarcloud/google-maps-scraper/stargazers)
 
 ## Made with ❤️ using [Botasaurus Web Scraping Framework](https://www.omkar.cloud/l/google-maps-to-botasaurus/)
 
