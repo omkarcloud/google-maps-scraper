@@ -446,6 +446,30 @@ After payment, you'll see a link. Visiting the link will activate the Pro Versio
 
 ![Purchase Success](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/purchase-success.png)
 
+### ❓ What is the Enrichment Section in App?
+
+The Enrichment API turns Google Maps business data into sales-ready contacts.
+
+You've got businesses from Google Maps. Now you need to actually reach them. That's where enrichment comes in:
+
+- **Email Verification & Social Links**
+  - Get emails and social profiles from websites. 
+  - AI ranks the best email for sales outreach (not generic info@ addresses)
+  - Verify deliverability before you send. We use the best email verification API in the market.
+
+- **Phone Carrier Info**
+  - Know if it's a landline or mobile
+  - Get carrier name (Verizon, AT&T, etc.)
+  - Essential for calling—don't waste time on landlines
+
+- **Place Sales Summary**
+  - AI-generated business context from their Google Maps listing
+  - Tailored to YOUR product—tell us what you sell, we tell you how to pitch them
+  - Walk into calls knowing exactly what problems you can solve for them
+
+**Bottom line:** Same leads, same effort—but with enrichment, your conversion rate multiplies. That's more customers from the same effort.
+
+[Start enriching for free](https://www.omkar.cloud/tools/business-enrichment)—600 credits/month, high-quality data, just like this app you're using.
 
 ### ❓ What if I Don't Get Value from It?
 
@@ -528,6 +552,8 @@ The API includes all the features of our pro desktop app, including Unlimited se
 - Detailed documentation for Google Cloud VM installation
 
 The API is available for $16/month, and you can try it free at [Google Maps Extractor API](https://www.omkar.cloud/tools/google-maps-extractor-api).
+
+
 
 ### ❓ Any other products that might be useful to me?
 
