@@ -53,12 +53,13 @@ Let's begin.
 We take the concerns of the Google Maps Extractor Project very seriously. For any concerns, please contact Chetan Jain at [chetan@omkar.cloud](mailto:chetan@omkar.cloud). We will promptly reply to your emails.
 ---
 
-Google Maps Extractor helps you find Business Profiles from Google Maps. It's a well-loved tool with [2300+ stars on GitHub](https://github.com/omkarcloud/google-maps-scraper/stargazers), trusted by thousands in the community to find customers or complete their college research projects.
+Google Maps Extractor helps you find Business Profiles from Google Maps. It's a great tool with [2300+ stars on GitHub](https://github.com/omkarcloud/google-maps-scraper/stargazers), trusted by thousands in the community to complete their academic research projects or find customers.
 
 ## ⚡ Benefits
 
-- Get Unlimited Search Results, Say a Big-Big NO to Websites Selling Expensive Plans.
-- 100% Accurate, 50+ Data Points Extracted in Real-Time.
+- **Searches for lifetime** — Say a Big-Big NO to Websites Selling Expensive Plans.
+- **100% accurate** — 50+ data points extracted in real-time.
+- **Great product, even better documentation** — Part 1: How to use the tool. Part 2: How to make sales (worth its weight in gold—no one else tells you this).
 
 In the next few minutes, you'll extract **200+ Search Results** from Google Maps.
 
@@ -74,14 +75,24 @@ Let's get started by following these super simple steps:
 
 **1️⃣ Download and Install the Magic 🧙‍♀️:**
 
-**1. For Windows:**
-- [Download the Windows Version](https://google-maps-extractor-omkar-cloud.s3.amazonaws.com/Google+Maps+Extractor.exe)
-- Temporarily, you will face a blue popup stating that Windows Defender has prevented an app from an **unknown publisher** from starting. We aim to become a verified publisher soon to resolve this. (Rest assured, the app is 100% safe and secure, with [over 2,300+ stars on GitHub](https://github.com/omkarcloud/google-maps-scraper/stargazers) and more than [1,000 happy customers](https://github.com/sponsors/omkarcloud).)
-- You may also see a popup indicating that Windows Firewall has blocked some features of the app. Please click 'Allow Access' to continue.
-
-**2. For Mac:**
+**1. For Mac:**
 - [Download the Mac Version](https://google-maps-extractor-omkar-cloud.s3.amazonaws.com/Google+Maps+Extractor.dmg)
-- Our Mac version is verified by Apple, so you can install it without facing any issues.
+- We are a verified publisher with Apple, so you can install it without facing any issues.
+
+**2. For Windows:**
+- [Download the Windows Version](https://google-maps-extractor-omkar-cloud.s3.amazonaws.com/Google+Maps+Extractor.exe)
+- You'll see a blue popup saying Windows Defender blocked an app from an **unknown publisher**.
+
+We're verified with Apple, but not yet with Windows (requires company incorporation—coming this year).
+
+Rest assured, the app is 100% safe:
+- Made by Omkar Cloud, creators of [Botasaurus](https://github.com/omkarcloud/botasaurus) (3.7K+ GitHub stars)
+- [2,300+ stars on GitHub](https://github.com/omkarcloud/google-maps-scraper/stargazers)
+- [1,000+ happy customers](https://github.com/sponsors/omkarcloud) via GitHub Sponsors
+- 100+ discussion threads, 150+ solved issues
+
+You may also see a Windows Firewall popup—click **Allow Access** to continue.
+
 
 **3. For Ubuntu/Debian:**
 - For Most Desktop Users: [Download .deb](https://google-maps-extractor-omkar-cloud.s3.amazonaws.com/Google+Maps+Extractor-amd64.deb)
@@ -341,11 +352,11 @@ Think about it—would hundreds of people raise issues, ask questions, and have 
 
 ### ❓ Okay, you seem legit, but why should I use your Product? There are 10s of Google Maps Scrapers on the Internet, some by brands bigger than yours.
 
-For big brands, this is just one of many tools. For us, **it is our core product**. We've put in thousands of development hours perfecting it.
+For big brands, this is just one of many tools. For us, **it is our core product**. We've put in thousands of development hours perfecting it, and our extremely proud of it. 
 
 **Coming to Hard Facts:**
 - 📊 Tens of thousands of results per city with Zoom 18. Only 1-2 other brands can do this.
-- 🔑 Unlimited searches for a lifetime. Other websites charge $28 for just 50 searches. Our free plan gives more than that. 
+- 🔑 Unlimited searches for a lifetime. Other websites charge $28 for just 50 searches. Our free plan gives 200 searches, 4x more than them. 
 - ⚡ Faster performance with lower bandwidth usage.
 - 🖥️ Easy to use — just open, enter query, start seeing results in a few seconds.
 - 📁 50+ data points extracted, most in the market.
@@ -370,7 +381,7 @@ We recommend following these steps:
 1. First choose your target country.
 2. Then choose the richest cities in that country. 
 3. Use Zoom 18 Search Strategy for maximum results, for the chosen cities.
-4. Reach out via cold calls or personalized emails—show how your product/service solves their problems. Use the [Enrichment feature](#-what-is-the-enrichment-section-in-app) for higher conversion rates.
+4. Reach out via cold calls or personalized emails—show how your product/service solves their problems.
 
 **Examples:**
 - If your chosen country is 
@@ -383,7 +394,7 @@ Don't start targeting full country data. You will have a bad conversion rate and
 
 ### ❓ Which country should I choose to find customers?
 
-Your own country, because you are more comfortable talking to customers in your own country. 
+Your own country, because you are more comfortable talking to them. 
 
 Once your product is perfected, and is creating good value for your customers, you can start focusing on US customers.
 
@@ -401,6 +412,31 @@ That's why we suggest the US (given your product creates value, customers are **
 - They buy easily, even from overseas sellers, if you show how your product/service makes their work easier or grows their business. At least 3x easier than selling to Asians, who tend to take their time before buying.
 
 
+### ❓ What is the Enrichment Section in App?
+
+The Enrichment API turns Google Maps business data into sales-ready contacts.
+
+You've got businesses from Google Maps. Now you need to actually reach them. That's where enrichment comes in:
+
+- **Email Verification & Social Links**
+  - Get emails and social profiles from websites. 
+  - AI ranks the best email for sales outreach (not generic info@ addresses)
+  - Verify deliverability before you send. We use the best email verification API in the market.
+
+- **Phone Carrier Info**
+  - Know if it's a landline or mobile
+  - Get carrier name (Verizon, AT&T, etc.)
+  - Essential for calling—don't waste time on landlines
+
+- **Place Sales Summary**
+  - AI-generated business context from their Google Maps listing
+  - Tailored to YOUR product—tell us what you sell, we tell you how to pitch them
+  - Walk into calls knowing exactly what problems you can solve for them
+
+**Bottom line:** Same leads, same sales—but with enrichment, your conversion rate multiplies. That's more customers from the same effort.
+
+[Start enriching for free](https://www.omkar.cloud/tools/business-enrichment)—600 credits/month, high-quality data, just like this app you're using.
+
 ### ❓ Enough of theories. Give me real-world examples where I can use this tool to find customers?
 
 - **Web Developer** → Search "real estate agency" in "San Francisco", filter **50+ reviews, no website**. Offer "done in 7 days" website for **$1000 + $40/mo hosting**. 
@@ -409,16 +445,86 @@ That's why we suggest the US (given your product creates value, customers are **
 
 - **Dental Software** → Find Dentists with 50+ reviews, no website. Visit during non-peak hours, demo your product, and offer 6 months free trial. They'll pay $40-60/month when it saves their receptionist 10+ hrs/week.
 
-**Now apply this to YOUR product/service:**
+### ❓ How to apply this to my product/service?
 
-1. **Define your target** → Business type + Minimum reviews (50+/100+) + Website or no website (Search Strategy: "Zoom 18" on  Rich Cities)
-2. **Prepare** → Study their listing, master your pitch, have a no-brainer offer (6 months free, first month free)
-3. **Reach out** → Call/visit/email. Introvert? Involve your brother/cousin/friend for 25% commission.
-4. **Persist** → Expect 20 visits/calls to close 1 deal. Don't give up after 3-4 rejections. Most people do quit, but you should not.
+This is the most important question in this README—and the reason you're here.
+
+Read this carefully. We've done cold calling and cold emails ourselves, and made sales. This isn't theory—it's real-world experience.
+
+There are 4 parts to making sales:
+
+#### 1. Great Desire
+
+Sales require great effort. You'll only put in that effort if you truly want the sale.
+
+If you don't have strong desire, you'll quit after 3-4 rejections. So before you start, think about what closing these deals means for your life and business. Visualize your success colorfully. 
+
+#### 2. Learn First
+
+Going into sales without learning is like going to battle with sticks. You won't survive.
+
+Read sales books—they'll save you time and help you avoid common mistakes. For cold outreach specifically, read **"The Cold Email Manifesto"**. It's practical, and it works. 
+
+#### 3. Make a Strategy
+
+**Filter your leads** — Only contact businesses most likely to buy:
+- Reviews: 75-500 (established, but small enough to care)
+- Rating: 4+ stars (you're the best—obviously you'll only talk to the best)
+
+**Use Enrichment** — Enrichment is a great product, like this one. We've spent thousands of hours building great enrichment. Use it:
+- Social Links & Emails → Get the emailS for sales outreach
+- Email Verification → Ensure deliverability
+- Place Sales Summary → Personalize your pitch
+- Phone Carrier Info → Know if it's a landline or mobile
+
+**Sort by reviews** — Bigger businesses first. They have more budget.
+
+**Mark your best leads** — In Excel, highlight businesses most likely to benefit from your service with a green background. 
+
+**For Cold Calling:**
+- Read **"The Cold Email Manifesto"** first—it applies to calls too
+- Use Phone Carrier Info Enrichment to skip landlines
+- Call during industry non-peak hours to reach owners directly
+- Use Place Sales Summary to personalize your pitch
+
+**For Cold Emailing:**
+- Use AI-Recommended Emails + Email Verification Enrichment
+- Use Place Sales Summary to personalize each email
+- Send highly personalized emails focused on their specific problems (takes longer, but converts much better)
+
+
+
+**Why we recommend cold calling over cold email:**
+- **Simpler** — Just pick up the phone. No complex email sequences.
+- **Faster feedback, faster improvement** — Rejections tell you exactly what to fix for the next call.
+- **Less competition** — Most people do cold email. Fewer calls = more attention = higher close rate.
+- **Higher conversion** — In 2-3 days of calling, you'll likely get a customer. Cold email has many variables, and can take 2-3 weeks to land a deal. Nothing will boost your confidence better than closing your first deal. So get that win fast.
+
+If you're new to sales, start with cold calling—it's simpler, faster, and converts better than email. As a great bonus, you will learn faster.
+
+I know you're an introvert, and calling feels super scary. But you've surely done harder things before. Haven't you? 
+
+You'll crush it. Try it for 2-3 days—if it doesn't work, you can always switch to email.
+
+#### 4. Grind
+
+Most founders quit after 3-4 rejections. You should not. 
+
+If someone rejects you, they are unwise, and it's their mistake—let them pay for it.
+
+You're a diamond. Jewelers recognize real diamonds, not blacksmiths. Keep going—there are enough wise business owners who will recognize the value you create and buy from you.
+
+Also, In worst cases, expect 40-50 connected calls (~2-4 days of calling) to close 1 deal. That's normal.
+
+This is years of knowledge condensed into a few paragraphs. No one told you this. 
+
+Read it again, apply it, and you'll succeed, because we have tested it ourselves.
+
+Once you close your first deal, [message us](https://api.whatsapp.com/send?phone=918178804274&text=I%20closed%20my%20first%20deal%20using%20Google%20Maps%20Extractor!)—your success stories are gems to us and inspire us to keep building great things.
 
 ### ❓ Are there any usage limits?
 
-The free version only allows **200** searches per month. To get unlimited searches for a lifetime, consider upgrading to the Pro Version:
+The free version though super generous only allows **200** searches per month. To get unlimited searches for a lifetime, consider upgrading to the Pro Version:
 - The Pro Version gives you access to unlimited searches for a lifetime. Say a Big-Big NO to websites selling expensive plans.
 - 100% accurate, [50+ data points](https://github.com/omkarcloud/google-maps-scraper/blob/master/fields.md) extracted in real-time.
 - Only a one-time investment with lifetime updates and top-notch WhatsApp support, all for just $28.
@@ -446,30 +552,6 @@ After payment, you'll see a link. Visiting the link will activate the Pro Versio
 
 ![Purchase Success](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/purchase-success.png)
 
-### ❓ What is the Enrichment Section in App?
-
-The Enrichment API turns Google Maps business data into sales-ready contacts.
-
-You've got businesses from Google Maps. Now you need to actually reach them. That's where enrichment comes in:
-
-- **Email Verification & Social Links**
-  - Get emails and social profiles from websites. 
-  - AI ranks the best email for sales outreach (not generic info@ addresses)
-  - Verify deliverability before you send. We use the best email verification API in the market.
-
-- **Phone Carrier Info**
-  - Know if it's a landline or mobile
-  - Get carrier name (Verizon, AT&T, etc.)
-  - Essential for calling—don't waste time on landlines
-
-- **Place Sales Summary**
-  - AI-generated business context from their Google Maps listing
-  - Tailored to YOUR product—tell us what you sell, we tell you how to pitch them
-  - Walk into calls knowing exactly what problems you can solve for them
-
-**Bottom line:** Same leads, same effort—but with enrichment, your conversion rate multiplies. That's more customers from the same effort.
-
-[Start enriching for free](https://www.omkar.cloud/tools/business-enrichment)—600 credits/month, high-quality data, just like this app you're using.
 
 ### ❓ What if I Don't Get Value from It?
 
@@ -508,10 +590,8 @@ No emails. No explanations. Simple Refund in 2 clicks. As it should be.
 
 - It's Good Karma—what you give comes back to you, here or hereafter, many times over.
 - Easy refunds make your purchase risk-free, so you're more likely to buy. Win-win for both of us.
-- Many great creators like John Sonmez also do this, and we like to follow their example.
-- To date, we have refunded every single customer who asked. With **0 exceptions**. And that's how it always will be.
-
-
+- Every buisness should offer easy 2 click refunds. Only a handful do, because not everyone is as brave and wise as us.  
+- And To date, we have refunded every single customer who asked. With **0 exceptions**.  And that's how it always will be.
 
 ### ❓ Can you tell me about the Done For You service?
 
@@ -635,12 +715,9 @@ Let us know! Based on our years of experience, we will most likely add it. If no
 
 ### ❓ Need More Help or Have Additional Questions?
 
-Feel free to reach out if you:
-- Want to know which settings are best for your business/research needs
-- Have other competing products in mind and want to know which one is best for your use case
-- Have any questions at all
+Feel free to reach out if you have any questions at all.
 
-We like talking to users and helping them out.
+We are intelligent people, and can solve your problems.
 
 You can reach out to us via these channels:
 
@@ -653,19 +730,19 @@ You can reach out to us via these channels:
 
   [![Contact Us on Email about Google Maps Scraper](https://raw.githubusercontent.com/omkarcloud/assets/master/images/ask-on-email.png)](mailto:happy.to.help@omkar.cloud?subject=Help%20with%20Google%20Maps%20Extractor%20Tool&body=I%20need%20help%20with%20using%20the%20Google%20Maps%20Extractor%20Tool.)
 
-Don't hesitate to message us—we enjoy helping. We will reply within 1 working day.
+Don't hesitate to message us. Our support is the best—not just on Earth, but in the entire multiverse.
+
+We reply within 1 working day.
 
 ### ❓ Love It? Star It ⭐!
 
-I really hope that Google Maps Extractor will prove to be a valuable tool in helping you find more customers.
+We've poured thousands of hours into building this—so you can find customers and grow your business.
 
-If you're finding it helpful, could you please give us a **star ⭐** on GitHub?
+If it's helped you, please give us a **star ⭐** on GitHub. It takes 2 seconds, and means the world to us.
 
-It only takes a click, but it means the world to me!
 
 ![Star us on GitHub](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/star-us.png)
 
-Good Luck!
 
 
 ## Made with ❤️ using [Botasaurus Web Scraping Framework](https://www.omkar.cloud/l/google-maps-to-botasaurus/)
