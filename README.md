@@ -468,11 +468,11 @@ Read sales books—they'll save you time and help you avoid common mistakes. For
 #### 3. Make a Strategy
 
 **Filter your leads** — Only contact businesses most likely to buy:
-- Reviews: 75-500 (established, but small enough to care)
+- Reviews: 75-200 (established, but small enough to care)
 - Rating: 4+ stars (you're the best—obviously you'll only talk to the best)
 
 **Use Enrichment** — Enrichment is a great product, like this one. We've spent thousands of hours building great enrichment. Use it:
-- Social Links & Emails → Get the emailS for sales outreach
+- Social Links & Emails → Get the emails for sales outreach
 - Email Verification → Ensure deliverability
 - Place Sales Summary → Personalize your pitch
 - Phone Carrier Info → Know if it's a landline or mobile
@@ -517,11 +517,11 @@ You're a diamond. Jewelers recognize real diamonds, not blacksmiths.
 
 Also, In worst cases, expect 40-50 connected calls (~2-4 days of calling) to close 1 deal. That's normal.
 
-This is years of knowledge condensed into a few paragraphs. No one told you this. 
+This was years of knowledge condensed into a few paragraphs. No one told you this. 
 
 Read it again, apply it, and you'll succeed, because we have tested it ourselves.
 
-Once you close your first deal, [message us](https://api.whatsapp.com/send?phone=918178804274&text=I%20closed%20my%20first%20deal%20using%20Google%20Maps%20Extractor!)—your success stories are gems to us and inspire us to keep building great things.
+<!-- Once you close your first deal, [message us](https://api.whatsapp.com/send?phone=918178804274&text=I%20closed%20my%20first%20deal%20using%20Google%20Maps%20Extractor!)—your success stories are gems to us and inspire us to keep building great things. -->
 
 ### ❓ Are there any usage limits?
 
