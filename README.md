@@ -512,7 +512,8 @@ Most founders quit after 3-4 rejections. You should not.
 
 If someone rejects you, they are unwise, and it's their mistake—let them pay for it.
 
-You're a diamond. Jewelers recognize real diamonds, not blacksmiths. Keep going—there are enough wise business owners who will recognize the value you create and buy from you.
+You're a diamond. Jewelers recognize real diamonds, not blacksmiths. 
+<!-- Keep going—there are enough wise business owners who will recognize the value you create and buy from you. -->
 
 Also, In worst cases, expect 40-50 connected calls (~2-4 days of calling) to close 1 deal. That's normal.
 
