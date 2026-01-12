@@ -591,7 +591,7 @@ No emails. No explanations. Simple Refund in 2 clicks. As it should be.
 
 - It's Good Karma—what you give comes back to you, here or hereafter, many times over.
 - Easy refunds make your purchase risk-free, so you're more likely to buy. Win-win for both of us.
-- Every buisness should offer easy 2 click refunds. Only a handful do, because not everyone is as brave and wise as us.  
+- Every buisness should offer easy 2 click refunds. Only a handful do, because not everyone is as brave and wise as us.
 - And To date, we have refunded every single customer who asked. With **0 exceptions**.  And that's how it always will be.
 
 ### ❓ Can you tell me about the Done For You service?
