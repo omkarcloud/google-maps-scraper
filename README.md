@@ -486,11 +486,13 @@ Read sales books—they'll save you time and help you avoid common mistakes. For
 - Use Phone Carrier Info Enrichment to skip landlines
 - Call during industry non-peak hours to reach owners directly
 - Use Place Sales Summary to personalize your pitch
+- Get a dedicated phone number, protects your personal number
 
 **For Cold Emailing:**
 - Use AI-Recommended Emails + Email Verification Enrichment
 - Use Place Sales Summary to personalize each email
 - Send highly personalized emails focused on their specific problems (takes longer, but converts much better)
+
 
 
 
@@ -502,9 +504,13 @@ Read sales books—they'll save you time and help you avoid common mistakes. For
 
 If you're new to sales, start with cold calling—it's simpler, faster, and converts better than email. As a great bonus, you will learn faster.
 
-I know you're an introvert, and calling feels super scary. But you've surely done harder things before. Haven't you? 
+You're an introvert, and calling feels super scary. It is scary—people will hang up on you and rudely reject you.
 
-You'll crush it. Try it for 2-3 days—if it doesn't work, you can always switch to email.
+But think about it: you've done harder things before. Haven't you?
+
+Compared to those, calling is a piece of cake. People way less smart than you have closed deals. You'll totally crush it.
+
+Try it for 2-3 days—if it doesn't work, you can always switch to email.
 
 #### 4. Grind
 
@@ -566,7 +572,7 @@ The risk is fully on us, as it should be, because we're confident in what we've 
 
 ### ❓ How Do I Get a Refund?
 
-Your satisfaction is **most important**. We will gladly issue a refund if you are not happy with our product.
+Your happiness is our happiness. We will gladly issue a refund if you are not happy with our product.
 
 Requesting a refund is a **simple two-click process**:
 
@@ -593,35 +599,6 @@ No emails. No explanations. Simple Refund in 2 clicks. As it should be.
 - Easy refunds make your purchase risk-free, so you're more likely to buy. Win-win for both of us.
 - Every buisness should offer easy 2 click refunds. Only a handful do, because not everyone is as brave and wise as us.
 - And To date, we have refunded every single customer who asked. With **0 exceptions**.  And that's how it always will be.
-
-### ❓ Can you tell me about the Done For You service?
-
-If you need full country data—say all "Restaurants in US"—running using "Detailed" Search Strategy (Default) can take 1-2 weeks on your system.
-
-With our **Done For You service**, we refine your search queries for higher-converting customers and deliver in 1 day.
-
-
-**Pricing:** ~$60 for a single category in USA (300K+ results). **$200 off** on your first purchase of $250+. So if your project costs $250, you only pay $50!
-
-**Why us?** 
-
-- Weeks of extraction time saved.
-- Higher ROI, as we help you target businesses most likely to buy.
-- 90-day unconditional refund—risk is 100% on us.
-
-[Email us](mailto:happy.to.help@omkar.cloud?subject=Done%20For%20You%20Data%20Service&body=Hi%2C%20I%20sell%20%5Byour%20product%2Fservice%5D%20and%20I%E2%80%99m%20looking%20for%20%5Btype%20of%20customers%5D.%20Please%20help%20me%20get%20the%20right%20data.) and let us know what you sell and who you're looking for. We want you to sell more, because when you succeed, you'll come back to us again.
-
-
-
-### ❓ Do you do custom big data projects?
-
-Yes, we do **big data projects** for businesses at high quality and affordable prices. But why choose us and not other providers?
-
-- The single most important reason is that we do data every day and are experts in it. This product is proof of it.
-- 90-day unconditional refund guarantee. So you take 0 risk. 
-- Your project will be well done, affordably, simply because we want long-term relationships. And giving great results is the best way to do that.
-
-You can mail us [here](mailto:happy.to.help@omkar.cloud?subject=Big%20Data%20Project%20Request&body=I%20need%20a%20big%20data%20project%20done%20at%20high%20quality%20and%20affordable%20prices.), to enquire about your project.
 
 
 ### ❓ How can I get results via API?
@@ -709,6 +686,36 @@ Also, in case you are unable to view the non-English characters properly in Exce
 ### ❓ On macOS, Google Chrome is not opening when I run the app. What should I do?
 
 This is a known macOS-specific issue. We expect to resolve it by December 2026. As a workaround, **close this app** and Chrome will open normally.
+
+
+### ❓ Can you tell me about the Done For You service?
+
+If you need full country data—say all "Restaurants in US"—running using "Detailed" Search Strategy (Default) can take 1-2 weeks on your system.
+
+With our **Done For You service**, we refine your search queries for higher-converting customers and deliver in 1 day.
+
+
+**Pricing:** ~$60 for a single category in USA (300K+ results). **$200 off** on your first purchase of $250+. So if your project costs $250, you only pay $50!
+
+**Why us?** 
+
+- Weeks of extraction time saved.
+- Higher ROI, as we help you target businesses most likely to buy.
+- 90-day unconditional refund—risk is 100% on us.
+
+[Email us](mailto:happy.to.help@omkar.cloud?subject=Done%20For%20You%20Data%20Service&body=Hi%2C%20I%20sell%20%5Byour%20product%2Fservice%5D%20and%20I%E2%80%99m%20looking%20for%20%5Btype%20of%20customers%5D.%20Please%20help%20me%20get%20the%20right%20data.) and let us know what you sell and who you're looking for. We want you to sell more, because when you succeed, you'll come back to us again.
+
+
+### ❓ Do you do custom big data projects?
+
+Yes, we do **big data projects** for businesses at high quality and affordable prices. But why choose us and not other providers?
+
+- The single most important reason is that we do data every day and are experts in it. This product is proof of it.
+- 90-day unconditional refund guarantee. So you take 0 risk. 
+- Your project will be well done, affordably, simply because we want long-term relationships. And giving great results is the best way to do that.
+
+You can mail us [here](mailto:happy.to.help@omkar.cloud?subject=Big%20Data%20Project%20Request&body=I%20need%20a%20big%20data%20project%20done%20at%20high%20quality%20and%20affordable%20prices.), to enquire about your project.
+
 
 ### ❓ There is a feature in another app that I need, and this product doesn't have it.
 
