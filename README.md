@@ -212,9 +212,10 @@ Download results in various formats (CSV, JSON, Excel) using the export button.
 
 ### ❓ What are various search strategies, which one to use?
 
-There are 4 kinds of search strategies:
-- Fast
-- Detailed (Default)
+There are 5 kinds of search strategies:
+- Fast (Default)
+- Fastest
+- Detailed
 - By Zoom Level (15, 16, 17, 18)
 - By Geolocation
 
@@ -222,18 +223,24 @@ There are 4 kinds of search strategies:
 
 Let's see when to use which strategy:
 
-**Fast:**
-- Get results quickly in 1 minute and 3 seconds, usually with 120+ results per city.
-<!-- - Expect 100K+ results in 12 hours using **fast** mode. -->
+**Fast (Default):**
+- Returns 120–1600 results per city.
+- Completes in 1–10 minutes per city.
 - **When to use:**
-  - You need to get full country results in 1-2 days.
+  - Best for country-level extraction (completes in 1–2 days).
 
-**Detailed (Default):**
-- Get results in 7-8 days, usually 250+ results/city. But can also go into thousands of results/city.
-- Nice combination of speed and high results.
+**Fastest:**
+- Slightly faster than Fast mode (~30 seconds per city), but returns ~30–40 fewer results.
 - **When to use:**
-  - You need to get full country results, and have 1-2 weeks of time.
-  - We recommend setting "Max Results" per city to 1000. Else, it can spend 2+ hours for large cities like New York City.
+  - When speed is the top priority and a small reduction in results is acceptable.
+
+**Detailed:**
+- Returns more results than Fast mode, but takes significantly longer.
+- **When to use:**
+  - Best for single-city or state level extraction where thoroughness matters.
+- **⚠️ When not to use:**
+  - Not recommended for country-level extraction due to high time requirements.
+  - Tip: Set "Max Results" to 1000 per city, otherwise large cities like New York can take 2+ hours.
 
 **By Zoom Level (15, 16, 17, 18):**
 - Various Zoom Level sizes are given below:
@@ -300,7 +307,7 @@ That in-progress task will lose all progress and start from 0 when you reopen th
 
 ### ❓ I want all restaurants (or any category) in the US. What's the best approach?
 
-Use the Country Level Data feature, with Search Strategy "Fast". 
+Use the Country Level Data feature, with default Search Strategy "Fast". 
 
 It can take 2-3 days to complete for countries with tens of thousands of cities, like the US. 
 
