@@ -265,7 +265,7 @@ The Geolocation search strategy lets you search for businesses in a specific are
 
 **Real-World Example: Web Developer Targeting Restaurants**
 
-Suppose you are a web developer, specializing in **making websites** for **restaurants**. Here's a strategy to improve your conversion rate:
+Suppose you are a web developer, specializing in **making websites** for **restaurants**. Here's a strategy to get customers:
 
 1. **Find restaurants in a specific neighborhood** — e.g., Chinatown, San Francisco.
 2. **Study top restaurants** — Identify what successful Chinatown restaurants are doing that drives more customers to them.
@@ -341,7 +341,6 @@ Use Search Strategy with **Zoom 18** for San Francisco. Let it run overnight. Yo
 
 This tool can save you time and money in various aspects of your personal and professional life :)
 
-
 ### ❓ This is my first time hearing about you and your product. How can I be sure you're genuine?
 
 Great question! Here's our track record to date:
@@ -387,7 +386,7 @@ We recommend following these steps:
 
 1. First choose your target country.
 2. Then choose the richest cities in that country. 
-3. Use Zoom 18 Search Strategy for maximum results, for the chosen cities.
+3. Use Zoom 18 Search Strategy for maximum results.
 4. Reach out via cold calls or personalized emails—show how your product/service solves their problems.
 
 **Examples:**
@@ -416,8 +415,7 @@ But why? Because Americans are our biggest customers. To sell, it's wise to **ap
 That's why we suggest the US (given your product creates value, customers are **PAYING**, and it has global appeal). Plus:
 
 - Americans communicate in a straightforward manner — easy to do business with.
-- They buy easily, even from overseas sellers, if you show how your product/service makes their work easier or grows their business. At least 3x easier than selling to Asians, who tend to take their time before buying.
-
+- They buy easily, even from overseas sellers, if you show how your product/service makes their work easier or grows their business. At least 3x easier than selling to Asians, who think a lot before buying.
 
 ### ❓ What is the Enrichment Section in App?
 
@@ -456,7 +454,7 @@ You've got businesses from Google Maps. Now you need to actually reach them. Tha
 
 This is the most important question in this README—and the reason you're here.
 
-Read this carefully. We've done cold calling and cold emails ourselves, and made sales. This isn't theory—it's real-world experience.
+Read this carefully. We ourselves have done cold calling and cold emails, and made sales. This isn't theory—it's real-world experience.
 
 There are 4 parts to making sales:
 
@@ -476,7 +474,7 @@ Read sales books—they'll save you time and help you avoid common mistakes. For
 
 **Filter your leads** — Only contact businesses most likely to buy:
 - Reviews: 75-200 (established, but small enough to care)
-- Rating: 4+ stars (you're the best—obviously you'll only talk to the best)
+- Rating: 4+ stars (you're the **best of the best**—obviously you'll only talk to the best)
 
 **Use Enrichment** — Enrichment is a great product, like this one. We've spent thousands of hours building great enrichment. Use it:
 - Social Links & Emails → Get the emails for sales outreach
@@ -484,7 +482,7 @@ Read sales books—they'll save you time and help you avoid common mistakes. For
 - Place Sales Summary → Personalize your pitch
 - Phone Carrier Info → Know if it's a landline or mobile
 
-**Sort by reviews** — Bigger businesses first. They have more budget.
+**Sort by reviews** — Bigger businesses first. They pay more.
 
 **Mark your best leads** — In Excel, highlight businesses most likely to benefit from your service with a green background. 
 
@@ -498,12 +496,9 @@ Read sales books—they'll save you time and help you avoid common mistakes. For
 **For Cold Emailing:**
 - Use AI-Recommended Emails + Email Verification Enrichment
 - Use Place Sales Summary to personalize each email
-- Send highly personalized emails focused on their specific problems (takes longer, but converts much better)
+- PERSONALIZE! PERSONALIZE! PERSONALIZE! (takes 15-20 minutes per email, but converts way better)
 
-
-
-
-**Why we recommend cold calling over cold email:**
+**We recommend cold calling over cold email, here's why:**
 - **Simpler** — Just pick up the phone. No complex email sequences.
 - **Faster feedback, faster improvement** — Rejections tell you exactly what to fix for the next call.
 - **Less competition** — Most people do cold email. Fewer calls = more attention = higher close rate.
@@ -511,7 +506,7 @@ Read sales books—they'll save you time and help you avoid common mistakes. For
 
 If you're new to sales, start with cold calling—it's simpler, faster, and converts better than email. As a great bonus, you will learn faster.
 
-You're an introvert, and calling feels super scary. It is scary—people will hang up on you and rudely reject you.
+You're an introvert, and calling feels super scary. You are right, It is scary—people will hang up on you and rudely reject you.
 
 But think about it: you've done harder things before. Haven't you?
 
@@ -525,7 +520,7 @@ Most founders quit after 3-4 rejections. You should not.
 
 If someone rejects you, they are unwise, and it's their mistake—let them pay for it.
 
-You're a diamond. Jewelers recognize real diamonds, not blacksmiths. 
+You're a diamond. Only Jewelers can recognize diamonds, not blacksmiths. 
 <!-- Keep going—there are enough wise business owners who will recognize the value you create and buy from you. -->
 
 Also, In worst cases, expect 40-50 connected calls (~2-4 days of calling) to close 1 deal. That's normal.
@@ -550,7 +545,7 @@ The free version though super generous only allows **200** searches per month. T
 
 ### ❓ How to Get the Pro Version?
 
-Get the pro version, only when you exceed the free plan limit of **200** searches per month, by following these steps:
+Get the pro version, only when you exceed the free plan limit of **200** searches per month, because why pay when you don't need to, by following these steps:
 
 1. Create an account on Omkar Cloud by visiting [this link](https://www.omkar.cloud/auth/sign-up).
 ![Sign Up](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/signup.png)
@@ -569,7 +564,7 @@ After payment, you'll see a link. Visiting the link will activate the Pro Versio
 
 ### ❓ What if I Don't Get Value from It?
 
-We wholeheartedly ❤️ believe in the value our product brings for you, especially since it has successfully worked for hundreds of people like you.
+This product is our pride. We wholeheartedly ❤️ believe in the value our product brings for you, especially since it has successfully worked for hundreds of people like you.
  
 But, we also understand the reservations you might have.
 
@@ -579,9 +574,8 @@ The risk is fully on us, as it should be, because we're confident in what we've 
 
 ### ❓ How Do I Get a Refund?
 
-Your happiness is our happiness. We will gladly issue a refund if you are not happy with our product.
-
-Requesting a refund is a **simple two-click process**:
+<!-- Your happiness is our happiness.  -->
+You can easily get a refund in 2 clicks. Just follow these steps:
 
 1. Go to [Transactions Page](https://www.omkar.cloud/billing/transaction-history)
 ![Transactions Page](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/transactions-page.png)
@@ -592,7 +586,7 @@ Requesting a refund is a **simple two-click process**:
 3. Confirm by clicking **Request Refund** again.
 ![Confirm Refund Request](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/confirm-refund-request.png)
 
-✅ That's it! You'll receive a confirmation email from PayPal, and your money will be returned to your original payment method within **1–2 business days**.
+✅ That's it, Really! You'll receive a confirmation email from PayPal, and your money will be returned to your original payment method within **1–2 business days**.
 
 No emails. No explanations. Simple Refund in 2 clicks. As it should be.
 
@@ -602,10 +596,11 @@ No emails. No explanations. Simple Refund in 2 clicks. As it should be.
 
 **Why we do this:**
 
+- 2 click refunds make your purchase risk-free, so you're more likely to buy. Win-win for both of us.
 - It's Good Karma—what you give comes back to you, here or hereafter, many times over.
-- Easy refunds make your purchase risk-free, so you're more likely to buy. Win-win for both of us.
-- Every buisness should offer easy 2 click refunds. Only a handful do, because not everyone is as brave and wise as us.
 - And To date, we have refunded every single customer who asked. With **0 exceptions**.  And that's how it always will be.
+
+<!-- - Every buisness should offer easy 2 click refunds. Only a handful do, because not everyone is as brave and wise as us. -->
 
 
 ### ❓ How can I get results via API?
@@ -614,7 +609,7 @@ If you are a developer and need to get results programmatically, we offer a dedi
 
 The API includes all the features of our pro desktop app, including Unlimited searches and Unlimited devices, plus additional benefits:
 - REST API interface 
-- Detailed documentation for Google Cloud VM installation
+- Detailed documentation for AWS VM installation
 
 The API is available for $16/month, and you can try it free at [Google Maps Extractor API](https://www.omkar.cloud/tools/google-maps-extractor-api).
 
@@ -651,7 +646,7 @@ Trust me, learning Botasaurus Desktop will only take 5 minutes, but I guarantee 
   </a>
 </p>
 
-### ❓ While in progress, "All Task" shows around 80K results, but after completion it drops to 60K. Why?
+### ❓ While in progress, "All Task" shows around 80K results, but after completion it drops to 70K. Why?
 
 We remove duplicates at the end of all tasks, so expect the final count to be lower than what you see during progress. 
 
@@ -669,7 +664,7 @@ If you want to retain the original characters and avoid converting them to Engli
 
 ![Uncheck English](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/uncheck-english.png)
 
-Also, in case you are unable to view the non-English characters properly in Excel, then the easiest solution is to upload the file to Google Sheets, which renders the characters properly.
+In case you are unable to view the non-English characters properly in Excel, then the easiest solution is to upload the file to Google Sheets, which renders the characters properly.
 
 ![character fix](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/character-fix.gif)
 
@@ -697,9 +692,9 @@ This is a known macOS-specific issue. We expect to resolve it by December 2026. 
 
 ### ❓ Can you tell me about the Done For You service?
 
-If you need full country data—say all "Restaurants in US"—running using "Detailed" Search Strategy (Default) can take 1-2 weeks on your system.
+If you need full country data—say all "Restaurants in US" (29.5K Cities), can take 10-12 days on your system.
 
-With our **Done For You service**, we refine your search queries for higher-converting customers and deliver in 1 day.
+With our **Done For You service**, we refine your search queries for higher-converting customers and deliver in 1-2 days.
 
 
 **Pricing:** ~$60 for a single category in USA (300K+ results). **$200 off** on your first purchase of $250+. So if your project costs $250, you only pay $50!
@@ -753,7 +748,7 @@ We reply within 1 working day.
 
 We've poured thousands of hours into building this—so you can find customers and grow your business.
 
-If it's helped you, please give us a **star ⭐** on GitHub. It takes 2 seconds, and means the world to us.
+If it's helped you, please give us a **star ⭐** on GitHub. You have a big heart ❤️, It takes 1 click, and you will be doing us a great favor.
 
 
 ![Star us on GitHub](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/star-us.png)
