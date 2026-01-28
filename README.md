@@ -706,22 +706,13 @@ You can mail us [here](mailto:happy.to.help@omkar.cloud?subject=Big%20Data%20Pro
 
 Let us know! Based on our years of experience, we will most likely add it. If not, we'll suggest better/cheaper alternatives to it.
 
-### ❓ Need More Help or Have Additional Questions?
+### ❓ Questions? We have answers.
 
-Feel free to reach out if you have any questions at all.
+Reach out anytime. An intelligent person with deep product knowledge will solve your query within 1 working day.
 
-We are intelligent people, and can solve your problems.
+[![Contact Us on WhatsApp about Google Maps Scraper](https://raw.githubusercontent.com/omkarcloud/assets/master/images/whatsapp-us.png)](https://api.whatsapp.com/send?phone=918178804274&text=I%20need%20help%20with%20using%20the%20Google%20Maps%20Extractor%20Tool.)
 
-You can reach out to us via these channels:
-
-- **WhatsApp:** If you prefer WhatsApp, simply send a message [here](https://api.whatsapp.com/send?phone=918178804274&text=I%20need%20help%20with%20using%20the%20Google%20Maps%20Extractor%20Tool.). Also, to help us provide the best possible answer, please include as much detail as possible.
-
-  [![Contact Us on WhatsApp about Google Maps Scraper](https://raw.githubusercontent.com/omkarcloud/assets/master/images/whatsapp-us.png)](https://api.whatsapp.com/send?phone=918178804274&text=I%20need%20help%20with%20using%20the%20Google%20Maps%20Extractor%20Tool.)
-
-
-- **Email:** If you prefer email, kindly send your queries to [happy.to.help@omkar.cloud](mailto:happy.to.help@omkar.cloud?subject=Help%20with%20Google%20Maps%20Extractor%20Tool&body=I%20need%20help%20with%20using%20the%20Google%20Maps%20Extractor%20Tool.). Also, to help us provide the best possible answer, please include as much detail as possible.
-
-  [![Contact Us on Email about Google Maps Scraper](https://raw.githubusercontent.com/omkarcloud/assets/master/images/ask-on-email.png)](mailto:happy.to.help@omkar.cloud?subject=Help%20with%20Google%20Maps%20Extractor%20Tool&body=I%20need%20help%20with%20using%20the%20Google%20Maps%20Extractor%20Tool.)
+[![Contact Us on Email about Google Maps Scraper](https://raw.githubusercontent.com/omkarcloud/assets/master/images/ask-on-email.png)](mailto:happy.to.help@omkar.cloud?subject=Help%20with%20Google%20Maps%20Extractor%20Tool&body=I%20need%20help%20with%20using%20the%20Google%20Maps%20Extractor%20Tool.)
 
 Don't hesitate to message us. Our support is the best—not just on Earth, but in the entire multiverse.
 
