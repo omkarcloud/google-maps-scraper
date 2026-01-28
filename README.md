@@ -59,6 +59,7 @@ Google Maps Extractor helps you find Business Profiles from Google Maps. It's a 
 
 - **Searches for lifetime** — Say a Big-Big NO to Websites Selling Expensive Plans.
 - **100% accurate** — 50+ data points extracted in real-time.
+- **Enrichment included** — Get emails, social profiles, and decision-maker contacts to supercharge your outreach.
 - **Great product, even better documentation** — Part 1: How to use the tool. Part 2: How to make sales (worth its weight in gold—no one else tells you this).
 
 In the next few minutes, you'll extract **200+ Search Results** from Google Maps.
@@ -341,22 +342,14 @@ Use Search Strategy with **Zoom 18** for San Francisco. Let it run overnight. Yo
 
 This tool can save you time and money in various aspects of your personal and professional life :)
 
-### ❓ This is my first time hearing about you and your product. How can I be sure you're genuine?
+## ❓ Tell me about Omkar Cloud.
 
-Great question! Here's our track record to date:
+We're a data company with 20+ tools for OCR, data conversion, and developer APIs. Some things we are proud of:
 
-1. **1000+ developers have [sponsored us on GitHub](https://github.com/sponsors/omkarcloud).** They wouldn't have parted with their money if we weren't genuine.
+- Built [Botasaurus](https://github.com/omkarcloud/botasaurus), an open-source automation framework with **3.7K+ GitHub stars**
+- [Sponsored by 1000+ developers on GitHub](https://github.com/sponsors/omkarcloud)
 
-2. **We built [Botasaurus](https://github.com/omkarcloud/botasaurus)**, a web scraping framework starred by 3K+ developers on GitHub.
-
-3. **This tool itself has:**
-   - 2.3K+ stars on GitHub
-   - 100+ discussion threads
-   - 150+ solved issues
-
-Think about it—would hundreds of people raise issues, ask questions, and have discussions about it if it didn't add real value to their lives?
-
-### ❓ Okay, you seem legit, but why should I use your Product? There are 10s of Google Maps Scrapers on the Internet, some by brands bigger than yours.
+### ❓ Why should I use your Product? There are 10s of Google Maps Scrapers on the Internet, some by brands bigger than yours.
 
 For big brands, this is just one of many tools. For us, **it is our core product**. We've put in thousands of development hours perfecting it, and our extremely proud of it. 
 
@@ -572,35 +565,25 @@ That's why we've put the ball in your court: **If, within the next 90 days, you 
 
 The risk is fully on us, as it should be, because we're confident in what we've created!
 
-### ❓ How Do I Get a Refund?
+## ❓ How do I get a refund?
 
-<!-- Your happiness is our happiness.  -->
-You can easily get a refund in 2 clicks. Just follow these steps:
+If within 90 days the product doesn't meet your needs, get a refund in 2 clicks.
 
 1. Go to [Transactions Page](https://www.omkar.cloud/billing/transaction-history)
-![Transactions Page](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/transactions-page.png)
+![Transactions Page](https://raw.githubusercontent.com/omkarcloud/assets/master/images/transactions-page.png)
 
 2. Click "Request Refund"
-![Request Refund Button](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/request-refund-button.png)
+![Request Refund Button](https://raw.githubusercontent.com/omkarcloud/assets/master/images/request-refund-button.png)
 
-3. Confirm by clicking **Request Refund** again.
-![Confirm Refund Request](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/confirm-refund-request.png)
+3. Confirm by clicking **Request Refund** again. Amount will be refunded in 1-2 business days. We’ll email you updates.
+![Confirm Refund Request](https://raw.githubusercontent.com/omkarcloud/assets/master/images/confirm-refund-request.png)
 
-✅ That's it, Really! You'll receive a confirmation email from PayPal, and your money will be returned to your original payment method within **1–2 business days**.
+No emails. No explanations. Simple 2-click process.
 
-No emails. No explanations. Simple Refund in 2 clicks. As it should be.
 
-### ❓ Why do you offer a 2-click, 90-day refund policy? Is there any catch?
+### ❓ Is there a catch in refunds?
 
-**No catch.** Last year we refunded 100+ customers. It will be the same for you. No questions asked, fully automated 2 click refund process. As it should be.
-
-**Why we do this:**
-
-- 2 click refunds make your purchase risk-free, so you're more likely to buy. Win-win for both of us.
-- It's Good Karma—what you give comes back to you, here or hereafter, many times over.
-- And To date, we have refunded every single customer who asked. With **0 exceptions**.  And that's how it always will be.
-
-<!-- - Every buisness should offer easy 2 click refunds. Only a handful do, because not everyone is as brave and wise as us. -->
+**No catch.** It is a simple 2-click process, same as described above. 
 
 
 ### ❓ How can I get results via API?
