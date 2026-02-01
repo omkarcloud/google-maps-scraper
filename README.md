@@ -14,9 +14,9 @@
 2. Request a refund for this month at [Payments Page](https://www.omkar.cloud/billing/transaction-history)
 3. Switch to the new API at [Business Enrichment API](https://www.omkar.cloud/tools/business-enrichment)
 
-Questions? [WhatsApp us](https://api.whatsapp.com/send?phone=918178804274&text=I%20have%20questions%20about%20the%20Business%20Enrichment%20API.)—we're happy to help.
+Questions? [WhatsApp us here](https://api.whatsapp.com/send?phone=918178804274&text=I%20have%20questions%20about%20the%20Business%20Enrichment%20API.)
 
-![Google Maps Extractor Feautred Image](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/google-maps-scraper-feautred-image.png)
+![Google Maps Extractor Featured Image](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/google-maps-scraper-feautred-image.png)
 
 <div align="center" style="margin-top: 0;">
   <h1>✨ Google Maps Scraper 🤖</h1>
@@ -50,17 +50,18 @@ Let's begin.
 
 > This Google Maps Scraper is provided for educational and research purposes only. By using this Google Maps Extractor, you agree to comply with local and international laws regarding data scraping and privacy. The authors and contributors are not responsible for any misuse of this software. This tool should not be used to violate the rights of others, or for unethical purposes.
 
-We take the concerns of the Google Maps Extractor Project very seriously. For any concerns, please contact Chetan Jain at [chetan@omkar.cloud](mailto:chetan@omkar.cloud). We will promptly reply to your emails.
+We take concerns about the Google Maps Extractor Project very seriously. For any concerns, please contact Chetan Jain at [chetan@omkar.cloud](mailto:chetan@omkar.cloud). We will promptly reply to your emails.
+
 ---
 
 Google Maps Extractor helps you find Business Profiles from Google Maps. It's a great tool with [2300+ stars on GitHub](https://github.com/omkarcloud/google-maps-scraper/stargazers), trusted by thousands in the community to complete their academic research projects or find customers.
 
 ## ⚡ Benefits
 
-- **Searches for lifetime** — Say a Big-Big NO to Websites Selling Expensive Plans.
-- **100% accurate** — 50+ data points extracted in real-time.
-- **Enrichment included** — Get emails, social profiles, and decision-maker contacts to supercharge your outreach.
-- **Great product, even better documentation** — Part 1: How to use the tool. Part 2: How to make sales (worth its weight in gold—no one else tells you this).
+- **Searches for lifetime** — One-time purchase, no recurring fees.
+- **50+ data points** — Extracted in real-time.
+- **Enrichment included** — Get emails, social profiles, and decision-maker contacts for outreach.
+- **Great documentation** — Part 1: How to use the tool. Part 2: Sales strategies and best practices.
 
 In the next few minutes, you'll extract **200+ Search Results** from Google Maps.
 
@@ -72,9 +73,9 @@ To use this tool, you'll need:
 
 - Google Chrome Browser
 
-Let's get started by following these super simple steps:
+Let's get started by following these steps:
 
-**1️⃣ Download and Install the Magic 🧙‍♀️:**
+**1️⃣ Download and Install:**
 
 **1. For Mac:**
 - [Download the Mac Version](https://google-maps-extractor-omkar-cloud.s3.amazonaws.com/Google+Maps+Extractor.dmg)
@@ -86,10 +87,10 @@ Let's get started by following these super simple steps:
 
 We're verified with Apple, but not yet with Windows (requires company incorporation—coming this year).
 
-Rest assured, the app is 100% safe:
+The app is safe and trusted:
 - Made by Omkar Cloud, creators of [Botasaurus](https://github.com/omkarcloud/botasaurus) (3.7K+ GitHub stars)
 - [2,300+ stars on GitHub](https://github.com/omkarcloud/google-maps-scraper/stargazers)
-- [1,000+ happy customers](https://github.com/sponsors/omkarcloud) via GitHub Sponsors
+- [1,000+ customers](https://github.com/sponsors/omkarcloud) via GitHub Sponsors
 - 100+ discussion threads, 150+ solved issues
 
 You may also see a Windows Firewall popup—click **Allow Access** to continue.
@@ -110,7 +111,7 @@ googlemapsextractor --no-sandbox
 - For Most Desktop Users: [Download .rpm](https://google-maps-extractor-omkar-cloud.s3.amazonaws.com/Google+Maps+Extractor-x86_64.rpm)
 - For Raspberry Pi and Some Cloud Servers: [Download .rpm for arm64](https://google-maps-extractor-omkar-cloud.s3.amazonaws.com/Google+Maps+Extractor-aarch64.rpm)
 
-**2️⃣ Now, Press the Run button to have 200+ search results. 😎**
+**2️⃣ Press the Run button to get 200+ search results.**
 
 ![GIF of Google Maps Extractor Visit, Highlight Keyword, Run, See Results](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/demo.gif)
 
@@ -119,8 +120,8 @@ googlemapsextractor --no-sandbox
    - [WhatsApp](https://api.whatsapp.com/send?phone=918178804274&text=I%20need%20help%20with%20the%20installation%20of%20the%20Google%20Maps%20Extractor%20Tool.) 
    - [or Email](mailto:happy.to.help@omkar.cloud?subject=Help%20with%20Google%20Maps%20Extractor%20Tool%20Installation&body=I%20need%20help%20with%20the%20installation%20of%20the%20Google%20Maps%20Extractor%20Tool.)
 
-Rest assured, we will respond to your message within 1 Working Day.
-2. Don't need UI? Just need to access data via Python/Node.js scripts? Check out our [Google Maps Extractor API](https://www.omkar.cloud/tools/google-maps-extractor-api) (200 searches/month free). It offers a REST API interface and detailed documentation for AWS VM installation.
+We respond within 1 working day.
+2. Don't need a UI? Just need to access data via Python/Node.js scripts? Check out our [Google Maps Extractor API](https://www.omkar.cloud/tools/google-maps-extractor-api) (200 searches/month free). It offers a REST API interface and detailed documentation for AWS VM installation.
 
 ## ⚡ Enlightening Questions
 
@@ -134,7 +135,7 @@ Rest assured, we will respond to your message within 1 Working Day.
 
 ![Run](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/run.png)
 
-3. Get the results in 2 minutes, woo hoo! 🎉
+3. Get the results in about 2 minutes.
 
 ![results-page.png](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/results-page.png)
 
@@ -211,7 +212,7 @@ To find the exact results you're looking for, click the "Show Filters" button an
 
 Download results in various formats (CSV, JSON, Excel) using the export button.
 
-### ❓ What are various search strategies, which one to use?
+### ❓ What are the various search strategies, and which one should I use?
 
 There are 5 kinds of search strategies:
 - Fast (Default)
@@ -274,7 +275,7 @@ Suppose you are a web developer, specializing in **making websites** for **resta
    - Highlight specific tactics their nearby competitors are using on their website to attract more customers
    - Suggest improvements based on what's working for their competitors
 
-**Why this works:** Owners are all ears 👂🏼 when you talk about their local competitors. This approach quickly gains their attention, and you come across as a knowledgeable expert, leading to a higher conversion rate.
+**Why this works:** Business owners are interested in what their local competitors are doing. This approach helps you come across as knowledgeable about their market.
 
 ### ❓ How to create polygons and search using Geolocation?
 
@@ -292,7 +293,7 @@ Suppose you are a web developer, specializing in **making websites** for **resta
 
 ![geolocation.gif](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/geolocation.gif)
 
-### ❓ I have got enough results, and want to stop the Task. How to do it?
+### ❓ I have enough results and want to stop the task. How do I do it?
 
 Click on the Abort Icon to abort the task.
 
@@ -314,11 +315,11 @@ It can take 2-3 days to complete for countries with tens of thousands of cities,
 
 ⚠️ **Important:** Don't use Zoom 18 for country-level data—it would take 20-30 days. 
 
-### ❓ I'm an AI Research Student. I need all coffee shops in San Francisco for my Recommendation AI. How can I get this data?
+### ❓ I'm an AI research student. I need all coffee shops in San Francisco for my recommendation AI. How can I get this data?
 
-This is exactly the kind of use case our tool was built for—helping students access data for their research without breaking the bank.
+This is the kind of use case our tool was built for—helping students access data for their research projects.
 
-Use Search Strategy with **Zoom 18** for San Francisco. Let it run overnight. You'll have tens of thousands of results, which is perfect for your research project. Cost will be 0, as you get **200** searches free each month.
+Use the **Zoom 18** search strategy for San Francisco. Let it run overnight. You'll have tens of thousands of results, which is perfect for your research project. There's no cost, as you get **200** free searches each month.
 
 
 ### ❓ What else can I use this tool for?
@@ -330,7 +331,7 @@ Use Search Strategy with **Zoom 18** for San Francisco. Let it run overnight. Yo
    - Benefits:
      - Much higher quality candidates compared to online job portals
      - Saves a lot of time that would otherwise be spent screening and interviewing a much larger pool of candidates
-     - We have done this for ourselves as well. 
+     - We've done this ourselves as well. 
 3. Discovering the Best Service Providers
    - Find top-rated service providers in your area for specific needs.
    - Examples:
@@ -340,7 +341,7 @@ Use Search Strategy with **Zoom 18** for San Francisco. Let it run overnight. Yo
       - Search for "Computer Repair" in your city to find the most reputable and reliable computer repair shops.
       - The list goes on...
 
-This tool can save you time and money in various aspects of your personal and professional life :)
+This tool can help you save time in various aspects of your personal and professional life.
 
 ## ❓ Tell me about Omkar Cloud.
 
@@ -351,7 +352,7 @@ We're a data company with 20+ tools for OCR, data conversion, and developer APIs
 
 ### ❓ Why should I use your Product? There are 10s of Google Maps Scrapers on the Internet, some by brands bigger than yours.
 
-For big brands, this is just one of many tools. For us, **it is our core product**. We've put in thousands of development hours perfecting it, and our extremely proud of it. 
+For big brands, this is just one of many tools. For us, **it is our core product**. We've put in thousands of development hours perfecting it, and we're extremely proud of it. 
 
 **Coming to Hard Facts:**
 - 📊 Tens of thousands of results per city with Zoom 18. Only 1-2 other brands can do this.
@@ -364,16 +365,16 @@ For big brands, this is just one of many tools. For us, **it is our core product
 
 A Solid Product doesn't need elaborate explanations, it speaks for itself.
 
-Just run 1 search in the tool, it will take only 5 minutes for downloading and installing, and your search for the best Google Maps extractor will end right here. 
+Just run one search in the tool—it will take only 5 minutes to download and install—and your search for the best Google Maps extractor will end right here. 
 
 
 ### ❓ I'm starting my business. Which cities should I choose to find customers?
 
-The key thing is to start with customers who 
-  - have money 
-  - and are willing to spend it on solutions that make their lives easier. 
+The key is to start with customers who:
+  - have money, and
+  - are willing to spend it on solutions that make their lives easier. 
   
-These are the richest cities, tech-hubs in your target country. Choose them because they earn more, so they have higher chances of buying your product/service.
+These are the richest cities, tech-hubs in your target country. Choose them because they earn more, so they buy more easily.
 
 We recommend following these steps:
 
@@ -389,15 +390,15 @@ Australia -> Start with Sydney
 Switzerland -> Start with Zurich
 
 **Note:**
-Don't start targeting full country data. You will have a bad conversion rate and lower Revenue Per Customer.
+Don't start by targeting full country data. You'll have a lower conversion rate and lower revenue per customer.
 
 ### ❓ Which country should I choose to find customers?
 
-Your own country, because you are more comfortable talking to them. 
+Your own country, because you're more comfortable talking to people there. 
 
-Once your product is perfected, and is creating good value for your customers, you can start focusing on US customers.
+Once your product is perfected, and is creating good value for your customers, you can start focusing on US, as they tend to be more open to trying new products and services.
 
-### ❓ But why do you suggest US?
+<!-- ### ❓ But why do you suggest US?
 
 In this documentation and inside the tool, we specifically use US terms
 - US Cities not my own country cities
@@ -405,10 +406,10 @@ In this documentation and inside the tool, we specifically use US terms
 
 But why? Because Americans are our biggest customers. To sell, it's wise to **appeal** to your biggest customers. 
 
-That's why we suggest the US (given your product creates value, customers are **PAYING**, and it has global appeal). Plus:
+That's why we suggest the US (given your product creates value, customers are paying, and it has global appeal). Plus:
 
-- Americans communicate in a straightforward manner — easy to do business with.
-- They buy easily, even from overseas sellers, if you show how your product/service makes their work easier or grows their business. At least 3x easier than selling to Asians, who think a lot before buying.
+- US businesses are very open to trying new products and services.
+- Clear communication and demonstrated value tend to work well in this market. -->
 
 ### ❓ What is the Enrichment Section in App?
 
@@ -418,8 +419,8 @@ You've got businesses from Google Maps. Now you need to actually reach them. Tha
 
 - **Email Verification & Social Links**
   - Get emails and social profiles from websites. 
-  - AI ranks the best email for sales outreach (not generic info@ addresses)
-  - Verify deliverability before you send. We use the best email verification API in the market.
+  - AI ranks emails for sales outreach (prioritizing emails with higher chance of converting)
+  - Verify deliverability before you send.
 
 - **Phone Carrier Info**
   - Know if it's a landline or mobile
@@ -433,9 +434,9 @@ You've got businesses from Google Maps. Now you need to actually reach them. Tha
 
 **Bottom line:** Same leads, same sales—but with enrichment, your conversion rate multiplies. That's more customers from the same effort.
 
-[Start enriching for free](https://www.omkar.cloud/tools/business-enrichment)—600 credits/month, high-quality data, just like this app you're using.
+[Start enriching for free](https://www.omkar.cloud/tools/business-enrichment)—600 credits/month included.
 
-### ❓ Enough of theories. Give me real-world examples where I can use this tool to find customers?
+### ❓ Enough theory. Give me real-world examples of how I can use this tool to find customers.
 
 - **Web Developer** → Search "real estate agency" in "San Francisco", filter **50+ reviews, no website**. Offer "done in 7 days" website for **$1000 + $40/mo hosting**. 
 
@@ -444,32 +445,32 @@ You've got businesses from Google Maps. Now you need to actually reach them. Tha
 - **Dental Software** → Find Dentists with 50+ reviews, no website. Visit during non-peak hours, demo your product, and offer 6 months free trial. They'll pay $40-60/month when it saves their receptionist 10+ hrs/week.
 
 ### ❓ How to apply this to my product/service?
-
+<!-- 
 This is the most important question in this README—and the reason you're here.
 
-Read this carefully. We ourselves have done cold calling and cold emails, and made sales. This isn't theory—it's real-world experience.
+Read this carefully. We ourselves have done cold calling and cold emails, and made sales. This isn't theory—it's real-world experience. -->
 
-There are 4 parts to making sales:
+There are 3 parts to making sales:
 
-#### 1. Great Desire
+<!-- #### 1. Great Desire
 
 Sales require great effort. You'll only put in that effort if you truly want the sale.
 
 If you don't have strong desire, you'll quit after 3-4 rejections. So before you start, think about what closing these deals means for your life and business. Visualize your success colorfully. 
-
-#### 2. Learn First
+ -->
+#### 1. Learn First
 
 Going into sales without learning is like going to battle with sticks. You won't survive.
 
 Read sales books—they'll save you time and help you avoid common mistakes. For cold outreach specifically, read **"The Cold Email Manifesto"**. It's practical, and it works. 
 
-#### 3. Make a Strategy
+#### 2. Make a Strategy
 
 **Filter your leads** — Only contact businesses most likely to buy:
 - Reviews: 75-200 (established, but small enough to care)
 - Rating: 4+ stars (you're the **best of the best**—obviously you'll only talk to the best)
 
-**Use Enrichment** — Enrichment is a great product, like this one. We've spent thousands of hours building great enrichment. Use it:
+**Use Enrichment** — Enrich your data to save research time and increase your conversion rate:
 - Social Links & Emails → Get the emails for sales outreach
 - Email Verification → Ensure deliverability
 - Place Sales Summary → Personalize your pitch
@@ -495,11 +496,11 @@ Read sales books—they'll save you time and help you avoid common mistakes. For
 - **Simpler** — Just pick up the phone. No complex email sequences.
 - **Faster feedback, faster improvement** — Rejections tell you exactly what to fix for the next call.
 - **Less competition** — Most people do cold email. Fewer calls = more attention = higher close rate.
-- **Higher conversion** — In 2-3 days of calling, you'll likely get a customer. Cold email has many variables, and can take 2-3 weeks to land a deal. Nothing will boost your confidence better than closing your first deal. So get that win fast.
+<!-- - **Potentially higher conversion** — Cold calling often provides faster feedback. Cold email involves more variables and may take longer to see results. -->
 
-If you're new to sales, start with cold calling—it's simpler, faster, and converts better than email. As a great bonus, you will learn faster.
+If you're new to sales, start with cold calling—it's simpler, faster, and converts better than email. As a bonus, you'll learn faster too.
 
-You're an introvert, and calling feels super scary. You are right, It is scary—people will hang up on you and rudely reject you.
+You're an introvert, and calling feels scary. You're right—it is scary. People will hang up on you and rudely reject you.
 
 But think about it: you've done harder things before. Haven't you?
 
@@ -507,32 +508,27 @@ Compared to those, calling is a piece of cake. People way less smart than you ha
 
 Try it for 2-3 days—if it doesn't work, you can always switch to email.
 
-#### 4. Grind
+#### 3. Execute
 
 Most founders quit after 3-4 rejections. You should not. 
 
 If someone rejects you, they are unwise, and it's their mistake—let them pay for it.
 
-You're a diamond. Only Jewelers can recognize diamonds, not blacksmiths. 
-<!-- Keep going—there are enough wise business owners who will recognize the value you create and buy from you. -->
+You're a diamond 😎. Only Jewelers recognize diamonds, not blacksmiths. 
 
-Also, In worst cases, expect 40-50 connected calls (~2-4 days of calling) to close 1 deal. That's normal.
+Keep going. Also, in worst cases, expect 40-50 connected calls (~2-4 days of calling) to close 1 deal. That's normal.
 
-This was years of knowledge condensed into a few paragraphs. No one told you this. 
-
-Read it again, apply it, and you'll succeed, because we have tested it ourselves.
-
-<!-- Once you close your first deal, [message us](https://api.whatsapp.com/send?phone=918178804274&text=I%20closed%20my%20first%20deal%20using%20Google%20Maps%20Extractor!)—your success stories are gems to us and inspire us to keep building great things. -->
+This is the most important FAQ, so be sure to read it again and put it into practice.
 
 ### ❓ Are there any usage limits?
 
-The free version though super generous only allows **200** searches per month. To get unlimited searches for a lifetime, consider upgrading to the Pro Version:
-- The Pro Version gives you access to unlimited searches for a lifetime. Say a Big-Big NO to websites selling expensive plans.
-- 100% accurate, [50+ data points](https://github.com/omkarcloud/google-maps-scraper/blob/master/fields.md) extracted in real-time.
-- Only a one-time investment with lifetime updates and top-notch WhatsApp support, all for just $28.
-- Best of all? Absolutely zero risk, as we offer a generous 90-day, no-questions-asked refund guarantee.
+The free version allows **200** searches per month. For unlimited searches, consider upgrading to the Pro Version:
+- Unlimited searches with a one-time purchase.
+- [50+ data points](https://github.com/omkarcloud/google-maps-scraper/blob/master/fields.md) extracted in real-time.
+- One-time payment of $28 with lifetime updates and WhatsApp support.
+- Best of all? Zero risk, as we offer a generous 90-day, no-questions-asked refund guarantee.
 
-[1000+ Happy People](https://github.com/sponsors/omkarcloud?frequency=one-time) have already invested in the Pro Version and are reaping its benefits to grow their businesses.
+[1000+ people](https://github.com/sponsors/omkarcloud?frequency=one-time) have purchased the Pro Version.
 
 ![people](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/people-new.png)
 
@@ -557,17 +553,13 @@ After payment, you'll see a link. Visiting the link will activate the Pro Versio
 
 ### ❓ What if I Don't Get Value from It?
 
-This product is our pride. We wholeheartedly ❤️ believe in the value our product brings for you, especially since it has successfully worked for hundreds of people like you.
- 
-But, we also understand the reservations you might have.
+We offer a 90-day refund guarantee. If the product doesn't meet your needs within that time, you can request a refund through a simple 2-click process. 
 
-That's why we've put the ball in your court: **If, within the next 90 days, you feel that our product hasn't met your expectations, simply get a refund in 2 clicks only.**
-
-The risk is fully on us, as it should be, because we're confident in what we've created!
+The risk is on us, not you, because we're confident in what we've created!
 
 ## ❓ How do I get a refund?
 
-If within 90 days the product doesn't meet your needs, get a refund in 2 clicks.
+Follow these steps:
 
 1. Go to [Transactions Page](https://www.omkar.cloud/billing/transaction-history)
 ![Transactions Page](https://raw.githubusercontent.com/omkarcloud/assets/master/images/transactions-page.png)
@@ -580,10 +572,9 @@ If within 90 days the product doesn't meet your needs, get a refund in 2 clicks.
 
 No emails. No explanations. Simple 2-click process.
 
-
 ### ❓ Is there a catch in refunds?
 
-**No catch.** It is a simple 2-click process, same as described above. 
+**No catch.** It is a simple 2-click process, exactly as described above. 
 
 
 ### ❓ How can I get results via API?
@@ -602,13 +593,13 @@ The API is available for $16/month, and you can try it free at [Google Maps Extr
 
 - **TripAdvisor Scraper:** Tripadvisor is the best platform if your target is to find restaurants/hotels. It gives websites + email addresses of the businesses. Try it for free [here](https://www.omkar.cloud/tools/tripadvisor-scraper).
 
-- **Discover more tools:** Visit [omkar.cloud/tools](https://www.omkar.cloud/tools/) to find lots of tools that can help you find customers and grow your business. All have generous free plans and are easy to use.
+- **Discover more tools:** Visit [omkar.cloud/tools](https://www.omkar.cloud/tools/) to explore additional tools. All have free plans available.
 
 
 
-### ❓ This Extractor is Truly One-of-a-Kind, Something I've Never Seen Before. How Did You Build It?
+### ❓ How Did You Build This Extractor?
 
-Thank you! We used Botasaurus Desktop, which is the secret behind our awesome Google Maps Extractor.
+We used Botasaurus Desktop, which powers the Google Maps Extractor.
 
 Botasaurus is a web scraping framework that makes life a lot easier for web scrapers.
 
@@ -621,7 +612,7 @@ It handled the hardest parts of our extractor, such as:
 
 If you're a web scraper, I really recommend learning about Botasaurus Desktop [here](https://github.com/omkarcloud/botasaurus/blob/master/botasaurus-desktop-tutorial.md) 🚀.
 
-Trust me, learning Botasaurus Desktop will only take 5 minutes, but I guarantee it will save you thousands of hours in your life as a web scraper.
+Learning Botasaurus Desktop takes about 25 minutes. If you do web scraping, it can save you thousands of hours over your career.
 
 <p align="center">
   <a href="https://www.omkar.cloud/l/google-maps-to-botasaurus/">
@@ -629,7 +620,7 @@ Trust me, learning Botasaurus Desktop will only take 5 minutes, but I guarantee 
   </a>
 </p>
 
-### ❓ While in progress, "All Task" shows around 80K results, but after completion it drops to 70K. Why?
+### ❓ While a task is in progress, "All Task" shows around 80K results, but after completion it drops to 70K. Why?
 
 We remove duplicates at the end of all tasks, so expect the final count to be lower than what you see during progress. 
 
@@ -675,59 +666,52 @@ This is a known macOS-specific issue. We expect to resolve it by December 2026. 
 
 ### ❓ Can you tell me about the Done For You service?
 
-If you need full country data—say all "Restaurants in US" (29.5K Cities), can take 10-12 days on your system.
+If you need full country data—say all "Restaurants in US" (29.5K cities)—it can take 10–12 days on your system.
 
 With our **Done For You service**, we refine your search queries for higher-converting customers and deliver in 1-2 days.
 
 
 **Pricing:** ~$60 for a single category in USA (300K+ results). **$200 off** on your first purchase of $250+. So if your project costs $250, you only pay $50!
 
-**Why us?** 
+**Why use this service?** 
 
-- Weeks of extraction time saved.
-- Higher ROI, as we help you target businesses most likely to buy.
-- 90-day unconditional refund—risk is 100% on us.
+- Saves extraction time (10-12 days reduced to 1-2 days).
+- We help refine queries to target relevant businesses.
+- 90-day refund guarantee.
 
-[Email us](mailto:happy.to.help@omkar.cloud?subject=Done%20For%20You%20Data%20Service&body=Hi%2C%20I%20sell%20%5Byour%20product%2Fservice%5D%20and%20I%E2%80%99m%20looking%20for%20%5Btype%20of%20customers%5D.%20Please%20help%20me%20get%20the%20right%20data.) and let us know what you sell and who you're looking for. We want you to sell more, because when you succeed, you'll come back to us again.
+[Email us](mailto:happy.to.help@omkar.cloud?subject=Done%20For%20You%20Data%20Service&body=Hi%2C%20I%20sell%20%5Byour%20product%2Fservice%5D%20and%20I%E2%80%99m%20looking%20for%20%5Btype%20of%20customers%5D.%20Please%20help%20me%20get%20the%20right%20data.) and let us know what you sell and who you're looking for.
 
 
 ### ❓ Do you do custom big data projects?
 
-Yes, we do **big data projects** for businesses at high quality and affordable prices. But why choose us and not other providers?
+Yes, we do **big data projects** for businesses.
 
-- The single most important reason is that we do data every day and are experts in it. This product is proof of it.
-- 90-day unconditional refund guarantee. So you take 0 risk. 
-- Your project will be well done, affordably, simply because we want long-term relationships. And giving great results is the best way to do that.
+- We work with data daily and have built tools like this product.
+- 90-day refund guarantee.
+<!-- - Focused on delivering quality results. -->
 
-You can mail us [here](mailto:happy.to.help@omkar.cloud?subject=Big%20Data%20Project%20Request&body=I%20need%20a%20big%20data%20project%20done%20at%20high%20quality%20and%20affordable%20prices.), to enquire about your project.
+You can email us [here](mailto:happy.to.help@omkar.cloud?subject=Big%20Data%20Project%20Request&body=I%20need%20a%20big%20data%20project%20done%20at%20high%20quality%20and%20affordable%20prices.) to inquire about your project.
 
 
 ### ❓ There is a feature in another app that I need, and this product doesn't have it.
 
-Let us know! Based on our years of experience, we will most likely add it. If not, we'll suggest better/cheaper alternatives to it.
+Let us know! We consider feature requests and can suggest alternatives if we can't implement them.
 
 ### ❓ Questions? We have answers.
 
-Reach out anytime. An intelligent person with deep product knowledge will solve your query within 1 working day.
-
+Reach out anytime. We will solve your query within 1 working day.
 [![Contact Us on WhatsApp about Google Maps Scraper](https://raw.githubusercontent.com/omkarcloud/assets/master/images/whatsapp-us.png)](https://api.whatsapp.com/send?phone=918178804274&text=I%20need%20help%20with%20using%20the%20Google%20Maps%20Extractor%20Tool.)
 
 [![Contact Us on Email about Google Maps Scraper](https://raw.githubusercontent.com/omkarcloud/assets/master/images/ask-on-email.png)](mailto:happy.to.help@omkar.cloud?subject=Help%20with%20Google%20Maps%20Extractor%20Tool&body=I%20need%20help%20with%20using%20the%20Google%20Maps%20Extractor%20Tool.)
-
-Don't hesitate to message us. Our support is the best—not just on Earth, but in the entire multiverse.
-
-We reply within 1 working day.
+Feel free to message us. We typically reply within 1 working day.
 
 ### ❓ Love It? Star It ⭐!
 
 We've poured thousands of hours into building this—so you can find customers and grow your business.
 
-If it's helped you, please give us a **star ⭐** on GitHub. You have a big heart ❤️, It takes 1 click, and you will be doing us a great favor.
-
+If this tool has been helpful, please give us a **star ⭐** on GitHub. You have a big heart ❤️—it takes just one click, and you'll be doing us a great favor.
 
 ![Star us on GitHub](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/star-us.png)
-
-
 
 ## Made with ❤️ using [Botasaurus Web Scraping Framework](https://www.omkar.cloud/l/google-maps-to-botasaurus/)
 
