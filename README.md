@@ -54,11 +54,11 @@ We take concerns about the Google Maps Extractor Project very seriously. For any
 
 ---
 
-Google Maps Extractor helps you find Business Profiles from Google Maps. It's a great tool with [2300+ stars on GitHub](https://github.com/omkarcloud/google-maps-scraper/stargazers), trusted by thousands in the community to complete their academic research projects or find customers.
+Google Maps Extractor helps you find Business Profiles from Google Maps. It's a great tool with [2400+ stars on GitHub](https://github.com/omkarcloud/google-maps-scraper/stargazers), trusted by thousands in the community to complete their academic research projects or find customers.
 
 ## ⚡ Benefits
 
-- **Searches for lifetime** — One-time purchase, no recurring fees. **200 searches** free every month.
+- **Searches for lifetime** — One-time purchase, no recurring fees. **200 searches** free, yes **200 searches** free every month.
 - **50+ data points** — Extracted in real-time.
 - **Enrichment included** — Get emails, social profiles, and decision-maker contacts for outreach.
 - **Great documentation** — Part 1: How to use the tool. Part 2: Sales strategies and best practices.
@@ -520,11 +520,11 @@ Try it for 2-3 days—if it doesn't work, you can always switch to email.
 
 Most founders quit after 3-4 rejections. You should not. 
 
-If someone rejects you, they are unwise, and it's their mistake—let them pay for it.
+If someone rejects you, they are unwise and making a mistake. It's their fault, not yours.
 
-You're a diamond 😎. Only Jewelers recognize diamonds, not blacksmiths. 
+And you're a diamond 😎. Only Jewelers recognize diamonds, not blacksmiths. 
 
-Keep going. Also, in worst cases, expect 40-50 connected calls (~2-4 days of calling) to close 1 deal. That's normal.
+So, keep going. Also, in worst cases, expect 40-50 connected calls (~2-4 days of calling) to close 1 deal. That's normal.
 
 This is the most important FAQ, so be sure to read it again and put it into practice.
 
