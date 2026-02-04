@@ -58,7 +58,7 @@ Google Maps Extractor helps you find Business Profiles from Google Maps. It's a 
 
 ## ⚡ Benefits
 
-- **Searches for lifetime** — One-time purchase, no recurring fees.
+- **Searches for lifetime** — One-time purchase, no recurring fees. **200 searches** free every month.
 - **50+ data points** — Extracted in real-time.
 - **Enrichment included** — Get emails, social profiles, and decision-maker contacts for outreach.
 - **Great documentation** — Part 1: How to use the tool. Part 2: Sales strategies and best practices.
@@ -124,6 +124,14 @@ We respond within 1 working day.
 2. Don't need a UI? Just need to access data via Python/Node.js scripts? Check out our [Google Maps Extractor API](https://www.omkar.cloud/tools/google-maps-extractor-api) (200 searches/month free). It offers a REST API interface and detailed documentation for AWS VM installation.
 
 ## ⚡ Enlightening Questions
+<!-- 
+### ❓ How many Searches can I make?
+
+You get **200 searches free every month**. Each search can get you 1000s of results.
+
+This is enough for most use cases such as getting data for your research project, or finding customers for your startup.
+
+If you need more searches, you can upgrade to the Pro Version. -->
 
 ### ❓ How to Get Results for My Queries?
 
