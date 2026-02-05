@@ -669,8 +669,13 @@ In case you are unable to view the non-English characters properly in Excel, the
 
 ### ❓ On macOS, Google Chrome is not opening when I run the app. What should I do?
 
-This is a known macOS-specific issue. We expect to resolve it by December 2026. As a workaround, **close this app** and Chrome will open normally.
+This is a known issue specific to macOS. We expect it to be fixed by December 2026. 
 
+**To resolve the problem:**
+- **Close this app**
+- or **restart your computer**.
+
+After that, Google Chrome will launch normally.
 
 ### ❓ Can you tell me about the Done For You service?
 
