@@ -16,7 +16,7 @@ Below is the complete list of fields (schema) present in every data record.
 
 ### Core Identifiers & Info
 - PLACE_ID
-- KGMID (Knowledge Graph Machine ID) - unique id for each business on Google Maps
+- KGMID (Knowledge Graph Machine ID) - unique id for each business on Google Maps. PLACE_ID can be null, but KGMID can never be null. Use this as the unique identifier.
 - CID
 - DATA_ID
 - NAME
@@ -93,13 +93,12 @@ Below is the complete list of fields (schema) present in every data record.
 
 ---
 
-## Rental Fields
+## Rental Fields (Places that are rentals)
 
 ### Core Identifiers & Info
 - IS_RENTAL [Determines if the place is a rental or a normal business]
 - PLACE_ID
-- KGMID (Knowledge Graph Machine ID) - unique id for each business on Google Maps
-- CID
+- KGMID (Knowledge Graph Machine ID) - unique id for each business on Google Maps. PLACE_ID can be null, but KGMID can never be null. Use this as the unique identifier.- CID
 - DATA_ID
 - NAME
 - DESCRIPTION

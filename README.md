@@ -532,7 +532,178 @@ This is the most important FAQ, so be sure to read it again and put it into prac
 
 The free version allows **200** searches per month. For unlimited searches, consider upgrading to the Pro Version:
 - Unlimited searches with a one-time purchase.
-- [50+ data points](https://github.com/omkarcloud/google-maps-scraper/blob/master/fields.md) extracted in real-time.
+- <details><summary><strong>50+ data points</strong> extracted in real-time. <strong>Click to see all</strong></summary>
+
+  ## Place Fields
+
+  ### Core Identifiers & Info
+  - PLACE_ID
+  - KGMID (Knowledge Graph Machine ID) - unique id for each business on Google Maps. PLACE_ID can be null, but KGMID can never be null. Use this as the unique identifier.
+  - CID
+  - DATA_ID
+  - NAME
+  - DESCRIPTION
+  - LINK
+  - MAIN_CATEGORY
+  - CATEGORIES
+
+  ### Contact & Business Info
+  - WEBSITE
+  - PHONE
+  - PHONE_INTERNATIONAL
+  - ADDRESS
+  - DETAILED_ADDRESS
+  - COORDINATES
+  - PLUS_CODE
+  - TIME_ZONE
+
+  ### Ratings & Reviews
+  - RATING
+  - REVIEWS
+  - REVIEWS_PER_RATING
+  - REVIEWS_LINK
+  - REVIEW_KEYWORDS
+  - FEATURED_REVIEWS
+
+  ### Social Media
+  - LINKEDIN
+  - TWITTER
+  - FACEBOOK
+  - YOUTUBE
+  - INSTAGRAM
+  - PINTEREST
+  - GITHUB
+  - SNAPCHAT
+  - TIKTOK
+
+  ### Ownership & Listing Status
+  - OWNER
+  - OWNER_POSTS
+  - CAN_CLAIM
+  - IS_SPENDING_ON_ADS
+  - STATUS
+  - IS_TEMPORARILY_CLOSED
+  - IS_PERMANENTLY_CLOSED
+
+  ### Media & Visuals
+  - FEATURED_IMAGE
+  - FEATURED_IMAGES
+  - IMAGE_COUNT
+  - IMAGES
+
+  ### Business Hours & Timing
+  - WORKDAY_TIMING
+  - CLOSED_ON
+  - HOURS
+  - MOST_POPULAR_TIMES
+  - POPULAR_TIMES
+
+  ### Services & Ordering
+  - MENU
+  - RESERVATIONS
+  - ORDER_ONLINE_LINKS
+  - PRICE_RANGE
+
+  ### Additional Details
+  - ABOUT
+  - ON_SITE_PLACES
+  - GAS_PRICES
+  - CUSTOMER_UPDATES
+  - FEATURED_QUESTION
+  - COMPETITORS
+  - LOCATION_SUMMARY
+
+  ---
+
+  ## Rental Fields (Places that are rentals)
+
+  ### Core Identifiers & Info
+  - IS_RENTAL [Determines if the place is a rental or a normal business]
+  - PLACE_ID
+  - KGMID (Knowledge Graph Machine ID) - unique id for each business on Google Maps. PLACE_ID can be null, but KGMID can never be null. Use this as the unique identifier.- CID
+  - DATA_ID
+  - NAME
+  - DESCRIPTION
+  - LINK
+  - MAIN_CATEGORY
+  - CATEGORIES
+  - HOTEL_STARS
+  - PRICE
+
+  ### Contact & Business Info
+  - WEBSITE
+  - PHONE
+  - PHONE_INTERNATIONAL
+  - ADDRESS
+  - DETAILED_ADDRESS
+  - COORDINATES
+  - PLUS_CODE
+  - TIME_ZONE
+
+  ### Ratings & Reviews
+  - RATING
+  - REVIEWS
+  - REVIEWS_PER_RATING
+  - REVIEWS_LINK
+  - REVIEW_KEYWORDS
+  - FEATURED_REVIEWS
+  - FEATURED_PARTNER_REVIEWS
+
+  ### Social Media
+  - LINKEDIN
+  - TWITTER
+  - FACEBOOK
+  - YOUTUBE
+  - INSTAGRAM
+  - PINTEREST
+  - GITHUB
+  - SNAPCHAT
+  - TIKTOK
+
+  ### Ownership & Listing Status
+  - OWNER
+  - OWNER_POSTS
+  - CAN_CLAIM
+  - IS_SPENDING_ON_ADS
+  - STATUS
+  - IS_TEMPORARILY_CLOSED
+  - IS_PERMANENTLY_CLOSED
+
+  ### Media & Visuals
+  - FEATURED_IMAGE
+  - FEATURED_IMAGES
+  - IMAGE_COUNT
+  - IMAGES
+
+  ### Property Details
+  - SLEEPS
+  - BEDROOMS
+  - BEDS
+  - BATHROOMS
+  - MIN_NIGHTS
+  - AMENITIES
+
+  ### Check-in/Check-out
+  - CHECKIN_DATE
+  - CHECKOUT_DATE
+  - CHECKIN_TIME
+  - CHECKOUT_TIME
+
+  ### Booking & Availability
+  - BOOKING_PLATFORMS
+  - ADDITIONAL_RESULTS_FROM_WEB
+
+  ### Additional Details
+  - ABOUT
+  - ON_SITE_PLACES
+  - CUSTOMER_UPDATES
+  - FEATURED_QUESTION
+  - COMPETITORS
+  - LOCATION_SUMMARY
+  - NEARBY_RENTALS
+  - NEARBY_HOTELS
+  </details>
+
 - One-time payment of $28 with lifetime updates and WhatsApp support.
 - Best of all? Zero risk, as we offer a generous 90-day, no-questions-asked refund guarantee.
 
