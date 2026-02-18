@@ -1,5 +1,5 @@
-
 > [!IMPORTANT]
+> The Google data structure has changed, which is causing the reviews data point to return "0." A fix is in progress. Please wait until 25th February.
 > We've replaced the Website Contacts Scraper with the new **Business Enrichment API**—same features, plus more:
 
 - Social Links & Emails (same as before)
@@ -69,11 +69,11 @@ In the next few minutes, you'll extract **200+ Search Results** from Google Maps
 
 ## 📦 Requirements
 
-To use this tool, you'll need:
+To use this tool, ensure you have:
 
 - Google Chrome Browser
 
-Let's get started by following these steps:
+Then get started by following these steps:
 
 **1️⃣ Download and Install:**
 
@@ -111,9 +111,14 @@ googlemapsextractor --no-sandbox
 - For Most Desktop Users: [Download .rpm](https://google-maps-extractor-omkar-cloud.s3.amazonaws.com/Google+Maps+Extractor-x86_64.rpm)
 - For Raspberry Pi and Some Cloud Servers: [Download .rpm for arm64](https://google-maps-extractor-omkar-cloud.s3.amazonaws.com/Google+Maps+Extractor-aarch64.rpm)
 
+
 **2️⃣ Press the Run button to get 200+ search results.**
 
 ![GIF of Google Maps Extractor Visit, Highlight Keyword, Run, See Results](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/demo.gif)
+
+Just run one search, and your search for the best Google Maps extractor ends right here.
+
+It takes just 5 minutes to download and run the app. You get 200 free searches every month, more than enough for most users to get detailed google maps data without paying a dime.
 
 *Note:*
 1. If you face any problems or have questions, please reach out to us via:
@@ -371,9 +376,9 @@ For big brands, this is just one of many tools. For us, **it is our core product
 - 💰 One-time payment, no subscriptions. Run on unlimited devices. Lifetime updates. You **OWN** the software.
 - 🛡️ 90-day no-questions-asked 2-click refund guarantee. No other brand offers this.
 
-A Solid Product doesn't need elaborate explanations, it speaks for itself.
+A Solid Product doesn't need elaborate explanations, it speaks for itself. Try it, and see it for yourself.
 
-Just run one search in the tool—it will take only 5 minutes to download and install—and your search for the best Google Maps extractor will end right here. 
+
 
 
 ### ❓ I'm starting my business. Which cities should I choose to find customers?
