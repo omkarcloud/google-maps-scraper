@@ -1,5 +1,7 @@
 > [!IMPORTANT]
 > The Google data structure has changed, which is causing the reviews data point to return "0." A fix is in progress. Please wait until 25th February.
+
+
 > We've replaced the Website Contacts Scraper with the new **Business Enrichment API**—same features, plus more:
 
 - Social Links & Emails (same as before)
