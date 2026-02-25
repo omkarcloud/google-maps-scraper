@@ -1,6 +1,4 @@
 > [!IMPORTANT]
-> The Google data structure has changed, which is causing the reviews data point to return "0." A fix is in progress. Please wait until 25th February.
-
 
 > We've replaced the Website Contacts Scraper with the new **Business Enrichment API**—same features, plus more:
 
@@ -379,9 +377,6 @@ For big brands, this is just one of many tools. For us, **it is our core product
 - 🛡️ 90-day no-questions-asked 2-click refund guarantee. No other brand offers this.
 
 A Solid Product doesn't need elaborate explanations, it speaks for itself. Try it, and see it for yourself.
-
-
-
 
 ### ❓ I'm starting my business. Which cities should I choose to find customers?
 
@@ -861,8 +856,7 @@ If you need full country data—say all "Restaurants in US" (29.5K cities)—it 
 
 With our **Done For You service**, we refine your search queries for higher-converting customers and deliver in 1-2 days.
 
-
-**Pricing:** ~$60 for a single category in USA (300K+ results). **$200 off** on your first purchase of $250+. So if your project costs $250, you only pay $50!
+**Pricing:** ~$320 for a single category in USA (~200K+ results).
 
 **Why use this service?** 
 
