@@ -856,7 +856,7 @@ If you need full country data—say all "Restaurants in US" (29.5K cities)—it 
 
 With our **Done For You service**, we refine your search queries for higher-converting customers and deliver in 1-2 days.
 
-**Pricing:** ~$320 for a single category in USA (~200K+ results).
+**Pricing:** $180/100K results.
 
 **Why use this service?** 
 
