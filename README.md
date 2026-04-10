@@ -427,24 +427,21 @@ The Enrichment API turns Google Maps business data into sales-ready contacts.
 
 You've got businesses from Google Maps. Now you need to actually reach them. That's where enrichment comes in:
 
-- **Email Verification & Social Links**
-  - Get emails and social profiles from websites. 
-  - AI ranks emails for sales outreach (prioritizing emails with higher chance of converting)
-  - Verify deliverability before you send.
+- **Website Contacts Enrichment**
+  - Get emails and social profiles from websites.
+  - AI ranks the best email for sales outreach.
+  - Verify email deliverability with MillionVerifier or ZeroBounce.
+  - Place Sales Summary—AI-generated business context tailored to YOUR product. Recommended for cold emailing or calling, as it enables you to deliver a tailored pitch for the highest chance of conversion, rather than generic outreach.
+  - Phone Carrier Info—know if it’s a landline or mobile. Must for cold calling, so you don’t waste time on landlines.
 
-- **Phone Carrier Info**
-  - Know if it's a landline or mobile
-  - Get carrier name (Verizon, AT&T, etc.)
-  - Essential for calling—don't waste time on landlines
+- **Apollo Leads Enrichment**
+  - Find decision-makers (CEO, Founder, etc.) at any business via apollo.io. Apollo is the [highest-rated lead generation tool on G2](https://www.g2.com/categories/lead-capture) with 8,500+ reviews.
+  - Get their name, title, verified work email, LinkedIn, phone number, and company data.
 
-- **Place Sales Summary**
-  - AI-generated business context from their Google Maps listing
-  - Tailored to YOUR product—tell us what you sell, we tell you how to pitch them
-  - Walk into calls knowing exactly what problems you can solve for them
 
 **Bottom line:** Same leads, same sales—but with enrichment, your conversion rate multiplies. That's more customers from the same effort.
 
-[Start enriching for free](https://www.omkar.cloud/tools/business-enrichment)—600 credits/month included.
+[Start enriching for free](https://www.omkar.cloud/tools/business-enrichment)—100 credits free/month. No credit card needed.
 
 ### ❓ Enough theory. Give me real-world examples of how I can use this tool to find customers.
 
@@ -884,11 +881,11 @@ Let us know! We consider feature requests and can suggest alternatives if we can
 
 ### ❓ Questions? We have answers.
 
-Reach out anytime. We will solve your query within 1 working day.
+We have the most awesome support team in the 🌌 Milky Way galaxy! Just message us and we will solve your query ✅ within 1 working day.
+
 [![Contact Us on WhatsApp about Google Maps Scraper](https://raw.githubusercontent.com/omkarcloud/assets/master/images/whatsapp-us.png)](https://api.whatsapp.com/send?phone=918178804274&text=I%20need%20help%20with%20using%20the%20Google%20Maps%20Extractor%20Tool.)
 
 [![Contact Us on Email about Google Maps Scraper](https://raw.githubusercontent.com/omkarcloud/assets/master/images/ask-on-email.png)](mailto:happy.to.help@omkar.cloud?subject=Help%20with%20Google%20Maps%20Extractor%20Tool&body=I%20need%20help%20with%20using%20the%20Google%20Maps%20Extractor%20Tool.)
-Feel free to message us. We typically reply within 1 working day.
 
 ### ❓ Love It? Star It ⭐!
 
