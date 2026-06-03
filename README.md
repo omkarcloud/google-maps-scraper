@@ -1,21 +1,3 @@
-> [!IMPORTANT]
-
-> We've replaced the Website Contacts Scraper with the new **Business Enrichment API**—same features, plus more:
-
-- Social Links & Emails (same as before)
-- AI-Recommended Emails for Sales Outreach
-- Email Verification
-- Phone Carrier Info
-- Place Sales Summary
-
-**If you're on the old Website Contacts Scraper:**
-
-1. Cancel your subscription at [Subscriptions Page](https://www.omkar.cloud/billing/subscriptions)
-2. Request a refund for this month at [Payments Page](https://www.omkar.cloud/billing/transaction-history)
-3. Switch to the new API at [Business Enrichment API](https://www.omkar.cloud/tools/business-enrichment)
-
-Questions? [WhatsApp us here](https://api.whatsapp.com/send?phone=918178804274&text=I%20have%20questions%20about%20the%20Business%20Enrichment%20API.)
-
 ![Google Maps Extractor Featured Image](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/google-maps-scraper-feautred-image.png)
 
 <div align="center" style="margin-top: 0;">
@@ -720,7 +702,7 @@ Get the pro version, only when you exceed the free plan limit of **200** searche
 2. Go to the [Google Maps Extractor Pricing Page](https://www.omkar.cloud/tools/google-maps-extractor?initial_tab=pricing) and make a one-time payment of $28 using PayPal or a credit/debit card.
 ![Pricing Page](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/pricing.png)
 
-💳 Note: Your card details are handled securely by PayPal and never shared with us.
+💳 Note: Your payment details are handled exclusively by PayPal using industry-standard encryption. We have zero access to your card information — it's never shared with or stored on our systems.
 
 ![PayPal Secure](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/paypal-secure.png)
 
@@ -889,11 +871,11 @@ We have the most awesome support team in the 🌌 Milky Way galaxy! Just message
 
 ### ❓ Love It? Star It ⭐!
 
-We've poured thousands of hours into building this—so you can find customers and grow your business.
 
-If this tool has been helpful, please give us a **star ⭐** on GitHub. You have a big heart ❤️—it takes just one click, and you'll be doing us a great favor.
 
-![Star us on GitHub](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/star-us.png)
+PS. From one founder to another. If this tool has been helpful, please give a **star ⭐** on GitHub. It takes just one click, and it would mean the world to me. And help our fellow founders find it as well.
+
+![Star me on GitHub](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/star-us.png)
 
 ## Made with ❤️ using [Botasaurus Web Scraping Framework](https://www.omkar.cloud/l/google-maps-to-botasaurus/)
 
