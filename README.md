@@ -71,7 +71,7 @@ For every business, you get the major data points you need to sell:
 - Email and social profiles (via enrichment)
 - Rating and number of reviews
 
-That's just the start — the tool extracts **50+ data points** in total. See the full list in [advanced.md (Are there any usage limits?)](advanced.md#are-there-any-usage-limits).
+That's just the start — the tool extracts **50+ data points** in total. See the full list in [advanced.md (Are there any usage limits?)](https://github.com/omkarcloud/google-maps-scraper/blob/master/advanced.md#are-there-any-usage-limits).
 
 On top of the raw data, **business enrichment** gets you sales-ready contacts: verified emails, decision-makers (CEO, Founder, etc.), and phone carrier info so you don't waste time on landlines.
 
@@ -108,7 +108,7 @@ The most important decision is **who** you sell to. For example, if you are sell
 ![Developer Stickers Pack](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/video-thumbnails/developer-stickers-pack.jpg)
 It's way easier to sell them to developers, than to marketers.
 
-Watch this to pick a winning category of buyers in minutes:
+Watch this to pick a winning category of buyers for your product in minutes:
 
 [![Best Customers on Google Maps to Sell To — The #1 Startup Decision](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/video-thumbnails/best-category.png)](https://www.youtube.com/watch?v=vR45CU1WQkU)
 
@@ -223,34 +223,34 @@ To get the most out of enrichment, read the [Enrichment Documentation](https://w
 
 ## 📚 Learn More
 
-Deeper guides and answers live in [advanced.md](advanced.md):
+Deeper guides and answers live in [advanced.md](https://github.com/omkarcloud/google-maps-scraper/blob/master/advanced.md):
 
 ### Developers FAQs
-- [How can I get results via API?](advanced.md#how-can-i-get-results-via-api)
-- [How did you build this extractor?](advanced.md#how-did-you-build-this-extractor)
-- [Any other products that might be useful to me?](advanced.md#any-other-products-that-might-be-useful-to-me)
+- [How can I get results via API?](https://github.com/omkarcloud/google-maps-scraper/blob/master/advanced.md#how-can-i-get-results-via-api)
+- [How did you build this extractor?](https://github.com/omkarcloud/google-maps-scraper/blob/master/advanced.md#how-did-you-build-this-extractor)
+- [Any other products that might be useful to me?](https://github.com/omkarcloud/google-maps-scraper/blob/master/advanced.md#any-other-products-that-might-be-useful-to-me)
 
 ### App Specific FAQs
-- [What are the various search strategies, and which one should I use?](advanced.md#what-are-the-various-search-strategies-and-which-one-should-i-use)
-- [How to use the Geolocation feature?](advanced.md#how-to-use-the-geolocation-feature)
-- [How to create polygons and search using Geolocation?](advanced.md#how-to-create-polygons-and-search-using-geolocation)
-- [How do I stop or abort a running task?](advanced.md#how-do-i-stop-or-abort-a-running-task)
-- [I want all businesses in a country. What's the best approach?](advanced.md#i-want-all-businesses-in-a-country-whats-the-best-approach)
-- [Are there any usage limits? (and 50+ data points)](advanced.md#are-there-any-usage-limits)
-- [How to get the Pro Version?](advanced.md#how-to-get-the-pro-version)
-- [How do I get a refund?](advanced.md#how-do-i-get-a-refund)
-- [How do I preserve non-English characters when exporting?](advanced.md#how-do-i-preserve-non-english-characters-when-exporting)
-- [Do I need to do anything else to use the tool effectively?](advanced.md#do-i-need-to-do-anything-else-to-use-the-tool-effectively)
-- [On macOS, Chrome is not opening when I run the app. What should I do?](advanced.md#on-macos-chrome-is-not-opening-when-i-run-the-app-what-should-i-do)
-- [Why does the result count drop after a task completes?](advanced.md#why-does-the-result-count-drop-after-a-task-completes)
+- [What are the various search strategies, and which one should I use?](https://github.com/omkarcloud/google-maps-scraper/blob/master/advanced.md#what-are-the-various-search-strategies-and-which-one-should-i-use)
+- [How to use the Geolocation feature?](https://github.com/omkarcloud/google-maps-scraper/blob/master/advanced.md#how-to-use-the-geolocation-feature)
+- [How to create polygons and search using Geolocation?](https://github.com/omkarcloud/google-maps-scraper/blob/master/advanced.md#how-to-create-polygons-and-search-using-geolocation)
+- [How do I stop or abort a running task?](https://github.com/omkarcloud/google-maps-scraper/blob/master/advanced.md#how-do-i-stop-or-abort-a-running-task)
+- [I want all businesses in a country. What's the best approach?](https://github.com/omkarcloud/google-maps-scraper/blob/master/advanced.md#i-want-all-businesses-in-a-country-whats-the-best-approach)
+- [Are there any usage limits? (and 50+ data points)](https://github.com/omkarcloud/google-maps-scraper/blob/master/advanced.md#are-there-any-usage-limits)
+- [How to get the Pro Version?](https://github.com/omkarcloud/google-maps-scraper/blob/master/advanced.md#how-to-get-the-pro-version)
+- [How do I get a refund?](https://github.com/omkarcloud/google-maps-scraper/blob/master/advanced.md#how-do-i-get-a-refund)
+- [How do I preserve non-English characters when exporting?](https://github.com/omkarcloud/google-maps-scraper/blob/master/advanced.md#how-do-i-preserve-non-english-characters-when-exporting)
+- [Do I need to do anything else to use the tool effectively?](https://github.com/omkarcloud/google-maps-scraper/blob/master/advanced.md#do-i-need-to-do-anything-else-to-use-the-tool-effectively)
+- [On macOS, Chrome is not opening when I run the app. What should I do?](https://github.com/omkarcloud/google-maps-scraper/blob/master/advanced.md#on-macos-chrome-is-not-opening-when-i-run-the-app-what-should-i-do)
+- [Why does the result count drop after a task completes?](https://github.com/omkarcloud/google-maps-scraper/blob/master/advanced.md#why-does-the-result-count-drop-after-a-task-completes)
 
 ### Services & About
-- [Can you tell me about the Done For You service?](advanced.md#can-you-tell-me-about-the-done-for-you-service)
-- [Do you do custom big data projects?](advanced.md#do-you-do-custom-big-data-projects)
-- [I need a feature from another app. Can you add it?](advanced.md#i-need-a-feature-from-another-app-can-you-add-it)
-- [Tell me about Omkar Cloud](advanced.md#tell-me-about-omkar-cloud)
-- [Why should I use your product over bigger brands?](advanced.md#why-should-i-use-your-product-over-bigger-brands)
-- [What else can I use this tool for?](advanced.md#what-else-can-i-use-this-tool-for)
+- [Can you tell me about the Done For You service?](https://github.com/omkarcloud/google-maps-scraper/blob/master/advanced.md#can-you-tell-me-about-the-done-for-you-service)
+- [Do you do custom big data projects?](https://github.com/omkarcloud/google-maps-scraper/blob/master/advanced.md#do-you-do-custom-big-data-projects)
+- [I need a feature from another app. Can you add it?](https://github.com/omkarcloud/google-maps-scraper/blob/master/advanced.md#i-need-a-feature-from-another-app-can-you-add-it)
+- [Tell me about Omkar Cloud](https://github.com/omkarcloud/google-maps-scraper/blob/master/advanced.md#tell-me-about-omkar-cloud)
+- [Why should I use your product over bigger brands?](https://github.com/omkarcloud/google-maps-scraper/blob/master/advanced.md#why-should-i-use-your-product-over-bigger-brands)
+- [What else can I use this tool for?](https://github.com/omkarcloud/google-maps-scraper/blob/master/advanced.md#what-else-can-i-use-this-tool-for)
 
 ## 💬 Have Questions?
 
