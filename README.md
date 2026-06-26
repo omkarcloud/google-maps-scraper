@@ -105,7 +105,7 @@ Watch the full walkthrough below — choosing the right search strategy, applyin
 
 The most important decision is **who** you sell to. For example, if you are selling developer stickers pack like this one. 
 
-![Developer Stickers Pack](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/developer-stickers-pack.png)
+![Developer Stickers Pack](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/video-thumbnails/developer-stickers-pack.jpg)
 It's way easier to sell them to developers, than to marketers.
 
 Watch this to pick a winning category of buyers in minutes:
