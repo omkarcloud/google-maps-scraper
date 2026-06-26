@@ -85,7 +85,9 @@ To use this tool, ensure you have **Google Chrome** installed. Then download for
 
 **For Windows:**
 - [Download the Windows Version](https://google-maps-extractor-omkar-cloud.s3.amazonaws.com/Google+Maps+Extractor.exe)
-- You'll see a popup saying Windows Defender blocked an app from an **unknown publisher**. The app is safe and most popular Google Maps Scraper on GitHub — 2.8K+ stars. You may also see a Windows Firewall popup—click **Allow Access** to continue.
+- You'll see a popup saying that Windows Defender blocked an app from an **unknown publisher**. It's the most popular Google Maps scraper on GitHub, with 2.8K+ stars, and is completely safe to use.
+
+You may also see a Windows Firewall popup—click **Allow Access** to continue.
 
 **For Ubuntu/Debian:**
 - [Download .deb](https://google-maps-extractor-omkar-cloud.s3.amazonaws.com/Google+Maps+Extractor-amd64.deb) ([arm64 version](https://google-maps-extractor-omkar-cloud.s3.amazonaws.com/Google+Maps+Extractor-arm64.deb))
@@ -98,8 +100,8 @@ Then enter your search query and **press the Run button** to get 200+ search res
 ![GIF of Google Maps Extractor Visit, Highlight Keyword, Run, See Results](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/demo.gif)
 
 Watch the full walkthrough below — choosing the right search strategy, applying filters, and exporting a clean, ready-to-sell lead list. Ten minutes here you will completely understand how to use the tool to its max potential to get customers.
-
-[![Detailed Demo (10 min) — Google Maps Scraper Full Tutorial](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/video-thumbnails/detailed-demo.png)](https://www.youtube.com/watch?v=1zCenEuKvjc)
+<!-- next version tell retry as well. show failed. say network issue -->
+[![Detailed Demo (5 min) — Google Maps Scraper Full Tutorial](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/video-thumbnails/detailed-demo.png)](https://www.youtube.com/watch?v=1zCenEuKvjc)
 
 ### Which category in Google Maps is best for my business?
 
