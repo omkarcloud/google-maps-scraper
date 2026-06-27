@@ -180,7 +180,7 @@ Just do it by yourself first. It only takes a few focused days, and once you are
 
 Still unsure if this fits your business? Book a free 15-minute call with founder Chetan Jain for an honest, no-pressure answer—plus the exact target category and filters for your product.
 
-[Book your free call with Chetan](https://omkar.cloud/l/meet-chetan/) (limited time, June and July only).
+[Book your FREE call with Chetan](https://omkar.cloud/l/meet-chetan/) (limited time, June and July only).
 
 ### How to use enrichment to get more customers
 
@@ -254,14 +254,17 @@ Deeper guides and answers live in [advanced.md](https://github.com/omkarcloud/go
 - [Why should I use your product over bigger brands?](https://github.com/omkarcloud/google-maps-scraper/blob/master/advanced.md#why-should-i-use-your-product-over-bigger-brands)
 - [What else can I use this tool for?](https://github.com/omkarcloud/google-maps-scraper/blob/master/advanced.md#what-else-can-i-use-this-tool-for)
 
-## 💬 Have Questions?
+## 💬 Have Questions? We have answers.
 
-- Ask in our [GitHub Discussions forum](https://github.com/omkarcloud/google-maps-scraper/discussions).
-- [Email us](mailto:happy.to.help@omkar.cloud?subject=Help%20with%20Google%20Maps%20Extractor%20Tool&body=I%20need%20help%20with%20using%20the%20Google%20Maps%20Extractor%20Tool.)
-- [WhatsApp us](https://api.whatsapp.com/send?phone=918178804274&text=I%20need%20help%20with%20using%20the%20Google%20Maps%20Extractor%20Tool.)
-- **Book a call** with founder Chetan Jain (limited time, June and July only) to determine the best target category for your product or resolve any product-related questions. 
+[![Message Us on WhatsApp about Google Maps Scraper](https://raw.githubusercontent.com/omkarcloud/assets/master/images/whatsapp-us.png)](https://api.whatsapp.com/send?phone=918178804274&text=I%20need%20help%20with%20using%20the%20Google%20Maps%20Extractor%20Tool.)
 
-Link: https://omkar.cloud/l/meet-chetan/
+[![Ask Us on Email about Google Maps Scraper](https://raw.githubusercontent.com/omkarcloud/assets/master/images/ask-on-email.png)](mailto:happy.to.help@omkar.cloud?subject=Help%20with%20Google%20Maps%20Extractor%20Tool&body=I%20need%20help%20with%20using%20the%20Google%20Maps%20Extractor%20Tool.)
+
+You are important to us, just message us and we will solve your problem ✅ within 1 working day. 🩷 Pinky Promise 🤙!
+
+Prefer to talk it through? You can also **book a call** with founder Chetan Jain (limited time, June and July only) to figure out the best target category for your product or to resolve any product-related questions.
+
+👉 Book your FREE call here: https://omkar.cloud/l/meet-chetan/
 
 ### Love It? Review Us ⭐
 
