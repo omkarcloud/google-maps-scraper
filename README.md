@@ -35,7 +35,7 @@ Loved of developers, Most Popular Google Maps Scraper App on GitHub — 2.8K+ st
 Sure, we aren't as big as Apify, Outscraper but our product can get you the absolute highest number of results per city, with the most generous free tier in the market.
 
 - **Most Popular** Google Maps Scraper App on GitHub — **2.8K+ stars**.
-- **Most Generous Free Version** in the market — **200 free searches** every month, and each search can yield **100 to 1000+ results**. So you can get tens of thousands of leads per month, free.
+- **Free Version is Most Generous** in the market — **200 free searches** every month, and each search can yield **100 to 1000+ results**. So you can get 10,000+ leads per month, FREE.
 - **Lowest Cost** Google Maps Scraper in the market — **unlimited lifetime results** for a single one-time payment.
 - **Complete system** — Everything from finding leads, to cold calling and cold emailing, to closing your first deal.
 - **50+ data points** — Extracted in real-time.
@@ -227,12 +227,8 @@ To get the most out of enrichment, read the [Enrichment Documentation](https://w
 
 Deeper guides and answers live in [advanced.md](https://github.com/omkarcloud/google-maps-scraper/blob/master/advanced.md):
 
-### Developers FAQs
-- [How can I get results via API?](https://github.com/omkarcloud/google-maps-scraper/blob/master/advanced.md#how-can-i-get-results-via-api)
-- [How did you build this extractor?](https://github.com/omkarcloud/google-maps-scraper/blob/master/advanced.md#how-did-you-build-this-extractor)
-- [Any other products that might be useful to me?](https://github.com/omkarcloud/google-maps-scraper/blob/master/advanced.md#any-other-products-that-might-be-useful-to-me)
-
 ### App Specific FAQs
+- [Do I need to do anything else to use the tool effectively?](https://github.com/omkarcloud/google-maps-scraper/blob/master/advanced.md#do-i-need-to-do-anything-else-to-use-the-tool-effectively) [Very Very Important! MUST READ]
 - [What are the various search strategies, and which one should I use?](https://github.com/omkarcloud/google-maps-scraper/blob/master/advanced.md#what-are-the-various-search-strategies-and-which-one-should-i-use)
 - [How to use the Geolocation feature?](https://github.com/omkarcloud/google-maps-scraper/blob/master/advanced.md#how-to-use-the-geolocation-feature)
 - [How to create polygons and search using Geolocation?](https://github.com/omkarcloud/google-maps-scraper/blob/master/advanced.md#how-to-create-polygons-and-search-using-geolocation)
@@ -242,9 +238,13 @@ Deeper guides and answers live in [advanced.md](https://github.com/omkarcloud/go
 - [How to get the Pro Version?](https://github.com/omkarcloud/google-maps-scraper/blob/master/advanced.md#how-to-get-the-pro-version)
 - [How do I get a refund?](https://github.com/omkarcloud/google-maps-scraper/blob/master/advanced.md#how-do-i-get-a-refund)
 - [How do I preserve non-English characters when exporting?](https://github.com/omkarcloud/google-maps-scraper/blob/master/advanced.md#how-do-i-preserve-non-english-characters-when-exporting)
-- [Do I need to do anything else to use the tool effectively?](https://github.com/omkarcloud/google-maps-scraper/blob/master/advanced.md#do-i-need-to-do-anything-else-to-use-the-tool-effectively)
 - [On macOS, Chrome is not opening when I run the app. What should I do?](https://github.com/omkarcloud/google-maps-scraper/blob/master/advanced.md#on-macos-chrome-is-not-opening-when-i-run-the-app-what-should-i-do)
 - [Why does the result count drop after a task completes?](https://github.com/omkarcloud/google-maps-scraper/blob/master/advanced.md#why-does-the-result-count-drop-after-a-task-completes)
+
+### Developers FAQs
+- [How can I get results via API?](https://github.com/omkarcloud/google-maps-scraper/blob/master/advanced.md#how-can-i-get-results-via-api)
+- [How did you build this extractor?](https://github.com/omkarcloud/google-maps-scraper/blob/master/advanced.md#how-did-you-build-this-extractor)
+- [Any other products that might be useful to me?](https://github.com/omkarcloud/google-maps-scraper/blob/master/advanced.md#any-other-products-that-might-be-useful-to-me)
 
 ### Services & About
 - [Can you tell me about the Done For You service?](https://github.com/omkarcloud/google-maps-scraper/blob/master/advanced.md#can-you-tell-me-about-the-done-for-you-service)

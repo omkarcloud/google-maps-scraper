@@ -392,10 +392,19 @@ In case you are unable to view the non-English characters properly in Excel, the
   - **On Mac**:
       Open **Settings** > **Lock Screen**, then set the following settings to "Never."
       ![mac-sleep](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/mac-sleep.png)
-  - **Linux?**:
+  - **Ubuntu?**:
      You're awesome at computers, so go ahead and figure it out! ;)
 
-2. Ensure you maintain a stable Internet connection, as switching connections will cause currently running tasks to fail.
+2. Keep the System Awake and Running
+  The tool only runs while your computer is awake, so keep the system on and **do not close your laptop's lid**, as doing so puts it to sleep and stops the tool.
+
+  If you'd like the tool to keep scraping at night (for example, after you leave the office) but your main account holds sensitive data that you don't want anyone to access, do the following:
+
+  - Create a **separate user account** on your Mac or Windows machine.
+  - Run the app in that second account.
+  - macOS and Windows both keep apps running in the background of a signed-in account even when you switch users. So during the day you can work in your main account while the second account keeps scraping, and when you head home you simply **switch to the second account** and leave the machine running overnight.
+
+3. Ensure you maintain a stable Internet connection, as switching connections will cause currently running tasks to fail.
 
 ### On macOS, Chrome is not opening when I run the app. What should I do?
 
