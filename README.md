@@ -124,6 +124,10 @@ Watch the full walkthrough below — choosing the right search strategy, applyin
 <!-- next version tell retry as well. show failed. say network issue -->
 [![Detailed Demo (5 min) — Google Maps Scraper Full Tutorial](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/video-thumbnails/detailed-demo.png)](https://www.youtube.com/watch?v=1zCenEuKvjc)
 
+### What is my auth token?
+
+Your auth token is `{{ AUTH_TOKEN }}`. You can use it when installing on an [AWS EC2 server](https://github.com/omkarcloud/google-maps-scraper/blob/master/server-deployment.md).
+
 ## 🔍 What are the various search strategies, and which one should I use?
 
 This is slightly complex stuff, but if you want 10,000+ leads in a city, you must understand this.
@@ -209,18 +213,16 @@ That's it. You can find enrichment results in the "Overview" View.
 
 ![enrichment-results.png](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/enrichment-results.png)
 
-To get the most out of enrichment, read the [Enrichment Documentation](https://www.omkar.cloud/tools/business-enrichment).
+To get the most out of enrichment, read the [Enrichment Documentation](https://www.omkar.cloud/tools/business-enrichment/about).
 
 [Start enriching for free](https://www.omkar.cloud/tools/business-enrichment)—100 credits free/month. No credit card needed.
 
 
 ## 💰 Pricing
 
-| Plan | Price | Searches | Best for |
-|------|-------|----------|----------|
-| **Free** | Free | 200 searches/month | Getting your first 20,000+ leads. No credit card needed. |
-| **Starter** | $16/month | 5,000 searches/month | Getting clients every month, in city after city. |
-| **Unlimited** | $48/month | Unlimited | Agencies and heavy users extracting country-level data at scale. |
+- **Free — Free, 200 searches/month.** Getting your first 20,000+ leads. No credit card needed.
+- **Starter — $16/month, 5,000 searches/month.** Getting clients every month, in city after city.
+- **Unlimited — $48/month, Unlimited searches.** Agencies and heavy users extracting country-level data at scale.
 
 Each search yields **100 to 1,000+ results** (10,000+ with the Detailed/Zoom 18 strategy). Apify and Outscraper charge you per result; we charge per search — so 5,000 searches can mean hundreds of thousands of leads. That's the cheapest per-lead cost in the market. 
 
