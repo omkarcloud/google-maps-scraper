@@ -111,10 +111,18 @@ To use this tool, ensure you have **Google Chrome** installed. Then download for
 You may also see a Windows Firewall popup—click **Allow Access** to continue.
 
 **For Ubuntu/Debian:**
-- [Download .deb](https://www.omkar.cloud/l/deb) ([arm64 version](https://www.omkar.cloud/l/deb-arm))
+- Most desktop users: [Download .deb](https://google-maps-extractor-omkar-cloud.s3.amazonaws.com/Google+Maps+Extractor-amd64.deb)
+- Raspberry Pi and some cloud servers: [Download .deb for arm64](https://google-maps-extractor-omkar-cloud.s3.amazonaws.com/Google+Maps+Extractor-arm64.deb)
+
+Note: On Ubuntu 24.04 and later, the app must be launched from the terminal with the following command:
+
+```bash
+googlemapsextractor --no-sandbox
+```
 
 **For Fedora/CentOS/Red Hat:**
-- [Download .rpm](https://www.omkar.cloud/l/rpm) ([aarch64 version](https://www.omkar.cloud/l/rpm-arm))
+- Most desktop users: [Download .rpm](https://google-maps-extractor-omkar-cloud.s3.amazonaws.com/Google+Maps+Extractor-x86_64.rpm)
+- Raspberry Pi and some cloud servers: [Download .rpm for arm64](https://google-maps-extractor-omkar-cloud.s3.amazonaws.com/Google+Maps+Extractor-aarch64.rpm)
 
 Then enter your search query and **press the Run button** to get 1000+ leads.
 
