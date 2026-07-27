@@ -56,8 +56,8 @@ Sure, we aren't as big as Apify or Outscraper, but our product can get you the a
 
 Talk is cheap — here are results I extracted using this tool:
 
-- 🍔 **8,095 restaurants in New York City** — [Download csv and see results](https://www.omkar.cloud/l/restaurant-in-new-york-city)
-- 💪 **2,958 gyms in Delhi** — [Download csv and see results](https://www.omkar.cloud/l/gym-in-delhi)
+- 🍔 **14,979 restaurants in New York City** — [Download csv and see results](https://www.omkar.cloud/l/restaurant-in-new-york-city)
+- 💪 **5,868 gyms in Delhi** — [Download csv and see results](https://www.omkar.cloud/l/gym-in-delhi)
 
 All in just 3 searches, with 197 searches still left in the free plan 😎. 
 
