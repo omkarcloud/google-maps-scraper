@@ -32,7 +32,7 @@ Loved by business owners and developers — the Most Popular Google Maps Scraper
 
 <!-- **Find businesses on Google Maps, get their contacts, and turn them into paying customers — all in one tool, end to end.** -->
 
-Sure, we aren't as big as Apify or Outscraper, but our product can get you the absolute highest number of results per city, with the most generous free tier in the Google Maps lead generation market.
+Sure, we aren't as big as Apify or Outscraper, but our product can get you the absolute **highest** number of results per city, with the most generous free tier in the Google Maps lead generation market.
 
 <!-- TODO -->
 <!-- - **Higher results per city.** Same query, more leads. Here's "restaurants in NYC" from Apify vs from Omkar: -->
@@ -49,7 +49,7 @@ Sure, we aren't as big as Apify or Outscraper, but our product can get you the a
 - **Enrichment included** — Get emails, social profiles, and decision-maker contacts for max conversion.
 - **Reviews Extraction that actually works!** 
 - **Built-in API** for easy Python/Node.js integration. Easy docs for developers.
-- **Rated Excellent — 4.5 based on 19 reviews** on [Trustpilot](https://www.trustpilot.com/review/omkar.cloud). Our open source work is sponsored by [1000+ devs on GitHub](https://github.com/sponsors/omkarcloud).
+- **Rated Excellent — 4.6 based on 22 reviews** on [Trustpilot](https://www.trustpilot.com/review/omkar.cloud). Our open source work is sponsored by [1000+ devs on GitHub](https://github.com/sponsors/omkarcloud).
 
 
 ## Results
