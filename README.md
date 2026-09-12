@@ -265,7 +265,7 @@ Become my star hero by giving us a star ⭐ on GitHub!
 
 It's just 1 click, but it means the world to me.
 
-![Star us on GitHub](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/star-us.png)
+[![Star us on GitHub](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/star-us.png)](https://github.com/omkarcloud/google-maps-scraper)
 
 ### Not in your Budget?
 
