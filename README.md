@@ -261,7 +261,7 @@ You're a buisness owner — we know how hard getting customers is. So we offer f
 
 ## Love It? [Star It ⭐!](https://github.com/omkarcloud/google-maps-scraper)
 
-Become my star hero by giving us a star ⭐ on GitHub!
+Star the repo ⭐ and become a star hero!
 
 It's just 1 click, but it means the world to me.
 
