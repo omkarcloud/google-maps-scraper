@@ -22,7 +22,7 @@
 
 Google Maps Extractor helps you get leads from Google Maps. 
 
-Loved by business owners and developers — the Most Popular Google Maps Scraper App on GitHub, with 2.8K+ stars.
+Loved by business owners and developers — the Most Popular Google Maps Scraper App on GitHub, with 3.5K+ stars.
 
 ## ⚡ Benefits
 
@@ -39,12 +39,12 @@ Sure, we aren't as big as Apify or Outscraper, but our product can get you the a
 
 <!-- [PLACEHOLDER IMAGE: free plan comparison — Apify $5 credit (~1,250 leads) vs Omkar free tier (20,000+ leads/month)] -->
 
-- **Most Popular** Google Maps Scraper App on GitHub — **2.8K+ stars**.
+- **Most Popular** Google Maps Scraper App on GitHub — **3.5K+ stars**.
 - **50+ data points** — Extracted in real-time.
 - **Enrichment included** — Get emails, social profiles, and decision-maker contacts for max conversion.
 - **Reviews Extraction that actually works!** 
 - **Built-in API** for easy Python/Node.js integration. Easy docs for developers.
-- **Rated Excellent — 4.6 based on 22 reviews** on [Trustpilot](https://www.trustpilot.com/review/omkar.cloud). Our open source work is sponsored by [1000+ devs on GitHub](https://github.com/sponsors/omkarcloud).
+- **Rated Excellent — 4.7 based on 31 reviews** on [Trustpilot](https://www.trustpilot.com/review/omkar.cloud). Our open source work is sponsored by [1000+ devs on GitHub](https://github.com/sponsors/omkarcloud).
 
 
 ## Results
@@ -253,28 +253,19 @@ Deeper guides and answers live in [advanced.md](https://github.com/omkarcloud/go
 
 ## 💬 Have Questions? We have answers.
 
+You're a buisness owner — we know how hard getting customers is. So we offer full support: just message us and we'll reply ✅ with a solution within 1 working day.
+
 [![Message Us on WhatsApp about Google Maps Scraper](https://raw.githubusercontent.com/omkarcloud/assets/master/images/whatsapp-us.png)](https://api.whatsapp.com/send?phone=918178804274&text=I%20need%20help%20with%20using%20the%20Google%20Maps%20Extractor%20Tool.)
 
 [![Ask Us on Email about Google Maps Scraper](https://raw.githubusercontent.com/omkarcloud/assets/master/images/ask-on-email.png)](mailto:happy.to.help@omkar.cloud?subject=Help%20with%20Google%20Maps%20Extractor%20Tool&body=I%20need%20help%20with%20using%20the%20Google%20Maps%20Extractor%20Tool.)
 
-You are important to us — just message us and we will solve your problem ✅ within 1 working day. 🩷 Pinky Promise 🤙!
+## Love It? [Star It ⭐!](https://github.com/omkarcloud/google-maps-scraper)
 
-Prefer to talk it through? You can also **book a call** to resolve any product-related questions.
+Become my star hero by giving us a star ⭐ on GitHub!
 
-👉 Book your FREE call here: https://omkar.cloud/l/meet-chetan/
+It's just 1 click, but it means the world to me.
 
-### Love It? Review Us ⭐
-
-From one business owner to another: if this tool has helped you, please leave an honest review on Trustpilot. It takes less than a minute, and it means a lot.
-
-Here's why it matters. Most people judge a product by its reviews. Your review helps another business owner—someone just like you, looking for leads and trying to grow their business—discover this tool, find customers, and support their family.
-
-So I'll ask you a simple favor: will you help the next business owner find us? You won't get credit for it, but you'll make a real difference.
-
-If you will, please leave a review. It takes only 60 seconds, and I will personally thank you for it within 1 day. 
-<!-- [ Video placeholder — Leave a Trustpilot review ] -->
-
-[https://www.trustpilot.com/review/omkar.cloud](https://www.trustpilot.com/review/omkar.cloud)
+![Star us on GitHub](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/star-us.png)
 
 ### Not in your Budget?
 
