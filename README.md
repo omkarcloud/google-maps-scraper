@@ -20,10 +20,6 @@
 
 ---
 
-> **Disclaimer:** This Google Maps Scraper is provided for educational and research purposes only. By using it, you agree to comply with local and international laws regarding data scraping and privacy. For any concerns, please contact Chetan Jain at [chetan@omkar.cloud](mailto:chetan@omkar.cloud).
-
----
-
 Google Maps Extractor helps you get leads from Google Maps. 
 
 Loved by business owners and developers — the Most Popular Google Maps Scraper App on GitHub, with 2.8K+ stars.
@@ -44,7 +40,6 @@ Sure, we aren't as big as Apify or Outscraper, but our product can get you the a
 <!-- [PLACEHOLDER IMAGE: free plan comparison — Apify $5 credit (~1,250 leads) vs Omkar free tier (20,000+ leads/month)] -->
 
 - **Most Popular** Google Maps Scraper App on GitHub — **2.8K+ stars**.
-
 - **50+ data points** — Extracted in real-time.
 - **Enrichment included** — Get emails, social profiles, and decision-maker contacts for max conversion.
 - **Reviews Extraction that actually works!** 
@@ -98,31 +93,9 @@ On top of the raw data, **business enrichment** gets you sales-ready contacts: v
 
 ### How to use it?
 
-To use this tool, ensure you have **Google Chrome** installed. Then download for your OS:
+To use this tool, ensure you have **Google Chrome** installed. Then download the app:
 
-**For Mac:**
-- [Download the Mac Version](https://www.omkar.cloud/l/mac)
-- We are a verified publisher with Apple, so you can install it without facing any issues.
-
-**For Windows:**
-- [Download the Windows Version](https://www.omkar.cloud/l/win)
-- You'll see a popup saying that Windows Defender blocked an app from an **unknown publisher**. It's the most popular Google Maps scraper on GitHub, with 2.8K+ stars, and is completely safe to use.
-
-You may also see a Windows Firewall popup—click **Allow Access** to continue.
-
-**For Ubuntu/Debian:**
-- Most desktop users: [Download .deb](https://google-maps-extractor-omkar-cloud.s3.amazonaws.com/Google+Maps+Extractor-amd64.deb)
-- Raspberry Pi and some cloud servers: [Download .deb for arm64](https://google-maps-extractor-omkar-cloud.s3.amazonaws.com/Google+Maps+Extractor-arm64.deb)
-
-Note: On Ubuntu 24.04 and later, the app must be launched from the terminal with the following command:
-
-```bash
-googlemapsextractor --no-sandbox
-```
-
-**For Fedora/CentOS/Red Hat:**
-- Most desktop users: [Download .rpm](https://google-maps-extractor-omkar-cloud.s3.amazonaws.com/Google+Maps+Extractor-x86_64.rpm)
-- Raspberry Pi and some cloud servers: [Download .rpm for arm64](https://google-maps-extractor-omkar-cloud.s3.amazonaws.com/Google+Maps+Extractor-aarch64.rpm)
+👉 **[Download Google Maps Extractor](https://www.omkar.cloud/google-maps-extractor/download)**.
 
 Then enter your search query and **press the Run button** to get 1000+ leads.
 
@@ -131,10 +104,6 @@ Then enter your search query and **press the Run button** to get 1000+ leads.
 Watch the full walkthrough below — choosing the right search strategy, applying filters, and exporting a clean, ready-to-sell lead list. Ten minutes here and you will completely understand how to use the tool to get maximum leads.
 <!-- next version tell retry as well. show failed. say network issue -->
 [![Detailed Demo (5 min) — Google Maps Scraper Full Tutorial](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/video-thumbnails/detailed-demo.png)](https://www.youtube.com/watch?v=1zCenEuKvjc)
-
-### What is my auth token?
-
-Your auth token is `{{ AUTH_TOKEN }}`. You can use it when installing on an [AWS EC2 server](https://github.com/omkarcloud/google-maps-scraper/blob/master/server-deployment.md).
 
 ## 🔍 What are the various search strategies, and which one should I use?
 
@@ -199,6 +168,8 @@ Enrichment turns Google Maps business data into sales-ready contacts—same lead
 - Find the best email for outreach, with deliverability verification.
 - Get social profiles, like Twitter, LinkedIn, etc., to get more information about the customer.
 
+The website enrichment part (extracting emails and social profiles from business websites) is open source. See [website-email-contact-scraper](https://github.com/omkarcloud/website-email-contact-scraper).
+
 <!-- [PLACEHOLDER VIDEO: Enrichment demo — same leads, higher conversion] -->
 
 Follow these steps to start using enrichment:
@@ -249,11 +220,6 @@ Watch the full 2-click refund process:
 
 We have made the refund process easier than cutting a cake 🎂. Why? Because we are confident in the value our product brings 😎.
 
-## 🤙 Still unsure?
-
-Have questions before buying? Book a free 15-minute call with a product expert.
-
-👉 [Book your FREE call here](https://omkar.cloud/l/meet-chetan/)
 
 ## 📚 Learn More
 
