@@ -115,6 +115,15 @@ Talk is cheap. Here's what I extracted with this tool:
 
 ## ❓ FAQs
 
+## 🛑 How do I cancel a running search?
+
+Click on the Abort Icon to abort the task.
+
+![abort-task.png](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/abort-task.png)
+
+**Note:**
+- Aborting an All Task will abort its child tasks.
+
 ## 🔍 Which search strategy should I use?
 
 Stick with the default **Detailed** strategy. It finds the most businesses and is only slightly slower than Fast.
@@ -123,7 +132,7 @@ Stick with the default **Detailed** strategy. It finds the most businesses and i
 |---|---|---|---|
 | **Detailed** (default) | The most businesses | Fast | Almost everything |
 | **Fast** | About 4% fewer than Detailed | About 15% faster than Detailed | Very large runs, such as a **whole country** |
-| **Fastest** | About the same as Fast | Slightly faster than Fast | **Whole-country** runs on computers with less than 16 GB RAM |
+| **Fastest** | About the same as Fast | Slightly faster than Fast | **Whole-country** runs on computers with less than 8 GB RAM |
 | **Zoom 15–18** | Similar to Detailed | Slow (hours for a big city) | Advanced users only |
 | **Geolocation** | Only businesses inside your point or shape | Depends on area size | Searching a custom area instead of a city |
 
@@ -256,7 +265,6 @@ Deeper guides and answers live in [advanced.md](https://github.com/omkarcloud/go
 - [Do I need to do anything else to use the tool effectively?](https://github.com/omkarcloud/google-maps-scraper/blob/master/advanced.md#do-i-need-to-do-anything-else-to-use-the-tool-effectively) [Very Very Important! MUST READ]
 - [How to use the Geolocation feature?](https://github.com/omkarcloud/google-maps-scraper/blob/master/advanced.md#how-to-use-the-geolocation-feature)
 - [How to create polygons and search using Geolocation?](https://github.com/omkarcloud/google-maps-scraper/blob/master/advanced.md#how-to-create-polygons-and-search-using-geolocation)
-- [How do I stop or abort a running task?](https://github.com/omkarcloud/google-maps-scraper/blob/master/advanced.md#how-do-i-stop-or-abort-a-running-task)
 - [I want all businesses in a country. What's the best approach?](https://github.com/omkarcloud/google-maps-scraper/blob/master/advanced.md#i-want-all-businesses-in-a-country-whats-the-best-approach)
 - [Are there any usage limits? (and 50+ data points)](https://github.com/omkarcloud/google-maps-scraper/blob/master/advanced.md#are-there-any-usage-limits)
 - [How to get the Pro Version?](https://github.com/omkarcloud/google-maps-scraper/blob/master/advanced.md#how-to-get-the-pro-version)

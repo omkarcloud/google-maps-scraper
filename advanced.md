@@ -71,20 +71,6 @@ Suppose you are a web developer, specializing in **making websites** for **resta
 
 ![geolocation.gif](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/geolocation.gif)
 
-### How do I stop or abort a running task?
-
-Click on the Abort Icon to abort the task.
-
-![abort-task.png](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/abort-task.png)
-
-**Note:**
-- Aborting an All Task will abort its child tasks.
-- If you close the application while a **child task** is **in progress**:
-
-![sub-task-in-progress.png](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/sub-task-in-progress.png)
-
-That in-progress task will lose all progress and start from 0 when you reopen the app.
-
 ### I want all businesses in a country. What's the best approach?
 
 Use the Country Level Data feature, with default Search Strategy "Fast".
