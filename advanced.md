@@ -308,29 +308,13 @@ In case you are unable to view the non-English characters properly in Excel, the
 
 ### Do I need to do anything else to use the tool effectively?
 
-1. Disable Auto Sleep Mode
-  Auto sleep mode will prevent the tool from running and cause tasks to fail. Here's how to turn it off:
+The tool keeps your computer awake automatically while it is open, so you don't need to change any sleep settings. Just keep the system on and **do not close your laptop's lid**, as doing so puts it to sleep and stops the tool.
 
-  - **On Windows**:
-      Go to **Start** > **Settings** > **System** > **Power & battery** > **System** > **Screen & Sleep**. Set the following settings to "Never"
-      ![windows-sleep](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/windows-sleep.png)
+If you'd like the tool to keep scraping at night (for example, after you leave the office) but your main account holds sensitive data that you don't want anyone to access, do the following:
 
-  - **On Mac**:
-      Open **Settings** > **Lock Screen**, then set the following settings to "Never."
-      ![mac-sleep](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/mac-sleep.png)
-  - **Ubuntu?**:
-     You're awesome at computers, so go ahead and figure it out! ;)
-
-2. Keep the System Awake and Running
-  The tool only runs while your computer is awake, so keep the system on and **do not close your laptop's lid**, as doing so puts it to sleep and stops the tool.
-
-  If you'd like the tool to keep scraping at night (for example, after you leave the office) but your main account holds sensitive data that you don't want anyone to access, do the following:
-
-  - Create a **separate user account** on your Mac or Windows machine.
-  - Run the app in that second account.
-  - macOS and Windows both keep apps running in the background of a signed-in account even when you switch users. So during the day you can work in your main account while the second account keeps scraping, and when you head home you simply **switch to the second account** and leave the machine running overnight.
-
-3. Ensure you maintain a stable Internet connection, as switching connections will cause currently running tasks to fail.
+- Create a **separate user account** on your Mac or Windows machine.
+- Run the app in that second account.
+- macOS and Windows both keep apps running in the background of a signed-in account even when you switch users. So during the day you can work in your main account while the second account keeps scraping, and when you head home you simply **switch to the second account** and leave the machine running overnight.
 
 ### On macOS, Chrome is not opening when I run the app. What should I do?
 
@@ -400,7 +384,7 @@ There are 10s of Google Maps Scrapers on the Internet, some by brands bigger tha
 - Faster performance with lower bandwidth usage.
 - Easy to use — just open, enter query, start seeing results in a few seconds.
 - 50+ data points extracted, most in the market.
-- One-time payment, no subscriptions. Run on unlimited devices. Lifetime updates. You **OWN** the software.
+- Simple monthly subscription, cancel anytime. Run on unlimited devices.
 - 90-day no-questions-asked 2-click refund guarantee. No other brand offers this.
 
 A Solid Product doesn't need elaborate explanations, it speaks for itself. Try it, and see it for yourself.
