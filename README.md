@@ -232,31 +232,6 @@ What that means for website emails, with AI recommendation included:
 To learn more, see the [Business Enrichment API](https://www.omkar.cloud/tools/business-enrichment).
 
 
-## 🎁 Get 1 Month of the Unlimited Plan Free (Unlimited searches)
-
-Love this tool? Share it and get **1 month of the Unlimited plan (Unlimited searches) free**.
-
-**How to claim:**
-
-1. Post about the Google Maps Scraper on Twitter/X, LinkedIn, or Facebook.
-<p align="center">
-  <a href="https://twitter.com/intent/tweet?text=I%27m%20using%20the%20Google%20Maps%20Scraper%20by%20%40omkarcloud%20to%20get%20leads%20from%20Google%20Maps%20for%20free%20%E2%80%94%20200%20free%20searches%2Fmonth%2C%20100%2C000%2B%20leads.%20Check%20it%20out%3A&url=https%3A%2F%2Fgithub.com%2Fomkarcloud%2Fgoogle-maps-scraper">
-    <img alt="Share on Twitter/X" src="https://img.shields.io/badge/Share%20on-Twitter%2FX-000000?style=for-the-badge&logo=x" />
-  </a>
-  <a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fgithub.com%2Fomkarcloud%2Fgoogle-maps-scraper">
-    <img alt="Share on LinkedIn" src="https://img.shields.io/badge/Share%20on-LinkedIn-0A66C2?style=for-the-badge&logo=linkedin" />
-  </a>
-  <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fgithub.com%2Fomkarcloud%2Fgoogle-maps-scraper&quote=I%27m%20using%20the%20Google%20Maps%20Scraper%20by%20Omkar%20Cloud%20to%20get%20leads%20from%20Google%20Maps%20for%20free%20%E2%80%94%20200%20free%20searches%2Fmonth%2C%20100%2C000%2B%20leads.%20Check%20it%20out%3A%20https%3A%2F%2Fgithub.com%2Fomkarcloud%2Fgoogle-maps-scraper">
-    <img alt="Share on Facebook" src="https://img.shields.io/badge/Share%20on-Facebook-1877F2?style=for-the-badge&logo=facebook" />
-  </a>
-</p>
-
-2. Take a screenshot of your post.
-3. Send the screenshot via [WhatsApp](https://api.whatsapp.com/send?phone=918178804274&text=Hey%2C%20I%20shared%20the%20Google%20Maps%20Extractor%20on%20social%20media%2C%20here%27s%20my%20screenshot%20for%20the%201%20month%20free%20Unlimited%20plan%20offer.) or [Email](mailto:happy.to.help@omkar.cloud?subject=1%20Month%20Free%20Unlimited%20Plan%20-%20Social%20Share&body=Hey%2C%20I%20shared%20the%20Google%20Maps%20Extractor%20on%20social%20media%2C%20here%27s%20my%20screenshot%20for%20the%201%20month%20free%20Unlimited%20plan%20offer.).
-4. We'll verify the post and activate your Unlimited plan within a few seconds.
-
-One redemption per person. New users only, till 30th December 2026.
-
 ## 📚 Learn More
 
 Deeper guides and answers live in [advanced.md](https://github.com/omkarcloud/google-maps-scraper/blob/master/advanced.md):
