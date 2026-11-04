@@ -288,7 +288,3 @@ You've seen the maximum leads per search, the price, and the money-back guarante
 </p>
 
 <p align="center">Free forever plan. No credit card. Refund in 2 clicks if you change your mind.</p>
-
-<!-- ### Not in your Budget?
-
-If you are a student or a person just starting your business, and a paid plan is not in your budget, you can let us know via [WhatsApp](https://api.whatsapp.com/send?phone=918178804274&text=I%20am%20just%20starting%20out%20and%20a%20paid%20plan%20of%20the%20Google%20Maps%20Extractor%20is%20not%20in%20my%20budget.%20Kindly%20provide%20me%2012%20months%20of%20free%20access.) or [Email](mailto:happy.to.help@omkar.cloud?subject=Request%20for%2012%20Months%20Free%20Access%20to%20Google%20Maps%20Extractor&body=I%20am%20just%20starting%20out%20and%20a%20paid%20plan%20of%20the%20Google%20Maps%20Extractor%20is%20not%20in%20my%20budget.%20Kindly%20provide%20me%2012%20months%20of%20free%20access.) and we will give you **12 months of free access**. Don't hesitate—it will take 5 minutes to WhatsApp/Email, and it will make us happy 😊 to help you. -->
