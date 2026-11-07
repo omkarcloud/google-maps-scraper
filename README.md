@@ -234,8 +234,6 @@ To learn more, see the [Business Enrichment API](https://www.omkar.cloud/tools/b
 
 ## 📚 Learn More
 
-Deeper guides and answers live in [advanced.md](https://github.com/omkarcloud/google-maps-scraper/blob/master/advanced.md):
-
 ### App Specific FAQs
 - [Do I need to do anything else to use the tool effectively?](https://github.com/omkarcloud/google-maps-scraper/blob/master/advanced.md#do-i-need-to-do-anything-else-to-use-the-tool-effectively) [Very Very Important! MUST READ]
 - [How to use the Geolocation feature?](https://github.com/omkarcloud/google-maps-scraper/blob/master/advanced.md#how-to-use-the-geolocation-feature)
