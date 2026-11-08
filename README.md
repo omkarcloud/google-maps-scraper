@@ -220,7 +220,6 @@ Enrichment is billed in credits. **1 credit = 1 cent.** You get **100 free credi
 | **Email Verification (ZeroBounce)** | Highest-rated verifier on G2 | 1 credit per email |
 | **Phone Carrier Info** | Landline or mobile, plus carrier name | 2 credits per business |
 | **Place Sales Summary (AI)** | Business context from their listing, tailored to what you sell | 1 credit per business |
-| **Apollo Lead** | Decision-maker contact | 2 credits per person |
 
 What that means for website emails, with AI recommendation included:
 
